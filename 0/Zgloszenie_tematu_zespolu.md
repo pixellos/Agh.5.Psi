@@ -27,7 +27,7 @@ System powinien:
 - Dział księgowości
 Reference-style: 
 
-[Struktura](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
+![Struktura](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
 
 
 # 1.3
