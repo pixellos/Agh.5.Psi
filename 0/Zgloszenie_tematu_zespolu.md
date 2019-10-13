@@ -2,6 +2,7 @@
 Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gadziński, Kacper Kwapisz
 Lead: Mateusz Popielarz
 
+# 1.1
 # System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
 ## Żródło danych: firma rodzinna
 
@@ -15,10 +16,30 @@ System powinien:
 - Wspomagać proces reklamacji
 - Generować faktury sprzedażowe
 
-Składniki organizacyjne Firmy - Management, Dział sprzedarzy, Dział usług, Dział księgowości
+# 1.2
+# Składniki organizacyjne firmy
+## Management
+- Dział sprzedaży
+- Dział usług
+- Dział marketingu
+- Dział księgowości
+
+# 1.3
+# Obszary aktywności
+- Wspomaganie zarządzania firmą
+- Obsługa klienta
+- Pozyskiwanie zleceń zakupu
+- Realizacja zleceń zakupu
+- Obsługa zamówień
+- Obsługa reklamacji
+- Obsługa marketingu
+- Obsługa finansowa
+- Obsługa magazynu
 
 Obszary aktywności - obsługi klientów, wpomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
 
 W słowniku 
+Zlecenie zakupu - od klienta do naszej firmy
+Zamówienie - od naszej firmy do dystrybutora
 
 
