@@ -20,6 +20,8 @@ System powinien:
 
 # 1.2
 # Składniki organizacyjne firmy
+![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
+
 ## Management
 - Dział sprzedaży
 - Dział usług
@@ -27,7 +29,6 @@ System powinien:
 - Dział księgowości
 Reference-style: 
 
-![Struktura](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
 
 
 # 1.3
@@ -49,5 +50,8 @@ W słowniku
 Zlecenie zakupu - od klienta do naszej firmy
 
 Zamówienie - od naszej firmy do dystrybutora
+
+Lista plików graficznych 
+1. [Składniki organizacyjne firmy](#składniki-organizacyjne-firmy)
 
 
