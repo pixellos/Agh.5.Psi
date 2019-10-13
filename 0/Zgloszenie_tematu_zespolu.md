@@ -43,6 +43,8 @@ Reference-style:
 - Obsługa finansowa
 - Obsługa magazynu
 
+![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/Obsluga_aktywnosci.jpg)
+
 Obszary aktywności - obsługi klientów, wpomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
 
 W słowniku 
