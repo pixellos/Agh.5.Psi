@@ -2,9 +2,10 @@
 Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gadziński, Kacper Kwapisz
 Lead: Mateusz Popielarz
 
-# 1.1
 # System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
 ## Żródło danych: firma rodzinna
+
+# 1.1
 
 Stworzenie projektu systemu do wspomagania sprzedaży / wspomagania marketingu urządzeń z sektora automatyki przemysłowej. Klienci kupują sprzęt potrzebny do automatyzacji ich przedsiębiorstw.
 
