@@ -1,5 +1,6 @@
 
 Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gadziński, Kacper Kwapisz
+
 Lead: Mateusz Popielarz
 
 # System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
@@ -40,7 +41,9 @@ System powinien:
 Obszary aktywności - obsługi klientów, wpomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
 
 W słowniku 
+
 Zlecenie zakupu - od klienta do naszej firmy
+
 Zamówienie - od naszej firmy do dystrybutora
 
 
