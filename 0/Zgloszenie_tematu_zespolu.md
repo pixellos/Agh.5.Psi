@@ -1,10 +1,14 @@
 
-Zespół:
-Szef zespołu: 	
-System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
+Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gadziński, Kacper Kwapisz
+Lead: Mateusz Popielarz
 
- Żródło danych: firma rodzinna
-Stworzenie projektu systemu  do wspomagania sprzedaży / wspomagania marketingu urządzeń z 
+# System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
+## Żródło danych: firma rodzinna
+
+Stworzenie projektu systemu do wspomagania sprzedaży / wspomagania marketingu urządzeń z sektora automatyki przemysłowej. Klienci kupują sprzęt potrzebny do automatyzacji ich przedsiębiorstw.
+
+Firma jest reprezentantem handlowym na Polskę, sprzedarzą detaliczną i znajdowaniem leadów.
+
 System powinien:
 - Wspomagać sprzedaż urządzeniami automatyki przemysłowej
 - Umożliwiać zbieranie feedbacku od klientów
