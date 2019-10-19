@@ -19,7 +19,7 @@ System powinien:
 - Generować faktury sprzedażowe
 
 # 1.2
-# Składniki organizacyjne firmy
+## Składniki organizacyjne firmy
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
 
 ## Management
