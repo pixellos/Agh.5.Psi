@@ -6,7 +6,7 @@ Lead: Mateusz Popielarz
 # System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
 ## Żródło danych: firma rodzinna
 
-
+# 0 Spis Treści
 
 [TOC]
 
@@ -63,24 +63,16 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 
 ### 1.1.5 Schemat struktury organizacyjnej
 
-
-
-
-
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
 
 W obecnym okresie jest około 60 pracowników. 
 W sprzedzarzy pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
-
-
 
 - Zarząd: Pracownicy tego poziomu zajmują się koordynowaniem działania firmy na najwyższym poziomie, planują długofalową strategię ekspansji, zatwierdzają budżet, wyznaczają cele na kolejne kwartały
 - Marketing i sprzedarz: Pracownicy działu marketingu zajmują się przygotowaniem materiałów reklamowych, zakupem reklam oraz wyszukiwaniem potencjalnie zainteresowanych firm
 - Usługi: Głównie realizowane przez integratorów, zajmują się montażem
 - Hander: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
-
-
 
 ## 1.2 Opis obszaru modelowania OM
 
@@ -91,9 +83,7 @@ Został przeprowadzony wywiad z zarządem. Transkrypcje odpowiedzi umieścimy w 
 ### 1.2.2 Definicja celu systemu
 
 Celem systemu PSSK jest kompleksowe wspomaganie procesu zamówienia od złożenia go przez klienta, przez pomoc i kontrolowanie procesu zlecenia zakupu komponentów po obsługę gwarancyjną.
-
 Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływających przez firmę niezbędnych do sprawnego działania organizacji.
-
 
 
 ### 1.2.3 Składniki organizacyjne dla Obszaru Modelowania
@@ -144,89 +134,76 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/Obsluga_aktywnosci.jpg)
 
 
+#### 1.3.1.1 Obsługa zamówień
 
-### OA1. Obsługa zamówień
+1. Prowadzenie bazy dostawców
+    1. Rejestrowanie dostawców
+    1. Korygowanie danych dostawcy
 
+1. Prowadzenie katalogu i cennika towarów
+    1. Dodawanie nowych pozycji katalogów towarów
+    1. Aktywacja i dezaktywacja pozycji katalogu towarów
+    1. Ustalanie cen
+    1. Generowanie cennika
 
+1. Przyjęcia zapytania ofertowego od klienta
+1. Przygotowanie oferty dla klienta
+1. Kontakt z klientem w celu potwierdzenia oferty
 
-#### 1.1 Prowadzenie bazy dostawców
+#### 1.4.1.2 Obsługa zleceń zakupu
 
-#####       1.1.1 Rejestrowanie dostawców
+1. Prowadzenie bazy klientów
+    1. Rejestrowanie klienta
+    1. Korygowanie danych klienta
+    1. Obsługa systemu rabatowego 
 
-#####       1.1.2 Korygowanie danych dostawcy
+1. Przyjmowanie zamówień od klienta
+    1. Obsługa przedpłat
 
-#### 1.2 Prowadzenie katalogu i cennika towarów
+1. Sprawdzenie aktualnych stanów magazynowych
 
-#####       1.2.1 Dodawanie nowych pozycji katalogów towarów
+1. Rezerwacja towaru
 
-#####       1.2.2 Aktywacja i dezaktywacja pozycji katalogu towarów
+1. Zmiana lub likwidacja rezerwacji towaru
 
-#####       1.2.3 Ustalanie cen
+1. Generowanie dokumentów sprzedaży
 
-#####       1.2.4 Generowanie cennika
+1. Wystawienie faktury
 
-#### 1.3 Przyjęcia zapytania ofertowego od klienta
+1. Zatwierdzenie faktury 
 
-#### 1.4 Przygotowanie oferty dla klienta
+#### 1.4.1.3 Obsługa reklamacji
 
-#### 1.5 Kontakt z klientem w celu potwierdzenia oferty
+1. Przyjęcie zgłoszenia reklamacji od klienta
 
-### OA2. Obsługa zleceń zakupu
+1. Analiza zasadności reklamacji
 
-#### 2.1 Prowadzenie bazy klientów
+1. Zgłoszenie reklamacji dostawcy
 
-#####       2.1.1 Rejestrowanie klienta
+    1. Sprawdzenie zasadności reklamacji przez zespół
 
-#####       2.1.2 Korygowanie danych klienta
+    1. Przygotowanie produktów do odesłania do producenta
 
-#####       2.1.3 Obsługa systemu rabatowego 
+    1. Realizacja 
 
-#### 2.2 Przyjmowanie zamówień od klienta
+#### 1.4.1.4 Obsługa magazynu
 
-#####       2.2.1 Obsługa przedpłat
+1. Sprawdzenie stanu magazynu
 
-#### 2.3 Sprawdzenie aktualnych stanów magazynowych
+1. Zarejestrowanie towaru w magazynie
 
-#### 2.4 Rezerwacja towaru
+1. Wyrejstrowanie towaru z magazynu
 
-#### 2.5 Zmiana lub likwidacja rezerwacji towaru
+#### 1.4.1.5 Kontrola stanów magazynowych
 
-#### 2.6 Generowanie dokumentów sprzedaży
+1. Informowanie o danych poziomach stanu magazynu
 
-#### 2.7 Wystawienie faktury
+1. Tworzenie prognoz popytu w celu utrzymania kluczowych produktów na stanie
 
-#### 2.8 Zatwierdzenie faktury 
+#### 1.4.1.6 Integracja z systemami marketingu
+ 
 
-### OA3. Obsługa reklamacji
-
-#### 3.1 Przyjęcie zgłoszenia reklamacji od klienta
-
-#### 3.2 Analiza zasadności reklamacji
-
-#### 3.3 Zgłoszenie reklamacji dostawcy
-
-##### 3.1.1 Sprawdzenie zasadności reklamacji przez zespół
-
-##### 3.1.2 Przygotowanie produktów do odesłania do producenta
-
-##### 3.1.3 Realizacja 
-
-### OA4. Obsługa magazynu
-
-#### 4.1 Sprawdzenie stanu magazynu
-
-#### 4.2 Zarejestrowanie towaru w magazynie
-
-#### 4.3 Wyrejstrowanie towaru z magazynu
-
-### OA5. Kontrola stanów magazynowych
-
-#### 5.1 Informowanie o danych poziomach stanu magazynu
-
-#### 5.2 Tworzenie prognoz popytu w celu utrzymania kluczowych produktów na stanie
-
-### OA6. Integracja z systemami marketingu
-### OA7. Rejestr potencjalnych klientów i stanu kontaktu z nimi
+#### 1.4.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 
 Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
 
@@ -308,6 +285,8 @@ Przedsięwzięcie ma na celu
 #### 	9. Raport sprzedażowe do analiz wewnętrznych 
 
 #### 	10. Raport statystyczny wspierający cele marketingowe
+
+
 
 
 
