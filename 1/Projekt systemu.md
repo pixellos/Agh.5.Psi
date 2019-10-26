@@ -8,6 +8,10 @@ Lead: Mateusz Popielarz
 
 
 
+[TOC]
+
+
+
 # 1 Charakterystyka firmy
 
 ## 1.1  Przedmiot modelowania
@@ -49,26 +53,54 @@ Jeżeli produkt jest wysłany do dostawcy na podstawie reklamacji, i jest to bez
 ### 1.1.3 Cele firmy
 
 Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczekiwaniami. Firma chce kontynuować ekspansję na Polskim rynku, a w tym celu jest potrzeba:
+
+- Pozyskania nowych klientów
+
 - Zmniejszenia średniego czasu do zamknięcia zamówienia
 - Zwiększenie liczby opinii odebranych od klientów i bardziej przekrojowej ich analizie
 - Optymalizacji procesów w firmie
 - Optymalizacji ilości i typu magazynowanych produktów
 
+### 1.1.4 Schemat struktury organizacyjnej
 
-### 1.2 Schemat struktury organizacyjnej
+
+
+
+
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
 
 W obecnym okresie jest około 60 pracowników. 
-W sprzedzarzy pracuje około 20, w zarządzie 5, W dziale marketingu 15, natomiast w 
+W sprzedzarzy pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
 
-### Opis poziomów struktury:
+
+
 - Zarząd: Pracownicy tego poziomu zajmują się koordynowaniem działania firmy na najwyższym poziomie, planują długofalową strategię ekspansji, zatwierdzają budżet, wyznaczają cele na kolejne kwartały
 - Marketing i sprzedarz: Pracownicy działu marketingu zajmują się przygotowaniem materiałów reklamowych, zakupem reklam oraz wyszukiwaniem potencjalnie zainteresowanych firm
 - Usługi: Głównie realizowane przez integratorów, zajmują się montażem
 - Hander: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
 
-## 1.3
+
+
+## 1.2 Opis obszaru modelowania OM
+
+### 1.2.1 Wywiad z zarządem w celu ustalenia przeznaczenia systemu
+
+Został przeprowadzony wywiad z zarządem. Transkrypcje odpowiedzi umieścimy w *Załączniku Transkrypcja*.
+
+### 1.2.2 Definicja celu systemu
+
+Celem systemu PSSK jest kompleksowe wspomaganie procesu zamówienia od złożenia go przez klienta, przez pomoc i kontrolowanie procesu zlecenia zakupu komponentów po obsługę gwarancyjną.
+
+Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływających przez firmę niezbędnych do sprawnego działania organizacji.
+
+
+
+
+
+
+
+## 1.3 Zakres odpowiedzialności systemu (ZOS)
 ### 1.3.1 Obszary aktywności (OA)
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/Obsluga_aktywnosci.jpg)
 
@@ -76,9 +108,10 @@ W sprzedzarzy pracuje około 20, w zarządzie 5, W dziale marketingu 15, natomia
 ### OA2. Obsługa zleceń zakupu
 ### OA3. Obsługa reklamacji
 ### OA4. Obsługa magazynu
+
 ### OA5. Kontrola stanów magazynowych
 ### OA6. Integracja z systemami marketingu
-### OA8. Rejestr potencjalnych klientów i stanu kontaktu z nimi
+### OA7. Rejestr potencjalnych klientów i stanu kontaktu z nimi
 
 Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
 
@@ -108,6 +141,10 @@ Przedsięwzięcie ma na celu
 - Ograniczyć reklamacje odrzucone przez dostawców o 5%
 - Zmniejszyć czas realizacji następnego zamówienia o tych samych parametrach jak jedno z poprzednich o 40%
 - Ograniczyć czas spędzany na wypełnianiu dokumentów przez wprowadzanie ustandaryzowanych elektroniczych formularzy o 20%
+
+
+
+# 2. Opis Wymagań Systemu
 
 
 Lista plików graficznych 
