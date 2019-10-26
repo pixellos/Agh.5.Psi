@@ -244,6 +244,11 @@ Przedsięwzięcie ma na celu
 
 #### 2.2.1.1 Encje ogólne
 Encja osoby jest to podstawowa definicja osoby fizycznej w naszym systemie
+1. Produkt
+    1. Ilość na magazynie
+    1. Obecna potrzebna ilość
+    1. Zamówiona ilość
+    1. Sprzedane
 
 1. Osoba
     1. Imię
@@ -255,13 +260,31 @@ Encja osoby jest to podstawowa definicja osoby fizycznej w naszym systemie
 1. Lokal przemysłowy
     1. Adres
 
+1. Faktura
+    1. Firma
+    1. Kwota
+    1. Zastosowana stawka VAT
+    1. Kwota opłacona
+
 1. Firma
     1. Nazwa firmy
     1. NIP
     1. Wystawione faktury przez naszą firmę
     1. Wystawione faktury do opłacenia przez nasza firmę
+    1. Kraj pochodzenia
 
-#### 2.2.1.2 Opis klienta
+1. Pracownik (Rozszerza `Osoba`)
+    1. Pensja
+    1. Data zatrudnienia
+    1. Data rozwiązania umowy
+    1. 
+    
+1. Konsultatnt (Rozszerza `Pracownik`)
+    
+
+1. Pracownik usług (Rozszerza `Pracownik`)
+
+#### 2.2.1.2 Opis klienta i powiązanych encji
 W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 1. Klient (Rozszerza `Osoba`) - jednoznacznie określa klienta
@@ -275,32 +298,35 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 1. Firma klienta (Rozszerza `Firma`)
     1. Reprezentanci
 
+1. Oferta
+    1. Zaproponowane produkty
+    1. Data wystawienia
+    1. Klient
+
 #### 2.2.1.3 Opis Dostawcy
 
 1. Fabryka dostawcy (Rozszerza `Lokal przemysłowy`)
-    1. 
+    1. Kody produktów obsługiwanych przez tą fabrykę
+    1. Dostawca (Referencja do `Dostawca`)
 
-### Dane o encjach wewnętrznych 
+1. Dostawca (Rozszerza `Firma`)
+    1. Fabryki (Wiele `Fabryka Dostawcy`)
 
-#### 	1. Magazyn
+#### 2.2.1.4 Opis Magazynu
 
-#### 	2. Pracownik(obsługa klienta, obsługa magazynu, implementacja rozwiązania)
+1. Miejce w magazynie
+    1. Sektor
+    1. Numer Miejsca
+    1. Obecnie przechowywany produkt
+    1. Historycznie przechowywane produkty
+    1. Rezerwacja pod produkt wielkogabarytowy
 
-#### 	3. Faktura
-
-#### 	4. Produkt
-
-#### 	5. Zamówienie
-
-#### 	6. Oferta
 
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
-#### 	1. Zapytanie ofertowe od klienta
-
-##### 			a) Klient
-
-##### 					b) Produkt
+1. Zapytanie ofertowe od klienta
+    1. Klient
+    1. Produkt 
 
 #### 	2. Oferta 
 
