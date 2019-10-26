@@ -178,13 +178,13 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 1. Analiza zasadności reklamacji
 
-#### 3.3 Zgłoszenie reklamacji dostawcy
+1. Zgłoszenie reklamacji dostawcy
 
-1. Sprawdzenie zasadności reklamacji przez zespół
+    1. Sprawdzenie zasadności reklamacji przez zespół
 
-1. Przygotowanie produktów do odesłania do producenta
+    1. Przygotowanie produktów do odesłania do producenta
 
-1. Realizacja 
+    1. Realizacja 
 
 #### 1.4.1.4 Obsługa magazynu
 
