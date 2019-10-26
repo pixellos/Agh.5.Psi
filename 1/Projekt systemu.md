@@ -96,7 +96,45 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 
 
+### 1.2.3 Składniki organizacyjne dla Obszaru Modelowania
 
+- Dział handlu (Obsługa klienta, pośredniczenie w składaniu zamówień)
+
+  System będzie pomagał sprzedawcy przy odbieraniu zamówienia od klienta.
+
+  Konsultant będzie wprowadzał dane klienta do systemu
+
+  System będzie mógł powiadomić konsultanta o zmianie lub zdarzeniach
+
+  System będzie asystował przy składaniu zleceniu zakupu
+
+  System będzie przechowywał informacje na temat reklamacji i ich stanu
+
+  
+
+- Dział księgowości (Wewnętrzne rozliczenia, rozliczenia faktur z dostawcami)
+
+  System będzie generować faktury sprzedażowe
+
+  System będzie generował faktury dla współpracowników
+
+  System będzie rejestrował stan wypłaconych pensji
+
+  System będzie generował listę płac
+
+  
+
+- Dział usług (Rozwijanie systemów bezpieczeństwa) -
+
+  Integracja systemu w tym obszarze będzie polegać tylko na obsłudze kadrowej
+
+  
+
+- Dział marketingu (Śledzenie rezultatów akcji marketingowych)
+
+  System będzie generował raporty
+
+  System będzie miał możliwość porównywania okresów akcji promocyjnej z wynikami sprzedaży
 
 
 
