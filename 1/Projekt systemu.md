@@ -105,11 +105,36 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/Obsluga_aktywnosci.jpg)
 
 ### OA1. Obsługa zamówień
+
+#### 1.1 Przyjęcia zapytania ofertowego od klienta
+
+#### 1.2 Przygotowanie oferty dla klienta
+
+#### 1.3 Kontakt z klientem w celu potwierdzenia oferty
+
 ### OA2. Obsługa zleceń zakupu
 ### OA3. Obsługa reklamacji
+
+#### 3.1 Przyjęcie zgłoszenia reklamacji od klienta
+
+#### 3.2 Analiza zasadności reklamacji
+
+#### 3.3 Zgłoszenie reklamacji dostawcy
+
 ### OA4. Obsługa magazynu
 
+#### 4.1 Sprawdzenie stanu magazynu
+
+#### 4.2 Zarejestrowanie towaru w magazynie
+
+#### 4.3 Wyrejstrowanie towaru z magazynu
+
 ### OA5. Kontrola stanów magazynowych
+
+#### 5.1 Informowanie o danych poziomach stanu magazynu
+
+#### 5.2 Tworzenie prognoz popytu w celu utrzymania kluczowych produktó na stanie
+
 ### OA6. Integracja z systemami marketingu
 ### OA7. Rejestr potencjalnych klientów i stanu kontaktu z nimi
 
