@@ -229,9 +229,27 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 1. Przypisywania kodów EAN
 
+
 #### 1.4.1.6 Integracja z systemami marketingu
+1. Pozycjonowanie strony w google
+
+1. Reklama na portalach spolecznościowych
+
+1. Zbieranie informacji o odwiedzających strone z produktami
+
+
 
 #### 1.4.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
+1. Prowadzenie bazy potencjalnych klientów
+
+1. Dodawanie klientów do bazy
+
+1. Usuwanie klientów z bazy
+
+1. Wysylanie notyfikacji o o ofercie pocztą elektroniczną email
+
+1. Udzielanie informacji o ofercie telefonicznie
+
 
 Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
 
