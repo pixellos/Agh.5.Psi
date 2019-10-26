@@ -283,6 +283,13 @@ Przedsięwzięcie ma na celu
 # 2. Opis Wymagań Systemu
 
 ## 2.1 Funkcje systemu ze strony widzenia użytkownika
+Aktorzy
+- Konsultant - wprowadza zamówienia do systemu, aktualizuje je, dezaktywuje, zgłasza zlecenia zakupu, sprawdza stan zamówień, zgłasza reklamację w system, sprawdza notyfikacje, może przejąć opiekę nad klientem innego konsultanta
+- Magazynier - aktualizuje stan magazynowy, zgłasza ewentualne nieprawidłowości w stanie faktycznym, zatwierdza wysyłkę towaru
+- Marketingowiec - wprowadzą informacje do systemu na temat kampanii promocyjnych, aktualizuje ich stan, ma dostęp do statystyk
+- Członek zarządu - Ma dostęp do większości informacji, widoki powinny ukrywać dane użytkownika rodo
+- Księgowy - ma dostęp do zamówień i zleceń zakupu, wystawia faktury, aktualizuje listę płac, dba o domykanie się budżetu
+- System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu ( np na wysłane), lub stan reklamacji 
 
 ## 2.2 Dane przechowywane w systemie
 
@@ -323,11 +330,7 @@ Encja osoby jest to podstawowa definicja osoby fizycznej w naszym systemie
     1. Data rozwiązania umowy
     1. 
     
-<<<<<<< HEAD
-1. Konsultatnt (Rozszerza `Pracownik`)
-=======
 1. Konsultant (Rozszerza `Pracownik`)
->>>>>>> c31a5ef024bd9bd03bfe16250ddc2e4eb71860e9
    
 1. Pracownik usług (Rozszerza `Pracownik`)
 
