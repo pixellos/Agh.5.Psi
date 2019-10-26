@@ -33,7 +33,7 @@ Jednym z problemów z którym firma musi się zmierzyć jest rosnąca ilość za
 
 Wysoko wykwalifikowana kadra do spraw sprzedaży służy klientowi wiedzą przy wyborze sprzętu.
 
-### 1.1.2 Opis dziedziny działalności
+### 1.1.3 Opis dziedziny działalności
 
 Klientami są: przemysł, hurtowanie, integratorzy. 
 Klienci w większości są inżynierami.
@@ -50,7 +50,7 @@ Dostawcy zajmują się wysyłką.
 
 Jeżeli produkt jest wysłany do dostawcy na podstawie reklamacji, i jest to bezpodstawne wg. dostawcy to koszty ponosi firma nie dostawcy. Z tego powodu ważne są procedury decydujące o  oględziny produktów wysyłanych do reklamacji przez wewnętrzny zespół.
 
-### 1.1.3 Cele firmy
+### 1.1.4 Cele firmy
 
 Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczekiwaniami. Firma chce kontynuować ekspansję na Polskim rynku, a w tym celu jest potrzeba:
 
@@ -61,7 +61,7 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 - Optymalizacji procesów w firmie
 - Optymalizacji ilości i typu magazynowanych produktów
 
-### 1.1.4 Schemat struktury organizacyjnej
+### 1.1.5 Schemat struktury organizacyjnej
 
 
 
@@ -140,17 +140,63 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ## 1.3 Zakres odpowiedzialności systemu (ZOS)
 ### 1.3.1 Obszary aktywności (OA)
+
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/Obsluga_aktywnosci.jpg)
+
+
 
 ### OA1. Obsługa zamówień
 
-#### 1.1 Przyjęcia zapytania ofertowego od klienta
 
-#### 1.2 Przygotowanie oferty dla klienta
 
-#### 1.3 Kontakt z klientem w celu potwierdzenia oferty
+#### 1.1 Prowadzenie bazy dostawców
+
+#####       1.1.1 Rejestrowanie dostawców
+
+#####       1.1.2 Korygowanie danych dostawcy
+
+#### 1.2 Prowadzenie katalogu i cennika towarów
+
+#####       1.2.1 Dodawanie nowych pozycji katalogów towarów
+
+#####       1.2.2 Aktywacja i dezaktywacja pozycji katalogu towarów
+
+#####       1.2.3 Ustalanie cen
+
+#####       1.2.4 Generowanie cennika
+
+#### 1.3 Przyjęcia zapytania ofertowego od klienta
+
+#### 1.4 Przygotowanie oferty dla klienta
+
+#### 1.5 Kontakt z klientem w celu potwierdzenia oferty
 
 ### OA2. Obsługa zleceń zakupu
+
+#### 2.1 Prowadzenie bazy klientów
+
+#####       2.1.1 Rejestrowanie klienta
+
+#####       2.1.2 Korygowanie danych klienta
+
+#####       2.1.3 Obsługa systemu rabatowego 
+
+#### 2.2 Przyjmowanie zamówień od klienta
+
+#####       2.2.1 Obsługa przedpłat
+
+#### 2.3 Sprawdzenie aktualnych stanów magazynowych
+
+#### 2.4 Rezerwacja towaru
+
+#### 2.5 Zmiana lub likwidacja rezerwacji towaru
+
+#### 2.6 Generowanie dokumentów sprzedaży
+
+#### 2.7 Wystawienie faktury
+
+#### 2.8 Zatwierdzenie faktury 
+
 ### OA3. Obsługa reklamacji
 
 #### 3.1 Przyjęcie zgłoszenia reklamacji od klienta
@@ -158,6 +204,12 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 #### 3.2 Analiza zasadności reklamacji
 
 #### 3.3 Zgłoszenie reklamacji dostawcy
+
+##### 3.1.1 Sprawdzenie zasadności reklamacji przez zespół
+
+##### 3.1.2 Przygotowanie produktów do odesłania do producenta
+
+##### 3.1.3 Realizacja 
 
 ### OA4. Obsługa magazynu
 
