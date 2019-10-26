@@ -223,7 +223,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 #### 5.1 Informowanie o danych poziomach stanu magazynu
 
-#### 5.2 Tworzenie prognoz popytu w celu utrzymania kluczowych produktó na stanie
+#### 5.2 Tworzenie prognoz popytu w celu utrzymania kluczowych produktów na stanie
 
 ### OA6. Integracja z systemami marketingu
 
@@ -263,6 +263,40 @@ Przedsięwzięcie ma na celu
 
 
 # 2. Opis Wymagań Systemu
+
+## 2.2 Dane przechowywane w systemie
+
+### Dane o encjach zewnętrznych 
+
+#### Klient
+
+#### Dostawca
+
+### Dane o encjach wewnętrznych 
+
+#### Magazyn
+
+#### Pracownik(obsługa klienta, obsługa magazynu, implementacja rozwiązania)
+
+#### Faktura
+
+#### Produkt
+
+#### Zamówienie
+
+#### Oferta
+
+
+
+
+
+
+
+## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
+
+### Faktura zakupu od dostawcy
+
+
 
 
 
