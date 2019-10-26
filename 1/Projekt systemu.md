@@ -67,8 +67,7 @@ W sprzedzarzy pracuje około 20, w zarządzie 5, W dziale marketingu 15, natomia
 ### OA3. Obsługa reklamacji
 ### OA4. Obsługa magazynu
 ### OA5. Kontrola stanów magazynowych
-### OA6. Obsługa integratorów
-### OA7. Integracja z systemami marketingu
+### OA6. Integracja z systemami marketingu
 ### OA8. Rejestr potencjalnych klientów i stanu kontaktu z nimi
 
 Obszary aktywności - obsługi klientów, wpomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
