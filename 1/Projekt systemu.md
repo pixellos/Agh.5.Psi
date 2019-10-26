@@ -147,13 +147,56 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ### OA1. Obsługa zamówień
 
-#### 1.1 Przyjęcia zapytania ofertowego od klienta
 
-#### 1.2 Przygotowanie oferty dla klienta
 
-#### 1.3 Kontakt z klientem w celu potwierdzenia oferty
+#### 1.1 Prowadzenie bazy dostawców
+
+#####       1.1.1 Rejestrowanie dostawców
+
+#####       1.1.2 Korygowanie danych dostawcy
+
+#### 1.2 Prowadzenie katalogu i cennika towarów
+
+#####       1.2.1 Dodawanie nowych pozycji katalogów towarów
+
+#####       1.2.2 Aktywacja i dezaktywacja pozycji katalogu towarów
+
+#####       1.2.3 Ustalanie cen
+
+#####       1.2.4 Generowanie cennika
+
+#### 1.3 Przyjęcia zapytania ofertowego od klienta
+
+#### 1.4 Przygotowanie oferty dla klienta
+
+#### 1.5 Kontakt z klientem w celu potwierdzenia oferty
 
 ### OA2. Obsługa zleceń zakupu
+
+#### 2.1 Prowadzenie bazy klientów
+
+#####       2.1.1 Rejestrowanie klienta
+
+#####       2.1.2 Korygowanie danych klienta
+
+#####       2.1.3 Obsługa systemu rabatowego 
+
+#### 2.2 Przyjmowanie zamówień od klienta
+
+#####       2.2.1 Obsługa przedpłat
+
+#### 2.3 Sprawdzenie aktualnych stanów magazynowych
+
+#### 2.4 Rezerwacja towaru
+
+#### 2.5 Zmiana lub likwidacja rezerwacji towaru
+
+#### 2.6 Generowanie dokumentów sprzedaży
+
+#### 2.7 Wystawienie faktury
+
+#### 2.8 Zatwierdzenie faktury 
+
 ### OA3. Obsługa reklamacji
 
 #### 3.1 Przyjęcie zgłoszenia reklamacji od klienta
@@ -161,6 +204,12 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 #### 3.2 Analiza zasadności reklamacji
 
 #### 3.3 Zgłoszenie reklamacji dostawcy
+
+##### 3.1.1 Sprawdzenie zasadności reklamacji przez zespół
+
+##### 3.1.2 Przygotowanie produktów do odesłania do producenta
+
+##### 3.1.3 Realizacja 
 
 ### OA4. Obsługa magazynu
 
