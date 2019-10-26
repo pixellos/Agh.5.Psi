@@ -201,7 +201,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 1. Tworzenie prognoz popytu w celu utrzymania kluczowych produktów na stanie
 
 #### 1.4.1.6 Integracja z systemami marketingu
- 
+
 
 #### 1.4.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 
@@ -298,31 +298,91 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 #### 	1. Zapytanie ofertowe od klienta
 
-##### 		a) Klient
+##### 			a) Klient
 
-##### 				b) Produkt
+##### 					b) Produkt
 
 #### 	2. Oferta 
 
+##### 	a) Klient
+
+##### 	b) Pracownik
+
+##### 	c) Produkt
+
 #### 	3. Zamówienie towaru u dostawcy
+
+##### 	a) Produkt
+
+##### 	b) Dostawca
+
+##### 	c) Oferta
 
 #### 	4. Potwierdzenie zamówienia od dostawcy
 
+##### 	a) Zamówienie towaru u dostawcy
+
 #### 	5. Faktura zakupu od dostawcy
+
+##### 	a) Faktura
+
+##### 	b) Zamówienie towaru u dostawcy
 
 #### 	6. Rejestracja towaru na magazynie
 
+##### 	a) Produkt
+
+##### 	b) Magazyn
+
+##### 	c) Pracownik
+
+##### 	d) Dostawca
+
 #### 	7. Wyrejestrowanie towaru z magazynu
+
+##### 	a) Produkt
+
+##### 	b) Magazyn
+
+##### 	c) Oferta
 
 #### 	8. Faktura zakupu dla klienta
 
+##### 	a) Faktura
+
+##### 	b) Klient
+
+##### 	c) Produkt
+
 #### 	9. Raport sprzedażowe do analiz wewnętrznych 
+
+##### 	a) Produkt
+
+##### 	b) Klient
+
+##### 	c) Dostawca
+
+##### 	d) Oferta
+
+##### 	e) Zamówienie
 
 #### 	10. Raport statystyczny wspierający cele marketingowe
 
+##### 	a) Produkt
 
+##### 	b) Klient
 
+##### 	c) Dostawca
 
+##### 	d) Oferta
+
+##### 	e) Zamówienie
+
+#### 11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
+
+##### 	a) Produkt
+
+##### 	b) Magazyn
 
 
 Lista plików graficznych 
