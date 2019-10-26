@@ -265,33 +265,49 @@ Przedsięwzięcie ma na celu
 
 ### Dane o encjach zewnętrznych 
 
-#### Klient
+#### 	1. Klient
 
-#### Dostawca
+#### 	2. Dostawca
 
 ### Dane o encjach wewnętrznych 
 
-#### Magazyn
+#### 	1. Magazyn
 
-#### Pracownik(obsługa klienta, obsługa magazynu, implementacja rozwiązania)
+#### 	2. Pracownik(obsługa klienta, obsługa magazynu, implementacja rozwiązania)
 
-#### Faktura
+#### 	3. Faktura
 
-#### Produkt
+#### 	4. Produkt
 
-#### Zamówienie
+#### 	5. Zamówienie
 
-#### Oferta
-
-
-
-
-
-
+#### 	6. Oferta
 
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
-### Faktura zakupu od dostawcy
+#### 	1. Zapytanie ofertowe od klienta
+
+##### 		a) Klient
+
+##### 				b) Produkt
+
+#### 	2. Oferta 
+
+#### 	3. Zamówienie towaru u dostawcy
+
+#### 	4. Potwierdzenie zamówienia od dostawcy
+
+#### 	5. Faktura zakupu od dostawcy
+
+#### 	6. Rejestracja towaru na magazynie
+
+#### 	7. Wyrejestrowanie towaru z magazynu
+
+#### 	8. Faktura zakupu dla klienta
+
+#### 	9. Raport sprzedażowe do analiz wewnętrznych 
+
+#### 	10. Raport statystyczny wspierający cele marketingowe
 
 
 
