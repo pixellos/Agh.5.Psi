@@ -226,6 +226,9 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 #### 5.2 Tworzenie prognoz popytu w celu utrzymania kluczowych produktó na stanie
 
 ### OA6. Integracja z systemami marketingu
+
+ 
+
 ### OA7. Rejestr potencjalnych klientów i stanu kontaktu z nimi
 
 Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
@@ -260,6 +263,8 @@ Przedsięwzięcie ma na celu
 
 
 # 2. Opis Wymagań Systemu
+
+
 
 
 Lista plików graficznych 
