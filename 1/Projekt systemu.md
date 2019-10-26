@@ -240,11 +240,45 @@ Przedsięwzięcie ma na celu
 
 ## 2.2 Dane przechowywane w systemie
 
-### Dane o encjach zewnętrznych 
+### 2.2.1 Dane o encjach zewnętrznych 
 
-#### 	1. Klient
+#### 2.2.1.1 Encje ogólne
+Encja osoby jest to podstawowa definicja osoby fizycznej w naszym systemie
 
-#### 	2. Dostawca
+1. Osoba
+    1. Imię
+    1. Nazwisko
+    1. Email kontaktowy
+    1. Telefon kontaktowy
+    1. Adres kontaktowy 
+
+1. Lokal przemysłowy
+    1. Adres
+
+1. Firma
+    1. Nazwa firmy
+    1. NIP
+    1. Wystawione faktury przez naszą firmę
+    1. Wystawione faktury do opłacenia przez nasza firmę
+
+#### 2.2.1.2 Opis klienta
+W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
+
+1. Klient (Rozszerza `Osoba`) - jednoznacznie określa klienta
+    1. Firma, której jest reprezentantem
+    1. Zgoda na przetwarzanie danych osobowych w formie cyfrowej
+    1. Liczba wszystkich zamówień w systemie
+    1. Łączna kwota zamówień
+    1. Numer referencyjny
+    1. Lokale
+
+1. Firma klienta (Rozszerza `Firma`)
+    1. Reprezentanci
+
+#### 2.2.1.3 Opis Dostawcy
+
+1. Fabryka dostawcy (Rozszerza `Lokal przemysłowy`)
+    1. 
 
 ### Dane o encjach wewnętrznych 
 
