@@ -1,4 +1,4 @@
-# Raport z wywiadu
+# Raport z wywiadug
 
 
 
@@ -35,8 +35,9 @@ Kategoryzacja klientów jest prowadzona, jest to oceniane bardziej poprzez znajo
 
 ## Pytania i odpowiedzi
 
-1.Czy są prowadzone jakieś akcje marketingowe typu reklama e gazetach, bilboardy?
-2.Gdy klient zgłasza się że zleceniem, gdzie są przechowywane informacje o nim?
+1. Czy są prowadzone jakieś akcje marketingowe typu reklama e gazetach, bilboardy?
+
+2. Gdy klient zgłasza się że zleceniem, gdzie są przechowywane informacje o nim?
 
 3. Jaki jest standardowy process zlecenia zakupu towaru od klienta?
 4. Co jest najbardziej czasochłonna czynnością podczas realizacji zlecenia?

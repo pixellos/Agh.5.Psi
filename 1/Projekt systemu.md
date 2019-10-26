@@ -33,7 +33,7 @@ Jednym z problemów z którym firma musi się zmierzyć jest rosnąca ilość za
 
 Wysoko wykwalifikowana kadra do spraw sprzedaży służy klientowi wiedzą przy wyborze sprzętu.
 
-### 1.1.2 Opis dziedziny działalności
+### 1.1.3 Opis dziedziny działalności
 
 Klientami są: przemysł, hurtowanie, integratorzy. 
 Klienci w większości są inżynierami.
@@ -50,7 +50,7 @@ Dostawcy zajmują się wysyłką.
 
 Jeżeli produkt jest wysłany do dostawcy na podstawie reklamacji, i jest to bezpodstawne wg. dostawcy to koszty ponosi firma nie dostawcy. Z tego powodu ważne są procedury decydujące o  oględziny produktów wysyłanych do reklamacji przez wewnętrzny zespół.
 
-### 1.1.3 Cele firmy
+### 1.1.4 Cele firmy
 
 Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczekiwaniami. Firma chce kontynuować ekspansję na Polskim rynku, a w tym celu jest potrzeba:
 
@@ -61,7 +61,7 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 - Optymalizacji procesów w firmie
 - Optymalizacji ilości i typu magazynowanych produktów
 
-### 1.1.4 Schemat struktury organizacyjnej
+### 1.1.5 Schemat struktury organizacyjnej
 
 
 
@@ -140,7 +140,10 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ## 1.3 Zakres odpowiedzialności systemu (ZOS)
 ### 1.3.1 Obszary aktywności (OA)
+
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/Obsluga_aktywnosci.jpg)
+
+
 
 ### OA1. Obsługa zamówień
 ### OA2. Obsługa zleceń zakupu
