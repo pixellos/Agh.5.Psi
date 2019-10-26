@@ -280,8 +280,7 @@ Encja osoby jest to podstawowa definicja osoby fizycznej w naszym systemie
     1. 
     
 1. Konsultatnt (Rozszerza `Pracownik`)
-    
-
+   
 1. Pracownik usług (Rozszerza `Pracownik`)
 
 #### 2.2.1.2 Opis klienta i powiązanych encji
@@ -324,91 +323,92 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
-1. Zapytanie ofertowe od klienta
-    1. Klient
-    1. Produkt 
+### 2.3.1 Zapytanie ofertowe od klienta
 
-#### 	2. Oferta 
+1. Klient
+1. Produkt 
 
-##### 	a) Klient
+### 2.3.2 Oferta 
 
-##### 	b) Pracownik
+1. Klient
 
-##### 	c) Produkt
+2. Pracownik
 
-#### 	3. Zamówienie towaru u dostawcy
+3. Produkt
 
-##### 	a) Produkt
+#### 	2.3.3 Zamówienie towaru u dostawcy
 
-##### 	b) Dostawca
+1. Produkt
 
-##### 	c) Oferta
+2. Dostawca
 
-#### 	4. Potwierdzenie zamówienia od dostawcy
+3. Oferta
 
-##### 	a) Zamówienie towaru u dostawcy
+#### 	2.3.4 Potwierdzenie zamówienia od dostawcy
 
-#### 	5. Faktura zakupu od dostawcy
+1. Zamówienie towaru u dostawcy
 
-##### 	a) Faktura
+#### 	2.3.5. Faktura zakupu od dostawcy
 
-##### 	b) Zamówienie towaru u dostawcy
+1. Faktura
 
-#### 	6. Rejestracja towaru na magazynie
+2.  Zamówienie towaru u dostawcy
 
-##### 	a) Produkt
+#### 	2.3.6. Rejestracja towaru na magazynie
 
-##### 	b) Magazyn
+1.  Produkt
 
-##### 	c) Pracownik
+2. Magazyn
 
-##### 	d) Dostawca
+3. Pracownik
 
-#### 	7. Wyrejestrowanie towaru z magazynu
+4. Dostawca
 
-##### 	a) Produkt
+#### 	2.3.7. Wyrejestrowanie towaru z magazynu
 
-##### 	b) Magazyn
+1.  Produkt
 
-##### 	c) Oferta
+2.  Magazyn
 
-#### 	8. Faktura zakupu dla klienta
+3. Oferta
 
-##### 	a) Faktura
+#### 	2.3.8. Faktura zakupu dla klienta
 
-##### 	b) Klient
+1.  Faktura
 
-##### 	c) Produkt
+2. Klient
 
-#### 	9. Raport sprzedażowe do analiz wewnętrznych 
+3. Produkt
 
-##### 	a) Produkt
+#### 	2.3.9. Raport sprzedażowe do analiz wewnętrznych 
 
-##### 	b) Klient
+1. Produkt
 
-##### 	c) Dostawca
+2. Klient
 
-##### 	d) Oferta
+3. Dostawca
 
-##### 	e) Zamówienie
+4. Oferta
 
-#### 	10. Raport statystyczny wspierający cele marketingowe
+5. Zamówienie
 
-##### 	a) Produkt
+#### 	2.3.10. Raport statystyczny wspierający cele marketingowe
 
-##### 	b) Klient
+1. Produkt
 
-##### 	c) Dostawca
+2. Klient
 
-##### 	d) Oferta
+3. Dostawca
 
-##### 	e) Zamówienie
+4. Oferta
 
-#### 11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
+5. Zamówienie
 
-##### 	a) Produkt
+#### 2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
 
-##### 	b) Magazyn
+1. Produkt
+
+2. Magazyn
 
 
 Lista plików graficznych 
