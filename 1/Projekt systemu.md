@@ -1,5 +1,5 @@
 
-Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gadziński, Kacper Kwapisz
+Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gliński, Kacper Kwapisz
 
 Lead: Mateusz Popielarz
 
@@ -188,13 +188,46 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 1. Zarejestrowanie towaru w magazynie
 
+1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji oraz wystawienie dokumentów sprzedaży lub dokumentów magazynowych
+
+1. Weryfikacja dokumentacji
+
+1. Rozładunek za pomocą dostępnej infrastruktury przeładunkowej
+
+1. Przyjęcie towaru i kontrola stanu fizycznego przesyłki
+
+1. Przygotowanie towaru do składowania
+
+1. Przekazanie dostawy do części składowania
+
+1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
+
+1. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
+
+1. Powiązanie towaru z dostawcą i nabywcą
+
+1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
+
 1. Wyrejstrowanie towaru z magazynu
+
 
 #### 1.4.1.5 Kontrola stanów magazynowych
 
 1. Informowanie o danych poziomach stanu magazynu
 
 1. Tworzenie prognoz popytu w celu utrzymania kluczowych produktów na stanie
+
+1. Zaawansowane przeszukiwanie towarów aktualnych na magazynie jak i towarów sprzedanych
+
+1. Kontrolowanie sprzedaży online (w tym kontrola ilości i wartości towaru znajdującego się na magazynie)
+
+1. Kategoryzowanie towaru
+
+1. Przypisywanie numeru seryjnego dla każdego egzemplarza
+
+1. Przypisywanie numeru partii
+
+1. Przypisywania kodów EAN
 
 #### 1.4.1.6 Integracja z systemami marketingu
 
