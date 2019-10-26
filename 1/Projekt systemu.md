@@ -11,7 +11,6 @@ Lead: Mateusz Popielarz
 [TOC]
 
 
-
 # 1 Charakterystyka firmy
 
 ## 1.1  Przedmiot modelowania
@@ -115,15 +114,12 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
   
 
 - Dział usług (Rozwijanie systemów bezpieczeństwa) -
-
   Integracja systemu w tym obszarze będzie polegać tylko na obsłudze kadrowej
 
-  
 
 - Dział marketingu (Śledzenie rezultatów akcji marketingowych)
 
   System będzie generował raporty
-
   System będzie miał możliwość porównywania okresów akcji promocyjnej z wynikami sprzedaży
 
 
@@ -202,7 +198,6 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 #### 1.4.1.6 Integracja z systemami marketingu
 
-
 #### 1.4.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 
 Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
@@ -234,15 +229,13 @@ Przedsięwzięcie ma na celu
 - Zmniejszyć czas realizacji następnego zamówienia o tych samych parametrach jak jedno z poprzednich o 40%
 - Ograniczyć czas spędzany na wypełnianiu dokumentów przez wprowadzanie ustandaryzowanych elektroniczych formularzy o 20%
 
-
-
 # 2. Opis Wymagań Systemu
+
+## 2.1 Funkcje systemu ze strony widzenia użytkownika
 
 ## 2.2 Dane przechowywane w systemie
 
-### 2.2.1 Dane o encjach zewnętrznych 
-
-#### 2.2.1.1 Encje ogólne
+### 2.2.1 Encje ogólne
 Encja osoby jest to podstawowa definicja osoby fizycznej w naszym systemie
 1. Produkt
     1. Ilość na magazynie
@@ -279,12 +272,11 @@ Encja osoby jest to podstawowa definicja osoby fizycznej w naszym systemie
     1. Data rozwiązania umowy
     1. 
     
-1. Konsultatnt (Rozszerza `Pracownik`)
-    
-
+1. Konsultant (Rozszerza `Pracownik`)
+   
 1. Pracownik usług (Rozszerza `Pracownik`)
 
-#### 2.2.1.2 Opis klienta i powiązanych encji
+### 2.2.2 Opis klienta i powiązanych encji
 W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 1. Klient (Rozszerza `Osoba`) - jednoznacznie określa klienta
@@ -303,7 +295,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
     1. Data wystawienia
     1. Klient
 
-#### 2.2.1.3 Opis Dostawcy
+### 2.2.3 Opis Dostawcy
 
 1. Fabryka dostawcy (Rozszerza `Lokal przemysłowy`)
     1. Kody produktów obsługiwanych przez tą fabrykę
@@ -312,7 +304,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 1. Dostawca (Rozszerza `Firma`)
     1. Fabryki (Wiele `Fabryka Dostawcy`)
 
-#### 2.2.1.4 Opis Magazynu
+### 2.2.4 Opis Magazynu
 
 1. Miejce w magazynie
     1. Sektor
