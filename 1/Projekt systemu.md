@@ -26,7 +26,6 @@ System służy do wspomagania zarządzania `FH`.
 Firma jako działający na rynku pretendent do lidera w sprzedaży urządzeń z automatyki przemysłowej na codzień ma przed sobą wiele wyzwań. Jednym z nich jest świadczenie usług najwyższej jakości. W tym celu kadra specjalistów z zakresu marketingu, sprzedaży i obsługi magazynowej codziennie dokłada wszelkich starań, by utrzymać wysoki poziom zadowolenia klientów, co przekłada się na wysoką liczbę zrealizowanych zamówień przy zmniejszającym się czasie ich realizacji.
 Dla zmniejszenia czasu dostawy najpopularniejszych towarów są one magazynowane na miejscu i dostarczane z lokalnego miejsca przechowywania.
 
-
 Jako że nie każdy klient ma odpowiednio przeszkoloną kadrę do montażu sprzętu, firma pośredniczy w implementacji rozwiązania u klienta komunikując się z integratorami.
 Jednym z problemów z którym firma musi się zmierzyć jest rosnąca ilość zamówień, co sprawia, że kontrola nad procesami oraz zleceniami i zamówieniami jest coraz trudniejsza.
 
@@ -62,15 +61,25 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 
 ### 1.1.5 Schemat struktury organizacyjnej
 
+W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki opis)
+
+
+
+# !POPRAWKA Zsynchronizować tekst z obrazkiem, opisać R&D 
+
+
+
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
 
+###### Rysunek 1. Diagram struktura zarządu
+
 W obecnym okresie jest około 60 pracowników. 
-W sprzedzarzy pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
+W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
 
 - Zarząd: Pracownicy tego poziomu zajmują się koordynowaniem działania firmy na najwyższym poziomie, planują długofalową strategię ekspansji, zatwierdzają budżet, wyznaczają cele na kolejne kwartały
-- Marketing i sprzedarz: Pracownicy działu marketingu zajmują się przygotowaniem materiałów reklamowych, zakupem reklam oraz wyszukiwaniem potencjalnie zainteresowanych firm
-- Usługi: Głównie realizowane przez integratorów, zajmują się montażem
-- Hander: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
+- Marketing : Pracownicy działu marketingu zajmują się przygotowaniem materiałów reklamowych, zakupem reklam oraz wyszukiwaniem potencjalnie zainteresowanych firm
+- Dział R&D - 
+- Dzial handlowy: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
 
 ## 1.2 Opis obszaru modelowania OM
@@ -129,10 +138,9 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/Obsluga_aktywnosci.jpg)
 
+#### 1.3.1.1 Obsługa zamówień (opisac)
 
-#### 1.3.1.1 Obsługa zamówień
-
-1. Prowadzenie bazy dostawców
+1. Prowadzenie rejestru
     1. Rejestrowanie dostawców
     1. Korygowanie danych dostawcy
 
@@ -142,9 +150,10 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
     1. Ustalanie cen
     1. Generowanie cennika
 
-1. Przyjęcia zapytania ofertowego od klienta
-1. Przygotowanie oferty dla klienta
-1. Kontakt z klientem w celu potwierdzenia oferty
+1. Rezerwacja towaru
+1. Zmiana lub likwidacja rezerwacji towaru
+   
+    
 
 #### 1.4.1.2 Obsługa zleceń zakupu
 
@@ -152,23 +161,16 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
     1. Rejestrowanie klienta
     1. Korygowanie danych klienta
     1. Obsługa systemu rabatowego 
-
 1. Przyjmowanie zamówień od klienta
     1. Obsługa przedpłat
-
 1. Sprawdzenie aktualnych stanów magazynowych
+1. Przyjęcia zapytania ofertowego od klienta
+1. Przygotowanie oferty dla klienta
+1. Kontakt z klientem w celu potwierdzenia oferty
+1. Wystawienie faktury 
+1. Zatwierdzenie faktury - Klient zapłacił za faktury 
 
-1. Rezerwacja towaru
-
-1. Zmiana lub likwidacja rezerwacji towaru
-
-1. Generowanie dokumentów sprzedaży
-
-1. Wystawienie faktury
-
-1. Zatwierdzenie faktury 
-
-#### 1.4.1.3 Obsługa reklamacji
+#### 1.4.1.3 Obsługa reklamacji 
 
 1. Przyjęcie zgłoszenia reklamacji od klienta
 
@@ -197,10 +199,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
     1. Powiązanie towaru z dostawcą i nabywcą
     1. Wyrejstrowanie towaru z magazynu
 
-1. Zarzadzanie
-    1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
-    1. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
-    1. Przydział pracowników do określonych zadań
+1. 1. 
 
 
 #### 1.4.1.5 Kontrola stanów magazynowych
@@ -240,6 +239,12 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 
 
+## 1.4.1.8 Zarzadzanie
+
+1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
+1. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
+1. Przydział pracowników do określonych zadań
+
 
 Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
 
@@ -263,12 +268,14 @@ Produkt ma na celu wsparcie firmy poprzez:
 - Zwiększenie jakości obsługi przez ujednoliconą mechanizm informacji o kliencie
 
 ### 1.5.2 Cele przedsięwzięcia projektowego
-Przedsięwzięcie ma na celu
+Przedsięwzięcie docelowo miałoby na celu
 - Zmniejszenie średniego czasu obsługi pojedyńczego klienta o więcej niż 10%
 - Ograniczyć czas brak stanów magazynowych najpopularniejszych produktów o 15%
 - Ograniczyć reklamacje odrzucone przez dostawców o 5%
 - Zmniejszyć czas realizacji następnego zamówienia o tych samych parametrach jak jedno z poprzednich o 40%
 - Ograniczyć czas spędzany na wypełnianiu dokumentów przez wprowadzanie ustandaryzowanych elektroniczych formularzy o 20%
+
+Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania wymagań oraz przeprowadzenia ich analizy biznesowej.
 
 # 2. Opis Wymagań Systemu
 
@@ -281,10 +288,10 @@ Aktorzy
 - Księgowy - ma dostęp do zamówień i zleceń zakupu, synchronizuje dane między zewnętrznym 
 - System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji 
 
-## 2.2 Dane przechowywane w systemie
+## 2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
 
-### 2.2.1 Encje ogólne
-Encja osoby jest to podstawowa definicja osoby fizycznej w naszym systemie
+### 2.2.1 Dane ogólne
+
 1. Produkt
     1. Ilość na magazynie
     1. Obecna potrzebna ilość
@@ -362,7 +369,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
     1. Rezerwacja pod produkt wielkogabarytowy
 
 
-## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
+## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce 
 
 ### 2.3.1 Zapytanie ofertowe od klienta
 
@@ -449,8 +456,19 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 #### 2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
 
 1. Produkt
-
 2. Magazyn
+
+User stories -> 
+
+Mateusz 1. 7.
+
+Kamil 4 5
+
+Adam 2 6
+
+Kacper 3 8
+
+
 
 
 Lista plików graficznych 
