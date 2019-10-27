@@ -1,0 +1,103 @@
+skorygwoac 1
+punkt 2.0 - na podstawie punktu biznesowego, sforumowoac usecasy LUB userStories, typ-czego-co robi
+
+2.4 wstepne wymagania za pomoca use-case, 
+4-6 tematy opanowanie przydzielonego obszaru aktywnosci
+zaprezetnowanie
+2.1 - user stories WYBRANIE WYMAGAN I ROL, tez narysowanie USE CASE, opisanie scenariuszy bazujac na punkcie 1
+
+
+=======================
+
+schemat struktury organizacyjnej - zamiast uslugi - dzial obslugi klienta
+
+to ze nie bedziecie sie zajmowac -  trzeba napisac
+nazwa uslugi jest bezsensowna
+trzeba napisac dzial R&D, w opisie co tam sie dzieje
+NIE handel - dzial obslugi klienta i dzial zamowien LUB dzial handlowy
+
+Sprzedaz do dzial handlowy na schemacie
+
+
+Nie ma pod rysunkiem: numer rysunku i nazwa rysunku
+zdanie: w tym rozdziale bedzie napisany
+
+Obszary aktywnosci:
+
+zamowienie - od firmy do producetna,dystrybutora
+zamowien (firmy do dostawcow), zeby bylo wiadomo ze nie jest do klienta
+z rejestru dostawcow na ....
+
+CO zamowienie od dostawcy a co zamoienie od firmy do klientow
+zamowienie do dostawcy VS od firmy do klienta
+
+tylko rzeczy z naszej firmyy do dostawcow
+GDZIE tworzenie zamowienia
+
+
+POWINNO BYC generowanie zamowienia i obsluga zamowienia (do dostawcow)
+
+obsluga zlecen zakupu KTO KUPUJE, POWINNO BYC OBSLUGA KLIENTA
+
+ZAMOWIENIE ZLECENIE INTEGRATOR  - POTROJNA KOLIZJA, ZMIENIC ABY BYLA JASNOSC
+
+rejestr klientow,
+
+1.4.1.2
+generowanie dokumentow sprzedazy / wystawianie faktury - jaka roznica
+1 punkt obsluga faktur i dokumentow sprzezay
+
+1.4.5
+obsluga ofert - dokladniej jak to dziala
+
+1413
+prowadzenie rejestru reklamacji
+
+1414
+zaczac od prowadzenia rejestru magazynowego
+sprawdzanie bezpi poziomow , robienie inwentaryzacji
+nastepnie fizyczne
+
+przydzial pracownikow do okreslonych zadan X
+organizacja - do ogolnych nie tylko do magazynu
+
+14143
+kolejny obszar aktywnosci dla calosci
+wspomaganie zarzadzania projektu
+
+rozdzielamy BAZE KLIENTOW I POTENCJALNYCH KLIENTOW
+OBSLUGA REJESTRACJI POTENCJALNYCH KLIENTOW
+
+
+=========== 2.0 >
+
+przecwiczenie procesu pozyskiwania, modelu wymagan, produktowych, 
+wydzielenie jako zyski z przedswiziecia projektowego
+
+KSIEGOWOSC ZEWNETRZNA (nie ksiegowy)
+
+gromadzenie ksiegowosci przychodzacej wychodzacej
+X wymienic dostawcow, tutaj bedzie takze klient, 
+perspektywa zlozenie zamowienia przez klienta
+
+role wszystkie pokryte brakuje klienta
+
+NIE PISZEMY O ENCJACH mamy dane, istnieja potrzeby na przechowywanie danych produkty, faktury itd wyrzucic encje chcemy rejestry
+pracownik | osoba | 
+
+dane klienta nie encje
+
+wzory dokumentow
+oferta zamowienie zlecenie - wzory dokumentow (od firmy albo szkic)
+
+wzor faktury
+
+
+do tego trzeba POSORTOWAC, rozszezyc opisy,
+dla 2.1 userStories,w obszarze kolejnych OA (manager potrzebuje X aby zaspokoic ...)
+wszystkie punkty 2
+userStories nastepnie UseCase
+
+
+
+
