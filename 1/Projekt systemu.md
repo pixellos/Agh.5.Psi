@@ -184,71 +184,61 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 #### 1.4.1.4 Obsługa magazynu
 
-1. Sprawdzenie stanu magazynu
+1. Rozładunek oraz załadunek
+    1. Weryfikacja dokumentacji
+    1. Rozładunek za pomocą dostępnej infrastruktury przeładunkowej
+    1. Przyjęcie towaru i kontrola stanu fizycznego przesyłki
+    1. Przygotowanie towaru do składowania
+    1. Przekazanie dostawy do części składowania
 
-1. Zarejestrowanie towaru w magazynie
+1. Czynności monitorujące
+    1. Zarejestrowanie towaru w magazynie
+    1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji oraz wystawienie dokumentów sprzedaży lub dokumentów magazynowych
+    1. Powiązanie towaru z dostawcą i nabywcą
+    1. Wyrejstrowanie towaru z magazynu
 
-1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji oraz wystawienie dokumentów sprzedaży lub dokumentów magazynowych
-
-1. Weryfikacja dokumentacji
-
-1. Rozładunek za pomocą dostępnej infrastruktury przeładunkowej
-
-1. Przyjęcie towaru i kontrola stanu fizycznego przesyłki
-
-1. Przygotowanie towaru do składowania
-
-1. Przekazanie dostawy do części składowania
-
-1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
-
-1. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
-
-1. Powiązanie towaru z dostawcą i nabywcą
-
-1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
-
-1. Wyrejstrowanie towaru z magazynu
+1. Zarzadzanie
+    1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
+    1. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
+    1. Przydział pracowników do określonych zadań
 
 
 #### 1.4.1.5 Kontrola stanów magazynowych
 
-1. Informowanie o danych poziomach stanu magazynu
+1. Kontrolowanie
+    1. Sprawdzenie stanu magazynu
+    1. Informowanie o danych poziomach stanu magazynu
+    1. Zaawansowana kontrola towarów aktualnych na magazynie jak i towarów sprzedanych
+    1. Kontrolowanie sprzedaży online (w tym kontrola ilości i wartości towaru znajdującego się na magazynie)
 
-1. Tworzenie prognoz popytu w celu utrzymania kluczowych produktów na stanie
 
-1. Zaawansowane przeszukiwanie towarów aktualnych na magazynie jak i towarów sprzedanych
+1. Kategoryzowanie
+    1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
+    1. Przypisywanie numeru seryjnego dla każdego egzemplarza
+    1. Przypisywanie numeru partii
+    1. Przypisywania kodów EAN
 
-1. Kontrolowanie sprzedaży online (w tym kontrola ilości i wartości towaru znajdującego się na magazynie)
+1. Prognozowanie popytu
+    1. Tworzenie prognoz popytu w celu utrzymania kluczowych produktów na stanie
 
-1. Kategoryzowanie towaru
-
-1. Przypisywanie numeru seryjnego dla każdego egzemplarza
-
-1. Przypisywanie numeru partii
-
-1. Przypisywania kodów EAN
 
 
 #### 1.4.1.6 Integracja z systemami marketingu
-1. Pozycjonowanie strony w google
-
-1. Reklama na portalach spolecznościowych
-
-1. Zbieranie informacji o odwiedzających strone z produktami
-
-
+1. Marketing w internecie
+    1. Pozycjonowanie strony w google
+    1. Reklama na portalach spolecznościowych
+    1. Zbieranie informacji o odwiedzających strone z produktami
 
 #### 1.4.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 1. Prowadzenie bazy potencjalnych klientów
+    1. Dodawanie informacji i danych o klientach
+    1. Usuwanie informacji i danych o klientach
 
-1. Dodawanie klientów do bazy
+1. Informowanie o ofercie
+    1. Wysylanie notyfikacji o o ofercie pocztą elektroniczną email
+    1. Udzielanie informacji o ofercie telefonicznie
 
-1. Usuwanie klientów z bazy
 
-1. Wysylanie notyfikacji o o ofercie pocztą elektroniczną email
-
-1. Udzielanie informacji o ofercie telefonicznie
 
 
 Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
