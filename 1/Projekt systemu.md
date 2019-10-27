@@ -287,9 +287,9 @@ Aktorzy
 - Konsultant - wprowadza zamówienia do systemu, aktualizuje je, dezaktywuje, zgłasza zlecenia zakupu, sprawdza stan zamówień, zgłasza reklamację w system, sprawdza notyfikacje, może przejąć opiekę nad klientem innego konsultanta
 - Magazynier - aktualizuje stan magazynowy, zgłasza ewentualne nieprawidłowości w stanie faktycznym, zatwierdza wysyłkę towaru
 - Marketingowiec - wprowadzą informacje do systemu na temat kampanii promocyjnych, aktualizuje ich stan, ma dostęp do statystyk
-- Członek zarządu - Ma dostęp do większości informacji, widoki powinny ukrywać dane użytkownika rodo
-- Księgowy - ma dostęp do zamówień i zleceń zakupu, wystawia faktury, aktualizuje listę płac, dba o domykanie się budżetu
-- System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu ( np na wysłane), lub stan reklamacji 
+- Członek zarządu - Ma dostęp do większości informacji, jego zakresem zainteresowań będzie wpływ przeprowadzanych akcji na wyniki finansowe i efektywność działań ,widoki dla tego aktora powinny ukrywać dane użytkownika RODO
+- Księgowy - ma dostęp do zamówień i zleceń zakupu, synchronizuje dane między zewnętrznym 
+- System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji 
 
 ## 2.2 Dane przechowywane w systemie
 
@@ -377,35 +377,36 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 ### 2.3.1 Zapytanie ofertowe od klienta
 
 1. Klient
+
 1. Produkt 
 
 ### 2.3.2 Oferta 
 
 1. Klient
 
-2. Pracownik
-
-3. Produkt
-
-#### 	2.3.3 Zamówienie towaru u dostawcy
+1. Pracownik
 
 1. Produkt
 
-2. Dostawca
+### 2.3.3 Zamówienie towaru u dostawcy
 
-3. Oferta
+1. Produkt
 
-#### 	2.3.4 Potwierdzenie zamówienia od dostawcy
+1. Dostawca
+
+1. Oferta
+
+#### 2.3.4 Potwierdzenie zamówienia od dostawcy
 
 1. Zamówienie towaru u dostawcy
 
-#### 	2.3.5. Faktura zakupu od dostawcy
+#### 2.3.5. Faktura zakupu od dostawcy
 
 1. Faktura
 
 2.  Zamówienie towaru u dostawcy
 
-#### 	2.3.6. Rejestracja towaru na magazynie
+#### 2.3.6. Rejestracja towaru na magazynie
 
 1.  Produkt
 
@@ -415,7 +416,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 4. Dostawca
 
-#### 	2.3.7. Wyrejestrowanie towaru z magazynu
+#### 2.3.7. Wyrejestrowanie towaru z magazynu
 
 1.  Produkt
 
@@ -423,7 +424,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 3. Oferta
 
-#### 	2.3.8. Faktura zakupu dla klienta
+#### 2.3.8. Faktura zakupu dla klienta
 
 1.  Faktura
 
@@ -431,7 +432,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 3. Produkt
 
-#### 	2.3.9. Raport sprzedażowe do analiz wewnętrznych 
+#### 2.3.9. Raport sprzedażowe do analiz wewnętrznych 
 
 1. Produkt
 
@@ -443,7 +444,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 5. Zamówienie
 
-#### 	2.3.10. Raport statystyczny wspierający cele marketingowe
+#### 2.3.10. Raport statystyczny wspierający cele marketingowe
 
 1. Produkt
 
@@ -465,16 +466,3 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 Lista plików graficznych 
 1. [Składniki organizacyjne firmy](#1.1.3-składniki-organizacyjne-firmy)
 2. [Obszary aktywności](#1.3.1-Obszary-aktywności)
-
-
-
-# Słownik pojęć dziedzinowych:
-
-## I
-
-- Integrator - Zewnętrzna firma zajmująca się monatżem u klienta
-
-## Z
-
-- Zamówienie - Nasza firma zamawia produkt od dystrybutora i musi opłacić fakturę.
-- Zlecenie zakupu - Klient zgadza się na wystawienie mu faktury i zobowiązuje zapłacić, za co otrzyma towar.
