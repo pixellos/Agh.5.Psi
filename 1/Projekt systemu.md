@@ -14,7 +14,7 @@ Lead: Mateusz Popielarz
 # 1 Charakterystyka firmy
 
 ## 1.1  Przedmiot modelowania
-### 1.1.1 Nazwa firmy 
+### 1.1.1 Nazwa firmy
 Instom
 
 ### 1.1.2 Typ firmy  
@@ -33,12 +33,12 @@ Wysoko wykwalifikowana kadra do spraw sprzedaży służy klientowi wiedzą przy 
 
 ### 1.1.3 Opis dziedziny działalności
 
-Klientami są: przemysł, hurtowanie, integratorzy. 
+Klientami są: przemysł, hurtowanie, integratorzy.
 Klienci w większości są inżynierami.
 
 Komunikacja odbywa się przez email. Wysyłają zapytania z listą interesujących ich produktów.
 
-Niektórzy kliencie  potrzebują pomocy w dobraniu produktów,  konfiguracji zestawu produktów. 
+Niektórzy kliencie  potrzebują pomocy w dobraniu produktów,  konfiguracji zestawu produktów.
 
 Integratorzy kupują produkty od firmy, lub zajmują się samym montażem, gdy fabryka dokona zakupu. Są to firmy zewnętrzne niepowiązane.
 
@@ -65,7 +65,7 @@ W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki op
 
 
 
-# !POPRAWKA Zsynchronizować tekst z obrazkiem, opisać R&D 
+# !POPRAWKA Zsynchronizować tekst z obrazkiem, opisać R&D
 
 
 
@@ -73,12 +73,12 @@ W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki op
 
 ###### Rysunek 1. Diagram struktura zarządu
 
-W obecnym okresie jest około 60 pracowników. 
+W obecnym okresie jest około 60 pracowników.
 W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
 
 - Zarząd: Pracownicy tego poziomu zajmują się koordynowaniem działania firmy na najwyższym poziomie, planują długofalową strategię ekspansji, zatwierdzają budżet, wyznaczają cele na kolejne kwartały
 - Marketing : Pracownicy działu marketingu zajmują się przygotowaniem materiałów reklamowych, zakupem reklam oraz wyszukiwaniem potencjalnie zainteresowanych firm
-- Dział R&D - 
+- Dział R&D -
 - Dzial handlowy: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
 
@@ -108,7 +108,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
   System będzie przechowywał informacje na temat reklamacji i ich stanu
 
-  
+
 
 - Dział księgowości (Wewnętrzne rozliczenia, rozliczenia faktur z dostawcami)
 
@@ -120,7 +120,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
   System będzie generował listę płac
 
-  
+
 
 - Dział usług (Rozwijanie systemów bezpieczeństwa) -
   Integracja systemu w tym obszarze będzie polegać tylko na obsłudze kadrowej
@@ -142,35 +142,58 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 1. Prowadzenie rejestru dostawcy
     1. Rejestrowanie dostawców
-    
+
         Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
+<<<<<<< HEAD
     
       ​	Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
     
+
+=======
+
+      ​	Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
+
+>>>>>>> a2f9f23013c6488decefa7d9b62d2b0dcf87aca3
     1. Korygowanie danych dostawcy
-      
+
        Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
-      
-       ​	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
     
+       ​	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> a2f9f23013c6488decefa7d9b62d2b0dcf87aca3
     1. Rejestrowanie fabryki w systemie
-      
+
        Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ istniejąca nie była wcześniej wprowadzona do systemu.
-      
+    
        ​	Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
+<<<<<<< HEAD
     
       Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
     
       ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
+
+
+​      
+
+=======
+
+      Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
     
-      
-   
+      ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
+
+
+
+>>>>>>> a2f9f23013c6488decefa7d9b62d2b0dcf87aca3
 1. Prowadzenie katalogu i cennika towarów
     1. Dodawanie nowych pozycji katalogów towarów
-    
+
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `dodać nową pozycję towaru` w katalogu.
-    
+
    ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
+<<<<<<< HEAD
    
     1. Aktywacja i dezaktywacja pozycji katalogu towarów
    
@@ -190,98 +213,139 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
    
        ​	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
    
+
+=======
+
+    1. Aktywacja i dezaktywacja pozycji katalogu towarów
+    
+       Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `zaktualizować pozycję towaru` w katalogu.
+    
+       ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.
+    
+    1. Ustalanie cen
+    
+       Jako `Konsultant` mogę dodać do towaru cenę.
+    
+       ​	W systemie każdy `towar` musi mieć możliwość definiowania `ceny` - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.
+    
+    1. Generowanie cennika
+    
+       Jako Konsultant chcę pokazać klientowi dostępne dla niego `towary` w przystępnej postaci
+    
+       ​	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
+
+>>>>>>> a2f9f23013c6488decefa7d9b62d2b0dcf87aca3
 1. Rezerwacja towaru
 
     Jako `Konsultatnt` gdy istnieje prawdopodobieństwo `Zlecenia zakupu` obejmującego dany towar mogę go `zarezerwować`
 
-    ​	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje `wycofany z rezerwacji`. 
+    ​	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje `wycofany z rezerwacji`.
 
 1. Zmiana lub likwidacja rezerwacji towaru
-   
+
    Jako `Konsultant` gdy `Zlecenia Zakupu` przestanie obejmować dany towar mogę zlikwidować całkowicie `rezerwację towaru` u danego dostawcy .
-   
+
    ​	W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być możliwe anulowanie całości lub części `Zamówienia` - ta informacja musi być jak najszybicej wysłana do `Dostawcy` . W sytuacji, gdy dostawca zaczął już produkcje częsci jest to przypadek niemożliwy do automatycznego rozstrzygnięcia przez system - bezpośredni manager musi zostać poinformowany. Historia zmian musi być przechowywana.
-   
-    
+
+
 
 #### 1.4.1.2 Obsługa zleceń zakupu
 
 1. Prowadzenie bazy klientów
-    1. Rejestrowanie klienta
-    
-       `Konsultant` w sytuacji gdy nawiązuję się współpraca z nowym `klientem` powinien mieć możliwość dodania  go do system poprzez interface udostępniany przez system.
-    
-    1. Korygowanie danych klienta
-    
-       `Konsultant` powiadomiony przez `klienta` o zmianie danych `klienta` powinien mieć możliwość wprowadzenia poprawnych danych do systemu.
-    
-1. Przyjęcie zapytania ofertowego od klienta
 
-    `Klient` wysyła zapytanie ofertowe do `konsultanta`, `konsultant` powinien być powiadomiony o takim zapytaniu w celu dalszego procesowania danego zapytania.
+   1. Rejestrowanie klienta
 
-1. Przygotowanie oferty dla klienta
+      `Konsultant` w sytuacji gdy nawiązuję się współpraca z nowym `klientem` powinien mieć możliwość dodania  go do system poprzez interface udostępniany przez system.
 
-    1. Utworzenie oferty w systemie
+   2. Korygowanie danych klienta
 
-       `Konsultant` po otrzymaniu zapytania ofertowego od klienta powinien mieć możliwośc utworzenia oferty w systemie.
+      `Konsultant` powiadomiony przez `klienta` o zmianie danych `klienta` powinien mieć możliwość wprowadzenia poprawnych danych do systemu.
 
-    2. Dodanie produktów do oferty
+2. Przyjęcie zapytania ofertowego od klienta
 
-       1. Znalezienie w systemie oraz dodanie produktów do oferty
+   `Klient` wysyła zapytanie ofertowe do `konsultanta`, `konsultant` powinien być powiadomiony o takim zapytaniu w celu dalszego procesowania danego zapytania.
 
-       `Konsultant` po stworzeniu oferty powinien mieć możliwość dodania produktów do oferty.
+3. Przygotowanie oferty dla klienta
 
-       Produkty są zdefiniowane przez samego `klienta` lub wyszukane w systemie przez `konsultanta`.
+   1. Utworzenie oferty w systemie
 
-       2. Sprawdzenie dostępności produktu
+      `Konsultant` po otrzymaniu zapytania ofertowego od klienta powinien mieć możliwośc utworzenia oferty w systemie.
 
-          1. Sprawdzenie aktualnego stanu magazynu
+   2. Dodanie produktów do oferty
 
-             `Konsultant` podczas tworzenia oferty dla klienta musi znać czas realizacji danej oferty, w tym celu powinien mieć możliwość sprawdzenia czy produkty, których potrzebuje klient znajdują się na magazynie.
+      1. Znalezienie w systemie oraz dodanie produktów do oferty
 
-          2. Sprawdzenie najszybszego możliwego czasu dostawy
+      `Konsultant` po stworzeniu oferty powinien mieć możliwość dodania produktów do oferty.
 
-             W przypadku braku towarów na magazynie `konsultant` powinien mieć możliwość sprawdzenia czasu oczekiwania na dostawe produktów. 
+      Produkty są zdefiniowane przez samego `klienta` lub wyszukane w systemie przez `konsultanta`.
 
-    3. Wygenerowanie dokumentu ofertowego
+      2. Sprawdzenie dostępności produktu
 
-       `Konsultant` po stworzeniu oferty oraz dodaniu odpowiednio skonfigurowanych produktów powinien mieć możliwość wygenerować dokument ofertowy w czytelnej dla `klienta` formie.
+         1. Sprawdzenie aktualnego stanu magazynu
 
-    4. Zatwierdzenie oferty przez przełożonego
+            `Konsultant` podczas tworzenia oferty dla klienta musi znać czas realizacji danej oferty, w tym celu powinien mieć możliwość sprawdzenia czy produkty, których potrzebuje klient znajdują się na magazynie.
 
-       Jeżeli wymaga tego sytuacja, na którą wpływa doświadczenie oraz pozycja `konsultanta`, to system powinien umożliwiać `konsultantowi` przedstawienie oferty do przełożonego w celu jej akceptacji.
+         2. Sprawdzenie najszybszego możliwego czasu dostawy
 
-1. Kontakt z klientem w celu potwierdzenia oferty
+            W przypadku braku towarów na magazynie `konsultant` powinien mieć możliwość sprawdzenia czasu oczekiwania na dostawe produktów. 
 
-    1. Przedstawienie oferty klientowi
+   3. Wygenerowanie dokumentu ofertowego
 
-       `Konsultant` po stworzeniu oferty i wygenerowaniu dokumentu ofertowego, przedstawia ten dokument `klientowi`. 
+      `Konsultant` po stworzeniu oferty oraz dodaniu odpowiednio skonfigurowanych produktów powinien mieć możliwość wygenerować dokument ofertowy w czytelnej dla `klienta` formie.
 
-    2. Potwierdzenie oferty przez klienta
+   4. Zatwierdzenie oferty przez przełożonego
 
-       `Klient` jest zgodny co do oferty, `konsultant` wtedy powinien mieć możliwość sprawdzenia w systemie jaka forma potwierdzenia jest możliwa dla danego `klienta`. Może być to przedpłata dla nowych klientów, lub też zwykły email potwierdzający od zaufanych klientów. `Konsultant` powinien mieć możliwość sprawdzenia wszystkich danych wpływających na dalszy proces zamówienia, mogą być to kredyty kupieckie lub historia spóźnień w zapłatach przez danego `klienta`. W razie braku informacji lub doświadczenia posiadanych przez `konsultanta`, `konsultant` powinien mieć możliwość uzyskania takiej informacji przez system od przełożonego.
+      Jeżeli wymaga tego sytuacja, na którą wpływa doświadczenie oraz pozycja `konsultanta`, to system powinien umożliwiać `konsultantowi` przedstawienie oferty do przełożonego w celu jej akceptacji.
 
-1. Wystawienie faktury 
+4. Kontakt z klientem w celu potwierdzenia oferty
 
-    `Konsultant` powinien mieć możliwość przesłania potwierdzonej oferty do działu księgowości w celu wystawienia faktury dla `klienta`.
+   1. Przedstawienie oferty klientowi
 
-1. Zatwierdzenie faktury - Klient zapłacił za faktury 
+      `Konsultant` po stworzeniu oferty i wygenerowaniu dokumentu ofertowego, przedstawia ten dokument `klientowi`. 
 
-    # <--- Ktoś pamięta czemu zostawiliśmy ten podział ostatecznie ? 5/6
+   2. Potwierdzenie oferty przez klienta
+
+      `Klient` jest zgodny co do oferty, `konsultant` wtedy powinien mieć możliwość sprawdzenia w systemie jaka forma potwierdzenia jest możliwa dla danego `klienta`. Może być to przedpłata dla nowych klientów, lub też zwykły email potwierdzający od zaufanych klientów. `Konsultant` powinien mieć możliwość sprawdzenia wszystkich danych wpływających na dalszy proces zamówienia, mogą być to kredyty kupieckie lub historia spóźnień w zapłatach przez danego `klienta`. W razie braku informacji lub doświadczenia posiadanych przez `konsultanta`, `konsultant` powinien mieć możliwość uzyskania takiej informacji przez system od przełożonego.
+
+5. Wystawienie faktury 
+
+   `Konsultant` powinien mieć możliwość przesłania potwierdzonej oferty do działu księgowości w celu wystawienia faktury dla `klienta`.
+
+6. Zatwierdzenie faktury - Klient zapłacił za faktury 
+
 
 #### 1.4.1.3 Obsługa reklamacji 
+=======
+1. Wystawienie faktury
+1. Zatwierdzenie faktury - Klient zapłacił za faktury
 
+#### 1.4.1.3 Obsługa reklamacji
 1. Przyjęcie zgłoszenia reklamacji od klienta
 
-1. Analiza zasadności reklamacji
+Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać działający produkt lub zwrot pieniędzy.
 
-1. Zgłoszenie reklamacji dostawcy
+2. Analiza zasadności
 
-    1. Sprawdzenie zasadności reklamacji przez zespół
+    2.1. Sprawdzenie zasadności reklamacji przez zespół
 
-    1. Przygotowanie produktów do odesłania do producenta
+    Jako `właściciel` chciałbym, aby `zespół techniczny` przeanalizował zasadność oddania produktu do reklamacji przez `klienta`, aby nie angażować `dostawcy` we wszystkie zgłoszenia reklamacji.
 
-    1. Realizacja 
+
+3. Zgłoszenie reklamacji dostawcy
+
+    3.1. Sprawdzenie zasadności reklamacji przez zespół
+
+    Jako `właściciel` chciałbym, aby `zespół techniczny` przygotował reklamowane produkty do odesłania `dostawcy`.
+
+
+    3.2. Realizacja reklamacji
+    
+    Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od neigo wymienione, działające produkty.
+
+4. Prowadzenie rejestru reklamacji
+
+Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
+
 
 #### 1.4.1.4 Obsługa magazynu
 
@@ -298,7 +362,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
     1. Powiązanie towaru z dostawcą i nabywcą
     1. Wyrejstrowanie towaru z magazynu
 
-1. 1. 
+1. 1.
 
 
 #### 1.4.1.5 Kontrola stanów magazynowych
@@ -352,11 +416,20 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 
 
-## 1.4.1.8 Zarzadzanie
+#### 1.4.1.8 Zarzadzanie
 
 1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
-1. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
-1. Przydział pracowników do określonych zadań
+
+Jako `właściciel` chciałbym mieć możliwość łatwego obiegu dokumentacji między działami.
+
+2. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
+
+Jako `właściciel` chciałbym znać zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od `dostawcy`.
+
+Jako `właściciel` chciałbym znać zapotrzebowanie ilościowe na produkty do zamówienia od `dostawcy`.
+
+
+3. Przydział pracowników do określonych zadań
 
 
 Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
@@ -372,7 +445,7 @@ Przekrojowy system sprzedażowo-konsultingowy - PSSK
 ## 1.5 Cele do osiągnięcia
 
 ### 1.5.1 Cele produktu
-Produkt ma na celu wsparcie firmy poprzez: 
+Produkt ma na celu wsparcie firmy poprzez:
 - Redukcję narzutu komunikacyjnego między ludźmi i formalizacji komunikacji
 - Krystalizację procedur istniejących w firmie
 - Umożliwieniem dostępu do statystyk działalności
@@ -398,8 +471,8 @@ Aktorzy
 - Magazynier - aktualizuje stan magazynowy, zgłasza ewentualne nieprawidłowości w stanie faktycznym, zatwierdza wysyłkę towaru
 - Marketingowiec - wprowadzą informacje do systemu na temat kampanii promocyjnych, aktualizuje ich stan, ma dostęp do statystyk
 - Członek zarządu - Ma dostęp do większości informacji, jego zakresem zainteresowań będzie wpływ przeprowadzanych akcji na wyniki finansowe i efektywność działań ,widoki dla tego aktora powinny ukrywać dane użytkownika RODO
-- Księgowy - ma dostęp do zamówień i zleceń zakupu, synchronizuje dane między zewnętrznym 
-- System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji 
+- Księgowy - ma dostęp do zamówień i zleceń zakupu, synchronizuje dane między zewnętrznym
+- System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji
 
 ## 2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
 
@@ -416,7 +489,7 @@ Aktorzy
     1. Nazwisko
     1. Email kontaktowy
     1. Telefon kontaktowy
-    1. Adres kontaktowy 
+    1. Adres kontaktowy
 
 1. Lokal przemysłowy
     1. Adres
@@ -438,10 +511,10 @@ Aktorzy
     1. Pensja
     1. Data zatrudnienia
     1. Data rozwiązania umowy
-    1. 
-    
+    1.
+
 1. Konsultant (Rozszerza `Pracownik`)
-   
+
 1. Pracownik usług (Rozszerza `Pracownik`)
 
 ### 2.2.2 Opis klienta i powiązanych encji
@@ -482,15 +555,15 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
     1. Rezerwacja pod produkt wielkogabarytowy
 
 
-## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce 
+## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce
 
 ### 2.3.1 Zapytanie ofertowe od klienta
 
 1. Klient
 
-1. Produkt 
+1. Produkt
 
-### 2.3.2 Oferta 
+### 2.3.2 Oferta
 
 1. Klient
 
@@ -542,7 +615,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 3. Produkt
 
-#### 2.3.9. Raport sprzedażowe do analiz wewnętrznych 
+#### 2.3.9. Raport sprzedażowe do analiz wewnętrznych
 
 1. Produkt
 
@@ -571,7 +644,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 1. Produkt
 2. Magazyn
 
-User stories -> 
+User stories ->
 
 Mateusz 1. 7.
 
@@ -584,6 +657,6 @@ Kacper 3 8
 
 
 
-Lista plików graficznych 
+Lista plików graficznych
 1. [Składniki organizacyjne firmy](#1.1.3-składniki-organizacyjne-firmy)
 2. [Obszary aktywności](#1.3.1-Obszary-aktywności)
