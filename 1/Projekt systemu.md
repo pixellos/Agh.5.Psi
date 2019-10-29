@@ -144,25 +144,25 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
     1. Rejestrowanie dostawców
     
         Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
-      
+    
       ​	Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
-      
+    
     1. Korygowanie danych dostawcy
       
        Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
       
        ​	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
-     
+    
     1. Rejestrowanie fabryki w systemie
       
        Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ istniejąca nie była wcześniej wprowadzona do systemu.
       
        ​	Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
-      
+    
       Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
-      
+    
       ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
-      
+    
       
    
 1. Prowadzenie katalogu i cennika towarów
@@ -171,25 +171,25 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `dodać nową pozycję towaru` w katalogu.
     
    ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
-    
+   
     1. Aktywacja i dezaktywacja pozycji katalogu towarów
-    
+   
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `zaktualizować pozycję towaru` w katalogu.
-    
+   
        ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.
-    
+   
     1. Ustalanie cen
-    
+   
        Jako `Konsultant` mogę dodać do towaru cenę.
-    
+   
        ​	W systemie każdy `towar` musi mieć możliwość definiowania `ceny` - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.
-    
+   
     1. Generowanie cennika
-    
+   
        Jako Konsultant chcę pokazać klientowi dostępne dla niego `towary` w przystępnej postaci
-    
+   
        ​	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
-    
+   
 1. Rezerwacja towaru
 
     Jako `Konsultatnt` gdy istnieje prawdopodobieństwo `Zlecenia zakupu` obejmującego dany towar mogę go `zarezerwować`
@@ -208,16 +208,66 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 1. Prowadzenie bazy klientów
     1. Rejestrowanie klienta
+    
+       `Konsultant` w sytuacji gdy nawiązuję się współpraca z nowym `klientem` powinien mieć możliwość dodania  go do system poprzez interface udostępniany przez system.
+    
     1. Korygowanie danych klienta
-    1. Obsługa systemu rabatowego 
-1. Przyjmowanie zamówień od klienta
-    1. Obsługa przedpłat
-1. Sprawdzenie aktualnych stanów magazynowych
-1. Przyjęcia zapytania ofertowego od klienta
+    
+       `Konsultant` powiadomiony przez `klienta` o zmianie danych `klienta` powinien mieć możliwość wprowadzenia poprawnych danych do systemu.
+    
+1. Przyjęcie zapytania ofertowego od klienta
+
+    `Klient` wysyła zapytanie ofertowe do `konsultanta`, `konsultant` powinien być powiadomiony o takim zapytaniu w celu dalszego procesowania danego zapytania.
+
 1. Przygotowanie oferty dla klienta
+
+    1. Utworzenie oferty w systemie
+
+       `Konsultant` po otrzymaniu zapytania ofertowego od klienta powinien mieć możliwośc utworzenia oferty w systemie.
+
+    2. Dodanie produktów do oferty
+
+       1. Znalezienie w systemie oraz dodanie produktów do oferty
+
+       `Konsultant` po stworzeniu oferty powinien mieć możliwość dodania produktów do oferty.
+
+       Produkty są zdefiniowane przez samego `klienta` lub wyszukane w systemie przez `konsultanta`.
+
+       2. Sprawdzenie dostępności produktu
+
+          1. Sprawdzenie aktualnego stanu magazynu
+
+             `Konsultant` podczas tworzenia oferty dla klienta musi znać czas realizacji danej oferty, w tym celu powinien mieć możliwość sprawdzenia czy produkty, których potrzebuje klient znajdują się na magazynie.
+
+          2. Sprawdzenie najszybszego możliwego czasu dostawy
+
+             W przypadku braku towarów na magazynie `konsultant` powinien mieć możliwość sprawdzenia czasu oczekiwania na dostawe produktów. 
+
+    3. Wygenerowanie dokumentu ofertowego
+
+       `Konsultant` po stworzeniu oferty oraz dodaniu odpowiednio skonfigurowanych produktów powinien mieć możliwość wygenerować dokument ofertowy w czytelnej dla `klienta` formie.
+
+    4. Zatwierdzenie oferty przez przełożonego
+
+       Jeżeli wymaga tego sytuacja, na którą wpływa doświadczenie oraz pozycja `konsultanta`, to system powinien umożliwiać `konsultantowi` przedstawienie oferty do przełożonego w celu jej akceptacji.
+
 1. Kontakt z klientem w celu potwierdzenia oferty
+
+    1. Przedstawienie oferty klientowi
+
+       `Konsultant` po stworzeniu oferty i wygenerowaniu dokumentu ofertowego, przedstawia ten dokument `klientowi`. 
+
+    2. Potwierdzenie oferty przez klienta
+
+       `Klient` jest zgodny co do oferty, `konsultant` wtedy powinien mieć możliwość sprawdzenia w systemie jaka forma potwierdzenia jest możliwa dla danego `klienta`. Może być to przedpłata dla nowych klientów, lub też zwykły email potwierdzający od zaufanych klientów. `Konsultant` powinien mieć możliwość sprawdzenia wszystkich danych wpływających na dalszy proces zamówienia, mogą być to kredyty kupieckie lub historia spóźnień w zapłatach przez danego `klienta`. W razie braku informacji lub doświadczenia posiadanych przez `konsultanta`, `konsultant` powinien mieć możliwość uzyskania takiej informacji przez system od przełożonego.
+
 1. Wystawienie faktury 
+
+    `Konsultant` powinien mieć możliwość przesłania potwierdzonej oferty do działu księgowości w celu wystawienia faktury dla `klienta`.
+
 1. Zatwierdzenie faktury - Klient zapłacił za faktury 
+
+    # <--- Ktoś pamięta czemu zostawiliśmy ten podział ostatecznie ? 5/6
 
 #### 1.4.1.3 Obsługa reklamacji 
 
@@ -273,9 +323,23 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 #### 1.4.1.6 Integracja z systemami marketingu
 1. Marketing w internecie
-    1. Pozycjonowanie strony w google
-    1. Reklama na portalach spolecznościowych
-    1. Zbieranie informacji o odwiedzających strone z produktami
+    1. Pozycjonowanie strony
+    
+       Strona firmy powinna mieć zapewnioną dobrą wyszukiwalność w popularnych przeglądarkach.
+    
+    1. Reklama na portalach biznesowych powiązanych z branżą
+    
+       Reklamy na portalach biznesowych przedstawiają produkty oferowane przez firme. System powinien dostarczyć informacji o najlepiej sprzedających się produktach oraz innych statystykach zdefiniowanych na potrzeby marketingu.
+    
+    1. Statystyki powiązane z katalogiem produktowym
+    
+       Katalog produktowy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktowym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.
+    
+2. Wystawienie danych na strategiczne potrzeby marketingowe
+
+    1. Podejmowanie decyzji przez dział marketingu na podstawie danych
+
+       Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
 
 #### 1.4.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 1. Prowadzenie bazy potencjalnych klientów
