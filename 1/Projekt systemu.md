@@ -69,7 +69,7 @@ W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki op
 
 
 
-![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/companyStructure.jpg)
+![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/companyStructure.png)
 
 ###### Rysunek 1. Diagram struktura zarządu
 
@@ -136,7 +136,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 ## 1.3 Zakres odpowiedzialności systemu (ZOS)
 ### 1.3.1 Obszary aktywności (OA)
 
-![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/Obsluga_aktywnosci.jpg)
+![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/Obsluga_aktywnosci.png)
 
 #### 1.3.1.1 Obsługa zamówień (opisac)
 
