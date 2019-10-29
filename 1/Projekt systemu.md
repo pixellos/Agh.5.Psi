@@ -144,8 +144,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
     1. Rejestrowanie dostawców
 
         Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
-<<<<<<< HEAD
-    
+
       ​	Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
     
 
@@ -153,23 +152,21 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
       ​	Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
 
->>>>>>> a2f9f23013c6488decefa7d9b62d2b0dcf87aca3
+
     1. Korygowanie danych dostawcy
 
        Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
     
        ​	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
-<<<<<<< HEAD
     
 =======
 
->>>>>>> a2f9f23013c6488decefa7d9b62d2b0dcf87aca3
+
     1. Rejestrowanie fabryki w systemie
 
        Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ istniejąca nie była wcześniej wprowadzona do systemu.
     
        ​	Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
-<<<<<<< HEAD
     
       Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
     
@@ -186,14 +183,12 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 
 
->>>>>>> a2f9f23013c6488decefa7d9b62d2b0dcf87aca3
 1. Prowadzenie katalogu i cennika towarów
     1. Dodawanie nowych pozycji katalogów towarów
 
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `dodać nową pozycję towaru` w katalogu.
 
    ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
-<<<<<<< HEAD
    
     1. Aktywacja i dezaktywacja pozycji katalogu towarów
    
@@ -234,7 +229,6 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
     
        ​	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
 
->>>>>>> a2f9f23013c6488decefa7d9b62d2b0dcf87aca3
 1. Rezerwacja towaru
 
     Jako `Konsultatnt` gdy istnieje prawdopodobieństwo `Zlecenia zakupu` obejmującego dany towar mogę go `zarezerwować`
