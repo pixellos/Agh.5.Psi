@@ -160,7 +160,7 @@ rectangle Rejestr_dostawcy {
 
     1. Rejestrowanie dostawców
     
-        Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
+       Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
     
       ​	Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
     
