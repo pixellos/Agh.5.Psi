@@ -3,12 +3,16 @@
 ## F
 - Fabryka - Zakład, z którego następuje wysyłka towarów do nas, lub bezpośrenio do klienta
 
-## K
-- Konsultatnt - Pracownik firmy pracujący w `dziale Handlowym`, jego rolą jest kontakt z `Klientem` oraz z `Dostawcą` w celu zrealizowania `Zlecenia Zakupu`
-
 ## I
 
 - Integrator - Zewnętrzna firma zajmująca się monatżem u klienta
+
+## K
+- Konsultatnt - Pracownik firmy pracujący w `dziale Handlowym`, jego rolą jest kontakt z `Klientem` oraz z `Dostawcą` w celu zrealizowania `Zlecenia Zakupu`
+
+## P
+- Przedoferta - Oferta, która jest tylko propozycją
+
 
 ## Z
 
