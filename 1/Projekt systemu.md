@@ -68,7 +68,6 @@ W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki op
 # !POPRAWKA Zsynchronizować tekst z obrazkiem, opisać R&D
 
 
-
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/companyStructure.jpg)
 
 ###### Rysunek 1. Diagram struktura zarządu
@@ -119,6 +118,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
   System będzie rejestrował stan wypłaconych pensji
 
   System będzie generował listę płac
+  
 
 
 
@@ -139,8 +139,25 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/Obsluga_aktywnosci.jpg)
 
 #### 1.3.1.1 Obsługa zamówień (opisac)
+```plantuml 1.3.1.1
 
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+rectangle checkout {
+  Konsultant -- (Rejestrowanie dostawcy)
+  (Rejestrowanie dostawcy) .> (Korygowanie danych dostawcy) : include
+  Konsultant -- (Rejestrowanie fabryki w systemie)
+  (Korygowanie danych dostawcy) ..  (Dodanie fabryki do dostawcy)  
+  Konsultant -- (Dodanie fabryki do dostawcy)
+}
+@enduml
+```
 1. Prowadzenie rejestru dostawcy
+
+
+
     1. Rejestrowanie dostawców
     
         Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
@@ -159,6 +176,8 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
       
        ​	Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
     
+    1. Dodanie fabryki do dostawcy 
+
       Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
     
       ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
@@ -386,7 +405,7 @@ Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc 
 
     1. Udzielanie informacji o ofercie telefonicznie
         Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
-        
+
 
 
 
@@ -440,6 +459,23 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 # 2. Opis Wymagań Systemu
 
 ## 2.1 Funkcje systemu ze strony widzenia użytkownika
+
+
+
+```plantuml test
+@startuml
+
+:Konsultant:
+:Magazynier:   
+:Marketingowiec:   
+:Członek zarządu:   
+:Księgowy:  
+:System zewnętrzny dostawcy: 
+
+@enduml
+```
+
+
 Aktorzy
 - Konsultant - wprowadza zamówienia do systemu, aktualizuje je, dezaktywuje, zgłasza zlecenia zakupu, sprawdza stan zamówień, zgłasza reklamację w system, sprawdza notyfikacje, może przejąć opiekę nad klientem innego konsultanta
 - Magazynier - aktualizuje stan magazynowy, zgłasza ewentualne nieprawidłowości w stanie faktycznym, zatwierdza wysyłkę towaru
