@@ -362,11 +362,31 @@ Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc 
 #### 1.4.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 1. Prowadzenie bazy potencjalnych klientów
     1. Dodawanie informacji i danych o klientach
+        Jako `Konsultant` gdy chce wprowadzić nowego `klienta` do systemu mogę wpisać jego podstawowe dane do formularza.
+
+            Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.
+
+    1. Zmiana informacji o kliencie
+        Jako `Konsultant`, gdy dostanę informacje o klienta o zmianie w jego danych mam możliwość zmienić istniejaćy wpis w rejestrze.
+
+            Gdy `klient` wróci do naszej firmy z aktualizacją danych o sobie i ze zgodą na `RODO` mamy mieć możliwość zaktualizwania istniejącego statusu.
+
     1. Usuwanie informacji i danych o klientach
+        Jako `Konsultant` gdy klient wycoda zgodę na rodo muszę mieć możliwość zanonymizowania danych
+
+            Zgodnie z obowiązującymi przepisami nie możemy przetwarzać danych wrażliwych w przypadku usunięcia zgody na przetwarzanie daynch. W tym przypadku zostawiamy tylko email kontaktowy, reszta danych powinna zostać zanonimizownana.
 
 1. Informowanie o ofercie
-    1. Wysylanie notyfikacji o o ofercie pocztą elektroniczną email
+    1. Wyświetlenie daty ostatniego kontaktu z klientem
+        Jako `Konsultatnt` mam możliwość sprawdzenia, kiedy ostatni raz prezentowałem mu daną ofertę.
+
+    1. Wysylanie notyfikacji o ofercie pocztą elektroniczną email
+        Jako `Konsultant` mam możliwość wysłania wygenerowanej oferty na adres e-mail
+            Gdy konsultant zauważy, że dawno nikt nie kontaktował się z klientem ma możliwość wysłania mu oferty spersonalizowanej przez system na podstawie jego poprzednich zamówień. Zdarzenie to powinno być odnotowane w systemie z kopią oferty, która została wysłana.
+
     1. Udzielanie informacji o ofercie telefonicznie
+        Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
+        
 
 
 
