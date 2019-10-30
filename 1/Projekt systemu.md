@@ -118,7 +118,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
   System będzie rejestrował stan wypłaconych pensji
 
   System będzie generował listę płac
-  
+
 
 
 
@@ -145,7 +145,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 left to right direction
 skinparam packageStyle rectangle
 actor Konsultant
-rectangle checkout {
+rectangle Rejestr_dostawcy {
   Konsultant -- (Rejestrowanie dostawcy)
   (Rejestrowanie dostawcy) .> (Korygowanie danych dostawcy) : include
   Konsultant -- (Rejestrowanie fabryki w systemie)
