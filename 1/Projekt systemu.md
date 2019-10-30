@@ -323,17 +323,42 @@ Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc 
 #### 1.4.1.4 Obsługa magazynu
 
 1. Rozładunek oraz załadunek
-    1. Weryfikacja dokumentacji
-    1. Rozładunek za pomocą dostępnej infrastruktury przeładunkowej
-    1. Przyjęcie towaru i kontrola stanu fizycznego przesyłki
-    1. Przygotowanie towaru do składowania
-    1. Przekazanie dostawy do części składowania
+
+    1.1. Weryfikacja dokumentacji
+    
+    Jako `magazynier` chce mieć możliwość `weryfikacji dokumentacji` aby `procesować towar zgodnie z procedurami i przepisami`.
+    
+    1.2. Rozładunek za pomocą dostępnej infrastruktury przeładunkowej
+    
+    Jako `magazynier` chce mieć możliwość `rozładunku` przesyłki aby `zapełnić magazyn produktami`.
+    
+    1.3. Przyjęcie towaru i kontrola stanu fizycznego przesyłki
+    
+    Jako `magazynier` chce mieć możliwość `przyjęcia towaru i kontroli stanu przesyłki` magazynu aby `przekazać go do dalszego procesowania - rozładunku`.
+    
+    1.4. Przygotowanie towaru do składowania
+    
+    Jako `magazynier` chce mieć możliwość `przygotowania towaru do składowania`  aby `umożliwić szybką wysyłkę w przypadku zamówienia`.
 
 1. Czynności monitorujące
-    1. Zarejestrowanie towaru w magazynie
-    1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji oraz wystawienie dokumentów sprzedaży lub dokumentów magazynowych
-    1. Powiązanie towaru z dostawcą i nabywcą
-    1. Wyrejstrowanie towaru z magazynu
+
+    2.1. Zarejestrowanie towaru w magazynie
+    
+    Jako `magazynier` chce mieć możliwość `zarejestrowania towaru` aby `udostępnić oraz uaktualnić informacje o dostępności towaru`.
+    
+    2.2. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji oraz wystawienie dokumentów sprzedaży lub dokumentów magazynowych
+    
+    Jako `magazynier` chce mieć możliwość `tworzyć zamówienia dostaw` aby `zapewnić wymagane dokumenty dotyczące dostaw`.
+    
+    Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty potwierdzające kupno/sprzedaż`.
+    
+    2.3. Powiązanie towaru z dostawcą i nabywcą
+    
+    Jako `magazynier` chce mieć możliwość `powiązania towaru z dostawcą i nabywcą` aby `dostarczyć przesyłkę pod odpowiednią lokalizację`.
+    
+    2.4. Wyrejstrowanie towaru z magazynu
+    
+    Jako `magazynier` chce mieć możliwość `wyrejestrowania towaru` z magazynu aby `uaktualnić informacje o dostępności towaru`.
 
 1. 1.
 
@@ -341,22 +366,46 @@ Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc 
 #### 1.4.1.5 Kontrola stanów magazynowych
 
 1. Kontrolowanie
-    1. Sprawdzenie stanu magazynu
-    1. Informowanie o danych poziomach stanu magazynu
-    1. Zaawansowana kontrola towarów aktualnych na magazynie jak i towarów sprzedanych
-    1. Kontrolowanie sprzedaży online (w tym kontrola ilości i wartości towaru znajdującego się na magazynie)
+
+    1.1. Sprawdzenie stanu magazynu
+    
+    Jako `magazynier` chce mieć możliwość `sprawdzenia stanu` magazynu aby `okreslić jego aktualny stan`.
+    
+    1.2. Informowanie o danych poziomach stanu magazynu
+    
+    Jako `magazynier` chce mieć możliwość `informowania o danych poziomach stanu` magazynu aby `uzupełniać go na bieżąco produktami`
+    
+    1.3. Zaawansowana kontrola towarów aktualnych na magazynie jak i towarów sprzedanych
+    
+    Jako `magazynier` chce mieć możliwość `kontroli towaru` aby `zapewnić jakość produktów`
+    
+    1.4. Kontrolowanie sprzedaży online (w tym kontrola ilości i wartości towaru znajdującego się na magazynie)
+    
+    Jako `magazynier` chce mieć możliwość `kontrolowania sprzedaży online i wartosci towaru` aby `wysyłany towar byl zawsze zgodny z umową i adekwatny do ceny`
 
 
 1. Kategoryzowanie
-    1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
-    1. Przypisywanie numeru seryjnego dla każdego egzemplarza
-    1. Przypisywanie numeru partii
-    1. Przypisywania kodów EAN
+
+    2.1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
+    
+    Jako `magazynier` chce mieć możliwość `grupowania towaru` aby `zminimalizować czas wyszukiwania towaru`
+    
+    2.2. Przypisywanie numeru seryjnego dla każdego egzemplarza
+    
+    Jako `magazynier` chce mieć możliwość `przypisywania unikalnego numeru seryjnego produktom` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
+    
+    2.3. Przypisywanie numeru partii
+    
+    Jako `magazynier` chce mieć możliwość `przypisywania numeru partii` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
+    
+    2.4. Przypisywania kodów EAN
+    
+    Jako `magazynier` chce mieć możliwość `przypisywania kodów EAN` aby `umożliwić wysyłkę produktu po całej Europie`
 
 1. Prognozowanie popytu
-    1. Tworzenie prognoz popytu w celu utrzymania kluczowych produktów na stanie
-
-
+    3.1. Tworzenie prognoz popytu
+    
+    Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
 
 #### 1.4.1.6 Integracja z systemami marketingu
 1. Marketing w internecie
