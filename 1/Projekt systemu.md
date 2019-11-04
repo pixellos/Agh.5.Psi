@@ -64,10 +64,6 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki opis)
 
 
-
-# !POPRAWKA Zsynchronizować tekst z obrazkiem, opisać R&D
-
-
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/companyStructure.png)
 
 ###### Rysunek 1. Diagram struktura zarządu
@@ -77,7 +73,7 @@ W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomias
 
 - Zarząd: Pracownicy tego poziomu zajmują się koordynowaniem działania firmy na najwyższym poziomie, planują długofalową strategię ekspansji, zatwierdzają budżet, wyznaczają cele na kolejne kwartały
 - Marketing : Pracownicy działu marketingu zajmują się przygotowaniem materiałów reklamowych, zakupem reklam oraz wyszukiwaniem potencjalnie zainteresowanych firm
-- Dział R&D -
+- Dział R&D : Pracownicy działu marketingu zajmują się tworzeniem nowych rozwiązań z zakresu automatyki- nie będziemy w tym systemie zajmować się obsługą tego działu.
 - Dzial handlowy: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
 
@@ -138,37 +134,19 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/Obsluga_aktywnosci.png)
 
-#### 1.3.1.1 Obsługa zamówień (opisac)
-```plantuml 1.3.1.1
+#### 1.3.1.1 Obsługa zamówień
 
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Konsultant
-rectangle Rejestr_dostawcy {
-  Konsultant -- (Rejestrowanie dostawcy)
-  (Rejestrowanie dostawcy) .> (Korygowanie danych dostawcy) : include
-  Konsultant -- (Rejestrowanie fabryki w systemie)
-  (Korygowanie danych dostawcy) ..  (Dodanie fabryki do dostawcy)  
-  Konsultant -- (Dodanie fabryki do dostawcy)
-}
-@enduml
-```
+W tym obszarze aktywności zajmiemy się 
+
 1. Prowadzenie rejestru dostawcy
-
-
 
     1. Rejestrowanie dostawców
     
        Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
     
-      ​	Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
-    
     1. Korygowanie danych dostawcy
       
        Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
-      
-       ​	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
     
     1. Rejestrowanie fabryki w systemie
       
@@ -287,123 +265,115 @@ rectangle Rejestr_dostawcy {
 
 6. Zatwierdzenie faktury - Klient zapłacił za faktury 
 
-
-#### 1.4.1.3 Obsługa reklamacji 
-1. Wystawienie faktury
-1. Zatwierdzenie faktury - Klient zapłacił za faktury
-
 #### 1.4.1.3 Obsługa reklamacji
 1. Przyjęcie zgłoszenia reklamacji od klienta
 
 Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać działający produkt lub zwrot pieniędzy.
 
-2. Analiza zasadności
+1. Analiza zasadności
 
-    2.1. Sprawdzenie zasadności reklamacji przez zespół
+    1. Sprawdzenie zasadności reklamacji przez zespół
 
     Jako `właściciel` chciałbym, aby `zespół techniczny` przeanalizował zasadność oddania produktu do reklamacji przez `klienta`, aby nie angażować `dostawcy` we wszystkie zgłoszenia reklamacji.
 
 
-3. Zgłoszenie reklamacji dostawcy
+1. Zgłoszenie reklamacji dostawcy
 
-    3.1. Sprawdzenie zasadności reklamacji przez zespół
+    1. Sprawdzenie zasadności reklamacji przez zespół
 
     Jako `właściciel` chciałbym, aby `zespół techniczny` przygotował reklamowane produkty do odesłania `dostawcy`.
 
 
-    3.2. Realizacja reklamacji
+    1. Realizacja reklamacji
     
     Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od neigo wymienione, działające produkty.
 
-4. Prowadzenie rejestru reklamacji
+1. Prowadzenie rejestru reklamacji
 
-Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
+    Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
 
 
 #### 1.4.1.4 Obsługa magazynu
 
 1. Rozładunek oraz załadunek
 
-    1.1. Weryfikacja dokumentacji
+    1. Weryfikacja dokumentacji
     
-    Jako `magazynier` chce mieć możliwość `weryfikacji dokumentacji` aby `procesować towar zgodnie z procedurami i przepisami`.
+        Jako `magazynier` chce mieć możliwość `weryfikacji dokumentacji` aby `procesować towar zgodnie z procedurami i przepisami`.
     
-    1.2. Rozładunek za pomocą dostępnej infrastruktury przeładunkowej
+    1. Rozładunek za pomocą dostępnej infrastruktury przeładunkowej
     
-    Jako `magazynier` chce mieć możliwość `rozładunku` przesyłki aby `zapełnić magazyn produktami`.
+        Jako `magazynier` chce mieć możliwość `rozładunku` przesyłki aby `zapełnić magazyn produktami`.
     
-    1.3. Przyjęcie towaru i kontrola stanu fizycznego przesyłki
+    1. Przyjęcie towaru i kontrola stanu fizycznego przesyłki
     
-    Jako `magazynier` chce mieć możliwość `przyjęcia towaru i kontroli stanu przesyłki` magazynu aby `przekazać go do dalszego procesowania - rozładunku`.
+        Jako `magazynier` chce mieć możliwość `przyjęcia towaru i kontroli stanu przesyłki` magazynu aby `przekazać go do dalszego procesowania - rozładunku`.
     
-    1.4. Przygotowanie towaru do składowania
+    1. Przygotowanie towaru do składowania
     
-    Jako `magazynier` chce mieć możliwość `przygotowania towaru do składowania`  aby `umożliwić szybką wysyłkę w przypadku zamówienia`.
+        Jako `magazynier` chce mieć możliwość `przygotowania towaru do składowania`  aby `umożliwić szybką wysyłkę w przypadku zamówienia`.
 
 1. Czynności monitorujące
 
-    2.1. Zarejestrowanie towaru w magazynie
+    1. Zarejestrowanie towaru w magazynie
     
     Jako `magazynier` chce mieć możliwość `zarejestrowania towaru` aby `udostępnić oraz uaktualnić informacje o dostępności towaru`.
     
-    2.2. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji oraz wystawienie dokumentów sprzedaży lub dokumentów magazynowych
+    1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji oraz wystawienie dokumentów sprzedaży lub dokumentów magazynowych
     
     Jako `magazynier` chce mieć możliwość `tworzyć zamówienia dostaw` aby `zapewnić wymagane dokumenty dotyczące dostaw`.
     
     Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty potwierdzające kupno/sprzedaż`.
     
-    2.3. Powiązanie towaru z dostawcą i nabywcą
+    1. Powiązanie towaru z dostawcą i nabywcą
     
     Jako `magazynier` chce mieć możliwość `powiązania towaru z dostawcą i nabywcą` aby `dostarczyć przesyłkę pod odpowiednią lokalizację`.
     
-    2.4. Wyrejstrowanie towaru z magazynu
+    1. Wyrejstrowanie towaru z magazynu
     
     Jako `magazynier` chce mieć możliwość `wyrejestrowania towaru` z magazynu aby `uaktualnić informacje o dostępności towaru`.
-
-1. 1.
-
 
 #### 1.4.1.5 Kontrola stanów magazynowych
 
 1. Kontrolowanie
 
-    1.1. Sprawdzenie stanu magazynu
+    1. Sprawdzenie stanu magazynu
     
     Jako `magazynier` chce mieć możliwość `sprawdzenia stanu` magazynu aby `okreslić jego aktualny stan`.
     
-    1.2. Informowanie o danych poziomach stanu magazynu
+    1. Informowanie o danych poziomach stanu magazynu
     
     Jako `magazynier` chce mieć możliwość `informowania o danych poziomach stanu` magazynu aby `uzupełniać go na bieżąco produktami`
     
-    1.3. Zaawansowana kontrola towarów aktualnych na magazynie jak i towarów sprzedanych
+    1. Zaawansowana kontrola towarów aktualnych na magazynie jak i towarów sprzedanych
     
     Jako `magazynier` chce mieć możliwość `kontroli towaru` aby `zapewnić jakość produktów`
     
-    1.4. Kontrolowanie sprzedaży online (w tym kontrola ilości i wartości towaru znajdującego się na magazynie)
+    1. Kontrolowanie sprzedaży online (w tym kontrola ilości i wartości towaru znajdującego się na magazynie)
     
     Jako `magazynier` chce mieć możliwość `kontrolowania sprzedaży online i wartosci towaru` aby `wysyłany towar byl zawsze zgodny z umową i adekwatny do ceny`
 
 
 1. Kategoryzowanie
 
-    2.1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
+    1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
     
     Jako `magazynier` chce mieć możliwość `grupowania towaru` aby `zminimalizować czas wyszukiwania towaru`
     
-    2.2. Przypisywanie numeru seryjnego dla każdego egzemplarza
+    1. Przypisywanie numeru seryjnego dla każdego egzemplarza
     
     Jako `magazynier` chce mieć możliwość `przypisywania unikalnego numeru seryjnego produktom` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
     
-    2.3. Przypisywanie numeru partii
+    1. Przypisywanie numeru partii
     
     Jako `magazynier` chce mieć możliwość `przypisywania numeru partii` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
     
-    2.4. Przypisywania kodów EAN
+    1. Przypisywania kodów EAN
     
     Jako `magazynier` chce mieć możliwość `przypisywania kodów EAN` aby `umożliwić wysyłkę produktu po całej Europie`
 
 1. Prognozowanie popytu
-    3.1. Tworzenie prognoz popytu
+    1. Tworzenie prognoz popytu
     
     Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
 
@@ -456,8 +426,6 @@ Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc 
         Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
 
 
-
-
 #### 1.4.1.8 Zarzadzanie
 
 1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
@@ -466,16 +434,12 @@ Jako `właściciel` chciałbym mieć możliwość łatwego obiegu dokumentacji m
 
 2. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
 
-Jako `właściciel` chciałbym znać zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od `dostawcy`.
+    Jako `właściciel` chciałbym znać zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od `dostawcy`.
 
-Jako `właściciel` chciałbym znać zapotrzebowanie ilościowe na produkty do zamówienia od `dostawcy`.
+    Jako `właściciel` chciałbym znać zapotrzebowanie ilościowe na produkty do zamówienia od `dostawcy`.
 
 
 3. Przydział pracowników do określonych zadań
-
-
-Obszary aktywności - obsługi klientów, wspomagania zarządzania firmą, obsługi zamówień, przyjmowanie zamówień, realizacja zamówień, obsługa reklamacji, obsługa marketingu, obsługa finansowa, obsługa magazynu
-
 
 ## 1.4 Problem
 ### 1.4.1 Nazwa problemu
@@ -509,7 +473,7 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 
 ## 2.1 Funkcje systemu ze strony widzenia użytkownika
 
-
+### 2.1.1 Aktorzy w systemie
 
 ```plantuml test
 @startuml
@@ -525,13 +489,78 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 ```
 
 
-Aktorzy
+W systemie możemy wyróżnić następujących aktorów
 - Konsultant - wprowadza zamówienia do systemu, aktualizuje je, dezaktywuje, zgłasza zlecenia zakupu, sprawdza stan zamówień, zgłasza reklamację w system, sprawdza notyfikacje, może przejąć opiekę nad klientem innego konsultanta
 - Magazynier - aktualizuje stan magazynowy, zgłasza ewentualne nieprawidłowości w stanie faktycznym, zatwierdza wysyłkę towaru
 - Marketingowiec - wprowadzą informacje do systemu na temat kampanii promocyjnych, aktualizuje ich stan, ma dostęp do statystyk
 - Członek zarządu - Ma dostęp do większości informacji, jego zakresem zainteresowań będzie wpływ przeprowadzanych akcji na wyniki finansowe i efektywność działań ,widoki dla tego aktora powinny ukrywać dane użytkownika RODO
 - Księgowy - ma dostęp do zamówień i zleceń zakupu, synchronizuje dane między zewnętrznym
 - System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji
+
+### 2.1.2 Historie użytkowników (Use Cases)
+
+W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek użytkownika.
+***
+**Numer i Nazwa przypadku użycia:** 1.1.1.1 - Rejestrowanie dostawcy
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Dodanie dostawcy do systemu
+
+**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
+
+**Zakres:** System do obsługi dostawców
+
+**Poziom:** Przetwarzanie danych dostawców 
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**:
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+*Dostawca* - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia
+
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.1.1.2 - Modyfikowanie danych dostawcy
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Aktualizacja lub poprawienie danych dsotawcy
+
+**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
+
+**Zakres:** 	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
+
+**Poziom:** Przetwarzanie danych dostawców 
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**:
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+*Dostawca* - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki
+***
+
+**Numer i Nazwa przypadku użycia:** 1.1.1.3 - Rejestrowanie fabryki w systemie
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Dodanie fabryki do systemu i podłączenie jej do dostawcy
+
+**Kontekst użycia:** ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
+
+**Zakres:** 	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
+
+**Poziom:** Przetwarzanie danych dostawców 
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**:
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+*Dostawca* - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki
 
 ## 2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
 
@@ -615,6 +644,9 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce
+
+- Ekran wprowadzenia danych dostawcy do systemu (w wariancie modyfikacji pola będą po prostu wstępnie wypełnione)
+
 
 ### 2.3.1 Zapytanie ofertowe od klienta
 
