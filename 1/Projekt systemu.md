@@ -563,7 +563,27 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 ***
 
-**Numer i nazwa przypadku uzycia:** 1.1.2.1 - Prowadzenie bazy klienta
+**Numer i nazwa przypadku uzycia:** 1.2.1.1 - Rejestrowanie klienta
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** Dodanie 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.2.1.2 - Korygowanie danych klienta
 
 **Autor:** Adam Samsonowicz
 
@@ -583,7 +603,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.1.2.2 - Przyjęcia zapytania ofertowego od klienta
+**Numer i nazwa przypadku uzycia:** 1.2.2.0 - Przyjęcia zapytania ofertowego od klienta
 
 **Autor:** Adam Samsonowicz
 
@@ -603,7 +623,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.1.2.3 - Przygotowanie oferty dla klienta
+**Numer i nazwa przypadku uzycia:** 1.2.3.1 - Utworzenie oferty w systemie
 
 **Autor:** Adam Samsonowicz
 
@@ -623,7 +643,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.1.2.4 - Kontakt z klientem w celu potwierdzenia oferty
+**Numer i nazwa przypadku uzycia:** 1.2.3.2.1 - Dodanie produktów do oferty - Znalezienie w systemie oraz dodanie produktów do oferty
 
 **Autor:** Adam Samsonowicz
 
@@ -643,7 +663,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.1.2.5 - Wystawienie faktury
+**Numer i nazwa przypadku uzycia:** 1.2.3.2.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu
 
 **Autor:** Adam Samsonowicz
 
@@ -663,7 +683,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.1.2.1 - Zatwierdzenie faktury
+**Numer i nazwa przypadku uzycia:** 1.2.3.2.2.1 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie aktualnego stanu magazynu
 
 **Autor:** Adam Samsonowicz
 
@@ -683,7 +703,23 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.1.6.1 - Marketing w internecie
+**Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty -  Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.2.3.3 - Wygenerowanie dokumentu ofertowego
 
 **Autor:** Adam Samsonowicz
 
@@ -703,7 +739,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.1.6.1 - Wystawienie danych na strategiczne potrzeby marketingowe
+**Numer i nazwa przypadku uzycia:** 1.2.3.4 - Zatwierdzenie oferty przez przełożonego
 
 **Autor:** Adam Samsonowicz
 
@@ -718,6 +754,190 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 **Aktor główny: **
 
 **Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.2.3.4 - Zatwierdzenie oferty przez przełożonego
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.2.4.2 - Kontakt z klientem w celu potwierdzenia oferty - Potwierdzenie oferty przez klienta
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.2.4.5 - Wystawienie faktury
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.2.4.5 - Zatwierdzenie faktury - Klient zapłacił za fakture
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.6.1.1- Marketing w internecie - pozycjonowanie strony
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.6.1.2- Marketing w internecie - reklama na portalach biznesowych powiązanych z branżą
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.6.1.3 - Marketing w internecie - Statystyki powiązane z katalogiem produktowym
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
 
 ## 2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
 
