@@ -201,7 +201,7 @@ W tym obszarze aktywności zajmiemy się
    
     
 
-#### 1.4.1.2 Obsługa zleceń zakupu
+#### 1.3.1.2 Obsługa zleceń zakupu
 
 1. Prowadzenie bazy klientów
 
@@ -265,7 +265,7 @@ W tym obszarze aktywności zajmiemy się
 
 6. Zatwierdzenie faktury - Klient zapłacił za faktury 
 
-#### 1.4.1.3 Obsługa reklamacji
+#### 1.3.1.3 Obsługa reklamacji
 1. Przyjęcie zgłoszenia reklamacji od klienta
 
 Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać działający produkt lub zwrot pieniędzy.
@@ -293,7 +293,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
 
 
-#### 1.4.1.4 Obsługa magazynu
+#### 1.3.1.4 Obsługa magazynu
 
 1. Rozładunek oraz załadunek
 
@@ -333,7 +333,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     
     Jako `magazynier` chce mieć możliwość `wyrejestrowania towaru` z magazynu aby `uaktualnić informacje o dostępności towaru`.
 
-#### 1.4.1.5 Kontrola stanów magazynowych
+#### 1.3.1.5 Kontrola stanów magazynowych
 
 1. Kontrolowanie
 
@@ -377,7 +377,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     
     Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
 
-#### 1.4.1.6 Integracja z systemami marketingu
+#### 1.3.1.6 Integracja z systemami marketingu
 1. Marketing w internecie
     1. Pozycjonowanie strony
     
@@ -397,7 +397,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
 
        Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
 
-#### 1.4.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
+#### 1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 1. Prowadzenie bazy potencjalnych klientów
     1. Dodawanie informacji i danych o klientach
         Jako `Konsultant` gdy chce wprowadzić nowego `klienta` do systemu mogę wpisać jego podstawowe dane do formularza.
@@ -426,7 +426,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
         Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
 
 
-#### 1.4.1.8 Zarzadzanie
+#### 1.3.1.8 Zarzadzanie
 
 1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
 
@@ -520,7 +520,6 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 *Konsultant* - Jest to w jego zakresu obowiązków
 *Dostawca* - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia
 
-
 ***
 
 **Numer i Nazwa przypadku użycia:** 1.1.1.2 - Modyfikowanie danych dostawcy
@@ -561,6 +560,164 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 *Dostawca* - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki
+
+***
+
+**Numer i nazwa przypadku uzycia:** 1.1.2.1 - Prowadzenie bazy klienta
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.1.2.2 - Przyjęcia zapytania ofertowego od klienta
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.1.2.3 - Przygotowanie oferty dla klienta
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.1.2.4 - Kontakt z klientem w celu potwierdzenia oferty
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.1.2.5 - Wystawienie faktury
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.1.2.1 - Zatwierdzenie faktury
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.1.6.1 - Marketing w internecie
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
+
+
+
+------
+
+**Numer i nazwa przypadku uzycia:** 1.1.6.1 - Wystawienie danych na strategiczne potrzeby marketingowe
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia: ** 
+
+**Kontekst użycia:** 
+
+**Zakres: ** 
+
+**Poziom: ** 
+
+**Aktor główny: **
+
+**Uczestnicy i interesy: ** 
 
 ## 2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
 
