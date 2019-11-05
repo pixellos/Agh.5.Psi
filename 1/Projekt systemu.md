@@ -63,10 +63,9 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 
 W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki opis)
 
-
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/companyStructure.png)
 
-###### Rysunek 1. Diagram struktura zarządu
+###### *Rysunek 1. Diagram struktura zarządu*
 
 W obecnym okresie jest około 60 pracowników.
 W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
@@ -133,21 +132,22 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 ### 1.3.1 Obszary aktywności (OA)
 
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/Obsluga_aktywnosci.png)
+###### *Rysunek 2. Przegląd obszarów aktywności*
 
 #### 1.3.1.1 Obsługa zamówień
 
-W tym obszarze aktywności zajmiemy się 
+Obszar aktywności obsługi zamówień zawiera w sobie 
 
 1. Prowadzenie rejestru dostawcy
 
     1. Rejestrowanie dostawców
     
        Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
-    
+        
     1. Korygowanie danych dostawcy
       
        Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
-    
+      
     1. Rejestrowanie fabryki w systemie
       
        Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ istniejąca nie była wcześniej wprowadzona do systemu.
@@ -158,48 +158,31 @@ W tym obszarze aktywności zajmiemy się
 
       Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
     
-      ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
-    
-      
    
 1. Prowadzenie katalogu i cennika towarów
     1. Dodawanie nowych pozycji katalogów towarów
     
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `dodać nową pozycję towaru` w katalogu.
-    
-   ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
    
     1. Aktywacja i dezaktywacja pozycji katalogu towarów
    
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `zaktualizować pozycję towaru` w katalogu.
    
-       ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.
-   
     1. Ustalanie cen
    
        Jako `Konsultant` mogę dodać do towaru cenę.
-   
-       ​	W systemie każdy `towar` musi mieć możliwość definiowania `ceny` - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.
    
     1. Generowanie cennika
    
        Jako Konsultant chcę pokazać klientowi dostępne dla niego `towary` w przystępnej postaci
    
-       ​	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
-   
 1. Rezerwacja towaru
-
+    1. Rezerwacja towaru
     Jako `Konsultatnt` gdy istnieje prawdopodobieństwo `Zlecenia zakupu` obejmującego dany towar mogę go `zarezerwować`
 
-    ​	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje `wycofany z rezerwacji`. 
-
-1. Zmiana lub likwidacja rezerwacji towaru
+    1. Zmiana lub likwidacja rezerwacji towaru
    
    Jako `Konsultant` gdy `Zlecenia Zakupu` przestanie obejmować dany towar mogę zlikwidować całkowicie `rezerwację towaru` u danego dostawcy .
-   
-   ​	W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być możliwe anulowanie całości lub części `Zamówienia` - ta informacja musi być jak najszybicej wysłana do `Dostawcy` . W sytuacji, gdy dostawca zaczął już produkcje częsci jest to przypadek niemożliwy do automatycznego rozstrzygnięcia przez system - bezpośredni manager musi zostać poinformowany. Historia zmian musi być przechowywana.
-   
-    
 
 #### 1.3.1.2 Obsługa zleceń zakupu
 
@@ -474,7 +457,6 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 ## 2.1 Funkcje systemu ze strony widzenia użytkownika
 
 ### 2.1.1 Aktorzy w systemie
-
 ```plantuml test
 @startuml
 
@@ -487,9 +469,10 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 
 @enduml
 ```
-
+###### *Rysunek 3. Aktorzy w systemie*
 
 W systemie możemy wyróżnić następujących aktorów
+
 - Konsultant - wprowadza zamówienia do systemu, aktualizuje je, dezaktywuje, zgłasza zlecenia zakupu, sprawdza stan zamówień, zgłasza reklamację w system, sprawdza notyfikacje, może przejąć opiekę nad klientem innego konsultanta
 - Magazynier - aktualizuje stan magazynowy, zgłasza ewentualne nieprawidłowości w stanie faktycznym, zatwierdza wysyłkę towaru
 - Marketingowiec - wprowadzą informacje do systemu na temat kampanii promocyjnych, aktualizuje ich stan, ma dostęp do statystyk
@@ -500,7 +483,28 @@ W systemie możemy wyróżnić następujących aktorów
 ### 2.1.2 Historie użytkowników (Use Cases)
 
 W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek użytkownika.
-***
+
+#### 2.1.2.1 Obsługa zamówień
+
+```plantuml 2.1.2.1
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Dostawca
+rectangle "Aktualizacja danych dostawcy" {
+  (Korygowanie danych dostawcy) ..  (Dodanie fabryki do dostawcy)  
+  (Rejestrowanie dostawcy) .> (Korygowanie danych dostawcy) : include
+  Konsultant -- (Rejestrowanie dostawcy)
+  Konsultant -- (Rejestrowanie fabryki w systemie)
+  Konsultant -- (Dodanie fabryki do dostawcy)
+  Konsultant -- (Korygowanie danych dostawcy)
+  Dostawca -- (Korygowanie danych dostawcy)
+}
+@enduml
+```
+###### *Rysunek 4. Diagram przypadków użycia aktualizacji danych dostawcy*
+
 **Numer i Nazwa przypadku użycia:** 1.1.1.1 - Rejestrowanie dostawcy
 
 **Autor:** Mateusz Popielarz
@@ -515,10 +519,10 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 **Aktor główny:** Konsultant
 
-**Uczestnicy i interesy:**:
+**Uczestnicy i interesy:**
 
 *Konsultant* - Jest to w jego zakresu obowiązków
-*Dostawca* - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia
+*Dostawca* - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
 ***
 
@@ -530,16 +534,17 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 **Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
 
-**Zakres:** 	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
+**Zakres:** Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
 
 **Poziom:** Przetwarzanie danych dostawców 
 
 **Aktor główny:** Konsultant
 
-**Uczestnicy i interesy:**:
+**Uczestnicy i interesy:**
 
 *Konsultant* - Jest to w jego zakresu obowiązków
-*Dostawca* - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki
+*Dostawca* - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
+
 ***
 
 **Numer i Nazwa przypadku użycia:** 1.1.1.3 - Rejestrowanie fabryki w systemie
@@ -550,16 +555,199 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 **Kontekst użycia:** ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
 
-**Zakres:** 	Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
+**Zakres:**  Gdy dane fabryki, jak nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione.
 
 **Poziom:** Przetwarzanie danych dostawców 
 
 **Aktor główny:** Konsultant
 
-**Uczestnicy i interesy:**:
+**Uczestnicy i interesy:**
 
 *Konsultant* - Jest to w jego zakresu obowiązków
-*Dostawca* - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.1.1.4 - Dodanie fabryki do dostawcy
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Podłączenie fabryki do dostawcy
+
+**Kontekst użycia:** ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
+
+**Zakres:** ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
+
+**Poziom:** Przetwarzanie danych dostawców 
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+
+```plantuml 2.3.1.2
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+rectangle "Prowadzenie katalogu i cennika towarów" {
+    (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
+    (Konsultant) -- (Aktywacja i dezaktywacja pozycji katalogu towarów)
+    (Konsultant) -- (Ustalanie cen)
+    (Konsultant) -- (Generowanie cennika)
+    (Klient) -- (Generowanie cennika)
+}
+@enduml
+```
+###### *Rysunek 5. Diagram przypadków użycia aktualizacji danych dostawcy*
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.1.2.1 - Dodawanie nowych pozycji katalogów towarów
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Dodawanie nowych pozycji katalogów towarów
+
+**Kontekst użycia:** Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
+
+**Zakres:** Dodanie pozycji
+
+**Poziom:** Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.1.2.2 - Aktywacja i dezaktywacja pozycji katalogu towarów
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Aktywacja i dezaktywacja pozycji katalogu towarów
+
+**Kontekst użycia:** Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.
+
+**Zakres:** Aktualizacja pozycji
+
+**Poziom:** Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+***
+
+
+**Numer i Nazwa przypadku użycia:** 1.1.2.3 - Ustalanie cen
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Ustalanie cen
+
+**Kontekst użycia:** W systemie każdy `towar` musi mieć możliwość definiowania `ceny` - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.
+
+**Zakres:** Ustalenie pozycji
+
+**Poziom:** Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+***
+
+
+**Numer i Nazwa przypadku użycia:** 1.1.2.4 - Generowanie cennika
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Generowanie cennika
+
+**Kontekst użycia:** 	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
+**Zakres:** Ustalenie pozycji
+
+**Poziom:** Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+***
+
+
+```plantuml 2.3.3
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+rectangle "Rezerwacja towaru" {
+    (Konsultant) -- (Rezerwacja towaru)
+    (Konsultant) -- (Zmiana lub likwidacja rezerwacji towaru)
+    (Klient) -- (Konsultant)
+}
+@enduml
+```
+###### *Rysunek 6. Diagram przypadków użycia rezerwacji towaru*
+
+
+
+**Numer i Nazwa przypadku użycia:** 1.1.3.1 - Rezerwacja towaru
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:**  Rezerwacja towaru
+
+**Kontekst użycia:** 	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje `wycofany z rezerwacji`. 
+
+**Zakres:**  Rezerwacja towaru
+
+**Poziom:** Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+*Klient* - Inicjuje proces
+
+***
+
+
+**Numer i Nazwa przypadku użycia:** 1.1.3.2 - Zmiana lub likwidacja rezerwacji towaru
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Zmiana lub likwidacja rezerwacji towaru
+
+**Kontekst użycia:** 
+W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być możliwe anulowanie całości lub części `Zamówienia` - ta informacja musi być jak najszybicej wysłana do `Dostawcy` . W sytuacji, gdy dostawca zaczął już produkcje częsci jest to przypadek niemożliwy do automatycznego rozstrzygnięcia przez system - bezpośredni manager musi zostać poinformowany. Historia zmian musi być przechowywana.
+
+**Zakres:** Rezerwacja towaru
+
+**Poziom:** Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+*Klient* - Inicjuje proces
 
 ***
 
