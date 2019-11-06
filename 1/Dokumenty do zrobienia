@@ -1,15 +1,15 @@
-- Formularz danych dostawcy
-
-- Formularz dodania nowego towaru do katalogu
-- Formularz deaktywacji towarów w katalogu
+- Formularz danych dostawcy i jego fabryk - Mateusz 
+- Formularz dodania nowego towaru do katalogu - Kamil 
+- Formularz deaktywacji towarów w katalogu - Adam 
 - Formularz aktualizacji ceny
-- Formularz prośby o rezerwację towaru u dostawcy
-- Formularz o anulowanie prośby o rezerwację towaru
+- Formularz prośby o dostępność towaru
 - Formularz wpisu nowego klienta
-- Kwestionariusz o udzielonej ofercie
-- Przyjecie/rozchod zewnetrzne (magazyn)
-- Przyjecie/rozchod wewnetrzne (magazyn)
+- Formularz oferty udzielonej dla klienta
+- Wydanie towaru z magazynu
+- Przyjecie/rozchód zewnętrzne towaru na magazyn
+- Przyjecie/rozchód wewnętrzne towaru na magazyn
 - Faktura vat (?)
+- Zamówienie klienta
 - Formularz reklamacji od klienta
 - Formularz reklamacji dla dostawcy
 - Dokument potwierdzjący realiację reklamacji
