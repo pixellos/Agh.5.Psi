@@ -416,7 +416,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
 
     1. Wysylanie notyfikacji o ofercie pocztą elektroniczną email
         Jako `Konsultant` mam możliwość wysłania wygenerowanej oferty na adres e-mail
-        
+    
 1. Udzielanie informacji o ofercie telefonicznie
         Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
 
@@ -927,19 +927,21 @@ Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmu
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Oferta została zatwierdzona, dokument ofertowy jest wygenerowany. Oferta jest gotowa do przedstawienia klientowi.
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` ma możliwość wysłania dokumentu ofertowego do klienta z poziomu systemu, lub wydrukowanie tego dokumentu i przedstawienie go klientowi.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - przedstawia oferte klientowi
 
+Klient - otrzymuje oferte od konsultanta
 
 ------
 
@@ -947,19 +949,21 @@ Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmu
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Klient podjął decyzję w kontekście danej oferty
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Klient` podjął decyzję dotyczącą przedstawionej mu oferty. `Klient` przekazuję decyzję `konsultantowi`, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty `konsultant` składa zamówienie w fabryce na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: **Klient
 
 **Uczestnicy i interesy: ** 
 
+Klient - Przekazuje decyzje
 
+Konsultant - procesują otrzymaną decyzje w systemie
 
 ------
 
