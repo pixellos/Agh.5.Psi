@@ -785,9 +785,9 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty
+**Cel przypadku użycia: ** Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty. Przed wybraniem produktów `konsultant` ma możliwość i obowiązek uzupełnienia informacji na temat oferty takich jak przewidywany zysk, priorytet oferty dla klienta, termin ważności oferty.
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` ma możliwość stworzenia oferty i wyboru klienta dla, którego ta oferta będzie dalej procesowana. `Konsultant` ma równiez możliwość uzupełnienia podstawowych informacji, które będą później widoczne na ofercie oraz będą mogły być użyte do analiz i raportów.
 
 **Zakres: ** 
 
@@ -797,7 +797,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Uczestnicy i interesy: ** 
 
-
+Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później wykorzystywane do raportów.
 
 ------
 
@@ -805,19 +805,19 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Wyszukanie produktów i dodanie ich do oferty
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant`  ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty.  Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant 
 
 **Uczestnicy i interesy: ** 
 
-
+Konsultant - Wyszukuje produkty i dodaje je do oferty 
 
 ------
 
@@ -825,19 +825,19 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
-
+Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 
 ------
 
@@ -845,35 +845,37 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Sprawdzenie możliwości szybkiej wysyłki dla klienta
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów  na magazynie poprzez graficzny interfejs w wyszukiwarce.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
-
+Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 ------
 
 **Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty -  Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Sprawdzenie najszybszej możliwej dostawy 
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i `klient` akceptuje późniejszy termin dostawy.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
+
+Konsultant - sprawdza w systemie dostępność produktów w fabryce
 
 ------
 
@@ -881,19 +883,21 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Wygenerowanie oferty, która będzie przedstawiona klientowi
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` przygotował oferte dla `klienta` i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do `klienta` elektronicznie lub wydrukować i przedstawić podczas spotkania.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: **Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - generuje dokument ofertowy na podstawie danych uzupełnionych na ofercie
 
+Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 
 ------
 
@@ -901,41 +905,21 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Wartość oferty wykracza poza kryteria samodzielnego składania ofert
 
-**Kontekst użycia:** 
-
-**Zakres: ** 
-
-**Poziom: ** 
-
-**Aktor główny: **
-
-**Uczestnicy i interesy: ** 
-
-
-
-------
-
-**Numer i nazwa przypadku uzycia:** 1.2.3.4 - Zatwierdzenie oferty przez przełożonego
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia: ** 
-
-**Kontekst użycia:** 
+**Kontekst użycia:** Oferta, którą zajmował się `konsultant` przekroczyła wartość pozwalającą na samodzielność danego `konsultanta` i wymagane jest potwierdzenie od przełożonego. Przełożonym jest `konsultant` z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany `Zatwierdzającym oferte`. `Konsultant` wysyła poprzez system prośbę o akceptację na dalsze procesowanie i przedstawienie oferty klientowi. `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty. 
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własności nad ofertą
 
-
-
+Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmuje oferte i procesują ją dalej.
 
 ------
 
@@ -999,7 +983,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.4.5 - Zatwierdzenie faktury - Klient zapłacił za fakture
+**Numer i nazwa przypadku uzycia:** 1.2.4.6 - Zatwierdzenie faktury - Klient zapłacił za fakture
 
 **Autor:** Adam Samsonowicz
 
