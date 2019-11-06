@@ -1,3 +1,13 @@
+
+Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gliński, Kacper Kwapisz
+
+Lead: Mateusz Popielarz
+
+# System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
+## <a name='rdodanych:firmarodzinna'></a>Żródło danych: firma rodzinna
+
+# 0 Spis Treści
+
 <!-- vscode-markdown-toc -->
 * [Żródło danych: firma rodzinna](#rdodanych:firmarodzinna)
 * [1.1  Przedmiot modelowania](#Przedmiotmodelowania)
@@ -54,16 +64,6 @@
 	autoSave=true
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
-Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gliński, Kacper Kwapisz
-
-Lead: Mateusz Popielarz
-
-# System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
-## <a name='rdodanych:firmarodzinna'></a>Żródło danych: firma rodzinna
-
-# 0 Spis Treści
-
-
 
 # 1 Charakterystyka firmy
 
