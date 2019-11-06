@@ -2,6 +2,7 @@
 
 ## F
 - Fabryka - Zakład, z którego następuje wysyłka towarów do nas, lub bezpośrenio do klienta
+- Faktura – dokument sprzedaży potwierdzający zaistniałą transakcję pośredniczących ze sobą stron
 
 ## I
 
