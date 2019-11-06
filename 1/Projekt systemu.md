@@ -4,76 +4,23 @@ Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gliński, Kacper Kwapisz
 Lead: Mateusz Popielarz
 
 # System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
-## <a name='rdodanych:firmarodzinna'></a>Żródło danych: firma rodzinna
+## Żródło danych: firma rodzinna
 
 # 0 Spis Treści
 
-<!-- vscode-markdown-toc -->
-* [1.1  Przedmiot modelowania](#Przedmiotmodelowania)
-	* [1.1.1 Nazwa firmy](#Nazwafirmy)
-	* [1.1.2 Typ firmy](#Typfirmy)
-	* [1.1.2 Cel produktu](#Celproduktu)
-	* [1.1.3 Opis dziedziny działalności](#Opisdziedzinydziaalnoci)
-	* [1.1.4 Cele firmy](#Celefirmy)
-	* [1.1.5 Schemat struktury organizacyjnej](#Schematstrukturyorganizacyjnej)
-* [1.2 Opis obszaru modelowania OM](#OpisobszarumodelowaniaOM)
-	* [1.2.1 Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#Wywiadzzarzdemwceluustaleniaprzeznaczeniasystemu)
-	* [1.2.2 Definicja celu systemu](#Definicjacelusystemu)
-	* [1.2.3 Składniki organizacyjne dla Obszaru Modelowania](#SkadnikiorganizacyjnedlaObszaruModelowania)
-* [1.3 Zakres odpowiedzialności systemu (ZOS)](#ZakresodpowiedzialnocisystemuZOS)
-	* [1.3.1 Obszary aktywności (OA)](#ObszaryaktywnociOA)
-		* [1.3.1.1 Obsługa zamówień](#Obsugazamwie)
-		* [1.3.1.2 Obsługa zleceń zakupu](#Obsugazlecezakupu)
-		* [1.3.1.3 Obsługa reklamacji](#Obsugareklamacji)
-		* [1.3.1.4 Obsługa magazynu](#Obsugamagazynu)
-		* [1.3.1.5 Kontrola stanów magazynowych](#Kontrolastanwmagazynowych)
-		* [1.3.1.6 Integracja z systemami marketingu](#Integracjazsystemamimarketingu)
-		* [1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi](#Rejestrpotencjalnychklientwistanukontaktuznimi)
-		* [1.3.1.8 Zarzadzanie](#Zarzadzanie)
-* [1.4 Problem](#Problem)
-	* [1.4.1 Nazwa problemu](#Nazwaproblemu)
-	* [1.4.2 Nazwa kodowa](#Nazwakodowa)
-* [1.5 Cele do osiągnięcia](#Celedoosignicia)
-	* [1.5.1 Cele produktu](#Celeproduktu)
-	* [1.5.2 Cele przedsięwzięcia projektowego](#Celeprzedsiwziciaprojektowego)
-* [2.1 Funkcje systemu ze strony widzenia użytkownika](#Funkcjesystemuzestronywidzeniauytkownika)
-	* [2.1.1 Aktorzy w systemie](#Aktorzywsystemie)
-	* [2.1.2 Historie użytkowników (Use Cases)](#HistorieuytkownikwUseCases)
-		* [2.1.2.1 Obsługa zamówień](#Obsugazamwie-1)
-* [2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu](#DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu)
-	* [2.2.1 Dane ogólne](#Daneoglne)
-	* [2.2.2 Opis klienta i powiązanych encji](#Opisklientaipowizanychencji)
-	* [2.2.3 Opis Dostawcy](#OpisDostawcy)
-	* [2.2.4 Opis Magazynu](#OpisMagazynu)
-* [2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce](#DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce)
-	* [2.3.1 Zapytanie ofertowe od klienta](#Zapytanieofertoweodklienta)
-	* [2.3.2 Oferta](#Oferta)
-	* [2.3.3 Zamówienie towaru u dostawcy](#Zamwienietowaruudostawcy)
-		* [2.3.4 Potwierdzenie zamówienia od dostawcy](#Potwierdzeniezamwieniaoddostawcy)
-		* [2.3.5. Faktura zakupu od dostawcy](#Fakturazakupuoddostawcy)
-		* [2.3.6. Rejestracja towaru na magazynie](#Rejestracjatowarunamagazynie)
-		* [2.3.7. Wyrejestrowanie towaru z magazynu](#Wyrejestrowanietowaruzmagazynu)
-		* [2.3.8. Faktura zakupu dla klienta](#Fakturazakupudlaklienta)
-		* [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#Raportsprzedaowedoanalizwewntrznych)
-		* [2.3.10. Raport statystyczny wspierający cele marketingowe](#Raportstatystycznywspierajcycelemarketingowe)
-		* [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#Raportstatystycznywspierajcyprognozypopytuwspierajcycelemagazynowe)
+[TOC]
 
-<!-- vscode-markdown-toc-config
-	numbering=false
-	autoSave=false
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc -->
 
 # 1 Charakterystyka firmy
 
-## <a name='Przedmiotmodelowania'></a>1.1  Przedmiot modelowania
-### <a name='Nazwafirmy'></a>1.1.1 Nazwa firmy
+## 1.1  Przedmiot modelowania
+### 1.1.1 Nazwa firmy
 Instom
 
-### <a name='Typfirmy'></a>1.1.2 Typ firmy  
+### 1.1.2 Typ firmy  
 Firma handlowa - `FH`, firma jest spółką z ograniczoną odpowiedzialnością
 
-### <a name='Celproduktu'></a>1.1.2 Cel produktu
+### 1.1.2 Cel produktu
 System służy do wspomagania zarządzania `FH`.
 
 Firma jako działający na rynku pretendent do lidera w sprzedaży urządzeń z automatyki przemysłowej na codzień ma przed sobą wiele wyzwań. Jednym z nich jest świadczenie usług najwyższej jakości. W tym celu kadra specjalistów z zakresu marketingu, sprzedaży i obsługi magazynowej codziennie dokłada wszelkich starań, by utrzymać wysoki poziom zadowolenia klientów, co przekłada się na wysoką liczbę zrealizowanych zamówień przy zmniejszającym się czasie ich realizacji.
@@ -84,7 +31,7 @@ Jednym z problemów z którym firma musi się zmierzyć jest rosnąca ilość za
 
 Wysoko wykwalifikowana kadra do spraw sprzedaży służy klientowi wiedzą przy wyborze sprzętu.
 
-### <a name='Opisdziedzinydziaalnoci'></a>1.1.3 Opis dziedziny działalności
+### 1.1.3 Opis dziedziny działalności
 
 Klientami są: przemysł, hurtowanie, integratorzy.
 Klienci w większości są inżynierami.
@@ -101,7 +48,7 @@ Dostawcy zajmują się wysyłką.
 
 Jeżeli produkt jest wysłany do dostawcy na podstawie reklamacji, i jest to bezpodstawne wg. dostawcy to koszty ponosi firma nie dostawcy. Z tego powodu ważne są procedury decydujące o  oględziny produktów wysyłanych do reklamacji przez wewnętrzny zespół.
 
-### <a name='Celefirmy'></a>1.1.4 Cele firmy
+### 1.1.4 Cele firmy
 
 Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczekiwaniami. Firma chce kontynuować ekspansję na Polskim rynku, a w tym celu jest potrzeba:
 
@@ -112,7 +59,7 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 - Optymalizacji procesów w firmie
 - Optymalizacji ilości i typu magazynowanych produktów
 
-### <a name='Schematstrukturyorganizacyjnej'></a>1.1.5 Schemat struktury organizacyjnej
+### 1.1.5 Schemat struktury organizacyjnej
 
 W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki opis)
 
@@ -129,19 +76,19 @@ W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomias
 - Dzial handlowy: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
 
-## <a name='OpisobszarumodelowaniaOM'></a>1.2 Opis obszaru modelowania OM
+## 1.2 Opis obszaru modelowania OM
 
-### <a name='Wywiadzzarzdemwceluustaleniaprzeznaczeniasystemu'></a>1.2.1 Wywiad z zarządem w celu ustalenia przeznaczenia systemu
+### 1.2.1 Wywiad z zarządem w celu ustalenia przeznaczenia systemu
 
 Został przeprowadzony wywiad z zarządem. Transkrypcje odpowiedzi umieścimy w *Załączniku Transkrypcja*.
 
-### <a name='Definicjacelusystemu'></a>1.2.2 Definicja celu systemu
+### 1.2.2 Definicja celu systemu
 
 Celem systemu PSSK jest kompleksowe wspomaganie procesu zamówienia od złożenia go przez klienta, przez pomoc i kontrolowanie procesu zlecenia zakupu komponentów po obsługę gwarancyjną.
 Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływających przez firmę niezbędnych do sprawnego działania organizacji.
 
 
-### <a name='SkadnikiorganizacyjnedlaObszaruModelowania'></a>1.2.3 Składniki organizacyjne dla Obszaru Modelowania
+### 1.2.3 Składniki organizacyjne dla Obszaru Modelowania
 
 - Dział handlu (Obsługa klienta, pośredniczenie w składaniu zamówień)
 
@@ -181,13 +128,13 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 
 
-## <a name='ZakresodpowiedzialnocisystemuZOS'></a>1.3 Zakres odpowiedzialności systemu (ZOS)
-### <a name='ObszaryaktywnociOA'></a>1.3.1 Obszary aktywności (OA)
+## 1.3 Zakres odpowiedzialności systemu (ZOS)
+### 1.3.1 Obszary aktywności (OA)
 
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/Obsluga_aktywnosci.png)
 ###### *Rysunek 2. Przegląd obszarów aktywności*
 
-#### <a name='Obsugazamwie'></a>1.3.1.1 Obsługa zamówień
+#### 1.3.1.1 Obsługa zamówień
 
 Obszar aktywności obsługi zamówień zawiera w sobie 
 
@@ -204,38 +151,55 @@ Obszar aktywności obsługi zamówień zawiera w sobie
     1. Rejestrowanie fabryki w systemie
       
        Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ istniejąca nie była wcześniej wprowadzona do systemu.
-
+      
+       ​	Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
+    
     1. Dodanie fabryki do dostawcy 
 
       Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
     
+      ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
+    
+      
    
 1. Prowadzenie katalogu i cennika towarów
     1. Dodawanie nowych pozycji katalogów towarów
     
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `dodać nową pozycję towaru` w katalogu.
+    
+   ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
    
     1. Aktywacja i dezaktywacja pozycji katalogu towarów
    
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `zaktualizować pozycję towaru` w katalogu.
    
+       ​	Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.
+   
     1. Ustalanie cen
    
        Jako `Konsultant` mogę dodać do towaru cenę.
+   
+       ​	W systemie każdy `towar` musi mieć możliwość definiowania `ceny` - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.
    
     1. Generowanie cennika
    
        Jako Konsultant chcę pokazać klientowi dostępne dla niego `towary` w przystępnej postaci
    
+       ​	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
+   
 1. Rezerwacja towaru
-    1. Rezerwacja towaru
+
     Jako `Konsultatnt` gdy istnieje prawdopodobieństwo `Zlecenia zakupu` obejmującego dany towar mogę go `zarezerwować`
 
-    1. Zmiana lub likwidacja rezerwacji towaru
+    ​
+
+1. Zmiana lub likwidacja rezerwacji towaru
    
    Jako `Konsultant` gdy `Zlecenia Zakupu` przestanie obejmować dany towar mogę zlikwidować całkowicie `rezerwację towaru` u danego dostawcy .
+   
+    
 
-#### <a name='Obsugazlecezakupu'></a>1.3.1.2 Obsługa zleceń zakupu
+#### 1.3.1.2 Obsługa zleceń zakupu
 
 1. Prowadzenie bazy klientów
 
@@ -299,7 +263,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 6. Zatwierdzenie faktury - Klient zapłacił za faktury 
 
-#### <a name='Obsugareklamacji'></a>1.3.1.3 Obsługa reklamacji
+#### 1.3.1.3 Obsługa reklamacji
 1. Przyjęcie zgłoszenia reklamacji od klienta
 
 Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać działający produkt lub zwrot pieniędzy.
@@ -327,7 +291,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
 
 
-#### <a name='Obsugamagazynu'></a>1.3.1.4 Obsługa magazynu
+#### 1.3.1.4 Obsługa magazynu
 
 1. Rozładunek oraz załadunek
 
@@ -367,7 +331,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     
     Jako `magazynier` chce mieć możliwość `wyrejestrowania towaru` z magazynu aby `uaktualnić informacje o dostępności towaru`.
 
-#### <a name='Kontrolastanwmagazynowych'></a>1.3.1.5 Kontrola stanów magazynowych
+#### 1.3.1.5 Kontrola stanów magazynowych
 
 1. Kontrolowanie
 
@@ -411,7 +375,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     
     Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
 
-#### <a name='Integracjazsystemamimarketingu'></a>1.3.1.6 Integracja z systemami marketingu
+#### 1.3.1.6 Integracja z systemami marketingu
 1. Marketing w internecie
     1. Pozycjonowanie strony
     
@@ -431,16 +395,21 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
 
        Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
 
-#### <a name='Rejestrpotencjalnychklientwistanukontaktuznimi'></a>1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
+#### 1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 1. Prowadzenie bazy potencjalnych klientów
     1. Dodawanie informacji i danych o klientach
         Jako `Konsultant` gdy chce wprowadzić nowego `klienta` do systemu mogę wpisać jego podstawowe dane do formularza.
 
+            Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.
+
     1. Zmiana informacji o kliencie
         Jako `Konsultant`, gdy dostanę informacje o klienta o zmianie w jego danych mam możliwość zmienić istniejaćy wpis w rejestrze.
 
+           
     1. Usuwanie informacji i danych o klientach
         Jako `Konsultant` gdy klient wycoda zgodę na rodo muszę mieć możliwość zanonymizowania danych
+
+           
 
 1. Informowanie o ofercie
     1. Wyświetlenie daty ostatniego kontaktu z klientem
@@ -448,12 +417,13 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
 
     1. Wysylanie notyfikacji o ofercie pocztą elektroniczną email
         Jako `Konsultant` mam możliwość wysłania wygenerowanej oferty na adres e-mail
+          
 
     1. Udzielanie informacji o ofercie telefonicznie
         Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
 
 
-#### <a name='Zarzadzanie'></a>1.3.1.8 Zarzadzanie
+#### 1.3.1.8 Zarzadzanie
 
 1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
 
@@ -468,16 +438,16 @@ Jako `właściciel` chciałbym mieć możliwość łatwego obiegu dokumentacji m
 
 3. Przydział pracowników do określonych zadań
 
-## <a name='Problem'></a>1.4 Problem
-### <a name='Nazwaproblemu'></a>1.4.1 Nazwa problemu
+## 1.4 Problem
+### 1.4.1 Nazwa problemu
 System do przekrojowego zarządzania firmą wspomagający sprzedaż, marketing i kontakt z integratorami
 
-### <a name='Nazwakodowa'></a>1.4.2 Nazwa kodowa
+### 1.4.2 Nazwa kodowa
 Przekrojowy system sprzedażowo-konsultingowy - PSSK
 
-## <a name='Celedoosignicia'></a>1.5 Cele do osiągnięcia
+## 1.5 Cele do osiągnięcia
 
-### <a name='Celeproduktu'></a>1.5.1 Cele produktu
+### 1.5.1 Cele produktu
 Produkt ma na celu wsparcie firmy poprzez:
 - Redukcję narzutu komunikacyjnego między ludźmi i formalizacji komunikacji
 - Krystalizację procedur istniejących w firmie
@@ -486,7 +456,7 @@ Produkt ma na celu wsparcie firmy poprzez:
 - Śledzeniem stanu magazynowego i wprowadzeniem mechanizmu notyfikacji przy niedostatecznym poziomie materiałów
 - Zwiększenie jakości obsługi przez ujednoliconą mechanizm informacji o kliencie
 
-### <a name='Celeprzedsiwziciaprojektowego'></a>1.5.2 Cele przedsięwzięcia projektowego
+### 1.5.2 Cele przedsięwzięcia projektowego
 Przedsięwzięcie docelowo miałoby na celu
 - Zmniejszenie średniego czasu obsługi pojedyńczego klienta o więcej niż 10%
 - Ograniczyć czas brak stanów magazynowych najpopularniejszych produktów o 15%
@@ -498,9 +468,9 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 
 # 2. Opis Wymagań Systemu
 
-## <a name='Funkcjesystemuzestronywidzeniauytkownika'></a>2.1 Funkcje systemu ze strony widzenia użytkownika
+## 2.1 Funkcje systemu ze strony widzenia użytkownika
 
-### <a name='Aktorzywsystemie'></a>2.1.1 Aktorzy w systemie
+### 2.1.1 Aktorzy w systemie
 ```plantuml test
 @startuml
 
@@ -513,8 +483,6 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 
 @enduml
 ```
-![Projekt systemu](https://www.plantuml.com/plantuml/png/0/BOun2iCm34NtGEwWStWAT0oTUW8HYs2Io23B66iiz12vZtklkY7ZUtnuVqgAeldOns4St1mvvLsHrNLwuefMEP0u0BY4RAI1rrW2BRTysFSTcJOm56iVdsy_fz3ElgpkmbTDIWSO5MwdYd457tkyB7tmZq_4ll_u0G00 "Projekt systemu")
-
 ###### *Rysunek 3. Aktorzy w systemie*
 
 W systemie możemy wyróżnić następujących aktorów
@@ -526,11 +494,11 @@ W systemie możemy wyróżnić następujących aktorów
 - Księgowy - ma dostęp do zamówień i zleceń zakupu, synchronizuje dane między zewnętrznym
 - System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji
 
-### <a name='HistorieuytkownikwUseCases'></a>2.1.2 Historie użytkowników (Use Cases)
+### 2.1.2 Historie użytkowników (Use Cases)
 
 W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek użytkownika.
 
-#### <a name='Obsugazamwie-1'></a>2.1.2.1 Obsługa zamówień
+#### 2.1.2.1 Obsługa zamówień
 
 ```plantuml 2.1.2.1
 @startuml
@@ -549,8 +517,6 @@ rectangle "Aktualizacja danych dostawcy" {
 }
 @enduml
 ```
-![Projekt systemu-1](https://www.plantuml.com/plantuml/png/0/ZP9DRi8m44Rtbdo74QkoW0DqWQZ4ZbqvmM0FOOXZH_P4aOkuEmvL05NyT3lVcsT_bfT9C4hNEAqSxGGaGEHgBs0vaX4ENgjKisynOWCjcXehsaXs14EEldAa5He94TR1fywLcOoJLIZwtg1MLnWcNxLqwFW7pG71eizc3_ONp1CuQWNmiGunLw57p_GNcS9yNeXLi9TqXzkOQoxn7G4NoJSTA4aSDRVznPi3Fe6zSPsbGNDh1RFPK-bRShnd3oadeORfqSwhLW_mLoq6V7p_Vy0dhPRaRVa9Pm00 "Projekt systemu-1")
-
 ###### *Rysunek 4. Diagram przypadków użycia aktualizacji danych dostawcy*
 
 **Numer i Nazwa przypadku użycia:** 1.1.1.1 - Rejestrowanie dostawcy
@@ -649,8 +615,6 @@ rectangle "Prowadzenie katalogu i cennika towarów" {
 }
 @enduml
 ```
-![Projekt systemu-2](https://www.plantuml.com/plantuml/png/0/XP51QWCn34Nt1jz1P9KiSeSK2brqKoWzWB3LYM977ZmQp4pegNg4NgnsQ5qefDLEyjUJltIO5BFEvsXDf5S5JP1vE2fupkIKarWp1POHCvvXH1Tme6TT8a5xHnaYMODEKuR79DCSQqrx9JArh4jXyvHJGR-IC450nPY66HWSYN30EhzW_dWl6xXO0pMsFzGTxFUmlKyU2xPsIMLnHnZJkhWJVzDgSwViRZ3kWYu5tGdhP4yhzlGNQ_wNz5Bt5w-_gGvkYHv8gDd-aZMZNNhTq5-oDsiE9BwUw1C0 "Projekt systemu-2")
-
 ###### *Rysunek 5. Diagram przypadków użycia aktualizacji danych dostawcy*
 
 ***
@@ -737,6 +701,7 @@ rectangle "Prowadzenie katalogu i cennika towarów" {
 
 ***
 
+
 ```plantuml 2.3.3
 @startuml
 left to right direction
@@ -750,57 +715,7 @@ rectangle "Rezerwacja towaru" {
 }
 @enduml
 ```
-![Projekt systemu-3](https://www.plantuml.com/plantuml/png/0/TP2n3e9038RtI-uT6YOOU0TsDztSAbIi77Uaz4BK-EuU6D5exDQ__zU_QJKgYiRUMUFegA01XDkJGiD2jNBmremT-m45UnYmxh2bdLuSmJn7tpgo1ciD0flWn-YIfglYcEPkjKAsfIl9XFKPKzQ44ZEuMGEfyZTVG5b2_cCj_XZtFQD7SF40Zhk9cuMH5yxV-7BL4_rOPStTcefyaxxn0000 "Projekt systemu-3")
-
-###### *Rysunek 6. Diagram przypadków użycia rezerwacji towaru*
-
-
-
-**Numer i Nazwa przypadku użycia:** 1.1.3.1 - Rezerwacja towaru
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:**  Rezerwacja towaru
-
-**Kontekst użycia:** 	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje `wycofany z rezerwacji`. 
-
-**Zakres:**  Rezerwacja towaru
-
-**Poziom:** Prowadzenie katalogu i cennika towarów
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-*Konsultant* - Jest to w jego zakresu obowiązków
-
-*Klient* - Inicjuje proces
-
-***
-
-
-**Numer i Nazwa przypadku użycia:** 1.1.3.2 - Zmiana lub likwidacja rezerwacji towaru
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Zmiana lub likwidacja rezerwacji towaru
-
-**Kontekst użycia:** 
-W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być możliwe anulowanie całości lub części `Zamówienia` - ta informacja musi być jak najszybicej wysłana do `Dostawcy` . W sytuacji, gdy dostawca zaczął już produkcje częsci jest to przypadek niemożliwy do automatycznego rozstrzygnięcia przez system - bezpośredni manager musi zostać poinformowany. Historia zmian musi być przechowywana.
-
-**Zakres:** Rezerwacja towaru
-
-**Poziom:** Prowadzenie katalogu i cennika towarów
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-*Konsultant* - Jest to w jego zakresu obowiązków
-
-*Klient* - Inicjuje proces
-
-***
+###### *Rysunek 6. Diagram przypadków użycia aktualizacji danych dostawcy*
 
 
 **Numer i nazwa przypadku uzycia:** 1.2.1.1 - Rejestrowanie klienta
@@ -1177,167 +1092,11 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Uczestnicy i interesy: ** 
 
-***
 
-```plantuml 2.2.7.1
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor :Potencjalny klient:
-actor Konsultant
-rectangle "Prowadzenie bazy potencjalnych klientów" {
-    (Konsultant) -- (Zmiana informacji o kliencie)
-    (Konsultant) -- (Dodawanie informacji i danych o klientach)
-    (Konsultant) -- (Usuwanie informacji i danych o klientach)
-    :Potencjalny klient: - (Konsultant)
-}
-@enduml
-```
-![Projekt systemu-4](https://www.plantuml.com/plantuml/png/0/bP6nRi9038Rta-uTB2OOyW9C3Dsw85KiRERE92ONExeuYWBYgNW4NgoXfQMLob2llx_lb-nLPvYjRv9tYVO6ff2vh0mYPmh6AjvrDKkB6HjeCTHOqfkDYU2MevI9lCDWcc6vLYC91qmoGfsOn9PVsQjArwTftxpx1c6spZfWF98mmGwF8xGFHQZkakjbcC79EvXc_X0je2XWlcqO1O5bhxd1S63GJommBPumBnfnm5ld3umXuaVfdJSCrJF1fkl_m_zr62X-QRqxUxSYYTChtW40 "Projekt systemu-4")
 
-###### *Rysunek 7. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów*
+## 2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
 
-
-**Numer i nazwa przypadku uzycia:** 1.7.1 - Dodawanie informacji i danych o klientach
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia: ** Dodawanie informacji i danych o klientach
-
-**Kontekst użycia:** Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.
-
-**Zakres: ** Prowadzenie bazy potencjalnych klientów
-
-**Poziom: ** Prowadzenie bazy potencjalnych klientów
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy: ** 
-
-***
-
-
-**Numer i nazwa przypadku uzycia:** 1.7.2 - Zmiana informacji o kliencie
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia: ** Zmiana informacji o kliencie
-
-**Kontekst użycia:**   Gdy `klient` wróci do naszej firmy z aktualizacją danych o sobie i ze zgodą na `RODO` mamy mieć możliwość zaktualizwania istniejącego statusu.
-
-**Zakres: ** Prowadzenie bazy potencjalnych klientów
-
-**Poziom: ** Prowadzenie bazy potencjalnych klientów
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy: ** 
-
-***
-
-
-**Numer i nazwa przypadku uzycia:** 1.7.1 - Usuwanie informacji i danych wrażliwych o klientach
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia: ** Usuwanie informacji i danych o klientach
-
-**Kontekst użycia:**  Zgodnie z obowiązującymi przepisami nie możemy przetwarzać danych wrażliwych w przypadku usunięcia zgody na przetwarzanie daynch. W tym przypadku zostawiamy tylko email kontaktowy, reszta danych powinna zostać zanonimizownana.
-
-**Zakres: ** Prowadzenie bazy potencjalnych klientów
-
-**Poziom: ** Prowadzenie bazy potencjalnych klientów
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy: ** 
-
-***
-
-
-```plantuml 2.2.7.2
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor :Potencjalny klient:
-actor Konsultant
-rectangle "Informowanie o ofercie" {
-    (Konsultant) -- (Wyświetlenie daty ostatniego kontaktu z klientem)
-    (Konsultant) -- (Wysylanie notyfikacji o ofercie pocztą elektroniczną email)
-    (Konsultant) -- (Udzielanie informacji o ofercie telefonicznie)
-    :Potencjalny klient: - (Konsultant)
-}
-@enduml
-```
-![Projekt systemu-5](https://www.plantuml.com/plantuml/png/0/TP6nJiD038Rta-uTh4xja1Ver1Mn8274R5sSuDx5ZYwEgal5o5FmEl1U96sX0b5lblr_zc_l1iDiOvUyIzGOc4BcziMWvap1MCMx8RBqcB637aF4bXwj98AbZj8cyWw3QORjWnf9s6EI0Z4nYMs_Q_SgmvZcVlFkHmYhEsaqTtf0OG85RIW7fXKSlOCvrbVP1geAri_by_t0P8aMGOrMG6S7DcUjGbGnZ3R2T1bFtUOcQ2ZfD5NKIiCHmvwl6q2lORAFDw14qR8AXqcMj4DEjvXFzSHqXlB9rn-cpR3cZ6AwGFwx6LI_sDwzUhSZgUSlVG40 "Projekt systemu-5")
-
-###### *Rysunek 8. Diagram przypadków użycia funkcji informowania o ofercie*
-
-
-
-**Numer i nazwa przypadku uzycia:** 1.7.2.1 - Wyświetlenie daty ostatniego kontaktu z klientem
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia: **  Wyświetlenie daty ostatniego kontaktu z klientem
-
-**Kontekst użycia:** Informacja o dacie ostatniego kontaktu powinna być bardzo dobrze widoczna
-
-**Zakres: ** Informowanie o ofercie
-
-**Poziom: **  Informowanie o ofercie
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy: ** 
-
-***
-
-
-
-**Numer i nazwa przypadku uzycia:** 1.7.2.2 -  Wysylanie notyfikacji o ofercie pocztą elektroniczną email
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia: **  Wysylanie notyfikacji o ofercie pocztą elektroniczną email
-
-**Kontekst użycia:**    Gdy konsultant zauważy, że dawno nikt nie kontaktował się z klientem ma możliwość wysłania mu oferty spersonalizowanej przez system na podstawie jego poprzednich zamówień. Zdarzenie to powinno być odnotowane w systemie z kopią oferty, która została wysłana.
-
-**Zakres: **  Informowanie o ofercie
-
-**Poziom: **  Informowanie o ofercie
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy: ** 
-
-***
-
-
-
-**Numer i nazwa przypadku uzycia:** 1.7.2.3 - Usuwanie informacji i danych wrażliwych o klientach
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia: **Usuwanie informacji i danych wrażliwych o klientach
-
-**Kontekst użycia:** System pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
-
-**Zakres: ** Prowadzenie bazy potencjalnych klientów
-
-**Poziom: ** Prowadzenie bazy potencjalnych klientów
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy: ** 
-
-***
-
-
-
-## <a name='DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu'></a>2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
-
-### <a name='Daneoglne'></a>2.2.1 Dane ogólne
+### 2.2.1 Dane ogólne
 
 1. Produkt
     1. Ilość na magazynie
@@ -1378,7 +1137,7 @@ rectangle "Informowanie o ofercie" {
 
 1. Pracownik usług (Rozszerza `Pracownik`)
 
-### <a name='Opisklientaipowizanychencji'></a>2.2.2 Opis klienta i powiązanych encji
+### 2.2.2 Opis klienta i powiązanych encji
 W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 1. Klient (Rozszerza `Osoba`) - jednoznacznie określa klienta
@@ -1397,7 +1156,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
     1. Data wystawienia
     1. Klient
 
-### <a name='OpisDostawcy'></a>2.2.3 Opis Dostawcy
+### 2.2.3 Opis Dostawcy
 
 1. Fabryka dostawcy (Rozszerza `Lokal przemysłowy`)
     1. Kody produktów obsługiwanych przez tą fabrykę
@@ -1406,7 +1165,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 1. Dostawca (Rozszerza `Firma`)
     1. Fabryki (Wiele `Fabryka Dostawcy`)
 
-### <a name='OpisMagazynu'></a>2.2.4 Opis Magazynu
+### 2.2.4 Opis Magazynu
 
 1. Miejce w magazynie
     1. Sektor
@@ -1416,18 +1175,18 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
     1. Rezerwacja pod produkt wielkogabarytowy
 
 
-## <a name='DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce
+## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce
 
 - Ekran wprowadzenia danych dostawcy do systemu (w wariancie modyfikacji pola będą po prostu wstępnie wypełnione)
 
 
-### <a name='Zapytanieofertoweodklienta'></a>2.3.1 Zapytanie ofertowe od klienta
+### 2.3.1 Zapytanie ofertowe od klienta
 
 1. Klient
 
 1. Produkt
 
-### <a name='Oferta'></a>2.3.2 Oferta
+### 2.3.2 Oferta
 
 1. Klient
 
@@ -1435,7 +1194,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 1. Produkt
 
-### <a name='Zamwienietowaruudostawcy'></a>2.3.3 Zamówienie towaru u dostawcy
+### 2.3.3 Zamówienie towaru u dostawcy
 
 1. Produkt
 
@@ -1443,17 +1202,17 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 1. Oferta
 
-#### <a name='Potwierdzeniezamwieniaoddostawcy'></a>2.3.4 Potwierdzenie zamówienia od dostawcy
+#### 2.3.4 Potwierdzenie zamówienia od dostawcy
 
 1. Zamówienie towaru u dostawcy
 
-#### <a name='Fakturazakupuoddostawcy'></a>2.3.5. Faktura zakupu od dostawcy
+#### 2.3.5. Faktura zakupu od dostawcy
 
 1. Faktura
 
 2.  Zamówienie towaru u dostawcy
 
-#### <a name='Rejestracjatowarunamagazynie'></a>2.3.6. Rejestracja towaru na magazynie
+#### 2.3.6. Rejestracja towaru na magazynie
 
 1.  Produkt
 
@@ -1463,7 +1222,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 4. Dostawca
 
-#### <a name='Wyrejestrowanietowaruzmagazynu'></a>2.3.7. Wyrejestrowanie towaru z magazynu
+#### 2.3.7. Wyrejestrowanie towaru z magazynu
 
 1.  Produkt
 
@@ -1471,7 +1230,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 3. Oferta
 
-#### <a name='Fakturazakupudlaklienta'></a>2.3.8. Faktura zakupu dla klienta
+#### 2.3.8. Faktura zakupu dla klienta
 
 1.  Faktura
 
@@ -1479,7 +1238,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 3. Produkt
 
-#### <a name='Raportsprzedaowedoanalizwewntrznych'></a>2.3.9. Raport sprzedażowe do analiz wewnętrznych
+#### 2.3.9. Raport sprzedażowe do analiz wewnętrznych
 
 1. Produkt
 
@@ -1491,7 +1250,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 5. Zamówienie
 
-#### <a name='Raportstatystycznywspierajcycelemarketingowe'></a>2.3.10. Raport statystyczny wspierający cele marketingowe
+#### 2.3.10. Raport statystyczny wspierający cele marketingowe
 
 1. Produkt
 
@@ -1503,7 +1262,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 5. Zamówienie
 
-#### <a name='Raportstatystycznywspierajcyprognozypopytuwspierajcycelemagazynowe'></a>2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
+#### 2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
 
 1. Produkt
 2. Magazyn
