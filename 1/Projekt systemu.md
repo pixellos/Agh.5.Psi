@@ -567,19 +567,21 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** Dodanie 
+**Cel przypadku użycia: ** Dodanie nowego klienta do systemu
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Przetwarzanie danych klientów 
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
+Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej procesować oferte
 
 ------
 
