@@ -196,7 +196,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
     1. Rejestrowanie dostawców
     
        Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
-        
+       
     1. Korygowanie danych dostawcy
       
        Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
@@ -209,22 +209,21 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
       Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
     
-   
 1. Prowadzenie katalogu i cennika towarów
     1. Dodawanie nowych pozycji katalogów towarów
     
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `dodać nową pozycję towaru` w katalogu.
-   
+      
     1. Aktywacja i dezaktywacja pozycji katalogu towarów
-   
+      
        Jako `Konsultant` przy odbiorze nowych broszur z towarami od dostawców mogę `zaktualizować pozycję towaru` w katalogu.
-   
+      
     1. Ustalanie cen
-   
+      
        Jako `Konsultant` mogę dodać do towaru cenę.
-   
+      
     1. Generowanie cennika
-   
+      
        Jako Konsultant chcę pokazać klientowi dostępne dla niego `towary` w przystępnej postaci
    
 1. Rezerwacja towaru
@@ -232,6 +231,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
     Jako `Konsultatnt` gdy istnieje prawdopodobieństwo `Zlecenia zakupu` obejmującego dany towar mogę go `zarezerwować`
 
     1. Zmiana lub likwidacja rezerwacji towaru
+      
    
    Jako `Konsultant` gdy `Zlecenia Zakupu` przestanie obejmować dany towar mogę zlikwidować całkowicie `rezerwację towaru` u danego dostawcy .
 
@@ -673,7 +673,6 @@ rectangle "Prowadzenie katalogu i cennika towarów" {
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 
-
 ***
 
 **Numer i Nazwa przypadku użycia:** 1.1.2.2 - Aktywacja i dezaktywacja pozycji katalogu towarów
@@ -802,24 +801,25 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 ***
 
-
 **Numer i nazwa przypadku uzycia:** 1.2.1.1 - Rejestrowanie klienta
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** Dodanie 
+**Cel przypadku użycia: ** Dodanie nowego klienta do systemu
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Przetwarzanie danych klientów 
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
+Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej procesować oferte
 
 ------
 
@@ -827,19 +827,21 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Korekta danych klienta w systemie
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Przetwarzanie danych klientów
 
-**Aktor główny: **
+**Aktor główny:  ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - Potrzebuje aktualnych danych klienta w celu procesowania oferty
 
+Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego procesowania oferty.
 
 ------
 
@@ -847,19 +849,21 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Poinformowanie `konsultanta` o potrzebie obsługi danego zapytania ofertowego
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Klient` wysyła zapytanie ofertowe drogą mailową z opisanym problemem. `Konsultant` po otrzymaniu informacji o potrzebie `klienta` zaczyna proces ofertowy.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: **Klient
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - Otrzymuje informację o potrzebie klienta
 
+Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produktów z czym zwraca się do konsultanta
 
 ------
 
@@ -867,19 +871,19 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty. Przed wybraniem produktów `konsultant` ma możliwość i obowiązek uzupełnienia informacji na temat oferty takich jak przewidywany zysk, priorytet oferty dla klienta, termin ważności oferty.
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` ma możliwość stworzenia oferty i wyboru klienta dla, którego ta oferta będzie dalej procesowana. `Konsultant` ma równiez możliwość uzupełnienia podstawowych informacji, które będą później widoczne na ofercie oraz będą mogły być użyte do analiz i raportów.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
-
+Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później wykorzystywane do raportów.
 
 ------
 
@@ -887,19 +891,19 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Wyszukanie produktów i dodanie ich do oferty
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant`  ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty.  Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant 
 
 **Uczestnicy i interesy: ** 
 
-
+Konsultant - Wyszukuje produkty i dodaje je do oferty 
 
 ------
 
@@ -907,19 +911,19 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
-
+Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 
 ------
 
@@ -927,35 +931,37 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Sprawdzenie możliwości szybkiej wysyłki dla klienta
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów  na magazynie poprzez graficzny interfejs w wyszukiwarce.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
-
+Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 ------
 
 **Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty -  Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Sprawdzenie najszybszej możliwej dostawy 
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i `klient` akceptuje późniejszy termin dostawy.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
+
+Konsultant - sprawdza w systemie dostępność produktów w fabryce
 
 ------
 
@@ -963,19 +969,21 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Wygenerowanie oferty, która będzie przedstawiona klientowi
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` przygotował oferte dla `klienta` i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do `klienta` elektronicznie lub wydrukować i przedstawić podczas spotkania.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: **Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - generuje dokument ofertowy na podstawie danych uzupełnionych na ofercie
 
+Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 
 ------
 
@@ -983,41 +991,21 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Wartość oferty wykracza poza kryteria samodzielnego składania ofert
 
-**Kontekst użycia:** 
-
-**Zakres: ** 
-
-**Poziom: ** 
-
-**Aktor główny: **
-
-**Uczestnicy i interesy: ** 
-
-
-
-------
-
-**Numer i nazwa przypadku uzycia:** 1.2.3.4 - Zatwierdzenie oferty przez przełożonego
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia: ** 
-
-**Kontekst użycia:** 
+**Kontekst użycia:** Oferta, którą zajmował się `konsultant` przekroczyła wartość pozwalającą na samodzielność danego `konsultanta` i wymagane jest potwierdzenie od przełożonego. Przełożonym jest `konsultant` z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany `Zatwierdzającym oferte`. `Konsultant` wysyła poprzez system prośbę o akceptację na dalsze procesowanie i przedstawienie oferty klientowi. `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty. 
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własności nad ofertą
 
-
-
+Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmuje oferte i procesują ją dalej.
 
 ------
 
@@ -1025,19 +1013,21 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Oferta została zatwierdzona, dokument ofertowy jest wygenerowany. Oferta jest gotowa do przedstawienia klientowi.
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` ma możliwość wysłania dokumentu ofertowego do klienta z poziomu systemu, lub wydrukowanie tego dokumentu i przedstawienie go klientowi.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - przedstawia oferte klientowi
 
+Klient - otrzymuje oferte od konsultanta
 
 ------
 
@@ -1045,19 +1035,21 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Klient podjął decyzję w kontekście danej oferty
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Klient` podjął decyzję dotyczącą przedstawionej mu oferty. `Klient` przekazuję decyzję `konsultantowi`, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty `konsultant` składa zamówienie w fabryce na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: **Klient
 
 **Uczestnicy i interesy: ** 
 
+Klient - Przekazuje decyzje
 
+Konsultant - procesują otrzymaną decyzje w systemie
 
 ------
 
@@ -1065,39 +1057,43 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Dla zamówionej oferty wymagane jest przygotowanie faktury
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Księgowość` dostaje informację w systemie o złożonym zamówieniu przez klienta. `Księgowość` generuje fakturę w systemie na podstawie złożonego zamówienia i przesyła ją klientowi oczekując na zapłatę.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces fakturowania
 
-**Aktor główny: **
+**Aktor główny: ** Księgowość
 
 **Uczestnicy i interesy: ** 
 
+Księgowość - generuje fakture w systemie
 
+Klient - otrzymuje fakture
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.4.5 - Zatwierdzenie faktury - Klient zapłacił za fakture
+**Numer i nazwa przypadku uzycia:** 1.2.4.6 - Zatwierdzenie faktury - Klient zapłacił za fakture
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Oznaczenie danej faktury jako opłacona
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Klient` opłacił fakturę. `Księgowość` korzystając z zewnętrznych informacji bankowo finansowych odnotowuje daną fakturę jako opłaconą w systemie.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces fakturowania
 
-**Aktor główny: **
+**Aktor główny: ** Księgowość
 
 **Uczestnicy i interesy: ** 
 
+Księgowość - odnotowuje płatność w systemie, informacja o płatności pochodz spoza systemu
 
+Klient - opłaca fakture
 
 ------
 
