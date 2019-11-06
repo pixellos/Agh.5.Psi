@@ -143,7 +143,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
     1. Rejestrowanie dostawców
     
        Jako `Konsultant` potrzebuję `dodać dostawcę do systemu`.
-        
+       
     1. Korygowanie danych dostawcy
       
        Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
@@ -191,7 +191,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
     Jako `Konsultatnt` gdy istnieje prawdopodobieństwo `Zlecenia zakupu` obejmującego dany towar mogę go `zarezerwować`
 
-    ​
+    
 
 1. Zmiana lub likwidacja rezerwacji towaru
    
@@ -405,21 +405,19 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     1. Zmiana informacji o kliencie
         Jako `Konsultant`, gdy dostanę informacje o klienta o zmianie w jego danych mam możliwość zmienić istniejaćy wpis w rejestrze.
 
-           
     1. Usuwanie informacji i danych o klientach
         Jako `Konsultant` gdy klient wycoda zgodę na rodo muszę mieć możliwość zanonymizowania danych
-
-           
-
+    
+       
+    
 1. Informowanie o ofercie
     1. Wyświetlenie daty ostatniego kontaktu z klientem
         Jako `Konsultatnt` mam możliwość sprawdzenia, kiedy ostatni raz prezentowałem mu daną ofertę.
 
     1. Wysylanie notyfikacji o ofercie pocztą elektroniczną email
         Jako `Konsultant` mam możliwość wysłania wygenerowanej oferty na adres e-mail
-          
-
-    1. Udzielanie informacji o ofercie telefonicznie
+        
+1. Udzielanie informacji o ofercie telefonicznie
         Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
 
 
@@ -637,7 +635,6 @@ rectangle "Prowadzenie katalogu i cennika towarów" {
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 
-
 ***
 
 **Numer i Nazwa przypadku użycia:** 1.1.2.2 - Aktywacja i dezaktywacja pozycji katalogu towarów
@@ -744,19 +741,21 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Korekta danych klienta w systemie
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Konsultant` otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Przetwarzanie danych klientów
 
-**Aktor główny: **
+**Aktor główny:  ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - Potrzebuje aktualnych danych klienta w celu procesowania oferty
 
+Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego procesowania oferty.
 
 ------
 
@@ -764,19 +763,21 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Poinformowanie `konsultanta` o potrzebie obsługi danego zapytania ofertowego
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Klient` wysyła zapytanie ofertowe drogą mailową z opisanym problemem. `Konsultant` po otrzymaniu informacji o potrzebie `klienta` zaczyna proces ofertowy.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: **Klient
 
 **Uczestnicy i interesy: ** 
 
+Konsultant - Otrzymuje informację o potrzebie klienta
 
+Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produktów z czym zwraca się do konsultanta
 
 ------
 
@@ -784,15 +785,15 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty
 
 **Kontekst użycia:** 
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces ofertowy
 
-**Aktor główny: **
+**Aktor główny: ** Konsultant
 
 **Uczestnicy i interesy: ** 
 
