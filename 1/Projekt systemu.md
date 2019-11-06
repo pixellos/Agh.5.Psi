@@ -971,19 +971,21 @@ Konsultant - procesują otrzymaną decyzje w systemie
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Dla zamówionej oferty wymagane jest przygotowanie faktury
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Księgowość` dostaje informację w systemie o złożonym zamówieniu przez klienta. `Księgowość` generuje fakturę w systemie na podstawie złożonego zamówienia i przesyła ją klientowi oczekując na zapłatę.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces fakturowania
 
-**Aktor główny: **
+**Aktor główny: ** Księgowość
 
 **Uczestnicy i interesy: ** 
 
+Księgowość - generuje fakture w systemie
 
+Klient - otrzymuje fakture
 
 ------
 
@@ -991,19 +993,21 @@ Konsultant - procesują otrzymaną decyzje w systemie
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia: ** Oznaczenie danej faktury jako opłacona
 
-**Kontekst użycia:** 
+**Kontekst użycia:** `Klient` opłacił fakturę. `Księgowość` korzystając z zewnętrznych informacji bankowo finansowych odnotowuje daną fakturę jako opłaconą w systemie.
 
 **Zakres: ** 
 
-**Poziom: ** 
+**Poziom: ** Proces fakturowania
 
-**Aktor główny: **
+**Aktor główny: ** Księgowość
 
 **Uczestnicy i interesy: ** 
 
+Księgowość - odnotowuje płatność w systemie, informacja o płatności pochodz spoza systemu
 
+Klient - opłaca fakture
 
 ------
 
