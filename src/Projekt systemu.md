@@ -1097,7 +1097,28 @@ Księgowość - odnotowuje płatność w systemie, informacja o płatności poch
 
 Klient - opłaca fakture
 
-------
+***
+
+
+**Numer i nazwa przypadku użycia:** 1.3.1.1 - To be done
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** To be done
+
+**Kontekst użycia:** To be done
+
+**Zakres:** To be done
+
+**Poziom:** To be done
+
+**Aktor główny:** To be done
+
+**Uczestnicy i interesy:**
+
+*To be done* - To be done
+
+***
 
 **Numer i nazwa przypadku uzycia:** 1.6.1.1- Marketing w internecie - pozycjonowanie strony
 
@@ -1331,6 +1352,26 @@ rectangle "Informowanie o ofercie" {
 
 ***
 
+
+**Numer i nazwa przypadku użycia:** 1.8.1.1 - To be done
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** To be done
+
+**Kontekst użycia:** To be done
+
+**Zakres:** To be done
+
+**Poziom:** To be done
+
+**Aktor główny:** To be done
+
+**Uczestnicy i interesy:**
+
+*To be done* - To be done
+
+***
 
 
 ## <a name='DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu'></a>2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
