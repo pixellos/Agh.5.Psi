@@ -453,11 +453,11 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
         Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
 
 
-#### <a name='Zarzadzanie'></a>1.3.1.8 Zarzadzanie
+#### <a name='Zarzadzanie'></a>1.3.1.8 Zarządzanie
 
 1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
 
-Jako `właściciel` chciałbym mieć możliwość łatwego obiegu dokumentacji między działami.
+    Jako `właściciel` chciałbym mieć możliwość łatwego obiegu dokumentacji między działami.
 
 2. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
 
@@ -467,6 +467,8 @@ Jako `właściciel` chciałbym mieć możliwość łatwego obiegu dokumentacji m
 
 
 3. Przydział pracowników do określonych zadań
+
+    Jako `właściciel` chciałbym mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania
 
 ## <a name='Problem'></a>1.4 Problem
 ### <a name='Nazwaproblemu'></a>1.4.1 Nazwa problemu
