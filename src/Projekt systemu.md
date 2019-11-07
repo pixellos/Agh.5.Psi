@@ -40,6 +40,8 @@ Lead: Mateusz Popielarz
 	* [2.1.1 Aktorzy w systemie](#Aktorzywsystemie)
 	* [2.1.2 Historie użytkowników (Use Cases)](#HistorieuytkownikwUseCases)
 		* [2.1.2.1 Obsługa zamówień](#Obsugazamwie-1)
+		* [2.1.2.3 Obsługa reklamacji](#Obsugareklamacji)
+		* [2.1.2.8 Zarządanie](#Zarzadzanie)
 * [2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu](#DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu)
 	* [2.2.1 Dane ogólne](#Daneoglne)
 	* [2.2.2 Opis klienta i powiązanych encji](#Opisklientaipowizanychencji)
@@ -1097,8 +1099,9 @@ Księgowość - odnotowuje płatność w systemie, informacja o płatności poch
 
 Klient - opłaca fakture
 
-***
 
+
+#### <a name='Obsugareklamacji'></a>2.1.2.3 Obsługa reklamacji
 
 **Numer i nazwa przypadku użycia:** 1.3.1.1 - To be done
 
@@ -1350,8 +1353,9 @@ rectangle "Informowanie o ofercie" {
 
 **Uczestnicy i interesy: ** 
 
-***
 
+
+#### <a name='Zarzadzanie'></a>2.1.2.8 Zarzadzanie
 
 **Numer i nazwa przypadku użycia:** 1.8.1.1 - To be done
 
