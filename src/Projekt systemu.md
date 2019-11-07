@@ -304,25 +304,25 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać działający produkt lub zwrot pieniędzy.
 
-1. Analiza zasadności
+2. Analiza zasadności reklamacji
 
     1. Sprawdzenie zasadności reklamacji przez zespół
 
     Jako `właściciel` chciałbym, aby `zespół techniczny` przeanalizował zasadność oddania produktu do reklamacji przez `klienta`, aby nie angażować `dostawcy` we wszystkie zgłoszenia reklamacji.
 
 
-1. Zgłoszenie reklamacji dostawcy
+3. Zgłoszenie reklamacji dostawcy
 
-    1. Sprawdzenie zasadności reklamacji przez zespół
+    1. Przygotowanie produktów do odesłania do dostawcy
 
     Jako `właściciel` chciałbym, aby `zespół techniczny` przygotował reklamowane produkty do odesłania `dostawcy`.
 
 
-    1. Realizacja reklamacji
+    2. Realizacja reklamacji do dostawcy
     
-    Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od neigo wymienione, działające produkty.
+    Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od niego wymienione, działające produkty.
 
-1. Prowadzenie rejestru reklamacji
+4. Prowadzenie rejestru reklamacji
 
     Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
 
