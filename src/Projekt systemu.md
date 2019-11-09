@@ -1103,23 +1103,111 @@ Klient - opłaca fakture
 
 #### <a name='ObsugareklamacjiUC'></a>2.1.2.3 Obsługa reklamacji
 
-**Numer i nazwa przypadku użycia:** 1.3.1.1 - To be done
+**Numer i nazwa przypadku użycia:** 1.3.1.1 - Zgłoszenie reklamacji przez klienta
 
 **Autor:** Kacper Kwapisz
 
-**Cel przypadku użycia:** To be done
+**Cel przypadku użycia:** Zgłoszenie reklamacji przez klienta
 
-**Kontekst użycia:** To be done
+**Kontekst użycia:** `Klient` zgłasza reklamację raz pośrednictwem formularza reklamacji na stronie dostępnego na stronie internetowej
 
-**Zakres:** To be done
+**Zakres:** Reklamacja produktu przez klienta
 
-**Poziom:** To be done
+**Poziom:** Przyjęcie zgłoszenia reklamacji
 
-**Aktor główny:** To be done
+**Aktor główny:** Klient
 
 **Uczestnicy i interesy:**
 
-*To be done* - To be done
+*Klient* - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zweryfikować np. datę zakupu.
+
+***
+
+**Numer i nazwa przypadku użycia:** 1.3.1.2 - Obsługa zgłoszenia reklamacji klienta przez pracownika
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** Podjęcie kolejnych kroków w obsłudze reklamacji przez klienta
+
+**Kontekst użycia:** `Pracownik` przekierowuje zgłoszoną przez `klienta` reklamację produktu `zespołowi technicznemu` do analizy zasadności reklamacji.
+
+**Zakres:** Reklamacja produktu przez klienta
+
+**Poziom:** Przyjęcie zgłoszenia reklamacji
+
+**Aktor główny:** Pracownik
+
+**Uczestnicy i interesy:**
+
+*Pracownik* - Inicjuje proces
+
+*Klient* - zgłasza reklamacje
+
+*Zespół techniczny* - przejmuje dalsze czynności
+
+***
+
+**Numer i nazwa przypadku użycia:** 1.3.3.1 - Przygotowanie produktów do odesłania do dostawcy
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** Przygotowanie produktów do odesłania do dostawcy
+
+**Kontekst użycia:** `Zespół techniczny` przygotowuje produkty do odesłania do `dostawcy`
+
+**Zakres:** Przygotowanie produktów do odesłania do dostawcy
+
+**Poziom:** Zgłoszenie reklamacji dostawcy
+
+**Aktor główny:** Zespół techniczny
+
+**Uczestnicy i interesy:**
+
+*Zespół techniczny* - przygotowanie produktów do odesłania do dostawcy
+
+*dostawca* - potencjalny odbiorca przesyłki reklamacji
+
+***
+
+**Numer i nazwa przypadku użycia:** 1.3.3.2 - Realizacja wysłania produktów do dostawcy
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** Wysłanie produktów do dostawcy, aby otrzymać od niego wymienione, działające produkty.
+
+**Kontekst użycia:** Po przygotowaniu produktów do odesłania `zespół techniczny` odsyła produkty do `dostawcy`
+
+**Zakres:** Wysłanie produktów do dostawcy
+
+**Poziom:** Zgłoszenie reklamacji dostawcy
+
+**Aktor główny:** Zespół techniczny
+
+**Uczestnicy i interesy:**
+
+*Zespół techniczny* - wysyła do dostawcy reklamowane produkty
+
+*dostawca* - potencjalny odbiorca przesyłki reklamacji
+
+***
+
+**Numer i nazwa przypadku użycia:** 1.3.4.1 - Wprowadzenie reklamowanych produktów do rejestru
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** Wprowadzenie reklamowanych produktów do rejestru w celu późniejszych statystyk i analiz awaryjności produktów.
+
+**Kontekst użycia:** Po przyjęciu reklamacji `pracownik` wprowadza informacje o produkcie i powodzie reklamacji do rejestru
+
+**Zakres:** Wysłanie produktów do dostawcy
+
+**Poziom:** Prowadzenie rejestru reklamacji
+
+**Aktor główny:** Pracownik
+
+**Uczestnicy i interesy:**
+
+*Pracownik* - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do rejestru
 
 ***
 
@@ -1354,26 +1442,89 @@ rectangle "Informowanie o ofercie" {
 **Uczestnicy i interesy: ** 
 
 
-
 #### <a name='ZarzadzanieUC'></a>2.1.2.8 Zarzadzanie
 
-**Numer i nazwa przypadku użycia:** 1.8.1.1 - To be done
+**Numer i nazwa przypadku użycia:** 1.8.1.1 - Wprowadzenie dokumentów do systemu
 
 **Autor:** Kacper Kwapisz
 
-**Cel przypadku użycia:** To be done
+**Cel przypadku użycia:** Wprowadzenie dokumentów do dostępnej dla pracowników platformy w celu ułatwienia obiegu dokumentacji i zadań między działami.
 
-**Kontekst użycia:** To be done
+**Kontekst użycia:** `Pracownik` wprowadza dokumenty lub zadania do systemu, aby poprzez system były widoczne dla innych pracowników.
 
-**Zakres:** To be done
+**Zakres:** Platforma dla pracowników
 
-**Poziom:** To be done
+**Poziom:** Organizacja w firmie
 
-**Aktor główny:** To be done
+**Aktor główny:** Pracownik
 
 **Uczestnicy i interesy:**
 
-*To be done* - To be done
+*Pracownik* - wprowadza dokumenty, zadania, ogłoszenia do systemu
+
+***
+
+**Numer i nazwa przypadku użycia:** 1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** `Właściciel` zna zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od `dostawcy`. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.
+
+**Kontekst użycia:** Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem czasowym
+
+**Zakres:** Platforma dla pracowników
+
+**Poziom:** Organizacja w firmie
+
+**Aktor główny:** Właściciel
+
+**Uczestnicy i interesy:**
+
+*Właściciel* - odczytuje i ma możliwość analizy prognoz czasowych zamówień
+
+*Dostawca* - od niego firma zamawia produkty
+
+***
+
+**Numer i nazwa przypadku użycia:** 1.8.2.2 -Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** Właściciel zna zapotrzebowanie ilościowe na produkty do zamówienia od dostawcy. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.
+
+**Kontekst użycia:** Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem ilościowym
+
+**Zakres:**
+
+**Poziom:** Organizacja w firmie
+
+**Aktor główny:** Właściciel
+
+**Uczestnicy i interesy:**
+
+*Właściciel* - odczytuje i ma możliwość analizy prognoz ilościowych zamówień
+
+***
+
+**Numer i nazwa przypadku użycia:** 1.8.3.1 -  Przydział pracowników do określonych zadań
+
+**Autor:** Kacper Kwapisz
+
+**Cel przypadku użycia:** Właściciel chciałby mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania
+
+**Kontekst użycia:** Właściciel wprowadza do systemu zadania dla konkretnych pracowników. Pracownicy za pośrednictwem platformy widzą przydzielone im zadania.
+
+**Zakres:** Przydział pracowników do określonych zadań
+
+**Poziom:** Organizacja w firmie
+
+**Aktor główny:** Właściciel
+
+**Uczestnicy i interesy:**
+
+*Właściciel* - przydziela pracowników do określonych zadań
+
+*Pracownik* - widzi przydzielone mu zadanie przez właściciela
 
 ***
 
