@@ -1285,7 +1285,7 @@ Klient - opłaca fakture
 
 **Aktor główny: **
 
-**Uczestnicy i interesy: ** 
+*Uczestnicy i interesy: * 
 
 ***
 
