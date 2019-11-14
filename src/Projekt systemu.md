@@ -45,8 +45,7 @@ Lead: Mateusz Popielarz
 		* [2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi](#Rejestrpotencjalnychklientwistanukontaktuznimi-1)
 		* [2.1.2.8 Zarzadzanie](#Zarzadzanie)
 * [2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu](#DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu)
-	* [2.2.1 Dane ogólne](#Daneoglne)
-	* [2.2.2 Opis klienta i powiązanych encji](#Opisklientaipowizanychencji)
+	* [2.2.2 Opis klienta i powiązanych danych](#Opisklientaipowizanychdanych)
 	* [2.2.3 Opis Dostawcy](#OpisDostawcy)
 	* [2.2.4 Opis Magazynu](#OpisMagazynu)
 * [2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce](#DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce)
@@ -1526,59 +1525,35 @@ rectangle "Informowanie o ofercie" {
 
 ## <a name='DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu'></a>2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
 
-### <a name='Daneoglne'></a>2.2.1 Dane ogólne
 
-1. Produkt
-    1. Ilość na magazynie
-    1. Obecna potrzebna ilość
-    1. Zamówiona ilość
-    1. Sprzedane
+### <a name='Opisklientaipowizanychdanych'></a>2.2.2 Opis klienta i powiązanych danych
+W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
-1. Osoba
+1. Klient - jednoznacznie określa klienta
     1. Imię
     1. Nazwisko
     1. Email kontaktowy
     1. Telefon kontaktowy
     1. Adres kontaktowy
-
-1. Lokal przemysłowy
-    1. Adres
-
-1. Faktura
-    1. Firma
-    1. Kwota
-    1. Zastosowana stawka VAT
-    1. Kwota opłacona
-
-1. Firma
-    1. Nazwa firmy
-    1. NIP
-    1. Wystawione faktury przez naszą firmę
-    1. Wystawione faktury do opłacenia przez nasza firmę
-    1. Kraj pochodzenia
-
-1. Pracownik (Rozszerza `Osoba`)
-    1. Pensja
-    1. Data zatrudnienia
-    1. Data rozwiązania umowy
-    1.
-
-1. Konsultant (Rozszerza `Pracownik`)
-
-1. Pracownik usług (Rozszerza `Pracownik`)
-
-### <a name='Opisklientaipowizanychencji'></a>2.2.2 Opis klienta i powiązanych encji
-W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
-
-1. Klient (Rozszerza `Osoba`) - jednoznacznie określa klienta
     1. Firma, której jest reprezentantem
     1. Zgoda na przetwarzanie danych osobowych w formie cyfrowej
     1. Liczba wszystkich zamówień w systemie
     1. Łączna kwota zamówień
     1. Numer referencyjny
     1. Lokale
+    
+1. Faktura
+    1. Firma
+    1. Kwota
+    1. Zastosowana stawka VAT
+    1. Kwota opłacona
 
-1. Firma klienta (Rozszerza `Firma`)
+1. Firma klienta
+    1. Nazwa firmy
+    1. NIP
+    1. Wystawione faktury przez naszą firmę
+    1. Wystawione faktury do opłacenia przez nasza firmę
+    1. Kraj pochodzenia
     1. Reprezentanci
 
 1. Oferta
@@ -1586,14 +1561,30 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
     1. Data wystawienia
     1. Klient
 
+1. Pracownik
+    1. Imię
+    1. Nazwisko
+    1. Email kontaktowy
+    1. Telefon kontaktowy
+    1. Adres kontaktowy
+    1. Pensja
+    1. Data zatrudnienia
+    1. Data rozwiązania umowy
+
 ### <a name='OpisDostawcy'></a>2.2.3 Opis Dostawcy
 
-1. Fabryka dostawcy (Rozszerza `Lokal przemysłowy`)
+1. Fabryka dostawcy
+    1. Adres
     1. Kody produktów obsługiwanych przez tą fabrykę
-    1. Dostawca (Referencja do `Dostawca`)
+    1. Dostawca
 
-1. Dostawca (Rozszerza `Firma`)
-    1. Fabryki (Wiele `Fabryka Dostawcy`)
+1. Dostawca
+    1. Nazwa firmy
+    1. NIP
+    1. Wystawione faktury przez naszą firmę
+    1. Wystawione faktury do opłacenia przez nasza firmę
+    1. Kraj pochodzenia
+    1. Fabryki
 
 ### <a name='OpisMagazynu'></a>2.2.4 Opis Magazynu
 
@@ -1605,7 +1596,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
     1. Rezerwacja pod produkt wielkogabarytowy
 
 
-## <a name='DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce
+## <a name='DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
 - Ekran wprowadzenia danych dostawcy do systemu (w wariancie modyfikacji pola będą po prostu wstępnie wypełnione)
 
@@ -1696,16 +1687,6 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 
 1. Produkt
 2. Magazyn
-
-User stories ->
-
-Mateusz 1. 7.
-
-Kamil 4 5
-
-Adam 2 6
-
-Kacper 3 8
 
 
 
