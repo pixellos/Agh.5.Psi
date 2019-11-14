@@ -232,6 +232,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
     1. Zmiana lub likwidacja rezerwacji towaru
       
+      
    
    Jako `Konsultant` gdy `Zlecenia Zakupu` przestanie obejmować dany towar mogę zlikwidować całkowicie `rezerwację towaru` u danego dostawcy .
 
@@ -891,17 +892,17 @@ Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później 
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** Wyszukanie produktów i dodanie ich do oferty
+**Cel przypadku użycia:** Wyszukanie produktów i dodanie ich do oferty
 
 **Kontekst użycia:** `Konsultant`  ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty.  Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant 
+**Aktor główny:** Konsultant 
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - Wyszukuje produkty i dodaje je do oferty 
 
@@ -915,13 +916,13 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 **Kontekst użycia:** `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 
@@ -931,17 +932,17 @@ Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** Sprawdzenie możliwości szybkiej wysyłki dla klienta
+**Cel przypadku użycia:** Sprawdzenie możliwości szybkiej wysyłki dla klienta
 
 **Kontekst użycia:** `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów  na magazynie poprzez graficzny interfejs w wyszukiwarce.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
@@ -949,17 +950,17 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 **Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty -  Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
 
-**Cel przypadku użycia: ** Sprawdzenie najszybszej możliwej dostawy 
+**Cel przypadku użycia:** Sprawdzenie najszybszej możliwej dostawy 
 
 **Kontekst użycia:** `Konsultant` ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i `klient` akceptuje późniejszy termin dostawy.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - sprawdza w systemie dostępność produktów w fabryce
 
@@ -969,17 +970,17 @@ Konsultant - sprawdza w systemie dostępność produktów w fabryce
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia: ** Wygenerowanie oferty, która będzie przedstawiona klientowi
+**Cel przypadku użycia:** Wygenerowanie oferty, która będzie przedstawiona klientowi
 
 **Kontekst użycia:** `Konsultant` przygotował oferte dla `klienta` i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do `klienta` elektronicznie lub wydrukować i przedstawić podczas spotkania.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: **Konsultant
+**Aktor główny:**Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - generuje dokument ofertowy na podstawie danych uzupełnionych na ofercie
 
