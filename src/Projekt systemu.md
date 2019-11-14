@@ -9,6 +9,7 @@ Lead: Mateusz Popielarz
 # 0 Spis Treści
 
 <!-- vscode-markdown-toc -->
+* [Żródło danych: firma rodzinna](#rdodanych:firmarodzinna)
 * [1.1  Przedmiot modelowania](#Przedmiotmodelowania)
 	* [1.1.1 Nazwa firmy](#Nazwafirmy)
 	* [1.1.2 Typ firmy](#Typfirmy)
@@ -29,7 +30,7 @@ Lead: Mateusz Popielarz
 		* [1.3.1.5 Kontrola stanów magazynowych](#Kontrolastanwmagazynowych)
 		* [1.3.1.6 Integracja z systemami marketingu](#Integracjazsystemamimarketingu)
 		* [1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi](#Rejestrpotencjalnychklientwistanukontaktuznimi)
-		* [1.3.1.8 Zarzadzanie](#Zarzadzanie)
+		* [1.3.1.8 Zarządzanie](#Zarzdzanie)
 * [1.4 Problem](#Problem)
 	* [1.4.1 Nazwa problemu](#Nazwaproblemu)
 	* [1.4.2 Nazwa kodowa](#Nazwakodowa)
@@ -40,8 +41,9 @@ Lead: Mateusz Popielarz
 	* [2.1.1 Aktorzy w systemie](#Aktorzywsystemie)
 	* [2.1.2 Historie użytkowników (Use Cases)](#HistorieuytkownikwUseCases)
 		* [2.1.2.1 Obsługa zamówień](#Obsugazamwie-1)
-		* [2.1.2.3 Obsługa reklamacji](#ObsugareklamacjiUC)
-		* [2.1.2.8 Zarządanie](#ZarzadzanieUC)
+		* [2.1.2.3 Obsługa reklamacji](#Obsugareklamacji-1)
+		* [2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi](#Rejestrpotencjalnychklientwistanukontaktuznimi-1)
+		* [2.1.2.8 Zarzadzanie](#Zarzadzanie)
 * [2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu](#DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu)
 	* [2.2.1 Dane ogólne](#Daneoglne)
 	* [2.2.2 Opis klienta i powiązanych encji](#Opisklientaipowizanychencji)
@@ -455,7 +457,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
         Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
 
 
-#### <a name='Zarzadzanie'></a>1.3.1.8 Zarządzanie
+#### <a name='Zarzdzanie'></a>1.3.1.8 Zarządzanie
 
 1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
 
@@ -517,7 +519,6 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 
 @enduml
 ```
-![Projekt systemu](https://www.plantuml.com/plantuml/png/0/BOun2iCm34NtGEwWStWAT0oTUW8HYs2Io23B66iiz12vZtklkY7ZUtnuVqgAeldOns4St1mvvLsHrNLwuefMEP0u0BY4RAI1rrW2BRTysFSTcJOm56iVdsy_fz3ElgpkmbTDIWSO5MwdYd457tkyB7tmZq_4ll_u0G00 "Projekt systemu")
 
 ###### *Rysunek 3. Aktorzy w systemie*
 
@@ -553,87 +554,87 @@ rectangle "Aktualizacja danych dostawcy" {
 }
 @enduml
 ```
-![Projekt systemu-1](https://www.plantuml.com/plantuml/png/0/ZP9DRi8m44Rtbdo74QkoW0DqWQZ4ZbqvmM0FOOXZH_P4aOkuEmvL05NyT3lVcsT_bfT9C4hNEAqSxGGaGEHgBs0vaX4ENgjKisynOWCjcXehsaXs14EEldAa5He94TR1fywLcOoJLIZwtg1MLnWcNxLqwFW7pG71eizc3_ONp1CuQWNmiGunLw57p_GNcS9yNeXLi9TqXzkOQoxn7G4NoJSTA4aSDRVznPi3Fe6zSPsbGNDh1RFPK-bRShnd3oadeORfqSwhLW_mLoq6V7p_Vy0dhPRaRVa9Pm00 "Projekt systemu-1")
+
 
 ###### *Rysunek 4. Diagram przypadków użycia aktualizacji danych dostawcy*
 
-**Numer i Nazwa przypadku użycia:** 1.1.1.1 - Rejestrowanie dostawcy
+**Numer i Nazwa przypadku użycia:**  1.1.1.1 - Rejestrowanie dostawcy
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia:** Dodanie dostawcy do systemu
+**Cel przypadku użycia:**  Dodanie dostawcy do systemu
 
-**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
+**Kontekst użycia:**  ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
 
-**Zakres:** System do obsługi dostawców
+**Zakres:**  System do obsługi dostawców
 
-**Poziom:** Przetwarzanie danych dostawców 
+**Poziom:**  Przetwarzanie danych dostawców 
 
-**Aktor główny:** Konsultant
+**Aktor główny:**  Konsultant
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 *Dostawca* - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
 ***
 
-**Numer i Nazwa przypadku użycia:** 1.1.1.2 - Modyfikowanie danych dostawcy
+**Numer i Nazwa przypadku użycia:**  1.1.1.2 - Modyfikowanie danych dostawcy
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia:** Aktualizacja lub poprawienie danych dsotawcy
+**Cel przypadku użycia:**  Aktualizacja lub poprawienie danych dsotawcy
 
-**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
+**Kontekst użycia:**  ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
 
-**Zakres:** Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
+**Zakres:**  Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
 
-**Poziom:** Przetwarzanie danych dostawców 
+**Poziom:**  Przetwarzanie danych dostawców 
 
-**Aktor główny:** Konsultant
+**Aktor główny:**  Konsultant
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 *Dostawca* - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
 ***
 
-**Numer i Nazwa przypadku użycia:** 1.1.1.3 - Rejestrowanie fabryki w systemie
+**Numer i Nazwa przypadku użycia:**  1.1.1.3 - Rejestrowanie fabryki w systemie
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia:** Dodanie fabryki do systemu i podłączenie jej do dostawcy
+**Cel przypadku użycia:**  Dodanie fabryki do systemu i podłączenie jej do dostawcy
 
-**Kontekst użycia:** ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
+**Kontekst użycia:**  ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
 
-**Zakres:**  Gdy dane fabryki, jak nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione.
+**Zakres:**   Gdy dane fabryki, jak nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione.
 
-**Poziom:** Przetwarzanie danych dostawców 
+**Poziom:**  Przetwarzanie danych dostawców 
 
-**Aktor główny:** Konsultant
+**Aktor główny:**  Konsultant
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 
 ***
 
-**Numer i Nazwa przypadku użycia:** 1.1.1.4 - Dodanie fabryki do dostawcy
+**Numer i Nazwa przypadku użycia:**  1.1.1.4 - Dodanie fabryki do dostawcy
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia:** Podłączenie fabryki do dostawcy
+**Cel przypadku użycia:**  Podłączenie fabryki do dostawcy
 
-**Kontekst użycia:** ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
+**Kontekst użycia:**  ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
 
-**Zakres:** ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
+**Zakres:**  ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
 
-**Poziom:** Przetwarzanie danych dostawców 
+**Poziom:**  Przetwarzanie danych dostawców 
 
-**Aktor główny:** Konsultant
+**Aktor główny:**  Konsultant
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 
@@ -653,88 +654,87 @@ rectangle "Prowadzenie katalogu i cennika towarów" {
 }
 @enduml
 ```
-![Projekt systemu-2](https://www.plantuml.com/plantuml/png/0/XP51QWCn34Nt1jz1P9KiSeSK2brqKoWzWB3LYM977ZmQp4pegNg4NgnsQ5qefDLEyjUJltIO5BFEvsXDf5S5JP1vE2fupkIKarWp1POHCvvXH1Tme6TT8a5xHnaYMODEKuR79DCSQqrx9JArh4jXyvHJGR-IC450nPY66HWSYN30EhzW_dWl6xXO0pMsFzGTxFUmlKyU2xPsIMLnHnZJkhWJVzDgSwViRZ3kWYu5tGdhP4yhzlGNQ_wNz5Bt5w-_gGvkYHv8gDd-aZMZNNhTq5-oDsiE9BwUw1C0 "Projekt systemu-2")
 
 ###### *Rysunek 5. Diagram przypadków użycia aktualizacji danych dostawcy*
 
 ***
 
-**Numer i Nazwa przypadku użycia:** 1.1.2.1 - Dodawanie nowych pozycji katalogów towarów
+**Numer i Nazwa przypadku użycia:**  1.1.2.1 - Dodawanie nowych pozycji katalogów towarów
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia:** Dodawanie nowych pozycji katalogów towarów
+**Cel przypadku użycia:**  Dodawanie nowych pozycji katalogów towarów
 
-**Kontekst użycia:** Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
+**Kontekst użycia:**  Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
 
-**Zakres:** Dodanie pozycji
+**Zakres:**  Dodanie pozycji
 
-**Poziom:** Prowadzenie katalogu i cennika towarów
+**Poziom:**  Prowadzenie katalogu i cennika towarów
 
-**Aktor główny:** Konsultant
+**Aktor główny:**  Konsultant
 
-**Uczestnicy i interesy:**
-
-*Konsultant* - Jest to w jego zakresu obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.1.2.2 - Aktywacja i dezaktywacja pozycji katalogu towarów
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Aktywacja i dezaktywacja pozycji katalogu towarów
-
-**Kontekst użycia:** Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.
-
-**Zakres:** Aktualizacja pozycji
-
-**Poziom:** Prowadzenie katalogu i cennika towarów
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 
 ***
 
+**Numer i Nazwa przypadku użycia:**  1.1.2.2 - Aktywacja i dezaktywacja pozycji katalogu towarów
 
-**Numer i Nazwa przypadku użycia:** 1.1.2.3 - Ustalanie cen
+**Autor:**  Mateusz Popielarz
 
-**Autor:** Mateusz Popielarz
+**Cel przypadku użycia:**  Aktywacja i dezaktywacja pozycji katalogu towarów
 
-**Cel przypadku użycia:** Ustalanie cen
+**Kontekst użycia:**  Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.
 
-**Kontekst użycia:** W systemie każdy `towar` musi mieć możliwość definiowania `ceny` - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.
+**Zakres:**  Aktualizacja pozycji
 
-**Zakres:** Ustalenie pozycji
+**Poziom:**  Prowadzenie katalogu i cennika towarów
 
-**Poziom:** Prowadzenie katalogu i cennika towarów
+**Aktor główny:**  Konsultant
 
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 
 ***
 
 
-**Numer i Nazwa przypadku użycia:** 1.1.2.4 - Generowanie cennika
+**Numer i Nazwa przypadku użycia:**  1.1.2.3 - Ustalanie cen
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia:** Generowanie cennika
+**Cel przypadku użycia:**  Ustalanie cen
 
-**Kontekst użycia:** 	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
-**Zakres:** Ustalenie pozycji
+**Kontekst użycia:**  W systemie każdy `towar` musi mieć możliwość definiowania `ceny` - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.
 
-**Poziom:** Prowadzenie katalogu i cennika towarów
+**Zakres:**  Ustalenie pozycji
 
-**Aktor główny:** Konsultant
+**Poziom:**  Prowadzenie katalogu i cennika towarów
 
-**Uczestnicy i interesy:**
+**Aktor główny:**  Konsultant
+
+**Uczestnicy i interesy:** 
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+***
+
+
+**Numer i Nazwa przypadku użycia:**  1.1.2.4 - Generowanie cennika
+
+**Autor:**  Mateusz Popielarz
+
+**Cel przypadku użycia:**  Generowanie cennika
+
+**Kontekst użycia:**  	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu `towarów`. Raz wygenerowany cennik musi być wersjonowany.
+**Zakres:**  Ustalenie pozycji
+
+**Poziom:**  Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:**  Konsultant
+
+**Uczestnicy i interesy:** 
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 
@@ -753,51 +753,50 @@ rectangle "Rezerwacja towaru" {
 }
 @enduml
 ```
-![Projekt systemu-3](https://www.plantuml.com/plantuml/png/0/TP2n3e9038RtI-uT6YOOU0TsDztSAbIi77Uaz4BK-EuU6D5exDQ__zU_QJKgYiRUMUFegA01XDkJGiD2jNBmremT-m45UnYmxh2bdLuSmJn7tpgo1ciD0flWn-YIfglYcEPkjKAsfIl9XFKPKzQ44ZEuMGEfyZTVG5b2_cCj_XZtFQD7SF40Zhk9cuMH5yxV-7BL4_rOPStTcefyaxxn0000 "Projekt systemu-3")
 
 ###### *Rysunek 6. Diagram przypadków użycia rezerwacji towaru*
 
 
 
-**Numer i Nazwa przypadku użycia:** 1.1.3.1 - Rezerwacja towaru
+**Numer i Nazwa przypadku użycia:**  1.1.3.1 - Rezerwacja towaru
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia:**  Rezerwacja towaru
+**Cel przypadku użycia:**   Rezerwacja towaru
 
-**Kontekst użycia:** 	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje `wycofany z rezerwacji`. 
+**Kontekst użycia:**  	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje `wycofany z rezerwacji`. 
+
+**Zakres:**   Rezerwacja towaru
+
+**Poziom:**  Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:**  Konsultant
+
+**Uczestnicy i interesy:** 
+
+*Konsultant* - Jest to w jego zakresu obowiązków
+
+*Klient* - Inicjuje proces
+
+***
+
+
+**Numer i Nazwa przypadku użycia:**  1.1.3.2 - Zmiana lub likwidacja rezerwacji towaru
+
+**Autor:**  Mateusz Popielarz
+
+**Cel przypadku użycia:**  Zmiana lub likwidacja rezerwacji towaru
+
+**Kontekst użycia:**  
+W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być możliwe anulowanie całości lub części `Zamówienia` - ta informacja musi być jak najszybicej wysłana do `Dostawcy` . W sytuacji, gdy dostawca zaczął już produkcje częsci jest to przypadek niemożliwy do automatycznego rozstrzygnięcia przez system - bezpośredni manager musi zostać poinformowany. Historia zmian musi być przechowywana.
 
 **Zakres:**  Rezerwacja towaru
 
-**Poziom:** Prowadzenie katalogu i cennika towarów
+**Poziom:**  Prowadzenie katalogu i cennika towarów
 
-**Aktor główny:** Konsultant
+**Aktor główny:**  Konsultant
 
-**Uczestnicy i interesy:**
-
-*Konsultant* - Jest to w jego zakresu obowiązków
-
-*Klient* - Inicjuje proces
-
-***
-
-
-**Numer i Nazwa przypadku użycia:** 1.1.3.2 - Zmiana lub likwidacja rezerwacji towaru
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Zmiana lub likwidacja rezerwacji towaru
-
-**Kontekst użycia:** 
-W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być możliwe anulowanie całości lub części `Zamówienia` - ta informacja musi być jak najszybicej wysłana do `Dostawcy` . W sytuacji, gdy dostawca zaczął już produkcje częsci jest to przypadek niemożliwy do automatycznego rozstrzygnięcia przez system - bezpośredni manager musi zostać poinformowany. Historia zmian musi być przechowywana.
-
-**Zakres:** Rezerwacja towaru
-
-**Poziom:** Prowadzenie katalogu i cennika towarów
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Konsultant* - Jest to w jego zakresu obowiązków
 
@@ -805,21 +804,21 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 ***
 
-**Numer i nazwa przypadku uzycia:** 1.2.1.1 - Rejestrowanie klienta
+**Numer i nazwa przypadku uzycia:**  1.2.1.1 - Rejestrowanie klienta
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Dodanie nowego klienta do systemu
+**Cel przypadku użycia:** Dodanie nowego klienta do systemu
 
-**Kontekst użycia:** `Konsultant` musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.
+**Kontekst użycia:**  `Konsultant` musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Przetwarzanie danych klientów 
+**Poziom:** Przetwarzanie danych klientów 
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
@@ -827,21 +826,21 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.1.2 - Korygowanie danych klienta
+**Numer i nazwa przypadku uzycia:**  1.2.1.2 - Korygowanie danych klienta
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Korekta danych klienta w systemie
+**Cel przypadku użycia:** Korekta danych klienta w systemie
 
-**Kontekst użycia:** `Konsultant` otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu
+**Kontekst użycia:**  `Konsultant` otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Przetwarzanie danych klientów
+**Poziom:** Przetwarzanie danych klientów
 
 **Aktor główny:  ** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - Potrzebuje aktualnych danych klienta w celu procesowania oferty
 
@@ -849,21 +848,21 @@ Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego proc
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.2.0 - Przyjęcia zapytania ofertowego od klienta
+**Numer i nazwa przypadku uzycia:**  1.2.2.0 - Przyjęcia zapytania ofertowego od klienta
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Poinformowanie `konsultanta` o potrzebie obsługi danego zapytania ofertowego
+**Cel przypadku użycia:** Poinformowanie `konsultanta` o potrzebie obsługi danego zapytania ofertowego
 
-**Kontekst użycia:** `Klient` wysyła zapytanie ofertowe drogą mailową z opisanym problemem. `Konsultant` po otrzymaniu informacji o potrzebie `klienta` zaczyna proces ofertowy.
+**Kontekst użycia:**  `Klient` wysyła zapytanie ofertowe drogą mailową z opisanym problemem. `Konsultant` po otrzymaniu informacji o potrzebie `klienta` zaczyna proces ofertowy.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: **Klient
+**Aktor główny:** Klient
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - Otrzymuje informację o potrzebie klienta
 
@@ -871,119 +870,119 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.1 - Utworzenie oferty w systemie
+**Numer i nazwa przypadku uzycia:**  1.2.3.1 - Utworzenie oferty w systemie
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty. Przed wybraniem produktów `konsultant` ma możliwość i obowiązek uzupełnienia informacji na temat oferty takich jak przewidywany zysk, priorytet oferty dla klienta, termin ważności oferty.
+**Cel przypadku użycia:** Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty. Przed wybraniem produktów `konsultant` ma możliwość i obowiązek uzupełnienia informacji na temat oferty takich jak przewidywany zysk, priorytet oferty dla klienta, termin ważności oferty.
 
-**Kontekst użycia:** `Konsultant` ma możliwość stworzenia oferty i wyboru klienta dla, którego ta oferta będzie dalej procesowana. `Konsultant` ma równiez możliwość uzupełnienia podstawowych informacji, które będą później widoczne na ofercie oraz będą mogły być użyte do analiz i raportów.
+**Kontekst użycia:**  `Konsultant` ma możliwość stworzenia oferty i wyboru klienta dla, którego ta oferta będzie dalej procesowana. `Konsultant` ma równiez możliwość uzupełnienia podstawowych informacji, które będą później widoczne na ofercie oraz będą mogły być użyte do analiz i raportów.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później wykorzystywane do raportów.
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.1 - Dodanie produktów do oferty - Znalezienie w systemie oraz dodanie produktów do oferty
+**Numer i nazwa przypadku uzycia:**  1.2.3.2.1 - Dodanie produktów do oferty - Znalezienie w systemie oraz dodanie produktów do oferty
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Wyszukanie produktów i dodanie ich do oferty
+**Cel przypadku użycia:** Wyszukanie produktów i dodanie ich do oferty
 
-**Kontekst użycia:** `Konsultant`  ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty.  Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.
+**Kontekst użycia:**  `Konsultant`  ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty.  Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant 
+**Aktor główny:** Konsultant 
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - Wyszukuje produkty i dodaje je do oferty 
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu
+**Numer i nazwa przypadku uzycia:**  1.2.3.2.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy
+**Cel przypadku użycia:** Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy
 
-**Kontekst użycia:** `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
+**Kontekst użycia:**  `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.2.1 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie aktualnego stanu magazynu
+**Numer i nazwa przypadku uzycia:**  1.2.3.2.2.1 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie aktualnego stanu magazynu
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Sprawdzenie możliwości szybkiej wysyłki dla klienta
+**Cel przypadku użycia:** Sprawdzenie możliwości szybkiej wysyłki dla klienta
 
-**Kontekst użycia:** `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów  na magazynie poprzez graficzny interfejs w wyszukiwarce.
+**Kontekst użycia:**  `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów  na magazynie poprzez graficzny interfejs w wyszukiwarce.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty -  Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
+**Numer i nazwa przypadku uzycia:**  1.2.3.2 - Dodanie produktów do oferty -  Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
 
-**Cel przypadku użycia: ** Sprawdzenie najszybszej możliwej dostawy 
+**Cel przypadku użycia:** Sprawdzenie najszybszej możliwej dostawy 
 
-**Kontekst użycia:** `Konsultant` ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i `klient` akceptuje późniejszy termin dostawy.
+**Kontekst użycia:**  `Konsultant` ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i `klient` akceptuje późniejszy termin dostawy.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - sprawdza w systemie dostępność produktów w fabryce
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.3 - Wygenerowanie dokumentu ofertowego
+**Numer i nazwa przypadku uzycia:**  1.2.3.3 - Wygenerowanie dokumentu ofertowego
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Wygenerowanie oferty, która będzie przedstawiona klientowi
+**Cel przypadku użycia:** Wygenerowanie oferty, która będzie przedstawiona klientowi
 
-**Kontekst użycia:** `Konsultant` przygotował oferte dla `klienta` i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do `klienta` elektronicznie lub wydrukować i przedstawić podczas spotkania.
+**Kontekst użycia:**  `Konsultant` przygotował oferte dla `klienta` i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do `klienta` elektronicznie lub wydrukować i przedstawić podczas spotkania.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: **Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - generuje dokument ofertowy na podstawie danych uzupełnionych na ofercie
 
@@ -991,21 +990,21 @@ Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.4 - Zatwierdzenie oferty przez przełożonego
+**Numer i nazwa przypadku uzycia:**  1.2.3.4 - Zatwierdzenie oferty przez przełożonego
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Wartość oferty wykracza poza kryteria samodzielnego składania ofert
+**Cel przypadku użycia:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert
 
-**Kontekst użycia:** Oferta, którą zajmował się `konsultant` przekroczyła wartość pozwalającą na samodzielność danego `konsultanta` i wymagane jest potwierdzenie od przełożonego. Przełożonym jest `konsultant` z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany `Zatwierdzającym oferte`. `Konsultant` wysyła poprzez system prośbę o akceptację na dalsze procesowanie i przedstawienie oferty klientowi. `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty. 
+**Kontekst użycia:**  Oferta, którą zajmował się `konsultant` przekroczyła wartość pozwalającą na samodzielność danego `konsultanta` i wymagane jest potwierdzenie od przełożonego. Przełożonym jest `konsultant` z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany `Zatwierdzającym oferte`. `Konsultant` wysyła poprzez system prośbę o akceptację na dalsze procesowanie i przedstawienie oferty klientowi. `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty. 
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własności nad ofertą
 
@@ -1013,21 +1012,21 @@ Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmu
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi
+**Numer i nazwa przypadku uzycia:**  1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Oferta została zatwierdzona, dokument ofertowy jest wygenerowany. Oferta jest gotowa do przedstawienia klientowi.
+**Cel przypadku użycia:** Oferta została zatwierdzona, dokument ofertowy jest wygenerowany. Oferta jest gotowa do przedstawienia klientowi.
 
-**Kontekst użycia:** `Konsultant` ma możliwość wysłania dokumentu ofertowego do klienta z poziomu systemu, lub wydrukowanie tego dokumentu i przedstawienie go klientowi.
+**Kontekst użycia:**  `Konsultant` ma możliwość wysłania dokumentu ofertowego do klienta z poziomu systemu, lub wydrukowanie tego dokumentu i przedstawienie go klientowi.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Konsultant - przedstawia oferte klientowi
 
@@ -1035,21 +1034,21 @@ Klient - otrzymuje oferte od konsultanta
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.4.2 - Kontakt z klientem w celu potwierdzenia oferty - Potwierdzenie oferty przez klienta
+**Numer i nazwa przypadku uzycia:**  1.2.4.2 - Kontakt z klientem w celu potwierdzenia oferty - Potwierdzenie oferty przez klienta
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Klient podjął decyzję w kontekście danej oferty
+**Cel przypadku użycia:** Klient podjął decyzję w kontekście danej oferty
 
-**Kontekst użycia:** `Klient` podjął decyzję dotyczącą przedstawionej mu oferty. `Klient` przekazuję decyzję `konsultantowi`, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty `konsultant` składa zamówienie w fabryce na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.
+**Kontekst użycia:**  `Klient` podjął decyzję dotyczącą przedstawionej mu oferty. `Klient` przekazuję decyzję `konsultantowi`, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty `konsultant` składa zamówienie w fabryce na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces ofertowy
+**Poziom:** Proces ofertowy
 
-**Aktor główny: **Klient
+**Aktor główny:** Klient
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Klient - Przekazuje decyzje
 
@@ -1057,21 +1056,21 @@ Konsultant - procesują otrzymaną decyzje w systemie
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.4.5 - Wystawienie faktury
+**Numer i nazwa przypadku uzycia:**  1.2.4.5 - Wystawienie faktury
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Dla zamówionej oferty wymagane jest przygotowanie faktury
+**Cel przypadku użycia:** Dla zamówionej oferty wymagane jest przygotowanie faktury
 
-**Kontekst użycia:** `Księgowość` dostaje informację w systemie o złożonym zamówieniu przez klienta. `Księgowość` generuje fakturę w systemie na podstawie złożonego zamówienia i przesyła ją klientowi oczekując na zapłatę.
+**Kontekst użycia:**  `Księgowość` dostaje informację w systemie o złożonym zamówieniu przez klienta. `Księgowość` generuje fakturę w systemie na podstawie złożonego zamówienia i przesyła ją klientowi oczekując na zapłatę.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces fakturowania
+**Poziom:** Proces fakturowania
 
-**Aktor główny: ** Księgowość
+**Aktor główny:** Księgowość
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Księgowość - generuje fakture w systemie
 
@@ -1079,21 +1078,21 @@ Klient - otrzymuje fakture
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.2.4.6 - Zatwierdzenie faktury - Klient zapłacił za fakture
+**Numer i nazwa przypadku uzycia:**  1.2.4.6 - Zatwierdzenie faktury - Klient zapłacił za fakture
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** Oznaczenie danej faktury jako opłacona
+**Cel przypadku użycia:** Oznaczenie danej faktury jako opłacona
 
-**Kontekst użycia:** `Klient` opłacił fakturę. `Księgowość` korzystając z zewnętrznych informacji bankowo finansowych odnotowuje daną fakturę jako opłaconą w systemie.
+**Kontekst użycia:**  `Klient` opłacił fakturę. `Księgowość` korzystając z zewnętrznych informacji bankowo finansowych odnotowuje daną fakturę jako opłaconą w systemie.
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** Proces fakturowania
+**Poziom:** Proces fakturowania
 
-**Aktor główny: ** Księgowość
+**Aktor główny:** Księgowość
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 Księgowość - odnotowuje płatność w systemie, informacja o płatności pochodz spoza systemu
 
@@ -1101,43 +1100,43 @@ Klient - opłaca fakture
 
 
 
-#### <a name='ObsugareklamacjiUC'></a>2.1.2.3 Obsługa reklamacji
+#### <a name='Obsugareklamacji-1'></a>2.1.2.3 Obsługa reklamacji
 
-**Numer i nazwa przypadku użycia:** 1.3.1.1 - Zgłoszenie reklamacji przez klienta
+**Numer i nazwa przypadku użycia:**  1.3.1.1 - Zgłoszenie reklamacji przez klienta
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Kacper Kwapisz
 
-**Cel przypadku użycia:** Zgłoszenie reklamacji przez klienta
+**Cel przypadku użycia:**  Zgłoszenie reklamacji przez klienta
 
-**Kontekst użycia:** `Klient` zgłasza reklamację raz pośrednictwem formularza reklamacji na stronie dostępnego na stronie internetowej
+**Kontekst użycia:**  `Klient` zgłasza reklamację raz pośrednictwem formularza reklamacji na stronie dostępnego na stronie internetowej
 
-**Zakres:** Reklamacja produktu przez klienta
+**Zakres:**  Reklamacja produktu przez klienta
 
-**Poziom:** Przyjęcie zgłoszenia reklamacji
+**Poziom:**  Przyjęcie zgłoszenia reklamacji
 
-**Aktor główny:** Klient
+**Aktor główny:**  Klient
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Klient* - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zweryfikować np. datę zakupu.
 
 ***
 
-**Numer i nazwa przypadku użycia:** 1.3.1.2 - Obsługa zgłoszenia reklamacji klienta przez pracownika
+**Numer i nazwa przypadku użycia:**  1.3.1.2 - Obsługa zgłoszenia reklamacji klienta przez pracownika
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Kacper Kwapisz
 
-**Cel przypadku użycia:** Podjęcie kolejnych kroków w obsłudze reklamacji przez klienta
+**Cel przypadku użycia:**  Podjęcie kolejnych kroków w obsłudze reklamacji przez klienta
 
-**Kontekst użycia:** `Pracownik` przekierowuje zgłoszoną przez `klienta` reklamację produktu `zespołowi technicznemu` do analizy zasadności reklamacji.
+**Kontekst użycia:**  `Pracownik` przekierowuje zgłoszoną przez `klienta` reklamację produktu `zespołowi technicznemu` do analizy zasadności reklamacji.
 
-**Zakres:** Reklamacja produktu przez klienta
+**Zakres:**  Reklamacja produktu przez klienta
 
-**Poziom:** Przyjęcie zgłoszenia reklamacji
+**Poziom:**  Przyjęcie zgłoszenia reklamacji
 
-**Aktor główny:** Pracownik
+**Aktor główny:**  Pracownik
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Pracownik* - Inicjuje proces
 
@@ -1147,21 +1146,21 @@ Klient - opłaca fakture
 
 ***
 
-**Numer i nazwa przypadku użycia:** 1.3.3.1 - Przygotowanie produktów do odesłania do dostawcy
+**Numer i nazwa przypadku użycia:**  1.3.3.1 - Przygotowanie produktów do odesłania do dostawcy
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Kacper Kwapisz
 
-**Cel przypadku użycia:** Przygotowanie produktów do odesłania do dostawcy
+**Cel przypadku użycia:**  Przygotowanie produktów do odesłania do dostawcy
 
-**Kontekst użycia:** `Zespół techniczny` przygotowuje produkty do odesłania do `dostawcy`
+**Kontekst użycia:**  `Zespół techniczny` przygotowuje produkty do odesłania do `dostawcy`
 
-**Zakres:** Przygotowanie produktów do odesłania do dostawcy
+**Zakres:**  Przygotowanie produktów do odesłania do dostawcy
 
-**Poziom:** Zgłoszenie reklamacji dostawcy
+**Poziom:**  Zgłoszenie reklamacji dostawcy
 
-**Aktor główny:** Zespół techniczny
+**Aktor główny:**  Zespół techniczny
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Zespół techniczny* - przygotowanie produktów do odesłania do dostawcy
 
@@ -1169,21 +1168,21 @@ Klient - opłaca fakture
 
 ***
 
-**Numer i nazwa przypadku użycia:** 1.3.3.2 - Realizacja wysłania produktów do dostawcy
+**Numer i nazwa przypadku użycia:**  1.3.3.2 - Realizacja wysłania produktów do dostawcy
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Kacper Kwapisz
 
-**Cel przypadku użycia:** Wysłanie produktów do dostawcy, aby otrzymać od niego wymienione, działające produkty.
+**Cel przypadku użycia:**  Wysłanie produktów do dostawcy, aby otrzymać od niego wymienione, działające produkty.
 
-**Kontekst użycia:** Po przygotowaniu produktów do odesłania `zespół techniczny` odsyła produkty do `dostawcy`
+**Kontekst użycia:**  Po przygotowaniu produktów do odesłania `zespół techniczny` odsyła produkty do `dostawcy`
 
-**Zakres:** Wysłanie produktów do dostawcy
+**Zakres:**  Wysłanie produktów do dostawcy
 
-**Poziom:** Zgłoszenie reklamacji dostawcy
+**Poziom:**  Zgłoszenie reklamacji dostawcy
 
-**Aktor główny:** Zespół techniczny
+**Aktor główny:**  Zespół techniczny
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Zespół techniczny* - wysyła do dostawcy reklamowane produkty
 
@@ -1191,103 +1190,101 @@ Klient - opłaca fakture
 
 ***
 
-**Numer i nazwa przypadku użycia:** 1.3.4.1 - Wprowadzenie reklamowanych produktów do rejestru
+**Numer i nazwa przypadku użycia:**  1.3.4.1 - Wprowadzenie reklamowanych produktów do rejestru
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Kacper Kwapisz
 
-**Cel przypadku użycia:** Wprowadzenie reklamowanych produktów do rejestru w celu późniejszych statystyk i analiz awaryjności produktów.
+**Cel przypadku użycia:**  Wprowadzenie reklamowanych produktów do rejestru w celu późniejszych statystyk i analiz awaryjności produktów.
 
-**Kontekst użycia:** Po przyjęciu reklamacji `pracownik` wprowadza informacje o produkcie i powodzie reklamacji do rejestru
+**Kontekst użycia:**  Po przyjęciu reklamacji `pracownik` wprowadza informacje o produkcie i powodzie reklamacji do rejestru
 
-**Zakres:** Wysłanie produktów do dostawcy
+**Zakres:**  Wysłanie produktów do dostawcy
 
-**Poziom:** Prowadzenie rejestru reklamacji
+**Poziom:**  Prowadzenie rejestru reklamacji
 
-**Aktor główny:** Pracownik
+**Aktor główny:**  Pracownik
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Pracownik* - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do rejestru
 
 ***
 
-**Numer i nazwa przypadku uzycia:** 1.6.1.1- Marketing w internecie - pozycjonowanie strony
+**Numer i nazwa przypadku uzycia:**  1.6.1.1- Marketing w internecie - pozycjonowanie strony
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia:** 
 
-**Kontekst użycia:** 
+**Kontekst użycia:**  
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** 
+**Poziom:** 
 
-**Aktor główny: **
+**Aktor główny:** 
 
-**Uczestnicy i interesy: ** 
-
-
-
-------
-
-**Numer i nazwa przypadku uzycia:** 1.6.1.2- Marketing w internecie - reklama na portalach biznesowych powiązanych z branżą
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia: ** 
-
-**Kontekst użycia:** 
-
-**Zakres: ** 
-
-**Poziom: ** 
-
-**Aktor główny: **
-
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.6.1.3 - Marketing w internecie - Statystyki powiązane z katalogiem produktowym
+**Numer i nazwa przypadku uzycia:**  1.6.1.2- Marketing w internecie - reklama na portalach biznesowych powiązanych z branżą
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia:** 
 
-**Kontekst użycia:** 
+**Kontekst użycia:**  
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** 
+**Poziom:** 
 
-**Aktor główny: **
+**Aktor główny:** 
 
-**Uczestnicy i interesy: ** 
-
-
+**Uczestnicy i interesy:** 
 
 ------
 
-**Numer i nazwa przypadku uzycia:** 1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
+**Numer i nazwa przypadku uzycia:**  1.6.1.3 - Marketing w internecie - Statystyki powiązane z katalogiem produktowym
 
-**Autor:** Adam Samsonowicz
+**Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia: ** 
+**Cel przypadku użycia:** 
 
-**Kontekst użycia:** 
+**Kontekst użycia:**  
 
-**Zakres: ** 
+**Zakres:** 
 
-**Poziom: ** 
+**Poziom:** 
 
-**Aktor główny: **
+**Aktor główny:** 
+
+**Uczestnicy i interesy:** 
+
+------
+
+**Numer i nazwa przypadku uzycia:**  1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
+
+**Autor:**  Adam Samsonowicz
+
+**Cel przypadku użycia:** 
+
+**Kontekst użycia:**  
+
+**Zakres:** 
+
+**Poziom:** 
+
+**Aktor główny:** 
 
 *Uczestnicy i interesy: * 
 
 ***
+
+#### <a name='Rejestrpotencjalnychklientwistanukontaktuznimi-1'></a>2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 
 ```plantuml 2.2.7.1
 @startuml
@@ -1303,67 +1300,65 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 }
 @enduml
 ```
-![Projekt systemu-4](https://www.plantuml.com/plantuml/png/0/bP6nRi9038Rta-uTB2OOyW9C3Dsw85KiRERE92ONExeuYWBYgNW4NgoXfQMLob2llx_lb-nLPvYjRv9tYVO6ff2vh0mYPmh6AjvrDKkB6HjeCTHOqfkDYU2MevI9lCDWcc6vLYC91qmoGfsOn9PVsQjArwTftxpx1c6spZfWF98mmGwF8xGFHQZkakjbcC79EvXc_X0je2XWlcqO1O5bhxd1S63GJommBPumBnfnm5ld3umXuaVfdJSCrJF1fkl_m_zr62X-QRqxUxSYYTChtW40 "Projekt systemu-4")
 
 ###### *Rysunek 7. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów*
 
 
-**Numer i nazwa przypadku uzycia:** 1.7.1 - Dodawanie informacji i danych o klientach
+**Numer i nazwa przypadku uzycia:**  1.7.1.1 - Dodawanie informacji i danych o klientach
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia: ** Dodawanie informacji i danych o klientach
+**Cel przypadku użycia:** Dodawanie informacji i danych o klientach
 
-**Kontekst użycia:** Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.
+**Kontekst użycia:**  Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.
 
-**Zakres: ** Prowadzenie bazy potencjalnych klientów
+**Zakres:** Prowadzenie bazy potencjalnych klientów
 
-**Poziom: ** Prowadzenie bazy potencjalnych klientów
+**Poziom:** Prowadzenie bazy potencjalnych klientów
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
-
-***
-
-
-**Numer i nazwa przypadku uzycia:** 1.7.2 - Zmiana informacji o kliencie
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia: ** Zmiana informacji o kliencie
-
-**Kontekst użycia:**   Gdy `klient` wróci do naszej firmy z aktualizacją danych o sobie i ze zgodą na `RODO` mamy mieć możliwość zaktualizwania istniejącego statusu.
-
-**Zakres: ** Prowadzenie bazy potencjalnych klientów
-
-**Poziom: ** Prowadzenie bazy potencjalnych klientów
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 ***
 
 
-**Numer i nazwa przypadku uzycia:** 1.7.1 - Usuwanie informacji i danych wrażliwych o klientach
+**Numer i nazwa przypadku uzycia:**  1.7.1.2 - Zmiana informacji o kliencie
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia: ** Usuwanie informacji i danych o klientach
+**Cel przypadku użycia:** Zmiana informacji o kliencie
 
-**Kontekst użycia:**  Zgodnie z obowiązującymi przepisami nie możemy przetwarzać danych wrażliwych w przypadku usunięcia zgody na przetwarzanie daynch. W tym przypadku zostawiamy tylko email kontaktowy, reszta danych powinna zostać zanonimizownana.
+**Kontekst użycia:**    Gdy `klient` wróci do naszej firmy z aktualizacją danych o sobie i ze zgodą na `RODO` mamy mieć możliwość zaktualizwania istniejącego statusu.
 
-**Zakres: ** Prowadzenie bazy potencjalnych klientów
+**Zakres:** Prowadzenie bazy potencjalnych klientów
 
-**Poziom: ** Prowadzenie bazy potencjalnych klientów
+**Poziom:** Prowadzenie bazy potencjalnych klientów
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 ***
 
+
+**Numer i nazwa przypadku uzycia:**  1.7.1.3 - Usuwanie informacji i danych wrażliwych o klientach
+
+**Autor:**  Mateusz Popielarz
+
+**Cel przypadku użycia:** Usuwanie informacji i danych o klientach
+
+**Kontekst użycia:**   Zgodnie z obowiązującymi przepisami nie możemy przetwarzać danych wrażliwych w przypadku usunięcia zgody na przetwarzanie daynch. W tym przypadku zostawiamy tylko email kontaktowy, reszta danych powinna zostać zanonimizownana.
+
+**Zakres:** Prowadzenie bazy potencjalnych klientów
+
+**Poziom:** Prowadzenie bazy potencjalnych klientów
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:** 
+
+***
 
 ```plantuml 2.2.7.2
 @startuml
@@ -1379,106 +1374,106 @@ rectangle "Informowanie o ofercie" {
 }
 @enduml
 ```
-![Projekt systemu-5](https://www.plantuml.com/plantuml/png/0/TP6nJiD038Rta-uTh4xja1Ver1Mn8274R5sSuDx5ZYwEgal5o5FmEl1U96sX0b5lblr_zc_l1iDiOvUyIzGOc4BcziMWvap1MCMx8RBqcB637aF4bXwj98AbZj8cyWw3QORjWnf9s6EI0Z4nYMs_Q_SgmvZcVlFkHmYhEsaqTtf0OG85RIW7fXKSlOCvrbVP1geAri_by_t0P8aMGOrMG6S7DcUjGbGnZ3R2T1bFtUOcQ2ZfD5NKIiCHmvwl6q2lORAFDw14qR8AXqcMj4DEjvXFzSHqXlB9rn-cpR3cZ6AwGFwx6LI_sDwzUhSZgUSlVG40 "Projekt systemu-5")
+
 
 ###### *Rysunek 8. Diagram przypadków użycia funkcji informowania o ofercie*
 
 
 
-**Numer i nazwa przypadku uzycia:** 1.7.2.1 - Wyświetlenie daty ostatniego kontaktu z klientem
+**Numer i nazwa przypadku uzycia:**  1.7.2.1 - Wyświetlenie daty ostatniego kontaktu z klientem
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia: **  Wyświetlenie daty ostatniego kontaktu z klientem
+**Cel przypadku użycia:**  Wyświetlenie daty ostatniego kontaktu z klientem
 
-**Kontekst użycia:** Informacja o dacie ostatniego kontaktu powinna być bardzo dobrze widoczna
+**Kontekst użycia:**  Informacja o dacie ostatniego kontaktu powinna być bardzo dobrze widoczna
 
-**Zakres: ** Informowanie o ofercie
+**Zakres:** Informowanie o ofercie
 
-**Poziom: **  Informowanie o ofercie
+**Poziom:**  Informowanie o ofercie
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
-
-***
-
-
-
-**Numer i nazwa przypadku uzycia:** 1.7.2.2 -  Wysylanie notyfikacji o ofercie pocztą elektroniczną email
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia: **  Wysylanie notyfikacji o ofercie pocztą elektroniczną email
-
-**Kontekst użycia:**    Gdy konsultant zauważy, że dawno nikt nie kontaktował się z klientem ma możliwość wysłania mu oferty spersonalizowanej przez system na podstawie jego poprzednich zamówień. Zdarzenie to powinno być odnotowane w systemie z kopią oferty, która została wysłana.
-
-**Zakres: **  Informowanie o ofercie
-
-**Poziom: **  Informowanie o ofercie
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
 
 ***
 
 
 
-**Numer i nazwa przypadku uzycia:** 1.7.2.3 - Usuwanie informacji i danych wrażliwych o klientach
+**Numer i nazwa przypadku uzycia:**  1.7.2.2 -  Wysylanie notyfikacji o ofercie pocztą elektroniczną email
 
-**Autor:** Mateusz Popielarz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia: **Usuwanie informacji i danych wrażliwych o klientach
+**Cel przypadku użycia:**  Wysylanie notyfikacji o ofercie pocztą elektroniczną email
 
-**Kontekst użycia:** System pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
+**Kontekst użycia:**     Gdy konsultant zauważy, że dawno nikt nie kontaktował się z klientem ma możliwość wysłania mu oferty spersonalizowanej przez system na podstawie jego poprzednich zamówień. Zdarzenie to powinno być odnotowane w systemie z kopią oferty, która została wysłana.
 
-**Zakres: ** Prowadzenie bazy potencjalnych klientów
+**Zakres:**  Informowanie o ofercie
 
-**Poziom: ** Prowadzenie bazy potencjalnych klientów
+**Poziom:**  Informowanie o ofercie
 
-**Aktor główny: ** Konsultant
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy: ** 
+**Uczestnicy i interesy:** 
+
+***
 
 
-#### <a name='ZarzadzanieUC'></a>2.1.2.8 Zarzadzanie
 
-**Numer i nazwa przypadku użycia:** 1.8.1.1 - Wprowadzenie dokumentów do systemu
+**Numer i nazwa przypadku uzycia:**  1.7.2.3 - Usuwanie informacji i danych wrażliwych o klientach
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Mateusz Popielarz
 
-**Cel przypadku użycia:** Wprowadzenie dokumentów do dostępnej dla pracowników platformy w celu ułatwienia obiegu dokumentacji i zadań między działami.
+**Cel przypadku użycia:** Usuwanie informacji i danych wrażliwych o klientach
 
-**Kontekst użycia:** `Pracownik` wprowadza dokumenty lub zadania do systemu, aby poprzez system były widoczne dla innych pracowników.
+**Kontekst użycia:**  System pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
 
-**Zakres:** Platforma dla pracowników
+**Zakres:** Prowadzenie bazy potencjalnych klientów
 
-**Poziom:** Organizacja w firmie
+**Poziom:** Prowadzenie bazy potencjalnych klientów
 
-**Aktor główny:** Pracownik
+**Aktor główny:** Konsultant
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
+
+
+#### <a name='Zarzadzanie'></a>2.1.2.8 Zarzadzanie
+
+**Numer i nazwa przypadku użycia:**  1.8.1.1 - Wprowadzenie dokumentów do systemu
+
+**Autor:**  Kacper Kwapisz
+
+**Cel przypadku użycia:**  Wprowadzenie dokumentów do dostępnej dla pracowników platformy w celu ułatwienia obiegu dokumentacji i zadań między działami.
+
+**Kontekst użycia:**  `Pracownik` wprowadza dokumenty lub zadania do systemu, aby poprzez system były widoczne dla innych pracowników.
+
+**Zakres:**  Platforma dla pracowników
+
+**Poziom:**  Organizacja w firmie
+
+**Aktor główny:**  Pracownik
+
+**Uczestnicy i interesy:** 
 
 *Pracownik* - wprowadza dokumenty, zadania, ogłoszenia do systemu
 
 ***
 
-**Numer i nazwa przypadku użycia:** 1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
+**Numer i nazwa przypadku użycia:**  1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Kacper Kwapisz
 
-**Cel przypadku użycia:** `Właściciel` zna zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od `dostawcy`. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.
+**Cel przypadku użycia:**  `Właściciel` zna zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od `dostawcy`. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.
 
-**Kontekst użycia:** Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem czasowym
+**Kontekst użycia:**  Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem czasowym
 
-**Zakres:** Platforma dla pracowników
+**Zakres:**  Platforma dla pracowników
 
-**Poziom:** Organizacja w firmie
+**Poziom:**  Organizacja w firmie
 
-**Aktor główny:** Właściciel
+**Aktor główny:**  Właściciel
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Właściciel* - odczytuje i ma możliwość analizy prognoz czasowych zamówień
 
@@ -1486,41 +1481,41 @@ rectangle "Informowanie o ofercie" {
 
 ***
 
-**Numer i nazwa przypadku użycia:** 1.8.2.2 -Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
+**Numer i nazwa przypadku użycia:**  1.8.2.2 -Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Kacper Kwapisz
 
-**Cel przypadku użycia:** Właściciel zna zapotrzebowanie ilościowe na produkty do zamówienia od dostawcy. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.
+**Cel przypadku użycia:**  Właściciel zna zapotrzebowanie ilościowe na produkty do zamówienia od dostawcy. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.
 
-**Kontekst użycia:** Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem ilościowym
+**Kontekst użycia:**  Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem ilościowym
 
-**Zakres:**
+**Zakres:** 
 
-**Poziom:** Organizacja w firmie
+**Poziom:**  Organizacja w firmie
 
-**Aktor główny:** Właściciel
+**Aktor główny:**  Właściciel
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Właściciel* - odczytuje i ma możliwość analizy prognoz ilościowych zamówień
 
 ***
 
-**Numer i nazwa przypadku użycia:** 1.8.3.1 -  Przydział pracowników do określonych zadań
+**Numer i nazwa przypadku użycia:**  1.8.3.1 -  Przydział pracowników do określonych zadań
 
-**Autor:** Kacper Kwapisz
+**Autor:**  Kacper Kwapisz
 
-**Cel przypadku użycia:** Właściciel chciałby mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania
+**Cel przypadku użycia:**  Właściciel chciałby mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania
 
-**Kontekst użycia:** Właściciel wprowadza do systemu zadania dla konkretnych pracowników. Pracownicy za pośrednictwem platformy widzą przydzielone im zadania.
+**Kontekst użycia:**  Właściciel wprowadza do systemu zadania dla konkretnych pracowników. Pracownicy za pośrednictwem platformy widzą przydzielone im zadania.
 
-**Zakres:** Przydział pracowników do określonych zadań
+**Zakres:**  Przydział pracowników do określonych zadań
 
-**Poziom:** Organizacja w firmie
+**Poziom:**  Organizacja w firmie
 
-**Aktor główny:** Właściciel
+**Aktor główny:**  Właściciel
 
-**Uczestnicy i interesy:**
+**Uczestnicy i interesy:** 
 
 *Właściciel* - przydziela pracowników do określonych zadań
 
