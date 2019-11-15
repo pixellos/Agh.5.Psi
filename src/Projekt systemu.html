@@ -428,6 +428,7 @@ void 0!==arguments[0]&&(br.sequenceConfig=arguments[0]),e=arguments[1]):e=argume
 <h1 id="0-spis-tre%C5%9Bci">0 Spis Treści</h1>
 <!-- vscode-markdown-toc -->
 <ul>
+<li><a href="#rdodanych:firmarodzinna">Żródło danych: firma rodzinna</a></li>
 <li><a href="#Przedmiotmodelowania">1.1  Przedmiot modelowania</a>
 <ul>
 <li><a href="#Nazwafirmy">1.1.1 Nazwa firmy</a></li>
@@ -456,7 +457,7 @@ void 0!==arguments[0]&&(br.sequenceConfig=arguments[0]),e=arguments[1]):e=argume
 <li><a href="#Kontrolastanwmagazynowych">1.3.1.5 Kontrola stanów magazynowych</a></li>
 <li><a href="#Integracjazsystemamimarketingu">1.3.1.6 Integracja z systemami marketingu</a></li>
 <li><a href="#Rejestrpotencjalnychklientwistanukontaktuznimi">1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi</a></li>
-<li><a href="#Zarzadzanie">1.3.1.8 Zarzadzanie</a></li>
+<li><a href="#Zarzdzanie">1.3.1.8 Zarządzanie</a></li>
 </ul>
 </li>
 </ul>
@@ -479,21 +480,21 @@ void 0!==arguments[0]&&(br.sequenceConfig=arguments[0]),e=arguments[1]):e=argume
 <li><a href="#HistorieuytkownikwUseCases">2.1.2 Historie użytkowników (Use Cases)</a>
 <ul>
 <li><a href="#Obsugazamwie-1">2.1.2.1 Obsługa zamówień</a></li>
-<li><a href="#ObsugareklamacjiUC">2.1.2.3 Obsługa reklamacji</a></li>
-<li><a href="#ZarzadzanieUC">2.1.2.8 Zarządanie</a></li>
+<li><a href="#Obsugareklamacji-1">2.1.2.3 Obsługa reklamacji</a></li>
+<li><a href="#Rejestrpotencjalnychklientwistanukontaktuznimi-1">2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi</a></li>
+<li><a href="#Zarzadzanie">2.1.2.8 Zarzadzanie</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu">2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu</a>
 <ul>
-<li><a href="#Daneoglne">2.2.1 Dane ogólne</a></li>
-<li><a href="#Opisklientaipowizanychencji">2.2.2 Opis klienta i powiązanych encji</a></li>
+<li><a href="#Opisklientaipowizanychdanych">2.2.2 Opis klienta i powiązanych danych</a></li>
 <li><a href="#OpisDostawcy">2.2.3 Opis Dostawcy</a></li>
 <li><a href="#OpisMagazynu">2.2.4 Opis Magazynu</a></li>
 </ul>
 </li>
-<li><a href="#DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce">2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce</a>
+<li><a href="#Dokumentywprowadzaneiwyprowadzanezsystemuwzory">2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory</a>
 <ul>
 <li><a href="#Zapytanieofertoweodklienta">2.3.1 Zapytanie ofertowe od klienta</a></li>
 <li><a href="#Oferta">2.3.2 Oferta</a></li>
@@ -934,7 +935,7 @@ Jako <code>Konsultant</code> mam możliwość za pomocą systemu ustanowić poł
 </ol>
 </li>
 </ol>
-<h4 id="a-namezarzadzaniea1318-zarz%C4%85dzanie"><a name='Zarzadzanie'></a>1.3.1.8 Zarządzanie</h4>
+<h4 id="a-namezarzdzaniea1318-zarz%C4%85dzanie"><a name='Zarzdzanie'></a>1.3.1.8 Zarządzanie</h4>
 <ol>
 <li>
 <p>Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)</p>
@@ -990,7 +991,6 @@ Jako <code>Konsultant</code> mam możliwość za pomocą systemu ustanowić poł
 
 @enduml
 </div></code></pre>
-<p><img src="https://www.plantuml.com/plantuml/png/0/BOun2iCm34NtGEwWStWAT0oTUW8HYs2Io23B66iiz12vZtklkY7ZUtnuVqgAeldOns4St1mvvLsHrNLwuefMEP0u0BY4RAI1rrW2BRTysFSTcJOm56iVdsy_fz3ElgpkmbTDIWSO5MwdYd457tkyB7tmZq_4ll_u0G00" alt="Projekt systemu" title="Projekt systemu"></p>
 <h6 id="rysunek-3-aktorzy-w-systemie"><em>Rysunek 3. Aktorzy w systemie</em></h6>
 <p>W systemie możemy wyróżnić następujących aktorów</p>
 <ul>
@@ -1020,47 +1020,46 @@ rectangle &quot;Aktualizacja danych dostawcy&quot; {
 }
 @enduml
 </div></code></pre>
-<p><img src="https://www.plantuml.com/plantuml/png/0/ZP9DRi8m44Rtbdo74QkoW0DqWQZ4ZbqvmM0FOOXZH_P4aOkuEmvL05NyT3lVcsT_bfT9C4hNEAqSxGGaGEHgBs0vaX4ENgjKisynOWCjcXehsaXs14EEldAa5He94TR1fywLcOoJLIZwtg1MLnWcNxLqwFW7pG71eizc3_ONp1CuQWNmiGunLw57p_GNcS9yNeXLi9TqXzkOQoxn7G4NoJSTA4aSDRVznPi3Fe6zSPsbGNDh1RFPK-bRShnd3oadeORfqSwhLW_mLoq6V7p_Vy0dhPRaRVa9Pm00" alt="Projekt systemu-1" title="Projekt systemu-1"></p>
 <h6 id="rysunek-4-diagram-przypadk%C3%B3w-u%C5%BCycia-aktualizacji-danych-dostawcy"><em>Rysunek 4. Diagram przypadków użycia aktualizacji danych dostawcy</em></h6>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.1.1 - Rejestrowanie dostawcy</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Dodanie dostawcy do systemu</p>
-<p><strong>Kontekst użycia:</strong> ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.</p>
-<p><strong>Zakres:</strong> System do obsługi dostawców</p>
-<p><strong>Poziom:</strong> Przetwarzanie danych dostawców</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.1.1 - Rejestrowanie dostawcy</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Dodanie dostawcy do systemu</p>
+<p><strong>Kontekst użycia:</strong>  ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.</p>
+<p><strong>Zakres:</strong>  System do obsługi dostawców</p>
+<p><strong>Poziom:</strong>  Przetwarzanie danych dostawców</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków
 <em>Dostawca</em> - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji</p>
 <hr>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.1.2 - Modyfikowanie danych dostawcy</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Aktualizacja lub poprawienie danych dsotawcy</p>
-<p><strong>Kontekst użycia:</strong> ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.</p>
-<p><strong>Zakres:</strong> Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.</p>
-<p><strong>Poziom:</strong> Przetwarzanie danych dostawców</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.1.2 - Modyfikowanie danych dostawcy</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Aktualizacja lub poprawienie danych dsotawcy</p>
+<p><strong>Kontekst użycia:</strong>  ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.</p>
+<p><strong>Zakres:</strong>  Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.</p>
+<p><strong>Poziom:</strong>  Przetwarzanie danych dostawców</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków
 <em>Dostawca</em> - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji</p>
 <hr>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.1.3 - Rejestrowanie fabryki w systemie</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Dodanie fabryki do systemu i podłączenie jej do dostawcy</p>
-<p><strong>Kontekst użycia:</strong> ​Gdy system będzie wdrażany <code>Konsultant</code> musi mieć możliwość dodania <code>Fabryki</code> do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład <code>GlobalFoundries</code> produkujący chipy dla <code>AMD</code> i dla <code>Samsung</code>)</p>
-<p><strong>Zakres:</strong>  Gdy dane fabryki, jak nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione.</p>
-<p><strong>Poziom:</strong> Przetwarzanie danych dostawców</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.1.3 - Rejestrowanie fabryki w systemie</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Dodanie fabryki do systemu i podłączenie jej do dostawcy</p>
+<p><strong>Kontekst użycia:</strong>  ​Gdy system będzie wdrażany <code>Konsultant</code> musi mieć możliwość dodania <code>Fabryki</code> do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład <code>GlobalFoundries</code> produkujący chipy dla <code>AMD</code> i dla <code>Samsung</code>)</p>
+<p><strong>Zakres:</strong>   Gdy dane fabryki, jak nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione.</p>
+<p><strong>Poziom:</strong>  Przetwarzanie danych dostawców</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <hr>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.1.4 - Dodanie fabryki do dostawcy</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Podłączenie fabryki do dostawcy</p>
-<p><strong>Kontekst użycia:</strong> ​Gdy system będzie wdrażany <code>Konsultant</code> musi mieć możliwość dodania <code>Fabryki</code> do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład <code>GlobalFoundries</code> produkujący chipy dla <code>AMD</code> i dla <code>Samsung</code>)</p>
-<p><strong>Zakres:</strong> ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu</p>
-<p><strong>Poziom:</strong> Przetwarzanie danych dostawców</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.1.4 - Dodanie fabryki do dostawcy</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Podłączenie fabryki do dostawcy</p>
+<p><strong>Kontekst użycia:</strong>  ​Gdy system będzie wdrażany <code>Konsultant</code> musi mieć możliwość dodania <code>Fabryki</code> do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład <code>GlobalFoundries</code> produkujący chipy dla <code>AMD</code> i dla <code>Samsung</code>)</p>
+<p><strong>Zakres:</strong>  ​	System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu</p>
+<p><strong>Poziom:</strong>  Przetwarzanie danych dostawców</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <pre class="hljs"><code><div>@startuml
@@ -1077,46 +1076,45 @@ rectangle &quot;Prowadzenie katalogu i cennika towarów&quot; {
 }
 @enduml
 </div></code></pre>
-<p><img src="https://www.plantuml.com/plantuml/png/0/XP51QWCn34Nt1jz1P9KiSeSK2brqKoWzWB3LYM977ZmQp4pegNg4NgnsQ5qefDLEyjUJltIO5BFEvsXDf5S5JP1vE2fupkIKarWp1POHCvvXH1Tme6TT8a5xHnaYMODEKuR79DCSQqrx9JArh4jXyvHJGR-IC450nPY66HWSYN30EhzW_dWl6xXO0pMsFzGTxFUmlKyU2xPsIMLnHnZJkhWJVzDgSwViRZ3kWYu5tGdhP4yhzlGNQ_wNz5Bt5w-_gGvkYHv8gDd-aZMZNNhTq5-oDsiE9BwUw1C0" alt="Projekt systemu-2" title="Projekt systemu-2"></p>
 <h6 id="rysunek-5-diagram-przypadk%C3%B3w-u%C5%BCycia-aktualizacji-danych-dostawcy"><em>Rysunek 5. Diagram przypadków użycia aktualizacji danych dostawcy</em></h6>
 <hr>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.2.1 - Dodawanie nowych pozycji katalogów towarów</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Dodawanie nowych pozycji katalogów towarów</p>
-<p><strong>Kontekst użycia:</strong> Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.</p>
-<p><strong>Zakres:</strong> Dodanie pozycji</p>
-<p><strong>Poziom:</strong> Prowadzenie katalogu i cennika towarów</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.2.1 - Dodawanie nowych pozycji katalogów towarów</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Dodawanie nowych pozycji katalogów towarów</p>
+<p><strong>Kontekst użycia:</strong>  Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.</p>
+<p><strong>Zakres:</strong>  Dodanie pozycji</p>
+<p><strong>Poziom:</strong>  Prowadzenie katalogu i cennika towarów</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <hr>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.2.2 - Aktywacja i dezaktywacja pozycji katalogu towarów</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Aktywacja i dezaktywacja pozycji katalogu towarów</p>
-<p><strong>Kontekst użycia:</strong> Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.</p>
-<p><strong>Zakres:</strong> Aktualizacja pozycji</p>
-<p><strong>Poziom:</strong> Prowadzenie katalogu i cennika towarów</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.2.2 - Aktywacja i dezaktywacja pozycji katalogu towarów</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Aktywacja i dezaktywacja pozycji katalogu towarów</p>
+<p><strong>Kontekst użycia:</strong>  Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.</p>
+<p><strong>Zakres:</strong>  Aktualizacja pozycji</p>
+<p><strong>Poziom:</strong>  Prowadzenie katalogu i cennika towarów</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <hr>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.2.3 - Ustalanie cen</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Ustalanie cen</p>
-<p><strong>Kontekst użycia:</strong> W systemie każdy <code>towar</code> musi mieć możliwość definiowania <code>ceny</code> - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.</p>
-<p><strong>Zakres:</strong> Ustalenie pozycji</p>
-<p><strong>Poziom:</strong> Prowadzenie katalogu i cennika towarów</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.2.3 - Ustalanie cen</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Ustalanie cen</p>
+<p><strong>Kontekst użycia:</strong>  W systemie każdy <code>towar</code> musi mieć możliwość definiowania <code>ceny</code> - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.</p>
+<p><strong>Zakres:</strong>  Ustalenie pozycji</p>
+<p><strong>Poziom:</strong>  Prowadzenie katalogu i cennika towarów</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <hr>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.2.4 - Generowanie cennika</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Generowanie cennika</p>
-<p><strong>Kontekst użycia:</strong> 	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu <code>towarów</code>. Raz wygenerowany cennik musi być wersjonowany.
-<strong>Zakres:</strong> Ustalenie pozycji</p>
-<p><strong>Poziom:</strong> Prowadzenie katalogu i cennika towarów</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.2.4 - Generowanie cennika</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Generowanie cennika</p>
+<p><strong>Kontekst użycia:</strong>  	W systemie ma być dostępna opcja generowania cennika per klient z uwzględnieniem czasu, kiedy jest generowany, rozmiaru zamówienia, typu klienta i dostępnych w tym wymiarze czasu <code>towarów</code>. Raz wygenerowany cennik musi być wersjonowany.
+<strong>Zakres:</strong>  Ustalenie pozycji</p>
+<p><strong>Poziom:</strong>  Prowadzenie katalogu i cennika towarów</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <hr>
@@ -1132,269 +1130,269 @@ rectangle &quot;Rezerwacja towaru&quot; {
 }
 @enduml
 </div></code></pre>
-<p><img src="https://www.plantuml.com/plantuml/png/0/TP2n3e9038RtI-uT6YOOU0TsDztSAbIi77Uaz4BK-EuU6D5exDQ__zU_QJKgYiRUMUFegA01XDkJGiD2jNBmremT-m45UnYmxh2bdLuSmJn7tpgo1ciD0flWn-YIfglYcEPkjKAsfIl9XFKPKzQ44ZEuMGEfyZTVG5b2_cCj_XZtFQD7SF40Zhk9cuMH5yxV-7BL4_rOPStTcefyaxxn0000" alt="Projekt systemu-3" title="Projekt systemu-3"></p>
 <h6 id="rysunek-6-diagram-przypadk%C3%B3w-u%C5%BCycia-rezerwacji-towaru"><em>Rysunek 6. Diagram przypadków użycia rezerwacji towaru</em></h6>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.3.1 - Rezerwacja towaru</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong>  Rezerwacja towaru</p>
-<p><strong>Kontekst użycia:</strong> 	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia <code>przedoferty</code> która zainteresuje klienta powinna być możliwość <code>rezerwacji</code> towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje <code>wycofany z rezerwacji</code>.</p>
-<p><strong>Zakres:</strong>  Rezerwacja towaru</p>
-<p><strong>Poziom:</strong> Prowadzenie katalogu i cennika towarów</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.3.1 - Rezerwacja towaru</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>   Rezerwacja towaru</p>
+<p><strong>Kontekst użycia:</strong>  	W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia <code>przedoferty</code> która zainteresuje klienta powinna być możliwość <code>rezerwacji</code> towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony  jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje <code>wycofany z rezerwacji</code>.</p>
+<p><strong>Zakres:</strong>   Rezerwacja towaru</p>
+<p><strong>Poziom:</strong>  Prowadzenie katalogu i cennika towarów</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <p><em>Klient</em> - Inicjuje proces</p>
 <hr>
-<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.1.3.2 - Zmiana lub likwidacja rezerwacji towaru</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p><strong>Cel przypadku użycia:</strong> Zmiana lub likwidacja rezerwacji towaru</p>
-<p><strong>Kontekst użycia:</strong>
+<p><strong>Numer i Nazwa przypadku użycia:</strong>  1.1.3.2 - Zmiana lub likwidacja rezerwacji towaru</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Zmiana lub likwidacja rezerwacji towaru</p>
+<p><strong>Kontekst użycia:</strong><br>
 W sytuacji gdy klient zmieni którąś z części <code>zlecenia zakupu</code> musi być możliwe anulowanie całości lub części <code>Zamówienia</code> - ta informacja musi być jak najszybicej wysłana do <code>Dostawcy</code> . W sytuacji, gdy dostawca zaczął już produkcje częsci jest to przypadek niemożliwy do automatycznego rozstrzygnięcia przez system - bezpośredni manager musi zostać poinformowany. Historia zmian musi być przechowywana.</p>
-<p><strong>Zakres:</strong> Rezerwacja towaru</p>
-<p><strong>Poziom:</strong> Prowadzenie katalogu i cennika towarów</p>
-<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Zakres:</strong>  Rezerwacja towaru</p>
+<p><strong>Poziom:</strong>  Prowadzenie katalogu i cennika towarów</p>
+<p><strong>Aktor główny:</strong>  Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <p><em>Klient</em> - Inicjuje proces</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.1.1 - Rejestrowanie klienta</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Dodanie nowego klienta do systemu</p>
-<p><strong>Kontekst użycia:</strong> <code>Konsultant</code> musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Przetwarzanie danych klientów</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.1.1 - Rejestrowanie klienta</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Dodanie nowego klienta do systemu</p>
+<p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Przetwarzanie danych klientów</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - Potrzebuje danych klienta w celu procesowania oferty</p>
 <p>Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej procesować oferte</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.1.2 - Korygowanie danych klienta</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Korekta danych klienta w systemie</p>
-<p><strong>Kontekst użycia:</strong> <code>Konsultant</code> otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Przetwarzanie danych klientów</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.1.2 - Korygowanie danych klienta</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Korekta danych klienta w systemie</p>
+<p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Przetwarzanie danych klientów</p>
 <p>**Aktor główny:  ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - Potrzebuje aktualnych danych klienta w celu procesowania oferty</p>
 <p>Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego procesowania oferty.</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.2.0 - Przyjęcia zapytania ofertowego od klienta</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Poinformowanie <code>konsultanta</code> o potrzebie obsługi danego zapytania ofertowego</p>
-<p><strong>Kontekst użycia:</strong> <code>Klient</code> wysyła zapytanie ofertowe drogą mailową z opisanym problemem. <code>Konsultant</code> po otrzymaniu informacji o potrzebie <code>klienta</code> zaczyna proces ofertowy.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: **Klient</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.2.0 - Przyjęcia zapytania ofertowego od klienta</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Poinformowanie <code>konsultanta</code> o potrzebie obsługi danego zapytania ofertowego</p>
+<p><strong>Kontekst użycia:</strong>  <code>Klient</code> wysyła zapytanie ofertowe drogą mailową z opisanym problemem. <code>Konsultant</code> po otrzymaniu informacji o potrzebie <code>klienta</code> zaczyna proces ofertowy.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Klient</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - Otrzymuje informację o potrzebie klienta</p>
 <p>Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produktów z czym zwraca się do konsultanta</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.3.1 - Utworzenie oferty w systemie</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty. Przed wybraniem produktów <code>konsultant</code> ma możliwość i obowiązek uzupełnienia informacji na temat oferty takich jak przewidywany zysk, priorytet oferty dla klienta, termin ważności oferty.</p>
-<p><strong>Kontekst użycia:</strong> <code>Konsultant</code> ma możliwość stworzenia oferty i wyboru klienta dla, którego ta oferta będzie dalej procesowana. <code>Konsultant</code> ma równiez możliwość uzupełnienia podstawowych informacji, które będą później widoczne na ofercie oraz będą mogły być użyte do analiz i raportów.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.3.1 - Utworzenie oferty w systemie</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty. Przed wybraniem produktów <code>konsultant</code> ma możliwość i obowiązek uzupełnienia informacji na temat oferty takich jak przewidywany zysk, priorytet oferty dla klienta, termin ważności oferty.</p>
+<p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> ma możliwość stworzenia oferty i wyboru klienta dla, którego ta oferta będzie dalej procesowana. <code>Konsultant</code> ma równiez możliwość uzupełnienia podstawowych informacji, które będą później widoczne na ofercie oraz będą mogły być użyte do analiz i raportów.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później wykorzystywane do raportów.</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.3.2.1 - Dodanie produktów do oferty - Znalezienie w systemie oraz dodanie produktów do oferty</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Wyszukanie produktów i dodanie ich do oferty</p>
-<p><strong>Kontekst użycia:</strong> <code>Konsultant</code>  ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty.  Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.3.2.1 - Dodanie produktów do oferty - Znalezienie w systemie oraz dodanie produktów do oferty</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Wyszukanie produktów i dodanie ich do oferty</p>
+<p><strong>Kontekst użycia:</strong>  <code>Konsultant</code>  ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty.  Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - Wyszukuje produkty i dodaje je do oferty</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.3.2.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy</p>
-<p><strong>Kontekst użycia:</strong> <code>Klient</code> oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. <code>Konsultant</code> jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.3.2.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy</p>
+<p><strong>Kontekst użycia:</strong>  <code>Klient</code> oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. <code>Konsultant</code> jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.3.2.2.1 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie aktualnego stanu magazynu</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Sprawdzenie możliwości szybkiej wysyłki dla klienta</p>
-<p><strong>Kontekst użycia:</strong> <code>Konsultant</code> ma dostęp do magazynu. <code>Konsultant</code> sprawdza dostępność produktów  na magazynie poprzez graficzny interfejs w wyszukiwarce.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.3.2.2.1 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie aktualnego stanu magazynu</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Sprawdzenie możliwości szybkiej wysyłki dla klienta</p>
+<p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> ma dostęp do magazynu. <code>Konsultant</code> sprawdza dostępność produktów  na magazynie poprzez graficzny interfejs w wyszukiwarce.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - sprawdza w systemie dostępność produktów na magazynie</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.3.2 - Dodanie produktów do oferty -  Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy</p>
-<p>**Cel przypadku użycia: ** Sprawdzenie najszybszej możliwej dostawy</p>
-<p><strong>Kontekst użycia:</strong> <code>Konsultant</code> ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i <code>klient</code> akceptuje późniejszy termin dostawy.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.3.2 - Dodanie produktów do oferty -  Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy</p>
+<p><strong>Cel przypadku użycia:</strong> Sprawdzenie najszybszej możliwej dostawy</p>
+<p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i <code>klient</code> akceptuje późniejszy termin dostawy.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - sprawdza w systemie dostępność produktów w fabryce</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.3.3 - Wygenerowanie dokumentu ofertowego</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Wygenerowanie oferty, która będzie przedstawiona klientowi</p>
-<p><strong>Kontekst użycia:</strong> <code>Konsultant</code> przygotował oferte dla <code>klienta</code> i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do <code>klienta</code> elektronicznie lub wydrukować i przedstawić podczas spotkania.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: **Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.3.3 - Wygenerowanie dokumentu ofertowego</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Wygenerowanie oferty, która będzie przedstawiona klientowi</p>
+<p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> przygotował oferte dla <code>klienta</code> i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do <code>klienta</code> elektronicznie lub wydrukować i przedstawić podczas spotkania.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - generuje dokument ofertowy na podstawie danych uzupełnionych na ofercie</p>
 <p>Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.3.4 - Zatwierdzenie oferty przez przełożonego</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Wartość oferty wykracza poza kryteria samodzielnego składania ofert</p>
-<p><strong>Kontekst użycia:</strong> Oferta, którą zajmował się <code>konsultant</code> przekroczyła wartość pozwalającą na samodzielność danego <code>konsultanta</code> i wymagane jest potwierdzenie od przełożonego. Przełożonym jest <code>konsultant</code> z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany <code>Zatwierdzającym oferte</code>. <code>Konsultant</code> wysyła poprzez system prośbę o akceptację na dalsze procesowanie i przedstawienie oferty klientowi. <code>Zatwierdzający oferte</code> ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.3.4 - Zatwierdzenie oferty przez przełożonego</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Wartość oferty wykracza poza kryteria samodzielnego składania ofert</p>
+<p><strong>Kontekst użycia:</strong>  Oferta, którą zajmował się <code>konsultant</code> przekroczyła wartość pozwalającą na samodzielność danego <code>konsultanta</code> i wymagane jest potwierdzenie od przełożonego. Przełożonym jest <code>konsultant</code> z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany <code>Zatwierdzającym oferte</code>. <code>Konsultant</code> wysyła poprzez system prośbę o akceptację na dalsze procesowanie i przedstawienie oferty klientowi. <code>Zatwierdzający oferte</code> ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własności nad ofertą</p>
 <p>Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmuje oferte i procesują ją dalej.</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Oferta została zatwierdzona, dokument ofertowy jest wygenerowany. Oferta jest gotowa do przedstawienia klientowi.</p>
-<p><strong>Kontekst użycia:</strong> <code>Konsultant</code> ma możliwość wysłania dokumentu ofertowego do klienta z poziomu systemu, lub wydrukowanie tego dokumentu i przedstawienie go klientowi.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Oferta została zatwierdzona, dokument ofertowy jest wygenerowany. Oferta jest gotowa do przedstawienia klientowi.</p>
+<p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> ma możliwość wysłania dokumentu ofertowego do klienta z poziomu systemu, lub wydrukowanie tego dokumentu i przedstawienie go klientowi.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - przedstawia oferte klientowi</p>
 <p>Klient - otrzymuje oferte od konsultanta</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.4.2 - Kontakt z klientem w celu potwierdzenia oferty - Potwierdzenie oferty przez klienta</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Klient podjął decyzję w kontekście danej oferty</p>
-<p><strong>Kontekst użycia:</strong> <code>Klient</code> podjął decyzję dotyczącą przedstawionej mu oferty. <code>Klient</code> przekazuję decyzję <code>konsultantowi</code>, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty <code>konsultant</code> składa zamówienie w fabryce na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces ofertowy</p>
-<p>**Aktor główny: **Klient</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.4.2 - Kontakt z klientem w celu potwierdzenia oferty - Potwierdzenie oferty przez klienta</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Klient podjął decyzję w kontekście danej oferty</p>
+<p><strong>Kontekst użycia:</strong>  <code>Klient</code> podjął decyzję dotyczącą przedstawionej mu oferty. <code>Klient</code> przekazuję decyzję <code>konsultantowi</code>, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty <code>konsultant</code> składa zamówienie w fabryce na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces ofertowy</p>
+<p><strong>Aktor główny:</strong> Klient</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Klient - Przekazuje decyzje</p>
 <p>Konsultant - procesują otrzymaną decyzje w systemie</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.4.5 - Wystawienie faktury</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Dla zamówionej oferty wymagane jest przygotowanie faktury</p>
-<p><strong>Kontekst użycia:</strong> <code>Księgowość</code> dostaje informację w systemie o złożonym zamówieniu przez klienta. <code>Księgowość</code> generuje fakturę w systemie na podstawie złożonego zamówienia i przesyła ją klientowi oczekując na zapłatę.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces fakturowania</p>
-<p>**Aktor główny: ** Księgowość</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.4.5 - Wystawienie faktury</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Dla zamówionej oferty wymagane jest przygotowanie faktury</p>
+<p><strong>Kontekst użycia:</strong>  <code>Księgowość</code> dostaje informację w systemie o złożonym zamówieniu przez klienta. <code>Księgowość</code> generuje fakturę w systemie na podstawie złożonego zamówienia i przesyła ją klientowi oczekując na zapłatę.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces fakturowania</p>
+<p><strong>Aktor główny:</strong> Księgowość</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Księgowość - generuje fakture w systemie</p>
 <p>Klient - otrzymuje fakture</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.2.4.6 - Zatwierdzenie faktury - Klient zapłacił za fakture</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: ** Oznaczenie danej faktury jako opłacona</p>
-<p><strong>Kontekst użycia:</strong> <code>Klient</code> opłacił fakturę. <code>Księgowość</code> korzystając z zewnętrznych informacji bankowo finansowych odnotowuje daną fakturę jako opłaconą w systemie.</p>
-<p>**Zakres: **</p>
-<p>**Poziom: ** Proces fakturowania</p>
-<p>**Aktor główny: ** Księgowość</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.4.6 - Zatwierdzenie faktury - Klient zapłacił za fakture</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong> Oznaczenie danej faktury jako opłacona</p>
+<p><strong>Kontekst użycia:</strong>  <code>Klient</code> opłacił fakturę. <code>Księgowość</code> korzystając z zewnętrznych informacji bankowo finansowych odnotowuje daną fakturę jako opłaconą w systemie.</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong> Proces fakturowania</p>
+<p><strong>Aktor główny:</strong> Księgowość</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <p>Księgowość - odnotowuje płatność w systemie, informacja o płatności pochodz spoza systemu</p>
 <p>Klient - opłaca fakture</p>
-<h4 id="a-nameobsugareklamacjiuca2123-obs%C5%82uga-reklamacji"><a name='ObsugareklamacjiUC'></a>2.1.2.3 Obsługa reklamacji</h4>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.3.1.1 - Zgłoszenie reklamacji przez klienta</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> Zgłoszenie reklamacji przez klienta</p>
-<p><strong>Kontekst użycia:</strong> <code>Klient</code> zgłasza reklamację raz pośrednictwem formularza reklamacji na stronie dostępnego na stronie internetowej</p>
-<p><strong>Zakres:</strong> Reklamacja produktu przez klienta</p>
-<p><strong>Poziom:</strong> Przyjęcie zgłoszenia reklamacji</p>
-<p><strong>Aktor główny:</strong> Klient</p>
+<h4 id="a-nameobsugareklamacji-1a2123-obs%C5%82uga-reklamacji"><a name='Obsugareklamacji-1'></a>2.1.2.3 Obsługa reklamacji</h4>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.3.1.1 - Zgłoszenie reklamacji przez klienta</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  Zgłoszenie reklamacji przez klienta</p>
+<p><strong>Kontekst użycia:</strong>  <code>Klient</code> zgłasza reklamację raz pośrednictwem formularza reklamacji na stronie dostępnego na stronie internetowej</p>
+<p><strong>Zakres:</strong>  Reklamacja produktu przez klienta</p>
+<p><strong>Poziom:</strong>  Przyjęcie zgłoszenia reklamacji</p>
+<p><strong>Aktor główny:</strong>  Klient</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Klient</em> - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zweryfikować np. datę zakupu.</p>
 <hr>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.3.1.2 - Obsługa zgłoszenia reklamacji klienta przez pracownika</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> Podjęcie kolejnych kroków w obsłudze reklamacji przez klienta</p>
-<p><strong>Kontekst użycia:</strong> <code>Pracownik</code> przekierowuje zgłoszoną przez <code>klienta</code> reklamację produktu <code>zespołowi technicznemu</code> do analizy zasadności reklamacji.</p>
-<p><strong>Zakres:</strong> Reklamacja produktu przez klienta</p>
-<p><strong>Poziom:</strong> Przyjęcie zgłoszenia reklamacji</p>
-<p><strong>Aktor główny:</strong> Pracownik</p>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.3.1.2 - Obsługa zgłoszenia reklamacji klienta przez pracownika</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  Podjęcie kolejnych kroków w obsłudze reklamacji przez klienta</p>
+<p><strong>Kontekst użycia:</strong>  <code>Pracownik</code> przekierowuje zgłoszoną przez <code>klienta</code> reklamację produktu <code>zespołowi technicznemu</code> do analizy zasadności reklamacji.</p>
+<p><strong>Zakres:</strong>  Reklamacja produktu przez klienta</p>
+<p><strong>Poziom:</strong>  Przyjęcie zgłoszenia reklamacji</p>
+<p><strong>Aktor główny:</strong>  Pracownik</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Pracownik</em> - Inicjuje proces</p>
 <p><em>Klient</em> - zgłasza reklamacje</p>
 <p><em>Zespół techniczny</em> - przejmuje dalsze czynności</p>
 <hr>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.3.3.1 - Przygotowanie produktów do odesłania do dostawcy</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> Przygotowanie produktów do odesłania do dostawcy</p>
-<p><strong>Kontekst użycia:</strong> <code>Zespół techniczny</code> przygotowuje produkty do odesłania do <code>dostawcy</code></p>
-<p><strong>Zakres:</strong> Przygotowanie produktów do odesłania do dostawcy</p>
-<p><strong>Poziom:</strong> Zgłoszenie reklamacji dostawcy</p>
-<p><strong>Aktor główny:</strong> Zespół techniczny</p>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.3.3.1 - Przygotowanie produktów do odesłania do dostawcy</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  Przygotowanie produktów do odesłania do dostawcy</p>
+<p><strong>Kontekst użycia:</strong>  <code>Zespół techniczny</code> przygotowuje produkty do odesłania do <code>dostawcy</code></p>
+<p><strong>Zakres:</strong>  Przygotowanie produktów do odesłania do dostawcy</p>
+<p><strong>Poziom:</strong>  Zgłoszenie reklamacji dostawcy</p>
+<p><strong>Aktor główny:</strong>  Zespół techniczny</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Zespół techniczny</em> - przygotowanie produktów do odesłania do dostawcy</p>
 <p><em>dostawca</em> - potencjalny odbiorca przesyłki reklamacji</p>
 <hr>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.3.3.2 - Realizacja wysłania produktów do dostawcy</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> Wysłanie produktów do dostawcy, aby otrzymać od niego wymienione, działające produkty.</p>
-<p><strong>Kontekst użycia:</strong> Po przygotowaniu produktów do odesłania <code>zespół techniczny</code> odsyła produkty do <code>dostawcy</code></p>
-<p><strong>Zakres:</strong> Wysłanie produktów do dostawcy</p>
-<p><strong>Poziom:</strong> Zgłoszenie reklamacji dostawcy</p>
-<p><strong>Aktor główny:</strong> Zespół techniczny</p>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.3.3.2 - Realizacja wysłania produktów do dostawcy</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  Wysłanie produktów do dostawcy, aby otrzymać od niego wymienione, działające produkty.</p>
+<p><strong>Kontekst użycia:</strong>  Po przygotowaniu produktów do odesłania <code>zespół techniczny</code> odsyła produkty do <code>dostawcy</code></p>
+<p><strong>Zakres:</strong>  Wysłanie produktów do dostawcy</p>
+<p><strong>Poziom:</strong>  Zgłoszenie reklamacji dostawcy</p>
+<p><strong>Aktor główny:</strong>  Zespół techniczny</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Zespół techniczny</em> - wysyła do dostawcy reklamowane produkty</p>
 <p><em>dostawca</em> - potencjalny odbiorca przesyłki reklamacji</p>
 <hr>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.3.4.1 - Wprowadzenie reklamowanych produktów do rejestru</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> Wprowadzenie reklamowanych produktów do rejestru w celu późniejszych statystyk i analiz awaryjności produktów.</p>
-<p><strong>Kontekst użycia:</strong> Po przyjęciu reklamacji <code>pracownik</code> wprowadza informacje o produkcie i powodzie reklamacji do rejestru</p>
-<p><strong>Zakres:</strong> Wysłanie produktów do dostawcy</p>
-<p><strong>Poziom:</strong> Prowadzenie rejestru reklamacji</p>
-<p><strong>Aktor główny:</strong> Pracownik</p>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.3.4.1 - Wprowadzenie reklamowanych produktów do rejestru</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  Wprowadzenie reklamowanych produktów do rejestru w celu późniejszych statystyk i analiz awaryjności produktów.</p>
+<p><strong>Kontekst użycia:</strong>  Po przyjęciu reklamacji <code>pracownik</code> wprowadza informacje o produkcie i powodzie reklamacji do rejestru</p>
+<p><strong>Zakres:</strong>  Wysłanie produktów do dostawcy</p>
+<p><strong>Poziom:</strong>  Prowadzenie rejestru reklamacji</p>
+<p><strong>Aktor główny:</strong>  Pracownik</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Pracownik</em> - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do rejestru</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.6.1.1- Marketing w internecie - pozycjonowanie strony</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.1.1- Marketing w internecie - pozycjonowanie strony</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong></p>
 <p><strong>Kontekst użycia:</strong></p>
-<p>**Zakres: **</p>
-<p>**Poziom: **</p>
-<p>**Aktor główny: **</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong></p>
+<p><strong>Aktor główny:</strong></p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.6.1.2- Marketing w internecie - reklama na portalach biznesowych powiązanych z branżą</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.1.2- Marketing w internecie - reklama na portalach biznesowych powiązanych z branżą</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong></p>
 <p><strong>Kontekst użycia:</strong></p>
-<p>**Zakres: **</p>
-<p>**Poziom: **</p>
-<p>**Aktor główny: **</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong></p>
+<p><strong>Aktor główny:</strong></p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.6.1.3 - Marketing w internecie - Statystyki powiązane z katalogiem produktowym</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.1.3 - Marketing w internecie - Statystyki powiązane z katalogiem produktowym</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong></p>
 <p><strong>Kontekst użycia:</strong></p>
-<p>**Zakres: **</p>
-<p>**Poziom: **</p>
-<p>**Aktor główny: **</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong></p>
+<p><strong>Aktor główny:</strong></p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe</p>
-<p><strong>Autor:</strong> Adam Samsonowicz</p>
-<p>**Cel przypadku użycia: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe</p>
+<p><strong>Autor:</strong>  Adam Samsonowicz</p>
+<p><strong>Cel przypadku użycia:</strong></p>
 <p><strong>Kontekst użycia:</strong></p>
-<p>**Zakres: **</p>
-<p>**Poziom: **</p>
-<p>**Aktor główny: **</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Zakres:</strong></p>
+<p><strong>Poziom:</strong></p>
+<p><strong>Aktor główny:</strong></p>
+<p>*Uczestnicy i interesy: *</p>
 <hr>
+<h4 id="a-namerejestrpotencjalnychklientwistanukontaktuznimi-1a2127-rejestr-potencjalnych-klient%C3%B3w-i-stanu-kontaktu-z-nimi"><a name='Rejestrpotencjalnychklientwistanukontaktuznimi-1'></a>2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi</h4>
 <pre class="hljs"><code><div>@startuml
 left to right direction
 skinparam packageStyle rectangle
@@ -1408,34 +1406,33 @@ rectangle &quot;Prowadzenie bazy potencjalnych klientów&quot; {
 }
 @enduml
 </div></code></pre>
-<p><img src="https://www.plantuml.com/plantuml/png/0/bP6nRi9038Rta-uTB2OOyW9C3Dsw85KiRERE92ONExeuYWBYgNW4NgoXfQMLob2llx_lb-nLPvYjRv9tYVO6ff2vh0mYPmh6AjvrDKkB6HjeCTHOqfkDYU2MevI9lCDWcc6vLYC91qmoGfsOn9PVsQjArwTftxpx1c6spZfWF98mmGwF8xGFHQZkakjbcC79EvXc_X0je2XWlcqO1O5bhxd1S63GJommBPumBnfnm5ld3umXuaVfdJSCrJF1fkl_m_zr62X-QRqxUxSYYTChtW40" alt="Projekt systemu-4" title="Projekt systemu-4"></p>
 <h6 id="rysunek-7-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-rejestru-potencjalnych-klient%C3%B3w"><em>Rysunek 7. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów</em></h6>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.7.1 - Dodawanie informacji i danych o klientach</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p>**Cel przypadku użycia: ** Dodawanie informacji i danych o klientach</p>
-<p><strong>Kontekst użycia:</strong> Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.</p>
-<p>**Zakres: ** Prowadzenie bazy potencjalnych klientów</p>
-<p>**Poziom: ** Prowadzenie bazy potencjalnych klientów</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.7.1.1 - Dodawanie informacji i danych o klientach</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong> Dodawanie informacji i danych o klientach</p>
+<p><strong>Kontekst użycia:</strong>  Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.</p>
+<p><strong>Zakres:</strong> Prowadzenie bazy potencjalnych klientów</p>
+<p><strong>Poziom:</strong> Prowadzenie bazy potencjalnych klientów</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.7.2 - Zmiana informacji o kliencie</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p>**Cel przypadku użycia: ** Zmiana informacji o kliencie</p>
-<p><strong>Kontekst użycia:</strong>   Gdy <code>klient</code> wróci do naszej firmy z aktualizacją danych o sobie i ze zgodą na <code>RODO</code> mamy mieć możliwość zaktualizwania istniejącego statusu.</p>
-<p>**Zakres: ** Prowadzenie bazy potencjalnych klientów</p>
-<p>**Poziom: ** Prowadzenie bazy potencjalnych klientów</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.7.1.2 - Zmiana informacji o kliencie</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong> Zmiana informacji o kliencie</p>
+<p><strong>Kontekst użycia:</strong>    Gdy <code>klient</code> wróci do naszej firmy z aktualizacją danych o sobie i ze zgodą na <code>RODO</code> mamy mieć możliwość zaktualizwania istniejącego statusu.</p>
+<p><strong>Zakres:</strong> Prowadzenie bazy potencjalnych klientów</p>
+<p><strong>Poziom:</strong> Prowadzenie bazy potencjalnych klientów</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.7.1 - Usuwanie informacji i danych wrażliwych o klientach</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p>**Cel przypadku użycia: ** Usuwanie informacji i danych o klientach</p>
-<p><strong>Kontekst użycia:</strong>  Zgodnie z obowiązującymi przepisami nie możemy przetwarzać danych wrażliwych w przypadku usunięcia zgody na przetwarzanie daynch. W tym przypadku zostawiamy tylko email kontaktowy, reszta danych powinna zostać zanonimizownana.</p>
-<p>**Zakres: ** Prowadzenie bazy potencjalnych klientów</p>
-<p>**Poziom: ** Prowadzenie bazy potencjalnych klientów</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.7.1.3 - Usuwanie informacji i danych wrażliwych o klientach</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong> Usuwanie informacji i danych o klientach</p>
+<p><strong>Kontekst użycia:</strong>   Zgodnie z obowiązującymi przepisami nie możemy przetwarzać danych wrażliwych w przypadku usunięcia zgody na przetwarzanie daynch. W tym przypadku zostawiamy tylko email kontaktowy, reszta danych powinna zostać zanonimizownana.</p>
+<p><strong>Zakres:</strong> Prowadzenie bazy potencjalnych klientów</p>
+<p><strong>Poziom:</strong> Prowadzenie bazy potencjalnych klientów</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <hr>
 <pre class="hljs"><code><div>@startuml
 left to right direction
@@ -1450,103 +1447,353 @@ rectangle &quot;Informowanie o ofercie&quot; {
 }
 @enduml
 </div></code></pre>
-<p><img src="https://www.plantuml.com/plantuml/png/0/TP6nJiD038Rta-uTh4xja1Ver1Mn8274R5sSuDx5ZYwEgal5o5FmEl1U96sX0b5lblr_zc_l1iDiOvUyIzGOc4BcziMWvap1MCMx8RBqcB637aF4bXwj98AbZj8cyWw3QORjWnf9s6EI0Z4nYMs_Q_SgmvZcVlFkHmYhEsaqTtf0OG85RIW7fXKSlOCvrbVP1geAri_by_t0P8aMGOrMG6S7DcUjGbGnZ3R2T1bFtUOcQ2ZfD5NKIiCHmvwl6q2lORAFDw14qR8AXqcMj4DEjvXFzSHqXlB9rn-cpR3cZ6AwGFwx6LI_sDwzUhSZgUSlVG40" alt="Projekt systemu-5" title="Projekt systemu-5"></p>
 <h6 id="rysunek-8-diagram-przypadk%C3%B3w-u%C5%BCycia-funkcji-informowania-o-ofercie"><em>Rysunek 8. Diagram przypadków użycia funkcji informowania o ofercie</em></h6>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.7.2.1 - Wyświetlenie daty ostatniego kontaktu z klientem</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p>**Cel przypadku użycia: **  Wyświetlenie daty ostatniego kontaktu z klientem</p>
-<p><strong>Kontekst użycia:</strong> Informacja o dacie ostatniego kontaktu powinna być bardzo dobrze widoczna</p>
-<p>**Zakres: ** Informowanie o ofercie</p>
-<p>**Poziom: **  Informowanie o ofercie</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.7.2.1 - Wyświetlenie daty ostatniego kontaktu z klientem</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Wyświetlenie daty ostatniego kontaktu z klientem</p>
+<p><strong>Kontekst użycia:</strong>  Informacja o dacie ostatniego kontaktu powinna być bardzo dobrze widoczna</p>
+<p><strong>Zakres:</strong> Informowanie o ofercie</p>
+<p><strong>Poziom:</strong>  Informowanie o ofercie</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.7.2.2 -  Wysylanie notyfikacji o ofercie pocztą elektroniczną email</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p>**Cel przypadku użycia: **  Wysylanie notyfikacji o ofercie pocztą elektroniczną email</p>
-<p><strong>Kontekst użycia:</strong>    Gdy konsultant zauważy, że dawno nikt nie kontaktował się z klientem ma możliwość wysłania mu oferty spersonalizowanej przez system na podstawie jego poprzednich zamówień. Zdarzenie to powinno być odnotowane w systemie z kopią oferty, która została wysłana.</p>
-<p>**Zakres: **  Informowanie o ofercie</p>
-<p>**Poziom: **  Informowanie o ofercie</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.7.2.2 -  Wysylanie notyfikacji o ofercie pocztą elektroniczną email</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong>  Wysylanie notyfikacji o ofercie pocztą elektroniczną email</p>
+<p><strong>Kontekst użycia:</strong>     Gdy konsultant zauważy, że dawno nikt nie kontaktował się z klientem ma możliwość wysłania mu oferty spersonalizowanej przez system na podstawie jego poprzednich zamówień. Zdarzenie to powinno być odnotowane w systemie z kopią oferty, która została wysłana.</p>
+<p><strong>Zakres:</strong>  Informowanie o ofercie</p>
+<p><strong>Poziom:</strong>  Informowanie o ofercie</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong> 1.7.2.3 - Usuwanie informacji i danych wrażliwych o klientach</p>
-<p><strong>Autor:</strong> Mateusz Popielarz</p>
-<p>**Cel przypadku użycia: **Usuwanie informacji i danych wrażliwych o klientach</p>
-<p><strong>Kontekst użycia:</strong> System pokazuje wygenerowaną, spersonalizowaną ofertę którą <code>konsultant</code> może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.</p>
-<p>**Zakres: ** Prowadzenie bazy potencjalnych klientów</p>
-<p>**Poziom: ** Prowadzenie bazy potencjalnych klientów</p>
-<p>**Aktor główny: ** Konsultant</p>
-<p>**Uczestnicy i interesy: **</p>
-<h4 id="a-namezarzadzanieuca2128-zarzadzanie"><a name='ZarzadzanieUC'></a>2.1.2.8 Zarzadzanie</h4>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.8.1.1 - Wprowadzenie dokumentów do systemu</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> Wprowadzenie dokumentów do dostępnej dla pracowników platformy w celu ułatwienia obiegu dokumentacji i zadań między działami.</p>
-<p><strong>Kontekst użycia:</strong> <code>Pracownik</code> wprowadza dokumenty lub zadania do systemu, aby poprzez system były widoczne dla innych pracowników.</p>
-<p><strong>Zakres:</strong> Platforma dla pracowników</p>
-<p><strong>Poziom:</strong> Organizacja w firmie</p>
-<p><strong>Aktor główny:</strong> Pracownik</p>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.7.2.3 - Usuwanie informacji i danych wrażliwych o klientach</p>
+<p><strong>Autor:</strong>  Mateusz Popielarz</p>
+<p><strong>Cel przypadku użycia:</strong> Usuwanie informacji i danych wrażliwych o klientach</p>
+<p><strong>Kontekst użycia:</strong>  System pokazuje wygenerowaną, spersonalizowaną ofertę którą <code>konsultant</code> może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.</p>
+<p><strong>Zakres:</strong> Prowadzenie bazy potencjalnych klientów</p>
+<p><strong>Poziom:</strong> Prowadzenie bazy potencjalnych klientów</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<h4 id="a-namezarzadzaniea2128-zarzadzanie"><a name='Zarzadzanie'></a>2.1.2.8 Zarzadzanie</h4>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.8.1.1 - Wprowadzenie dokumentów do systemu</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  Wprowadzenie dokumentów do dostępnej dla pracowników platformy w celu ułatwienia obiegu dokumentacji i zadań między działami.</p>
+<p><strong>Kontekst użycia:</strong>  <code>Pracownik</code> wprowadza dokumenty lub zadania do systemu, aby poprzez system były widoczne dla innych pracowników.</p>
+<p><strong>Zakres:</strong>  Platforma dla pracowników</p>
+<p><strong>Poziom:</strong>  Organizacja w firmie</p>
+<p><strong>Aktor główny:</strong>  Pracownik</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Pracownik</em> - wprowadza dokumenty, zadania, ogłoszenia do systemu</p>
 <hr>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> <code>Właściciel</code> zna zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od <code>dostawcy</code>. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.</p>
-<p><strong>Kontekst użycia:</strong> Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem czasowym</p>
-<p><strong>Zakres:</strong> Platforma dla pracowników</p>
-<p><strong>Poziom:</strong> Organizacja w firmie</p>
-<p><strong>Aktor główny:</strong> Właściciel</p>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  <code>Właściciel</code> zna zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od <code>dostawcy</code>. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.</p>
+<p><strong>Kontekst użycia:</strong>  Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem czasowym</p>
+<p><strong>Zakres:</strong>  Platforma dla pracowników</p>
+<p><strong>Poziom:</strong>  Organizacja w firmie</p>
+<p><strong>Aktor główny:</strong>  Właściciel</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Właściciel</em> - odczytuje i ma możliwość analizy prognoz czasowych zamówień</p>
 <p><em>Dostawca</em> - od niego firma zamawia produkty</p>
 <hr>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.8.2.2 -Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> Właściciel zna zapotrzebowanie ilościowe na produkty do zamówienia od dostawcy. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.</p>
-<p><strong>Kontekst użycia:</strong> Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem ilościowym</p>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.8.2.2 -Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  Właściciel zna zapotrzebowanie ilościowe na produkty do zamówienia od dostawcy. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.</p>
+<p><strong>Kontekst użycia:</strong>  Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem ilościowym</p>
 <p><strong>Zakres:</strong></p>
-<p><strong>Poziom:</strong> Organizacja w firmie</p>
-<p><strong>Aktor główny:</strong> Właściciel</p>
+<p><strong>Poziom:</strong>  Organizacja w firmie</p>
+<p><strong>Aktor główny:</strong>  Właściciel</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Właściciel</em> - odczytuje i ma możliwość analizy prognoz ilościowych zamówień</p>
 <hr>
-<p><strong>Numer i nazwa przypadku użycia:</strong> 1.8.3.1 -  Przydział pracowników do określonych zadań</p>
-<p><strong>Autor:</strong> Kacper Kwapisz</p>
-<p><strong>Cel przypadku użycia:</strong> Właściciel chciałby mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania</p>
-<p><strong>Kontekst użycia:</strong> Właściciel wprowadza do systemu zadania dla konkretnych pracowników. Pracownicy za pośrednictwem platformy widzą przydzielone im zadania.</p>
-<p><strong>Zakres:</strong> Przydział pracowników do określonych zadań</p>
-<p><strong>Poziom:</strong> Organizacja w firmie</p>
-<p><strong>Aktor główny:</strong> Właściciel</p>
+<p><strong>Numer i nazwa przypadku użycia:</strong>  1.8.3.1 -  Przydział pracowników do określonych zadań</p>
+<p><strong>Autor:</strong>  Kacper Kwapisz</p>
+<p><strong>Cel przypadku użycia:</strong>  Właściciel chciałby mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania</p>
+<p><strong>Kontekst użycia:</strong>  Właściciel wprowadza do systemu zadania dla konkretnych pracowników. Pracownicy za pośrednictwem platformy widzą przydzielone im zadania.</p>
+<p><strong>Zakres:</strong>  Przydział pracowników do określonych zadań</p>
+<p><strong>Poziom:</strong>  Organizacja w firmie</p>
+<p><strong>Aktor główny:</strong>  Właściciel</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Właściciel</em> - przydziela pracowników do określonych zadań</p>
 <p><em>Pracownik</em> - widzi przydzielone mu zadanie przez właściciela</p>
 <hr>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle &quot;Rozładunek oraz załadunek&quot; {
+    (Magazynier) -- (Weryfikacja dokumentacji)
+    (Magazynier) -- (Rozładunek)
+    (Magazynier) -- (Przyjęcie towaru)
+    (Magazynier) -- (Kontrola stanu przesyłki)
+    (Magazynier) -- (Przygotowanie towaru do składowania)
+	(Dostawca) -- (Magazynier)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-roz%C5%82adunek-oraz-za%C5%82adunek"><em>Rysunek X. Diagram przypadków użycia obsługi Rozładunek oraz załadunek</em></h6>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.1.1 - Weryfikacja dokumentacji</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Weryfikacja dokumentacji</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy towar bedzie gotowy do rozładunku/załadunku Jako magazynier chce mieć możliwość weryfikacji dokumentacji aby procesować towar zgodnie z procedurami i przepisami</p>
+<p><strong>Zakres:</strong> Rozładunek oraz załadunek</p>
+<p><strong>Poziom:</strong> Weryfikacja dokumentacji</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<p><em>Dostawca</em> - Inicjuje proces</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.1.2 - Rozładunek</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Rozładunek</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy dostawa bedzie gotowa do rozładunku Jako magazynier chce mieć możliwość rozładunku przesyłki aby zapełnić magazyn produktami.</p>
+<p><strong>Zakres:</strong> Rozładunek oraz załadunek</p>
+<p><strong>Poziom:</strong> Rozładunek</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<p><em>Dostawca</em> - Inicjuje proces</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.1.3 - Przyjęcie towaru</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Przyjęcie towaru</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy dostawa bedzie gotowa do odbioru, Jako magazynier chce mieć możliwość przyjęcia towaru i kontroli stanu przesyłki magazynu aby przekazać go do dalszego procesowania - rozładunku</p>
+<p><strong>Zakres:</strong> Rozładunek oraz załadunek</p>
+<p><strong>Poziom:</strong> Przyjęcie towaru</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<p><em>Dostawca</em> - Inicjuje proces</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.1.4 - Kontrola stanu przesyłki</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Kontrola stanu przesyłki</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy przesyłka bedzie gotowa, Jako magazynier chce mieć możliwość kontroli stanu przesyłki aby przekazać ją do dalszego procesowania - wysyłki</p>
+<p><strong>Zakres:</strong> Rozładunek oraz załadunek</p>
+<p><strong>Poziom:</strong> Kontrola przesyłki</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.1.5 - Przygotowanie towaru do składowania</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Przygotowanie towaru do składowania</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy produkt bedzie gotowy, Jako magazynier chce mieć możliwość przygotowania towaru do składowania aby umożliwić szybką wysyłkę w przypadku zamówienia.</p>
+<p><strong>Zakres:</strong> Rozładunek oraz załadunek</p>
+<p><strong>Poziom:</strong> Przygotowanie towaru</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle &quot;Czynności monitorujące&quot; {
+    (Magazynier) -- (Zarejestrowanie towaru)
+    (Magazynier) -- (Tworzenie zamówienia dostaw)
+	(Magazynier) -- (Wystawienie dokumentów)
+    (Magazynier) -- (Powiazanie towaru z dostawcą i nabywcą)
+    (Magazynier) -- (Kontrola stanu przesyłki)
+    (Magazynier) -- (Wyrejestrowanie towaru)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-czynno%C5%9Bci-monitoruj%C4%85ce"><em>Rysunek X. Diagram przypadków użycia obsługi Czynności monitorujące</em></h6>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.2.1 - Zarejestrowanie towaru</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Zarejestrowanie towaru</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy dostawa zostanie odebrana, Jako magazynier chce mieć możliwość zarejestrowania towaru aby udostępnić oraz uaktualnić informacje o dostępności towaru</p>
+<p><strong>Zakres:</strong> Czynności monitorujące</p>
+<p><strong>Poziom:</strong> Odbiór dostawy</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.2.2 - Tworzenie zamówienia dostaw</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Tworzenie zamówienia dostaw</p>
+<p><strong>Kontekst użycia:</strong> ​W razie zapotrzebowania na produkty, Jako magazynier chce mieć możliwość tworzyć zamówienia dostaw aby zapewnić wymagane dokumenty dotyczące dostaw.</p>
+<p><strong>Zakres:</strong> Czynności monitorujące</p>
+<p><strong>Poziom:</strong> Tworzenie zamówienia dostaw</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.2.3 - Wystawienie dokumentów</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Wystawienie dokumentów</p>
+<p><strong>Kontekst użycia:</strong> Przy każdej czynności wymagającej udokumentowania, Jako magazynier chce mieć możliwość wystawiania dokumentów aby zapenić wymagane dokumenty w procedurze.</p>
+<p><strong>Zakres:</strong> Czynności monitorujące</p>
+<p><strong>Poziom:</strong> Wystawienie dokumentów</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.2.4 - Powiazanie towaru z dostawcą i nabywcą</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Powiazanie towaru z dostawcą i nabywcą</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy towar będzie gotowy do wysłania, Jako magazynier chce mieć możliwość powiązania towaru z dostawcą i nabywcą aby dostarczyć przesyłkę pod odpowiednią lokalizację.</p>
+<p><strong>Zakres:</strong> Czynności monitorujące</p>
+<p><strong>Poziom:</strong> Powiazanie towaru z dostawcą i nabywcą</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.2.5 - Wyrejstrowanie towaru</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Wyrejstrowanie towaru</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy towar został wysłany, Jako magazynier chce mieć możliwość wyrejestrowania towaru z magazynu aby uaktualnić informacje o dostępności towaru</p>
+<p><strong>Zakres:</strong> Czynności monitorujące</p>
+<p><strong>Poziom:</strong> Wyrejstrowanie towaru</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle &quot;Kontrolowanie&quot; {
+    (Magazynier) -- (Sprawdzenie stanu)
+    (Magazynier) -- (Informowanie o danych poziomach stanu)
+    (Magazynier) -- (Kontrola wartości towaru)
+    (Magazynier) -- (Kontrola sprzedaży online)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-kontrolowanie"><em>Rysunek X. Diagram przypadków użycia obsługi Kontrolowanie</em></h6>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.3.1 - Sprawdzenie stanu</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Sprawdzenie stanu</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy towar jest składowany na magazynie, Jako magazynier chce mieć możliwość sprawdzenia stanu magazynu aby okreslić ilość dostępnych produktów.</p>
+<p><strong>Zakres:</strong> Kontrolowanie</p>
+<p><strong>Poziom:</strong> Sprawdzenie stanu</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.3.2 - Informowanie o danych poziomach stanu</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Informowanie o danych poziomach stanu</p>
+<p><strong>Kontekst użycia:</strong> ​Gdy towar jest składowany na magazynie, ​Jako magazynier chce mieć możliwość informowania o danych poziomach stanu magazynu aby uzupełniać go na bieżąco produktami</p>
+<p><strong>Zakres:</strong> Kontrolowanie</p>
+<p><strong>Poziom:</strong> Informowanie o danych poziomach stanu</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.3.3 - Kontrola wartości towaru</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Kontrola wartości towaru</p>
+<p><strong>Kontekst użycia:</strong> ​Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartosci towaru aby wysyłany towar byl zawsze zgodny z umową</p>
+<p><strong>Zakres:</strong> Kontrolowanie</p>
+<p><strong>Poziom:</strong> Kontrola wartości towaru</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.3.4 - Kontrola sprzedaży online</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Kontrola sprzedaży online</p>
+<p><strong>Kontekst użycia:</strong> ​Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania sprzedaży online aby wysyłany towar byl zawsze adekwatny do ceny</p>
+<p><strong>Zakres:</strong> Kontrolowanie</p>
+<p><strong>Poziom:</strong> Kontrola sprzedaży online</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle &quot;Kategoryzowanie&quot; {
+    (Magazynier) -- (Grupowanie towaru)
+    (Magazynier) -- (Przypisywanie numeru seryjnego)
+    (Magazynier) -- (Przypisywanie numeru partii)
+    (Magazynier) -- (Przypisywanie kodów EAN)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-kategoryzowanie"><em>Rysunek X. Diagram przypadków użycia obsługi Kategoryzowanie</em></h6>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.4.1 - Grupowanie towaru</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Grupowanie towaru</p>
+<p><strong>Kontekst użycia:</strong> ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość grupowania towaru aby zminimalizować czas wyszukiwania</p>
+<p><strong>Zakres:</strong> Kategoryzowanie</p>
+<p><strong>Poziom:</strong> Grupowanie towaru</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.4.2 - Przypisywanie numeru seryjnego</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Przypisywanie numeru seryjnego</p>
+<p><strong>Kontekst użycia:</strong> ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania unikalnego numeru seryjnego produktom aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie</p>
+<p><strong>Zakres:</strong> Kategoryzowanie</p>
+<p><strong>Poziom:</strong> Przypisywanie numeru seryjnego</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.4.3 - Przypisywanie numeru partii</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Przypisywanie numeru partii</p>
+<p><strong>Kontekst użycia:</strong> ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania numeru partii aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie</p>
+<p><strong>Zakres:</strong> Kategoryzowanie</p>
+<p><strong>Poziom:</strong> Przypisywanie numeru partii</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.4.4 - Przypisywanie kodów EAN</p>
+<p><strong>Autor:</strong> Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Przypisywanie kodów EAN</p>
+<p><strong>Kontekst użycia:</strong> ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania kodów EAN aby umożliwić wysyłkę produktu po całej Europie</p>
+<p><strong>Zakres:</strong> Kategoryzowanie</p>
+<p><strong>Poziom:</strong> Przypisywanie kodów EAN</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle &quot;Prognozowanie popytu&quot; {
+    (Magazynier) -- (Tworzenie prognoz popytu)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-prognozowanie-popytu"><em>Rysunek X. Diagram przypadków użycia obsługi Prognozowanie popytu</em></h6>
+<p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.4.1 - Tworzenie prognoz popytu</p>
+<p>Autor: Kamil Gliński</p>
+<p><strong>Cel przypadku użycia:</strong> Tworzenie prognoz popytu</p>
+<p><strong>Kontekst użycia:</strong> W sytuacji gdy chcemy osiągnąć optymalny czas prac na magazynie potrzebujemy stworzyc prognozy popytu, ​Jako magazynier chce mieć możliwość tworzenia prognoz popytu aby utrzymać kluczowe produkty na stanie</p>
+<p><strong>Zakres:</strong> Prognozowanie popytu</p>
+<p><strong>Poziom:</strong> Tworzenie prognoz popytu</p>
+<p><strong>Aktor główny:</strong> Magazynier</p>
+<p><strong>Uczestnicy i interesy:</strong></p>
+<p><em>Magazynier</em> - Jest to w jego zakresie obowiązków</p>
+<hr>
 <h2 id="a-namedaneprzechowywanewsystemiezmergowadefinicjwdanychinieuywasowaencjaniatruybua22-dane-przechowywane-w-systemie-zmergowa%C4%87-definicjw-danych-i-nie-u%C5%BCywa%C4%87-s%C5%82owa-encja-ni-atruybu"><a name='DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu'></a>2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu</h2>
-<h3 id="a-namedaneoglnea221-dane-og%C3%B3lne"><a name='Daneoglne'></a>2.2.1 Dane ogólne</h3>
+<h3 id="a-nameopisklientaipowizanychdanycha222-opis-klienta-i-powi%C4%85zanych-danych"><a name='Opisklientaipowizanychdanych'></a>2.2.2 Opis klienta i powiązanych danych</h3>
+<p>W tej sekcji zajmiemy się opisem wymaganych encji określających klienta</p>
 <ol>
 <li>
-<p>Produkt</p>
-<ol>
-<li>Ilość na magazynie</li>
-<li>Obecna potrzebna ilość</li>
-<li>Zamówiona ilość</li>
-<li>Sprzedane</li>
-</ol>
-</li>
-<li>
-<p>Osoba</p>
+<p>Klient - jednoznacznie określa klienta</p>
 <ol>
 <li>Imię</li>
 <li>Nazwisko</li>
 <li>Email kontaktowy</li>
 <li>Telefon kontaktowy</li>
 <li>Adres kontaktowy</li>
-</ol>
-</li>
-<li>
-<p>Lokal przemysłowy</p>
-<ol>
-<li>Adres</li>
+<li>Firma, której jest reprezentantem</li>
+<li>Zgoda na przetwarzanie danych osobowych w formie cyfrowej</li>
+<li>Liczba wszystkich zamówień w systemie</li>
+<li>Łączna kwota zamówień</li>
+<li>Numer referencyjny</li>
+<li>Lokale</li>
 </ol>
 </li>
 <li>
@@ -1559,48 +1806,13 @@ rectangle &quot;Informowanie o ofercie&quot; {
 </ol>
 </li>
 <li>
-<p>Firma</p>
+<p>Firma klienta</p>
 <ol>
 <li>Nazwa firmy</li>
 <li>NIP</li>
 <li>Wystawione faktury przez naszą firmę</li>
 <li>Wystawione faktury do opłacenia przez nasza firmę</li>
 <li>Kraj pochodzenia</li>
-</ol>
-</li>
-<li>
-<p>Pracownik (Rozszerza <code>Osoba</code>)</p>
-<ol>
-<li>Pensja</li>
-<li>Data zatrudnienia</li>
-<li>Data rozwiązania umowy</li>
-<li></li>
-</ol>
-</li>
-<li>
-<p>Konsultant (Rozszerza <code>Pracownik</code>)</p>
-</li>
-<li>
-<p>Pracownik usług (Rozszerza <code>Pracownik</code>)</p>
-</li>
-</ol>
-<h3 id="a-nameopisklientaipowizanychencjia222-opis-klienta-i-powi%C4%85zanych-encji"><a name='Opisklientaipowizanychencji'></a>2.2.2 Opis klienta i powiązanych encji</h3>
-<p>W tej sekcji zajmiemy się opisem wymaganych encji określających klienta</p>
-<ol>
-<li>
-<p>Klient (Rozszerza <code>Osoba</code>) - jednoznacznie określa klienta</p>
-<ol>
-<li>Firma, której jest reprezentantem</li>
-<li>Zgoda na przetwarzanie danych osobowych w formie cyfrowej</li>
-<li>Liczba wszystkich zamówień w systemie</li>
-<li>Łączna kwota zamówień</li>
-<li>Numer referencyjny</li>
-<li>Lokale</li>
-</ol>
-</li>
-<li>
-<p>Firma klienta (Rozszerza <code>Firma</code>)</p>
-<ol>
 <li>Reprezentanci</li>
 </ol>
 </li>
@@ -1612,20 +1824,39 @@ rectangle &quot;Informowanie o ofercie&quot; {
 <li>Klient</li>
 </ol>
 </li>
+<li>
+<p>Pracownik</p>
+<ol>
+<li>Imię</li>
+<li>Nazwisko</li>
+<li>Email kontaktowy</li>
+<li>Telefon kontaktowy</li>
+<li>Adres kontaktowy</li>
+<li>Pensja</li>
+<li>Data zatrudnienia</li>
+<li>Data rozwiązania umowy</li>
+</ol>
+</li>
 </ol>
 <h3 id="a-nameopisdostawcya223-opis-dostawcy"><a name='OpisDostawcy'></a>2.2.3 Opis Dostawcy</h3>
 <ol>
 <li>
-<p>Fabryka dostawcy (Rozszerza <code>Lokal przemysłowy</code>)</p>
+<p>Fabryka dostawcy</p>
 <ol>
+<li>Adres</li>
 <li>Kody produktów obsługiwanych przez tą fabrykę</li>
-<li>Dostawca (Referencja do <code>Dostawca</code>)</li>
+<li>Dostawca</li>
 </ol>
 </li>
 <li>
-<p>Dostawca (Rozszerza <code>Firma</code>)</p>
+<p>Dostawca</p>
 <ol>
-<li>Fabryki (Wiele <code>Fabryka Dostawcy</code>)</li>
+<li>Nazwa firmy</li>
+<li>NIP</li>
+<li>Wystawione faktury przez naszą firmę</li>
+<li>Wystawione faktury do opłacenia przez nasza firmę</li>
+<li>Kraj pochodzenia</li>
+<li>Fabryki</li>
 </ol>
 </li>
 </ol>
@@ -1641,7 +1872,7 @@ rectangle &quot;Informowanie o ofercie&quot; {
 </ol>
 </li>
 </ol>
-<h2 id="a-namedokumentywprowadzaneiwyprowadzanezsystemuwzorytrzebawygenerowawzorywjakiejapcea23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu-%E2%80%93-wzory-trzeba-wygenerowa%C4%87-wzory-w-jakiej%C5%9B-apce"><a name='DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce</h2>
+<h2 id="a-namedokumentywprowadzaneiwyprowadzanezsystemuwzorya23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu-%E2%80%93-wzory"><a name='Dokumentywprowadzaneiwyprowadzanezsystemuwzory'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory</h2>
 <ul>
 <li>Ekran wprowadzenia danych dostawcy do systemu (w wariancie modyfikacji pola będą po prostu wstępnie wypełnione)</li>
 </ul>
@@ -1771,11 +2002,6 @@ rectangle &quot;Informowanie o ofercie&quot; {
 <li>Produkt</li>
 <li>Magazyn</li>
 </ol>
-<p>User stories -&gt;</p>
-<p>Mateusz 1. 7.</p>
-<p>Kamil 4 5</p>
-<p>Adam 2 6</p>
-<p>Kacper 3 8</p>
 <p>Lista plików graficznych</p>
 <ol>
 <li><a href="#1.1.3-sk%C5%82adniki-organizacyjne-firmy">Składniki organizacyjne firmy</a></li>

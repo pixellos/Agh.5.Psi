@@ -48,7 +48,7 @@ Lead: Mateusz Popielarz
 	* [2.2.2 Opis klienta i powiązanych danych](#Opisklientaipowizanychdanych)
 	* [2.2.3 Opis Dostawcy](#OpisDostawcy)
 	* [2.2.4 Opis Magazynu](#OpisMagazynu)
-* [2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory ## Trzeba wygenerować wzory w jakiejś apce](#DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce)
+* [2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#Dokumentywprowadzaneiwyprowadzanezsystemuwzory)
 	* [2.3.1 Zapytanie ofertowe od klienta](#Zapytanieofertoweodklienta)
 	* [2.3.2 Oferta](#Oferta)
 	* [2.3.3 Zamówienie towaru u dostawcy](#Zamwienietowaruudostawcy)
@@ -2069,7 +2069,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
     1. Rezerwacja pod produkt wielkogabarytowy
 
 
-## <a name='DokumentywprowadzaneiwyprowadzanezsystemuwzoryTrzebawygenerowawzorywjakiejapce'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
+## <a name='Dokumentywprowadzaneiwyprowadzanezsystemuwzory'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
 - Ekran wprowadzenia danych dostawcy do systemu (w wariancie modyfikacji pola będą po prostu wstępnie wypełnione)
 
