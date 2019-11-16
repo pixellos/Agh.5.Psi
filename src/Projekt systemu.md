@@ -1102,6 +1102,25 @@ Klient - opłaca fakture
 
 #### <a name='Obsugareklamacji-1'></a>2.1.2.3 Obsługa reklamacji
 
+```plantuml X.X.X
+@startuml
+left to right direction
+actor Klient
+actor Pracownik
+actor :Zespół techniczny:
+rectangle "System" {
+    (Klient) -- (Zgłoś reklamację)
+    (Zgłoś reklamację) .> (Wprowadź produkt do rejestru) : <<include>>
+    (Zgłoś reklamację) .> (Uaktualnij status reklamacji) : <<include>>
+    (Uaktualnij status reklamacji) -- (Pracownik)
+    :Zespół techniczny: - (Pracownik)
+
+}
+@enduml
+```
+
+###### *Rysunek X. Diagram przypadków użycia zgłoszenia reklamacji przez klienta*
+
 **Numer i nazwa przypadku użycia:**  1.3.1.1 - Zgłoszenie reklamacji przez klienta
 
 **Autor:**  Kacper Kwapisz
@@ -1419,6 +1438,20 @@ rectangle "Informowanie o ofercie" {
 
 #### <a name='Zarzadzanie'></a>2.1.2.8 Zarzadzanie
 
+```plantuml X.X.X
+@startuml
+left to right direction
+actor Pracownik
+rectangle "System" {
+    (Pracownik) -- (Wprowadź dokumenty)
+    (Pracownik) -- (Wprowadź zadania)
+}
+@enduml
+```
+
+###### *Rysunek X. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika do systemu*
+
+
 **Numer i nazwa przypadku użycia:**  1.8.1.1 - Wprowadzenie dokumentów do systemu
 
 **Autor:**  Kacper Kwapisz
@@ -1438,6 +1471,23 @@ rectangle "Informowanie o ofercie" {
 *Pracownik* - wprowadza dokumenty, zadania, ogłoszenia do systemu
 
 ***
+
+```plantuml X.X.X
+@startuml
+left to right direction
+actor Właściciel
+actor Pracownik
+rectangle "System" {
+    (Właściciel) -- (Wyświetl prognozę zamówień)
+    (Właściciel) -- (Przydziel zadania)
+    (Przydziel zadania) -- Pracownik
+
+}
+@enduml
+```
+
+###### *Rysunek X. Diagram przypadków użycia przydziału zadań przez właściciela oraz wglądu do prognozy zamówień*
+
 
 **Numer i nazwa przypadku użycia:**  1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
 
