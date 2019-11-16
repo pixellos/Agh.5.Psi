@@ -811,7 +811,7 @@ rectangle "Rejestrowanie klienta" {
 ```
 
 
-###### *Rysunek 4. Diagram przypadków użycia aktualizacji danych klienta*
+###### *Rysunek 7. Rejestrowanie klienta*
 
 Numer i nazwa przypadku uzycia:**  1.2.1.1 - Rejestrowanie klienta
 
@@ -871,7 +871,7 @@ rectangle "Przyjęcie zapytania ofertowego od klienta" {
 @enduml
 ```
 
-###### *Rysunek 5. Przyjęcia zapytania ofertowego od klienta*
+###### *Rysunek 8. Przyjęcia zapytania ofertowego od klienta*
 
 **Numer i nazwa przypadku uzycia:**  1.2.2.0 - Przyjęcie zapytania ofertowego od klienta
 
@@ -902,7 +902,7 @@ skinparam packageStyle rectangle
 actor Konsultant
 actor Klient
 actor Zatwierdzający oferte
-rectangle "Przyjęcie zapytania ofertowego od klienta" {
+rectangle "Tworzenie oferty" {
   (Tworzy oferte w systmie) .. (Dodaje produkty do oferty)
   (Tworzy oferte w systmie) .. (Zatwierdza oferte)
   (Generuje dokument ofertowy) .. (Otrzymuje dokument ofertowy)
@@ -915,7 +915,7 @@ rectangle "Przyjęcie zapytania ofertowego od klienta" {
 @enduml
 ```
 
-###### *Rysunek 5. Przyjęcia zapytania ofertowego od klienta*
+###### *Rysunek 9. Tworzenie oferty*
 
 **Numer i nazwa przypadku uzycia:**  1.2.3.1 - Utworzenie oferty w systemie
 
@@ -1066,7 +1066,7 @@ skinparam packageStyle rectangle
 actor Konsultant
 actor Klient
 actor Księgowość
-rectangle "Przyjęcie zapytania ofertowego od klienta" {
+rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
   (Przedstawia oferte) .. (Otrzymuje oferte)
   (Podejmuje decyzje odnośnie otrzymanej oferty) .. (Procesuje decyzje klienta)
   (Generuje i przesyła fakture do klienta) .. (Płaci za fakture)
@@ -1082,7 +1082,7 @@ rectangle "Przyjęcie zapytania ofertowego od klienta" {
 @enduml
 ```
 
-###### *Rysunek 5. Przyjęcia zapytania ofertowego od klienta*
+###### *Rysunek 10. Potwierdzenie zamówienia i wystawienie faktury*
 
 **Numer i nazwa przypadku uzycia:**  1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi
 
@@ -1191,7 +1191,7 @@ rectangle "System" {
 @enduml
 ```
 
-###### *Rysunek X. Diagram przypadków użycia zgłoszenia reklamacji przez klienta*
+###### *Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta*
 
 **Numer i nazwa przypadku użycia:**  1.3.1.1 - Zgłoszenie reklamacji przez klienta
 
@@ -1315,7 +1315,7 @@ rectangle "Statystyki powiązane z katalogiem produktowym" {
 @enduml
 ```
 
-###### *Rysunek 5. Statyki powiązane z katalogiem produktowym*
+###### *Rysunek 12. Statyki powiązane z katalogiem produktowym*
 
 **Numer i nazwa przypadku uzycia:**  1.6.1 - Statystyki powiązane z katalogiem produktowym
 
@@ -1354,7 +1354,7 @@ rectangle "Analiza danych na potrzeby marketingowe" {
 @enduml
 ```
 
-###### *Rysunek 6. Analiza danych na potrzeby marketingowe*
+###### *Rysunek 13. Analiza danych na potrzeby marketingowe*
 
 Numer i nazwa przypadku uzycia:**  1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
 
@@ -1395,7 +1395,7 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 @enduml
 ```
 
-###### *Rysunek 7. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów*
+###### *Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów*
 
 
 **Numer i nazwa przypadku uzycia:**  1.7.1.1 - Dodawanie informacji i danych o klientach
@@ -1470,7 +1470,7 @@ rectangle "Informowanie o ofercie" {
 ```
 
 
-###### *Rysunek 8. Diagram przypadków użycia funkcji informowania o ofercie*
+###### *Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie*
 
 
 
@@ -1544,7 +1544,7 @@ rectangle "System" {
 @enduml
 ```
 
-###### *Rysunek X. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika do systemu*
+###### *Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika do systemu*
 
 
 **Numer i nazwa przypadku użycia:**  1.8.1.1 - Wprowadzenie dokumentów do systemu
@@ -1581,7 +1581,7 @@ rectangle "System" {
 @enduml
 ```
 
-###### *Rysunek X. Diagram przypadków użycia przydziału zadań przez właściciela oraz wglądu do prognozy zamówień*
+###### *Rysunek 17. Diagram przypadków użycia przydziału zadań przez właściciela oraz wglądu do prognozy zamówień*
 
 
 **Numer i nazwa przypadku użycia:**  1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
@@ -1664,7 +1664,7 @@ rectangle "Rozładunek oraz załadunek" {
 @enduml
 ```
 
-###### *Rysunek X. Diagram przypadków użycia obsługi Rozładunek oraz załadunek*
+###### *Rysunek 18. Diagram przypadków użycia obsługi Rozładunek oraz załadunek*
 
 **Numer i Nazwa przypadku użycia:** 1.9.1.1 - Weryfikacja dokumentacji
 
@@ -1789,7 +1789,7 @@ rectangle "Czynności monitorujące" {
 @enduml
 ```
 
-###### *Rysunek X. Diagram przypadków użycia obsługi Czynności monitorujące*
+###### *Rysunek 19. Diagram przypadków użycia obsługi Czynności monitorujące*
 
 **Numer i Nazwa przypadku użycia:** 1.9.2.1 - Zarejestrowanie towaru
 
@@ -1906,7 +1906,7 @@ rectangle "Kontrolowanie" {
 @enduml
 ```
 
-###### *Rysunek X. Diagram przypadków użycia obsługi Kontrolowanie*
+###### *Rysunek 20. Diagram przypadków użycia obsługi Kontrolowanie*
 
 **Numer i Nazwa przypadku użycia:** 1.9.3.1 - Sprawdzenie stanu
 
@@ -2002,7 +2002,7 @@ rectangle "Kategoryzowanie" {
 @enduml
 ```
 
-###### *Rysunek X. Diagram przypadków użycia obsługi Kategoryzowanie*
+###### *Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie*
 
 
 
@@ -2098,7 +2098,7 @@ rectangle "Prognozowanie popytu" {
 @enduml
 ```
 
-###### *Rysunek X. Diagram przypadków użycia obsługi Prognozowanie popytu*
+###### *Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu*
 
 **Numer i Nazwa przypadku użycia:** 1.9.4.1 - Tworzenie prognoz popytu
 
