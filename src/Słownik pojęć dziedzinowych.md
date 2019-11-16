@@ -27,5 +27,5 @@
 ## Z
 
 - Zamówienie - Nasza firma zamawia produkt od dystrybutora i musi opłacić fakturę.
-
 - Zlecenie zakupu - Klient zgadza się na wystawienie mu faktury i zobowiązuje zapłacić, za co otrzyma towar.
+- Zatwierdzający oferte - Konsultant wyższego stopnia, zatwierdza oferty prezentowane klientowi

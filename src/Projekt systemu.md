@@ -857,7 +857,23 @@ Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego proc
 
 ------
 
-**Numer i nazwa przypadku uzycia:**  1.2.2.0 - Przyjęcia zapytania ofertowego od klienta
+```plantuml test
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+rectangle "Przyjęcie zapytania ofertowego od klienta" {
+  (Wysyła zapytanie ofertowe) ..  (Otrzymuje zapytanie ofertowe) 
+  Konsultant -- (Otrzymuje zapytanie ofertowe)
+  Klient -- (Wysyła zapytanie ofertowe)
+}
+@enduml
+```
+
+###### *Rysunek 5. Przyjęcia zapytania ofertowego od klienta*
+
+**Numer i nazwa przypadku uzycia:**  1.2.2.0 - Przyjęcie zapytania ofertowego od klienta
 
 **Autor:**  Adam Samsonowicz
 
@@ -878,6 +894,28 @@ Konsultant - Otrzymuje informację o potrzebie klienta
 Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produktów z czym zwraca się do konsultanta
 
 ------
+
+```plantuml test
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+actor Zatwierdzający oferte
+rectangle "Przyjęcie zapytania ofertowego od klienta" {
+  (Tworzy oferte w systmie) .. (Dodaje produkty do oferty)
+  (Tworzy oferte w systmie) .. (Zatwierdza oferte)
+  (Generuje dokument ofertowy) .. (Otrzymuje dokument ofertowy)
+  Konsultant -- (Tworzy oferte w systmie)
+  Konsultant -- (Dodaje produkty do oferty)
+  Konsultant -- (Generuje dokument ofertowy)
+  Klient -- (Otrzymuje dokument ofertowy)
+  Zatwierdzający oferte -- (Zatwierdza oferte)
+}
+@enduml
+```
+
+###### *Rysunek 5. Przyjęcia zapytania ofertowego od klienta*
 
 **Numer i nazwa przypadku uzycia:**  1.2.3.1 - Utworzenie oferty w systemie
 
@@ -1020,6 +1058,31 @@ Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własnoś
 Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmuje oferte i procesują ją dalej.
 
 ------
+
+```plantuml test
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+actor Księgowość
+rectangle "Przyjęcie zapytania ofertowego od klienta" {
+  (Przedstawia oferte) .. (Otrzymuje oferte)
+  (Podejmuje decyzje odnośnie otrzymanej oferty) .. (Procesuje decyzje klienta)
+  (Generuje i przesyła fakture do klienta) .. (Płaci za fakture)
+  (Płaci za fakture) .. (Odnotowuje płatność)
+  Konsultant -- (Przedstawia oferte)
+  Konsultant -- (Procesuje decyzje klienta w systemie)
+  Klient -- (Otrzymuje oferte)
+  Klient -- (Podejmuje decyzje odnośnie otrzymanej oferty)
+  Klient -- (Płaci za fakture)
+  Księgowość -- (Generuje i przesyła fakture do klienta)
+  Księgowość -- (Odnotowuje płatność)
+}
+@enduml
+```
+
+###### *Rysunek 5. Przyjęcia zapytania ofertowego od klienta*
 
 **Numer i nazwa przypadku uzycia:**  1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi
 
