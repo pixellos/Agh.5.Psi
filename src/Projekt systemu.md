@@ -504,7 +504,8 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 :Marketingowiec:   
 :Członek zarządu:   
 :Księgowy:  
-:System zewnętrzny dostawcy: 
+:System zewnętrzny dostawcy:
+:System analizyjący dane:
 
 @enduml
 ```
@@ -791,9 +792,28 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 *Klient* - Inicjuje proces
 
-***
+#### 
 
-**Numer i nazwa przypadku uzycia:**  1.2.1.1 - Rejestrowanie klienta
+```plantuml 2.1.2.1
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+rectangle "Rejestrowanie klienta" {
+  (Korygowanie danych klienta) ..  (Dodanie klienta do systemu)  
+  (Rejestrowanie klienta) .> (Korygowanie danych klienta) : include
+  Konsultant -- (Rejestrowanie klienta)
+  Konsultant -- (Korygowanie danych klienta)
+  Klienta -- (Korygowanie danych klienta)
+}
+@enduml
+```
+
+
+###### *Rysunek 4. Diagram przypadków użycia aktualizacji danych klienta*
+
+Numer i nazwa przypadku uzycia:**  1.2.1.1 - Rejestrowanie klienta
 
 **Autor:**  Adam Samsonowicz
 
@@ -801,7 +821,7 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Kontekst użycia:**  `Konsultant` musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.
 
-**Zakres:** 
+**Zakres:** Rejstracja klietna
 
 **Poziom:** Przetwarzanie danych klientów 
 
@@ -823,7 +843,7 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 
 **Kontekst użycia:**  `Konsultant` otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu
 
-**Zakres:** 
+**Zakres:** Edycja danych klienta
 
 **Poziom:** Przetwarzanie danych klientów
 
@@ -1218,6 +1238,22 @@ rectangle "System" {
 
 ------
 
+```plantuml test
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor System analizyjący dane
+rectangle "Statystyki powiązane z katalogiem produktowym" {
+  (Wykonywanie operacji na katalogu produktów) ..  (Analiza danych)  
+  Konsultant -- (Wykonywanie operacji na katalogu produktów)
+  System analizyjący dane -- (Analiza danych)
+}
+@enduml
+```
+
+###### *Rysunek 5. Statyki powiązane z katalogiem produktowym*
+
 **Numer i nazwa przypadku uzycia:**  1.6.1 - Statystyki powiązane z katalogiem produktowym
 
 **Autor:**  Adam Samsonowicz
@@ -1240,7 +1276,24 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 ------
 
-**Numer i nazwa przypadku uzycia:**  1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
+```plantuml test
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor System analizujący dane
+actor Marketingowiec
+rectangle "Analiza danych na potrzeby marketingowe" {
+  (Generuje raport) ..  (Otrzymuje raport)
+  Marketingowiec -- (Otrzymuje raport)
+  System analizujący dane -- (Analizuje dane)
+  System analizujący dane -- (Generuje raport)
+}
+@enduml
+```
+
+###### *Rysunek 6. Analiza danych na potrzeby marketingowe*
+
+Numer i nazwa przypadku uzycia:**  1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
 
 **Autor:**  Adam Samsonowicz
 
@@ -1257,6 +1310,8 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 **Uczestnicy i interesy: **  
 
 System analizujący dane - na podstawie wszystkich dostarczonych danych dotyczących ofert, system generuje dedykowane analizy w celach lepszej przejrzystości w podejmowaniu decyzji.
+
+Marketingowiec - dostaje raport zawierający analizy 
 
 ***
 
