@@ -415,25 +415,14 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     
     Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
 
-#### <a name='Integracjazsystemamimarketingu'></a>1.3.1.6 Integracja z systemami marketingu
-1. Marketing w internecie
-    1. Pozycjonowanie strony
-    
-       Strona firmy powinna mieć zapewnioną dobrą wyszukiwalność w popularnych przeglądarkach.
-    
-    1. Reklama na portalach biznesowych powiązanych z branżą
-    
-       Reklamy na portalach biznesowych przedstawiają produkty oferowane przez firme. System powinien dostarczyć informacji o najlepiej sprzedających się produktach oraz innych statystykach zdefiniowanych na potrzeby marketingu.
-    
-    1. Statystyki powiązane z katalogiem produktowym
-    
-       Katalog produktowy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktowym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.
-    
-2. Wystawienie danych na strategiczne potrzeby marketingowe
+#### <a name='Integracjazsystemamimarketingu'></a>1.3.1.6 Analizy danych na potrzeby marketingowe
+1. Statystyki powiązane z katalogiem produktowym
 
-    1. Podejmowanie decyzji przez dział marketingu na podstawie danych
+   Katalog produktowy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktowym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.
 
-       Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
+3. Wystawienie danych na strategiczne potrzeby marketingowe
+
+    Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
 
 #### <a name='Rejestrpotencjalnychklientwistanukontaktuznimi'></a>1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
 1. Prowadzenie bazy potencjalnych klientów
@@ -1229,39 +1218,25 @@ rectangle "System" {
 
 ------
 
-**Numer i nazwa przypadku uzycia:**  1.6.1.2- Marketing w internecie - reklama na portalach biznesowych powiązanych z branżą
+**Numer i nazwa przypadku uzycia:**  1.6.1 - Statystyki powiązane z katalogiem produktowym
 
 **Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia:** 
+**Cel przypadku użycia:** Lepsze pozycjonowanie produktów
 
-**Kontekst użycia:**  
+**Kontekst użycia:**  Przy każdym użyciu wyszukiwarki produktów, kliknięcia są zapisywane na potrzeby analiz danych. `System analizujący dane` na podstawie decyzji `konsultanta` jest w stanie zaproponować najczęściej wybierane produkty.
 
-**Zakres:** 
+**Zakres:** Wyszukiwanie i konfiguracja produktów
 
-**Poziom:** 
+**Poziom:** Analiza danych 
 
-**Aktor główny:** 
-
-**Uczestnicy i interesy:** 
-
-------
-
-**Numer i nazwa przypadku uzycia:**  1.6.1.3 - Marketing w internecie - Statystyki powiązane z katalogiem produktowym
-
-**Autor:**  Adam Samsonowicz
-
-**Cel przypadku użycia:** 
-
-**Kontekst użycia:**  
-
-**Zakres:** 
-
-**Poziom:** 
-
-**Aktor główny:** 
+**Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:** 
+
+Konsultant - realizacja codziennych obowiązków
+
+System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 ------
 
@@ -1269,17 +1244,19 @@ rectangle "System" {
 
 **Autor:**  Adam Samsonowicz
 
-**Cel przypadku użycia:** 
+**Cel przypadku użycia:** Wsparcie podejmowania decyzji marketingowych za pomoca dedykowanych analiz danych
 
-**Kontekst użycia:**  
+**Kontekst użycia:**  Wszystkie stworzone oferty oraz ich historia zawierają informacje, które można wykorzystać do podjęcia strategicznych decyzji. Analizy umieszczone są na `raporcie`. `Raport` może być generowany manualnie. `Raport` może być generowany automatycznie po wcześniejszej konfiguracji i ustawienia ram czasowych.
 
-**Zakres:** 
+**Zakres:** Analiza danych
 
-**Poziom:** 
+**Poziom:** Analiza danych 
 
-**Aktor główny:** 
+**Aktor główny:** System analizujący dane
 
-*Uczestnicy i interesy: * 
+**Uczestnicy i interesy: **  
+
+System analizujący dane - na podstawie wszystkich dostarczonych danych dotyczących ofert, system generuje dedykowane analizy w celach lepszej przejrzystości w podejmowaniu decyzji.
 
 ***
 
