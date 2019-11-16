@@ -1527,13 +1527,14 @@ rectangle "Informowanie o ofercie" {
 left to right direction
 skinparam packageStyle rectangle
 actor Magazynier
+actor Dostawca
 rectangle "Rozładunek oraz załadunek" {
     (Magazynier) -- (Weryfikacja dokumentacji)
     (Magazynier) -- (Rozładunek)
     (Magazynier) -- (Przyjęcie towaru)
     (Magazynier) -- (Kontrola stanu przesyłki)
     (Magazynier) -- (Przygotowanie towaru do składowania)
-	(Dostawca) -- (Magazynier)
+	Dostawca -- Magazynier
 }
 @enduml
 ```
