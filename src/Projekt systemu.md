@@ -60,6 +60,15 @@ Lead: Mateusz Popielarz
 		* [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#Raportsprzedaowedoanalizwewntrznych)
 		* [2.3.10. Raport statystyczny wspierający cele marketingowe](#Raportstatystycznywspierajcycelemarketingowe)
 		* [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#Raportstatystycznywspierajcyprognozypopytuwspierajcycelemagazynowe)
+* [Słownik pojęć dziedzinowych:](#Sownikpojdziedzinowych:)
+	* [A](#A)
+	* [F](#F)
+	* [I](#I)
+	* [K](#K)
+	* [P](#P)
+	* [R](#R)
+	* [S](#S)
+	* [Z](#Z)
 
 <!-- vscode-markdown-toc-config
 	numbering=false
@@ -2294,3 +2303,35 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 Lista plików graficznych
 1. [Składniki organizacyjne firmy](#1.1.3-składniki-organizacyjne-firmy)
 2. [Obszary aktywności](#1.3.1-Obszary-aktywności)
+
+## <a name='Sownikpojdziedzinowych:'></a>Słownik pojęć dziedzinowych:
+
+### <a name='A'></a>A 
+- Analiza danych - przetwarzanie danych ofertowych w celu wygenerowania raportów
+
+### <a name='F'></a>F
+- Fabryka - Zakład, z którego następuje wysyłka towarów do nas, lub bezpośrenio do klienta
+- Faktura – dokument sprzedaży potwierdzający zaistniałą transakcję pośredniczących ze sobą stron
+
+### <a name='I'></a>I
+
+- Integrator - Zewnętrzna firma zajmująca się monatżem u klienta
+
+### <a name='K'></a>K
+- Konsultatnt - Pracownik firmy pracujący w `dziale Handlowym`, jego rolą jest kontakt z `Klientem` oraz z `Dostawcą` w celu zrealizowania `Zlecenia Zakupu`
+
+### <a name='P'></a>P
+- Przedoferta - Oferta, która jest tylko propozycją
+
+### <a name='R'></a>R 
+- Raport - Dokument zawierający zdefiniowane analizy danych, dostępny w wersji elektronicznej i papierowej po wcześniejszym wydrukowaniu. Raport konfigurowany jest z administratorem systemu.
+
+### <a name='S'></a>S
+- System analizujący dane - Program śledzący i zapisujący ruch użytkowników systemu oraz dane dotyczące ofert  
+
+
+### <a name='Z'></a>Z
+
+- Zamówienie - Nasza firma zamawia produkt od dystrybutora i musi opłacić fakturę.
+- Zlecenie zakupu - Klient zgadza się na wystawienie mu faktury i zobowiązuje zapłacić, za co otrzyma towar.
+- Zatwierdzający oferte - Konsultant wyższego stopnia, zatwierdza oferty prezentowane klientowi
