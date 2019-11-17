@@ -3,7 +3,11 @@ Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gliński, Kacper Kwapisz
 
 Lead: Mateusz Popielarz
 
+
+
 # System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
+
+
 ## <a name='rdodanych:firmarodzinna'></a>Żródło danych: firma rodzinna
 
 # 0 Spis Treści
@@ -39,11 +43,6 @@ Lead: Mateusz Popielarz
 	* [1.5.2 Cele przedsięwzięcia projektowego](#Celeprzedsiwziciaprojektowego)
 * [2.1 Funkcje systemu ze strony widzenia użytkownika](#Funkcjesystemuzestronywidzeniauytkownika)
 	* [2.1.1 Aktorzy w systemie](#Aktorzywsystemie)
-	* [2.1.2 Historie użytkowników (Use Cases)](#HistorieuytkownikwUseCases)
-		* [2.1.2.1 Obsługa zamówień](#Obsugazamwie-1)
-		* [2.1.2.3 Obsługa reklamacji](#Obsugareklamacji-1)
-		* [2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi](#Rejestrpotencjalnychklientwistanukontaktuznimi-1)
-		* [2.1.2.8 Zarzadzanie](#Zarzadzanie)
 * [2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu](#DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu)
 	* [2.2.2 Opis klienta i powiązanych danych](#Opisklientaipowizanychdanych)
 	* [2.2.3 Opis Dostawcy](#OpisDostawcy)
@@ -52,14 +51,24 @@ Lead: Mateusz Popielarz
 	* [2.3.1 Zapytanie ofertowe od klienta](#Zapytanieofertoweodklienta)
 	* [2.3.2 Oferta](#Oferta)
 	* [2.3.3 Zamówienie towaru u dostawcy](#Zamwienietowaruudostawcy)
-		* [2.3.4 Potwierdzenie zamówienia od dostawcy](#Potwierdzeniezamwieniaoddostawcy)
-		* [2.3.5. Faktura zakupu od dostawcy](#Fakturazakupuoddostawcy)
-		* [2.3.6. Rejestracja towaru na magazynie](#Rejestracjatowarunamagazynie)
-		* [2.3.7. Wyrejestrowanie towaru z magazynu](#Wyrejestrowanietowaruzmagazynu)
-		* [2.3.8. Faktura zakupu dla klienta](#Fakturazakupudlaklienta)
-		* [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#Raportsprzedaowedoanalizwewntrznych)
-		* [2.3.10. Raport statystyczny wspierający cele marketingowe](#Raportstatystycznywspierajcycelemarketingowe)
-		* [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#Raportstatystycznywspierajcyprognozypopytuwspierajcycelemagazynowe)
+	* [2.3.4 Potwierdzenie zamówienia od dostawcy](#Potwierdzeniezamwieniaoddostawcy)
+	* [2.3.5. Faktura zakupu od dostawcy](#Fakturazakupuoddostawcy)
+	* [2.3.6. Rejestracja towaru na magazynie](#Rejestracjatowarunamagazynie)
+	* [2.3.7. Wyrejestrowanie towaru z magazynu](#Wyrejestrowanietowaruzmagazynu)
+	* [2.3.8. Faktura zakupu dla klienta](#Fakturazakupudlaklienta)
+	* [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#Raportsprzedaowedoanalizwewntrznych)
+	* [2.3.10. Raport statystyczny wspierający cele marketingowe](#Raportstatystycznywspierajcycelemarketingowe)
+	* [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#Raportstatystycznywspierajcyprognozypopytuwspierajcycelemagazynowe)
+* [2.4 Use Case](#UseCase)
+	* [2.4 Historie użytkowników (Use Cases)](#HistorieuytkownikwUseCases)
+		* [2.1.2.1 Obsługa zamówień](#Obsugazamwie-1)
+		* [2.1.2.2 Rejestrowanie klient](#Rejestrowanieklient)
+		* [2.1.2.3 Obsługa reklamacji](#Obsugareklamacji-1)
+		* [2.1.2.4 Obsługa magazynu](#Obsugamagazynu-1)
+		* [2.1.2.5 Kontrola stanów magazynowych](#Kontrolastanwmagazynowych-1)
+		* [2.1.2.6 Analiza danych na potrzeby marketingowe](#Analizadanychnapotrzebymarketingowe)
+		* [2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi](#Rejestrpotencjalnychklientwistanukontaktuznimi-1)
+		* [2.1.2.8 Zarzadzanie](#Zarzadzanie)
 * [Słownik pojęć dziedzinowych:](#Sownikpojdziedzinowych:)
 	* [A](#A)
 	* [F](#F)
@@ -76,7 +85,11 @@ Lead: Mateusz Popielarz
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
+
+
 # 1 Charakterystyka firmy
+
+
 
 ## <a name='Przedmiotmodelowania'></a>1.1  Przedmiot modelowania
 ### <a name='Nazwafirmy'></a>1.1.1 Nazwa firmy
@@ -141,6 +154,8 @@ W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomias
 - Dzial handlowy: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
 
+
+
 ## <a name='OpisobszarumodelowaniaOM'></a>1.2 Opis obszaru modelowania OM
 
 ### <a name='Wywiadzzarzdemwceluustaleniaprzeznaczeniasystemu'></a>1.2.1 Wywiad z zarządem w celu ustalenia przeznaczenia systemu
@@ -190,6 +205,8 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
   System będzie generował raporty
   System będzie miał możliwość porównywania okresów akcji promocyjnej z wynikami sprzedaży
+
+
 
 
 
@@ -472,12 +489,16 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
 
     Jako `właściciel` chciałbym mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania
 
+
+
 ## <a name='Problem'></a>1.4 Problem
 ### <a name='Nazwaproblemu'></a>1.4.1 Nazwa problemu
 System do przekrojowego zarządzania firmą wspomagający sprzedaż, marketing i kontakt z integratorami
 
 ### <a name='Nazwakodowa'></a>1.4.2 Nazwa kodowa
 Przekrojowy system sprzedażowo-konsultingowy - PSSK
+
+
 
 ## <a name='Celedoosignicia'></a>1.5 Cele do osiągnięcia
 
@@ -500,7 +521,11 @@ Przedsięwzięcie docelowo miałoby na celu
 
 Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania wymagań oraz przeprowadzenia ich analizy biznesowej.
 
+
+
 # 2. Opis Wymagań Systemu
+
+
 
 ## <a name='Funkcjesystemuzestronywidzeniauytkownika'></a>2.1 Funkcje systemu ze strony widzenia użytkownika
 
@@ -530,7 +555,177 @@ W systemie możemy wyróżnić następujących aktorów
 - Księgowy - ma dostęp do zamówień i zleceń zakupu, synchronizuje dane między zewnętrznym
 - System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji
 
-### <a name='HistorieuytkownikwUseCases'></a>2.1.2 Historie użytkowników (Use Cases)
+
+## <a name='DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu'></a>2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
+
+
+### <a name='Opisklientaipowizanychdanych'></a>2.2.2 Opis klienta i powiązanych danych
+W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
+
+1. Klient - jednoznacznie określa klienta
+    1. Imię
+    1. Nazwisko
+    1. Email kontaktowy
+    1. Telefon kontaktowy
+    1. Adres kontaktowy
+    1. Firma, której jest reprezentantem
+    1. Zgoda na przetwarzanie danych osobowych w formie cyfrowej
+    1. Liczba wszystkich zamówień w systemie
+    1. Łączna kwota zamówień
+    1. Numer referencyjny
+    1. Lokale
+    
+1. Faktura
+    1. Firma
+    1. Kwota
+    1. Zastosowana stawka VAT
+    1. Kwota opłacona
+
+1. Firma klienta
+    1. Nazwa firmy
+    1. NIP
+    1. Wystawione faktury przez naszą firmę
+    1. Wystawione faktury do opłacenia przez nasza firmę
+    1. Kraj pochodzenia
+    1. Reprezentanci
+
+1. Oferta
+    1. Zaproponowane produkty
+    1. Data wystawienia
+    1. Klient
+
+1. Pracownik
+    1. Imię
+    1. Nazwisko
+    1. Email kontaktowy
+    1. Telefon kontaktowy
+    1. Adres kontaktowy
+    1. Pensja
+    1. Data zatrudnienia
+    1. Data rozwiązania umowy
+
+### <a name='OpisDostawcy'></a>2.2.3 Opis Dostawcy
+
+1. Fabryka dostawcy
+    1. Adres
+    1. Kody produktów obsługiwanych przez tą fabrykę
+    1. Dostawca
+
+1. Dostawca
+    1. Nazwa firmy
+    1. NIP
+    1. Wystawione faktury przez naszą firmę
+    1. Wystawione faktury do opłacenia przez nasza firmę
+    1. Kraj pochodzenia
+    1. Fabryki
+
+### <a name='OpisMagazynu'></a>2.2.4 Opis Magazynu
+
+1. Miejce w magazynie
+    1. Sektor
+    1. Numer Miejsca
+    1. Obecnie przechowywany produkt
+    1. Historycznie przechowywane produkty
+    1. Rezerwacja pod produkt wielkogabarytowy
+
+
+
+
+## <a name='Dokumentywprowadzaneiwyprowadzanezsystemuwzory'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
+
+- Ekran wprowadzenia danych dostawcy do systemu (w wariancie modyfikacji pola będą po prostu wstępnie wypełnione)
+
+
+### <a name='Zapytanieofertoweodklienta'></a>2.3.1 Zapytanie ofertowe od klienta
+
+1. Klient
+
+1. Produkt
+
+### <a name='Oferta'></a>2.3.2 Oferta
+
+1. Klient
+
+1. Pracownik
+
+1. Produkt
+
+### <a name='Zamwienietowaruudostawcy'></a>2.3.3 Zamówienie towaru u dostawcy
+
+1. Produkt
+
+1. Dostawca
+
+1. Oferta
+
+### <a name='Potwierdzeniezamwieniaoddostawcy'></a>2.3.4 Potwierdzenie zamówienia od dostawcy
+
+1. Zamówienie towaru u dostawcy
+
+### <a name='Fakturazakupuoddostawcy'></a>2.3.5. Faktura zakupu od dostawcy
+
+1. Faktura
+
+2.  Zamówienie towaru u dostawcy
+
+### <a name='Rejestracjatowarunamagazynie'></a>2.3.6. Rejestracja towaru na magazynie
+
+1.  Produkt
+
+2. Magazyn
+
+3. Pracownik
+
+4. Dostawca
+
+### <a name='Wyrejestrowanietowaruzmagazynu'></a>2.3.7. Wyrejestrowanie towaru z magazynu
+
+1.  Produkt
+
+2.  Magazyn
+
+3. Oferta
+
+### <a name='Fakturazakupudlaklienta'></a>2.3.8. Faktura zakupu dla klienta
+
+1.  Faktura
+
+2. Klient
+
+3. Produkt
+
+### <a name='Raportsprzedaowedoanalizwewntrznych'></a>2.3.9. Raport sprzedażowe do analiz wewnętrznych
+
+1. Produkt
+
+2. Klient
+
+3. Dostawca
+
+4. Oferta
+
+5. Zamówienie
+
+### <a name='Raportstatystycznywspierajcycelemarketingowe'></a>2.3.10. Raport statystyczny wspierający cele marketingowe
+
+1. Produkt
+
+2. Klient
+
+3. Dostawca
+
+4. Oferta
+
+5. Zamówienie
+
+### <a name='Raportstatystycznywspierajcyprognozypopytuwspierajcycelemagazynowe'></a>2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
+
+1. Produkt
+2. Magazyn
+
+## <a name='UseCase'></a>2.4 Use Case
+
+### <a name='HistorieuytkownikwUseCases'></a>2.4 Historie użytkowników (Use Cases)
 
 W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek użytkownika.
 
@@ -801,9 +996,10 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 *Klient* - Inicjuje proces
 
-#### 
 
-```plantuml 2.1.2.1
+#### <a name='Rejestrowanieklient'></a>2.1.2.2 Rejestrowanie klient
+
+```plantuml 2.1.2.2
 @startuml
 left to right direction
 skinparam packageStyle rectangle
@@ -873,9 +1069,9 @@ skinparam packageStyle rectangle
 actor Konsultant
 actor Klient
 rectangle "Przyjęcie zapytania ofertowego od klienta" {
-  (Wysyła zapytanie ofertowe) ..  (Otrzymuje zapytanie ofertowe) 
-  Konsultant -- (Otrzymuje zapytanie ofertowe)
   Klient -- (Wysyła zapytanie ofertowe)
+  Konsultant -- (Otrzymuje zapytanie ofertowe)
+  (Wysyła zapytanie ofertowe) ..  (Otrzymuje zapytanie ofertowe)
 }
 @enduml
 ```
@@ -910,7 +1106,7 @@ left to right direction
 skinparam packageStyle rectangle
 actor Konsultant
 actor Klient
-actor Zatwierdzający oferte
+actor :Zatwierdzający oferte:
 rectangle "Tworzenie oferty" {
   (Tworzy oferte w systmie) .. (Dodaje produkty do oferty)
   (Tworzy oferte w systmie) .. (Zatwierdza oferte)
@@ -919,7 +1115,7 @@ rectangle "Tworzenie oferty" {
   Konsultant -- (Dodaje produkty do oferty)
   Konsultant -- (Generuje dokument ofertowy)
   Klient -- (Otrzymuje dokument ofertowy)
-  Zatwierdzający oferte -- (Zatwierdza oferte)
+  :Zatwierdzający oferte: -- (Zatwierdza oferte)
 }
 @enduml
 ```
@@ -1183,7 +1379,7 @@ Klient - opłaca fakture
 
 #### <a name='Obsugareklamacji-1'></a>2.1.2.3 Obsługa reklamacji
 
-```plantuml X.X.X
+```plantuml 2.1.2.3
 @startuml
 left to right direction
 actor Klient
@@ -1308,18 +1504,499 @@ rectangle "System" {
 
 *Pracownik* - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do rejestru
 
+
+#### <a name='Obsugamagazynu-1'></a>2.1.2.4 Obsługa magazynu
+```plantuml 1.4.1.1
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+actor Dostawca
+rectangle "Obsługa magazynu" {
+    Magazynier -- (Weryfikacja dokumentacji)
+    Magazynier -- (Rozładunek)
+    Magazynier -- (Przyjęcie towaru)
+    Magazynier -- (Kontrola stanu przesyłki)
+    Magazynier -- (Przygotowanie towaru do składowania)
+	Dostawca -- Magazynier
+}
+@enduml
+```
+
+###### *Rysunek 18. Diagram przypadków użycia obsługi Rozładunek oraz załadunek*
+
+**Numer i Nazwa przypadku użycia:** 1.4.1.1 - Weryfikacja dokumentacji
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Weryfikacja dokumentacji
+
+**Kontekst użycia:** ​Gdy towar bedzie gotowy do rozładunku/załadunku Jako magazynier chce mieć możliwość weryfikacji dokumentacji aby procesować towar zgodnie z procedurami i przepisami
+
+**Zakres:** Rozładunek oraz załadunek
+
+**Poziom:** Weryfikacja dokumentacji
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+*Dostawca* - Inicjuje proces
+
+***
+
+
+**Numer i Nazwa przypadku użycia:** 1.4.1.2 - Rozładunek
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Rozładunek
+
+**Kontekst użycia:** ​Gdy dostawa bedzie gotowa do rozładunku Jako magazynier chce mieć możliwość rozładunku przesyłki aby zapełnić magazyn produktami.
+
+**Zakres:** Rozładunek oraz załadunek
+
+**Poziom:** Rozładunek
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+*Dostawca* - Inicjuje proces
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.4.1.3 - Przyjęcie towaru
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Przyjęcie towaru
+
+**Kontekst użycia:** ​Gdy dostawa bedzie gotowa do odbioru, Jako magazynier chce mieć możliwość przyjęcia towaru i kontroli stanu przesyłki magazynu aby przekazać go do dalszego procesowania - rozładunku
+
+**Zakres:** Rozładunek oraz załadunek
+
+**Poziom:** Przyjęcie towaru
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+*Dostawca* - Inicjuje proces
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.4.1.4 - Kontrola stanu przesyłki
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Kontrola stanu przesyłki
+
+**Kontekst użycia:** ​Gdy przesyłka bedzie gotowa, Jako magazynier chce mieć możliwość kontroli stanu przesyłki aby przekazać ją do dalszego procesowania - wysyłki
+
+**Zakres:** Rozładunek oraz załadunek
+
+**Poziom:** Kontrola przesyłki
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.4.1.5 - Przygotowanie towaru do składowania
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Przygotowanie towaru do składowania
+
+**Kontekst użycia:** ​Gdy produkt bedzie gotowy, Jako magazynier chce mieć możliwość przygotowania towaru do składowania aby umożliwić szybką wysyłkę w przypadku zamówienia.
+
+**Zakres:** Rozładunek oraz załadunek
+
+**Poziom:** Przygotowanie towaru
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+```plantuml X.X.X
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle "Czynności monitorujące" {
+    Magazynier -- (Zarejestrowanie towaru)
+    Magazynier -- (Tworzenie zamówienia dostaw)
+	Magazynier -- (Wystawienie dokumentów)
+    Magazynier -- (Powiazanie towaru z dostawcą i nabywcą)
+    Magazynier -- (Kontrola stanu przesyłki)
+    Magazynier -- (Wyrejestrowanie towaru)
+}
+@enduml
+```
+
+###### *Rysunek 19. Diagram przypadków użycia obsługi Czynności monitorujące*
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.1 - Zarejestrowanie towaru
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Zarejestrowanie towaru
+
+**Kontekst użycia:** ​Gdy dostawa zostanie odebrana, Jako magazynier chce mieć możliwość zarejestrowania towaru aby udostępnić oraz uaktualnić informacje o dostępności towaru
+
+**Zakres:** Czynności monitorujące
+
+**Poziom:** Odbiór dostawy
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.2 - Tworzenie zamówienia dostaw
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Tworzenie zamówienia dostaw
+
+**Kontekst użycia:** ​W razie zapotrzebowania na produkty, Jako magazynier chce mieć możliwość tworzyć zamówienia dostaw aby zapewnić wymagane dokumenty dotyczące dostaw.
+
+**Zakres:** Czynności monitorujące
+
+**Poziom:** Tworzenie zamówienia dostaw 
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.3 - Wystawienie dokumentów
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Wystawienie dokumentów
+
+**Kontekst użycia:** Przy każdej czynności wymagającej udokumentowania, Jako magazynier chce mieć możliwość wystawiania dokumentów aby zapenić wymagane dokumenty w procedurze.
+
+**Zakres:** Czynności monitorujące
+
+**Poziom:** Wystawienie dokumentów
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.4 - Powiazanie towaru z dostawcą i nabywcą
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Powiazanie towaru z dostawcą i nabywcą
+
+**Kontekst użycia:** ​Gdy towar będzie gotowy do wysłania, Jako magazynier chce mieć możliwość powiązania towaru z dostawcą i nabywcą aby dostarczyć przesyłkę pod odpowiednią lokalizację.
+
+**Zakres:** Czynności monitorujące
+
+**Poziom:** Powiazanie towaru z dostawcą i nabywcą
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Wyrejstrowanie towaru
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Wyrejstrowanie towaru
+
+**Kontekst użycia:** ​Gdy towar został wysłany, Jako magazynier chce mieć możliwość wyrejestrowania towaru z magazynu aby uaktualnić informacje o dostępności towaru
+
+**Zakres:** Czynności monitorujące
+
+**Poziom:** Wyrejstrowanie towaru
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+#### <a name='Kontrolastanwmagazynowych-1'></a>2.1.2.5 Kontrola stanów magazynowych
+
+
+```plantuml X.X.X
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle "Kontrola stanów magazynowych" {
+    Magazynier -- (Sprawdzenie stanu)
+    Magazynier -- (Informowanie o danych poziomach stanu)
+    Magazynier -- (Kontrola wartości towaru)
+    Magazynier -- (Kontrola sprzedaży online)
+}
+@enduml
+```
+
+###### *Rysunek 20. Diagram przypadków użycia obsługi Kontrolowanie*
+
+**Numer i Nazwa przypadku użycia:** 1.5.1.1 - Sprawdzenie stanu
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Sprawdzenie stanu
+
+**Kontekst użycia:** ​Gdy towar jest składowany na magazynie, Jako magazynier chce mieć możliwość sprawdzenia stanu magazynu aby okreslić ilość dostępnych produktów.
+
+**Zakres:** Kontrolowanie
+
+**Poziom:** Sprawdzenie stanu
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.5.1.2 - Informowanie o danych poziomach stanu
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Informowanie o danych poziomach stanu
+
+**Kontekst użycia:** ​Gdy towar jest składowany na magazynie, ​Jako magazynier chce mieć możliwość informowania o danych poziomach stanu magazynu aby uzupełniać go na bieżąco produktami
+
+**Zakres:** Kontrolowanie
+
+**Poziom:** Informowanie o danych poziomach stanu
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.5.1.3 - Kontrola wartości towaru
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Kontrola wartości towaru
+
+**Kontekst użycia:** ​Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartosci towaru aby wysyłany towar byl zawsze zgodny z umową
+
+**Zakres:** Kontrolowanie
+
+**Poziom:** Kontrola wartości towaru
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.5.1.4 - Kontrola sprzedaży online
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Kontrola sprzedaży online
+
+**Kontekst użycia:** ​Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania sprzedaży online aby wysyłany towar byl zawsze adekwatny do ceny
+
+**Zakres:** Kontrolowanie
+
+**Poziom:** Kontrola sprzedaży online
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+```plantuml X.X.X
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle "Kategoryzowanie" {
+    Magazynier -- (Grupowanie towaru)
+    Magazynier -- (Przypisywanie numeru seryjnego)
+    Magazynier -- (Przypisywanie numeru partii)
+    Magazynier -- (Przypisywanie kodów EAN)
+}
+@enduml
+```
+
+###### *Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie*
+
+
+
+**Numer i Nazwa przypadku użycia:** 1.5.2.1 - Grupowanie towaru
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Grupowanie towaru
+
+**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość grupowania towaru aby zminimalizować czas wyszukiwania
+
+**Zakres:** Kategoryzowanie
+
+**Poziom:** Grupowanie towaru
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.5.2.2 - Przypisywanie numeru seryjnego
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Przypisywanie numeru seryjnego
+
+**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania unikalnego numeru seryjnego produktom aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
+
+**Zakres:** Kategoryzowanie
+
+**Poziom:** Przypisywanie numeru seryjnego
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.5.2.3 - Przypisywanie numeru partii
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Przypisywanie numeru partii
+
+**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania numeru partii aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
+
+**Zakres:** Kategoryzowanie
+
+**Poziom:** Przypisywanie numeru partii
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+**Numer i Nazwa przypadku użycia:** 1.5.2.4 - Przypisywanie kodów EAN
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Przypisywanie kodów EAN
+
+**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania kodów EAN aby umożliwić wysyłkę produktu po całej Europie
+
+**Zakres:** Kategoryzowanie
+
+**Poziom:** Przypisywanie kodów EAN
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+
+```plantuml X.X.X
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Magazynier
+rectangle "Prognozowanie popytu" {
+    (Magazynier) -- (Tworzenie prognoz popytu)
+}
+@enduml
+```
+
+###### *Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu*
+
+**Numer i Nazwa przypadku użycia:** 1.5.3.1 - Tworzenie prognoz popytu
+
+Autor: Kamil Gliński
+
+**Cel przypadku użycia:** Tworzenie prognoz popytu
+
+**Kontekst użycia:** W sytuacji gdy chcemy osiągnąć optymalny czas prac na magazynie potrzebujemy stworzyc prognozy popytu, ​Jako magazynier chce mieć możliwość tworzenia prognoz popytu aby utrzymać kluczowe produkty na stanie
+
+**Zakres:** Prognozowanie popytu
+
+**Poziom:** Tworzenie prognoz popytu
+
+**Aktor główny:** Magazynier
+
+**Uczestnicy i interesy:**
+
+*Magazynier* - Jest to w jego zakresie obowiązków
+
+***
+
+
 ------
+#### <a name='Analizadanychnapotrzebymarketingowe'></a>2.1.2.6 Analiza danych na potrzeby marketingowe 
+
 
 ```plantuml test
 @startuml
 left to right direction
 skinparam packageStyle rectangle
 actor Konsultant
-actor System analizyjący dane
+actor :System analizyjący dane:
 rectangle "Statystyki powiązane z katalogiem produktowym" {
   (Wykonywanie operacji na katalogu produktów) ..  (Analiza danych)  
   Konsultant -- (Wykonywanie operacji na katalogu produktów)
-  System analizyjący dane -- (Analiza danych)
+  :System analizyjący dane: -- (Analiza danych)
 }
 @enduml
 ```
@@ -1348,17 +2025,17 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 ------
 
-```plantuml test
+```plantuml 2.1.2.6
 @startuml
 left to right direction
 skinparam packageStyle rectangle
-actor System analizujący dane
+actor :System analizujący dane:
 actor Marketingowiec
 rectangle "Analiza danych na potrzeby marketingowe" {
   (Generuje raport) ..  (Otrzymuje raport)
   Marketingowiec -- (Otrzymuje raport)
-  System analizujący dane -- (Analizuje dane)
-  System analizujący dane -- (Generuje raport)
+  :System analizujący dane: -- (Analizuje dane)
+  :System analizujący dane: -- (Generuje raport)
 }
 @enduml
 ```
@@ -1547,8 +2224,8 @@ rectangle "Informowanie o ofercie" {
 left to right direction
 actor Pracownik
 rectangle "System" {
-    (Pracownik) -- (Wprowadź dokumenty)
-    (Pracownik) -- (Wprowadź zadania)
+    :Pracownik: -- (Wprowadź dokumenty)
+    :Pracownik: -- (Wprowadź zadania)
 }
 @enduml
 ```
@@ -1582,8 +2259,8 @@ left to right direction
 actor Właściciel
 actor Pracownik
 rectangle "System" {
-    (Właściciel) -- (Wyświetl prognozę zamówień)
-    (Właściciel) -- (Przydziel zadania)
+    Właściciel -- (Wyświetl prognozę zamówień)
+    Właściciel -- (Przydziel zadania)
     (Przydziel zadania) -- Pracownik
 
 }
@@ -1657,652 +2334,12 @@ rectangle "System" {
 
 ***
 
-```plantuml X.X.X
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-actor Dostawca
-rectangle "Rozładunek oraz załadunek" {
-    (Magazynier) -- (Weryfikacja dokumentacji)
-    (Magazynier) -- (Rozładunek)
-    (Magazynier) -- (Przyjęcie towaru)
-    (Magazynier) -- (Kontrola stanu przesyłki)
-    (Magazynier) -- (Przygotowanie towaru do składowania)
-	Dostawca -- Magazynier
-}
-@enduml
-```
-
-###### *Rysunek 18. Diagram przypadków użycia obsługi Rozładunek oraz załadunek*
-
-**Numer i Nazwa przypadku użycia:** 1.9.1.1 - Weryfikacja dokumentacji
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Weryfikacja dokumentacji
-
-**Kontekst użycia:** ​Gdy towar bedzie gotowy do rozładunku/załadunku Jako magazynier chce mieć możliwość weryfikacji dokumentacji aby procesować towar zgodnie z procedurami i przepisami
-
-**Zakres:** Rozładunek oraz załadunek
-
-**Poziom:** Weryfikacja dokumentacji
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-*Dostawca* - Inicjuje proces
-
-***
-
-
-**Numer i Nazwa przypadku użycia:** 1.9.1.2 - Rozładunek
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Rozładunek
-
-**Kontekst użycia:** ​Gdy dostawa bedzie gotowa do rozładunku Jako magazynier chce mieć możliwość rozładunku przesyłki aby zapełnić magazyn produktami.
-
-**Zakres:** Rozładunek oraz załadunek
-
-**Poziom:** Rozładunek
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-*Dostawca* - Inicjuje proces
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.1.3 - Przyjęcie towaru
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Przyjęcie towaru
-
-**Kontekst użycia:** ​Gdy dostawa bedzie gotowa do odbioru, Jako magazynier chce mieć możliwość przyjęcia towaru i kontroli stanu przesyłki magazynu aby przekazać go do dalszego procesowania - rozładunku
-
-**Zakres:** Rozładunek oraz załadunek
-
-**Poziom:** Przyjęcie towaru
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-*Dostawca* - Inicjuje proces
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.1.4 - Kontrola stanu przesyłki
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Kontrola stanu przesyłki
-
-**Kontekst użycia:** ​Gdy przesyłka bedzie gotowa, Jako magazynier chce mieć możliwość kontroli stanu przesyłki aby przekazać ją do dalszego procesowania - wysyłki
-
-**Zakres:** Rozładunek oraz załadunek
-
-**Poziom:** Kontrola przesyłki
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.1.5 - Przygotowanie towaru do składowania
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Przygotowanie towaru do składowania
-
-**Kontekst użycia:** ​Gdy produkt bedzie gotowy, Jako magazynier chce mieć możliwość przygotowania towaru do składowania aby umożliwić szybką wysyłkę w przypadku zamówienia.
-
-**Zakres:** Rozładunek oraz załadunek
-
-**Poziom:** Przygotowanie towaru
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-```plantuml X.X.X
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "Czynności monitorujące" {
-    (Magazynier) -- (Zarejestrowanie towaru)
-    (Magazynier) -- (Tworzenie zamówienia dostaw)
-	(Magazynier) -- (Wystawienie dokumentów)
-    (Magazynier) -- (Powiazanie towaru z dostawcą i nabywcą)
-    (Magazynier) -- (Kontrola stanu przesyłki)
-    (Magazynier) -- (Wyrejestrowanie towaru)
-}
-@enduml
-```
-
-###### *Rysunek 19. Diagram przypadków użycia obsługi Czynności monitorujące*
-
-**Numer i Nazwa przypadku użycia:** 1.9.2.1 - Zarejestrowanie towaru
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Zarejestrowanie towaru
-
-**Kontekst użycia:** ​Gdy dostawa zostanie odebrana, Jako magazynier chce mieć możliwość zarejestrowania towaru aby udostępnić oraz uaktualnić informacje o dostępności towaru
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Odbiór dostawy
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.2.2 - Tworzenie zamówienia dostaw
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Tworzenie zamówienia dostaw
-
-**Kontekst użycia:** ​W razie zapotrzebowania na produkty, Jako magazynier chce mieć możliwość tworzyć zamówienia dostaw aby zapewnić wymagane dokumenty dotyczące dostaw.
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Tworzenie zamówienia dostaw 
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.2.3 - Wystawienie dokumentów
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Wystawienie dokumentów
-
-**Kontekst użycia:** Przy każdej czynności wymagającej udokumentowania, Jako magazynier chce mieć możliwość wystawiania dokumentów aby zapenić wymagane dokumenty w procedurze.
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Wystawienie dokumentów
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-
-**Numer i Nazwa przypadku użycia:** 1.9.2.4 - Powiazanie towaru z dostawcą i nabywcą
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Powiazanie towaru z dostawcą i nabywcą
-
-**Kontekst użycia:** ​Gdy towar będzie gotowy do wysłania, Jako magazynier chce mieć możliwość powiązania towaru z dostawcą i nabywcą aby dostarczyć przesyłkę pod odpowiednią lokalizację.
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Powiazanie towaru z dostawcą i nabywcą
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.2.5 - Wyrejstrowanie towaru
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Wyrejstrowanie towaru
-
-**Kontekst użycia:** ​Gdy towar został wysłany, Jako magazynier chce mieć możliwość wyrejestrowania towaru z magazynu aby uaktualnić informacje o dostępności towaru
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Wyrejstrowanie towaru
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-```plantuml X.X.X
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "Kontrolowanie" {
-    (Magazynier) -- (Sprawdzenie stanu)
-    (Magazynier) -- (Informowanie o danych poziomach stanu)
-    (Magazynier) -- (Kontrola wartości towaru)
-    (Magazynier) -- (Kontrola sprzedaży online)
-}
-@enduml
-```
-
-###### *Rysunek 20. Diagram przypadków użycia obsługi Kontrolowanie*
-
-**Numer i Nazwa przypadku użycia:** 1.9.3.1 - Sprawdzenie stanu
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Sprawdzenie stanu
-
-**Kontekst użycia:** ​Gdy towar jest składowany na magazynie, Jako magazynier chce mieć możliwość sprawdzenia stanu magazynu aby okreslić ilość dostępnych produktów.
-
-**Zakres:** Kontrolowanie
-
-**Poziom:** Sprawdzenie stanu
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.3.2 - Informowanie o danych poziomach stanu
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Informowanie o danych poziomach stanu
-
-**Kontekst użycia:** ​Gdy towar jest składowany na magazynie, ​Jako magazynier chce mieć możliwość informowania o danych poziomach stanu magazynu aby uzupełniać go na bieżąco produktami
-
-**Zakres:** Kontrolowanie
-
-**Poziom:** Informowanie o danych poziomach stanu
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.3.3 - Kontrola wartości towaru
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Kontrola wartości towaru
-
-**Kontekst użycia:** ​Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartosci towaru aby wysyłany towar byl zawsze zgodny z umową
-
-**Zakres:** Kontrolowanie
-
-**Poziom:** Kontrola wartości towaru
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.3.4 - Kontrola sprzedaży online
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Kontrola sprzedaży online
-
-**Kontekst użycia:** ​Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania sprzedaży online aby wysyłany towar byl zawsze adekwatny do ceny
-
-**Zakres:** Kontrolowanie
-
-**Poziom:** Kontrola sprzedaży online
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-```plantuml X.X.X
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "Kategoryzowanie" {
-    (Magazynier) -- (Grupowanie towaru)
-    (Magazynier) -- (Przypisywanie numeru seryjnego)
-    (Magazynier) -- (Przypisywanie numeru partii)
-    (Magazynier) -- (Przypisywanie kodów EAN)
-}
-@enduml
-```
-
-###### *Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie*
-
-
-
-**Numer i Nazwa przypadku użycia:** 1.9.4.1 - Grupowanie towaru
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Grupowanie towaru
-
-**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość grupowania towaru aby zminimalizować czas wyszukiwania
-
-**Zakres:** Kategoryzowanie
-
-**Poziom:** Grupowanie towaru
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.4.2 - Przypisywanie numeru seryjnego
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Przypisywanie numeru seryjnego
-
-**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania unikalnego numeru seryjnego produktom aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
-
-**Zakres:** Kategoryzowanie
-
-**Poziom:** Przypisywanie numeru seryjnego
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.4.3 - Przypisywanie numeru partii
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Przypisywanie numeru partii
-
-**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania numeru partii aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
-
-**Zakres:** Kategoryzowanie
-
-**Poziom:** Przypisywanie numeru partii
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-**Numer i Nazwa przypadku użycia:** 1.9.4.4 - Przypisywanie kodów EAN
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Przypisywanie kodów EAN
-
-**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania kodów EAN aby umożliwić wysyłkę produktu po całej Europie
-
-**Zakres:** Kategoryzowanie
-
-**Poziom:** Przypisywanie kodów EAN
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-
-```plantuml X.X.X
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "Prognozowanie popytu" {
-    (Magazynier) -- (Tworzenie prognoz popytu)
-}
-@enduml
-```
-
-###### *Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu*
-
-**Numer i Nazwa przypadku użycia:** 1.9.4.1 - Tworzenie prognoz popytu
-
-Autor: Kamil Gliński
-
-**Cel przypadku użycia:** Tworzenie prognoz popytu
-
-**Kontekst użycia:** W sytuacji gdy chcemy osiągnąć optymalny czas prac na magazynie potrzebujemy stworzyc prognozy popytu, ​Jako magazynier chce mieć możliwość tworzenia prognoz popytu aby utrzymać kluczowe produkty na stanie
-
-**Zakres:** Prognozowanie popytu
-
-**Poziom:** Tworzenie prognoz popytu
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-*Magazynier* - Jest to w jego zakresie obowiązków
-
-***
-
-
-
-## <a name='DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu'></a>2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
-
-
-### <a name='Opisklientaipowizanychdanych'></a>2.2.2 Opis klienta i powiązanych danych
-W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
-
-1. Klient - jednoznacznie określa klienta
-    1. Imię
-    1. Nazwisko
-    1. Email kontaktowy
-    1. Telefon kontaktowy
-    1. Adres kontaktowy
-    1. Firma, której jest reprezentantem
-    1. Zgoda na przetwarzanie danych osobowych w formie cyfrowej
-    1. Liczba wszystkich zamówień w systemie
-    1. Łączna kwota zamówień
-    1. Numer referencyjny
-    1. Lokale
-    
-1. Faktura
-    1. Firma
-    1. Kwota
-    1. Zastosowana stawka VAT
-    1. Kwota opłacona
-
-1. Firma klienta
-    1. Nazwa firmy
-    1. NIP
-    1. Wystawione faktury przez naszą firmę
-    1. Wystawione faktury do opłacenia przez nasza firmę
-    1. Kraj pochodzenia
-    1. Reprezentanci
-
-1. Oferta
-    1. Zaproponowane produkty
-    1. Data wystawienia
-    1. Klient
-
-1. Pracownik
-    1. Imię
-    1. Nazwisko
-    1. Email kontaktowy
-    1. Telefon kontaktowy
-    1. Adres kontaktowy
-    1. Pensja
-    1. Data zatrudnienia
-    1. Data rozwiązania umowy
-
-### <a name='OpisDostawcy'></a>2.2.3 Opis Dostawcy
-
-1. Fabryka dostawcy
-    1. Adres
-    1. Kody produktów obsługiwanych przez tą fabrykę
-    1. Dostawca
-
-1. Dostawca
-    1. Nazwa firmy
-    1. NIP
-    1. Wystawione faktury przez naszą firmę
-    1. Wystawione faktury do opłacenia przez nasza firmę
-    1. Kraj pochodzenia
-    1. Fabryki
-
-### <a name='OpisMagazynu'></a>2.2.4 Opis Magazynu
-
-1. Miejce w magazynie
-    1. Sektor
-    1. Numer Miejsca
-    1. Obecnie przechowywany produkt
-    1. Historycznie przechowywane produkty
-    1. Rezerwacja pod produkt wielkogabarytowy
-
-
-## <a name='Dokumentywprowadzaneiwyprowadzanezsystemuwzory'></a>2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
-
-- Ekran wprowadzenia danych dostawcy do systemu (w wariancie modyfikacji pola będą po prostu wstępnie wypełnione)
-
-
-### <a name='Zapytanieofertoweodklienta'></a>2.3.1 Zapytanie ofertowe od klienta
-
-1. Klient
-
-1. Produkt
-
-### <a name='Oferta'></a>2.3.2 Oferta
-
-1. Klient
-
-1. Pracownik
-
-1. Produkt
-
-### <a name='Zamwienietowaruudostawcy'></a>2.3.3 Zamówienie towaru u dostawcy
-
-1. Produkt
-
-1. Dostawca
-
-1. Oferta
-
-#### <a name='Potwierdzeniezamwieniaoddostawcy'></a>2.3.4 Potwierdzenie zamówienia od dostawcy
-
-1. Zamówienie towaru u dostawcy
-
-#### <a name='Fakturazakupuoddostawcy'></a>2.3.5. Faktura zakupu od dostawcy
-
-1. Faktura
-
-2.  Zamówienie towaru u dostawcy
-
-#### <a name='Rejestracjatowarunamagazynie'></a>2.3.6. Rejestracja towaru na magazynie
-
-1.  Produkt
-
-2. Magazyn
-
-3. Pracownik
-
-4. Dostawca
-
-#### <a name='Wyrejestrowanietowaruzmagazynu'></a>2.3.7. Wyrejestrowanie towaru z magazynu
-
-1.  Produkt
-
-2.  Magazyn
-
-3. Oferta
-
-#### <a name='Fakturazakupudlaklienta'></a>2.3.8. Faktura zakupu dla klienta
-
-1.  Faktura
-
-2. Klient
-
-3. Produkt
-
-#### <a name='Raportsprzedaowedoanalizwewntrznych'></a>2.3.9. Raport sprzedażowe do analiz wewnętrznych
-
-1. Produkt
-
-2. Klient
-
-3. Dostawca
-
-4. Oferta
-
-5. Zamówienie
-
-#### <a name='Raportstatystycznywspierajcycelemarketingowe'></a>2.3.10. Raport statystyczny wspierający cele marketingowe
-
-1. Produkt
-
-2. Klient
-
-3. Dostawca
-
-4. Oferta
-
-5. Zamówienie
-
-#### <a name='Raportstatystycznywspierajcyprognozypopytuwspierajcycelemagazynowe'></a>2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
-
-1. Produkt
-2. Magazyn
-
-
-
 
 Lista plików graficznych
 1. [Składniki organizacyjne firmy](#1.1.3-składniki-organizacyjne-firmy)
 2. [Obszary aktywności](#1.3.1-Obszary-aktywności)
+
+
 
 ## <a name='Sownikpojdziedzinowych:'></a>Słownik pojęć dziedzinowych:
 

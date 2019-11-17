@@ -1,0 +1,28 @@
+@media print {
+    h1 {
+      page-break-before: always;
+    }
+    h1:first-of-type {
+      page-break-before: avoid;
+    }
+    h2 {
+        page-break-before: always;
+      }
+      h2:first-of-type {
+        page-break-before: avoid;
+      }
+      h3 {
+        page-break-before: always;
+      }
+      h3:first-of-type {
+        page-break-before: avoid;
+      }
+      h4 {
+        page-break-before: always;
+      }
+      h4:first-of-type {
+        page-break-before: avoid;
+      }
+  }
+
+  
