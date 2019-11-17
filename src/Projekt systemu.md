@@ -43,7 +43,7 @@ Lead: Mateusz Popielarz
 	* [1.5.2 Cele przedsięwzięcia projektowego](#Celeprzedsiwziciaprojektowego)
 * [2.1 Funkcje systemu ze strony widzenia użytkownika](#Funkcjesystemuzestronywidzeniauytkownika)
 	* [2.1.1 Aktorzy w systemie](#Aktorzywsystemie)
-* [2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu](#DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu)
+* [2.2 Dane przechowywane w systemie](#Daneprzechowywanewsystemie)
 	* [2.2.2 Opis klienta i powiązanych danych](#Opisklientaipowizanychdanych)
 	* [2.2.3 Opis Dostawcy](#OpisDostawcy)
 	* [2.2.4 Opis Magazynu](#OpisMagazynu)
@@ -59,8 +59,7 @@ Lead: Mateusz Popielarz
 	* [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#Raportsprzedaowedoanalizwewntrznych)
 	* [2.3.10. Raport statystyczny wspierający cele marketingowe](#Raportstatystycznywspierajcycelemarketingowe)
 	* [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#Raportstatystycznywspierajcyprognozypopytuwspierajcycelemagazynowe)
-* [2.4 Use Case](#UseCase)
-	* [2.4 Historie użytkowników (Use Cases)](#HistorieuytkownikwUseCases)
+* [2.4 Historie użytkowników (Use Cases)](#HistorieuytkownikwUseCases)
 		* [2.1.2.1 Obsługa zamówień](#Obsugazamwie-1)
 		* [2.1.2.2 Rejestrowanie klient](#Rejestrowanieklient)
 		* [2.1.2.3 Obsługa reklamacji](#Obsugareklamacji-1)
@@ -88,8 +87,6 @@ Lead: Mateusz Popielarz
 
 
 # 1 Charakterystyka firmy
-
-
 
 ## <a name='Przedmiotmodelowania'></a>1.1  Przedmiot modelowania
 ### <a name='Nazwafirmy'></a>1.1.1 Nazwa firmy
@@ -556,7 +553,7 @@ W systemie możemy wyróżnić następujących aktorów
 - System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji
 
 
-## <a name='DaneprzechowywanewsystemieZmergowadefinicjwdanychinieuywasowaencjaniatruybu'></a>2.2 Dane przechowywane w systemie ## Zmergować definicjw danych i nie używać słowa encja ni atruybu
+## <a name='Daneprzechowywanewsystemie'></a>2.2 Dane przechowywane w systemie
 
 
 ### <a name='Opisklientaipowizanychdanych'></a>2.2.2 Opis klienta i powiązanych danych
@@ -723,9 +720,8 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 1. Produkt
 2. Magazyn
 
-## <a name='UseCase'></a>2.4 Use Case
 
-### <a name='HistorieuytkownikwUseCases'></a>2.4 Historie użytkowników (Use Cases)
+## <a name='HistorieuytkownikwUseCases'></a>2.4 Historie użytkowników (Use Cases)
 
 W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek użytkownika.
 
