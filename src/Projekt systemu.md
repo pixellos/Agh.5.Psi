@@ -28,7 +28,7 @@ Lead: Mateusz Popielarz
 		* [1.3.1.3 Obsługa reklamacji](#Obsugareklamacji)
 		* [1.3.1.4 Obsługa magazynu](#Obsugamagazynu)
 		* [1.3.1.5 Kontrola stanów magazynowych](#Kontrolastanwmagazynowych)
-		* [1.3.1.6 Integracja z systemami marketingu](#Integracjazsystemamimarketingu)
+		* [1.3.1.6 Analizy danych na potrzeby marketingowe](#Analizydanychnapotrzebymarketingowe)
 		* [1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi](#Rejestrpotencjalnychklientwistanukontaktuznimi)
 		* [1.3.1.8 Zarządzanie](#Zarzdzanie)
 * [1.4 Problem](#Problem)
@@ -415,7 +415,7 @@ Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać 
     
     Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
 
-#### <a name='Integracjazsystemamimarketingu'></a>1.3.1.6 Analizy danych na potrzeby marketingowe
+#### <a name='Analizydanychnapotrzebymarketingowe'></a>1.3.1.6 Analizy danych na potrzeby marketingowe
 1. Statystyki powiązane z katalogiem produktowym
 
    Katalog produktowy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktowym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.

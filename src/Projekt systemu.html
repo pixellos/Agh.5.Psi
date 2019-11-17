@@ -455,7 +455,7 @@ void 0!==arguments[0]&&(br.sequenceConfig=arguments[0]),e=arguments[1]):e=argume
 <li><a href="#Obsugareklamacji">1.3.1.3 Obsługa reklamacji</a></li>
 <li><a href="#Obsugamagazynu">1.3.1.4 Obsługa magazynu</a></li>
 <li><a href="#Kontrolastanwmagazynowych">1.3.1.5 Kontrola stanów magazynowych</a></li>
-<li><a href="#Integracjazsystemamimarketingu">1.3.1.6 Integracja z systemami marketingu</a></li>
+<li><a href="#Analizydanychnapotrzebymarketingowe">1.3.1.6 Analizy danych na potrzeby marketingowe</a></li>
 <li><a href="#Rejestrpotencjalnychklientwistanukontaktuznimi">1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi</a></li>
 <li><a href="#Zarzdzanie">1.3.1.8 Zarządzanie</a></li>
 </ul>
@@ -869,33 +869,15 @@ Jako <code>Konsultatnt</code> gdy istnieje prawdopodobieństwo <code>Zlecenia za
 <p>Jako <code>magazynier</code> chce mieć możliwość <code>tworzenia prognoz popytu</code> aby <code>utrzymać kluczowe produkty na stanie</code></p>
 </li>
 </ol>
-<h4 id="a-nameintegracjazsystemamimarketingua1316-integracja-z-systemami-marketingu"><a name='Integracjazsystemamimarketingu'></a>1.3.1.6 Integracja z systemami marketingu</h4>
+<h4 id="a-nameanalizydanychnapotrzebymarketingowea1316-analizy-danych-na-potrzeby-marketingowe"><a name='Analizydanychnapotrzebymarketingowe'></a>1.3.1.6 Analizy danych na potrzeby marketingowe</h4>
 <ol>
-<li>
-<p>Marketing w internecie</p>
-<ol>
-<li>
-<p>Pozycjonowanie strony</p>
-<p>Strona firmy powinna mieć zapewnioną dobrą wyszukiwalność w popularnych przeglądarkach.</p>
-</li>
-<li>
-<p>Reklama na portalach biznesowych powiązanych z branżą</p>
-<p>Reklamy na portalach biznesowych przedstawiają produkty oferowane przez firme. System powinien dostarczyć informacji o najlepiej sprzedających się produktach oraz innych statystykach zdefiniowanych na potrzeby marketingu.</p>
-</li>
 <li>
 <p>Statystyki powiązane z katalogiem produktowym</p>
 <p>Katalog produktowy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktowym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.</p>
 </li>
-</ol>
-</li>
 <li>
 <p>Wystawienie danych na strategiczne potrzeby marketingowe</p>
-<ol>
-<li>
-<p>Podejmowanie decyzji przez dział marketingu na podstawie danych</p>
 <p>Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.</p>
-</li>
-</ol>
 </li>
 </ol>
 <h4 id="a-namerejestrpotencjalnychklientwistanukontaktuznimia1317-rejestr-potencjalnych-klient%C3%B3w-i-stanu-kontaktu-z-nimi"><a name='Rejestrpotencjalnychklientwistanukontaktuznimi'></a>1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi</h4>
@@ -987,7 +969,8 @@ Jako <code>Konsultant</code> mam możliwość za pomocą systemu ustanowić poł
 :Marketingowiec:   
 :Członek zarządu:   
 :Księgowy:  
-:System zewnętrzny dostawcy: 
+:System zewnętrzny dostawcy:
+:System analizyjący dane:
 
 @enduml
 </div></code></pre>
@@ -1153,12 +1136,27 @@ W sytuacji gdy klient zmieni którąś z części <code>zlecenia zakupu</code> m
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Konsultant</em> - Jest to w jego zakresu obowiązków</p>
 <p><em>Klient</em> - Inicjuje proces</p>
-<hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.1.1 - Rejestrowanie klienta</p>
+<h4 id=""></h4>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+rectangle &quot;Rejestrowanie klienta&quot; {
+  (Korygowanie danych klienta) ..  (Dodanie klienta do systemu)  
+  (Rejestrowanie klienta) .&gt; (Korygowanie danych klienta) : include
+  Konsultant -- (Rejestrowanie klienta)
+  Konsultant -- (Korygowanie danych klienta)
+  Klienta -- (Korygowanie danych klienta)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-7-rejestrowanie-klienta"><em>Rysunek 7. Rejestrowanie klienta</em></h6>
+<p>Numer i nazwa przypadku uzycia:**  1.2.1.1 - Rejestrowanie klienta</p>
 <p><strong>Autor:</strong>  Adam Samsonowicz</p>
 <p><strong>Cel przypadku użycia:</strong> Dodanie nowego klienta do systemu</p>
 <p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.</p>
-<p><strong>Zakres:</strong></p>
+<p><strong>Zakres:</strong> Rejstracja klietna</p>
 <p><strong>Poziom:</strong> Przetwarzanie danych klientów</p>
 <p><strong>Aktor główny:</strong> Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
@@ -1169,14 +1167,27 @@ W sytuacji gdy klient zmieni którąś z części <code>zlecenia zakupu</code> m
 <p><strong>Autor:</strong>  Adam Samsonowicz</p>
 <p><strong>Cel przypadku użycia:</strong> Korekta danych klienta w systemie</p>
 <p><strong>Kontekst użycia:</strong>  <code>Konsultant</code> otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu</p>
-<p><strong>Zakres:</strong></p>
+<p><strong>Zakres:</strong> Edycja danych klienta</p>
 <p><strong>Poziom:</strong> Przetwarzanie danych klientów</p>
 <p>**Aktor główny:  ** Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p>Konsultant - Potrzebuje aktualnych danych klienta w celu procesowania oferty</p>
 <p>Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego procesowania oferty.</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.2.0 - Przyjęcia zapytania ofertowego od klienta</p>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+rectangle &quot;Przyjęcie zapytania ofertowego od klienta&quot; {
+  (Wysyła zapytanie ofertowe) ..  (Otrzymuje zapytanie ofertowe) 
+  Konsultant -- (Otrzymuje zapytanie ofertowe)
+  Klient -- (Wysyła zapytanie ofertowe)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-8-przyj%C4%99cia-zapytania-ofertowego-od-klienta"><em>Rysunek 8. Przyjęcia zapytania ofertowego od klienta</em></h6>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.2.0 - Przyjęcie zapytania ofertowego od klienta</p>
 <p><strong>Autor:</strong>  Adam Samsonowicz</p>
 <p><strong>Cel przypadku użycia:</strong> Poinformowanie <code>konsultanta</code> o potrzebie obsługi danego zapytania ofertowego</p>
 <p><strong>Kontekst użycia:</strong>  <code>Klient</code> wysyła zapytanie ofertowe drogą mailową z opisanym problemem. <code>Konsultant</code> po otrzymaniu informacji o potrzebie <code>klienta</code> zaczyna proces ofertowy.</p>
@@ -1187,6 +1198,25 @@ W sytuacji gdy klient zmieni którąś z części <code>zlecenia zakupu</code> m
 <p>Konsultant - Otrzymuje informację o potrzebie klienta</p>
 <p>Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produktów z czym zwraca się do konsultanta</p>
 <hr>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+actor Zatwierdzający oferte
+rectangle &quot;Tworzenie oferty&quot; {
+  (Tworzy oferte w systmie) .. (Dodaje produkty do oferty)
+  (Tworzy oferte w systmie) .. (Zatwierdza oferte)
+  (Generuje dokument ofertowy) .. (Otrzymuje dokument ofertowy)
+  Konsultant -- (Tworzy oferte w systmie)
+  Konsultant -- (Dodaje produkty do oferty)
+  Konsultant -- (Generuje dokument ofertowy)
+  Klient -- (Otrzymuje dokument ofertowy)
+  Zatwierdzający oferte -- (Zatwierdza oferte)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-9-tworzenie-oferty"><em>Rysunek 9. Tworzenie oferty</em></h6>
 <p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.3.1 - Utworzenie oferty w systemie</p>
 <p><strong>Autor:</strong>  Adam Samsonowicz</p>
 <p><strong>Cel przypadku użycia:</strong> Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty. Przed wybraniem produktów <code>konsultant</code> ma możliwość i obowiązek uzupełnienia informacji na temat oferty takich jak przewidywany zysk, priorytet oferty dla klienta, termin ważności oferty.</p>
@@ -1258,6 +1288,28 @@ W sytuacji gdy klient zmieni którąś z części <code>zlecenia zakupu</code> m
 <p>Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własności nad ofertą</p>
 <p>Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmuje oferte i procesują ją dalej.</p>
 <hr>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+actor Księgowość
+rectangle &quot;Potwierdzenie zamówienia i wystawienie faktury&quot; {
+  (Przedstawia oferte) .. (Otrzymuje oferte)
+  (Podejmuje decyzje odnośnie otrzymanej oferty) .. (Procesuje decyzje klienta)
+  (Generuje i przesyła fakture do klienta) .. (Płaci za fakture)
+  (Płaci za fakture) .. (Odnotowuje płatność)
+  Konsultant -- (Przedstawia oferte)
+  Konsultant -- (Procesuje decyzje klienta w systemie)
+  Klient -- (Otrzymuje oferte)
+  Klient -- (Podejmuje decyzje odnośnie otrzymanej oferty)
+  Klient -- (Płaci za fakture)
+  Księgowość -- (Generuje i przesyła fakture do klienta)
+  Księgowość -- (Odnotowuje płatność)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-10-potwierdzenie-zam%C3%B3wienia-i-wystawienie-faktury"><em>Rysunek 10. Potwierdzenie zamówienia i wystawienie faktury</em></h6>
 <p><strong>Numer i nazwa przypadku uzycia:</strong>  1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi</p>
 <p><strong>Autor:</strong>  Adam Samsonowicz</p>
 <p><strong>Cel przypadku użycia:</strong> Oferta została zatwierdzona, dokument ofertowy jest wygenerowany. Oferta jest gotowa do przedstawienia klientowi.</p>
@@ -1302,6 +1354,22 @@ W sytuacji gdy klient zmieni którąś z części <code>zlecenia zakupu</code> m
 <p>Księgowość - odnotowuje płatność w systemie, informacja o płatności pochodz spoza systemu</p>
 <p>Klient - opłaca fakture</p>
 <h4 id="a-nameobsugareklamacji-1a2123-obs%C5%82uga-reklamacji"><a name='Obsugareklamacji-1'></a>2.1.2.3 Obsługa reklamacji</h4>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+actor Klient
+actor Pracownik
+actor :Zespół techniczny:
+rectangle &quot;System&quot; {
+    (Klient) -- (Zgłoś reklamację)
+    (Zgłoś reklamację) .&gt; (Wprowadź produkt do rejestru) : &lt;&lt;include&gt;&gt;
+    (Zgłoś reklamację) .&gt; (Uaktualnij status reklamacji) : &lt;&lt;include&gt;&gt;
+    (Uaktualnij status reklamacji) -- (Pracownik)
+    :Zespół techniczny: - (Pracownik)
+
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-11-diagram-przypadk%C3%B3w-u%C5%BCycia-zg%C5%82oszenia-reklamacji-przez-klienta"><em>Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta</em></h6>
 <p><strong>Numer i nazwa przypadku użycia:</strong>  1.3.1.1 - Zgłoszenie reklamacji przez klienta</p>
 <p><strong>Autor:</strong>  Kacper Kwapisz</p>
 <p><strong>Cel przypadku użycia:</strong>  Zgłoszenie reklamacji przez klienta</p>
@@ -1356,41 +1424,54 @@ W sytuacji gdy klient zmieni którąś z części <code>zlecenia zakupu</code> m
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Pracownik</em> - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do rejestru</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.1.1- Marketing w internecie - pozycjonowanie strony</p>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor System analizyjący dane
+rectangle &quot;Statystyki powiązane z katalogiem produktowym&quot; {
+  (Wykonywanie operacji na katalogu produktów) ..  (Analiza danych)  
+  Konsultant -- (Wykonywanie operacji na katalogu produktów)
+  System analizyjący dane -- (Analiza danych)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-12-statyki-powi%C4%85zane-z-katalogiem-produktowym"><em>Rysunek 12. Statyki powiązane z katalogiem produktowym</em></h6>
+<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.1 - Statystyki powiązane z katalogiem produktowym</p>
 <p><strong>Autor:</strong>  Adam Samsonowicz</p>
-<p><strong>Cel przypadku użycia:</strong></p>
-<p><strong>Kontekst użycia:</strong></p>
-<p><strong>Zakres:</strong></p>
-<p><strong>Poziom:</strong></p>
-<p><strong>Aktor główny:</strong></p>
+<p><strong>Cel przypadku użycia:</strong> Lepsze pozycjonowanie produktów</p>
+<p><strong>Kontekst użycia:</strong>  Przy każdym użyciu wyszukiwarki produktów, kliknięcia są zapisywane na potrzeby analiz danych. <code>System analizujący dane</code> na podstawie decyzji <code>konsultanta</code> jest w stanie zaproponować najczęściej wybierane produkty.</p>
+<p><strong>Zakres:</strong> Wyszukiwanie i konfiguracja produktów</p>
+<p><strong>Poziom:</strong> Analiza danych</p>
+<p><strong>Aktor główny:</strong> Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
+<p>Konsultant - realizacja codziennych obowiązków</p>
+<p>System analizujący dane - śledzenie ruchu <code>konsultanta</code> na cele analiz</p>
 <hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.1.2- Marketing w internecie - reklama na portalach biznesowych powiązanych z branżą</p>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor System analizujący dane
+actor Marketingowiec
+rectangle &quot;Analiza danych na potrzeby marketingowe&quot; {
+  (Generuje raport) ..  (Otrzymuje raport)
+  Marketingowiec -- (Otrzymuje raport)
+  System analizujący dane -- (Analizuje dane)
+  System analizujący dane -- (Generuje raport)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-13-analiza-danych-na-potrzeby-marketingowe"><em>Rysunek 13. Analiza danych na potrzeby marketingowe</em></h6>
+<p>Numer i nazwa przypadku uzycia:**  1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe</p>
 <p><strong>Autor:</strong>  Adam Samsonowicz</p>
-<p><strong>Cel przypadku użycia:</strong></p>
-<p><strong>Kontekst użycia:</strong></p>
-<p><strong>Zakres:</strong></p>
-<p><strong>Poziom:</strong></p>
-<p><strong>Aktor główny:</strong></p>
-<p><strong>Uczestnicy i interesy:</strong></p>
-<hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.1.3 - Marketing w internecie - Statystyki powiązane z katalogiem produktowym</p>
-<p><strong>Autor:</strong>  Adam Samsonowicz</p>
-<p><strong>Cel przypadku użycia:</strong></p>
-<p><strong>Kontekst użycia:</strong></p>
-<p><strong>Zakres:</strong></p>
-<p><strong>Poziom:</strong></p>
-<p><strong>Aktor główny:</strong></p>
-<p><strong>Uczestnicy i interesy:</strong></p>
-<hr>
-<p><strong>Numer i nazwa przypadku uzycia:</strong>  1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe</p>
-<p><strong>Autor:</strong>  Adam Samsonowicz</p>
-<p><strong>Cel przypadku użycia:</strong></p>
-<p><strong>Kontekst użycia:</strong></p>
-<p><strong>Zakres:</strong></p>
-<p><strong>Poziom:</strong></p>
-<p><strong>Aktor główny:</strong></p>
-<p>*Uczestnicy i interesy: *</p>
+<p><strong>Cel przypadku użycia:</strong> Wsparcie podejmowania decyzji marketingowych za pomoca dedykowanych analiz danych</p>
+<p><strong>Kontekst użycia:</strong>  Wszystkie stworzone oferty oraz ich historia zawierają informacje, które można wykorzystać do podjęcia strategicznych decyzji. Analizy umieszczone są na <code>raporcie</code>. <code>Raport</code> może być generowany manualnie. <code>Raport</code> może być generowany automatycznie po wcześniejszej konfiguracji i ustawienia ram czasowych.</p>
+<p><strong>Zakres:</strong> Analiza danych</p>
+<p><strong>Poziom:</strong> Analiza danych</p>
+<p><strong>Aktor główny:</strong> System analizujący dane</p>
+<p>**Uczestnicy i interesy: **</p>
+<p>System analizujący dane - na podstawie wszystkich dostarczonych danych dotyczących ofert, system generuje dedykowane analizy w celach lepszej przejrzystości w podejmowaniu decyzji.</p>
+<p>Marketingowiec - dostaje raport zawierający analizy</p>
 <hr>
 <h4 id="a-namerejestrpotencjalnychklientwistanukontaktuznimi-1a2127-rejestr-potencjalnych-klient%C3%B3w-i-stanu-kontaktu-z-nimi"><a name='Rejestrpotencjalnychklientwistanukontaktuznimi-1'></a>2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi</h4>
 <pre class="hljs"><code><div>@startuml
@@ -1406,7 +1487,7 @@ rectangle &quot;Prowadzenie bazy potencjalnych klientów&quot; {
 }
 @enduml
 </div></code></pre>
-<h6 id="rysunek-7-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-rejestru-potencjalnych-klient%C3%B3w"><em>Rysunek 7. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów</em></h6>
+<h6 id="rysunek-14-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-rejestru-potencjalnych-klient%C3%B3w"><em>Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów</em></h6>
 <p><strong>Numer i nazwa przypadku uzycia:</strong>  1.7.1.1 - Dodawanie informacji i danych o klientach</p>
 <p><strong>Autor:</strong>  Mateusz Popielarz</p>
 <p><strong>Cel przypadku użycia:</strong> Dodawanie informacji i danych o klientach</p>
@@ -1447,7 +1528,7 @@ rectangle &quot;Informowanie o ofercie&quot; {
 }
 @enduml
 </div></code></pre>
-<h6 id="rysunek-8-diagram-przypadk%C3%B3w-u%C5%BCycia-funkcji-informowania-o-ofercie"><em>Rysunek 8. Diagram przypadków użycia funkcji informowania o ofercie</em></h6>
+<h6 id="rysunek-15-diagram-przypadk%C3%B3w-u%C5%BCycia-funkcji-informowania-o-ofercie"><em>Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie</em></h6>
 <p><strong>Numer i nazwa przypadku uzycia:</strong>  1.7.2.1 - Wyświetlenie daty ostatniego kontaktu z klientem</p>
 <p><strong>Autor:</strong>  Mateusz Popielarz</p>
 <p><strong>Cel przypadku użycia:</strong>  Wyświetlenie daty ostatniego kontaktu z klientem</p>
@@ -1475,6 +1556,16 @@ rectangle &quot;Informowanie o ofercie&quot; {
 <p><strong>Aktor główny:</strong> Konsultant</p>
 <p><strong>Uczestnicy i interesy:</strong></p>
 <h4 id="a-namezarzadzaniea2128-zarzadzanie"><a name='Zarzadzanie'></a>2.1.2.8 Zarzadzanie</h4>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+actor Pracownik
+rectangle &quot;System&quot; {
+    (Pracownik) -- (Wprowadź dokumenty)
+    (Pracownik) -- (Wprowadź zadania)
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-16-diagram-przypadk%C3%B3w-u%C5%BCycia-wprowadzenia-dokument%C3%B3w-i-zada%C5%84-przez-pracownika-do-systemu"><em>Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika do systemu</em></h6>
 <p><strong>Numer i nazwa przypadku użycia:</strong>  1.8.1.1 - Wprowadzenie dokumentów do systemu</p>
 <p><strong>Autor:</strong>  Kacper Kwapisz</p>
 <p><strong>Cel przypadku użycia:</strong>  Wprowadzenie dokumentów do dostępnej dla pracowników platformy w celu ułatwienia obiegu dokumentacji i zadań między działami.</p>
@@ -1485,6 +1576,19 @@ rectangle &quot;Informowanie o ofercie&quot; {
 <p><strong>Uczestnicy i interesy:</strong></p>
 <p><em>Pracownik</em> - wprowadza dokumenty, zadania, ogłoszenia do systemu</p>
 <hr>
+<pre class="hljs"><code><div>@startuml
+left to right direction
+actor Właściciel
+actor Pracownik
+rectangle &quot;System&quot; {
+    (Właściciel) -- (Wyświetl prognozę zamówień)
+    (Właściciel) -- (Przydziel zadania)
+    (Przydziel zadania) -- Pracownik
+
+}
+@enduml
+</div></code></pre>
+<h6 id="rysunek-17-diagram-przypadk%C3%B3w-u%C5%BCycia-przydzia%C5%82u-zada%C5%84-przez-w%C5%82a%C5%9Bciciela-oraz-wgl%C4%85du-do-prognozy-zam%C3%B3wie%C5%84"><em>Rysunek 17. Diagram przypadków użycia przydziału zadań przez właściciela oraz wglądu do prognozy zamówień</em></h6>
 <p><strong>Numer i nazwa przypadku użycia:</strong>  1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty</p>
 <p><strong>Autor:</strong>  Kacper Kwapisz</p>
 <p><strong>Cel przypadku użycia:</strong>  <code>Właściciel</code> zna zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od <code>dostawcy</code>. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.</p>
@@ -1532,7 +1636,7 @@ rectangle &quot;Rozładunek oraz załadunek&quot; {
 }
 @enduml
 </div></code></pre>
-<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-roz%C5%82adunek-oraz-za%C5%82adunek"><em>Rysunek X. Diagram przypadków użycia obsługi Rozładunek oraz załadunek</em></h6>
+<h6 id="rysunek-18-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-roz%C5%82adunek-oraz-za%C5%82adunek"><em>Rysunek 18. Diagram przypadków użycia obsługi Rozładunek oraz załadunek</em></h6>
 <p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.1.1 - Weryfikacja dokumentacji</p>
 <p><strong>Autor:</strong> Kamil Gliński</p>
 <p><strong>Cel przypadku użycia:</strong> Weryfikacja dokumentacji</p>
@@ -1600,7 +1704,7 @@ rectangle &quot;Czynności monitorujące&quot; {
 }
 @enduml
 </div></code></pre>
-<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-czynno%C5%9Bci-monitoruj%C4%85ce"><em>Rysunek X. Diagram przypadków użycia obsługi Czynności monitorujące</em></h6>
+<h6 id="rysunek-19-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-czynno%C5%9Bci-monitoruj%C4%85ce"><em>Rysunek 19. Diagram przypadków użycia obsługi Czynności monitorujące</em></h6>
 <p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.2.1 - Zarejestrowanie towaru</p>
 <p><strong>Autor:</strong> Kamil Gliński</p>
 <p><strong>Cel przypadku użycia:</strong> Zarejestrowanie towaru</p>
@@ -1663,7 +1767,7 @@ rectangle &quot;Kontrolowanie&quot; {
 }
 @enduml
 </div></code></pre>
-<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-kontrolowanie"><em>Rysunek X. Diagram przypadków użycia obsługi Kontrolowanie</em></h6>
+<h6 id="rysunek-20-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-kontrolowanie"><em>Rysunek 20. Diagram przypadków użycia obsługi Kontrolowanie</em></h6>
 <p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.3.1 - Sprawdzenie stanu</p>
 <p><strong>Autor:</strong> Kamil Gliński</p>
 <p><strong>Cel przypadku użycia:</strong> Sprawdzenie stanu</p>
@@ -1716,7 +1820,7 @@ rectangle &quot;Kategoryzowanie&quot; {
 }
 @enduml
 </div></code></pre>
-<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-kategoryzowanie"><em>Rysunek X. Diagram przypadków użycia obsługi Kategoryzowanie</em></h6>
+<h6 id="rysunek-21-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-kategoryzowanie"><em>Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie</em></h6>
 <p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.4.1 - Grupowanie towaru</p>
 <p><strong>Autor:</strong> Kamil Gliński</p>
 <p><strong>Cel przypadku użycia:</strong> Grupowanie towaru</p>
@@ -1766,7 +1870,7 @@ rectangle &quot;Prognozowanie popytu&quot; {
 }
 @enduml
 </div></code></pre>
-<h6 id="rysunek-x-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-prognozowanie-popytu"><em>Rysunek X. Diagram przypadków użycia obsługi Prognozowanie popytu</em></h6>
+<h6 id="rysunek-22-diagram-przypadk%C3%B3w-u%C5%BCycia-obs%C5%82ugi-prognozowanie-popytu"><em>Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu</em></h6>
 <p><strong>Numer i Nazwa przypadku użycia:</strong> 1.9.4.1 - Tworzenie prognoz popytu</p>
 <p>Autor: Kamil Gliński</p>
 <p><strong>Cel przypadku użycia:</strong> Tworzenie prognoz popytu</p>
