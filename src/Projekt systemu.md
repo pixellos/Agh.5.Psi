@@ -39,9 +39,7 @@ Spis Treści
     - [2.1. Funkcje systemu ze strony widzenia użytkownika](#markdown-header-21-funkcje-systemu-ze-strony-widzenia-użytkownika)
         - [2.1.1. Aktorzy w systemie](#markdown-header-211-aktorzy-w-systemie)
     - [2.2. Dane przechowywane w systemie](#markdown-header-22-dane-przechowywane-w-systemie)
-        - [2.2.1. Opis klienta i powiązanych danych](#markdown-header-221-opis-klienta-i-powiązanych-danych)
-        - [2.2.2. Opis Dostawcy](#markdown-header-222-opis-dostawcy)
-        - [2.2.3. Opis Magazynu](#markdown-header-223-opis-magazynu)
+        - [2.2.1. Opis Magazynu](#markdown-header-221-opis-magazynu)
     - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#markdown-header-23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu-wzory)
         - [2.3.1. Zapytanie ofertowe od klienta](#markdown-header-231-zapytanie-ofertowe-od-klienta)
         - [2.3.2. Oferta](#markdown-header-232-oferta)
@@ -519,7 +517,7 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 
 ## 2.1 Funkcje systemu ze strony widzenia użytkownika
 
-### 2.1.1 Aktorzy w systemie
+### Aktorzy w systemie
 
 ```plantuml test
 @startuml
@@ -550,32 +548,18 @@ W systemie możemy wyróżnić następujących aktorów
 
 ## 2.2 Dane przechowywane w systemie
 
-### 2.2.2 Opis klienta i powiązanych danych
-
-W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
-
-1. Klient - jednoznacznie określa klienta
+1. Reprezentant Klienta - jest to osoba fizyczna podejmująca z nami kontakt, należy do Organizacji klienta
 
    1. Imię
    1. Nazwisko
    1. Email kontaktowy
    1. Telefon kontaktowy
    1. Adres kontaktowy
-   1. Firma, której jest reprezentantem
+   1. `Organizacja Klienta`
    1. Zgoda na przetwarzanie danych osobowych w formie cyfrowej
-   1. Liczba wszystkich zamówień w systemie
-   1. Łączna kwota zamówień
    1. Numer referencyjny
-   1. Lokale
 
-1. Faktura
-
-   1. Firma
-   1. Kwota
-   1. Zastosowana stawka VAT
-   1. Kwota opłacona
-
-1. Firma klienta
+1. Organizacja klienta - jest to działalność gospodarcza
 
    1. Nazwa firmy
    1. NIP
@@ -583,6 +567,24 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
    1. Wystawione faktury do opłacenia przez nasza firmę
    1. Kraj pochodzenia
    1. Reprezentanci
+   1. Lokale
+
+
+1. Dostawca - jest to firma od której zamawiamy
+
+   1. Nazwa firmy
+   1. NIP
+   1. Wystawione faktury na naszą firmę
+   1. Wystawione faktury na firmę dostawcy 
+   1. Kraj pochodzenia
+   1. Łączna kwota zamówień
+   1. `Fabryki dostawcy` 
+
+1. Fabryka dostawcy
+
+   1. Adres
+   1. Kody produktów obsługiwanych przez tą fabrykę
+   1. Dostawca
 
 1. Oferta
 
@@ -599,22 +601,6 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
    1. Pensja
    1. Data zatrudnienia
    1. Data rozwiązania umowy
-
-### 2.2.3 Opis Dostawcy
-
-1. Fabryka dostawcy
-
-   1. Adres
-   1. Kody produktów obsługiwanych przez tą fabrykę
-   1. Dostawca
-
-1. Dostawca
-   1. Nazwa firmy
-   1. NIP
-   1. Wystawione faktury przez naszą firmę
-   1. Wystawione faktury do opłacenia przez nasza firmę
-   1. Kraj pochodzenia
-   1. Fabryki
 
 ### 2.2.4 Opis Magazynu
 
@@ -726,7 +712,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 #### 2.4.1 Obsługa zamówień (OA1)
 
-```plantuml 2.1.2.1
+```plantuml 2.4.1
 @startuml
 left to right direction
 skinparam packageStyle rectangle
@@ -754,7 +740,7 @@ rectangle "Aktualizacja danych dostawcy" {
 
 ##### _Rysunek 4. Diagram przypadków użycia aktualizacji danych dostawcy_
 
-**Numer i Nazwa przypadku użycia:** 1.1.1.1 - Rejestrowanie dostawcy
+**Numer i Nazwa przypadku użycia:** UC-1.1 - Rejestrowanie dostawcy
 
 **Autor:** Mateusz Popielarz
 
@@ -767,6 +753,22 @@ rectangle "Aktualizacja danych dostawcy" {
 **Poziom:** Przetwarzanie danych dostawców
 
 **Aktor główny:** Konsultant
+
+**Warunek początkowy:** Dostawca nie jest zarejestrowany
+
+**Zdarzenie inicjujące:** Dostawca wyraził chęć dołączenia do naszego łańcucha dostaw
+
+**Główny scenariusz powodzenia:** 
+
+1. System wyświetla formularz dodania dostawcy do systemu
+2. `Konsultant` wpisuje dane
+3. System weryfikuje dane
+4. `Dostawca` zostaje zapisany
+
+**Scenariusze alternatywne: **
+1. `Dostawca` istnieje w systemie, system proponuje `UC-1.2`
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
+
 
 **Uczestnicy i interesy:**
 
@@ -788,6 +790,20 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 **Poziom:** Przetwarzanie danych dostawców
 
 **Aktor główny:** Konsultant
+
+**Warunek początkowy:** Dostawca ma nieaktualne dane
+
+**Zdarzenie inicjujące:** Dostawca poinformował o zmianie danych
+
+**Główny scenariusz powodzenia:** 
+
+1. System wyświetla formularz dodania dostawcy do systemu wypełniony danymi
+2. `Konsultant` poprawia dane
+3. System weryfikuje dane
+4. `Dostawca` zostaje zapisany
+
+**Scenariusze alternatywne: **
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
 
@@ -2265,59 +2281,45 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 ---
 
-Lista plików graficznych
-
-1. [Składniki organizacyjne firmy](#1.1.3-składniki-organizacyjne-firmy)
-2. [Obszary aktywności](#1.3.1-Obszary-aktywności)
-
 <div class="page">
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
-<div class="page">
 
 ## A
 
 - Analiza danych - przetwarzanie danych ofertowych w celu wygenerowania raportów
 
-<div class="page">
 
 ## F
 
 - Fabryka - Zakład, z którego następuje wysyłka towarów do nas, lub bezpośrenio do klienta
 - Faktura – dokument sprzedaży potwierdzający zaistniałą transakcję pośredniczących ze sobą stron
 
-<div class="page">
 
 ## I
 
 - Integrator - Zewnętrzna firma zajmująca się monatżem u klienta
 
-<div class="page">
-
 ## K
 
 - Konsultatnt - Pracownik firmy pracujący w `dziale Handlowym`, jego rolą jest kontakt z `Klientem` oraz z `Dostawcą` w celu zrealizowania `Zlecenia Zakupu`
 
-<div class="page">
 
 ## P
 
 - Przedoferta - Oferta, która jest tylko propozycją
 
-<div class="page">
 
 ## R
 
 - Raport - Dokument zawierający zdefiniowane analizy danych, dostępny w wersji elektronicznej i papierowej po wcześniejszym wydrukowaniu. Raport konfigurowany jest z administratorem systemu.
 
-<div class="page">
 
 ## S
 
 - System analizujący dane - Program śledzący i zapisujący ruch użytkowników systemu oraz dane dotyczące ofert
 
-<div class="page">
 
 ## Z
 
