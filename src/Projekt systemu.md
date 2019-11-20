@@ -8,7 +8,7 @@ System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemys
 Żródło danych: Firma rodzinna
 
 
-<div class="page_break">
+<div class="page">
 
 Spis Treści
 --- 
@@ -71,11 +71,11 @@ Spis Treści
 
 <!-- /TOC -->
 
-<div class="page_break">
+<div class="page">
 
 # 1. Sformułowanie zadania projektowego
 
-<div class="page_break">
+<div class="page">
 
 ## 1.1 Przedmiot modelowania – opis dziedziny problemu
 
@@ -144,7 +144,7 @@ W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomias
 - Dzial handlowy: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
 
-<div class="page_break">
+<div class="page">
 
 ## 1.2 Obszar modelowania OM – wstępny opisowy model stanu istniejącego
 
@@ -189,7 +189,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
   System będzie generował raporty
   System będzie miał możliwość porównywania okresów akcji promocyjnej z wynikami sprzedaży
 
-<div class="page_break">
+<div class="page">
 
 ## 1.3 Zakres odpowiedzialności systemu (ZOS)
 
@@ -472,7 +472,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
    Jako `właściciel` chciałbym mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania
 
-<div class="page_break">
+<div class="page">
 
 ## 1.4 Zwięzła nazwa problemu
 
@@ -484,7 +484,7 @@ System do przekrojowego zarządzania firmą wspomagający sprzedaż, marketing i
 
 Przekrojowy system sprzedażowo-konsultingowy - PSSK
 
-<div class="page_break">
+<div class="page">
 
 ## 1.5 Cele do osiągnięcia
 
@@ -511,11 +511,11 @@ Przedsięwzięcie docelowo miałoby na celu
 
 Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania wymagań oraz przeprowadzenia ich analizy biznesowej.
 
-<div class="page_break">
+<div class="page">
 
 # 2. Opis Wymagań Systemu
 
-<div class="page_break">
+<div class="page">
 
 ## 2.1 Funkcje systemu ze strony widzenia użytkownika
 
@@ -546,7 +546,7 @@ W systemie możemy wyróżnić następujących aktorów
 - Księgowy - ma dostęp do zamówień i zleceń zakupu, synchronizuje dane między zewnętrznym
 - System zewnętrzny dostawcy - może aktualizować stan zlecenia zakupu (np. na wysłane), lub stan reklamacji
 
-<div class="page_break">
+<div class="page">
 
 ## 2.2 Dane przechowywane w systemie
 
@@ -625,7 +625,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
    1. Historycznie przechowywane produkty
    1. Rezerwacja pod produkt wielkogabarytowy
 
-<div class="page_break">
+<div class="page">
 
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
@@ -718,7 +718,7 @@ W tej sekcji zajmiemy się opisem wymaganych encji określających klienta
 1. Produkt
 2. Magazyn
 
-<div class="page_break">
+<div class="page">
 
 ## 2.4 Wyniki analizy wymagań funkcjonalnych 
 
@@ -2270,54 +2270,54 @@ Lista plików graficznych
 1. [Składniki organizacyjne firmy](#1.1.3-składniki-organizacyjne-firmy)
 2. [Obszary aktywności](#1.3.1-Obszary-aktywności)
 
-<div class="page_break">
+<div class="page">
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
-<div class="page_break">
+<div class="page">
 
 ## A
 
 - Analiza danych - przetwarzanie danych ofertowych w celu wygenerowania raportów
 
-<div class="page_break">
+<div class="page">
 
 ## F
 
 - Fabryka - Zakład, z którego następuje wysyłka towarów do nas, lub bezpośrenio do klienta
 - Faktura – dokument sprzedaży potwierdzający zaistniałą transakcję pośredniczących ze sobą stron
 
-<div class="page_break">
+<div class="page">
 
 ## I
 
 - Integrator - Zewnętrzna firma zajmująca się monatżem u klienta
 
-<div class="page_break">
+<div class="page">
 
 ## K
 
 - Konsultatnt - Pracownik firmy pracujący w `dziale Handlowym`, jego rolą jest kontakt z `Klientem` oraz z `Dostawcą` w celu zrealizowania `Zlecenia Zakupu`
 
-<div class="page_break">
+<div class="page">
 
 ## P
 
 - Przedoferta - Oferta, która jest tylko propozycją
 
-<div class="page_break">
+<div class="page">
 
 ## R
 
 - Raport - Dokument zawierający zdefiniowane analizy danych, dostępny w wersji elektronicznej i papierowej po wcześniejszym wydrukowaniu. Raport konfigurowany jest z administratorem systemu.
 
-<div class="page_break">
+<div class="page">
 
 ## S
 
 - System analizujący dane - Program śledzący i zapisujący ruch użytkowników systemu oraz dane dotyczące ofert
 
-<div class="page_break">
+<div class="page">
 
 ## Z
 
@@ -2325,19 +2325,19 @@ Lista plików graficznych
 - Zlecenie zakupu - Klient zgadza się na wystawienie mu faktury i zobowiązuje zapłacić, za co otrzyma towar.
 - Zatwierdzający oferte - Konsultant wyższego stopnia, zatwierdza oferty prezentowane klientowi
 
-<div class="page_break">
+<div class="page">
 
 # Załącznik B: Wzory dokumentów
 
-<div class="page_break">
+<div class="page">
 
 # Załącznik C:
 
-<div class="page_break">
+<div class="page">
 
 # Załącznik D:
 
-<div class="page_break">
+<div class="page">
 
 # Załącznik E: Spis rysunków
 
