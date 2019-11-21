@@ -15,57 +15,57 @@ Spis Treści
 
 <!-- TOC insertanchor:false orderedlist:true withlinks:true updateonsave:true depthfrom:1 depthto:3 -->
 
-- [1. Sformułowanie zadania projektowego](#markdown-header-1-sformułowanie-zadania-projektowego)
-    - [1.1. Przedmiot modelowania – opis dziedziny problemu](#markdown-header-11-przedmiot-modelowania-opis-dziedziny-problemu)
-        - [1.1.1. Nazwa firmy](#markdown-header-111-nazwa-firmy)
-        - [1.1.2. Typ firmy](#markdown-header-112-typ-firmy)
-        - [1.1.3. Cel produktu](#markdown-header-113-cel-produktu)
-        - [1.1.4. Opis dziedziny działalności](#markdown-header-114-opis-dziedziny-działalności)
-        - [1.1.5. Cele firmy](#markdown-header-115-cele-firmy)
-        - [1.1.6. Schemat struktury organizacyjnej](#markdown-header-116-schemat-struktury-organizacyjnej)
-    - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#markdown-header-12-obszar-modelowania-om-wstępny-opisowy-model-stanu-istniejącego)
-        - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#markdown-header-121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)
-        - [1.2.2. Definicja celu systemu](#markdown-header-122-definicja-celu-systemu)
-        - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#markdown-header-123-składniki-organizacyjne-dla-obszaru-modelowania)
-    - [1.3. Zakres odpowiedzialności systemu (ZOS)](#markdown-header-13-zakres-odpowiedzialności-systemu-zos)
-        - [1.3.1. Obszary aktywności (OA)](#markdown-header-131-obszary-aktywności-oa)
-    - [1.4. Zwięzła nazwa problemu](#markdown-header-14-zwięzła-nazwa-problemu)
-        - [1.4.1. Nazwa problemu](#markdown-header-141-nazwa-problemu)
-        - [1.4.2. Nazwa kodowa projektu](#markdown-header-142-nazwa-kodowa-projektu)
-    - [1.5. Cele do osiągnięcia](#markdown-header-15-cele-do-osiągnięcia)
-        - [1.5.1. Cele produktu](#markdown-header-151-cele-produktu)
-        - [1.5.2. Cele przedsięwzięcia projektowego](#markdown-header-152-cele-przedsięwzięcia-projektowego)
-- [2. Opis Wymagań Systemu](#markdown-header-2-opis-wymagań-systemu)
-    - [2.1. Funkcje systemu ze strony widzenia użytkownika](#markdown-header-21-funkcje-systemu-ze-strony-widzenia-użytkownika)
-        - [2.1.1. Aktorzy w systemie](#markdown-header-211-aktorzy-w-systemie)
-    - [2.2. Dane przechowywane w systemie](#markdown-header-22-dane-przechowywane-w-systemie)
-        - [2.2.1. Opis Magazynu](#markdown-header-221-opis-magazynu)
-    - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#markdown-header-23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu-wzory)
-        - [2.3.1. Zapytanie ofertowe od klienta](#markdown-header-231-zapytanie-ofertowe-od-klienta)
-        - [2.3.2. Oferta](#markdown-header-232-oferta)
-        - [2.3.3. Zamówienie towaru u dostawcy](#markdown-header-233-zamówienie-towaru-u-dostawcy)
-        - [2.3.4. Potwierdzenie zamówienia od dostawcy](#markdown-header-234-potwierdzenie-zamówienia-od-dostawcy)
-        - [2.3.5. Faktura zakupu od dostawcy](#markdown-header-235-faktura-zakupu-od-dostawcy)
-        - [2.3.6. Rejestracja towaru na magazynie](#markdown-header-236-rejestracja-towaru-na-magazynie)
-        - [2.3.7. Wyrejestrowanie towaru z magazynu](#markdown-header-237-wyrejestrowanie-towaru-z-magazynu)
-        - [2.3.8. Faktura zakupu dla klienta](#markdown-header-238-faktura-zakupu-dla-klienta)
-        - [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#markdown-header-239-raport-sprzedażowe-do-analiz-wewnętrznych)
-        - [2.3.10. Raport statystyczny wspierający cele marketingowe](#markdown-header-2310-raport-statystyczny-wspierający-cele-marketingowe)
-        - [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#markdown-header-2311-raport-statystyczny-wspierający-prognozy-popytu-wspierający-cele-magazynowe)
-    - [2.4. Wyniki analizy wymagań funkcjonalnych](#markdown-header-24-wyniki-analizy-wymagań-funkcjonalnych)
-- [3. Załącznik A: Słownik pojęć dziedzinowych:](#markdown-header-3-załącznik-a-słownik-pojęć-dziedzinowych)
-    - [3.1. A](#markdown-header-31-a)
-    - [3.2. F](#markdown-header-32-f)
-    - [3.3. I](#markdown-header-33-i)
-    - [3.4. K](#markdown-header-34-k)
-    - [3.5. P](#markdown-header-35-p)
-    - [3.6. R](#markdown-header-36-r)
-    - [3.7. S](#markdown-header-37-s)
-    - [3.8. Z](#markdown-header-38-z)
-- [4. Załącznik B: Wzory dokumentów](#markdown-header-4-załącznik-b-wzory-dokumentów)
-- [5. Załącznik C:](#markdown-header-5-załącznik-c)
-- [6. Załącznik D:](#markdown-header-6-załącznik-d)
-- [7. Załącznik E: Spis rysunków](#markdown-header-7-załącznik-e-spis-rysunków)
+- [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
+    - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu)
+        - [1.1.1. Nazwa firmy](#111-nazwa-firmy)
+        - [1.1.2. Typ firmy](#112-typ-firmy)
+        - [1.1.3. Cel produktu](#113-cel-produktu)
+        - [1.1.4. Opis dziedziny działalności](#114-opis-dziedziny-działalności)
+        - [1.1.5. Cele firmy](#115-cele-firmy)
+        - [1.1.6. Schemat struktury organizacyjnej](#116-schemat-struktury-organizacyjnej)
+    - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#12-obszar-modelowania-om--wstępny-opisowy-model-stanu-istniejącego)
+        - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)
+        - [1.2.2. Definicja celu systemu](#122-definicja-celu-systemu)
+        - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania)
+    - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
+        - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
+    - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
+        - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
+        - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
+    - [1.5. Cele do osiągnięcia](#15-cele-do-osiągnięcia)
+        - [1.5.1. Cele produktu](#151-cele-produktu)
+        - [1.5.2. Cele przedsięwzięcia projektowego](#152-cele-przedsięwzięcia-projektowego)
+- [2. Opis Wymagań Systemu](#2-opis-wymagań-systemu)
+    - [2.1. Funkcje systemu ze strony widzenia użytkownika](#21-funkcje-systemu-ze-strony-widzenia-użytkownika)
+        - [2.1.1. Aktorzy w systemie](#211-aktorzy-w-systemie)
+    - [2.2. Dane przechowywane w systemie](#22-dane-przechowywane-w-systemie)
+        - [2.2.1. Opis Magazynu](#221-opis-magazynu)
+    - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory)
+        - [2.3.1. Zapytanie ofertowe od klienta](#231-zapytanie-ofertowe-od-klienta)
+        - [2.3.2. Oferta](#232-oferta)
+        - [2.3.3. Zamówienie towaru u dostawcy](#233-zamówienie-towaru-u-dostawcy)
+        - [2.3.4. Potwierdzenie zamówienia od dostawcy](#234-potwierdzenie-zamówienia-od-dostawcy)
+        - [2.3.5. Faktura zakupu od dostawcy](#235-faktura-zakupu-od-dostawcy)
+        - [2.3.6. Rejestracja towaru na magazynie](#236-rejestracja-towaru-na-magazynie)
+        - [2.3.7. Wyrejestrowanie towaru z magazynu](#237-wyrejestrowanie-towaru-z-magazynu)
+        - [2.3.8. Faktura zakupu dla klienta](#238-faktura-zakupu-dla-klienta)
+        - [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#239-raport-sprzedażowe-do-analiz-wewnętrznych)
+        - [2.3.10. Raport statystyczny wspierający cele marketingowe](#2310-raport-statystyczny-wspierający-cele-marketingowe)
+        - [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#2311-raport-statystyczny-wspierający-prognozy-popytu-wspierający-cele-magazynowe)
+    - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych)
+- [3. Załącznik A: Słownik pojęć dziedzinowych:](#3-załącznik-a-słownik-pojęć-dziedzinowych)
+    - [3.1. A](#31-a)
+    - [3.2. F](#32-f)
+    - [3.3. I](#33-i)
+    - [3.4. K](#34-k)
+    - [3.5. P](#35-p)
+    - [3.6. R](#36-r)
+    - [3.7. S](#37-s)
+    - [3.8. Z](#38-z)
+- [4. Załącznik B: Wzory dokumentów](#4-załącznik-b-wzory-dokumentów)
+- [5. Załącznik C:](#5-załącznik-c)
+- [6. Załącznik D:](#6-załącznik-d)
+- [7. Załącznik E: Spis rysunków](#7-załącznik-e-spis-rysunków)
 
 <!-- /TOC -->
 
@@ -214,10 +214,6 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    3. Rejestrowanie fabryki w systemie
 
       Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ istniejąca nie była wcześniej wprowadzona do systemu.
-
-   4. Dodanie fabryki do dostawcy
-
-        Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ dostawca wszedł w posiadanie kolejnej `fabryki`.
 
 2. Prowadzenie katalogu i cennika towarów
 
@@ -724,7 +720,6 @@ rectangle "Aktualizacja danych dostawcy" {
     (Rejestrowanie dostawcy) .> (Korygowanie danych dostawcy) : include
     Konsultant -- (Rejestrowanie dostawcy)
     Konsultant -- (Rejestrowanie fabryki w systemie)
-    Konsultant -- (Dodanie fabryki do dostawcy)
     Konsultant -- (Korygowanie danych dostawcy)
     (Korygowanie danych dostawcy) -- Dostawca
     (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
@@ -765,7 +760,9 @@ rectangle "Aktualizacja danych dostawcy" {
 3. System weryfikuje dane
 4. `Dostawca` zostaje zapisany
 
-**Scenariusze alternatywne: **
+
+**Scenariusze alternatywne:**
+
 1. `Dostawca` istnieje w systemie, system proponuje `UC-1.2`
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
@@ -802,7 +799,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 3. System weryfikuje dane
 4. `Dostawca` zostaje zapisany
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
@@ -826,25 +823,25 @@ _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zakla
 
 **Aktor główny:** Konsultant
 
+**Warunek początkowy:** Fabryki nie ma w systemie
+
+**Zdarzenie inicjujące:** Wprowadzamy do systemu fabrykę
+
+**Główny scenariusz powodzenia:** 
+
+1. System wyświetla formularz dodania fabryki do systemu
+2. `Konsultant` wpisuje dane
+3. System weryfikuje dane
+4. `Fabryka` zostaje zapisana
+
+**Scenariusze alternatywne:**
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
+
+
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
 
----
-
-**Numer i Nazwa przypadku użycia:** 1.1.1.4 - Dodanie fabryki do dostawcy
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Podłączenie fabryki do dostawcy
-
-**Kontekst użycia:** ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
-
-**Zakres:** ​ System powinien być na tyle rozszerzalny, żeby w każdym momencie można było dodać kolejną fabrykę. Taka operacja nie powinna zmieniać istniejących raportów, wgląd w dodawanie fabryk w czasie powinien być rejestrowany i dostępny do wglądu dla zarządu
-
-**Poziom:** Przetwarzanie danych dostawców
-
-**Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
 
@@ -866,6 +863,22 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Aktor główny:** Konsultant
 
+
+**Warunek początkowy:** Towaru nie ma w systemie
+
+**Zdarzenie inicjujące:** Konsultant dowiaduje się o nowym towarze od dostawcy
+
+**Główny scenariusz powodzenia:** 
+
+1. System wyświetla formularz dodania towaru do systemu
+2. `Konsultant` wpisuje dane
+3. System weryfikuje dane
+4. `Towar` zostaje zapisany
+
+**Scenariusze alternatywne:**
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
+
+
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
@@ -885,6 +898,19 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 **Poziom:** Prowadzenie katalogu i cennika towarów
 
 **Aktor główny:** Konsultant
+
+**Warunek początkowy:** Towaru wyszedł z użytku
+
+**Zdarzenie inicjujące:** Konsultant dowiaduje się o zmianie dostępności towaru
+
+**Główny scenariusz powodzenia:** 
+
+1. System wyświetla wpis towaru
+2. `Konsultant` klika aktywuj/dezaktywuj
+4. `Towar` zostaje zapisany
+
+**Scenariusze alternatywne:**
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
 
@@ -906,6 +932,20 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Aktor główny:** Konsultant
 
+
+**Warunek początkowy:** Ceny są nieaktualne
+
+**Zdarzenie inicjujące:** Konsultant chce zaktualizować ceny
+
+**Główny scenariusz powodzenia:** 
+
+1. System wyświetla wpis towaru
+2. `Konsultant` aktualizuje progi cenowe
+4. `Towar` zostaje zapisany
+
+**Scenariusze alternatywne:**
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
+
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
@@ -924,6 +964,16 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 **Poziom:** Prowadzenie katalogu i cennika towarów
 
 **Aktor główny:** Konsultant
+
+**Zdarzenie inicjujące:** Konsultant chce wygenerować cennik
+
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` wybiera opcję wygenerowania cennika
+1. Cennik zostaje wygenerowany
+
+**Scenariusze alternatywne:**
+Nie przewiduje się.
 
 **Uczestnicy i interesy:**
 
@@ -944,6 +994,18 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 **Poziom:** Prowadzenie katalogu i cennika towarów
 
 **Aktor główny:** Konsultant
+
+**Warunek początkowy:** Towar jest dostępny i aktywny
+
+**Zdarzenie inicjujące:** Konsultant chce zarezerwować towar
+
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` wybiera towar do rezerwacji i okres
+1. Rezerwacja towaru zostaje zapisana w systemie
+
+**Scenariusze alternatywne:**
+1. Występuje błąd, gdy wybrany okres rezerwacji przekracza 3 miesiące od dnia obecnego
 
 **Uczestnicy i interesy:**
 
@@ -967,6 +1029,19 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 **Poziom:** Prowadzenie katalogu i cennika towarów
 
 **Aktor główny:** Konsultant
+
+
+**Warunek początkowy:** Rezerwacja istnieje
+
+**Zdarzenie inicjujące:** Konsultant chce zmienić lub zlikwidować rezerwację towaru
+
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` wybiera wpis rezerwacji towaru i aktualizuje wpis
+1. Rezerwacja towaru zostaje zaktualizowana
+
+**Scenariusze alternatywne:**
+Nie przewiduje się
 
 **Uczestnicy i interesy:**
 
@@ -2058,7 +2133,7 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 
 ##### _Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów_
 
-**Numer i nazwa przypadku uzycia:** 1.7.1.1 - Dodawanie informacji i danych o klientach
+**Numer i nazwa przypadku uzycia:** UC.07-01 - Dodawanie informacji i danych o klientach
 
 **Autor:** Mateusz Popielarz
 
@@ -2070,13 +2145,29 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 
 **Poziom:** Prowadzenie bazy potencjalnych klientów
 
+
+**Warunek początkowy:** Klient nie istnieje w systemie
+
+**Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta 
+
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` otwiera formularz dodania `klienta`
+1. `Konsultant` wypełnia dane klienta
+1. `Konsultant` zapisuje formularz
+
+**Scenariusze alternatywne:**
+1. Wystąpił błąd - `Klient` ma dane pokrywające się z innym 
+
 **Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
 
+_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
+
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.7.1.2 - Zmiana informacji o kliencie
+**Numer i nazwa przypadku uzycia:** UC.07-02 - Zmiana informacji o kliencie
 
 **Autor:** Mateusz Popielarz
 
@@ -2090,8 +2181,22 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 
 **Aktor główny:** Konsultant
 
+**Warunek początkowy:** Klient istnieje w systemie
+
+**Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta 
+
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` otwiera formularz dodania `klienta`
+1. `Konsultant` wypełnia dane klienta
+1. `Konsultant` zapisuje formularz
+
+**Scenariusze alternatywne:**
+1. Wystąpił błąd - `Klient` ma dane pokrywające się z innym 
+
 **Uczestnicy i interesy:**
 
+_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 ---
 
 **Numer i nazwa przypadku uzycia:** 1.7.1.3 - Usuwanie informacji i danych wrażliwych o klientach
@@ -2108,7 +2213,21 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 
 **Aktor główny:** Konsultant
 
+**Warunek początkowy:** Klient istnieje w systemie
+
+**Zdarzenie inicjujące:** Konsultant chce usunąc dane wrażliwe z systemu
+
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` otwiera formularz `klienta`
+1. `Konsultant` wybiera opcję usunięcia danych wrażliwych
+1. System usuwa dane
+
+
+
 **Uczestnicy i interesy:**
+
+_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 ---
 
@@ -2128,7 +2247,23 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 
 **Aktor główny:** Konsultant
 
+**Warunek początkowy:** Klient istnieje w systemie i posiada historię kontaktu
+
+**Zdarzenie inicjujące:** `Konsultant` chce wiedzieć, czy powinien odezwać się do `klienta` z ofertą
+
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` otwiera wpis `klienta`
+1. `Konsultant` wybiera opcję daty ostatniego kontaktu
+1.  System wyświetla datę 
+
+**Scenariusze alternatywne:**
+1. Wystąpił błąd - zostaje wyświetlony komunikat błędu i prosi o sprawdzenie integralności danych (UC.07-02)
+
+
 **Uczestnicy i interesy:**
+
+_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 ---
 
@@ -2146,25 +2281,24 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 
 **Aktor główny:** Konsultant
 
+**Warunek początkowy:** Klient istnieje w systemie
+
+**Zdarzenie inicjujące:** `Konsultant` chce poinformować klienta o ofercie
+
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` otwiera wpis `klienta`
+1. `Konsultant` wybiera opcję wysłania wiadomości
+1.  System wysyła wiadomość
+
+**Scenariusze alternatywne:**
+1. Wystąpił błąd - `klient` nie ma adresu e-mail - `konsultant` zostaje przekierowany do (UC.07-02)
+
 **Uczestnicy i interesy:**
+
+_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 ---
-
-**Numer i nazwa przypadku uzycia:** 1.7.2.3 - Usuwanie informacji i danych wrażliwych o klientach
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Usuwanie informacji i danych wrażliwych o klientach
-
-**Kontekst użycia:** System pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
-
-**Zakres:** Prowadzenie bazy potencjalnych klientów
-
-**Poziom:** Prowadzenie bazy potencjalnych klientów
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
 
 #### 2.1.2.8 Zarzadzanie
 
