@@ -1081,6 +1081,14 @@ rectangle "Rejestrowanie klienta" {
 
 **Poziom:** Przetwarzanie danych klientów
 
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
+
 **Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
@@ -1102,6 +1110,14 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 **Zakres:** Edycja danych klienta
 
 **Poziom:** Przetwarzanie danych klientów
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny: ** Konsultant
 
@@ -1140,6 +1156,14 @@ rectangle "Przyjęcie zapytania ofertowego od klienta" {
 **Zakres:**
 
 **Poziom:** Proces ofertowy
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** Klient
 
@@ -1185,6 +1209,14 @@ rectangle "Tworzenie oferty" {
 
 **Poziom:** Proces ofertowy
 
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
+
 **Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
@@ -1204,6 +1236,14 @@ Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później 
 **Zakres:**
 
 **Poziom:** Proces ofertowy
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** Konsultant
 
@@ -1225,6 +1265,14 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 **Poziom:** Proces ofertowy
 
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
+
 **Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
@@ -1244,6 +1292,14 @@ Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 **Zakres:**
 
 **Poziom:** Proces ofertowy
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** Konsultant
 
@@ -1265,6 +1321,14 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 **Poziom:** Proces ofertowy
 
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
+
 **Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
@@ -1284,6 +1348,14 @@ Konsultant - sprawdza w systemie dostępność produktów w fabryce
 **Zakres:**
 
 **Poziom:** Proces ofertowy
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** Konsultant
 
@@ -1306,6 +1378,14 @@ Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 **Zakres:**
 
 **Poziom:** Proces ofertowy
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** Konsultant
 
@@ -1354,6 +1434,14 @@ rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
 
 **Poziom:** Proces ofertowy
 
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
+
 **Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
@@ -1375,6 +1463,14 @@ Klient - otrzymuje oferte od konsultanta
 **Zakres:**
 
 **Poziom:** Proces ofertowy
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** Klient
 
@@ -1398,6 +1494,14 @@ Konsultant - procesują otrzymaną decyzje w systemie
 
 **Poziom:** Proces fakturowania
 
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
+
 **Aktor główny:** Księgowość
 
 **Uczestnicy i interesy:**
@@ -1419,6 +1523,14 @@ Klient - otrzymuje fakture
 **Zakres:**
 
 **Poziom:** Proces fakturowania
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** Księgowość
 
@@ -2094,6 +2206,14 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 **Zakres:** Analiza danych
 
 **Poziom:** Analiza danych
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** System analizujący dane
 
