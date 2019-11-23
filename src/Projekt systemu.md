@@ -2036,16 +2036,22 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 left to right direction
 skinparam packageStyle rectangle
 actor Konsultant
-actor :System analizyjący dane:
-rectangle "Statystyki powiązane z katalogiem produktowym" {
+actor :System analizujący dane:
+actor Marketingowiec
+rectangle "Statystyki na potrzeby marketingowe" {
   (Wykonywanie operacji na katalogu produktów) ..  (Analiza danych)
   Konsultant -- (Wykonywanie operacji na katalogu produktów)
-  :System analizyjący dane: -- (Analiza danych)
+  :System analizujący dane: -- (Analiza danych)
+  (Generuje raport) ..  (Otrzymuje raport)
+  Marketingowiec -- (Otrzymuje raport)
+  :System analizujący dane: -- (Generuje raport)
+  Konsultant -- (Tworzenie ofert)
+  (Tworzenie ofert) .. (Analiza danych)
 }
 @enduml
 ```
 
-##### _Rysunek 12. Statyki powiązane z katalogiem produktowym_
+##### Rysunek 12. Statyki powiązane z katalogiem produktowym_
 
 **Numer i nazwa przypadku uzycia:** 1.6.1 - Statystyki powiązane z katalogiem produktowym
 
@@ -2068,23 +2074,6 @@ Konsultant - realizacja codziennych obowiązków
 System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 ---
-
-```plantuml 2.1.2.6
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor :System analizujący dane:
-actor Marketingowiec
-rectangle "Analiza danych na potrzeby marketingowe" {
-  (Generuje raport) ..  (Otrzymuje raport)
-  Marketingowiec -- (Otrzymuje raport)
-  :System analizujący dane: -- (Analizuje dane)
-  :System analizujący dane: -- (Generuje raport)
-}
-@enduml
-```
-
-##### _Rysunek 13. Analiza danych na potrzeby marketingowe_
 
 **Numer i nazwa przypadku uzycia:** 1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
 
