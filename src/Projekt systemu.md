@@ -1049,7 +1049,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 _Klient_ - Inicjuje proces
 
-#### 2.4.2 Rejestrowanie klienta (OA2)
+#### 2.4.2 Obsługa zleceń zakupu  (OA2)
 
 ```plantuml 2.1.2.2
 @startuml
@@ -2064,6 +2064,14 @@ rectangle "Statystyki na potrzeby marketingowe" {
 **Zakres:** Wyszukiwanie i konfiguracja produktów
 
 **Poziom:** Analiza danych
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** 
+
+**Główny scenariusz powodzenia:**
+
+**Scenariusze alternatywne:**
 
 **Aktor główny:** Konsultant
 
