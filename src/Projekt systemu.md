@@ -325,7 +325,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 
     2. Realizacja reklamacji do dostawcy
-
+    
         Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od niego wymienione, działające produkty.
 
 4. Prowadzenie rejestru reklamacji
@@ -1049,7 +1049,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 _Klient_ - Inicjuje proces
 
-#### 2.1.2.2 Rejestrowanie klient
+#### 2.4.2 Rejestrowanie klienta (OA2)
 
 ```plantuml 2.1.2.2
 @startuml
@@ -1069,7 +1069,7 @@ rectangle "Rejestrowanie klienta" {
 
 ##### _Rysunek 7. Rejestrowanie klienta_
 
-Numer i nazwa przypadku uzycia:\*\* 1.2.1.1 - Rejestrowanie klienta
+**Numer i nazwa przypadku uzycia:** 1.2.1.1 - Rejestrowanie klienta
 
 **Autor:** Adam Samsonowicz
 
@@ -1254,6 +1254,8 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 ---
 
 **Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
+
+**Autor: ** Adam Samsonowicz
 
 **Cel przypadku użycia:** Sprawdzenie najszybszej możliwej dostawy
 
@@ -2027,7 +2029,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-#### 2.1.2.6 Analiza danych na potrzeby marketingowe
+#### 2.4.6 Analiza danych na potrzeby marketingowe (OA6)
 
 ```plantuml test
 @startuml
@@ -2084,7 +2086,7 @@ rectangle "Analiza danych na potrzeby marketingowe" {
 
 ##### _Rysunek 13. Analiza danych na potrzeby marketingowe_
 
-Numer i nazwa przypadku uzycia:\*\* 1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
+**Numer i nazwa przypadku uzycia:** 1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
 
 **Autor:** Adam Samsonowicz
 
