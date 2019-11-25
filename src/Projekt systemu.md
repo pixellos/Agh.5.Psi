@@ -2177,13 +2177,18 @@ rectangle "Statystyki na potrzeby marketingowe" {
 
 **Poziom:** Analiza danych
 
-**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne
+**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne. Oferta jest stworzona, podstawowe informacje są wypełnione.
 
 **Zdarzenie inicjujące:** Manualne zainicjowanie analizy lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
 
 **Główny scenariusz powodzenia:** 
 
+1. `Konsultant` wchodzi na katalog produktowy klikając przycisk 'Katalog produktów' znajdujący się na stronie wcześniej stworzonej oferty w systemie
+2. `Konsultant` jest w stanie potwierdzić organoleptycznie, że proponowane produkty przez `system` odpowiadają produktom często zamawianym
+
 **Scenariusze alternatywne:**
+
+1. `Konsultant` po wejściu na katalog nie rozpoznaje propowanym produktów, lub rozpoznaje je jako rzadko zamawiane.
 
 **Aktor główny:** Konsultant
 
@@ -2221,7 +2226,7 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 **Scenariusze alternatywne:**
 
 1. Po wykonaniu kroku (3) przez `Marketingowca` system wyświetla błąd sugerujący niepowodzenie
-2. `Marketingowiec` zgłasza błąd 
+2. `Marketingowiec` zgłasza błąd
 
 **Aktor główny:** System analizujący dane
 
