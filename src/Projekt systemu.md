@@ -2177,11 +2177,11 @@ rectangle "Statystyki na potrzeby marketingowe" {
 
 **Poziom:** Analiza danych
 
-**Warunek początkowy:** 
+**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** Manualne zainicjowanie analizy lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
 
-**Główny scenariusz powodzenia:**
+**Główny scenariusz powodzenia:** 
 
 **Scenariusze alternatywne:**
 
@@ -2201,19 +2201,27 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 **Cel przypadku użycia:** Wsparcie podejmowania decyzji marketingowych za pomoca dedykowanych analiz danych
 
-**Kontekst użycia:** Wszystkie stworzone oferty oraz ich historia zawierają informacje, które można wykorzystać do podjęcia strategicznych decyzji. Analizy umieszczone są na `raporcie`. `Raport` może być generowany manualnie. `Raport` może być generowany automatycznie po wcześniejszej konfiguracji i ustawienia ram czasowych.
+**Kontekst użycia:** Wszystkie stworzone oferty oraz ich historia zawierają informacje, które można wykorzystać do podjęcia strategicznych decyzji. Analizy umieszczone są na raporcie. Raport może być generowany manualnie. Raport może być generowany automatycznie po wcześniejszej konfiguracji i ustawienia ram czasowych.
 
 **Zakres:** Analiza danych
 
 **Poziom:** Analiza danych
 
-**Warunek początkowy:** 
+**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne, `Marketingowiec` jest zalogowany do aplikacji
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** Manualne zainicjowanie analizy lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
 
-**Główny scenariusz powodzenia:**
+**Główny scenariusz powodzenia:** 
+
+1. `Marketingowiec` klika przycisk 'Analizy marketingowe' znajdującym się na głównej stronie aplikacji
+2. `Marketingowiec` znajduje się na stronie 'Analizy marktetingowe' 
+3. `Marketingowiec` wybiera format raportu(.pdf, .xls)  a następnie klika przycisk 'Wygeneruj raport'
+4. Raport jest wygenerowany w poprawnym formacie
 
 **Scenariusze alternatywne:**
+
+1. Po wykonaniu kroku (3) przez `Marketingowca` system wyświetla błąd sugerujący niepowodzenie
+2. `Marketingowiec` zgłasza błąd 
 
 **Aktor główny:** System analizujący dane
 
