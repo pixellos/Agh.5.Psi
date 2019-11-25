@@ -1067,7 +1067,34 @@ rectangle "Rejestrowanie klienta" {
 @enduml
 ```
 
-##### _Rysunek 7. Rejestrowanie klienta_
+##### Rysunek 7. Rejestrowanie klienta_
+
+```plantuml 2.1.2.2
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+actor :Zatwierdzający oferte:
+rectangle "Tworzenie oferty" {
+  :Zatwierdzający oferte: -- (Zatwierdza oferte)
+  Klient -- (Wysyła zapytanie ofertowe)
+  Konsultant -- (Otrzymuje zapytanie ofertowe)
+  Konsultant -- (Tworzy oferte w systmie)
+  Konsultant -- (Dodaje produkty do oferty)
+  Konsultant -- (Generuje dokument ofertowy)
+  Klient -- (Otrzymuje dokument ofertowy)
+  (Tworzy oferte w systmie) .. (Dodaje produkty do oferty)
+  (Tworzy oferte w systmie) .. (Zatwierdza oferte)
+  (Generuje dokument ofertowy) .. (Otrzymuje dokument ofertowy)
+  (Wysyła zapytanie ofertowe) ..  (Otrzymuje zapytanie ofertowe)
+
+}
+@enduml
+```
+##### Rysunek 8. Proces ofertowy_
+
+
 
 **Numer i nazwa przypadku uzycia:** 1.2.1.1 - Rejestrowanie klienta
 
@@ -1152,22 +1179,6 @@ Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego proc
 
 ---
 
-```plantuml test
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Konsultant
-actor Klient
-rectangle "Przyjęcie zapytania ofertowego od klienta" {
-  Klient -- (Wysyła zapytanie ofertowe)
-  Konsultant -- (Otrzymuje zapytanie ofertowe)
-  (Wysyła zapytanie ofertowe) ..  (Otrzymuje zapytanie ofertowe)
-}
-@enduml
-```
-
-##### _Rysunek 8. Przyjęcia zapytania ofertowego od klienta_
-
 **Numer i nazwa przypadku uzycia:** 1.2.2.0 - Przyjęcie zapytania ofertowego od klienta
 
 **Autor:** Adam Samsonowicz
@@ -1176,17 +1187,20 @@ rectangle "Przyjęcie zapytania ofertowego od klienta" {
 
 **Kontekst użycia:** `Klient` wysyła zapytanie ofertowe drogą mailową z opisanym problemem. `Konsultant` po otrzymaniu informacji o potrzebie `klienta` zaczyna proces ofertowy.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** `Klient` i `konsultant` nawiązali wcześniej komunikacje drogą słowną lub elektroniczną.
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
 
 **Główny scenariusz powodzenia:**
 
-**Scenariusze alternatywne:**
+1. `Konsultant` po otrzymaniu zapytania ofertowego loguje się do systemu, jeżeli nie był wcześniej zalogowany i rozpoczyna proces ofertowy klikając przycisk 'Nowa oferta' znajdujący się na głównej stronie systemu.
+2. Formularz nowej oferty został wyświetlony
+
+**Scenariusze alternatywne:** Brak
 
 **Aktor główny:** Klient
 
@@ -1198,28 +1212,6 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 ---
 
-```plantuml test
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Konsultant
-actor Klient
-actor :Zatwierdzający oferte:
-rectangle "Tworzenie oferty" {
-  (Tworzy oferte w systmie) .. (Dodaje produkty do oferty)
-  (Tworzy oferte w systmie) .. (Zatwierdza oferte)
-  (Generuje dokument ofertowy) .. (Otrzymuje dokument ofertowy)
-  Konsultant -- (Tworzy oferte w systmie)
-  Konsultant -- (Dodaje produkty do oferty)
-  Konsultant -- (Generuje dokument ofertowy)
-  Klient -- (Otrzymuje dokument ofertowy)
-  :Zatwierdzający oferte: -- (Zatwierdza oferte)
-}
-@enduml
-```
-
-##### _Rysunek 9. Tworzenie oferty_
-
 **Numer i nazwa przypadku uzycia:** 1.2.3.1 - Utworzenie oferty w systemie
 
 **Autor:** Adam Samsonowicz
@@ -1228,11 +1220,11 @@ rectangle "Tworzenie oferty" {
 
 **Kontekst użycia:** `Konsultant` ma możliwość stworzenia oferty i wyboru klienta dla, którego ta oferta będzie dalej procesowana. `Konsultant` ma równiez możliwość uzupełnienia podstawowych informacji, które będą później widoczne na ofercie oraz będą mogły być użyte do analiz i raportów.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Formularz nowej oferty jest wyświetlony 
 
 **Zdarzenie inicjujące:** 
 
@@ -1256,11 +1248,11 @@ Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później 
 
 **Kontekst użycia:** `Konsultant` ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty. Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.
 
-**Zakres:**
+**Zakres: **Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Oferta została utworzona w systemie
 
 **Zdarzenie inicjujące:** 
 
@@ -1284,7 +1276,7 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 **Kontekst użycia:** `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
@@ -1312,7 +1304,7 @@ Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 
 **Kontekst użycia:** `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów na magazynie poprzez graficzny interfejs w wyszukiwarce.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
@@ -1322,7 +1314,9 @@ Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 
 **Główny scenariusz powodzenia:**
 
-**Scenariusze alternatywne:**
+**Scenariusze alternatywne:** 
+
+1. Scenariuszem alternatywnym jest poniższy przypadek użycia
 
 **Aktor główny:** Konsultant
 
@@ -1340,7 +1334,7 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 **Kontekst użycia:** `Konsultant` ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i `klient` akceptuje późniejszy termin dostawy.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
@@ -1368,7 +1362,7 @@ Konsultant - sprawdza w systemie dostępność produktów w fabryce
 
 **Kontekst użycia:** `Konsultant` przygotował oferte dla `klienta` i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do `klienta` elektronicznie lub wydrukować i przedstawić podczas spotkania.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
@@ -1398,7 +1392,7 @@ Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 
 **Kontekst użycia:** Oferta, którą zajmował się `konsultant` przekroczyła wartość pozwalającą na samodzielność danego `konsultanta` i wymagane jest potwierdzenie od przełożonego. Przełożonym jest `konsultant` z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany `Zatwierdzającym oferte`. `Konsultant` wysyła poprzez system prośbę o akceptację na dalsze procesowanie i przedstawienie oferty klientowi. `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
