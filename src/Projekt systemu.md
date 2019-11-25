@@ -1081,13 +1081,20 @@ rectangle "Rejestrowanie klienta" {
 
 **Poziom:** Przetwarzanie danych klientów
 
-**Warunek początkowy:** 
+**Warunek początkowy:** `Klient` nie istnieje w systemie
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** Nowy `klient` zgłasza się z zapytaniem ofertowym
 
-**Główny scenariusz powodzenia:**
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` naciska przycisk 'Dodaj nowego klienta' znajdujący się w sekcji wyboru klienta na głównej stronie oferty.
+2. `Konsultant` wypełnia informacje dotyczące klienta i naciska przycisk 'Zatwierdź'
+3. System wyświetla informację potwierdzającą dodanie klienta
 
 **Scenariusze alternatywne:**
+
+1. W punkcie (3) scenariusza głównego, system wyświetla informacje o błędzie i niemożliwości dodania klienta
+2. `Konsultant` zgłasza błąd
 
 **Aktor główny:** Konsultant
 
@@ -1111,13 +1118,29 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 
 **Poziom:** Przetwarzanie danych klientów
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Rejestr `Klienta` istnieje w systemie
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Konsultant` dowiedział się o zmianie danych klienta
 
-**Główny scenariusz powodzenia:**
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` przechodzi do strony 'Klienci' poprzez naciśnięcie przycisku 'Klienci' znajdującego się na głównej stronie systemu
+2. Strona 'Klienci' jest wyświetlona,  `Konsultant` wyszukuje `klienta` w wyszukiwarce klientów wpisując w pole identyfikator `klienta` 
+3. `Klient` został znaleziony w systemie, `Konsultant` klika na rekord `klienta` co przenosi go do widoku informacji szczegółowych `klienta`
+4. `Konsultant` klika przycisk 'edytuj', informacje są otwarte do edycji
+5. `Konsultant` wypełnia informacje aktualnymi danymi i naciska przycisk 'zapisz'
+6. System wyświetla informacje o poprawnym zapisie danych
 
 **Scenariusze alternatywne:**
+
+1. Punkt (6) scenariusza głównego, system wyświetla informacje o błędzie
+
+2. `Konsultant` zgłasza błąd
+
+   
+
+1. Punkt (3) scenariusza głównego, system nie znajduje `klienta` pomimo poprawnie wprowadzonego identyfikatora, oraz pewności, że dane `klient` został wcześniej wprowadzany do systemu
+2. `Konsultant` zgłasza błąd
 
 **Aktor główny: ** Konsultant
 
