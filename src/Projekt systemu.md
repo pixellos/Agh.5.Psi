@@ -1226,11 +1226,18 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Warunek początkowy:** Formularz nowej oferty jest wyświetlony 
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
 
 **Główny scenariusz powodzenia:**
 
+1. `Konsultant` uzupełnia podstawowe informacje dotyczące oferty na stronie nowej oferty między innymi wybiera `klienta`, dla którego tworzona jest oferta
+2. Wszystkie informację zostały wybrany poprawnie, `konsultant` klika na przycisk 'Utwórz nową oferte'
+3. System powiadamia `konsultanta` o poprawnym utworzeniu oferty 
+
 **Scenariusze alternatywne:**
+
+1. Punkt (3) głównego scenariusza, system informuje o zainistniałym błędzie
+2. `Konsultant` zgłasza błąd
 
 **Aktor główny:** Konsultant
 
@@ -1252,13 +1259,24 @@ Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później 
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Oferta została utworzona w systemie
+**Warunek początkowy:** Oferta została poprawnie utworzona w systemie
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
 
 **Główny scenariusz powodzenia:**
 
+1. `Konsultant` klika na przycisk 'Dodaj produkty' znajdującym się na stronie produktowej wewnątrz oferty
+2. System wyświetla możliwych dostawców do wyboru
+3. `Konsultant` wybiera dostawce, którego katalog produktowy spełnia oczekiwania `klienta` 
+4. System wyświetla katalog produktowy danego dostawcy, wraz z możliwością wyszukiwania oraz filtrowania po zdefiniowanych wcześniej atrybutach technicznych
+5. `Konsultant` wybiera odpowiednie produkty i klika na przycisk 'Dodaj do oferty'
+6. `Konsultant` zostaje przeniesiony spowrotem na stronę produktowom
+7. Produkty wybrane przez `konsultanta` znajdują się na stronie
+
 **Scenariusze alternatywne:**
+
+1. Punkt (6) scenariusza głównego, system wyświetla błąd o braku możliwości dodania produktów
+2. W zależności od rodzaju komunikatu, `konsultant` zgłasza błąd, lub w przypadku komunikatu powiązanego z dostawcą, `konsultant` komunikuje się bezpośrednio z dostawcą
 
 **Aktor główny:** Konsultant
 
@@ -1280,13 +1298,17 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Produkty zostały dodane do oferty
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
 
 **Główny scenariusz powodzenia:**
 
+1. 
+
 **Scenariusze alternatywne:**
+
+1. brak
 
 **Aktor główny:** Konsultant
 
@@ -1310,7 +1332,7 @@ Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
 
 **Warunek początkowy:** 
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
 
 **Główny scenariusz powodzenia:**
 
