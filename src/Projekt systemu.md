@@ -1067,7 +1067,7 @@ rectangle "Rejestrowanie klienta" {
 @enduml
 ```
 
-##### Rysunek 7. Rejestrowanie klienta_
+##### Rysunek 5. Rejestrowanie klienta
 
 ```plantuml 2.1.2.2
 @startuml
@@ -1076,7 +1076,7 @@ skinparam packageStyle rectangle
 actor Konsultant
 actor Klient
 actor :Zatwierdzający oferte:
-rectangle "Tworzenie oferty" {
+rectangle "Proces ofertowy" {
   :Zatwierdzający oferte: -- (Zatwierdza oferte)
   Klient -- (Wysyła zapytanie ofertowe)
   Konsultant -- (Otrzymuje zapytanie ofertowe)
@@ -1092,7 +1092,31 @@ rectangle "Tworzenie oferty" {
 }
 @enduml
 ```
-##### Rysunek 8. Proces ofertowy_
+##### Rysunek 6. Proces ofertowy
+
+```plantuml 2.1.2.2
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor Konsultant
+actor Klient
+actor Księgowość
+rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
+  (Przedstawia oferte) .. (Otrzymuje oferte)
+  (Podejmuje decyzje odnośnie otrzymanej oferty) .. (Procesuje decyzje klienta)
+  (Generuje i przesyła fakture do klienta) .. (Płaci za fakture)
+  (Płaci za fakture) .. (Odnotowuje płatność)
+  Konsultant -- (Przedstawia oferte)
+  Konsultant -- (Procesuje decyzje klienta w systemie)
+  Klient -- (Otrzymuje oferte)
+  Klient -- (Podejmuje decyzje odnośnie otrzymanej oferty)
+  Klient -- (Płaci za fakture)
+  Księgowość -- (Generuje i przesyła fakture do klienta)
+  Księgowość -- (Odnotowuje płatność)
+}
+@enduml
+```
+##### Rysunek 7. Potwierdzenie zamówienia i wystawienie faktury
 
 
 
@@ -1436,31 +1460,6 @@ Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmu
 
 ---
 
-```plantuml test
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Konsultant
-actor Klient
-actor Księgowość
-rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
-  (Przedstawia oferte) .. (Otrzymuje oferte)
-  (Podejmuje decyzje odnośnie otrzymanej oferty) .. (Procesuje decyzje klienta)
-  (Generuje i przesyła fakture do klienta) .. (Płaci za fakture)
-  (Płaci za fakture) .. (Odnotowuje płatność)
-  Konsultant -- (Przedstawia oferte)
-  Konsultant -- (Procesuje decyzje klienta w systemie)
-  Klient -- (Otrzymuje oferte)
-  Klient -- (Podejmuje decyzje odnośnie otrzymanej oferty)
-  Klient -- (Płaci za fakture)
-  Księgowość -- (Generuje i przesyła fakture do klienta)
-  Księgowość -- (Odnotowuje płatność)
-}
-@enduml
-```
-
-##### _Rysunek 10. Potwierdzenie zamówienia i wystawienie faktury_
-
 **Numer i nazwa przypadku uzycia:** 1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi
 
 **Autor:** Adam Samsonowicz
@@ -1582,17 +1581,23 @@ Klient - otrzymuje fakture
 
 **Kontekst użycia:** `Klient` opłacił fakturę. `Księgowość` korzystając z zewnętrznych informacji bankowo finansowych odnotowuje daną fakturę jako opłaconą w systemie.
 
-**Zakres:**
+**Zakres:** Proces fakturowania
 
 **Poziom:** Proces fakturowania
 
-**Warunek początkowy:** 
+**Warunek początkowy:** `Klient` zapłacił za wystawioną wcześniej fakture
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Księgowość` odnotowuje płatność za fakture na koncie firmowym
 
 **Główny scenariusz powodzenia:**
 
+1. `Księgowość` loguje się do systemu
+2. `Księgowość` księgowość wyszukuje oferte powiązaną z fakturą i na stronie 'Finalizacja oferty' klika przycisk 'Oferta opłacona'
+3. System zamyka oferte, oferta przechodzi w stan 'Opłaconej'
+
 **Scenariusze alternatywne:**
+
+1. Brak
 
 **Aktor główny:** Księgowość
 
