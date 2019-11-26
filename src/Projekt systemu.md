@@ -1589,8 +1589,8 @@ actor Pracownik
 actor :Zespół techniczny:
 rectangle "System" {
     (Klient) -- (Zgłoś reklamację)
-    (Zgłoś reklamację) .> (Wprowadź produkt do rejestru) : >
-    (Zgłoś reklamację) .> (Uaktualnij status reklamacji) : >
+    (Zgłoś reklamację) .> (Wprowadź produkt do rejestru) : <<include>>
+    (Zgłoś reklamację) .> (Uaktualnij status reklamacji) : <<include>>
     (Uaktualnij status reklamacji) -- (Pracownik)
     :Zespół techniczny: - (Pracownik)
 
@@ -2477,14 +2477,18 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 @startuml
 left to right direction
 actor Pracownik
+actor Właściciel
 rectangle "System" {
     :Pracownik: -- (Wprowadź dokumenty)
     :Pracownik: -- (Wprowadź zadania)
+(Wyświetl prognozę zamówień) -- (Właściciel)
+(Pracownik) -- (Przydziel zadania)
+     (Przydziel zadania) --(Właściciel)
 }
 @enduml
 ```
 
-##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika do systemu_
+##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień_
 
 **Numer i nazwa przypadku użycia:** 1.8.1.1 - Wprowadzenie dokumentów do systemu
 
@@ -2505,22 +2509,6 @@ rectangle "System" {
 _Pracownik_ - wprowadza dokumenty, zadania, ogłoszenia do systemu
 
 ---
-
-```plantuml X.X.X
-@startuml
-left to right direction
-actor Właściciel
-actor Pracownik
-rectangle "System" {
-    Właściciel -- (Wyświetl prognozę zamówień)
-    Właściciel -- (Przydziel zadania)
-    (Przydziel zadania) -- Pracownik
-
-}
-@enduml
-```
-
-##### _Rysunek 17. Diagram przypadków użycia przydziału zadań przez właściciela oraz wglądu do prognozy zamówień_
 
 **Numer i nazwa przypadku użycia:** 1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
 
