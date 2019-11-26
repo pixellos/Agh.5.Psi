@@ -1467,17 +1467,23 @@ rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
 
 **Kontekst użycia:** `Konsultant` ma możliwość wysłania dokumentu ofertowego do klienta z poziomu systemu, lub wydrukowanie tego dokumentu i przedstawienie go klientowi.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Dokument ofertowy jest wygenerowany
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** Wygenerowanie dokumentu ofertowego
 
 **Główny scenariusz powodzenia:**
 
+1. `Konsultant` pobiera dokument ofertowy i dodaje go jako załącznik do e-mail'a informującego o ofercie
+2. `Konsultant` wysyła e-mail wraz z załączoną ofertą
+
 **Scenariusze alternatywne:**
+
+1. `Konsultant` pobiera dokument ofertowy i drukuje go w celu ręcznego przedstawienia klientowi
+2. `Konsultant` spotyka się z `klientem` i przedstawia mu oferte na papierze
 
 **Aktor główny:** Konsultant
 
@@ -1497,17 +1503,29 @@ Klient - otrzymuje oferte od konsultanta
 
 **Kontekst użycia:** `Klient` podjął decyzję dotyczącą przedstawionej mu oferty. `Klient` przekazuję decyzję `konsultantowi`, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty `konsultant` składa zamówienie w fabryce na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.
 
-**Zakres:**
+**Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** `Klient` otrzymał oferte
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** Minął czas na podjęcie decyzji przez `klienta` od momentu przedstawienia oferty `klientowi` 
 
 **Główny scenariusz powodzenia:**
 
+1. `Konsultant` kontaktuje się z klientem w celu potwierdzenia oferty
+2. `Klient` informuje `konsultanta` o akceptacji oferty
+3. `Konsultant` będąc wcześniej zalogowanym w systemie wyszukuje oferte i otwiera jej strone
+4. `Konsultant` przechodzi na strone 'Finalizacja oferty' i klika przycisk 'Złóż zamówienie'
+5. System wysyła zapytania o zamówienie produktów do dostawcy oraz magazynu w celach realizacji zamówienia
+
 **Scenariusze alternatywne:**
+
+1. Konsultant` kontaktuje się z klientem w celu potwierdzenia oferty
+2. `Klient` informuje `konsultanta` o odmowie przyjęcia oferty
+3. `Konsultant` będąc wcześniej zalogowanym w systemie wyszukuje oferte i otwiera jej strone
+4. `Konsultant` przechodzi na strone 'Finalizacja oferty' i klika przycisk 'Oferta anulowana przez klienta'
+5. System zamyka oferte, oferta przechodzi w stan zamknięty
 
 **Aktor główny:** Klient
 
@@ -1527,17 +1545,22 @@ Konsultant - procesują otrzymaną decyzje w systemie
 
 **Kontekst użycia:** `Księgowość` dostaje informację w systemie o złożonym zamówieniu przez klienta. `Księgowość` generuje fakturę w systemie na podstawie złożonego zamówienia i przesyła ją klientowi oczekując na zapłatę.
 
-**Zakres:**
+**Zakres:** Proces fakturowania
 
 **Poziom:** Proces fakturowania
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Oferta została zaakceptowana przez klienta
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Konsultant` złożył zamówienie w systemie, `Księgowość` została poinformowana o ofercie
 
 **Główny scenariusz powodzenia:**
 
+1. `Księgowość` dostaje informację o produktach zawartych w ofercie
+2. `Księgowość` wystawia fakture 
+
 **Scenariusze alternatywne:**
+
+1. Brak
 
 **Aktor główny:** Księgowość
 
