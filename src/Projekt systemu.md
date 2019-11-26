@@ -271,15 +271,13 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
             `Konsultant` po stworzeniu oferty powinien mieć możliwość dodania produktów do oferty, które to produkty są zdefiniowane przez samego `klienta` lub wyszukane w systemie przez `konsultanta`.
 
-      2. Sprawdzenie dostępności produktu
+        2. Dostępności produktu - Sprawdzenie aktualnego stanu magazynu
 
-         1. Sprawdzenie aktualnego stanu magazynu
+             `Konsultant` podczas tworzenia oferty dla klienta musi znać czas realizacji danej oferty, w tym celu powinien mieć możliwość sprawdzenia czy produkty, których potrzebuje klient znajdują się na magazynie.
 
-            `Konsultant` podczas tworzenia oferty dla klienta musi znać czas realizacji danej oferty, w tym celu powinien mieć możliwość sprawdzenia czy produkty, których potrzebuje klient znajdują się na magazynie.
+        3. Dostępność produktu - Sprawdzenie najszybszego możliwego czasu dostawy
 
-         2. Sprawdzenie najszybszego możliwego czasu dostawy
-
-            W przypadku braku towarów na magazynie `konsultant` powinien mieć możliwość sprawdzenia czasu oczekiwania na dostawe produktów.
+               W przypadku braku towarów na magazynie `konsultant` powinien mieć możliwość sprawdzenia czasu oczekiwania na dostawe produktów.
 
    3. Wygenerowanie dokumentu ofertowego
 
@@ -1286,59 +1284,32 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy
-
-**Kontekst użycia:** `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
-
-**Zakres:** Proces ofertowy
-
-**Poziom:** Proces ofertowy
-
-**Warunek początkowy:** Produkty zostały dodane do oferty
-
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
-
-**Główny scenariusz powodzenia:**
-
-1. 
-
-**Scenariusze alternatywne:**
-
-1. brak
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
-
----
-
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.2.1 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie aktualnego stanu magazynu
+**Numer i nazwa przypadku uzycia:** 1.2.3.2.2 - Dodanie produktów do oferty - Dostępność produktu - Sprawdzenie aktualnego stanu magazynu
 
 **Autor:** Adam Samsonowicz
 
 **Cel przypadku użycia:** Sprawdzenie możliwości szybkiej wysyłki dla klienta
 
-**Kontekst użycia:** `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów na magazynie poprzez graficzny interfejs w wyszukiwarce.
+**Kontekst użycia:**  `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone. `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów na magazynie.
 
 **Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Produkty zostały poprawnie dodane do oferty
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` z potrzebą szybkiej dostawy
 
 **Główny scenariusz powodzenia:**
 
+1. `Konsultant` klika na przycisk 'Dostępność produktu' , opcja 'Magazyn' oraz 'Sprawdź u dostawcy' zostały wyświetlone
+2. `Konsultant` klika na opcje 'Magazyn'
+3. System wyświetla aktualny stan magazynu dla danego produktu
+4. `Konsultant` klika przycisk 'Rezerwuj', dzięki czemu dane produkty zostaną zamrożone na magazynie
+
 **Scenariusze alternatywne:** 
 
-1. Scenariuszem alternatywnym jest poniższy przypadek użycia
+1. Scenariuszem alternatywnym jest poniższy przypadek użycia, w przypadku gdy dla punktu(3) głównego scenariusza dystem wyświetlił 'brak prodkutów' na magazynie
 
 **Aktor główny:** Konsultant
 
@@ -1348,7 +1319,7 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
+**Numer i nazwa przypadku uzycia:** 1.2.3.2.3 - Dodanie produktów do oferty - Dostępność produktu - Sprawdzenie najszybszego możliwego czasu dostawy
 
 **Autor: ** Adam Samsonowicz
 
@@ -1360,11 +1331,16 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Produkty zostały poprawnie dodane do oferty
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` z potrzebą szybkiej dostawy
 
 **Główny scenariusz powodzenia:**
+
+1. `Konsultant` klika na przycisk 'Dostępność produktu' , opcja 'Magazyn' oraz 'Sprawdź u dostawcy' zostały wyświetlone
+2. `Konsultant` klika na opcje 'Sprawdź dostępnośc u dostawcy'
+3. System przekazuje wiadomość do zewnętrznego systemu dostawcy i wyświetla odpowiedź od zewnętrznego systemu dostawcy
+4. `Konsultant` klika przycisk 'Dodaje dane dostawcy do oferty', dzięki czemu na ofercie pojawią się informację o najszybszej możliwej dostawie
 
 **Scenariusze alternatywne:**
 
@@ -1388,13 +1364,21 @@ Konsultant - sprawdza w systemie dostępność produktów w fabryce
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Oferta wraz z produktami jest skonfigurowana poprawnie, wszystkie dane są gotowe do przedstawienia klientowi
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** Zakończenie pracy nad ofertą. Oferta jest gotowa do przedstawienia klientowi
 
 **Główny scenariusz powodzenia:**
 
+1. `Konsultant` przechodzi na stronę 'Finalizacja oferty' znajdującej się wewnątrz oferty
+2. `Konsultant` wybiera opcje, które dane będą widoczne na ofercie
+3. `Konsultant` klika przycisk 'Wygeneruj dokument ofertowy'
+4. Dokument ofertowy jest wygenerowany i dostępny do pobrania w celach wydruku, lub dodania jako załącznik do email
+
 **Scenariusze alternatywne:**
+
+1. Punkt (4) głównego scenariusza, system wyświetla informację o nieudanej generacji dokumentu
+2. `Konsultant` zgłasza błąd
 
 **Aktor główny:** Konsultant
 
@@ -1418,11 +1402,14 @@ Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:** Oferta wraz z produktami jest skonfigurowana poprawnie, wszystkie dane są gotowe do przedstawienia klientowi
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert `konsultanta` 
 
 **Główny scenariusz powodzenia:**
+
+1. `Konsultant` przechodzi na stronę 'Finalizacja oferty' znajdującej się wewnątrz oferty
+2. `Konsultant` nie ma możliwości wygenerowania dokumentu, przycisk jest zablokowany z informacją o potrzebie wcześniejsz
 
 **Scenariusze alternatywne:**
 
