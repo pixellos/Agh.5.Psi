@@ -271,13 +271,15 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
             `Konsultant` po stworzeniu oferty powinien mieć możliwość dodania produktów do oferty, które to produkty są zdefiniowane przez samego `klienta` lub wyszukane w systemie przez `konsultanta`.
 
-        2. Dostępności produktu - Sprawdzenie aktualnego stanu magazynu
+      2. Sprawdzenie dostępności produktu
 
-             `Konsultant` podczas tworzenia oferty dla klienta musi znać czas realizacji danej oferty, w tym celu powinien mieć możliwość sprawdzenia czy produkty, których potrzebuje klient znajdują się na magazynie.
+         1. Sprawdzenie aktualnego stanu magazynu
 
-        3. Dostępność produktu - Sprawdzenie najszybszego możliwego czasu dostawy
+            `Konsultant` podczas tworzenia oferty dla klienta musi znać czas realizacji danej oferty, w tym celu powinien mieć możliwość sprawdzenia czy produkty, których potrzebuje klient znajdują się na magazynie.
 
-               W przypadku braku towarów na magazynie `konsultant` powinien mieć możliwość sprawdzenia czasu oczekiwania na dostawe produktów.
+         2. Sprawdzenie najszybszego możliwego czasu dostawy
+
+            W przypadku braku towarów na magazynie `konsultant` powinien mieć możliwość sprawdzenia czasu oczekiwania na dostawe produktów.
 
    3. Wygenerowanie dokumentu ofertowego
 
@@ -1284,32 +1286,59 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.2 - Dodanie produktów do oferty - Dostępność produktu - Sprawdzenie aktualnego stanu magazynu
+**Numer i nazwa przypadku uzycia:** 1.2.3.2.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Sprawdzenie możliwości szybkiej wysyłki dla klienta
+**Cel przypadku użycia:** Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy
 
-**Kontekst użycia:**  `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone. `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów na magazynie.
+**Kontekst użycia:** `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
 
 **Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Produkty zostały poprawnie dodane do oferty
+**Warunek początkowy:** Produkty zostały dodane do oferty
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` z potrzebą szybkiej dostawy
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` klika na przycisk 'Dostępność produktu' , opcja 'Magazyn' oraz 'Sprawdź u dostawcy' zostały wyświetlone
-2. `Konsultant` klika na opcje 'Magazyn'
-3. System wyświetla aktualny stan magazynu dla danego produktu
-4. `Konsultant` klika przycisk 'Rezerwuj', dzięki czemu dane produkty zostaną zamrożone na magazynie
+1. 
+
+**Scenariusze alternatywne:**
+
+1. brak
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
+
+---
+
+**Numer i nazwa przypadku uzycia:** 1.2.3.2.2.1 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie aktualnego stanu magazynu
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia:** Sprawdzenie możliwości szybkiej wysyłki dla klienta
+
+**Kontekst użycia:** `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów na magazynie poprzez graficzny interfejs w wyszukiwarce.
+
+**Zakres:** Proces ofertowy
+
+**Poziom:** Proces ofertowy
+
+**Warunek początkowy:** 
+
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
+
+**Główny scenariusz powodzenia:**
 
 **Scenariusze alternatywne:** 
 
-1. Scenariuszem alternatywnym jest poniższy przypadek użycia, w przypadku gdy dla punktu(3) głównego scenariusza dystem wyświetlił 'brak prodkutów' na magazynie
+1. Scenariuszem alternatywnym jest poniższy przypadek użycia
 
 **Aktor główny:** Konsultant
 
@@ -1319,7 +1348,7 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.3 - Dodanie produktów do oferty - Dostępność produktu - Sprawdzenie najszybszego możliwego czasu dostawy
+**Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
 
 **Autor: ** Adam Samsonowicz
 
@@ -1331,16 +1360,11 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Produkty zostały poprawnie dodane do oferty
+**Warunek początkowy:** 
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` z potrzebą szybkiej dostawy
+**Zdarzenie inicjujące:** 
 
 **Główny scenariusz powodzenia:**
-
-1. `Konsultant` klika na przycisk 'Dostępność produktu' , opcja 'Magazyn' oraz 'Sprawdź u dostawcy' zostały wyświetlone
-2. `Konsultant` klika na opcje 'Sprawdź dostępnośc u dostawcy'
-3. System przekazuje wiadomość do zewnętrznego systemu dostawcy i wyświetla odpowiedź od zewnętrznego systemu dostawcy
-4. `Konsultant` klika przycisk 'Dodaje dane dostawcy do oferty', dzięki czemu na ofercie pojawią się informację o najszybszej możliwej dostawie
 
 **Scenariusze alternatywne:**
 
@@ -1364,21 +1388,13 @@ Konsultant - sprawdza w systemie dostępność produktów w fabryce
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Oferta wraz z produktami jest skonfigurowana poprawnie, wszystkie dane są gotowe do przedstawienia klientowi
+**Warunek początkowy:** 
 
-**Zdarzenie inicjujące:** Zakończenie pracy nad ofertą. Oferta jest gotowa do przedstawienia klientowi
+**Zdarzenie inicjujące:** 
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` przechodzi na stronę 'Finalizacja oferty' znajdującej się wewnątrz oferty
-2. `Konsultant` wybiera opcje, które dane będą widoczne na ofercie
-3. `Konsultant` klika przycisk 'Wygeneruj dokument ofertowy'
-4. Dokument ofertowy jest wygenerowany i dostępny do pobrania w celach wydruku, lub dodania jako załącznik do email
-
 **Scenariusze alternatywne:**
-
-1. Punkt (4) głównego scenariusza, system wyświetla informację o nieudanej generacji dokumentu
-2. `Konsultant` zgłasza błąd
 
 **Aktor główny:** Konsultant
 
@@ -1402,27 +1418,13 @@ Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Oferta wraz z produktami jest skonfigurowana poprawnie, wszystkie dane są gotowe do przedstawienia klientowi
+**Warunek początkowy:** 
 
-**Zdarzenie inicjujące:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert `konsultanta` 
+**Zdarzenie inicjujące:** 
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` przechodzi na stronę 'Finalizacja oferty' znajdującej się wewnątrz oferty
-2. `Konsultant` nie ma możliwości wygenerowania dokumentu, przycisk jest zablokowany z informacją o potrzebie wcześniejszego potwierdzenia od `zatwierdzającego oferte` 
-3. `Konsultant` klika przycisk 'Powiadam o potrzebie zatwierdzenia oferty'
-4. System wysyła drogą e-mail informację o potrzebie zatwierdzenia oferty
-5. `Zatwierdzający oferte` po zalogowaniu się, wyszukuje oferte oraz podejmuje decyzje w sprawie zatwierdzenia
-6. `Zatwierdzający oferte` zatwierdza oferte klikając przycisk 'Zatwierdź', `konsultant` jest powiadomiony drogą e-mail o zatwierdzeniu oferty
-
 **Scenariusze alternatywne:**
-
-1. Konsultant` przechodzi na stronę 'Finalizacja oferty' znajdującej się wewnątrz oferty
-2. `Konsultant` nie ma możliwości wygenerowania dokumentu, przycisk jest zablokowany z informacją o potrzebie wcześniejszego potwierdzenia od `zatwierdzającego oferte` 
-3. `Konsultant` klika przycisk 'Powiadam o potrzebie zatwierdzenia oferty'
-4. System wysyła drogą e-mail informację o potrzebie zatwierdzenia oferty
-5. `Zatwierdzający oferte` po zalogowaniu się, wyszukuje oferte oraz podejmuje decyzje w sprawie zatwierdzenia
-6. `Zatwierdzający oferte` wypełnie pole tekstowe w celu podania przyczyny braku zatwierdzenia oferty, oraz anuluje daną oferte klikając przycisk 'Anuluj'
 
 **Aktor główny:** Konsultant
 
@@ -1627,13 +1629,29 @@ rectangle "System" {
 
 **Cel przypadku użycia:** Zgłoszenie reklamacji przez klienta
 
-**Kontekst użycia:** `Klient` zgłasza reklamację raz pośrednictwem formularza reklamacji na stronie dostępnego na stronie internetowej
+**Kontekst użycia:** `Klient` zgłasza reklamację za pośrednictwem formularza reklamacji na stronie dostępnego na stronie internetowej
 
 **Zakres:** Reklamacja produktu przez klienta
 
 **Poziom:** Przyjęcie zgłoszenia reklamacji
 
 **Aktor główny:** Klient
+
+**Warunek początkowy:** Rejestr `Klienta` istnieje w systemie
+
+**Zdarzenie inicjujące:** `Klient`rozpoczyna wypełnianie formularza
+
+**Główny scenariusz powodzenia:** 
+
+1. `Klient` uruchamia stronę internetową umożliwiającą zgłoszenie reklamacji
+2. `Klient` wypełnia formularz reklamacji
+3. `Klient` załącza do formularza skan potwierdzenia zakupu reklamowanego produktu
+4. `Klient` naciska przycisk 'wyślij formularz'
+5. System wyświetla informacje o wysłanym formularzu
+
+**Scenariusze alternatywne:**
+1. System nie wyświetla informacji o wysłanym formularzu - np. błąd strony
+2. `Klient` chce wysyłać formularz z brakującymi polami - system wyświetla informacje o brakujących danych
 
 **Uczestnicy i interesy:**
 
@@ -1654,6 +1672,22 @@ _Klient_ - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zwer
 **Poziom:** Przyjęcie zgłoszenia reklamacji
 
 **Aktor główny:** Pracownik
+
+**Warunek początkowy:** Formularz reklamacyjny widoczny w systemie
+
+**Zdarzenie inicjujące:** `Pracownik` dowiedział się o nowym formularzu reklamacyjnym zgłoszonym przez `Klienta`
+
+**Główny scenariusz powodzenia:** 
+
+1. `Pracownik` przekierowuje zgłoszenie reklamacyjne do `Zespołu technicznego`
+2. `Pracownik` aktualizuje status reklamacji
+3. `Pracownik` wprowadza reklamowany produkt do rejestru
+4. `Zespół techniczny` przejmuje zareklamowany produkt i poddaje analizie jego zasadność
+
+**Scenariusze alternatywne:**
+1. `Pracownik` nie może przekierować zgłoszenia reklamacyjnego
+2. `Pracownik` nie moze zaktualizować statusu reklamacji
+3. `Pracownik` nie moze wprowadzić reklamowanego produktu do rejestru
 
 **Uczestnicy i interesy:**
 
@@ -1679,6 +1713,18 @@ _Zespół techniczny_ - przejmuje dalsze czynności
 
 **Aktor główny:** Zespół techniczny
 
+**Warunek początkowy:** Produkt po analizie reklamacji
+
+**Zdarzenie inicjujące:** Analiza produktu wykazała zasadność jej złożenia przezz klienta
+
+**Główny scenariusz powodzenia:** 
+
+1. `Zespół techniczny` przekierowuje zgłoszenie reklamacyjne do `Zespołu technicznego`
+2. `Zespół techniczny` aktualizuje status reklamacji
+
+**Scenariusze alternatywne:**
+1. `Zespół techniczny` nie może przekierować zgłoszenia reklamacyjnego
+
 **Uczestnicy i interesy:**
 
 _Zespół techniczny_ - przygotowanie produktów do odesłania do dostawcy
@@ -1701,6 +1747,18 @@ _dostawca_ - potencjalny odbiorca przesyłki reklamacji
 
 **Aktor główny:** Zespół techniczny
 
+**Warunek początkowy:** Produkt przygotowany do odesłania do dostawcy
+
+**Zdarzenie inicjujące:** `Zespół techniczny` rozpoczyzna realizacje odesłania produktów do dostawcy
+
+**Główny scenariusz powodzenia:** 
+
+1. `Zespół techniczny` wysyła produkty do `dostawcy`
+2. `Zespół techniczny` aktualizuje status reklamacji
+
+**Scenariusze alternatywne:**
+1. `Zespół techniczny` nie moze zaktualizować statusu reklamacji
+
 **Uczestnicy i interesy:**
 
 _Zespół techniczny_ - wysyła do dostawcy reklamowane produkty
@@ -1722,6 +1780,18 @@ _dostawca_ - potencjalny odbiorca przesyłki reklamacji
 **Poziom:** Prowadzenie rejestru reklamacji
 
 **Aktor główny:** Pracownik
+
+**Warunek początkowy:** Uzupełniony formularz reklamacyjny przez `klienta`
+
+**Zdarzenie inicjujące:** `Pracownik` odczytuje formularz zzgłoszzony przez `klienta`
+
+**Główny scenariusz powodzenia:** 
+
+1. `Pracownik` wprowadza reklamowany produkt do rejestru
+2. System wyświetla informacje o poprawnym zapisie danych
+
+**Scenariusze alternatywne:**
+1. System wyświelta informacje o błędzie podczas próby zapisu do rejestru
 
 **Uczestnicy i interesy:**
 
@@ -2525,6 +2595,18 @@ rectangle "System" {
 
 **Aktor główny:** Pracownik
 
+**Warunek początkowy:** `Pracownik` poprawnie zalogowany do systemu
+
+**Zdarzenie inicjujące:** `Pracownik` ma zamiar wprowadzić nowe zadanie do systemu
+
+**Główny scenariusz powodzenia:** 
+
+1. `Pracownik` wprowadza dokument do systemu
+2. System wyświetla informacje o poprawnym zapisie danych
+
+**Scenariusze alternatywne:**
+1. System wyświelta informacje o błędzie podczas próby zapisu
+
 **Uczestnicy i interesy:**
 
 _Pracownik_ - wprowadza dokumenty, zadania, ogłoszenia do systemu
@@ -2544,6 +2626,17 @@ _Pracownik_ - wprowadza dokumenty, zadania, ogłoszenia do systemu
 **Poziom:** Organizacja w firmie
 
 **Aktor główny:** Właściciel
+
+**Warunek początkowy:** `Właściciel` poprawnie zalogowany do systemu
+
+**Zdarzenie inicjujące:** `Właściciel` ma zamiar odczytać prognozy zapotrzebowania czasowego na produkty
+
+**Główny scenariusz powodzenia:** 
+
+1. `Właściciel` otwiera raport z prognozą zapotrzebowania czasowego na produkty
+
+**Scenariusze alternatywne:**
+1. Nieudana próba otworzenia raportu
 
 **Uczestnicy i interesy:**
 
@@ -2567,6 +2660,17 @@ _Dostawca_ - od niego firma zamawia produkty
 
 **Aktor główny:** Właściciel
 
+**Warunek początkowy:** `Właściciel` poprawnie zalogowany do systemu
+
+**Zdarzenie inicjujące:** `Właściciel` ma zamiar odczytać prognozy zapotrzebowania ilościowego na produkty
+
+**Główny scenariusz powodzenia:** 
+
+1. `Właściciel` otwiera raport z prognozą zapotrzebowania ilościowego na produkty
+
+**Scenariusze alternatywne:**
+1. Nieudana próba otworzenia raportu
+
 **Uczestnicy i interesy:**
 
 _Właściciel_ - odczytuje i ma możliwość analizy prognoz ilościowych zamówień
@@ -2586,6 +2690,20 @@ _Właściciel_ - odczytuje i ma możliwość analizy prognoz ilościowych zamów
 **Poziom:** Organizacja w firmie
 
 **Aktor główny:** Właściciel
+
+**Warunek początkowy:** `Właściciel` i `Pracownik` poprawnie zalogowany do systemu
+
+**Zdarzenie inicjujące:** `Właściciel` wprowadza nowe zadanie dla pracowników
+
+**Główny scenariusz powodzenia:** 
+
+1. `Właściciel` wprowadza nowe zadanie dla konkretnego pracownika
+2. `Właściciel` zatwierdza wprowadzone zadania i klika przycisk "udostępnij"
+2. Dany `Pracownik` widzi nowe zadanie zlecone mu przez `Właściciela`
+
+**Scenariusze alternatywne:**
+1. Nieudana próba zapisu i udostępnienia zadania
+2. Nowo wprowadzone zadanie nie widoczne dla konkretnego pracownika
 
 **Uczestnicy i interesy:**
 
