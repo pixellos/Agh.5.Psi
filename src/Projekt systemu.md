@@ -1409,9 +1409,20 @@ Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 **Główny scenariusz powodzenia:**
 
 1. `Konsultant` przechodzi na stronę 'Finalizacja oferty' znajdującej się wewnątrz oferty
-2. `Konsultant` nie ma możliwości wygenerowania dokumentu, przycisk jest zablokowany z informacją o potrzebie wcześniejsz
+2. `Konsultant` nie ma możliwości wygenerowania dokumentu, przycisk jest zablokowany z informacją o potrzebie wcześniejszego potwierdzenia od `zatwierdzającego oferte` 
+3. `Konsultant` klika przycisk 'Powiadam o potrzebie zatwierdzenia oferty'
+4. System wysyła drogą e-mail informację o potrzebie zatwierdzenia oferty
+5. `Zatwierdzający oferte` po zalogowaniu się, wyszukuje oferte oraz podejmuje decyzje w sprawie zatwierdzenia
+6. `Zatwierdzający oferte` zatwierdza oferte klikając przycisk 'Zatwierdź', `konsultant` jest powiadomiony drogą e-mail o zatwierdzeniu oferty
 
 **Scenariusze alternatywne:**
+
+1. Konsultant` przechodzi na stronę 'Finalizacja oferty' znajdującej się wewnątrz oferty
+2. `Konsultant` nie ma możliwości wygenerowania dokumentu, przycisk jest zablokowany z informacją o potrzebie wcześniejszego potwierdzenia od `zatwierdzającego oferte` 
+3. `Konsultant` klika przycisk 'Powiadam o potrzebie zatwierdzenia oferty'
+4. System wysyła drogą e-mail informację o potrzebie zatwierdzenia oferty
+5. `Zatwierdzający oferte` po zalogowaniu się, wyszukuje oferte oraz podejmuje decyzje w sprawie zatwierdzenia
+6. `Zatwierdzający oferte` wypełnie pole tekstowe w celu podania przyczyny braku zatwierdzenia oferty, oraz anuluje daną oferte klikając przycisk 'Anuluj'
 
 **Aktor główny:** Konsultant
 
