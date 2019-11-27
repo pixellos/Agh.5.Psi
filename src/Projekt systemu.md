@@ -2722,9 +2722,7 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 <div class="page">
 
-# Załącznik A: Słownik pojęć dziedzinowych:
 
-<div class="page">
 
 ## 2.7 Wymagania niefunkcjonalne – omówienie 
 
@@ -2771,6 +2769,9 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 
 
 
+# Załącznik A: Słownik pojęć dziedzinowych:
+
+<div class="page">
 
 ## A
 
