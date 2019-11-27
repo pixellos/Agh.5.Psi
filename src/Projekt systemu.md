@@ -107,7 +107,7 @@ Komunikacja odbywa się przez email. Wysyłają zapytania z listą interesujący
 
 Niektórzy kliencie potrzebują pomocy w dobraniu produktów, konfiguracji zestawu produktów.
 
-Integratorzy kupują produkty od firmy, lub zajmują się samym montażem, gdy fabryka dokona zakupu. Są to firmy zewnętrzne niepowiązane.
+Integratorzy kupują produkty od firmy, lub zajmują się samym montażem, gdy klient dokona zakupu. Są to firmy zewnętrzne niepowiązane.
 
 Firma współpracuje z dostawcami, którymi są międzynarodowe fabryki.
 
@@ -212,9 +212,6 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
       Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
 
-   3. Rejestrowanie fabryki w systemie
-
-      Jako `Konsultant` potrzebuję `dodać fabrykę`, ponieważ istniejąca nie była wcześniej wprowadzona do systemu.
 
 2. Prowadzenie katalogu i cennika towarów
 
@@ -575,13 +572,7 @@ W systemie możemy wyróżnić następujących aktorów
    1. Wystawione faktury na firmę dostawcy 
    1. Kraj pochodzenia
    1. Łączna kwota zamówień
-   1. `Fabryki dostawcy` 
 
-1. Fabryka dostawcy
-
-   1. Adres
-   1. Kody produktów obsługiwanych przez tą fabrykę
-   1. Dostawca
 
 1. Oferta
 
@@ -717,10 +708,8 @@ actor Konsultant
 actor Dostawca
 actor Klient
 rectangle "Aktualizacja danych dostawcy" {
-    (Korygowanie danych dostawcy) ..  (Dodanie fabryki do dostawcy)
     (Rejestrowanie dostawcy) .> (Korygowanie danych dostawcy) : include
     Konsultant -- (Rejestrowanie dostawcy)
-    Konsultant -- (Rejestrowanie fabryki w systemie)
     Konsultant -- (Korygowanie danych dostawcy)
     (Korygowanie danych dostawcy) -- Dostawca
     (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
@@ -807,46 +796,6 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
 _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
-
----
-
-**Numer i Nazwa przypadku użycia:** 1.1.1.3 - Rejestrowanie fabryki w systemie
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Dodanie fabryki do systemu i podłączenie jej do dostawcy
-
-**Kontekst użycia:** ​Gdy system będzie wdrażany `Konsultant` musi mieć możliwość dodania `Fabryki` do systemu, która już istnieje w obecnych dokumentach firmy. Każda fabryka jest przypisana do jednego z dostawców, ale może być przypisana do wielu w przypadku, gdy jest podwykonawcą każdego z nich. (Przykład `GlobalFoundries` produkujący chipy dla `AMD` i dla `Samsung`)
-
-**Zakres:** Gdy dane fabryki, jak nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione.
-
-**Poziom:** Przetwarzanie danych dostawców
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Fabryki nie ma w systemie
-
-**Zdarzenie inicjujące:** Wprowadzamy do systemu fabrykę
-
-**Główny scenariusz powodzenia:** 
-
-1. System wyświetla formularz dodania fabryki do systemu
-2. `Konsultant` wpisuje dane
-3. System weryfikuje dane
-4. `Fabryka` zostaje zapisana
-
-**Scenariusze alternatywne:**
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
-
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
-
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
@@ -1339,7 +1288,7 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 **Uczestnicy i interesy:**
 
-Konsultant - sprawdzenie dostepności produktu w fabryce i na magazynie
+Konsultant - sprawdzenie dostepności produktu na magazynie i u dostawcy
 
 ---
 
@@ -1397,7 +1346,7 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 **Uczestnicy i interesy:**
 
-Konsultant - sprawdza w systemie dostępność produktów w fabryce
+Konsultant - sprawdza w systemie dostępność produktów u dostawcy 
 
 ---
 
@@ -1503,7 +1452,7 @@ Klient - otrzymuje oferte od konsultanta
 
 **Cel przypadku użycia:** Klient podjął decyzję w kontekście danej oferty
 
-**Kontekst użycia:** `Klient` podjął decyzję dotyczącą przedstawionej mu oferty. `Klient` przekazuję decyzję `konsultantowi`, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty `konsultant` składa zamówienie w fabryce na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.
+**Kontekst użycia:** `Klient` podjął decyzję dotyczącą przedstawionej mu oferty. `Klient` przekazuję decyzję `konsultantowi`, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty `konsultant` składa zamówienie u dostawcy na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.
 
 **Zakres:** Proces ofertowy
 
@@ -2780,7 +2729,6 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 
 ## F
 
-- Fabryka - Zakład, z którego następuje wysyłka towarów do nas, lub bezpośrenio do klienta
 - Faktura – dokument sprzedaży potwierdzający zaistniałą transakcję pośredniczących ze sobą stron
 
 
