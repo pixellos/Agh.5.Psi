@@ -2763,11 +2763,11 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 
 - **Zużycie pamięci**
     - **Cecha:** System nie powinien zużywać ilości pamięci przekraczającej typowy sprzęt biurowy (4 GB)
-    - **Miary:** Zużycie pamięci będzie monitorowane 
+    - **Miary:** Zużycie pamięci będzie monitorowane (GB)
     
 - **Zużycie rdzeni procesora**
     - **Cecha:** System nie powinien zużywać więcej rdzeni procesora, niż w typowym sprzęcie biurowym (4)
-    - **Miary:** Zużycie rdzeni procesora będzie monitorowane
+    - **Miary:** Zużycie rdzeni procesora będzie monitorowane (GB)
 
 
 
