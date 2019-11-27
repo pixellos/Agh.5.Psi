@@ -2465,6 +2465,7 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
+
 ---
 
 **Numer i nazwa przypadku uzycia:** 1.7.1.3 - Usuwanie informacji i danych wrażliwych o klientach
@@ -2722,6 +2723,53 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 <div class="page">
 
 # Załącznik A: Słownik pojęć dziedzinowych:
+
+<div class="page">
+
+## 2.7 Wymagania niefunkcjonalne – omówienie 
+
+Wymagania niefunkcjonalne dotyczą systemu jako całości - określimy w tym punkcie cechy, które muszą być spełnione w naszym systemie, aby zagwarantować jego jakość.
+
+<div class="page">
+
+### 2.7.1 Wymagania Produktowe
+
+Wymagania produktu w odniesieniu do jego sposobu działania.
+
+#### 2.7.1.1 Użyteczności
+
+- **Skróty klawiszowe**
+    - **Cecha:** System posiada skróty klawiszowe do ważnych akcji
+    - **Miary:** Ilość akcji w systemie dostępnych za pomocą kombinacji klawiszowych
+
+- **Klarowność**
+    - **Cecha:** System jasno sygnalizuje zmiany
+    - **Miary:** Ilość akcji w systemie, które sygnalizują zmianę statusu notyfikacjami
+
+
+#### 2.7.1.2 Sprawnościowe
+
+<!-- Efektywności  -->
+- **Szybkość działania**
+    - **Cecha:** Użytkownik nie musi czekać długo na odpowiedź systemu
+    - **Miary:** 
+        - Czas po każdej interakcji użytkownika będzie mierzony w sekundach `s`
+        - Czas oczekiwania na system podczas pojedyńczego procesu będzie mierzony w sekundach `s`
+    
+
+- **Responsywność systemu**
+    - **Cecha:** Nawet, gdy system jest zajęty operacją, powinien sygnalizować przetwarzanie danych indykatorem
+    - **Miary:** Ilość akcji w systemie, które sprawiają, że sprawia wrażenie zawieszonego (musi być jak najmniejsza)
+
+- **Zużycie pamięci**
+    - **Cecha:** System nie powinien zużywać ilości pamięci przekraczającej typowy sprzęt biurowy (4 GB)
+    - **Miary:** Zużycie pamięci będzie monitorowane 
+    
+- **Zużycie rdzeni procesora**
+    - **Cecha:** System nie powinien zużywać więcej rdzeni procesora, niż w typowym sprzęcie biurowym (4)
+    - **Miary:** Zużycie rdzeni procesora będzie monitorowane
+
+
 
 
 ## A
