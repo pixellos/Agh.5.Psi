@@ -764,7 +764,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.1.1.2 - Modyfikowanie danych dostawcy
+**Numer i Nazwa przypadku użycia:** UC-1.3 - Modyfikowanie danych dostawcy
 
 **Autor:** Mateusz Popielarz
 
@@ -799,7 +799,7 @@ _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zakla
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.1.2.1 - Dodawanie nowych pozycji katalogów towarów
+**Numer i Nazwa przypadku użycia:** UC-1.3 - Dodawanie nowych pozycji katalogów towarów
 
 **Autor:** Mateusz Popielarz
 
@@ -2673,9 +2673,9 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 ## 2.6 Wymagania funkcjonalne dla dodatkowych części systemu
 
-### 2.6.1 Zarejestrowania faktu dodania dostawcy do systemu
+### 2.6.1 Zarejestrowanie faktu dodania dostawcy do systemu
 
-**Przypadek użycia:** UC-1
+**Przypadek użycia:** UC-1.1
 
 **Nazwa funkcji:** WF.1 - Dodaj dostawcę
 
@@ -2687,15 +2687,177 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 **Przeznaczenie:** Dostawca jest utrwalany w rejestrze systemu
 
-**Wymaga:** Nie istniejącego dostawcy
+**Wymaga:** Nie istniejącego dostawcy w systemie
 
-**Warunek początkowy:** Kliknięcie przycisku `Dodaj dostawcę` 
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Dodaj dostawcę` 
+    - Wprowadzenie skrótu Ctrl+A (Add), Ctrl+D (Dostawca)
 
 **Warunek końcowy:** Stan rejestru z wyjątkiem rejestru dostawców nie ulega zmianie
 
 **Efekty uboczne:** - 
 
 **Uwagi:** -
+
+### 2.6.2 Zmienienie rejestru dostawcy
+
+**Przypadek użycia:** UC-1.2
+
+**Nazwa funkcji:** WF.2 - Zmień dostawcę
+
+**Opis:** Funkcja systemu służąca do zmienienia danych dostawcy.
+
+**Dane wejściowe:** Załącznik B - 1.Dane_dostawcy, wybór dostawcy do zmiany poprzez wybranie wpisu w systemie 
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Dostawca jest utrwalany w rejestrze systemu
+
+**Wymaga:** Istniejącego dostawcy w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie danego `dostawcy` dwukrotnie
+    - Kliknięcie danego `dostawcy` jednokrotnie i skrótu Ctrl+E
+
+**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru dostawców nie ulega zmianie
+
+**Efekty uboczne:** Aktualizacja niewysłanych faktur
+
+**Uwagi:** -
+
+### 2.6.3 Dodanie towaru
+
+**Przypadek użycia:** UC-1.3
+
+**Nazwa funkcji:** WF.3 - Dodaj towar
+
+**Opis:** Funkcja systemu służąca do dodania towaru do rejestru towarów
+
+**Dane wejściowe:** Załącznik B - 3.Wpis_towaru_w_katalogu
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Towar jest utrwalany w rejestrze systemu
+
+**Wymaga:** Nie istnienie danego towaru w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Dodaj towar` 
+    - Wprowadzenie skrótu Ctrl+A (Add), Ctrl+T (Towar)
+
+**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
+
+**Efekty uboczne:** Aktualizacja niewysłanych faktur
+
+**Uwagi:** -
+
+### 2.6.4 Zmiana towaru
+
+**Przypadek użycia:** UC-1.3
+
+**Nazwa funkcji:** WF.4 - Zmień towar
+
+**Opis:** Funkcja systemu służąca do zmieniania danych towaru
+
+**Dane wejściowe:** Załącznik B - 3.Wpis_towaru_w_katalogu
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Towar jest utrwalany w rejestrze systemu
+
+**Wymaga:** Obecności danego towaru w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie danego `towaru` dwukrotnie
+    - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+E
+
+**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
+
+**Efekty uboczne:** Aktualizacja niewysłanych faktur
+
+**Uwagi:** -
+
+
+### 2.6.5 Dezaktywacja towaru
+
+**Przypadek użycia:** UC-1.4
+
+**Nazwa funkcji:** WF.5 - Aktualizuje status dostępności towaru
+
+**Opis:** Funkcja systemu służąca do zmieniania statusu dostępności towaru
+
+**Dane wejściowe:** Załącznik B - 4.Wpis_dotyczący_ceny_towaru i wypełnienie pól `Cena` na `-`
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Zmiana aktualizacji statusu dostępności towaru
+
+**Wymaga:** Nie istnienie danego towaru w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie danego `towaru` dwukrotnie
+    - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+E
+
+**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
+
+**Efekty uboczne:** Aktualizacja niewysłanych faktur
+
+**Uwagi:** -
+
+
+### 2.6.6 Ustalenie progu cenowego towaru
+
+**Przypadek użycia:** UC-1.5
+
+**Nazwa funkcji:** WF.6 - Aktualizuje próg cenowy towaru
+
+**Opis:** Funkcja systemu służąca do zmieniania statusu dostępności towaru
+
+**Dane wejściowe:** Załącznik B - 4.Wpis_dotyczący_ceny_towaru i wypełnienie pól `Cena` kwotą
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Aktualizacja progu cenowego towaru
+
+**Wymaga:** Istnienie danego towaru w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `próg cenowy`
+    - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+Shift+C
+
+**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
+
+**Efekty uboczne:** Aktualizacja niewysłanych faktur
+
+**Uwagi:** -
+
+
+### 2.6.6 Generowanie cennika
+
+**Przypadek użycia:** UC-1.5
+
+**Nazwa funkcji:** WF.7 - Generowanie cennika
+
+**Opis:** Funkcja systemu służąca do wygenerowania cennika w celu zaprezentowania klientowi 
+
+**Dane wejściowe:** Okres obejmujący zapytanie ofertowe, Klient
+
+**Dane wyjściowe:** Cennik
+
+**Przeznaczenie:** Wyprowadzenie z systemu aktualnego cennika
+
+**Wymaga:** 
+    - Istnienie dostawcy w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie danego `dostawcy` jednokrotnie i wybranie przycisku `cennik`
+    - Kliknięcie danego `dostawcy` i wciśnięcie kombinacji Ctrl+Shift+C
+
+**Warunek końcowy:** Poprawny cennik zostaje wygenerowany
+
+**Efekty uboczne:** Aktualizacja wpisu `dostawcy` o wygenerowany cennik
+
+**Uwagi:** Cennik jest w formie cyfrowej, ale może zostać wydrukowany, lub przesłany faxem
 
 
 
