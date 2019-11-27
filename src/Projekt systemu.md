@@ -1766,12 +1766,23 @@ rectangle "Obsługa magazynu" {
     Magazynier -- (Przyjęcie towaru)
     Magazynier -- (Kontrola stanu przesyłki)
     Magazynier -- (Przygotowanie towaru do składowania)
-	Dostawca -- Magazynier
+	Magazynier -- (Sprawdzenie stanu)
+    Magazynier -- (Kontrola wartości towaru)
+	Magazynier -- (Grupowanie towaru)
+    Magazynier -- (Przypisywanie numeru seryjnego)
+    Magazynier -- (Przypisywanie numeru partii)
+    Magazynier -- (Przypisywanie kodów EAN)
+	Magazynier -- (Powiazanie towaru z dostawcą i nabywcą)
+	Magazynier -- (Tworzenie prognoz popytu)
+	Magazynier -- (Wystawienie dokumentów)
+	Magazynier -- (Tworzenie zamówienia dostaw)
+	
+Dostawca -- Magazynier
 }
 @enduml
 ```
 
-##### _Rysunek 18. Diagram przypadków użycia obsługi Rozładunek oraz załadunek_
+##### _Rysunek 18. Diagram przypadków użycia obsługi Obsługa magazynu_
 
 **Numer i Nazwa przypadku użycia:** 1.4.1.1 - Weryfikacja dokumentacji
 
@@ -1779,13 +1790,28 @@ rectangle "Obsługa magazynu" {
 
 **Cel przypadku użycia:** Weryfikacja dokumentacji
 
-**Kontekst użycia:** ​Gdy towar bedzie gotowy do rozładunku/załadunku Jako magazynier chce mieć możliwość weryfikacji dokumentacji aby procesować towar zgodnie z procedurami i przepisami
+**Kontekst użycia:** Gdy towar bedzie gotowy do rozładunku/załadunku Jako magazynier chce mieć możliwość weryfikacji dokumentacji aby procesować towar zgodnie z procedurami i przepisami
 
-**Zakres:** Rozładunek oraz załadunek
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Weryfikacja dokumentacji
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Dokumentacja nie jest zweryfikowana
+
+**Zdarzenie inicjujące:** Dostawca przekazuje towar do magazynu
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` odbiera dokumentacje
+2. `Magazynier` werfikuje dokumentacje
+3. `Magazynier` procesuje towar zgodnie z procedurami zawartymi w dokumentacji
+
+
+**Scenariusze alternatywne: **
+1. Bledna dokumentacja
+2. Odmowa przyjecia towaru przez 'Magazyniera'
 
 **Uczestnicy i interesy:**
 
@@ -1801,13 +1827,27 @@ _Dostawca_ - Inicjuje proces
 
 **Cel przypadku użycia:** Rozładunek
 
-**Kontekst użycia:** ​Gdy dostawa bedzie gotowa do rozładunku Jako magazynier chce mieć możliwość rozładunku przesyłki aby zapełnić magazyn produktami.
+**Kontekst użycia:** Gdy dostawa bedzie gotowa do rozładunku Jako magazynier chce mieć możliwość rozładunku przesyłki aby zapełnić magazyn produktami.
 
-**Zakres:** Rozładunek oraz załadunek
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Rozładunek
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Dostawa jest gotowa do rozladunku
+
+**Zdarzenie inicjujące:** `Dostawca` przekazuje towar do magazynu
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` odbiera towar od `Dostawcy`
+2. `Magazynier` dokonuje rozladunku towaru na magazyn
+
+**Scenariusze alternatywne: **
+1. `Magazynier` odmawia rozladunku towaru w przypadku decyzji o nieprzyjeciu towaru
+2. `Dostawca` odsyla towar do nadawcy
+
 
 **Uczestnicy i interesy:**
 
@@ -1823,13 +1863,31 @@ _Dostawca_ - Inicjuje proces
 
 **Cel przypadku użycia:** Przyjęcie towaru
 
-**Kontekst użycia:** ​Gdy dostawa bedzie gotowa do odbioru, Jako magazynier chce mieć możliwość przyjęcia towaru i kontroli stanu przesyłki magazynu aby przekazać go do dalszego procesowania - rozładunku
+**Kontekst użycia:** Gdy dostawa bedzie gotowa do odbioru, Jako magazynier chce mieć możliwość przyjęcia towaru i kontroli stanu przesyłki magazynu aby przekazać go do dalszego procesowania - rozładunku
 
-**Zakres:** Rozładunek oraz załadunek
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Przyjęcie towaru
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Towar jest gotowy do przyjecia
+
+**Zdarzenie inicjujące:** `Dostawca` przekazuje towar do magazynu
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` przyjmuje towar od dostawcy
+2. `Magazynier` przystepuje do kolejnego etapu rozladunku
+
+
+**Scenariusze alternatywne: **
+1. `Magazynier` odmawia przyjecia w przypadku braku otrzymanej dokumentacji
+2. `Dostawca` odsyla towar do nadawcy
+
+1. `Magazynier` odmawia przyjecia w przypadku wadliwego towaru
+2. `Dostawca` odsyla towar do nadawcy
+
 
 **Uczestnicy i interesy:**
 
@@ -1845,13 +1903,28 @@ _Dostawca_ - Inicjuje proces
 
 **Cel przypadku użycia:** Kontrola stanu przesyłki
 
-**Kontekst użycia:** ​Gdy przesyłka bedzie gotowa, Jako magazynier chce mieć możliwość kontroli stanu przesyłki aby przekazać ją do dalszego procesowania - wysyłki
+**Kontekst użycia:** Gdy przesyłka bedzie gotowa, Jako magazynier chce mieć możliwość kontroli stanu przesyłki aby przekazać ją do dalszego procesowania - wysyłki
 
-**Zakres:** Rozładunek oraz załadunek
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Kontrola przesyłki
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Produkt gotowy do wysylki
+
+**Zdarzenie inicjujące:** Zamowienie produktu (przez klienta)
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` poddaje przesylke kontroli
+2. Przesylka przechodzi walidacje
+3. `Magazynier` przystepuje do nastepnego etapu - wysylki
+
+**Scenariusze alternatywne: **
+1. Przesylka nie przechodzi walidacji ze wzgledu na ilosc lub jakosc produktu
+2. `Magazynier` produkt zostaje wymieniony na walidny, zgodny z zamowieniem
+
 
 **Uczestnicy i interesy:**
 
@@ -1865,51 +1938,29 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Przygotowanie towaru do składowania
 
-**Kontekst użycia:** ​Gdy produkt bedzie gotowy, Jako magazynier chce mieć możliwość przygotowania towaru do składowania aby umożliwić szybką wysyłkę w przypadku zamówienia.
+**Kontekst użycia:** Gdy produkt bedzie gotowy, Jako magazynier chce mieć możliwość przygotowania towaru do składowania aby umożliwić szybką wysyłkę w przypadku zamówienia.
 
-**Zakres:** Rozładunek oraz załadunek
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Przygotowanie towaru
 
 **Aktor główny:** Magazynier
 
-**Uczestnicy i interesy:**
+**Warunek początkowy:** Towar nie jest przygotowany do skladowania
 
-_Magazynier_ - Jest to w jego zakresie obowiązków
+**Zdarzenie inicjujące:** Produkt gotowy
 
----
+**Główny scenariusz powodzenia:**
 
-```plantuml X.X.X
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "Czynności monitorujące" {
-    Magazynier -- (Zarejestrowanie towaru)
-    Magazynier -- (Tworzenie zamówienia dostaw)
-	Magazynier -- (Wystawienie dokumentów)
-    Magazynier -- (Powiazanie towaru z dostawcą i nabywcą)
-    Magazynier -- (Kontrola stanu przesyłki)
-    Magazynier -- (Wyrejestrowanie towaru)
-}
-@enduml
-```
+1. Produkt gotowy
+2. `Magazynier` skladuje produkt
 
-##### _Rysunek 19. Diagram przypadków użycia obsługi Czynności monitorujące_
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.1 - Zarejestrowanie towaru
 
-**Autor:** Kamil Gliński
+**Scenariusze alternatywne: **
+1. Produkt nie jest gotowy do skladowania
+1. `Magazynier` nie jest wstanie skladowac produktu (brak infrastruktury przeladunkowej)
 
-**Cel przypadku użycia:** Zarejestrowanie towaru
-
-**Kontekst użycia:** ​Gdy dostawa zostanie odebrana, Jako magazynier chce mieć możliwość zarejestrowania towaru aby udostępnić oraz uaktualnić informacje o dostępności towaru
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Odbiór dostawy
-
-**Aktor główny:** Magazynier
 
 **Uczestnicy i interesy:**
 
@@ -1917,103 +1968,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.2 - Tworzenie zamówienia dostaw
 
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Tworzenie zamówienia dostaw
-
-**Kontekst użycia:** ​W razie zapotrzebowania na produkty, Jako magazynier chce mieć możliwość tworzyć zamówienia dostaw aby zapewnić wymagane dokumenty dotyczące dostaw.
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Tworzenie zamówienia dostaw
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** 1.4.2.3 - Wystawienie dokumentów
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Wystawienie dokumentów
-
-**Kontekst użycia:** Przy każdej czynności wymagającej udokumentowania, Jako magazynier chce mieć możliwość wystawiania dokumentów aby zapenić wymagane dokumenty w procedurze.
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Wystawienie dokumentów
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** 1.4.2.4 - Powiazanie towaru z dostawcą i nabywcą
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Powiazanie towaru z dostawcą i nabywcą
-
-**Kontekst użycia:** ​Gdy towar będzie gotowy do wysłania, Jako magazynier chce mieć możliwość powiązania towaru z dostawcą i nabywcą aby dostarczyć przesyłkę pod odpowiednią lokalizację.
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Powiazanie towaru z dostawcą i nabywcą
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Wyrejstrowanie towaru
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Wyrejstrowanie towaru
-
-**Kontekst użycia:** ​Gdy towar został wysłany, Jako magazynier chce mieć możliwość wyrejestrowania towaru z magazynu aby uaktualnić informacje o dostępności towaru
-
-**Zakres:** Czynności monitorujące
-
-**Poziom:** Wyrejstrowanie towaru
-
-**Aktor główny:** Magazynier
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-#### 2.1.2.5 Kontrola stanów magazynowych
-
-```plantuml X.X.X
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "Kontrola stanów magazynowych" {
-    Magazynier -- (Sprawdzenie stanu)
-    Magazynier -- (Informowanie o danych poziomach stanu)
-    Magazynier -- (Kontrola wartości towaru)
-    Magazynier -- (Kontrola sprzedaży online)
-}
-@enduml
-```
-
-##### _Rysunek 20. Diagram przypadków użycia obsługi Kontrolowanie_
 
 **Numer i Nazwa przypadku użycia:** 1.5.1.1 - Sprawdzenie stanu
 
@@ -2021,33 +1976,27 @@ rectangle "Kontrola stanów magazynowych" {
 
 **Cel przypadku użycia:** Sprawdzenie stanu
 
-**Kontekst użycia:** ​Gdy towar jest składowany na magazynie, Jako magazynier chce mieć możliwość sprawdzenia stanu magazynu aby okreslić ilość dostępnych produktów.
+**Kontekst użycia:** Gdy towar jest składowany na magazynie, Jako magazynier chce mieć możliwość sprawdzenia stanu magazynu aby okreslić ilość dostępnych produktów.
 
-**Zakres:** Kontrolowanie
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Sprawdzenie stanu
 
 **Aktor główny:** Magazynier
 
-**Uczestnicy i interesy:**
+**Warunek początkowy:** Nieokreslony stan magazynu
 
-_Magazynier_ - Jest to w jego zakresie obowiązków
+**Zdarzenie inicjujące:** Potrzeba dokladnego okreslenia ilosci produktow
 
----
+**Główny scenariusz powodzenia:**
 
-**Numer i Nazwa przypadku użycia:** 1.5.1.2 - Informowanie o danych poziomach stanu
+1. `Magazynier` sprawdza stan magazynu
+2. `Magazynier` wprowadza dane odnosnie magazynu do systemu
 
-**Autor:** Kamil Gliński
 
-**Cel przypadku użycia:** Informowanie o danych poziomach stanu
+**Scenariusze alternatywne: **
+1. Brak produktow na magazynie
 
-**Kontekst użycia:** ​Gdy towar jest składowany na magazynie, ​Jako magazynier chce mieć możliwość informowania o danych poziomach stanu magazynu aby uzupełniać go na bieżąco produktami
-
-**Zakres:** Kontrolowanie
-
-**Poziom:** Informowanie o danych poziomach stanu
-
-**Aktor główny:** Magazynier
 
 **Uczestnicy i interesy:**
 
@@ -2061,33 +2010,28 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Kontrola wartości towaru
 
-**Kontekst użycia:** ​Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartosci towaru aby wysyłany towar byl zawsze zgodny z umową
+**Kontekst użycia:** Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartosci towaru aby wysyłany towar byl zawsze zgodny z umową
 
-**Zakres:** Kontrolowanie
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Kontrola wartości towaru
 
 **Aktor główny:** Magazynier
 
-**Uczestnicy i interesy:**
+**Warunek początkowy:** Potrzeba skontrolowania wartosci przesylki
 
-_Magazynier_ - Jest to w jego zakresie obowiązków
+**Zdarzenie inicjujące:** Zamowienie produktu
 
----
+**Główny scenariusz powodzenia:**
 
-**Numer i Nazwa przypadku użycia:** 1.5.1.4 - Kontrola sprzedaży online
+1. `Magazynier` poddaje przesylke kontroli wartosci
+2. `Magazynier` przystepuje do kolejnego etapu - wysylki
 
-**Autor:** Kamil Gliński
 
-**Cel przypadku użycia:** Kontrola sprzedaży online
+**Scenariusze alternatywne: **
+1. Wartosc przesylki niezgodna z warunkami umowy
+2. Korekta produktow zawartych w przesylce
 
-**Kontekst użycia:** ​Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania sprzedaży online aby wysyłany towar byl zawsze adekwatny do ceny
-
-**Zakres:** Kontrolowanie
-
-**Poziom:** Kontrola sprzedaży online
-
-**Aktor główny:** Magazynier
 
 **Uczestnicy i interesy:**
 
@@ -2095,21 +2039,6 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-```plantuml X.X.X
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "Kategoryzowanie" {
-    Magazynier -- (Grupowanie towaru)
-    Magazynier -- (Przypisywanie numeru seryjnego)
-    Magazynier -- (Przypisywanie numeru partii)
-    Magazynier -- (Przypisywanie kodów EAN)
-}
-@enduml
-```
-
-##### _Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie_
 
 **Numer i Nazwa przypadku użycia:** 1.5.2.1 - Grupowanie towaru
 
@@ -2117,13 +2046,26 @@ rectangle "Kategoryzowanie" {
 
 **Cel przypadku użycia:** Grupowanie towaru
 
-**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość grupowania towaru aby zminimalizować czas wyszukiwania
+**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość grupowania towaru aby zminimalizować czas wyszukiwania
 
-**Zakres:** Kategoryzowanie
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Grupowanie towaru
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Towar nie jest pogrupowany
+
+**Zdarzenie inicjujące:** Rozladunek
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` dokonuje grupowania rozladowanego towar
+
+**Scenariusze alternatywne: **
+1. Brak kryteriow grupowania
+1. Brak towaru w magazynie
+
 
 **Uczestnicy i interesy:**
 
@@ -2137,13 +2079,27 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Przypisywanie numeru seryjnego
 
-**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania unikalnego numeru seryjnego produktom aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
+**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania unikalnego numeru seryjnego produktom aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
 
-**Zakres:** Kategoryzowanie
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Przypisywanie numeru seryjnego
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Potrzeba unikalnego rozroznienia produktu
+
+**Zdarzenie inicjujące:** Rozladunek towaru na magazynie
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` nadaje unikalny numer produktu
+
+
+**Scenariusze alternatywne: **
+1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
+
+
 
 **Uczestnicy i interesy:**
 
@@ -2157,13 +2113,26 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Przypisywanie numeru partii
 
-**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania numeru partii aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
+**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania numeru partii aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
 
-**Zakres:** Kategoryzowanie
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Przypisywanie numeru partii
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Potrzeba unikalnego rozroznienia produktu
+
+**Zdarzenie inicjujące:** Rozladunek towaru na magazynie
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` nadaje unikalny numer produktu
+
+
+**Scenariusze alternatywne: **
+1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
+
 
 **Uczestnicy i interesy:**
 
@@ -2177,13 +2146,127 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Przypisywanie kodów EAN
 
-**Kontekst użycia:** ​Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania kodów EAN aby umożliwić wysyłkę produktu po całej Europie
+**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania kodów EAN aby umożliwić wysyłkę produktu po całej Europie
 
-**Zakres:** Kategoryzowanie
+**Zakres:** Obsługa magazynu
 
 **Poziom:** Przypisywanie kodów EAN
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Potrzeba wyslania produktu do innego kraju w Europie
+
+**Zdarzenie inicjujące:** Zamowienie produktu za granice (Europa)
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` nadaje kod EAN
+2. `Magazynier` procesuje towar do nastepnego etapu - wysylki
+
+
+**Scenariusze alternatywne: **
+1. Brak potrzeby wyslki produktu za granice (Europa)
+
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
+---
+
+
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.4 - Powiazanie towaru z dostawcą i nabywcą
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Powiazanie towaru z dostawcą i nabywcą
+
+**Kontekst użycia:** Gdy towar będzie gotowy do wysłania, Jako magazynier chce mieć możliwość powiązania towaru z dostawcą i nabywcą aby dostarczyć przesyłkę pod odpowiednią lokalizację.
+
+**Zakres:** Obsługa magazynu
+
+**Poziom:** Powiazanie towaru z dostawcą i nabywcą
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Towar nie jest powiazany z dostawcą oraz nabywcą
+**Zdarzenie inicjujące:** Zamówienie produktów
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` tworzy powiązanie miedzy dostawcą i nabywcą
+2. `Magazynier` procesuje towar do dalszego etapu - wysyłki
+
+**Scenariusze alternatywne: **
+0. Brak
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
+---
+
+
+**Numer i Nazwa przypadku użycia:** 1.5.3.1 - Tworzenie prognoz popytu
+
+Autor: Kamil Gliński
+
+**Cel przypadku użycia:** Tworzenie prognoz popytu
+
+**Kontekst użycia:** W sytuacji gdy chcemy osiągnąć optymalny czas prac na magazynie potrzebujemy stworzyc prognozy popytu, Jako magazynier chce mieć możliwość tworzenia prognoz popytu aby utrzymać kluczowe produkty na stanie
+
+**Zakres:** Prognozowanie popytu
+
+**Poziom:** Tworzenie prognoz popytu
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Zapotrzebowanie na produkty nie jest okreslone
+
+**Zdarzenie inicjujące:** Duza ilosc zamowien w danym okresie czasu
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` tworzy analize, na podstawie analizy okresla zapotrzebowanie na produkty
+2. `Magazynier` dzieli sie zapotrzebowaniem z innymi pracownikami uzywajac systemu
+
+**Scenariusze alternatywne: **
+1. brak zapotrzebowania na produkty - `Magazynier` nie jest w stanie stworzyc analizy zapotrzebowania
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
+---
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.3 - Wystawienie dokumentów (PZ WZ MM PW RW)
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Wystawienie dokumentów (PZ WZ MM PW RW)
+
+**Kontekst użycia:** Przy każdej czynności wymagającej udokumentowania, Jako magazynier chce mieć możliwość wystawiania dokumentów aby zapenić wymagane dokumenty w procedurze.
+
+**Zakres:** Obsługa Magazynu
+
+**Poziom:** Wystawienie dokumentów (PZ WZ MM PW RW)
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Dokumenty nie zostaly wystawione
+
+**Zdarzenie inicjujące:** Dowolne przesuniecie towaru wewnatrz lub na zewnatrz magazynu
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` dokonuje przesuniecia towaru
+2. `Magazynier` wystawia niezbedne dokumenty
+
+
+**Scenariusze alternatywne: **
+ 0. -
+
 
 **Uczestnicy i interesy:**
 
@@ -2196,27 +2279,46 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 left to right direction
 skinparam packageStyle rectangle
 actor Magazynier
-rectangle "Prognozowanie popytu" {
-    (Magazynier) -- (Tworzenie prognoz popytu)
+rectangle "System Magazynu" {
+    Magazynier -- (Zarejestrowanie produktu)
+	Magazynier -- (Modyfikacja produktu)
+	Magazynier -- (Wyrejestrowanie produktu)
+	Magazynier -- (Pobranie szczegolowych danych o produkcie)
+	Magazynier -- (Pobranie wszystkich dostepnych produktow)
 }
 @enduml
 ```
+##### _Rysunek 19. Diagram przypadków użycia obsługi System Magazynu_
 
-##### _Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu_
+**Numer i Nazwa przypadku użycia:** 1.4.2.1 - Zarejestrowanie produktu
 
-**Numer i Nazwa przypadku użycia:** 1.5.3.1 - Tworzenie prognoz popytu
+**Autor:** Kamil Gliński
 
-Autor: Kamil Gliński
+**Cel przypadku użycia:** Zarejestrowanie produktu
 
-**Cel przypadku użycia:** Tworzenie prognoz popytu
+**Kontekst użycia:** Gdy dostawa zostanie odebrana, Jako magazynier chce mieć możliwość zarejestrowania produktu aby udostępnić oraz uaktualnić informacje o dostępności produktu
 
-**Kontekst użycia:** W sytuacji gdy chcemy osiągnąć optymalny czas prac na magazynie potrzebujemy stworzyc prognozy popytu, ​Jako magazynier chce mieć możliwość tworzenia prognoz popytu aby utrzymać kluczowe produkty na stanie
+**Zakres:** System Magazynu
 
-**Zakres:** Prognozowanie popytu
-
-**Poziom:** Tworzenie prognoz popytu
+**Poziom:** Zarejestrowanie produktu
 
 **Aktor główny:** Magazynier
+
+**Warunek początkowy:** Produkt nie jest zarejestrowany
+
+**Zdarzenie inicjujące:** Nowy produkt na magazynie
+
+**Główny scenariusz powodzenia:**
+
+1. System wyświetla formularz dodania produktu do systemu
+2. `Magazynier` wpisuje dane produktu
+3. System weryfikuje dane produktu
+4. Produkt zostaje zapisany
+
+**Scenariusze alternatywne: **
+1. Produkt istnieje w systemie - jest nadpisywany
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
+
 
 **Uczestnicy i interesy:**
 
@@ -2224,7 +2326,174 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
+**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Modyfikacja produktu
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Modyfikacja produktu
+
+**Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość modyfikacji danych aby uaktualnić informacje o produkcie
+
+**Zakres:** System Magazynu
+
+**Poziom:** Modyfikacja produktu
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Potrzeba modyfikacji danych produktu
+
+**Zdarzenie inicjujące:** Zmiana atrybutow produktu na magazynie
+
+**Główny scenariusz powodzenia:**
+
+1. System wyświetla formularz modyfikacji produktu w systemie
+2. `Magazynier` wpisuje dane produktu
+3. System weryfikuje dane produktu
+4. Produkt zostaje zmodyfikowany
+
+**Scenariusze alternatywne: **
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
+
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
 ---
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Wyrejstrowanie produktu
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Wyrejstrowanie produktu
+
+**Kontekst użycia:** Gdy towar został wysłany, Jako magazynier chce mieć możliwość wyrejestrowania produktu z magazynu aby uaktualnić informacje o dostępności produktu
+
+**Zakres:** System Magazynu
+
+**Poziom:** Wyrejstrowanie produktu
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Produkt jest zarejestrowany
+
+**Zdarzenie inicjujące:** Produkt zostal wyslany
+
+**Główny scenariusz powodzenia:**
+
+1. System wyświetla formularz usuniecia produktu z systemu
+2. Produkt zostaje usuniety
+
+**Scenariusze alternatywne: **
+1. Brak produktu w systemie - brak dzialania
+
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
+---
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Pobranie szczegolowych danych o produkcie
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Pobranie szczegolowych danych o produkcie
+
+**Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość pobrania informacji na temat produktow aby otrzymac informacje o aktualnym stanie magazynu
+
+**Zakres:** System Magazynu
+
+**Poziom:** Pobranie szczegolowych danych o produkcie
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Produkt znajduje sie w systemie
+
+**Zdarzenie inicjujące:** Potrzeba pobrania informacji o aktualnym stanie magazynu
+
+**Główny scenariusz powodzenia:**
+
+1. System wyświetla formularz pobrania danych o produkcie z systemu
+2. `Magazynier` wpisuje parametry szukanego produktu
+3. Produkt zostaje pobrany
+
+**Scenariusze alternatywne: **
+1. Brak produktu w systemie - brak dzialania
+
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
+---
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Pobranie wszystkich dostepnych produktow
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Pobranie szczegolowych danych o produkcie
+
+**Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość pobrania wszystkich dostepnych produktow aby otrzymac informacje o aktualnym stanie magazynu
+
+**Zakres:** System Magazynu
+
+**Poziom:** Pobranie szczegolowych danych o produkcie
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Produkty znajduja sie w systemie
+
+**Zdarzenie inicjujące:** Potrzeba pobrania informacji o wszystkich produktach
+
+**Główny scenariusz powodzenia:**
+
+1. System wyświetla formularz pobrania danych o produktach z systemu
+3. Produkty zostaja pobrane
+
+**Scenariusze alternatywne: **
+1. Brak produktu w systemie - brak dzialania
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
+---
+
+**Numer i Nazwa przypadku użycia:** 1.4.2.2 - Tworzenie zamówienia dostaw
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Tworzenie zamówienia dostaw
+
+**Kontekst użycia:** W razie zapotrzebowania na produkty, Jako magazynier chce mieć możliwość tworzyć zamówienia dostaw aby zapewnić wymagane dokumenty dotyczące dostaw.
+
+**Zakres:** System Magazynu
+
+**Poziom:** Tworzenie zamówienia dostaw
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Zamówienie dostaw nie jest utworzone
+
+**Zdarzenie inicjujące:** Zapotrzebowanie na produkty
+
+**Główny scenariusz powodzenia:**
+
+1. `Magazynier` tworzy zamowienia dostaw 
+2. `Magazynier` zapewnia dokumenty dotyczace dostaw
+
+
+**Scenariusze alternatywne: **
+1. Brak zapotrzebowania na produkty
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
+---
+
+
 
 #### 2.4.6 Analiza danych na potrzeby marketingowe (OA6)
 
