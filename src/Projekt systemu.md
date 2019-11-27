@@ -1754,7 +1754,7 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 
 #### 2.1.2.4 Obsługa magazynu
 
-```plantuml 1.4.1.1
+```plantuml 2.1.2.4
 @startuml
 left to right direction
 skinparam packageStyle rectangle
@@ -1782,7 +1782,7 @@ Dostawca -- Magazynier
 @enduml
 ```
 
-##### _Rysunek 18. Diagram przypadków użycia obsługi Obsługa magazynu_
+##### _Rysunek 12. Diagram przypadków użycia obsługi Obsługa magazynu_
 
 **Numer i Nazwa przypadku użycia:** 1.4.1.1 - Weryfikacja dokumentacji
 
@@ -1809,7 +1809,7 @@ Dostawca -- Magazynier
 3. `Magazynier` procesuje towar zgodnie z procedurami zawartymi w dokumentacji
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Bledna dokumentacja
 2. Odmowa przyjecia towaru przez 'Magazyniera'
 
@@ -1844,7 +1844,7 @@ _Dostawca_ - Inicjuje proces
 1. `Magazynier` odbiera towar od `Dostawcy`
 2. `Magazynier` dokonuje rozladunku towaru na magazyn
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. `Magazynier` odmawia rozladunku towaru w przypadku decyzji o nieprzyjeciu towaru
 2. `Dostawca` odsyla towar do nadawcy
 
@@ -1881,7 +1881,7 @@ _Dostawca_ - Inicjuje proces
 2. `Magazynier` przystepuje do kolejnego etapu rozladunku
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. `Magazynier` odmawia przyjecia w przypadku braku otrzymanej dokumentacji
 2. `Dostawca` odsyla towar do nadawcy
 
@@ -1921,7 +1921,7 @@ _Dostawca_ - Inicjuje proces
 2. Przesylka przechodzi walidacje
 3. `Magazynier` przystepuje do nastepnego etapu - wysylki
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Przesylka nie przechodzi walidacji ze wzgledu na ilosc lub jakosc produktu
 2. `Magazynier` produkt zostaje wymieniony na walidny, zgodny z zamowieniem
 
@@ -1957,7 +1957,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Produkt nie jest gotowy do skladowania
 1. `Magazynier` nie jest wstanie skladowac produktu (brak infrastruktury przeladunkowej)
 
@@ -1994,7 +1994,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. `Magazynier` wprowadza dane odnosnie magazynu do systemu
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Brak produktow na magazynie
 
 
@@ -2028,7 +2028,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. `Magazynier` przystepuje do kolejnego etapu - wysylki
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Wartosc przesylki niezgodna z warunkami umowy
 2. Korekta produktow zawartych w przesylce
 
@@ -2062,7 +2062,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 1. `Magazynier` dokonuje grupowania rozladowanego towar
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Brak kryteriow grupowania
 1. Brak towaru w magazynie
 
@@ -2096,7 +2096,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. `Magazynier` nadaje unikalny numer produktu
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
 
 
@@ -2130,7 +2130,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. `Magazynier` nadaje unikalny numer produktu
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
 
 
@@ -2164,7 +2164,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. `Magazynier` procesuje towar do nastepnego etapu - wysylki
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Brak potrzeby wyslki produktu za granice (Europa)
 
 
@@ -2198,7 +2198,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. `Magazynier` tworzy powiązanie miedzy dostawcą i nabywcą
 2. `Magazynier` procesuje towar do dalszego etapu - wysyłki
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 0. Brak
 
 **Uczestnicy i interesy:**
@@ -2274,7 +2274,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-```plantuml X.X.X
+```plantuml 2.1.2.5
 @startuml
 left to right direction
 skinparam packageStyle rectangle
@@ -2288,7 +2288,7 @@ rectangle "System Magazynu" {
 }
 @enduml
 ```
-##### _Rysunek 19. Diagram przypadków użycia obsługi System Magazynu_
+##### _Rysunek 13. Diagram przypadków użycia obsługi System Magazynu_
 
 **Numer i Nazwa przypadku użycia:** 1.4.2.1 - Zarejestrowanie produktu
 
@@ -2315,7 +2315,7 @@ rectangle "System Magazynu" {
 3. System weryfikuje dane produktu
 4. Produkt zostaje zapisany
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Produkt istnieje w systemie - jest nadpisywany
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
@@ -2351,7 +2351,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 3. System weryfikuje dane produktu
 4. Produkt zostaje zmodyfikowany
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 
@@ -2384,7 +2384,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. System wyświetla formularz usuniecia produktu z systemu
 2. Produkt zostaje usuniety
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Brak produktu w systemie - brak dzialania
 
 
@@ -2418,7 +2418,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. `Magazynier` wpisuje parametry szukanego produktu
 3. Produkt zostaje pobrany
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Brak produktu w systemie - brak dzialania
 
 
@@ -2451,7 +2451,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. System wyświetla formularz pobrania danych o produktach z systemu
 3. Produkty zostaja pobrane
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Brak produktu w systemie - brak dzialania
 
 **Uczestnicy i interesy:**
@@ -2484,7 +2484,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. `Magazynier` zapewnia dokumenty dotyczace dostaw
 
 
-**Scenariusze alternatywne: **
+**Scenariusze alternatywne:**
 1. Brak zapotrzebowania na produkty
 
 **Uczestnicy i interesy:**
