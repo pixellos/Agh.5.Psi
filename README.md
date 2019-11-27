@@ -26,9 +26,9 @@ Wymagania produktowe:
 
 Wymagania organizacyjne:
 
-• dostawy, --
+• dostawy, -- KAMIL
 
-• implementacyjne, --
+• implementacyjne, -- KAMIL
 
 • standardów--
 
@@ -39,7 +39,7 @@ Wymagania organizacyjne:
 
 • etyczne,--
 
-• prawne:
+• prawne: -- KAMIL
 
  ochrony prywatności,--
 
