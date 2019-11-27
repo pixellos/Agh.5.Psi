@@ -13,7 +13,8 @@ System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemys
 Spis Treści
 --- 
 
-<!-- TOC insertanchor:false orderedlist:true withlinks:true updateonsave:true depthfrom:1 depthto:3 -->
+<!-- T1OC insertanchor:false withlinks:true anchormode:bitbucket.org updateonsave:true depthfrom:5 depthto:5 -->
+
 
 - [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
     - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu)
@@ -131,7 +132,7 @@ W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki op
 
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/companyStructure.png)
 
-##### _Rysunek 1. Diagram struktura zarządu_
+##### _Rysunek 01. Diagram struktura zarządu_
 
 W obecnym okresie jest około 60 pracowników.
 W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
@@ -195,7 +196,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/Obsluga_aktywnosci.png)
 
-##### _Rysunek 2. Przegląd obszarów aktywności_
+##### _Rysunek 02. Przegląd obszarów aktywności_
 
 #### 1.3.1.1 Obsługa zamówień (OA1)
 
@@ -529,7 +530,7 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 @enduml
 ```
 
-##### _Rysunek 3. Aktorzy w systemie_
+##### _Rysunek 03. Aktorzy w systemie_
 
 W systemie możemy wyróżnić następujących aktorów
 
@@ -733,7 +734,7 @@ rectangle "Aktualizacja danych dostawcy" {
 @enduml
 ```
 
-##### _Rysunek 4. Diagram przypadków użycia aktualizacji danych dostawcy_
+##### _Rysunek 04. Diagram przypadków użycia aktualizacji danych dostawcy_
 
 **Numer i Nazwa przypadku użycia:** UC-1.1 - Rejestrowanie dostawcy
 
@@ -1067,7 +1068,7 @@ rectangle "Rejestrowanie klienta" {
 @enduml
 ```
 
-##### Rysunek 5. Rejestrowanie klienta
+##### Rysunek 05. Rejestrowanie klienta
 
 ```plantuml 2.1.2.2
 @startuml
@@ -1092,7 +1093,7 @@ rectangle "Proces ofertowy" {
 }
 @enduml
 ```
-##### Rysunek 6. Proces ofertowy
+##### Rysunek 06. Proces ofertowy
 
 ```plantuml 2.1.2.2
 @startuml
@@ -1116,7 +1117,7 @@ rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
 }
 @enduml
 ```
-##### Rysunek 7. Potwierdzenie zamówienia i wystawienie faktury
+##### Rysunek 07. Potwierdzenie zamówienia i wystawienie faktury
 
 
 
@@ -2780,29 +2781,20 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 # Załącznik E: Spis rysunków
 
-<!-- TOC insertanchor:false withlinks:true anchormode:bitbucket.org updateonsave:true depthfrom:5 depthto:5 -->
-
-- [_Rysunek 1. Diagram struktura zarządu_](#markdown-header-rysunek-1-diagram-struktura-zarządu)
-- [_Rysunek 2. Przegląd obszarów aktywności_](#markdown-header-rysunek-2-przegląd-obszarów-aktywności)
-- [_Rysunek 3. Aktorzy w systemie_](#markdown-header-rysunek-3-aktorzy-w-systemie)
-- [_Rysunek 4. Diagram przypadków użycia aktualizacji danych dostawcy_](#markdown-header-rysunek-4-diagram-przypadków-użycia-aktualizacji-danych-dostawcy)
-- [_Rysunek 5. Diagram przypadków użycia aktualizacji danych dostawcy_](#markdown-header-rysunek-5-diagram-przypadków-użycia-aktualizacji-danych-dostawcy)
-- [_Rysunek 6. Diagram przypadków użycia rezerwacji towaru_](#markdown-header-rysunek-6-diagram-przypadków-użycia-rezerwacji-towaru)
-- [_Rysunek 7. Rejestrowanie klienta_](#markdown-header-rysunek-7-rejestrowanie-klienta)
-- [_Rysunek 8. Przyjęcia zapytania ofertowego od klienta_](#markdown-header-rysunek-8-przyjęcia-zapytania-ofertowego-od-klienta)
-- [_Rysunek 9. Tworzenie oferty_](#markdown-header-rysunek-9-tworzenie-oferty)
-- [_Rysunek 10. Potwierdzenie zamówienia i wystawienie faktury_](#markdown-header-rysunek-10-potwierdzenie-zamówienia-i-wystawienie-faktury)
-- [_Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_](#markdown-header-rysunek-11-diagram-przypadków-użycia-zgłoszenia-reklamacji-przez-klienta)
-- [_Rysunek 18. Diagram przypadków użycia obsługi Rozładunek oraz załadunek_](#markdown-header-rysunek-18-diagram-przypadków-użycia-obsługi-rozładunek-oraz-załadunek)
-- [_Rysunek 19. Diagram przypadków użycia obsługi Czynności monitorujące_](#markdown-header-rysunek-19-diagram-przypadków-użycia-obsługi-czynności-monitorujące)
-- [_Rysunek 20. Diagram przypadków użycia obsługi Kontrolowanie_](#markdown-header-rysunek-20-diagram-przypadków-użycia-obsługi-kontrolowanie)
-- [_Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie_](#markdown-header-rysunek-21-diagram-przypadków-użycia-obsługi-kategoryzowanie)
-- [_Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu_](#markdown-header-rysunek-22-diagram-przypadków-użycia-obsługi-prognozowanie-popytu)
-- [_Rysunek 12. Statyki powiązane z katalogiem produktowym_](#markdown-header-rysunek-12-statyki-powiązane-z-katalogiem-produktowym)
-- [_Rysunek 13. Analiza danych na potrzeby marketingowe_](#markdown-header-rysunek-13-analiza-danych-na-potrzeby-marketingowe)
-- [_Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów_](#markdown-header-rysunek-14-diagram-przypadków-użycia-obsługi-rejestru-potencjalnych-klientów)
-- [_Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie_](#markdown-header-rysunek-15-diagram-przypadków-użycia-funkcji-informowania-o-ofercie)
-- [_Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika do systemu_](#markdown-header-rysunek-16-diagram-przypadków-użycia-wprowadzenia-dokumentów-i-zadań-przez-pracownika-do-systemu)
-- [_Rysunek 17. Diagram przypadków użycia przydziału zadań przez właściciela oraz wglądu do prognozy zamówień_](#markdown-header-rysunek-17-diagram-przypadków-użycia-przydziału-zadań-przez-właściciela-oraz-wglądu-do-prognozy-zamówień)
-
-<!-- /TOC -->
+- [1.1.6.1. Rysunek 01. Diagram struktura zarządu](#markdown-header-1161-rysunek-01-diagram-struktura-zarządu)
+- [1.3.1.1. Rysunek 02. Przegląd obszarów aktywności](#markdown-header-1311-rysunek-02-przegląd-obszarów-aktywności)
+- [2.1.1.1. Rysunek 03. Aktorzy w systemie](#markdown-header-2111-rysunek-03-aktorzy-w-systemie)
+- [2.4.1.1. Rysunek 04. Diagram przypadków użycia aktualizacji danych dostawcy](#markdown-header-2411-rysunek-04-diagram-przypadków-użycia-aktualizacji-danych-dostawcy)
+- [2.4.2.1. Rysunek 05. Rejestrowanie klienta](#markdown-header-2421-rysunek-05-rejestrowanie-klienta)
+- [2.4.2.2. Rysunek 06. Proces ofertowy](#markdown-header-2422-rysunek-06-proces-ofertowy)
+- [2.4.2.3. Rysunek 07. Potwierdzenie zamówienia i wystawienie faktury](#markdown-header-2423-rysunek-07-potwierdzenie-zamówienia-i-wystawienie-faktury)
+- [2.4.3.1. Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta](#markdown-header-2431-rysunek-11-diagram-przypadków-użycia-zgłoszenia-reklamacji-przez-klienta)
+- [2.4.4.1. Rysunek 18. Diagram przypadków użycia obsługi Rozładunek oraz załadunek](#markdown-header-2441-rysunek-18-diagram-przypadków-użycia-obsługi-rozładunek-oraz-załadunek)
+- [2.4.4.2. Rysunek 19. Diagram przypadków użycia obsługi Czynności monitorujące](#markdown-header-2442-rysunek-19-diagram-przypadków-użycia-obsługi-czynności-monitorujące)
+- [2.4.5.1. Rysunek 20. Diagram przypadków użycia obsługi Kontrolowanie](#markdown-header-2451-rysunek-20-diagram-przypadków-użycia-obsługi-kontrolowanie)
+- [2.4.5.2. Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie](#markdown-header-2452-rysunek-21-diagram-przypadków-użycia-obsługi-kategoryzowanie)
+- [2.4.5.3. Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu](#markdown-header-2453-rysunek-22-diagram-przypadków-użycia-obsługi-prognozowanie-popytu)
+- [2.4.6.1. Rysunek 12. Statyki powiązane z katalogiem produktowym](#markdown-header-2461-rysunek-12-statyki-powiązane-z-katalogiem-produktowym)
+- [2.4.7.1. Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów](#markdown-header-2471-rysunek-14-diagram-przypadków-użycia-obsługi-rejestru-potencjalnych-klientów)
+- [2.4.7.2. Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie](#markdown-header-2472-rysunek-15-diagram-przypadków-użycia-funkcji-informowania-o-ofercie)
+- [2.4.8.1. Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień](#markdown-header-2481-rysunek-16-diagram-przypadków-użycia-wprowadzenia-dokumentów-i-zadań-przez-pracownika-oraz-właściciela-do-systemu-oraz-wglądu-do-prognozy-zamówień)
