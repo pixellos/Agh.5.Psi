@@ -2671,7 +2671,33 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 <div class="page">
 
+## 2.6 Wymagania funkcjonalne dla dodatkowych części systemu
 
+### 2.6.1 Zarejestrowania faktu dodania dostawcy do systemu (UC-1)
+
+**Nazwa funkcji:** WF.1 - Dodaj dostawcę
+
+**Opis:** Dodaje dostawce 
+
+**Dane wejściowe:** Załącznik B - 1.Dane_dostawcy
+
+**Dane wyjściowe:** Id w systemie (Jeżeli brak)
+
+**Przeznaczenie:** Dostawca jest utrwalany w rejestrze systemu
+
+**Wymaga:** Nie istniejącego dostawcy
+
+**Warunek początkowy:** Kliknięcie przycisku `Dodaj dostawcę` 
+
+**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru dostawców nie ulega zmianie
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+
+
+<div class="page">
 
 ## 2.7 Wymagania niefunkcjonalne – omówienie 
 
@@ -2696,13 +2722,11 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 
 #### 2.7.1.2 Sprawnościowe
 
-<!-- Efektywności  -->
 - **Szybkość działania**
     - **Cecha:** Użytkownik nie musi czekać długo na odpowiedź systemu
     - **Miary:** 
         - Czas po każdej interakcji użytkownika będzie mierzony w sekundach `s`
         - Czas oczekiwania na system podczas pojedyńczego procesu będzie mierzony w sekundach `s`
-    
 
 - **Responsywność systemu**
     - **Cecha:** Nawet, gdy system jest zajęty operacją, powinien sygnalizować przetwarzanie danych indykatorem
