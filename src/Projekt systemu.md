@@ -2673,7 +2673,9 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 ## 2.6 Wymagania funkcjonalne dla dodatkowych części systemu
 
-### 2.6.1 Zarejestrowania faktu dodania dostawcy do systemu (UC-1)
+### 2.6.1 Zarejestrowania faktu dodania dostawcy do systemu
+
+**Przypadek użycia:** UC-1
 
 **Nazwa funkcji:** WF.1 - Dodaj dostawcę
 
