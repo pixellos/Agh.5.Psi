@@ -704,21 +704,31 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 @startuml
 left to right direction
 skinparam packageStyle rectangle
+actor Dostawca
+actor Konsultant
+
+rectangle "Zarządzanie dostawcami" {
+    (Rejestrowanie dostawcy) .> (Modyfikowanie danych dostawcy) : include
+    Konsultant -- (Rejestrowanie dostawcy)
+    Konsultant -- (Modyfikowanie danych dostawcy)
+    (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
+    (Konsultant) -- (Aktywacja i dezaktywacja pozycji katalogu towarów)
+}
+@enduml
+@startuml
 actor Konsultant
 actor Dostawca
-actor Klient
-rectangle "Aktualizacja danych dostawcy" {
-    (Rejestrowanie dostawcy) .> (Korygowanie danych dostawcy) : include
-    Konsultant -- (Rejestrowanie dostawcy)
-    Konsultant -- (Korygowanie danych dostawcy)
-    (Korygowanie danych dostawcy) -- Dostawca
+left to right direction
+skinparam packageStyle rectangle
+
+rectangle "Zarządzanie towarami" {
     (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
     (Konsultant) -- (Aktywacja i dezaktywacja pozycji katalogu towarów)
     (Konsultant) -- (Ustalanie cen)
     (Konsultant) -- (Generowanie cennika)
     (Konsultant) -- (Rezerwacja towaru)
     (Konsultant) -- (Zmiana lub likwidacja rezerwacji towaru)
-    (Generowanie cennika) -- Klient
+    (Zmiana lub likwidacja rezerwacji towaru) .> (Rezerwacja towaru):include
 }
 @enduml
 ```
@@ -764,7 +774,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.3 - Modyfikowanie danych dostawcy
+**Numer i Nazwa przypadku użycia:** UC-1.2 - Modyfikowanie danych dostawcy
 
 **Autor:** Mateusz Popielarz
 
@@ -835,7 +845,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.1.2.2 - Aktywacja i dezaktywacja pozycji katalogu towarów
+**Numer i Nazwa przypadku użycia:** UC-1.4 - Aktywacja i dezaktywacja pozycji katalogu towarów
 
 **Autor:** Mateusz Popielarz
 
@@ -868,7 +878,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.1.2.3 - Ustalanie cen
+**Numer i Nazwa przypadku użycia:** UC-1.5 - Ustalanie cen
 
 **Autor:** Mateusz Popielarz
 
@@ -902,7 +912,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.1.2.4 - Generowanie cennika
+**Numer i Nazwa przypadku użycia:** UC-1.6 - Generowanie cennika
 
 **Autor:** Mateusz Popielarz
 
@@ -931,7 +941,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.1.3.1 - Rezerwacja towaru
+**Numer i Nazwa przypadku użycia:** UC-1.7 - Rezerwacja towaru
 
 **Autor:** Mateusz Popielarz
 
@@ -965,7 +975,7 @@ _Klient_ - Inicjuje proces
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.1.3.2 - Zmiana lub likwidacja rezerwacji towaru
+**Numer i Nazwa przypadku użycia:** UC-1.8 - Zmiana lub likwidacja rezerwacji towaru
 
 **Autor:** Mateusz Popielarz
 
@@ -2946,7 +2956,7 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 **Przypadek użycia:** UC-1.1
 
-**Nazwa funkcji:** WF.1 - Dodaj dostawcę
+**Nazwa funkcji:** WF-1.1 - Dodaj dostawcę
 
 **Opis:** Dodaje dostawce 
 
@@ -2972,7 +2982,7 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 **Przypadek użycia:** UC-1.2
 
-**Nazwa funkcji:** WF.2 - Zmień dostawcę
+**Nazwa funkcji:** WF-1.2 - Zmień dostawcę
 
 **Opis:** Funkcja systemu służąca do zmienienia danych dostawcy.
 
@@ -2998,7 +3008,7 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 **Przypadek użycia:** UC-1.3
 
-**Nazwa funkcji:** WF.3 - Dodaj towar
+**Nazwa funkcji:** WF-1.3 - Dodaj towar
 
 **Opis:** Funkcja systemu służąca do dodania towaru do rejestru towarów
 
@@ -3024,7 +3034,7 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 **Przypadek użycia:** UC-1.3
 
-**Nazwa funkcji:** WF.4 - Zmień towar
+**Nazwa funkcji:** WF-1.4 - Zmień towar
 
 **Opis:** Funkcja systemu służąca do zmieniania danych towaru
 
@@ -3051,7 +3061,7 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 **Przypadek użycia:** UC-1.4
 
-**Nazwa funkcji:** WF.5 - Aktualizuje status dostępności towaru
+**Nazwa funkcji:** WF-1.5 - Aktualizuje status dostępności towaru
 
 **Opis:** Funkcja systemu służąca do zmieniania statusu dostępności towaru
 
@@ -3078,7 +3088,7 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 **Przypadek użycia:** UC-1.5
 
-**Nazwa funkcji:** WF.6 - Aktualizuje próg cenowy towaru
+**Nazwa funkcji:** WF-1.6 - Aktualizuje próg cenowy towaru
 
 **Opis:** Funkcja systemu służąca do zmieniania statusu dostępności towaru
 
@@ -3101,11 +3111,11 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 **Uwagi:** -
 
 
-### 2.6.6 Generowanie cennika
+### 2.6.7 Wygeneruj cennik
 
 **Przypadek użycia:** UC-1.5
 
-**Nazwa funkcji:** WF.7 - Generowanie cennika
+**Nazwa funkcji:** WF-1.7 - Wygeneruj cennik
 
 **Opis:** Funkcja systemu służąca do wygenerowania cennika w celu zaprezentowania klientowi 
 
@@ -3129,6 +3139,115 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 **Uwagi:** Cennik jest w formie cyfrowej, ale może zostać wydrukowany, lub przesłany faxem
 
 
+### 2.6.8 Wygeneruj cennik
+
+**Przypadek użycia:** UC-1.7
+
+**Nazwa funkcji:** WF-1.8 - Zarezerwuj towar
+
+**Opis:** Funkcja systemu służąca do wprowadzenia informacji o rezerwacji towaru
+
+**Dane wejściowe:** Okres rezerwacji, Identyikator towaru, Identyfikator Klienta 
+
+**Dane wyjściowe:** Informacja o powodzenia operacji
+
+**Przeznaczenie:** Rezerwacja towaru dla danego klienta
+
+**Wymaga:** 
+    - Istnienie dostawcy w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `klienta`
+    - Kliknięcie danego `klienta` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `towaru`
+
+**Warunek końcowy:** Towar zostanie zarejestrowany, `Dostawca` zostanie poinformowany
+
+**Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
+
+**Uwagi:** 
+
+### 2.6.9 Zarezerwuj towar
+
+**Przypadek użycia:** UC-1.7
+
+**Nazwa funkcji:** WF-1.9 - Zarezerwuj towar
+
+**Opis:** Funkcja systemu służąca do wprowadzenia informacji o rezerwacji towaru
+
+**Dane wejściowe:** Okres rezerwacji, Identyikator towaru, Identyfikator Klienta 
+
+**Dane wyjściowe:** Informacja o powodzenia operacji
+
+**Przeznaczenie:** Rezerwacja towaru dla danego klienta
+
+**Wymaga:** 
+    - Istnienie dostawcy w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `klienta`
+    - Kliknięcie danego `klienta` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `towaru`
+
+**Warunek końcowy:** Towar zostanie zarejestrowany, `Dostawca` zostanie poinformowany
+
+**Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
+
+**Uwagi:** 
+
+
+### 2.6.10 Usuń rezerwację towaru
+
+**Przypadek użycia:** UC-1.7
+
+**Nazwa funkcji:** WF-1.10 - Usuń rezerwację towaru
+
+**Opis:** Funkcja systemu służąca do usuwania rezerwacji towaru
+
+**Dane wejściowe:** Identyfikator rezewacji, Powód
+
+**Dane wyjściowe:** Informacja o powodzenia operacji
+
+**Przeznaczenie:** Zmiana rezerwacji towaru dla danego klienta
+
+**Wymaga:** 
+    - Istnienie rezerwacji towaru
+
+**Warunek początkowy:** 
+    - Kliknięcie danej `rezerwacji towaru` i wciśnięcie delete,
+    - Kliknięcie danej `rezerwacji towaru` i wciśnięcie przycisku `usuń`,
+
+**Warunek końcowy:** Rezerwacja zostanie usunięta, `dostawca` zostanie poinformowany
+
+**Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
+
+**Uwagi:** 
+
+
+### 2.6.11 Poinformuj SMS
+
+**Przypadek użycia:** Wszystkie
+
+**Nazwa funkcji:** WF-1.11 - Poinformuj o zmianie w systemie przez SMS
+
+**Opis:** Funkcja systemu służąca do notyfikowaniach o ważnych zmianiach
+
+**Dane wejściowe:** Automatycznie w systemie - Numery telefonów zainteresowanych wiadomość
+
+**Dane wyjściowe:** Akcja wysłania SMS
+
+**Przeznaczenie:** Zmiana rezerwacji towaru dla danego klienta
+
+**Wymaga:** 
+    - Zdarzenia w systemie
+
+**Warunek początkowy:** 
+    - Zaistnienie zdarzenia w systemie
+
+
+**Warunek końcowy:** Zdarzenie zostanie zapisane do rejestru
+
+**Efekty uboczne:** SMSy zostaną wysłane na ww adresy
+
+**Uwagi:** 
 
 <div class="page">
 
