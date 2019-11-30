@@ -3249,6 +3249,266 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 **Uwagi:** 
 
+### 2.6.12 Zgłoszenie reklamacji przez klienta
+
+**Przypadek użycia:** UC-3.1
+
+**Nazwa funkcji:** WF-3.1 - Zgłoś reklamację
+
+**Opis:** Klient zgłasza reklamację 
+
+**Dane wejściowe:** Załącznik B - 10.Formularz_reklamacji_od_klienta
+
+**Dane wyjściowe:** Załącznik B - 6.Dokument_potwierdzajacy_realizacje_reklamacji
+
+**Przeznaczenie:** Reklamacja od klienta pojawia się w systemie
+
+**Wymaga:** Rejestr `Klienta` istnieje w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Zgłoś reklamacje`
+
+**Warunek końcowy:** `Klient` dostaje komunikat potwierdzający zgłoszenie reklamacji
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+### 2.6.13 Obsługa zgłoszenia reklamacji klienta przez pracownika
+
+**Przypadek użycia:** UC-3.2
+
+**Nazwa funkcji:** WF-3.2 - Rozpocznij procesowanie reklamacji
+
+**Opis:** System z pomocą `pracownika` przzekierowuje reklamację do `zespołu technicznego`
+
+**Dane wejściowe:** Obecna pozycja zgłoszonej reklamacji przez `klienta`
+
+**Dane wyjściowe:** Potwierdzenie przekierowania reklamacji do `zespołu technicznego`
+
+**Przeznaczenie:** Prezkirowanie reklamacji do `zespołu technicznego`
+
+**Wymaga:** Pozycja reklamacji istnieje w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Prekieruj reklamacje`
+
+**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający przekierowanie reklamacji do `zespołu technicznego`
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+
+### 2.6.14 Przygotowanie produktów do odesłania do dostawcy
+
+**Przypadek użycia:** UC-3.3
+
+**Nazwa funkcji:** WF-3.3 - Zaktualizuj status reklamacji po analizie przez `zespół techniczny`
+
+**Opis:** `Zespół techniczny` aktualizuje status reklamacji po ukończonej analizie
+
+**Dane wejściowe:** Obecna pozycja zgłoszonej reklamacji przekierowanej przez `pracownika`
+
+**Dane wyjściowe:** Aktualizacja statusu reklamacji po ukończonej analizie
+
+**Przeznaczenie:** Umożliwienie analizy `zespołowi technicznemu` oraz aktualizacja statusu reklamacji
+
+**Wymaga:** Pozycja reklamacji istnieje w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Przyjmij do analizy`
+
+**Warunek końcowy:** 
+    - Kliknięcie przycisku `Analiza zakończona`
+    - Kliknięcie przycisku `Zaktualizuj status reklamacji`
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+### 2.6.15 Realizacja wysłania produktów do dostawcy
+
+**Przypadek użycia:** UC-3.4
+
+**Nazwa funkcji:** WF-3.4 - Zgłoś reklamcję do `dostawcy`
+
+**Opis:** `Zespół techniczny` zgłasza reklamację do dostawcy oraz aktualizuje status reklamacji
+
+**Dane wejściowe:** Załącznik B - 9.Formularz_reklamacji_do_dostawcy
+
+**Dane wyjściowe:** Załącznik B - 6.Dokument_potwierdzajacy_realizacje_reklamacji
+
+**Przeznaczenie:** Reklamacja do dostawcy, zaktualizzowany status reklamacji w systemie
+
+**Wymaga:** Pozycja reklamacji przeanalizowana przez `zespół techniczny`
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Zgłoś reklamacje do dostawcy`
+
+**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający zgłoszenie reklamacji do dostawcy
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+### 2.6.16 Realizacja wysłania produktów do dostawcy
+
+**Przypadek użycia:** UC-3.4
+
+**Nazwa funkcji:** WF-3.4 - Zgłoś reklamcję do `dostawcy`
+
+**Opis:** `Zespół techniczny` zgłasza reklamację do dostawcy oraz aktualizuje status reklamacji
+
+**Dane wejściowe:** Załącznik B - 9.Formularz_reklamacji_do_dostawcy
+
+**Dane wyjściowe:** Załącznik B - 6.Dokument_potwierdzajacy_realizacje_reklamacji
+
+**Przeznaczenie:** Reklamacja do dostawcy, zaktualizzowany status reklamacji w systemie
+
+**Wymaga:** Pozycja reklamacji przeanalizowana przez `zespół techniczny`
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Zgłoś reklamacje do dostawcy`
+
+**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający zgłoszenie reklamacji do dostawcy
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+
+### 2.6.17 Wprowadzenie reklamowanych produktów do rejestru
+
+**Przypadek użycia:** UC-3.5
+
+**Nazwa funkcji:** WF-3.5 - Wprowadź produkt do systemu
+
+**Opis:** `Pracownik` wprowadza reklamowany produkt do rejestru
+
+**Dane wejściowe:** Reklamacja zgłoszona do dostawcy
+
+**Dane wyjściowe:** Informacja o powodzeniu operacji 
+
+**Przeznaczenie:** Wprowadzenie reklamowanych produktów do rejestru
+
+**Wymaga:** Status reklamacji: "wysłana do dostawy"
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Wprowadź reklamowany produkt`
+
+**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający pomyślne załadowanie wprowadzenie produktu do rejestru
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+
+### 2.6.18 Wprowadzenie dokumentów do systemu
+
+**Przypadek użycia:** UC-8.1
+
+**Nazwa funkcji:** WF-8.1 - Wprowadź dokument do systemu aby go udostepnić
+
+**Opis:** `Pracownik` wprowadza dokiment do systemu. Jest on widoczny dla innych pracowników
+
+**Dane wejściowe:** Dowolny dokument lub arkusz kalkulacyjny
+
+**Dane wyjściowe:**
+
+**Przeznaczenie:** Wprowadzenie do systemu dokumentów do udostępnienia
+
+**Wymaga:** `Pracownik` zalogowany do systemu
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Udostępnij dokument`
+
+**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający pomyślne załadowanie dokumentu do systemu
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+
+### 2.6.19 Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
+
+**Przypadek użycia:** UC-8.2
+
+**Nazwa funkcji:** WF-8.2 - Odczytaj prognozy czasowe
+
+**Opis:** `Właściciel` otwiera raport prognozy zapotrzebowania czasowego na produkty
+
+**Dane wejściowe:** Wybór raportu zapotrzebowania
+
+**Dane wyjściowe:** Raport z prognozą zapotrzebowania czasowego na produkty
+
+**Przeznaczenie:** Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
+
+**Wymaga:** `Właściciel` zalogowany do systemu
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Wygeneruj prognozy`
+
+**Warunek końcowy:** `Właściciel` otrzymuje prognozy zapotrzebowania czasowego na produkty
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+
+### 2.6.20 Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
+
+**Przypadek użycia:** UC-8.3
+
+**Nazwa funkcji:** WF-8.3 - Odczytaj prognozy czasowe
+
+**Opis:** `Właściciel` otwiera raport prognozy zapotrzebowania ilościowego na produkty
+
+**Dane wejściowe:** Wybór raportu zapotrzebowania
+
+**Dane wyjściowe:** Raport z prognozą zapotrzebowania ilościowego na produkty
+
+**Przeznaczenie:** Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
+
+**Wymaga:** `Właściciel` zalogowany do systemu
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Wygeneruj prognozy`
+
+**Warunek końcowy:** `Właściciel` otrzymuje prognozy zapotrzebowania ilościowego na produkty
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+
+### 2.6.21 Przydział pracowników do określonych zadań
+
+**Przypadek użycia:** UC-8.4
+
+**Nazwa funkcji:** WF-8.4 - Przydziel zadania
+
+**Opis:** `Właściciel` przydziela zadania pracownikom
+
+**Dane wejściowe:** Zadanie wprowadzone przez `Właściciela`
+
+**Dane wyjściowe:** Potwierdzenie wprowadzenia zadania
+
+**Przeznaczenie:** Przydział pracowników do określonych zadań
+
+**Wymaga:** `Właściciel` zalogowany do systemu
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Przydziel zadanie`
+
+**Warunek końcowy:** `Właściciel` otrzymuje potwierdzenie wprowadzenia zadania
+
+**Efekty uboczne:** - 
+
+**Uwagi:** -
+
+
+
 <div class="page">
 
 ## 2.7 Wymagania niefunkcjonalne – omówienie 
