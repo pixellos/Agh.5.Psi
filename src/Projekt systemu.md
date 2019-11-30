@@ -3291,7 +3291,62 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 - **Zużycie rdzeni procesora**
     - **Cecha:** System nie powinien zużywać więcej rdzeni procesora, niż w typowym sprzęcie biurowym (4)
     - **Miary:** Zużycie rdzeni procesora będzie monitorowane (GB)
+    
+    
+#### 2.7.1.3 Niezawodności
 
+- **Stabilność systemu**
+    - **Cecha:** System powinien zapewniać stabilne wykonanie
+    - **Miary:** Liczenie prawdopodobieństwa błędnego wykonania podczas realizacji transakcji
+    
+- **Odporność systemu na błędy**
+    - **Cecha:** System dopuszczalnie może mieć jedno błędne wykonanie w skali miesiąca
+    - **Miary:** Częstotliwość błędnych wykonań    
+
+- **Bezawaryjne działanie**
+    - **Cecha:** System działa bezawaryjnie przez co najmniej jeden miesiąc
+    - **Miary:** Średni czas między błędnymi wykonaniami
+    
+- **Dostępność systemu**
+    - **Cecha:** System powinien być dostępny i gotowy do użycia przzez określoną ilość czasu
+    - **Miary:** Procent czasu    
+    
+    
+#### 2.7.1.4 Przenośności
+
+- **Przenośność kodu**
+    - **Cecha:** System nie będzie posiadał kodu nieprzenośnego na różne platformy
+    - **Miary:** Procent kodu zaleznego od platformy docelowej
+
+- **Liczzba docelowych platform**
+    - **Cecha:** System docelowo będzie napisany na jedną platformę
+    - **Miary:** Liczba platform docelowych
+
+
+### 2.7.2 Wymagania organizacyjne
+
+Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, jak i w firmie - wytwórcy
+
+#### 2.7.2.3 Standardów
+
+- **Metodyka**
+    - **Cecha:** Projekt będzie realizowany w oparciu o metodykę zwinną Scrum
+
+- **Koncepcja programowania**
+    - **Cecha:** System będzie implementowany w oparciu o podejsci obiektowe (OOP)
+    
+- **Języki programowania**
+    - **Cecha:** System będzie implementowany z wykorzystaniem języków obiektowych takich jak: Java, C#. 
+    
+- **Statyczna analiza kodu**
+    - **Cecha:** Statyczna analiza kodu będzie wykonywana np. za pomocą narzędzia SonarQube   
+    
+- **Budowanie i releasowanie kodu**
+    - **Cecha:** Build system produktu będzie realizowany np. za pomocą narzędzia Gradle 
+    
+- **Testowanie jednostkowe i funkcyjne kodu**
+    - **Cecha:** Testy jednostkowe i funkcyjne implementowane będą np. przy pomocy narzędzi: JUnit, Mockito    
+        
 
 
 # Załącznik A: Słownik pojęć dziedzinowych:
