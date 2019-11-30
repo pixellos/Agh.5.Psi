@@ -1588,7 +1588,7 @@ rectangle "System" {
 
 ##### _Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
 
-**Numer i nazwa przypadku użycia:** 1.3.1.1 - Zgłoszenie reklamacji przez klienta
+**Numer i nazwa przypadku użycia:** UC-3.1 - Zgłoszenie reklamacji przez klienta
 
 **Autor:** Kacper Kwapisz
 
@@ -1624,7 +1624,7 @@ _Klient_ - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zwer
 
 ---
 
-**Numer i nazwa przypadku użycia:** 1.3.1.2 - Obsługa zgłoszenia reklamacji klienta przez pracownika
+**Numer i nazwa przypadku użycia:** UC-3.2 - Obsługa zgłoszenia reklamacji klienta przez pracownika
 
 **Autor:** Kacper Kwapisz
 
@@ -1664,7 +1664,7 @@ _Zespół techniczny_ - przejmuje dalsze czynności
 
 ---
 
-**Numer i nazwa przypadku użycia:** 1.3.3.1 - Przygotowanie produktów do odesłania do dostawcy
+**Numer i nazwa przypadku użycia:** UC-3.3 - Przygotowanie produktów do odesłania do dostawcy
 
 **Autor:** Kacper Kwapisz
 
@@ -1698,7 +1698,7 @@ _dostawca_ - potencjalny odbiorca przesyłki reklamacji
 
 ---
 
-**Numer i nazwa przypadku użycia:** 1.3.3.2 - Realizacja wysłania produktów do dostawcy
+**Numer i nazwa przypadku użycia:** UC-3.4 - Realizacja wysłania produktów do dostawcy
 
 **Autor:** Kacper Kwapisz
 
@@ -1732,7 +1732,7 @@ _dostawca_ - potencjalny odbiorca przesyłki reklamacji
 
 ---
 
-**Numer i nazwa przypadku użycia:** 1.3.4.1 - Wprowadzenie reklamowanych produktów do rejestru
+**Numer i nazwa przypadku użycia:** UC-3.5 - Wprowadzenie reklamowanych produktów do rejestru
 
 **Autor:** Kacper Kwapisz
 
@@ -2816,7 +2816,7 @@ rectangle "System" {
 
 ##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień_
 
-**Numer i nazwa przypadku użycia:** 1.8.1.1 - Wprowadzenie dokumentów do systemu
+**Numer i nazwa przypadku użycia:** UC-8.1 - Wprowadzenie dokumentów do systemu
 
 **Autor:** Kacper Kwapisz
 
@@ -2848,7 +2848,7 @@ _Pracownik_ - wprowadza dokumenty, zadania, ogłoszenia do systemu
 
 ---
 
-**Numer i nazwa przypadku użycia:** 1.8.2.1 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
+**Numer i nazwa przypadku użycia:** UC-8.2 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
 
 **Autor:** Kacper Kwapisz
 
@@ -2881,7 +2881,7 @@ _Dostawca_ - od niego firma zamawia produkty
 
 ---
 
-**Numer i nazwa przypadku użycia:** 1.8.2.2 -Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
+**Numer i nazwa przypadku użycia:** UC-8.3 -Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
 
 **Autor:** Kacper Kwapisz
 
@@ -2912,7 +2912,7 @@ _Właściciel_ - odczytuje i ma możliwość analizy prognoz ilościowych zamów
 
 ---
 
-**Numer i nazwa przypadku użycia:** 1.8.3.1 - Przydział pracowników do określonych zadań
+**Numer i nazwa przypadku użycia:** UC-8.4 - Przydział pracowników do określonych zadań
 
 **Autor:** Kacper Kwapisz
 
