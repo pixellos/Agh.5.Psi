@@ -12,23 +12,23 @@ Wymagania produktowe:
 
 • użyteczności, -- Mateusz
 
-• sprawnościowe:
+• sprawnościowe: -- Kacper
 
 -- efektywności, -- Mateusz
 
 -- pamięci. --Mateusz 
 
-• niezawodności, --
+• niezawodności, -- Kacper
 
-• przenośności. --
+• przenośności. -- Kacper
 
 
 
 Wymagania organizacyjne:
 
-• dostawy, --
+• dostawy, -- KAMIL
 
-• implementacyjne, --
+• implementacyjne, -- KAMIL
 
 • standardów--
 
@@ -39,7 +39,7 @@ Wymagania organizacyjne:
 
 • etyczne,--
 
-• prawne:
+• prawne: -- KAMIL
 
  ochrony prywatności,--
 
