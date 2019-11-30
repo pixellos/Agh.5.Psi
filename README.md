@@ -12,7 +12,7 @@ Wymagania produktowe:
 
 • użyteczności, -- Mateusz
 
-• sprawnościowe: -- Kacper
+• sprawnościowe:
 
 -- efektywności, -- Mateusz
 
@@ -30,7 +30,7 @@ Wymagania organizacyjne:
 
 • implementacyjne, -- KAMIL
 
-• standardów--
+• standardów--  -- Kacper
 
 
  Wymagania zewnętrzne: Wymagania zewnętrzne:
