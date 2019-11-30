@@ -35,14 +35,14 @@ Wymagania organizacyjne:
 
  Wymagania zewnętrzne: Wymagania zewnętrzne:
 
-• współpracy,--
+• współpracy,--ADAM
 
-• etyczne,--
+• etyczne,--ADAM
 
 • prawne: -- KAMIL
 
- ochrony prywatności,--
+ ochrony prywatności,--ADAM
 
- wymagania zabezpieczeń.:--
+ wymagania zabezpieczeń.:--ADAM
 
 About: Lato PSI-Faza-Okr-Wymagan-14-04-2019-V19 (1).pdf 
