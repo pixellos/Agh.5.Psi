@@ -2948,6 +2948,37 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 ---
 
+## 2.5 Modelowanie zachowań  w czasie
+
+### 2.5.6  Analiza danych na potrzeby marketingowe (OA6)
+
+```plantuml X.X.X
+@startuml
+partition "System analizujący dane" {
+"Obserwuje aktywność" --> ===Sync===
+--> "Analizuje dane"
+--> "System generuje raport"
+if "Generowanie powiodło się" then
+-->[true] "Przedstawia wygenerowany raport"
+else 
+  --> [false] "System wyświetla błąd"
+}
+partition Konsultant #GreenYellow{
+(*) --> "Wykonuje akcje w systemie"
+--> ===Sync===
+
+}
+partition Marketingowiec #DeepSkyBlue{
+"Wysyła zapytanie o raport" --> "System generuje raport"
+"Przedstawia wygenerowany raport" --> "Odbiera raport"
+
+}
+@enduml
+```
+
+##### _Rysunek 17. Diagram aktywności analizy danych na potrzeby marketingowe_
+
+---
 <div class="page">
 
 ## 2.6 Wymagania funkcjonalne dla dodatkowych części systemu
@@ -3606,7 +3637,7 @@ Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, ja
     
 - **Testowanie jednostkowe i funkcyjne kodu**
     - **Cecha:** Testy jednostkowe i funkcyjne implementowane będą np. przy pomocy narzędzi: JUnit, Mockito    
-        
+      
 
 
 # Załącznik A: Słownik pojęć dziedzinowych:
