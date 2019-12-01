@@ -1,11 +1,18 @@
-Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gliński, Kacper Kwapisz
-Lead: Mateusz Popielarz
+Zespół: 
+- _Mateusz Popielarz_
+- Adam Samsonowicz
+- Kamil Gliński
+- Kacper Kwapisz
 
-## System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
+
+<h1>System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej</h2>
 
 ![logo](https://industryweek.pl/katalog-wystawcow/photos/177/file/107/instom-logo+slogan_png8_500px.png?size=)
 
 Żródło danych: Firma rodzinna
+
+
+AGH WIET - Praca PSI, semestr 6, 2019 - 2020.
 
 <div class="page">
 
@@ -13,196 +20,98 @@ Spis Treści
 
 ---
 
-<!-- T1OC insertanchor:false withlinks:true anchormode:bitbucket.org updateonsave:true depthfrom:5 depthto:5 -->
+<!-- TOC insertanchor:false withlinks:true anchormode:bitbucket.org updateonsave:true orderedlist:true depthfrom:1 depthto:3 -->
 
-- [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
-  - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu)
-    - [1.1.1. Nazwa firmy](#111-nazwa-firmy)
-    - [1.1.2. Typ firmy](#112-typ-firmy)
-    - [1.1.3. Cel produktu](#113-cel-produktu)
-    - [1.1.4. Opis dziedziny działalności](#114-opis-dziedziny-działalności)
-    - [1.1.5. Cele firmy](#115-cele-firmy)
-    - [1.1.6. Schemat struktury organizacyjnej](#116-schemat-struktury-organizacyjnej)
-  - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#12-obszar-modelowania-om--wstępny-opisowy-model-stanu-istniejącego)
-    - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)
-    - [1.2.2. Definicja celu systemu](#122-definicja-celu-systemu)
-    - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania)
-  - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
-    - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
-  - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
-    - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
-    - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
-  - [1.5. Cele do osiągnięcia](#15-cele-do-osiągnięcia)
-    - [1.5.1. Cele produktu](#151-cele-produktu)
-    - [1.5.2. Cele przedsięwzięcia projektowego](#152-cele-przedsięwzięcia-projektowego)
-- [2. Opis Wymagań Systemu](#2-opis-wymagań-systemu)
-  - [2.1. Funkcje systemu ze strony widzenia użytkownika](#21-funkcje-systemu-ze-strony-widzenia-użytkownika)
-    - [2.1.1. Aktorzy w systemie](#211-aktorzy-w-systemie)
-  - [2.2. Dane przechowywane w systemie](#22-dane-przechowywane-w-systemie)
-    - [2.2.1. Opis Magazynu](#221-opis-magazynu)
-  - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory)
-    - [2.3.1. Zapytanie ofertowe od klienta](#231-zapytanie-ofertowe-od-klienta)
-    - [2.3.2. Oferta](#232-oferta)
-    - [2.3.3. Zamówienie towaru u dostawcy](#233-zamówienie-towaru-u-dostawcy)
-    - [2.3.4. Potwierdzenie zamówienia od dostawcy](#234-potwierdzenie-zamówienia-od-dostawcy)
-    - [2.3.5. Faktura zakupu od dostawcy](#235-faktura-zakupu-od-dostawcy)
-    - [2.3.6. Rejestracja towaru na magazynie](#236-rejestracja-towaru-na-magazynie)
-    - [2.3.7. Wyrejestrowanie towaru z magazynu](#237-wyrejestrowanie-towaru-z-magazynu)
-    - [2.3.8. Faktura zakupu dla klienta](#238-faktura-zakupu-dla-klienta)
-    - [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#239-raport-sprzedażowe-do-analiz-wewnętrznych)
-    - [2.3.10. Raport statystyczny wspierający cele marketingowe](#2310-raport-statystyczny-wspierający-cele-marketingowe)
-    - [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#2311-raport-statystyczny-wspierający-prognozy-popytu-wspierający-cele-magazynowe)
-  - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych)
-- [3. Załącznik A: Słownik pojęć dziedzinowych:](#3-załącznik-a-słownik-pojęć-dziedzinowych)
-  - [3.1. A](#31-a)
-  - [3.2. F](#32-f)
-  - [3.3. I](#33-i)
-  - [3.4. K](#34-k)
-  - [3.5. P](#35-p)
-  - [3.6. R](#36-r)
-  - [3.7. S](#37-s)
-  - [3.8. Z](#38-z)
-- [4. Załącznik B: Wzory dokumentów](#4-załącznik-b-wzory-dokumentów)
-- [5. Załącznik C:](#5-załącznik-c)
-- [6. Załącznik D:](#6-załącznik-d)
-- [7. Załącznik E: Spis rysunków](#7-załącznik-e-spis-rysunków)
-
-<!-- TOC -->
-
-    - System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
-- Sformułowanie zadania projektowego
-    - Przedmiot modelowania – opis dziedziny problemu
-        - Nazwa firmy
-        - Typ firmy
-        - Cel produktu
-        - Opis dziedziny działalności
-        - Cele firmy
-        - Schemat struktury organizacyjnej
-    - Obszar modelowania OM – wstępny opisowy model stanu istniejącego
-        - Wywiad z zarządem w celu ustalenia przeznaczenia systemu
-        - Definicja celu systemu
-        - Składniki organizacyjne dla Obszaru Modelowania
-    - Zakres odpowiedzialności systemu (ZOS)
-        - Obszary aktywności (OA)
-            - Obsługa zamówień (OA1)
-            - Obsługa zleceń zakupu (OA2)
-            - Obsługa reklamacji (OA3)
-            - Obsługa magazynu (OA4)
-            - Kontrola stanów magazynowych (OA5)
-            - Analizy danych na potrzeby marketingowe (OA6)
-            - Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)
-            - Zarządzanie (OA8)
-    - Zwięzła nazwa problemu
-        - Nazwa problemu
-        - Nazwa kodowa projektu
-    - Cele do osiągnięcia
-        - Cele produktu
-        - Cele przedsięwzięcia projektowego
-- Opis Wymagań Systemu
-    - Funkcje systemu ze strony widzenia użytkownika
-        - Aktorzy w systemie
-    - Dane przechowywane w systemie
-        - Opis Magazynu
-    - Dokumenty wprowadzane i wyprowadzane z systemu – wzory
-        - Dane_dostawcy.docx
-        - Dane_fabryki.docx
-        - Wpis_towaru_w_katalogu.docx
-        - Wpis_dotyczący_ceny_towaru.docx
-        - Dokument_ofertowy.doc
-        - Dokument_potwierdzajacy_realizacje_reklamacji.docx
-        - Formularz_oferty_udzielonej_dla_klienta.doc
-        - Formularz_prosby_o_dostepnosc_towaru.docx
-        - Formularz_reklamacji_do_dostawcy.docx
-        - Formularz_reklamacji_od_klienta.docx
-        - Instom_formularz_danych_klienta.docx
-        - Instom_przesuniecie_miedzymagazynowe.docx
-        - Instom_przyjecie zewnetrzne.docx
-        - Instom_rozchod_wewnetrzny.docx
-        - Instom_wydanie zewnetrzne.docx
-        - Raport_z_akcji_marketingowych.doc
-        - Zamówienie_klienta.doc
-    - Wyniki analizy wymagań funkcjonalnych
-            - Obsługa zamówień (OA1)
-            - Obsługa zleceń zakupu (OA2)
-            - Obsługa reklamacji
-            - Obsługa magazynu
-            - Analiza danych na potrzeby marketingowe (OA6)
-            - Rejestr potencjalnych klientów i stanu kontaktu z nimi
-            - Zarzadzanie
-    - Modelowanie zachowań w czasie
-        - Analiza danych na potrzeby marketingowe (OA6)
-    - Wymagania funkcjonalne dla dodatkowych części systemu
-        - Zarejestrowanie faktu dodania dostawcy do systemu
-        - Zmienienie rejestru dostawcy
-        - Dodanie towaru
-        - Zmiana towaru
-        - Dezaktywacja towaru
-        - Ustalenie progu cenowego towaru
-        - Wygeneruj cennik
-        - Wygeneruj cennik
-        - Zarezerwuj towar
-        - Usuń rezerwację towaru
-        - Poinformuj SMS
-        - Zgłoszenie reklamacji przez klienta
-        - Obsługa zgłoszenia reklamacji klienta przez pracownika
-        - Przygotowanie produktów do odesłania do dostawcy
-        - Realizacja wysłania produktów do dostawcy
-        - Realizacja wysłania produktów do dostawcy
-        - Wprowadzenie reklamowanych produktów do rejestru
-        - Wprowadzenie dokumentów do systemu
-        - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
-        - Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
-        - Przydział pracowników do określonych zadań
-        - Zarejestrowanie produktu
-        - Modyfikacja produktu
-        - Wyrejestrowanie produktu
-        - Pobranie szczególowych danych o produkcie
-        - Pobranie wszystkich dostepnych produktow
-    - Wymagania niefunkcjonalne – omówienie
-        - Wymagania Produktowe
-            - Użyteczności
-            - Sprawnościowe
-            - Niezawodności
-            - Przenośności
-        - Wymagania organizacyjne
-            - Dostawy
-            - Implementacyjne
-            - Standardów
-        - Wymagania zewnętrzne
-            - Współpracy
-            - Etyczne
-            - Prawne - ochrona prywatności
-            - Prawne - Wymagania zabezpieczeń
-- Załącznik A: Słownik pojęć dziedzinowych:
-    - A
-    - F
-    - I
-    - K
-    - P
-    - R
-    - S
-    - Z
-- Załącznik B: Wzory dokumentów
-        - Dane_dostawcy.docx
-        - Dane_fabryki.docx
-        - Wpis_towaru_w_katalogu.docx
-        - Wpis_dotyczący_ceny_towaru.docx
-        - Dokument_ofertowy.doc
-        - Dokument_potwierdzajacy_realizacje_reklamacji.docx
-        - Formularz_oferty_udzielonej_dla_klienta.doc
-        - Formularz_prosby_o_dostepnosc_towaru.docx
-        - Formularz_reklamacji_do_dostawcy.docx
-        - Formularz_reklamacji_od_klienta.docx
-        - Instom_formularz_danych_klienta.docx
-        - Instom_przesuniecie_miedzymagazynowe.docx
-        - Instom_przyjecie zewnetrzne.docx
-        - Instom_rozchod_wewnetrzny.docx
-        - Instom_wydanie zewnetrzne.docx
-        - Raport_z_akcji_marketingowych.doc
-        - Zamówienie_klienta.doc
-- Załącznik C:
-- Załącznik D:
-- Załącznik E: Spis rysunków
+- [1. Sformułowanie zadania projektowego](#markdown-header-1-sformułowanie-zadania-projektowego)
+    - [1.1. Przedmiot modelowania – opis dziedziny problemu](#markdown-header-11-przedmiot-modelowania-opis-dziedziny-problemu)
+        - [1.1.1. Nazwa firmy](#markdown-header-111-nazwa-firmy)
+        - [1.1.2. Typ firmy](#markdown-header-112-typ-firmy)
+        - [1.1.3. Cel produktu](#markdown-header-113-cel-produktu)
+        - [1.1.4. Opis dziedziny działalności](#markdown-header-114-opis-dziedziny-działalności)
+        - [1.1.5. Cele firmy](#markdown-header-115-cele-firmy)
+        - [1.1.6. Schemat struktury organizacyjnej](#markdown-header-116-schemat-struktury-organizacyjnej)
+    - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#markdown-header-12-obszar-modelowania-om-wstępny-opisowy-model-stanu-istniejącego)
+        - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#markdown-header-121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)
+        - [1.2.2. Definicja celu systemu](#markdown-header-122-definicja-celu-systemu)
+        - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#markdown-header-123-składniki-organizacyjne-dla-obszaru-modelowania)
+    - [1.3. Zakres odpowiedzialności systemu (ZOS)](#markdown-header-13-zakres-odpowiedzialności-systemu-zos)
+        - [1.3.1. Obszary aktywności (OA)](#markdown-header-131-obszary-aktywności-oa)
+    - [1.4. Zwięzła nazwa problemu](#markdown-header-14-zwięzła-nazwa-problemu)
+        - [1.4.1. Nazwa problemu](#markdown-header-141-nazwa-problemu)
+        - [1.4.2. Nazwa kodowa projektu](#markdown-header-142-nazwa-kodowa-projektu)
+    - [1.5. Cele do osiągnięcia](#markdown-header-15-cele-do-osiągnięcia)
+        - [1.5.1. Cele produktu](#markdown-header-151-cele-produktu)
+        - [1.5.2. Cele przedsięwzięcia projektowego](#markdown-header-152-cele-przedsięwzięcia-projektowego)
+- [2. Opis Wymagań Systemu](#markdown-header-2-opis-wymagań-systemu)
+    - [2.1. Funkcje systemu ze strony widzenia użytkownika](#markdown-header-21-funkcje-systemu-ze-strony-widzenia-użytkownika)
+        - [2.1.1. Aktorzy w systemie](#markdown-header-211-aktorzy-w-systemie)
+    - [2.2. Dane przechowywane w systemie](#markdown-header-22-dane-przechowywane-w-systemie)
+        - [2.2.1. Opis Magazynu](#markdown-header-221-opis-magazynu)
+    - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#markdown-header-23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu-wzory)
+    - [2.4. Wyniki analizy wymagań funkcjonalnych](#markdown-header-24-wyniki-analizy-wymagań-funkcjonalnych)
+    - [2.5. Modelowanie zachowań w czasie](#markdown-header-25-modelowanie-zachowań-w-czasie)
+        - [2.5.1. Analiza danych na potrzeby marketingowe (OA6)](#markdown-header-251-analiza-danych-na-potrzeby-marketingowe-oa6)
+    - [2.6. Wymagania funkcjonalne dla dodatkowych części systemu](#markdown-header-26-wymagania-funkcjonalne-dla-dodatkowych-części-systemu)
+        - [2.6.1. Zarejestrowanie faktu dodania dostawcy do systemu](#markdown-header-261-zarejestrowanie-faktu-dodania-dostawcy-do-systemu)
+        - [2.6.2. Zmienienie rejestru dostawcy](#markdown-header-262-zmienienie-rejestru-dostawcy)
+        - [2.6.3. Dodanie towaru](#markdown-header-263-dodanie-towaru)
+        - [2.6.4. Zmiana towaru](#markdown-header-264-zmiana-towaru)
+        - [2.6.5. Dezaktywacja towaru](#markdown-header-265-dezaktywacja-towaru)
+        - [2.6.6. Ustalenie progu cenowego towaru](#markdown-header-266-ustalenie-progu-cenowego-towaru)
+        - [2.6.7. Wygeneruj cennik](#markdown-header-267-wygeneruj-cennik)
+        - [2.6.8. Wygeneruj cennik](#markdown-header-268-wygeneruj-cennik)
+        - [2.6.9. Zarezerwuj towar](#markdown-header-269-zarezerwuj-towar)
+        - [2.6.10. Usuń rezerwację towaru](#markdown-header-2610-usuń-rezerwację-towaru)
+        - [2.6.11. Poinformuj SMS](#markdown-header-2611-poinformuj-sms)
+        - [2.6.12. Zgłoszenie reklamacji przez klienta](#markdown-header-2612-zgłoszenie-reklamacji-przez-klienta)
+        - [2.6.13. Obsługa zgłoszenia reklamacji klienta przez pracownika](#markdown-header-2613-obsługa-zgłoszenia-reklamacji-klienta-przez-pracownika)
+        - [2.6.14. Przygotowanie produktów do odesłania do dostawcy](#markdown-header-2614-przygotowanie-produktów-do-odesłania-do-dostawcy)
+        - [2.6.15. Realizacja wysłania produktów do dostawcy](#markdown-header-2615-realizacja-wysłania-produktów-do-dostawcy)
+        - [2.6.16. Realizacja wysłania produktów do dostawcy](#markdown-header-2616-realizacja-wysłania-produktów-do-dostawcy)
+        - [2.6.17. Wprowadzenie reklamowanych produktów do rejestru](#markdown-header-2617-wprowadzenie-reklamowanych-produktów-do-rejestru)
+        - [2.6.18. Wprowadzenie dokumentów do systemu](#markdown-header-2618-wprowadzenie-dokumentów-do-systemu)
+        - [2.6.19. Możliwość odczytu prognoz zapotrzebowania czasowego na produkty](#markdown-header-2619-możliwość-odczytu-prognoz-zapotrzebowania-czasowego-na-produkty)
+        - [2.6.20. Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty](#markdown-header-2620-możliwość-odczytu-prognoz-zapotrzebowania-ilościowego-na-produkty)
+        - [2.6.21. Przydział pracowników do określonych zadań](#markdown-header-2621-przydział-pracowników-do-określonych-zadań)
+        - [2.6.22. Zarejestrowanie produktu](#markdown-header-2622-zarejestrowanie-produktu)
+        - [2.6.23. Modyfikacja produktu](#markdown-header-2623-modyfikacja-produktu)
+        - [2.6.24. Wyrejestrowanie produktu](#markdown-header-2624-wyrejestrowanie-produktu)
+        - [2.6.25. Pobranie szczególowych danych o produkcie](#markdown-header-2625-pobranie-szczególowych-danych-o-produkcie)
+        - [2.6.26. Pobranie wszystkich dostepnych produktow](#markdown-header-2626-pobranie-wszystkich-dostepnych-produktow)
+    - [2.7. Wymagania niefunkcjonalne](#markdown-header-27-wymagania-niefunkcjonalne)
+        - [2.7.1. Wymagania Produktowe](#markdown-header-271-wymagania-produktowe)
+        - [2.7.2. Wymagania organizacyjne](#markdown-header-272-wymagania-organizacyjne)
+        - [2.7.3. Wymagania zewnętrzne](#markdown-header-273-wymagania-zewnętrzne)
+- [3. Załącznik A: Słownik pojęć dziedzinowych:](#markdown-header-3-załącznik-a-słownik-pojęć-dziedzinowych)
+    - [3.1. A](#markdown-header-31-a)
+    - [3.2. F](#markdown-header-32-f)
+    - [3.3. I](#markdown-header-33-i)
+    - [3.4. K](#markdown-header-34-k)
+    - [3.5. P](#markdown-header-35-p)
+    - [3.6. R](#markdown-header-36-r)
+    - [3.7. S](#markdown-header-37-s)
+    - [3.8. Z](#markdown-header-38-z)
+- [4. Załącznik B: Wzory dokumentów](#markdown-header-4-załącznik-b-wzory-dokumentów)
+        - [4.1. Danedostawcy.docx](#markdown-header-41-danedostawcydocx)
+        - [4.2. Danefabryki.docx](#markdown-header-42-danefabrykidocx)
+        - [4.3. Wpistowaruwkatalogu.docx](#markdown-header-43-wpistowaruwkatalogudocx)
+        - [4.4. Wpisdotyczącycenytowaru.docx](#markdown-header-44-wpisdotyczącycenytowarudocx)
+        - [4.5. Dokumentofertowy.doc](#markdown-header-45-dokumentofertowydoc)
+        - [4.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#markdown-header-46-dokumentpotwierdzajacyrealizacjereklamacjidocx)
+        - [4.7. Formularzofertyudzielonejdlaklienta.doc](#markdown-header-47-formularzofertyudzielonejdlaklientadoc)
+        - [4.8. Formularzprosbyodostepnosctowaru.docx](#markdown-header-48-formularzprosbyodostepnosctowarudocx)
+        - [4.9. Formularzreklamacjidodostawcy.docx](#markdown-header-49-formularzreklamacjidodostawcydocx)
+        - [4.10. Formularzreklamacjiodklienta.docx](#markdown-header-410-formularzreklamacjiodklientadocx)
+        - [4.11. Instomformularzdanychklienta.docx](#markdown-header-411-instomformularzdanychklientadocx)
+        - [4.12. Instomprzesunieciemiedzymagazynowe.docx](#markdown-header-412-instomprzesunieciemiedzymagazynowedocx)
+        - [4.13. Instomprzyjecie zewnetrzne.docx](#markdown-header-413-instomprzyjecie-zewnetrznedocx)
+        - [4.14. Instomrozchodwewnetrzny.docx](#markdown-header-414-instomrozchodwewnetrznydocx)
+        - [4.15. Instomwydanie zewnetrzne.docx](#markdown-header-415-instomwydanie-zewnetrznedocx)
+        - [4.16. Raportzakcjimarketingowych.doc](#markdown-header-416-raportzakcjimarketingowychdoc)
+        - [4.17. Zamówienieklienta.doc](#markdown-header-417-zamówienieklientadoc)
+- [5. Załącznik C:](#markdown-header-5-załącznik-c)
+- [6. Załącznik D:](#markdown-header-6-załącznik-d)
+- [7. Załącznik E: Spis rysunków](#markdown-header-7-załącznik-e-spis-rysunków)
 
 <!-- /TOC -->
 
@@ -737,23 +646,23 @@ W systemie możemy wyróżnić następujących aktorów
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
 
-### 1.Dane_dostawcy.docx
-### 2.Dane_fabryki.docx
-### 3.Wpis_towaru_w_katalogu.docx
-### 4.Wpis_dotyczący_ceny_towaru.docx
-### 5.Dokument_ofertowy.doc
-### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
-### 7.Formularz_oferty_udzielonej_dla_klienta.doc
-### 8.Formularz_prosby_o_dostepnosc_towaru.docx
-### 9.Formularz_reklamacji_do_dostawcy.docx
-### 10.Formularz_reklamacji_od_klienta.docx
-### 11.Instom_formularz_danych_klienta.docx
-### 12.Instom_przesuniecie_miedzymagazynowe.docx
-### 13.Instom_przyjecie zewnetrzne.docx
-### 14.Instom_rozchod_wewnetrzny.docx
-### 15.Instom_wydanie zewnetrzne.docx
-### 16.Raport_z_akcji_marketingowych.doc
-### 17.Zamówienie_klienta.doc
+#### 1.Dane_dostawcy.docx
+#### 2.Dane_fabryki.docx
+#### 3.Wpis_towaru_w_katalogu.docx
+#### 4.Wpis_dotyczący_ceny_towaru.docx
+#### 5.Dokument_ofertowy.doc
+#### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
+#### 7.Formularz_oferty_udzielonej_dla_klienta.doc
+#### 8.Formularz_prosby_o_dostepnosc_towaru.docx
+#### 9.Formularz_reklamacji_do_dostawcy.docx
+#### 10.Formularz_reklamacji_od_klienta.docx
+#### 11.Instom_formularz_danych_klienta.docx
+#### 12.Instom_przesuniecie_miedzymagazynowe.docx
+#### 13.Instom_przyjecie zewnetrzne.docx
+#### 14.Instom_rozchod_wewnetrzny.docx
+#### 15.Instom_wydanie zewnetrzne.docx
+#### 16.Raport_z_akcji_marketingowych.doc
+#### 17.Zamówienie_klienta.doc
 
 <div class="page">
 
@@ -3683,7 +3592,7 @@ stop
 
 <div class="page">
 
-## 2.7 Wymagania niefunkcjonalne – omówienie
+## 2.7 Wymagania niefunkcjonalne
 
 Wymagania niefunkcjonalne dotyczą systemu jako całości - określimy w tym punkcie cechy, które muszą być spełnione w naszym systemie, aby zagwarantować jego jakość.
 
