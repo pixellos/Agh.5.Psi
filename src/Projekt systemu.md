@@ -1794,7 +1794,7 @@ Dostawca -- Magazynier
 
 ##### _Rysunek 12. Diagram przypadków użycia obsługi Obsługa magazynu_
 
-**Numer i Nazwa przypadku użycia:** 1.4.1.1 - Weryfikacja dokumentacji
+**Numer i Nazwa przypadku użycia:** UC-4.1 - Weryfikacja dokumentacji
 
 **Autor:** Kamil Gliński
 
@@ -1831,7 +1831,7 @@ _Dostawca_ - Inicjuje proces
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.1.2 - Rozładunek
+**Numer i Nazwa przypadku użycia:** UC-4.2 - Rozładunek
 
 **Autor:** Kamil Gliński
 
@@ -1867,7 +1867,7 @@ _Dostawca_ - Inicjuje proces
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.1.3 - Przyjęcie towaru
+**Numer i Nazwa przypadku użycia:** UC-4.3 - Przyjęcie towaru
 
 **Autor:** Kamil Gliński
 
@@ -1907,7 +1907,7 @@ _Dostawca_ - Inicjuje proces
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.1.4 - Kontrola stanu przesyłki
+**Numer i Nazwa przypadku użycia:** UC-4.4 - Kontrola stanu przesyłki
 
 **Autor:** Kamil Gliński
 
@@ -1942,7 +1942,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.1.5 - Przygotowanie towaru do składowania
+**Numer i Nazwa przypadku użycia:** UC-4.5 - Przygotowanie towaru do składowania
 
 **Autor:** Kamil Gliński
 
@@ -1980,7 +1980,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 
 
-**Numer i Nazwa przypadku użycia:** 1.5.1.1 - Sprawdzenie stanu
+**Numer i Nazwa przypadku użycia:** UC-4.5 - Sprawdzenie stanu
 
 **Autor:** Kamil Gliński
 
@@ -2014,7 +2014,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.5.1.3 - Kontrola wartości towaru
+**Numer i Nazwa przypadku użycia:** UC-4.6 - Kontrola wartości towaru
 
 **Autor:** Kamil Gliński
 
@@ -2050,7 +2050,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 ---
 
 
-**Numer i Nazwa przypadku użycia:** 1.5.2.1 - Grupowanie towaru
+**Numer i Nazwa przypadku użycia:** UC-4.7 - Grupowanie towaru
 
 **Autor:** Kamil Gliński
 
@@ -2083,7 +2083,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.5.2.2 - Przypisywanie numeru seryjnego
+**Numer i Nazwa przypadku użycia:** UC-4.8 - Przypisywanie numeru seryjnego
 
 **Autor:** Kamil Gliński
 
@@ -2117,7 +2117,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.5.2.3 - Przypisywanie numeru partii
+**Numer i Nazwa przypadku użycia:** UC-4.9 - Przypisywanie numeru partii
 
 **Autor:** Kamil Gliński
 
@@ -2150,7 +2150,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.5.2.4 - Przypisywanie kodów EAN
+**Numer i Nazwa przypadku użycia:** UC-4.10 - Przypisywanie kodów EAN
 
 **Autor:** Kamil Gliński
 
@@ -2186,7 +2186,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.4 - Powiazanie towaru z dostawcą i nabywcą
+**Numer i Nazwa przypadku użycia:** UC-4.11 - Powiazanie towaru z dostawcą i nabywcą
 
 **Autor:** Kamil Gliński
 
@@ -2218,7 +2218,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 ---
 
 
-**Numer i Nazwa przypadku użycia:** 1.5.3.1 - Tworzenie prognoz popytu
+**Numer i Nazwa przypadku użycia:** UC-4.12 - Tworzenie prognoz popytu
 
 Autor: Kamil Gliński
 
@@ -2250,7 +2250,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.3 - Wystawienie dokumentów (PZ WZ MM PW RW)
+**Numer i Nazwa przypadku użycia:** UC-4.13 - Wystawienie dokumentów (PZ WZ MM PW RW)
 
 **Autor:** Kamil Gliński
 
@@ -2300,7 +2300,7 @@ rectangle "System Magazynu" {
 ```
 ##### _Rysunek 13. Diagram przypadków użycia obsługi System Magazynu_
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.1 - Zarejestrowanie produktu
+**Numer i Nazwa przypadku użycia:** UC-5.1 - Zarejestrowanie produktu
 
 **Autor:** Kamil Gliński
 
@@ -2336,7 +2336,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Modyfikacja produktu
+**Numer i Nazwa przypadku użycia:** UC-5.2 - Modyfikacja produktu
 
 **Autor:** Kamil Gliński
 
@@ -2371,7 +2371,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Wyrejstrowanie produktu
+**Numer i Nazwa przypadku użycia:** UC-5.3 - Wyrejstrowanie produktu
 
 **Autor:** Kamil Gliński
 
@@ -2404,7 +2404,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Pobranie szczegolowych danych o produkcie
+**Numer i Nazwa przypadku użycia:** UC-5.4 - Pobranie szczegolowych danych o produkcie
 
 **Autor:** Kamil Gliński
 
@@ -2438,7 +2438,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.5 - Pobranie wszystkich dostepnych produktow
+**Numer i Nazwa przypadku użycia:** UC-5.5 - Pobranie wszystkich dostepnych produktow
 
 **Autor:** Kamil Gliński
 
@@ -2470,7 +2470,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** 1.4.2.2 - Tworzenie zamówienia dostaw
+**Numer i Nazwa przypadku użycia:** UC-5.6 - Tworzenie zamówienia dostaw
 
 **Autor:** Kamil Gliński
 
