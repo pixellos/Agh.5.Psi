@@ -3848,3 +3848,40 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 - [2.4.7.1. Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów](#markdown-header-2471-rysunek-14-diagram-przypadków-użycia-obsługi-rejestru-potencjalnych-klientów)
 - [2.4.7.2. Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie](#markdown-header-2472-rysunek-15-diagram-przypadków-użycia-funkcji-informowania-o-ofercie)
 - [2.4.8.1. Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień](#markdown-header-2481-rysunek-16-diagram-przypadków-użycia-wprowadzenia-dokumentów-i-zadań-przez-pracownika-oraz-właściciela-do-systemu-oraz-wglądu-do-prognozy-zamówień)
+
+# Załącznik F: Podział zadań
+
+OA:
+1 - Mateusz
+2 - Adam
+3 - Kacper
+4 - Kamil
+5 - Kamil
+6 - Adam
+7 - Mateusz
+8 - Kacper
+
+Dokumenty:
+
+- 1.Dane_dostawcy.docx - Mateusz
+- 2.Dane_fabryki.docx - Mateusz
+- 3.Wpis_towaru_w_katalogu.docx - Mateusz
+- 4.Wpis_dotyczący_ceny_towaru.docx - Mateusz
+- 5.Dokument_ofertowy.doc - Adam
+- 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx - Kacper
+- 7.Formularz_oferty_udzielonej_dla_klienta.doc - Adam
+- 8.Formularz_prosby_o_dostepnosc_towaru.docx - Kacper
+- 9.Formularz_reklamacji_do_dostawcy.docx - Kacper
+- 10.Formularz_reklamacji_od_klienta.docx - Kacper
+- 11.Instom_formularz_danych_klienta.docx - Kamil
+- 12.Instom_przesuniecie_miedzymagazynowe.docx - Kamil
+- 13.Instom_przyjecie zewnetrzne.docx - Kamil
+- 14.Instom_rozchod_wewnetrzny.docx - Kamil
+- 15.Instom_wydanie zewnetrzne.docx - Kamil
+- 16.Raport_z_akcji_marketingowych.doc - Adam
+- 17.Zamówienie_klienta.doc - Adam
+
+ActivityDiagram:
+
+OA6 - Adam
+
