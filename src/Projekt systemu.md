@@ -112,6 +112,7 @@ Spis Treści
 - [5. Załącznik C:](#markdown-header-5-załącznik-c)
 - [6. Załącznik D:](#markdown-header-6-załącznik-d)
 - [7. Załącznik E: Spis rysunków](#markdown-header-7-załącznik-e-spis-rysunków)
+- [8. Załącznik F: Podział zadań](#markdown-header-8-załącznik-f-podział-zadań)
 
 <!-- /TOC -->
 
@@ -3884,4 +3885,6 @@ Dokumenty:
 ActivityDiagram:
 
 OA6 - Adam
+OA1 - Mateusz
+
 
