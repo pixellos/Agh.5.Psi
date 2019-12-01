@@ -3617,6 +3617,32 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 ### 2.7.2 Wymagania organizacyjne
 Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, jak i w firmie - wytwórcy
 
+#### 2.7.2.1 Dostawy
+
+- **Dostarczenie systemu**
+    - **Cecha:** System jest dostarczany poprzez zainstalowanie na zdalnej maszynie wirtualnej
+    - **Miary:** Użytkowanie systemu jest realizowane przez strone www
+
+- **Dostarczenie bazy danych**
+    - **Cecha:** Baza danych jest dostarczana jako skrypt generujacy tabele
+    - **Miary:** Tabele oraz dane
+    
+    
+#### 2.7.2.2 Implementacyjne
+
+- **Czytość kodu**
+    - **Cecha:** System jest zaimplementowany zgodnie z zasdami czystego kodu
+    - **Miary:** Oceny programistów
+
+- **Jakość kodu**
+    - **Cecha:** System jest zaimplementowany zgodnie z zasadami SOLID
+	- **Cecha:** System jest zaimplementowany zgodnie z zasadami programowania obiektowaego
+    - **Miary:** Oceny programistów
+	
+- **Optymalizacja**
+    - **Cecha:** System jest zaimplementowany aby zapewnić jak najszybsze działanie
+    - **Miary:** Szybkość wykonania operacji
+
 #### 2.7.2.3 Standardów
 
 - **Metodyka**
@@ -3654,6 +3680,22 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
     - **Cecha:** System działa w interesie firmy według ustalonych wymagań, implementacja jest wykonana według najlepszej wiedzy programistów
 - **System nie powoduje szkód** 
     - **Cecha:** System nie zmusza użytkowników do podejmowania się nieetycznych działań w celu realizacji swoich obowiązków
+    
+#### 2.7.3.4 Prawne - ochrona prywatności
+
+- **Przestrzeganie prawa**
+    - **Cecha:** System podczas swojego działania nie łamie przepisów prawa
+    - **Miary:** Brak postępowania karnego
+    
+- **Ochrona danych**
+    - **Cecha:** System chroni dane użytkowników
+    - **Miary:** Brak udostępniania poufnych danych 
+
+- **Autentykacja**
+    - **Cecha:** System wymaga autentykacji użytkownika
+    - **Miary:** Brak udostępniania poufnych danych 
+    
+
 
 #### 2.7.3.5 Prawne - Wymagania zabezpieczeń
 - **Odporność na ataki DoS** 
