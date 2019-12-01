@@ -3655,7 +3655,7 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 - **System nie powoduje szkód** 
     - **Cecha:** System nie zmusza użytkowników do podejmowania się nieetycznych działań w celu realizacji swoich obowiązków
 
-#### 2.7.3.5 Wymagania zabezpieczeń
+#### 2.7.3.5 Prawne - Wymagania zabezpieczeń
 - **Odporność na ataki DoS** 
     - **Cecha:** Aplikacja jest odporna na ataki typu `Denial of Service` 
     - **Miara:** Raport z audytu potwierdzający daną ceche
