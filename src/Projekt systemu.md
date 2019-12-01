@@ -1,72 +1,208 @@
 Zespół: Mateusz Popielarz, Adam Samsonowicz, Kamil Gliński, Kacper Kwapisz
 Lead: Mateusz Popielarz
 
-System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
----
+## System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
+
 ![logo](https://industryweek.pl/katalog-wystawcow/photos/177/file/107/instom-logo+slogan_png8_500px.png?size=)
 
 Żródło danych: Firma rodzinna
 
-
 <div class="page">
 
 Spis Treści
---- 
+
+---
 
 <!-- T1OC insertanchor:false withlinks:true anchormode:bitbucket.org updateonsave:true depthfrom:5 depthto:5 -->
 
-
 - [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
-    - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu)
-        - [1.1.1. Nazwa firmy](#111-nazwa-firmy)
-        - [1.1.2. Typ firmy](#112-typ-firmy)
-        - [1.1.3. Cel produktu](#113-cel-produktu)
-        - [1.1.4. Opis dziedziny działalności](#114-opis-dziedziny-działalności)
-        - [1.1.5. Cele firmy](#115-cele-firmy)
-        - [1.1.6. Schemat struktury organizacyjnej](#116-schemat-struktury-organizacyjnej)
-    - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#12-obszar-modelowania-om--wstępny-opisowy-model-stanu-istniejącego)
-        - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)
-        - [1.2.2. Definicja celu systemu](#122-definicja-celu-systemu)
-        - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania)
-    - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
-        - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
-    - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
-        - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
-        - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
-    - [1.5. Cele do osiągnięcia](#15-cele-do-osiągnięcia)
-        - [1.5.1. Cele produktu](#151-cele-produktu)
-        - [1.5.2. Cele przedsięwzięcia projektowego](#152-cele-przedsięwzięcia-projektowego)
+  - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu)
+    - [1.1.1. Nazwa firmy](#111-nazwa-firmy)
+    - [1.1.2. Typ firmy](#112-typ-firmy)
+    - [1.1.3. Cel produktu](#113-cel-produktu)
+    - [1.1.4. Opis dziedziny działalności](#114-opis-dziedziny-działalności)
+    - [1.1.5. Cele firmy](#115-cele-firmy)
+    - [1.1.6. Schemat struktury organizacyjnej](#116-schemat-struktury-organizacyjnej)
+  - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#12-obszar-modelowania-om--wstępny-opisowy-model-stanu-istniejącego)
+    - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)
+    - [1.2.2. Definicja celu systemu](#122-definicja-celu-systemu)
+    - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania)
+  - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
+    - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
+  - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
+    - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
+    - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
+  - [1.5. Cele do osiągnięcia](#15-cele-do-osiągnięcia)
+    - [1.5.1. Cele produktu](#151-cele-produktu)
+    - [1.5.2. Cele przedsięwzięcia projektowego](#152-cele-przedsięwzięcia-projektowego)
 - [2. Opis Wymagań Systemu](#2-opis-wymagań-systemu)
-    - [2.1. Funkcje systemu ze strony widzenia użytkownika](#21-funkcje-systemu-ze-strony-widzenia-użytkownika)
-        - [2.1.1. Aktorzy w systemie](#211-aktorzy-w-systemie)
-    - [2.2. Dane przechowywane w systemie](#22-dane-przechowywane-w-systemie)
-        - [2.2.1. Opis Magazynu](#221-opis-magazynu)
-    - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory)
-        - [2.3.1. Zapytanie ofertowe od klienta](#231-zapytanie-ofertowe-od-klienta)
-        - [2.3.2. Oferta](#232-oferta)
-        - [2.3.3. Zamówienie towaru u dostawcy](#233-zamówienie-towaru-u-dostawcy)
-        - [2.3.4. Potwierdzenie zamówienia od dostawcy](#234-potwierdzenie-zamówienia-od-dostawcy)
-        - [2.3.5. Faktura zakupu od dostawcy](#235-faktura-zakupu-od-dostawcy)
-        - [2.3.6. Rejestracja towaru na magazynie](#236-rejestracja-towaru-na-magazynie)
-        - [2.3.7. Wyrejestrowanie towaru z magazynu](#237-wyrejestrowanie-towaru-z-magazynu)
-        - [2.3.8. Faktura zakupu dla klienta](#238-faktura-zakupu-dla-klienta)
-        - [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#239-raport-sprzedażowe-do-analiz-wewnętrznych)
-        - [2.3.10. Raport statystyczny wspierający cele marketingowe](#2310-raport-statystyczny-wspierający-cele-marketingowe)
-        - [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#2311-raport-statystyczny-wspierający-prognozy-popytu-wspierający-cele-magazynowe)
-    - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych)
+  - [2.1. Funkcje systemu ze strony widzenia użytkownika](#21-funkcje-systemu-ze-strony-widzenia-użytkownika)
+    - [2.1.1. Aktorzy w systemie](#211-aktorzy-w-systemie)
+  - [2.2. Dane przechowywane w systemie](#22-dane-przechowywane-w-systemie)
+    - [2.2.1. Opis Magazynu](#221-opis-magazynu)
+  - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory)
+    - [2.3.1. Zapytanie ofertowe od klienta](#231-zapytanie-ofertowe-od-klienta)
+    - [2.3.2. Oferta](#232-oferta)
+    - [2.3.3. Zamówienie towaru u dostawcy](#233-zamówienie-towaru-u-dostawcy)
+    - [2.3.4. Potwierdzenie zamówienia od dostawcy](#234-potwierdzenie-zamówienia-od-dostawcy)
+    - [2.3.5. Faktura zakupu od dostawcy](#235-faktura-zakupu-od-dostawcy)
+    - [2.3.6. Rejestracja towaru na magazynie](#236-rejestracja-towaru-na-magazynie)
+    - [2.3.7. Wyrejestrowanie towaru z magazynu](#237-wyrejestrowanie-towaru-z-magazynu)
+    - [2.3.8. Faktura zakupu dla klienta](#238-faktura-zakupu-dla-klienta)
+    - [2.3.9. Raport sprzedażowe do analiz wewnętrznych](#239-raport-sprzedażowe-do-analiz-wewnętrznych)
+    - [2.3.10. Raport statystyczny wspierający cele marketingowe](#2310-raport-statystyczny-wspierający-cele-marketingowe)
+    - [2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe](#2311-raport-statystyczny-wspierający-prognozy-popytu-wspierający-cele-magazynowe)
+  - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych)
 - [3. Załącznik A: Słownik pojęć dziedzinowych:](#3-załącznik-a-słownik-pojęć-dziedzinowych)
-    - [3.1. A](#31-a)
-    - [3.2. F](#32-f)
-    - [3.3. I](#33-i)
-    - [3.4. K](#34-k)
-    - [3.5. P](#35-p)
-    - [3.6. R](#36-r)
-    - [3.7. S](#37-s)
-    - [3.8. Z](#38-z)
+  - [3.1. A](#31-a)
+  - [3.2. F](#32-f)
+  - [3.3. I](#33-i)
+  - [3.4. K](#34-k)
+  - [3.5. P](#35-p)
+  - [3.6. R](#36-r)
+  - [3.7. S](#37-s)
+  - [3.8. Z](#38-z)
 - [4. Załącznik B: Wzory dokumentów](#4-załącznik-b-wzory-dokumentów)
 - [5. Załącznik C:](#5-załącznik-c)
 - [6. Załącznik D:](#6-załącznik-d)
 - [7. Załącznik E: Spis rysunków](#7-załącznik-e-spis-rysunków)
+
+<!-- TOC -->
+
+    - System wspomagania sprzedaży/marketingu urządzeń z sektora automatyki przemysłowej
+- Sformułowanie zadania projektowego
+    - Przedmiot modelowania – opis dziedziny problemu
+        - Nazwa firmy
+        - Typ firmy
+        - Cel produktu
+        - Opis dziedziny działalności
+        - Cele firmy
+        - Schemat struktury organizacyjnej
+    - Obszar modelowania OM – wstępny opisowy model stanu istniejącego
+        - Wywiad z zarządem w celu ustalenia przeznaczenia systemu
+        - Definicja celu systemu
+        - Składniki organizacyjne dla Obszaru Modelowania
+    - Zakres odpowiedzialności systemu (ZOS)
+        - Obszary aktywności (OA)
+            - Obsługa zamówień (OA1)
+            - Obsługa zleceń zakupu (OA2)
+            - Obsługa reklamacji (OA3)
+            - Obsługa magazynu (OA4)
+            - Kontrola stanów magazynowych (OA5)
+            - Analizy danych na potrzeby marketingowe (OA6)
+            - Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)
+            - Zarządzanie (OA8)
+    - Zwięzła nazwa problemu
+        - Nazwa problemu
+        - Nazwa kodowa projektu
+    - Cele do osiągnięcia
+        - Cele produktu
+        - Cele przedsięwzięcia projektowego
+- Opis Wymagań Systemu
+    - Funkcje systemu ze strony widzenia użytkownika
+        - Aktorzy w systemie
+    - Dane przechowywane w systemie
+        - Opis Magazynu
+    - Dokumenty wprowadzane i wyprowadzane z systemu – wzory
+        - Dane_dostawcy.docx
+        - Dane_fabryki.docx
+        - Wpis_towaru_w_katalogu.docx
+        - Wpis_dotyczący_ceny_towaru.docx
+        - Dokument_ofertowy.doc
+        - Dokument_potwierdzajacy_realizacje_reklamacji.docx
+        - Formularz_oferty_udzielonej_dla_klienta.doc
+        - Formularz_prosby_o_dostepnosc_towaru.docx
+        - Formularz_reklamacji_do_dostawcy.docx
+        - Formularz_reklamacji_od_klienta.docx
+        - Instom_formularz_danych_klienta.docx
+        - Instom_przesuniecie_miedzymagazynowe.docx
+        - Instom_przyjecie zewnetrzne.docx
+        - Instom_rozchod_wewnetrzny.docx
+        - Instom_wydanie zewnetrzne.docx
+        - Raport_z_akcji_marketingowych.doc
+        - Zamówienie_klienta.doc
+    - Wyniki analizy wymagań funkcjonalnych
+            - Obsługa zamówień (OA1)
+            - Obsługa zleceń zakupu (OA2)
+            - Obsługa reklamacji
+            - Obsługa magazynu
+            - Analiza danych na potrzeby marketingowe (OA6)
+            - Rejestr potencjalnych klientów i stanu kontaktu z nimi
+            - Zarzadzanie
+    - Modelowanie zachowań w czasie
+        - Analiza danych na potrzeby marketingowe (OA6)
+    - Wymagania funkcjonalne dla dodatkowych części systemu
+        - Zarejestrowanie faktu dodania dostawcy do systemu
+        - Zmienienie rejestru dostawcy
+        - Dodanie towaru
+        - Zmiana towaru
+        - Dezaktywacja towaru
+        - Ustalenie progu cenowego towaru
+        - Wygeneruj cennik
+        - Wygeneruj cennik
+        - Zarezerwuj towar
+        - Usuń rezerwację towaru
+        - Poinformuj SMS
+        - Zgłoszenie reklamacji przez klienta
+        - Obsługa zgłoszenia reklamacji klienta przez pracownika
+        - Przygotowanie produktów do odesłania do dostawcy
+        - Realizacja wysłania produktów do dostawcy
+        - Realizacja wysłania produktów do dostawcy
+        - Wprowadzenie reklamowanych produktów do rejestru
+        - Wprowadzenie dokumentów do systemu
+        - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
+        - Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
+        - Przydział pracowników do określonych zadań
+        - Zarejestrowanie produktu
+        - Modyfikacja produktu
+        - Wyrejestrowanie produktu
+        - Pobranie szczególowych danych o produkcie
+        - Pobranie wszystkich dostepnych produktow
+    - Wymagania niefunkcjonalne – omówienie
+        - Wymagania Produktowe
+            - Użyteczności
+            - Sprawnościowe
+            - Niezawodności
+            - Przenośności
+        - Wymagania organizacyjne
+            - Dostawy
+            - Implementacyjne
+            - Standardów
+        - Wymagania zewnętrzne
+            - Współpracy
+            - Etyczne
+            - Prawne - ochrona prywatności
+            - Prawne - Wymagania zabezpieczeń
+- Załącznik A: Słownik pojęć dziedzinowych:
+    - A
+    - F
+    - I
+    - K
+    - P
+    - R
+    - S
+    - Z
+- Załącznik B: Wzory dokumentów
+        - Dane_dostawcy.docx
+        - Dane_fabryki.docx
+        - Wpis_towaru_w_katalogu.docx
+        - Wpis_dotyczący_ceny_towaru.docx
+        - Dokument_ofertowy.doc
+        - Dokument_potwierdzajacy_realizacje_reklamacji.docx
+        - Formularz_oferty_udzielonej_dla_klienta.doc
+        - Formularz_prosby_o_dostepnosc_towaru.docx
+        - Formularz_reklamacji_do_dostawcy.docx
+        - Formularz_reklamacji_od_klienta.docx
+        - Instom_formularz_danych_klienta.docx
+        - Instom_przesuniecie_miedzymagazynowe.docx
+        - Instom_przyjecie zewnetrzne.docx
+        - Instom_rozchod_wewnetrzny.docx
+        - Instom_wydanie zewnetrzne.docx
+        - Raport_z_akcji_marketingowych.doc
+        - Zamówienie_klienta.doc
+- Załącznik C:
+- Załącznik D:
+- Załącznik E: Spis rysunków
 
 <!-- /TOC -->
 
@@ -212,8 +348,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
       Jako `Konsultant` potrzebuję `zmodyfikować dane dostawcy`, ponieważ zmiana dany dostawcy, lub dane były wprowadzone z błędem.
 
-
-2. Prowadzenie katalogu i cennika towarów
+2) Prowadzenie katalogu i cennika towarów
 
    1. Dodawanie nowych pozycji katalogów towarów
 
@@ -231,7 +366,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
       Jako Konsultant chcę pokazać klientowi dostępne dla niego `towary` w przystępnej postaci
 
-3. Rezerwacja towaru
+3) Rezerwacja towaru
 
    1. Rezerwacja towaru
 
@@ -265,9 +400,9 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
    2. Dodanie produktów do oferty
 
-        1. Znalezienie w systemie oraz dodanie produktów do oferty
+      1. Znalezienie w systemie oraz dodanie produktów do oferty
 
-            `Konsultant` po stworzeniu oferty powinien mieć możliwość dodania produktów do oferty, które to produkty są zdefiniowane przez samego `klienta` lub wyszukane w systemie przez `konsultanta`.
+         `Konsultant` po stworzeniu oferty powinien mieć możliwość dodania produktów do oferty, które to produkty są zdefiniowane przez samego `klienta` lub wyszukane w systemie przez `konsultanta`.
 
       2. Sprawdzenie dostępności produktu
 
@@ -303,27 +438,27 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 6. Zatwierdzenie faktury - Klient zapłacił za faktury
 
-#### 1.3.1.3 Obsługa reklamacji  (OA3)
+#### 1.3.1.3 Obsługa reklamacji (OA3)
 
 1. Przyjęcie zgłoszenia reklamacji od klienta
 
-    Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać działający produkt lub zwrot pieniędzy.
+   Jako `klient` chciałbym mieć możliwość złożenia reklamacji aby otrzymać działający produkt lub zwrot pieniędzy.
 
 2. Analiza zasadności reklamacji
 
    1. Sprawdzenie zasadności reklamacji przez zespół
 
-        Jako `właściciel` chciałbym, aby `zespół techniczny` przeanalizował zasadność oddania produktu do reklamacji przez `klienta`, aby nie angażować `dostawcy` we wszystkie zgłoszenia reklamacji.
+      Jako `właściciel` chciałbym, aby `zespół techniczny` przeanalizował zasadność oddania produktu do reklamacji przez `klienta`, aby nie angażować `dostawcy` we wszystkie zgłoszenia reklamacji.
 
 3. Zgłoszenie reklamacji dostawcy
 
-    1. Przygotowanie produktów do odesłania do dostawcy
+   1. Przygotowanie produktów do odesłania do dostawcy
 
-        Jako `właściciel` chciałbym, aby `zespół techniczny` przygotował reklamowane produkty do odesłania `dostawcy`.
+      Jako `właściciel` chciałbym, aby `zespół techniczny` przygotował reklamowane produkty do odesłania `dostawcy`.
 
 
     2. Realizacja reklamacji do dostawcy
-    
+
         Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od niego wymienione, działające produkty.
 
 4. Prowadzenie rejestru reklamacji
@@ -352,23 +487,23 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 1. Czynności monitorujące
 
-    1. Zarejestrowanie towaru w magazynie
+   1. Zarejestrowanie towaru w magazynie
 
-        Jako `magazynier` chce mieć możliwość `zarejestrowania towaru` aby `udostępnić oraz uaktualnić informacje o dostępności towaru`.
+      Jako `magazynier` chce mieć możliwość `zarejestrowania towaru` aby `udostępnić oraz uaktualnić informacje o dostępności towaru`.
 
-    1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji wystawienie dokumentów magazynowych
+   1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji wystawienie dokumentów magazynowych
 
-        Jako `magazynier` chce mieć możliwość `tworzyć zamówienia dostaw` aby `zapewnić wymagane dokumenty dotyczące dostaw`.
+      Jako `magazynier` chce mieć możliwość `tworzyć zamówienia dostaw` aby `zapewnić wymagane dokumenty dotyczące dostaw`.
 
-        Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty w prcedurze`.
+      Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty w prcedurze`.
 
    1. Powiązanie towaru z dostawcą i nabywcą
 
-        Jako `magazynier` chce mieć możliwość `powiązania towaru z dostawcą i nabywcą` aby `dostarczyć przesyłkę pod odpowiednią lokalizację`.
+      Jako `magazynier` chce mieć możliwość `powiązania towaru z dostawcą i nabywcą` aby `dostarczyć przesyłkę pod odpowiednią lokalizację`.
 
    1. Wyrejstrowanie towaru z magazynu
 
-        Jako `magazynier` chce mieć możliwość `wyrejestrowania towaru` z magazynu aby `uaktualnić informacje o dostępności towaru`.
+      Jako `magazynier` chce mieć możliwość `wyrejestrowania towaru` z magazynu aby `uaktualnić informacje o dostępności towaru`.
 
 #### 1.3.1.5 Kontrola stanów magazynowych (OA5)
 
@@ -376,43 +511,43 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
    1. Sprawdzenie stanu magazynu
 
-        Jako `magazynier` chce mieć możliwość `sprawdzenia stanu` magazynu aby `okreslić jego aktualny stan`.
+      Jako `magazynier` chce mieć możliwość `sprawdzenia stanu` magazynu aby `okreslić jego aktualny stan`.
 
    1. Informowanie o danych poziomach stanu magazynu
 
-        Jako `magazynier` chce mieć możliwość `informowania o danych poziomach stanu` magazynu aby `uzupełniać go na bieżąco produktami`
+      Jako `magazynier` chce mieć możliwość `informowania o danych poziomach stanu` magazynu aby `uzupełniać go na bieżąco produktami`
 
    1. Zaawansowana kontrola towarów aktualnych na magazynie jak i towarów sprzedanych
 
-        Jako `magazynier` chce mieć możliwość `kontroli towaru` aby `zapewnić jakość produktów`
+      Jako `magazynier` chce mieć możliwość `kontroli towaru` aby `zapewnić jakość produktów`
 
    1. Kontrolowanie sprzedaży online (w tym kontrola ilości i wartości towaru znajdującego się na magazynie)
 
-        Jako `magazynier` chce mieć możliwość `kontrolowania sprzedaży online i wartosci towaru` aby `wysyłany towar byl zawsze zgodny z umową i adekwatny do ceny`
+      Jako `magazynier` chce mieć możliwość `kontrolowania sprzedaży online i wartosci towaru` aby `wysyłany towar byl zawsze zgodny z umową i adekwatny do ceny`
 
 1. Kategoryzowanie
 
-    1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
+   1. Grupowanie towarów pod jedną nazwą oraz przypisanie do kategorii i nadanie ceny
 
-        Jako `magazynier` chce mieć możliwość `grupowania towaru` aby `zminimalizować czas wyszukiwania towaru`
+      Jako `magazynier` chce mieć możliwość `grupowania towaru` aby `zminimalizować czas wyszukiwania towaru`
 
-    1. Przypisywanie numeru seryjnego dla każdego egzemplarza
+   1. Przypisywanie numeru seryjnego dla każdego egzemplarza
 
-        Jako `magazynier` chce mieć możliwość `przypisywania unikalnego numeru seryjnego produktom` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
+      Jako `magazynier` chce mieć możliwość `przypisywania unikalnego numeru seryjnego produktom` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
 
-    1. Przypisywanie numeru partii
+   1. Przypisywanie numeru partii
 
-        Jako `magazynier` chce mieć możliwość `przypisywania numeru partii` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
+      Jako `magazynier` chce mieć możliwość `przypisywania numeru partii` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
 
-    1. Przypisywania kodów EAN
+   1. Przypisywania kodów EAN
 
-        Jako `magazynier` chce mieć możliwość `przypisywania kodów EAN` aby `umożliwić wysyłkę produktu po całej Europie`
+      Jako `magazynier` chce mieć możliwość `przypisywania kodów EAN` aby `umożliwić wysyłkę produktu po całej Europie`
 
 1. Prognozowanie popytu
 
    1. Tworzenie prognoz popytu
 
-        Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
+      Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
 
 #### 1.3.1.6 Analizy danych na potrzeby marketingowe (OA6)
 
@@ -563,16 +698,14 @@ W systemie możemy wyróżnić następujących aktorów
    1. Reprezentanci
    1. Lokale
 
-
-1. Dostawca - jest to firma od której zamawiamy
+1) Dostawca - jest to firma od której zamawiamy
 
    1. Nazwa firmy
    1. NIP
    1. Wystawione faktury na naszą firmę
-   1. Wystawione faktury na firmę dostawcy 
+   1. Wystawione faktury na firmę dostawcy
    1. Kraj pochodzenia
    1. Łączna kwota zamówień
-
 
 1. Oferta
 
@@ -603,98 +736,28 @@ W systemie możemy wyróżnić następujących aktorów
 
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
-- Ekran wprowadzenia danych dostawcy do systemu (w wariancie modyfikacji pola będą po prostu wstępnie wypełnione)
 
-### 2.3.1 Zapytanie ofertowe od klienta
-
-1. Klient
-
-1. Produkt
-
-### 2.3.2 Oferta
-
-1. Klient
-
-1. Pracownik
-
-1. Produkt
-
-### 2.3.3 Zamówienie towaru u dostawcy
-
-1. Produkt
-
-1. Dostawca
-
-1. Oferta
-
-### 2.3.4 Potwierdzenie zamówienia od dostawcy
-
-1. Zamówienie towaru u dostawcy
-
-### 2.3.5. Faktura zakupu od dostawcy
-
-1. Faktura
-
-2. Zamówienie towaru u dostawcy
-
-### 2.3.6. Rejestracja towaru na magazynie
-
-1.  Produkt
-
-2.  Magazyn
-
-3.  Pracownik
-
-4.  Dostawca
-
-### 2.3.7. Wyrejestrowanie towaru z magazynu
-
-1.  Produkt
-
-2.  Magazyn
-
-3.  Oferta
-
-### 2.3.8. Faktura zakupu dla klienta
-
-1.  Faktura
-
-2.  Klient
-
-3.  Produkt
-
-### 2.3.9. Raport sprzedażowe do analiz wewnętrznych
-
-1. Produkt
-
-2. Klient
-
-3. Dostawca
-
-4. Oferta
-
-5. Zamówienie
-
-### 2.3.10. Raport statystyczny wspierający cele marketingowe
-
-1. Produkt
-
-2. Klient
-
-3. Dostawca
-
-4. Oferta
-
-5. Zamówienie
-
-### 2.3.11. Raport statystyczny wspierający prognozy popytu wspierający cele magazynowe
-
-1. Produkt
-2. Magazyn
+### 1.Dane_dostawcy.docx
+### 2.Dane_fabryki.docx
+### 3.Wpis_towaru_w_katalogu.docx
+### 4.Wpis_dotyczący_ceny_towaru.docx
+### 5.Dokument_ofertowy.doc
+### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
+### 7.Formularz_oferty_udzielonej_dla_klienta.doc
+### 8.Formularz_prosby_o_dostepnosc_towaru.docx
+### 9.Formularz_reklamacji_do_dostawcy.docx
+### 10.Formularz_reklamacji_od_klienta.docx
+### 11.Instom_formularz_danych_klienta.docx
+### 12.Instom_przesuniecie_miedzymagazynowe.docx
+### 13.Instom_przyjecie zewnetrzne.docx
+### 14.Instom_rozchod_wewnetrzny.docx
+### 15.Instom_wydanie zewnetrzne.docx
+### 16.Raport_z_akcji_marketingowych.doc
+### 17.Zamówienie_klienta.doc
 
 <div class="page">
 
-## 2.4 Wyniki analizy wymagań funkcjonalnych 
+## 2.4 Wyniki analizy wymagań funkcjonalnych
 
 W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek użytkownika.
 
@@ -714,16 +777,10 @@ rectangle "Zarządzanie dostawcami" {
     (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
     (Konsultant) -- (Aktywacja i dezaktywacja pozycji katalogu towarów)
 }
-@enduml
-@startuml
-actor Konsultant
-actor Dostawca
-left to right direction
-skinparam packageStyle rectangle
+
 
 rectangle "Zarządzanie towarami" {
     (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
-    (Konsultant) -- (Aktywacja i dezaktywacja pozycji katalogu towarów)
     (Konsultant) -- (Ustalanie cen)
     (Konsultant) -- (Generowanie cennika)
     (Konsultant) -- (Rezerwacja towaru)
@@ -753,19 +810,17 @@ rectangle "Zarządzanie towarami" {
 
 **Zdarzenie inicjujące:** Dostawca wyraził chęć dołączenia do naszego łańcucha dostaw
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. System wyświetla formularz dodania dostawcy do systemu
 2. `Konsultant` wpisuje dane
 3. System weryfikuje dane
 4. `Dostawca` zostaje zapisany
 
-
 **Scenariusze alternatywne:**
 
 1. `Dostawca` istnieje w systemie, system proponuje `UC-1.2`
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
-
 
 **Uczestnicy i interesy:**
 
@@ -792,7 +847,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 **Zdarzenie inicjujące:** Dostawca poinformował o zmianie danych
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. System wyświetla formularz dodania dostawcy do systemu wypełniony danymi
 2. `Konsultant` poprawia dane
@@ -800,6 +855,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 4. `Dostawca` zostaje zapisany
 
 **Scenariusze alternatywne:**
+
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
@@ -823,12 +879,11 @@ _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zakla
 
 **Aktor główny:** Konsultant
 
-
 **Warunek początkowy:** Towaru nie ma w systemie
 
 **Zdarzenie inicjujące:** Konsultant dowiaduje się o nowym towarze od dostawcy
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. System wyświetla formularz dodania towaru do systemu
 2. `Konsultant` wpisuje dane
@@ -836,8 +891,8 @@ _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zakla
 4. `Towar` zostaje zapisany
 
 **Scenariusze alternatywne:**
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
 
@@ -863,13 +918,14 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Zdarzenie inicjujące:** Konsultant dowiaduje się o zmianie dostępności towaru
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. System wyświetla wpis towaru
 2. `Konsultant` klika aktywuj/dezaktywuj
-4. `Towar` zostaje zapisany
+3. `Towar` zostaje zapisany
 
 **Scenariusze alternatywne:**
+
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
@@ -892,18 +948,18 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Aktor główny:** Konsultant
 
-
 **Warunek początkowy:** Ceny są nieaktualne
 
 **Zdarzenie inicjujące:** Konsultant chce zaktualizować ceny
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. System wyświetla wpis towaru
 2. `Konsultant` aktualizuje progi cenowe
-4. `Towar` zostaje zapisany
+3. `Towar` zostaje zapisany
 
 **Scenariusze alternatywne:**
+
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
@@ -927,7 +983,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Zdarzenie inicjujące:** Konsultant chce wygenerować cennik
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` wybiera opcję wygenerowania cennika
 1. Cennik zostaje wygenerowany
@@ -959,12 +1015,13 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Zdarzenie inicjujące:** Konsultant chce zarezerwować towar
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` wybiera towar do rezerwacji i okres
 1. Rezerwacja towaru zostaje zapisana w systemie
 
 **Scenariusze alternatywne:**
+
 1. Występuje błąd, gdy wybrany okres rezerwacji przekracza 3 miesiące od dnia obecnego
 
 **Uczestnicy i interesy:**
@@ -990,12 +1047,11 @@ W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być mo
 
 **Aktor główny:** Konsultant
 
-
 **Warunek początkowy:** Rezerwacja istnieje
 
 **Zdarzenie inicjujące:** Konsultant chce zmienić lub zlikwidować rezerwację towaru
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` wybiera wpis rezerwacji towaru i aktualizuje wpis
 1. Rezerwacja towaru zostaje zaktualizowana
@@ -1009,7 +1065,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 _Klient_ - Inicjuje proces
 
-#### 2.4.2 Obsługa zleceń zakupu  (OA2)
+#### 2.4.2 Obsługa zleceń zakupu (OA2)
 
 ```plantuml 2.1.2.2
 @startuml
@@ -1052,6 +1108,7 @@ rectangle "Proces ofertowy" {
 }
 @enduml
 ```
+
 ##### Rysunek 06. Proces ofertowy
 
 ```plantuml 2.1.2.2
@@ -1076,9 +1133,8 @@ rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
 }
 @enduml
 ```
+
 ##### Rysunek 07. Potwierdzenie zamówienia i wystawienie faktury
-
-
 
 **Numer i nazwa przypadku uzycia:** 1.2.1.1 - Rejestrowanie klienta
 
@@ -1096,7 +1152,7 @@ rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
 
 **Zdarzenie inicjujące:** Nowy `klient` zgłasza się z zapytaniem ofertowym
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` naciska przycisk 'Dodaj nowego klienta' znajdujący się w sekcji wyboru klienta na głównej stronie oferty.
 2. `Konsultant` wypełnia informacje dotyczące klienta i naciska przycisk 'Zatwierdź'
@@ -1133,10 +1189,10 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 
 **Zdarzenie inicjujące:** `Konsultant` dowiedział się o zmianie danych klienta
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` przechodzi do strony 'Klienci' poprzez naciśnięcie przycisku 'Klienci' znajdującego się na głównej stronie systemu
-2. Strona 'Klienci' jest wyświetlona,  `Konsultant` wyszukuje `klienta` w wyszukiwarce klientów wpisując w pole identyfikator `klienta` 
+2. Strona 'Klienci' jest wyświetlona, `Konsultant` wyszukuje `klienta` w wyszukiwarce klientów wpisując w pole identyfikator `klienta`
 3. `Klient` został znaleziony w systemie, `Konsultant` klika na rekord `klienta` co przenosi go do widoku informacji szczegółowych `klienta`
 4. `Konsultant` klika przycisk 'edytuj', informacje są otwarte do edycji
 5. `Konsultant` wypełnia informacje aktualnymi danymi i naciska przycisk 'zapisz'
@@ -1148,10 +1204,8 @@ Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej proce
 
 2. `Konsultant` zgłasza błąd
 
-   
-
-1. Punkt (3) scenariusza głównego, system nie znajduje `klienta` pomimo poprawnie wprowadzonego identyfikatora, oraz pewności, że dane `klient` został wcześniej wprowadzany do systemu
-2. `Konsultant` zgłasza błąd
+1) Punkt (3) scenariusza głównego, system nie znajduje `klienta` pomimo poprawnie wprowadzonego identyfikatora, oraz pewności, że dane `klient` został wcześniej wprowadzany do systemu
+2) `Konsultant` zgłasza błąd
 
 **Aktor główny: ** Konsultant
 
@@ -1177,7 +1231,7 @@ Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego proc
 
 **Warunek początkowy:** `Klient` i `konsultant` nawiązali wcześniej komunikacje drogą słowną lub elektroniczną.
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
@@ -1208,15 +1262,15 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Formularz nowej oferty jest wyświetlony 
+**Warunek początkowy:** Formularz nowej oferty jest wyświetlony
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
 1. `Konsultant` uzupełnia podstawowe informacje dotyczące oferty na stronie nowej oferty między innymi wybiera `klienta`, dla którego tworzona jest oferta
 2. Wszystkie informację zostały wybrany poprawnie, `konsultant` klika na przycisk 'Utwórz nową oferte'
-3. System powiadamia `konsultanta` o poprawnym utworzeniu oferty 
+3. System powiadamia `konsultanta` o poprawnym utworzeniu oferty
 
 **Scenariusze alternatywne:**
 
@@ -1245,13 +1299,13 @@ Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później 
 
 **Warunek początkowy:** Oferta została poprawnie utworzona w systemie
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
 1. `Konsultant` klika na przycisk 'Dodaj produkty' znajdującym się na stronie produktowej wewnątrz oferty
 2. System wyświetla możliwych dostawców do wyboru
-3. `Konsultant` wybiera dostawce, którego katalog produktowy spełnia oczekiwania `klienta` 
+3. `Konsultant` wybiera dostawce, którego katalog produktowy spełnia oczekiwania `klienta`
 4. System wyświetla katalog produktowy danego dostawcy, wraz z możliwością wyszukiwania oraz filtrowania po zdefiniowanych wcześniej atrybutach technicznych
 5. `Konsultant` wybiera odpowiednie produkty i klika na przycisk 'Dodaj do oferty'
 6. `Konsultant` zostaje przeniesiony spowrotem na stronę produktowom
@@ -1284,11 +1338,11 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 **Warunek początkowy:** Produkty zostały dodane do oferty
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
-1. 
+1.
 
 **Scenariusze alternatywne:**
 
@@ -1314,13 +1368,13 @@ Konsultant - sprawdzenie dostepności produktu na magazynie i u dostawcy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:**
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta` 
+**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
-**Scenariusze alternatywne:** 
+**Scenariusze alternatywne:**
 
 1. Scenariuszem alternatywnym jest poniższy przypadek użycia
 
@@ -1344,9 +1398,9 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:**
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:**
 
 **Główny scenariusz powodzenia:**
 
@@ -1356,7 +1410,7 @@ Konsultant - sprawdza w systemie dostępność produktów na magazynie
 
 **Uczestnicy i interesy:**
 
-Konsultant - sprawdza w systemie dostępność produktów u dostawcy 
+Konsultant - sprawdza w systemie dostępność produktów u dostawcy
 
 ---
 
@@ -1372,9 +1426,9 @@ Konsultant - sprawdza w systemie dostępność produktów u dostawcy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:**
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:**
 
 **Główny scenariusz powodzenia:**
 
@@ -1402,9 +1456,9 @@ Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** 
+**Warunek początkowy:**
 
-**Zdarzenie inicjujące:** 
+**Zdarzenie inicjujące:**
 
 **Główny scenariusz powodzenia:**
 
@@ -1470,7 +1524,7 @@ Klient - otrzymuje oferte od konsultanta
 
 **Warunek początkowy:** `Klient` otrzymał oferte
 
-**Zdarzenie inicjujące:** Minął czas na podjęcie decyzji przez `klienta` od momentu przedstawienia oferty `klientowi` 
+**Zdarzenie inicjujące:** Minął czas na podjęcie decyzji przez `klienta` od momentu przedstawienia oferty `klientowi`
 
 **Główny scenariusz powodzenia:**
 
@@ -1517,7 +1571,7 @@ Konsultant - procesują otrzymaną decyzje w systemie
 **Główny scenariusz powodzenia:**
 
 1. `Księgowość` dostaje informację o produktach zawartych w ofercie
-2. `Księgowość` wystawia fakture 
+2. `Księgowość` wystawia fakture
 
 **Scenariusze alternatywne:**
 
@@ -1606,7 +1660,7 @@ rectangle "System" {
 
 **Zdarzenie inicjujące:** `Klient`rozpoczyna wypełnianie formularza
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Klient` uruchamia stronę internetową umożliwiającą zgłoszenie reklamacji
 2. `Klient` wypełnia formularz reklamacji
@@ -1615,6 +1669,7 @@ rectangle "System" {
 5. System wyświetla informacje o wysłanym formularzu
 
 **Scenariusze alternatywne:**
+
 1. System nie wyświetla informacji o wysłanym formularzu - np. błąd strony
 2. `Klient` chce wysyłać formularz z brakującymi polami - system wyświetla informacje o brakujących danych
 
@@ -1642,7 +1697,7 @@ _Klient_ - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zwer
 
 **Zdarzenie inicjujące:** `Pracownik` dowiedział się o nowym formularzu reklamacyjnym zgłoszonym przez `Klienta`
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Pracownik` przekierowuje zgłoszenie reklamacyjne do `Zespołu technicznego`
 2. `Pracownik` aktualizuje status reklamacji
@@ -1650,6 +1705,7 @@ _Klient_ - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zwer
 4. `Zespół techniczny` przejmuje zareklamowany produkt i poddaje analizie jego zasadność
 
 **Scenariusze alternatywne:**
+
 1. `Pracownik` nie może przekierować zgłoszenia reklamacyjnego
 2. `Pracownik` nie moze zaktualizować statusu reklamacji
 3. `Pracownik` nie moze wprowadzić reklamowanego produktu do rejestru
@@ -1682,12 +1738,13 @@ _Zespół techniczny_ - przejmuje dalsze czynności
 
 **Zdarzenie inicjujące:** Analiza produktu wykazała zasadność jej złożenia przezz klienta
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Zespół techniczny` przekierowuje zgłoszenie reklamacyjne do `Zespołu technicznego`
 2. `Zespół techniczny` aktualizuje status reklamacji
 
 **Scenariusze alternatywne:**
+
 1. `Zespół techniczny` nie może przekierować zgłoszenia reklamacyjnego
 
 **Uczestnicy i interesy:**
@@ -1716,12 +1773,13 @@ _dostawca_ - potencjalny odbiorca przesyłki reklamacji
 
 **Zdarzenie inicjujące:** `Zespół techniczny` rozpoczyzna realizacje odesłania produktów do dostawcy
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Zespół techniczny` wysyła produkty do `dostawcy`
 2. `Zespół techniczny` aktualizuje status reklamacji
 
 **Scenariusze alternatywne:**
+
 1. `Zespół techniczny` nie moze zaktualizować statusu reklamacji
 
 **Uczestnicy i interesy:**
@@ -1750,12 +1808,13 @@ _dostawca_ - potencjalny odbiorca przesyłki reklamacji
 
 **Zdarzenie inicjujące:** `Pracownik` odczytuje formularz zzgłoszzony przez `klienta`
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Pracownik` wprowadza reklamowany produkt do rejestru
 2. System wyświetla informacje o poprawnym zapisie danych
 
 **Scenariusze alternatywne:**
+
 1. System wyświelta informacje o błędzie podczas próby zapisu do rejestru
 
 **Uczestnicy i interesy:**
@@ -1786,7 +1845,7 @@ rectangle "Obsługa magazynu" {
 	Magazynier -- (Tworzenie prognoz popytu)
 	Magazynier -- (Wystawienie dokumentów)
 	Magazynier -- (Tworzenie zamówienia dostaw)
-	
+
 Dostawca -- Magazynier
 }
 @enduml
@@ -1818,8 +1877,8 @@ Dostawca -- Magazynier
 2. `Magazynier` werfikuje dokumentacje
 3. `Magazynier` procesuje towar zgodnie z procedurami zawartymi w dokumentacji
 
-
 **Scenariusze alternatywne:**
+
 1. Bledna dokumentacja
 2. Odmowa przyjecia towaru przez 'Magazyniera'
 
@@ -1855,9 +1914,9 @@ _Dostawca_ - Inicjuje proces
 2. `Magazynier` dokonuje rozladunku towaru na magazyn
 
 **Scenariusze alternatywne:**
+
 1. `Magazynier` odmawia rozladunku towaru w przypadku decyzji o nieprzyjeciu towaru
 2. `Dostawca` odsyla towar do nadawcy
-
 
 **Uczestnicy i interesy:**
 
@@ -1890,14 +1949,13 @@ _Dostawca_ - Inicjuje proces
 1. `Magazynier` przyjmuje towar od dostawcy
 2. `Magazynier` przystepuje do kolejnego etapu rozladunku
 
-
 **Scenariusze alternatywne:**
+
 1. `Magazynier` odmawia przyjecia w przypadku braku otrzymanej dokumentacji
 2. `Dostawca` odsyla towar do nadawcy
 
-1. `Magazynier` odmawia przyjecia w przypadku wadliwego towaru
-2. `Dostawca` odsyla towar do nadawcy
-
+3. `Magazynier` odmawia przyjecia w przypadku wadliwego towaru
+4. `Dostawca` odsyla towar do nadawcy
 
 **Uczestnicy i interesy:**
 
@@ -1932,9 +1990,9 @@ _Dostawca_ - Inicjuje proces
 3. `Magazynier` przystepuje do nastepnego etapu - wysylki
 
 **Scenariusze alternatywne:**
+
 1. Przesylka nie przechodzi walidacji ze wzgledu na ilosc lub jakosc produktu
 2. `Magazynier` produkt zostaje wymieniony na walidny, zgodny z zamowieniem
-
 
 **Uczestnicy i interesy:**
 
@@ -1965,20 +2023,16 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. Produkt gotowy
 2. `Magazynier` skladuje produkt
 
-
-
 **Scenariusze alternatywne:**
+
 1. Produkt nie jest gotowy do skladowania
 1. `Magazynier` nie jest wstanie skladowac produktu (brak infrastruktury przeladunkowej)
-
 
 **Uczestnicy i interesy:**
 
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
-
-
 
 **Numer i Nazwa przypadku użycia:** UC-4.5 - Sprawdzenie stanu
 
@@ -2003,10 +2057,9 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. `Magazynier` sprawdza stan magazynu
 2. `Magazynier` wprowadza dane odnosnie magazynu do systemu
 
-
 **Scenariusze alternatywne:**
-1. Brak produktow na magazynie
 
+1. Brak produktow na magazynie
 
 **Uczestnicy i interesy:**
 
@@ -2037,18 +2090,16 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. `Magazynier` poddaje przesylke kontroli wartosci
 2. `Magazynier` przystepuje do kolejnego etapu - wysylki
 
-
 **Scenariusze alternatywne:**
+
 1. Wartosc przesylki niezgodna z warunkami umowy
 2. Korekta produktow zawartych w przesylce
-
 
 **Uczestnicy i interesy:**
 
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
-
 
 **Numer i Nazwa przypadku użycia:** UC-4.7 - Grupowanie towaru
 
@@ -2073,9 +2124,9 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. `Magazynier` dokonuje grupowania rozladowanego towar
 
 **Scenariusze alternatywne:**
+
 1. Brak kryteriow grupowania
 1. Brak towaru w magazynie
-
 
 **Uczestnicy i interesy:**
 
@@ -2105,11 +2156,9 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 1. `Magazynier` nadaje unikalny numer produktu
 
-
 **Scenariusze alternatywne:**
+
 1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
-
-
 
 **Uczestnicy i interesy:**
 
@@ -2139,10 +2188,9 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 1. `Magazynier` nadaje unikalny numer produktu
 
-
 **Scenariusze alternatywne:**
-1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
 
+1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
 
 **Uczestnicy i interesy:**
 
@@ -2173,18 +2221,15 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. `Magazynier` nadaje kod EAN
 2. `Magazynier` procesuje towar do nastepnego etapu - wysylki
 
-
 **Scenariusze alternatywne:**
-1. Brak potrzeby wyslki produktu za granice (Europa)
 
+1. Brak potrzeby wyslki produktu za granice (Europa)
 
 **Uczestnicy i interesy:**
 
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
-
-
 
 **Numer i Nazwa przypadku użycia:** UC-4.11 - Powiazanie towaru z dostawcą i nabywcą
 
@@ -2209,6 +2254,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. `Magazynier` procesuje towar do dalszego etapu - wysyłki
 
 **Scenariusze alternatywne:**
+
 0. Brak
 
 **Uczestnicy i interesy:**
@@ -2216,7 +2262,6 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
-
 
 **Numer i Nazwa przypadku użycia:** UC-4.12 - Tworzenie prognoz popytu
 
@@ -2242,6 +2287,7 @@ Autor: Kamil Gliński
 2. `Magazynier` dzieli sie zapotrzebowaniem z innymi pracownikami uzywajac systemu
 
 **Scenariusze alternatywne: **
+
 1. brak zapotrzebowania na produkty - `Magazynier` nie jest w stanie stworzyc analizy zapotrzebowania
 
 **Uczestnicy i interesy:**
@@ -2273,10 +2319,9 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. `Magazynier` dokonuje przesuniecia towaru
 2. `Magazynier` wystawia niezbedne dokumenty
 
-
 **Scenariusze alternatywne: **
- 0. -
 
+0.  -
 
 **Uczestnicy i interesy:**
 
@@ -2298,6 +2343,7 @@ rectangle "System Magazynu" {
 }
 @enduml
 ```
+
 ##### _Rysunek 13. Diagram przypadków użycia obsługi System Magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-5.1 - Zarejestrowanie produktu
@@ -2326,9 +2372,9 @@ rectangle "System Magazynu" {
 4. Produkt zostaje zapisany
 
 **Scenariusze alternatywne:**
+
 1. Produkt istnieje w systemie - jest nadpisywany
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
-
 
 **Uczestnicy i interesy:**
 
@@ -2362,8 +2408,8 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 4. Produkt zostaje zmodyfikowany
 
 **Scenariusze alternatywne:**
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
 
@@ -2395,8 +2441,8 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. Produkt zostaje usuniety
 
 **Scenariusze alternatywne:**
-1. Brak produktu w systemie - brak dzialania
 
+1. Brak produktu w systemie - brak dzialania
 
 **Uczestnicy i interesy:**
 
@@ -2429,8 +2475,8 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 3. Produkt zostaje pobrany
 
 **Scenariusze alternatywne:**
-1. Brak produktu w systemie - brak dzialania
 
+1. Brak produktu w systemie - brak dzialania
 
 **Uczestnicy i interesy:**
 
@@ -2459,9 +2505,10 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 **Główny scenariusz powodzenia:**
 
 1. System wyświetla formularz pobrania danych o produktach z systemu
-3. Produkty zostaja pobrane
+2. Produkty zostaja pobrane
 
 **Scenariusze alternatywne:**
+
 1. Brak produktu w systemie - brak dzialania
 
 **Uczestnicy i interesy:**
@@ -2490,11 +2537,11 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. `Magazynier` tworzy zamowienia dostaw 
+1. `Magazynier` tworzy zamowienia dostaw
 2. `Magazynier` zapewnia dokumenty dotyczace dostaw
 
-
 **Scenariusze alternatywne:**
+
 1. Brak zapotrzebowania na produkty
 
 **Uczestnicy i interesy:**
@@ -2502,8 +2549,6 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
-
-
 
 #### 2.4.6 Analiza danych na potrzeby marketingowe (OA6)
 
@@ -2527,7 +2572,7 @@ rectangle "Statystyki na potrzeby marketingowe" {
 @enduml
 ```
 
-##### Rysunek 12. Statyki powiązane z katalogiem produktowym_
+##### Rysunek 12. Statyki powiązane z katalogiem produktowym\_
 
 **Numer i nazwa przypadku uzycia:** 1.6.1 - Statystyki powiązane z katalogiem produktowym
 
@@ -2545,7 +2590,7 @@ rectangle "Statystyki na potrzeby marketingowe" {
 
 **Zdarzenie inicjujące:** Manualne zainicjowanie analizy lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` wchodzi na katalog produktowy klikając przycisk 'Katalog produktów' znajdujący się na stronie wcześniej stworzonej oferty w systemie
 2. `Konsultant` jest w stanie potwierdzić organoleptycznie, że proponowane produkty przez `system` odpowiadają produktom często zamawianym
@@ -2580,11 +2625,11 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 **Zdarzenie inicjujące:** Manualne zainicjowanie analizy lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Marketingowiec` klika przycisk 'Analizy marketingowe' znajdującym się na głównej stronie aplikacji
-2. `Marketingowiec` znajduje się na stronie 'Analizy marktetingowe' 
-3. `Marketingowiec` wybiera format raportu(.pdf, .xls)  a następnie klika przycisk 'Wygeneruj raport'
+2. `Marketingowiec` znajduje się na stronie 'Analizy marktetingowe'
+3. `Marketingowiec` wybiera format raportu(.pdf, .xls) a następnie klika przycisk 'Wygeneruj raport'
 4. Raport jest wygenerowany w poprawnym formacie
 
 **Scenariusze alternatywne:**
@@ -2621,7 +2666,7 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
     (Konsultant) -- (Zmiana informacji o kliencie)
     (Konsultant) -- (Dodawanie informacji i danych o klientach)
     (Konsultant) -- (Usuwanie informacji i danych o klientach)
- 
+
 }
 
 @enduml
@@ -2641,19 +2686,19 @@ rectangle "Prowadzenie bazy potencjalnych klientów" {
 
 **Poziom:** Prowadzenie bazy potencjalnych klientów
 
-
 **Warunek początkowy:** Klient nie istnieje w systemie
 
-**Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta 
+**Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` otwiera formularz dodania `klienta`
 1. `Konsultant` wypełnia dane klienta
 1. `Konsultant` zapisuje formularz
 
 **Scenariusze alternatywne:**
-1. Wystąpił błąd - `Klient` ma dane pokrywające się z innym 
+
+1. Wystąpił błąd - `Klient` ma dane pokrywające się z innym
 
 **Aktor główny:** Konsultant
 
@@ -2679,16 +2724,17 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 **Warunek początkowy:** Klient istnieje w systemie
 
-**Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta 
+**Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` otwiera formularz dodania `klienta`
 1. `Konsultant` wypełnia dane klienta
 1. `Konsultant` zapisuje formularz
 
 **Scenariusze alternatywne:**
-1. Wystąpił błąd - `Klient` ma dane pokrywające się z innym 
+
+1. Wystąpił błąd - `Klient` ma dane pokrywające się z innym
 
 **Uczestnicy i interesy:**
 
@@ -2714,13 +2760,11 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 **Zdarzenie inicjujące:** Konsultant chce usunąc dane wrażliwe z systemu
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` otwiera formularz `klienta`
 1. `Konsultant` wybiera opcję usunięcia danych wrażliwych
 1. System usuwa dane
-
-
 
 **Uczestnicy i interesy:**
 
@@ -2748,15 +2792,15 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 **Zdarzenie inicjujące:** `Konsultant` chce wiedzieć, czy powinien odezwać się do `klienta` z ofertą
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` otwiera wpis `klienta`
 1. `Konsultant` wybiera opcję daty ostatniego kontaktu
-1.  System wyświetla datę 
+1. System wyświetla datę
 
 **Scenariusze alternatywne:**
-1. Wystąpił błąd - zostaje wyświetlony komunikat błędu i prosi o sprawdzenie integralności danych (UC.07-02)
 
+1. Wystąpił błąd - zostaje wyświetlony komunikat błędu i prosi o sprawdzenie integralności danych (UC.07-02)
 
 **Uczestnicy i interesy:**
 
@@ -2782,13 +2826,14 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 **Zdarzenie inicjujące:** `Konsultant` chce poinformować klienta o ofercie
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Konsultant` otwiera wpis `klienta`
 1. `Konsultant` wybiera opcję wysłania wiadomości
-1.  System wysyła wiadomość
+1. System wysyła wiadomość
 
 **Scenariusze alternatywne:**
+
 1. Wystąpił błąd - `klient` nie ma adresu e-mail - `konsultant` zostaje przekierowany do (UC.07-02)
 
 **Uczestnicy i interesy:**
@@ -2834,12 +2879,13 @@ rectangle "System" {
 
 **Zdarzenie inicjujące:** `Pracownik` ma zamiar wprowadzić nowe zadanie do systemu
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Pracownik` wprowadza dokument do systemu
 2. System wyświetla informacje o poprawnym zapisie danych
 
 **Scenariusze alternatywne:**
+
 1. System wyświelta informacje o błędzie podczas próby zapisu
 
 **Uczestnicy i interesy:**
@@ -2866,11 +2912,12 @@ _Pracownik_ - wprowadza dokumenty, zadania, ogłoszenia do systemu
 
 **Zdarzenie inicjujące:** `Właściciel` ma zamiar odczytać prognozy zapotrzebowania czasowego na produkty
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Właściciel` otwiera raport z prognozą zapotrzebowania czasowego na produkty
 
 **Scenariusze alternatywne:**
+
 1. Nieudana próba otworzenia raportu
 
 **Uczestnicy i interesy:**
@@ -2899,11 +2946,12 @@ _Dostawca_ - od niego firma zamawia produkty
 
 **Zdarzenie inicjujące:** `Właściciel` ma zamiar odczytać prognozy zapotrzebowania ilościowego na produkty
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Właściciel` otwiera raport z prognozą zapotrzebowania ilościowego na produkty
 
 **Scenariusze alternatywne:**
+
 1. Nieudana próba otworzenia raportu
 
 **Uczestnicy i interesy:**
@@ -2930,13 +2978,14 @@ _Właściciel_ - odczytuje i ma możliwość analizy prognoz ilościowych zamów
 
 **Zdarzenie inicjujące:** `Właściciel` wprowadza nowe zadanie dla pracowników
 
-**Główny scenariusz powodzenia:** 
+**Główny scenariusz powodzenia:**
 
 1. `Właściciel` wprowadza nowe zadanie dla konkretnego pracownika
 2. `Właściciel` zatwierdza wprowadzone zadania i klika przycisk "udostępnij"
-2. Dany `Pracownik` widzi nowe zadanie zlecone mu przez `Właściciela`
+3. Dany `Pracownik` widzi nowe zadanie zlecone mu przez `Właściciela`
 
 **Scenariusze alternatywne:**
+
 1. Nieudana próba zapisu i udostępnienia zadania
 2. Nowo wprowadzone zadanie nie widoczne dla konkretnego pracownika
 
@@ -2948,9 +2997,9 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 ---
 
-## 2.5 Modelowanie zachowań  w czasie
+## 2.5 Modelowanie zachowań w czasie
 
-### 2.5.6  Analiza danych na potrzeby marketingowe (OA6)
+### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 
 ```plantuml X.X.X
 @startuml
@@ -2960,7 +3009,7 @@ partition "System analizujący dane" {
 --> "System generuje raport"
 if "Generowanie powiodło się" then
 -->[true] "Przedstawia wygenerowany raport"
-else 
+else
   --> [false] "System wyświetla błąd"
 }
 partition Konsultant #GreenYellow{
@@ -2976,9 +3025,34 @@ partition Marketingowiec #DeepSkyBlue{
 @enduml
 ```
 
+```plantuml X.X.X
+@startuml
+Title Zapytanie ofertowe\n\n
+
+
+|Klient|
+start
+:Wyspecyfikowanie potrzeb;
+:Skontaktowanie się z firmą;
+|Konsultant|
+if(Czy istnieje) then
+->Nie;
+:Dodanie klienta;
+else
+->Tak;
+:Otwarcie wpisu klienta; 
+endif
+:Wygenerowanie cennika;
+|Klient|
+:Przeczytanie cennika;
+stop
+@enduml
+```
+
 ##### _Rysunek 17. Diagram aktywności analizy danych na potrzeby marketingowe_
 
 ---
+
 <div class="page">
 
 ## 2.6 Wymagania funkcjonalne dla dodatkowych części systemu
@@ -2989,7 +3063,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Nazwa funkcji:** WF-1.1 - Dodaj dostawcę
 
-**Opis:** Dodaje dostawce 
+**Opis:** Dodaje dostawce
 
 **Dane wejściowe:** Załącznik B - 1.Dane_dostawcy
 
@@ -2999,13 +3073,11 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Nie istniejącego dostawcy w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Dodaj dostawcę` 
-    - Wprowadzenie skrótu Ctrl+A (Add), Ctrl+D (Dostawca)
+**Warunek początkowy:** - Kliknięcie przycisku `Dodaj dostawcę` - Wprowadzenie skrótu Ctrl+A (Add), Ctrl+D (Dostawca)
 
 **Warunek końcowy:** Stan rejestru z wyjątkiem rejestru dostawców nie ulega zmianie
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
 
@@ -3017,7 +3089,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Opis:** Funkcja systemu służąca do zmienienia danych dostawcy.
 
-**Dane wejściowe:** Załącznik B - 1.Dane_dostawcy, wybór dostawcy do zmiany poprzez wybranie wpisu w systemie 
+**Dane wejściowe:** Załącznik B - 1.Dane_dostawcy, wybór dostawcy do zmiany poprzez wybranie wpisu w systemie
 
 **Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
 
@@ -3025,9 +3097,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Istniejącego dostawcy w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie danego `dostawcy` dwukrotnie
-    - Kliknięcie danego `dostawcy` jednokrotnie i skrótu Ctrl+E
+**Warunek początkowy:** - Kliknięcie danego `dostawcy` dwukrotnie - Kliknięcie danego `dostawcy` jednokrotnie i skrótu Ctrl+E
 
 **Warunek końcowy:** Stan rejestru z wyjątkiem rejestru dostawców nie ulega zmianie
 
@@ -3051,9 +3121,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Nie istnienie danego towaru w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Dodaj towar` 
-    - Wprowadzenie skrótu Ctrl+A (Add), Ctrl+T (Towar)
+**Warunek początkowy:** - Kliknięcie przycisku `Dodaj towar` - Wprowadzenie skrótu Ctrl+A (Add), Ctrl+T (Towar)
 
 **Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
 
@@ -3077,16 +3145,13 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Obecności danego towaru w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie danego `towaru` dwukrotnie
-    - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+E
+**Warunek początkowy:** - Kliknięcie danego `towaru` dwukrotnie - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+E
 
 **Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
 
 **Efekty uboczne:** Aktualizacja niewysłanych faktur
 
 **Uwagi:** -
-
 
 ### 2.6.5 Dezaktywacja towaru
 
@@ -3104,16 +3169,13 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Nie istnienie danego towaru w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie danego `towaru` dwukrotnie
-    - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+E
+**Warunek początkowy:** - Kliknięcie danego `towaru` dwukrotnie - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+E
 
 **Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
 
 **Efekty uboczne:** Aktualizacja niewysłanych faktur
 
 **Uwagi:** -
-
 
 ### 2.6.6 Ustalenie progu cenowego towaru
 
@@ -3131,9 +3193,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Istnienie danego towaru w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `próg cenowy`
-    - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+Shift+C
+**Warunek początkowy:** - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `próg cenowy` - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+Shift+C
 
 **Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
 
@@ -3141,14 +3201,13 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Uwagi:** -
 
-
 ### 2.6.7 Wygeneruj cennik
 
 **Przypadek użycia:** UC-1.5
 
 **Nazwa funkcji:** WF-1.7 - Wygeneruj cennik
 
-**Opis:** Funkcja systemu służąca do wygenerowania cennika w celu zaprezentowania klientowi 
+**Opis:** Funkcja systemu służąca do wygenerowania cennika w celu zaprezentowania klientowi
 
 **Dane wejściowe:** Okres obejmujący zapytanie ofertowe, Klient
 
@@ -3156,19 +3215,15 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Przeznaczenie:** Wyprowadzenie z systemu aktualnego cennika
 
-**Wymaga:** 
-    - Istnienie dostawcy w systemie
+**Wymaga:** - Istnienie dostawcy w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie danego `dostawcy` jednokrotnie i wybranie przycisku `cennik`
-    - Kliknięcie danego `dostawcy` i wciśnięcie kombinacji Ctrl+Shift+C
+**Warunek początkowy:** - Kliknięcie danego `dostawcy` jednokrotnie i wybranie przycisku `cennik` - Kliknięcie danego `dostawcy` i wciśnięcie kombinacji Ctrl+Shift+C
 
 **Warunek końcowy:** Poprawny cennik zostaje wygenerowany
 
 **Efekty uboczne:** Aktualizacja wpisu `dostawcy` o wygenerowany cennik
 
 **Uwagi:** Cennik jest w formie cyfrowej, ale może zostać wydrukowany, lub przesłany faxem
-
 
 ### 2.6.8 Wygeneruj cennik
 
@@ -3178,24 +3233,21 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Opis:** Funkcja systemu służąca do wprowadzenia informacji o rezerwacji towaru
 
-**Dane wejściowe:** Okres rezerwacji, Identyikator towaru, Identyfikator Klienta 
+**Dane wejściowe:** Okres rezerwacji, Identyikator towaru, Identyfikator Klienta
 
 **Dane wyjściowe:** Informacja o powodzenia operacji
 
 **Przeznaczenie:** Rezerwacja towaru dla danego klienta
 
-**Wymaga:** 
-    - Istnienie dostawcy w systemie
+**Wymaga:** - Istnienie dostawcy w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `klienta`
-    - Kliknięcie danego `klienta` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `towaru`
+**Warunek początkowy:** - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `klienta` - Kliknięcie danego `klienta` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `towaru`
 
 **Warunek końcowy:** Towar zostanie zarejestrowany, `Dostawca` zostanie poinformowany
 
 **Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
 
-**Uwagi:** 
+**Uwagi:**
 
 ### 2.6.9 Zarezerwuj towar
 
@@ -3205,25 +3257,21 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Opis:** Funkcja systemu służąca do wprowadzenia informacji o rezerwacji towaru
 
-**Dane wejściowe:** Okres rezerwacji, Identyikator towaru, Identyfikator Klienta 
+**Dane wejściowe:** Okres rezerwacji, Identyikator towaru, Identyfikator Klienta
 
 **Dane wyjściowe:** Informacja o powodzenia operacji
 
 **Przeznaczenie:** Rezerwacja towaru dla danego klienta
 
-**Wymaga:** 
-    - Istnienie dostawcy w systemie
+**Wymaga:** - Istnienie dostawcy w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `klienta`
-    - Kliknięcie danego `klienta` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `towaru`
+**Warunek początkowy:** - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `klienta` - Kliknięcie danego `klienta` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `towaru`
 
 **Warunek końcowy:** Towar zostanie zarejestrowany, `Dostawca` zostanie poinformowany
 
 **Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
 
-**Uwagi:** 
-
+**Uwagi:**
 
 ### 2.6.10 Usuń rezerwację towaru
 
@@ -3239,19 +3287,15 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Przeznaczenie:** Zmiana rezerwacji towaru dla danego klienta
 
-**Wymaga:** 
-    - Istnienie rezerwacji towaru
+**Wymaga:** - Istnienie rezerwacji towaru
 
-**Warunek początkowy:** 
-    - Kliknięcie danej `rezerwacji towaru` i wciśnięcie delete,
-    - Kliknięcie danej `rezerwacji towaru` i wciśnięcie przycisku `usuń`,
+**Warunek początkowy:** - Kliknięcie danej `rezerwacji towaru` i wciśnięcie delete, - Kliknięcie danej `rezerwacji towaru` i wciśnięcie przycisku `usuń`,
 
 **Warunek końcowy:** Rezerwacja zostanie usunięta, `dostawca` zostanie poinformowany
 
 **Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
 
-**Uwagi:** 
-
+**Uwagi:**
 
 ### 2.6.11 Poinformuj SMS
 
@@ -3267,18 +3311,15 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Przeznaczenie:** Zmiana rezerwacji towaru dla danego klienta
 
-**Wymaga:** 
-    - Zdarzenia w systemie
+**Wymaga:** - Zdarzenia w systemie
 
-**Warunek początkowy:** 
-    - Zaistnienie zdarzenia w systemie
-
+**Warunek początkowy:** - Zaistnienie zdarzenia w systemie
 
 **Warunek końcowy:** Zdarzenie zostanie zapisane do rejestru
 
 **Efekty uboczne:** SMSy zostaną wysłane na ww adresy
 
-**Uwagi:** 
+**Uwagi:**
 
 ### 2.6.12 Zgłoszenie reklamacji przez klienta
 
@@ -3286,7 +3327,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Nazwa funkcji:** WF-3.1 - Zgłoś reklamację
 
-**Opis:** Klient zgłasza reklamację 
+**Opis:** Klient zgłasza reklamację
 
 **Dane wejściowe:** Załącznik B - 10.Formularz_reklamacji_od_klienta
 
@@ -3296,12 +3337,11 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Rejestr `Klienta` istnieje w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Zgłoś reklamacje`
+**Warunek początkowy:** - Kliknięcie przycisku `Zgłoś reklamacje`
 
 **Warunek końcowy:** `Klient` dostaje komunikat potwierdzający zgłoszenie reklamacji
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
 
@@ -3321,15 +3361,13 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Pozycja reklamacji istnieje w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Prekieruj reklamacje`
+**Warunek początkowy:** - Kliknięcie przycisku `Prekieruj reklamacje`
 
 **Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający przekierowanie reklamacji do `zespołu technicznego`
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
-
 
 ### 2.6.14 Przygotowanie produktów do odesłania do dostawcy
 
@@ -3347,14 +3385,11 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Pozycja reklamacji istnieje w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Przyjmij do analizy`
+**Warunek początkowy:** - Kliknięcie przycisku `Przyjmij do analizy`
 
-**Warunek końcowy:** 
-    - Kliknięcie przycisku `Analiza zakończona`
-    - Kliknięcie przycisku `Zaktualizuj status reklamacji`
+**Warunek końcowy:** - Kliknięcie przycisku `Analiza zakończona` - Kliknięcie przycisku `Zaktualizuj status reklamacji`
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
 
@@ -3374,12 +3409,11 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Pozycja reklamacji przeanalizowana przez `zespół techniczny`
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Zgłoś reklamacje do dostawcy`
+**Warunek początkowy:** - Kliknięcie przycisku `Zgłoś reklamacje do dostawcy`
 
 **Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający zgłoszenie reklamacji do dostawcy
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
 
@@ -3399,15 +3433,13 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Pozycja reklamacji przeanalizowana przez `zespół techniczny`
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Zgłoś reklamacje do dostawcy`
+**Warunek początkowy:** - Kliknięcie przycisku `Zgłoś reklamacje do dostawcy`
 
 **Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający zgłoszenie reklamacji do dostawcy
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
-
 
 ### 2.6.17 Wprowadzenie reklamowanych produktów do rejestru
 
@@ -3419,21 +3451,19 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Dane wejściowe:** Reklamacja zgłoszona do dostawcy
 
-**Dane wyjściowe:** Informacja o powodzeniu operacji 
+**Dane wyjściowe:** Informacja o powodzeniu operacji
 
 **Przeznaczenie:** Wprowadzenie reklamowanych produktów do rejestru
 
 **Wymaga:** Status reklamacji: "wysłana do dostawy"
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Wprowadź reklamowany produkt`
+**Warunek początkowy:** - Kliknięcie przycisku `Wprowadź reklamowany produkt`
 
 **Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający pomyślne załadowanie wprowadzenie produktu do rejestru
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
-
 
 ### 2.6.18 Wprowadzenie dokumentów do systemu
 
@@ -3451,15 +3481,13 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** `Pracownik` zalogowany do systemu
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Udostępnij dokument`
+**Warunek początkowy:** - Kliknięcie przycisku `Udostępnij dokument`
 
 **Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający pomyślne załadowanie dokumentu do systemu
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
-
 
 ### 2.6.19 Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
 
@@ -3477,15 +3505,13 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** `Właściciel` zalogowany do systemu
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Wygeneruj prognozy`
+**Warunek początkowy:** - Kliknięcie przycisku `Wygeneruj prognozy`
 
 **Warunek końcowy:** `Właściciel` otrzymuje prognozy zapotrzebowania czasowego na produkty
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
-
 
 ### 2.6.20 Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
 
@@ -3503,15 +3529,13 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** `Właściciel` zalogowany do systemu
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Wygeneruj prognozy`
+**Warunek początkowy:** - Kliknięcie przycisku `Wygeneruj prognozy`
 
 **Warunek końcowy:** `Właściciel` otrzymuje prognozy zapotrzebowania ilościowego na produkty
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
-
 
 ### 2.6.21 Przydział pracowników do określonych zadań
 
@@ -3529,12 +3553,11 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** `Właściciel` zalogowany do systemu
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Przydziel zadanie`
+**Warunek początkowy:** - Kliknięcie przycisku `Przydziel zadanie`
 
 **Warunek końcowy:** `Właściciel` otrzymuje potwierdzenie wprowadzenia zadania
 
-**Efekty uboczne:** - 
+**Efekty uboczne:** -
 
 **Uwagi:** -
 
@@ -3554,8 +3577,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Istnienie magazyniera w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Zarejestruj produkt`
+**Warunek początkowy:** - Kliknięcie przycisku `Zarejestruj produkt`
 
 **Warunek końcowy:** Dodany produkt
 
@@ -3579,8 +3601,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Istnienie produktu w systemie, Istnienie magazyniera w systemie
 
-**Warunek początkowy:** 
-     - Kliknięcie przycisku `Modyfikuj produkt`
+**Warunek początkowy:** - Kliknięcie przycisku `Modyfikuj produkt`
 
 **Warunek końcowy:** Zmienione dane produktu
 
@@ -3604,8 +3625,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Istnienie magazyniera w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Wyrejestruj produkt`
+**Warunek początkowy:** - Kliknięcie przycisku `Wyrejestruj produkt`
 
 **Warunek końcowy:** Usunięty produkt
 
@@ -3629,8 +3649,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Istnienie produktu w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Pobranie szczególowych danych`
+**Warunek początkowy:** - Kliknięcie przycisku `Pobranie szczególowych danych`
 
 **Warunek końcowy:** Informacje o produkcie
 
@@ -3654,8 +3673,7 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Wymaga:** Istnienie produktów w systemie
 
-**Warunek początkowy:** 
-    - Kliknięcie przycisku `Pobranie wszystkich produktów`
+**Warunek początkowy:** - Kliknięcie przycisku `Pobranie wszystkich produktów`
 
 **Warunek końcowy:** Informacje o produkcie
 
@@ -3663,10 +3681,9 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Uwagi:** -
 
-
 <div class="page">
 
-## 2.7 Wymagania niefunkcjonalne – omówienie 
+## 2.7 Wymagania niefunkcjonalne – omówienie
 
 Wymagania niefunkcjonalne dotyczą systemu jako całości - określimy w tym punkcie cechy, które muszą być spełnione w naszym systemie, aby zagwarantować jego jakość.
 
@@ -3679,162 +3696,159 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 #### 2.7.1.1 Użyteczności
 
 - **Skróty klawiszowe**
-    - **Cecha:** System posiada skróty klawiszowe do ważnych akcji
-    - **Miary:** Ilość akcji w systemie dostępnych za pomocą kombinacji klawiszowych
+
+  - **Cecha:** System posiada skróty klawiszowe do ważnych akcji
+  - **Miary:** Ilość akcji w systemie dostępnych za pomocą kombinacji klawiszowych
 
 - **Klarowność**
-    - **Cecha:** System jasno sygnalizuje zmiany
-    - **Miary:** Ilość akcji w systemie, które sygnalizują zmianę statusu notyfikacjami
-
+  - **Cecha:** System jasno sygnalizuje zmiany
+  - **Miary:** Ilość akcji w systemie, które sygnalizują zmianę statusu notyfikacjami
 
 #### 2.7.1.2 Sprawnościowe
 
 - **Szybkość działania**
-    - **Cecha:** Użytkownik nie musi czekać długo na odpowiedź systemu
-    - **Miary:** 
-        - Czas po każdej interakcji użytkownika będzie mierzony w sekundach `s`
-        - Czas oczekiwania na system podczas pojedyńczego procesu będzie mierzony w sekundach `s`
+
+  - **Cecha:** Użytkownik nie musi czekać długo na odpowiedź systemu
+  - **Miary:**
+    - Czas po każdej interakcji użytkownika będzie mierzony w sekundach `s`
+    - Czas oczekiwania na system podczas pojedyńczego procesu będzie mierzony w sekundach `s`
 
 - **Responsywność systemu**
-    - **Cecha:** Nawet, gdy system jest zajęty operacją, powinien sygnalizować przetwarzanie danych indykatorem
-    - **Miary:** Ilość akcji w systemie, które sprawiają, że sprawia wrażenie zawieszonego (musi być jak najmniejsza)
+
+  - **Cecha:** Nawet, gdy system jest zajęty operacją, powinien sygnalizować przetwarzanie danych indykatorem
+  - **Miary:** Ilość akcji w systemie, które sprawiają, że sprawia wrażenie zawieszonego (musi być jak najmniejsza)
 
 - **Zużycie pamięci**
-    - **Cecha:** System nie powinien zużywać ilości pamięci przekraczającej typowy sprzęt biurowy (4 GB)
-    - **Miary:** Zużycie pamięci będzie monitorowane (GB)
-    
+  - **Cecha:** System nie powinien zużywać ilości pamięci przekraczającej typowy sprzęt biurowy (4 GB)
+  - **Miary:** Zużycie pamięci będzie monitorowane (GB)
 - **Zużycie rdzeni procesora**
-    - **Cecha:** System nie powinien zużywać więcej rdzeni procesora, niż w typowym sprzęcie biurowym (4)
-    - **Miary:** Zużycie rdzeni procesora będzie monitorowane (GB)
-    
-    
+  - **Cecha:** System nie powinien zużywać więcej rdzeni procesora, niż w typowym sprzęcie biurowym (4)
+  - **Miary:** Zużycie rdzeni procesora będzie monitorowane (GB)
+
 #### 2.7.1.3 Niezawodności
 
 - **Stabilność systemu**
-    - **Cecha:** System powinien zapewniać stabilne wykonanie
-    - **Miary:** Liczenie prawdopodobieństwa błędnego wykonania podczas realizacji transakcji
-    
+  - **Cecha:** System powinien zapewniać stabilne wykonanie
+  - **Miary:** Liczenie prawdopodobieństwa błędnego wykonania podczas realizacji transakcji
 - **Odporność systemu na błędy**
-    - **Cecha:** System dopuszczalnie może mieć jedno błędne wykonanie w skali miesiąca
-    - **Miary:** Częstotliwość błędnych wykonań    
+
+  - **Cecha:** System dopuszczalnie może mieć jedno błędne wykonanie w skali miesiąca
+  - **Miary:** Częstotliwość błędnych wykonań
 
 - **Bezawaryjne działanie**
-    - **Cecha:** System działa bezawaryjnie przez co najmniej jeden miesiąc
-    - **Miary:** Średni czas między błędnymi wykonaniami
-    
+  - **Cecha:** System działa bezawaryjnie przez co najmniej jeden miesiąc
+  - **Miary:** Średni czas między błędnymi wykonaniami
 - **Dostępność systemu**
-    - **Cecha:** System powinien być dostępny i gotowy do użycia przzez określoną ilość czasu
-    - **Miary:** Procent czasu    
-    
-    
+  - **Cecha:** System powinien być dostępny i gotowy do użycia przzez określoną ilość czasu
+  - **Miary:** Procent czasu
+
 #### 2.7.1.4 Przenośności
 
 - **Przenośność kodu**
-    - **Cecha:** System nie będzie posiadał kodu nieprzenośnego na różne platformy
-    - **Miary:** Procent kodu zaleznego od platformy docelowej
+
+  - **Cecha:** System nie będzie posiadał kodu nieprzenośnego na różne platformy
+  - **Miary:** Procent kodu zaleznego od platformy docelowej
 
 - **Liczzba docelowych platform**
-    - **Cecha:** System docelowo będzie napisany na jedną platformę
-    - **Miary:** Liczba platform docelowych
-
+  - **Cecha:** System docelowo będzie napisany na jedną platformę
+  - **Miary:** Liczba platform docelowych
 
 ### 2.7.2 Wymagania organizacyjne
+
 Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, jak i w firmie - wytwórcy
 
 #### 2.7.2.1 Dostawy
 
 - **Dostarczenie systemu**
-    - **Cecha:** System jest dostarczany poprzez zainstalowanie na zdalnej maszynie wirtualnej
-    - **Miary:** Użytkowanie systemu jest realizowane przez strone www
+
+  - **Cecha:** System jest dostarczany poprzez zainstalowanie na zdalnej maszynie wirtualnej
+  - **Miary:** Użytkowanie systemu jest realizowane przez strone www
 
 - **Dostarczenie bazy danych**
-    - **Cecha:** Baza danych jest dostarczana jako skrypt generujacy tabele
-    - **Miary:** Tabele oraz dane
-    
-    
+  - **Cecha:** Baza danych jest dostarczana jako skrypt generujacy tabele
+  - **Miary:** Tabele oraz dane
+
 #### 2.7.2.2 Implementacyjne
 
 - **Czytość kodu**
-    - **Cecha:** System jest zaimplementowany zgodnie z zasdami czystego kodu
-    - **Miary:** Oceny programistów
+
+  - **Cecha:** System jest zaimplementowany zgodnie z zasdami czystego kodu
+  - **Miary:** Oceny programistów
 
 - **Jakość kodu**
-    - **Cecha:** System jest zaimplementowany zgodnie z zasadami SOLID
-	- **Cecha:** System jest zaimplementowany zgodnie z zasadami programowania obiektowaego
-    - **Miary:** Oceny programistów
-	
+  - **Cecha:** System jest zaimplementowany zgodnie z zasadami SOLID - **Cecha:** System jest zaimplementowany zgodnie z zasadami programowania obiektowaego
+  - **Miary:** Oceny programistów
 - **Optymalizacja**
-    - **Cecha:** System jest zaimplementowany aby zapewnić jak najszybsze działanie
-    - **Miary:** Szybkość wykonania operacji
+  - **Cecha:** System jest zaimplementowany aby zapewnić jak najszybsze działanie
+  - **Miary:** Szybkość wykonania operacji
 
 #### 2.7.2.3 Standardów
 
 - **Metodyka**
-    - **Cecha:** Projekt będzie realizowany w oparciu o metodykę zwinną Scrum
+
+  - **Cecha:** Projekt będzie realizowany w oparciu o metodykę zwinną Scrum
 
 - **Koncepcja programowania**
-    - **Cecha:** System będzie implementowany w oparciu o podejsci obiektowe (OOP)
-    
+  - **Cecha:** System będzie implementowany w oparciu o podejsci obiektowe (OOP)
 - **Języki programowania**
-    - **Cecha:** System będzie implementowany z wykorzystaniem języków obiektowych takich jak: Java, C#. 
-    
+  - **Cecha:** System będzie implementowany z wykorzystaniem języków obiektowych takich jak: Java, C#.
 - **Statyczna analiza kodu**
-    - **Cecha:** Statyczna analiza kodu będzie wykonywana np. za pomocą narzędzia SonarQube   
-    
+  - **Cecha:** Statyczna analiza kodu będzie wykonywana np. za pomocą narzędzia SonarQube
 - **Budowanie i releasowanie kodu**
-    - **Cecha:** Build system produktu będzie realizowany np. za pomocą narzędzia Gradle 
-    
+  - **Cecha:** Build system produktu będzie realizowany np. za pomocą narzędzia Gradle
 - **Testowanie jednostkowe i funkcyjne kodu**
-    - **Cecha:** Testy jednostkowe i funkcyjne implementowane będą np. przy pomocy narzędzi: JUnit, Mockito    
+  - **Cecha:** Testy jednostkowe i funkcyjne implementowane będą np. przy pomocy narzędzi: JUnit, Mockito
 
 ### 2.7.3 Wymagania zewnętrzne
+
 Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego tworzenia.
 
 #### 2.7.3.1 Współpracy
 
-- **Wystawienie WebService** 
+- **Wystawienie WebService**
   - **Cecha:** Aplikacja posiada poprawnie zdefiniowany web service typu `REST API` umożliwiający innym firmom interakcje z systemem w przypadku integracji, gdzie aplikacja jest dostawcą danych
-- **Aplikacja korzysta z web service'ów dostawców** 
-  - **Cecha:** Aplikacja ma możliwość korzystania z serwisów innych firm, z którymi prowadzone są integracje, gdzie aplikacja jest konsumentem danych 
+- **Aplikacja korzysta z web service'ów dostawców**
+  - **Cecha:** Aplikacja ma możliwość korzystania z serwisów innych firm, z którymi prowadzone są integracje, gdzie aplikacja jest konsumentem danych
 
 #### 2.7.3.2 Etyczne
 
 - **System będzie działać w interesie firmy**
-  
-    - **Cecha:** System działa w interesie firmy według ustalonych wymagań, implementacja jest wykonana według najlepszej wiedzy programistów
-- **System nie powoduje szkód** 
-    - **Cecha:** System nie zmusza użytkowników do podejmowania się nieetycznych działań w celu realizacji swoich obowiązków
-    
+
+  - **Cecha:** System działa w interesie firmy według ustalonych wymagań, implementacja jest wykonana według najlepszej wiedzy programistów
+
+- **System nie powoduje szkód**
+  - **Cecha:** System nie zmusza użytkowników do podejmowania się nieetycznych działań w celu realizacji swoich obowiązków
+
 #### 2.7.3.4 Prawne - ochrona prywatności
 
 - **Przestrzeganie prawa**
-    - **Cecha:** System podczas swojego działania nie łamie przepisów prawa
-    - **Miary:** Brak postępowania karnego
-    
+  - **Cecha:** System podczas swojego działania nie łamie przepisów prawa
+  - **Miary:** Brak postępowania karnego
 - **Ochrona danych**
-    - **Cecha:** System chroni dane użytkowników
-    - **Miary:** Brak udostępniania poufnych danych 
+
+  - **Cecha:** System chroni dane użytkowników
+  - **Miary:** Brak udostępniania poufnych danych
 
 - **Autentykacja**
-    - **Cecha:** System wymaga autentykacji użytkownika
-    - **Miary:** Brak udostępniania poufnych danych 
-    
-
+  - **Cecha:** System wymaga autentykacji użytkownika
+  - **Miary:** Brak udostępniania poufnych danych
 
 #### 2.7.3.5 Prawne - Wymagania zabezpieczeń
-- **Odporność na ataki DoS** 
-    - **Cecha:** Aplikacja jest odporna na ataki typu `Denial of Service` 
-    - **Miara:** Raport z audytu potwierdzający daną ceche
-- **Aplikacja odporna na ataki** 
-    - **Cecha:** Aplikacja przechodzi testy bezpieczeństwa `OWASP`
-    - **Miara:** Raport z audytu testów penetracyjnych
-- **Połączenie za pomocą bezpiecznych protokołów** 
 
-    - **Cecha:** Interakcje są prowadzone za pomocą protokułu nie starszego niż `TLS1.2`
-    - **Miara:** Potwierdzenie niewspierania innych protokołów
-- **Wyciek wrażliwych danych** 
-    - **Cecha:** Aplikacja nie wspiera przetrzymywania wrażliwych danych w pamięci podręcznej przeglądarki 
-    - **Miara:** ResponseHeader {Cache-Control: no-store}
+- **Odporność na ataki DoS**
+  - **Cecha:** Aplikacja jest odporna na ataki typu `Denial of Service`
+  - **Miara:** Raport z audytu potwierdzający daną ceche
+- **Aplikacja odporna na ataki**
+  - **Cecha:** Aplikacja przechodzi testy bezpieczeństwa `OWASP`
+  - **Miara:** Raport z audytu testów penetracyjnych
+- **Połączenie za pomocą bezpiecznych protokołów**
+
+  - **Cecha:** Interakcje są prowadzone za pomocą protokułu nie starszego niż `TLS1.2`
+  - **Miara:** Potwierdzenie niewspierania innych protokołów
+
+- **Wyciek wrażliwych danych**
+  - **Cecha:** Aplikacja nie wspiera przetrzymywania wrażliwych danych w pamięci podręcznej przeglądarki
+  - **Miara:** ResponseHeader {Cache-Control: no-store}
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
@@ -3844,11 +3858,9 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 - Analiza danych - przetwarzanie danych ofertowych w celu wygenerowania raportów
 
-
 ## F
 
 - Faktura – dokument sprzedaży potwierdzający zaistniałą transakcję pośredniczących ze sobą stron
-
 
 ## I
 
@@ -3858,21 +3870,17 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 - Konsultatnt - Pracownik firmy pracujący w `dziale Handlowym`, jego rolą jest kontakt z `Klientem` oraz z `Dostawcą` w celu zrealizowania `Zlecenia Zakupu`
 
-
 ## P
 
 - Przedoferta - Oferta, która jest tylko propozycją
-
 
 ## R
 
 - Raport - Dokument zawierający zdefiniowane analizy danych, dostępny w wersji elektronicznej i papierowej po wcześniejszym wydrukowaniu. Raport konfigurowany jest z administratorem systemu.
 
-
 ## S
 
 - System analizujący dane - Program śledzący i zapisujący ruch użytkowników systemu oraz dane dotyczące ofert
-
 
 ## Z
 
@@ -3883,6 +3891,24 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 <div class="page">
 
 # Załącznik B: Wzory dokumentów
+
+### 1.Dane_dostawcy.docx
+### 2.Dane_fabryki.docx
+### 3.Wpis_towaru_w_katalogu.docx
+### 4.Wpis_dotyczący_ceny_towaru.docx
+### 5.Dokument_ofertowy.doc
+### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
+### 7.Formularz_oferty_udzielonej_dla_klienta.doc
+### 8.Formularz_prosby_o_dostepnosc_towaru.docx
+### 9.Formularz_reklamacji_do_dostawcy.docx
+### 10.Formularz_reklamacji_od_klienta.docx
+### 11.Instom_formularz_danych_klienta.docx
+### 12.Instom_przesuniecie_miedzymagazynowe.docx
+### 13.Instom_przyjecie zewnetrzne.docx
+### 14.Instom_rozchod_wewnetrzny.docx
+### 15.Instom_wydanie zewnetrzne.docx
+### 16.Raport_z_akcji_marketingowych.doc
+### 17.Zamówienie_klienta.doc
 
 <div class="page">
 
@@ -3913,4 +3939,3 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 - [2.4.7.1. Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów](#markdown-header-2471-rysunek-14-diagram-przypadków-użycia-obsługi-rejestru-potencjalnych-klientów)
 - [2.4.7.2. Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie](#markdown-header-2472-rysunek-15-diagram-przypadków-użycia-funkcji-informowania-o-ofercie)
 - [2.4.8.1. Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień](#markdown-header-2481-rysunek-16-diagram-przypadków-użycia-wprowadzenia-dokumentów-i-zadań-przez-pracownika-oraz-właściciela-do-systemu-oraz-wglądu-do-prognozy-zamówień)
-
