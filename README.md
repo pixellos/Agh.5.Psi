@@ -41,7 +41,7 @@ Wymagania organizacyjne:
 
 • prawne: -- KAMIL
 
- ochrony prywatności,--ADAM
+ ochrony prywatności,--KAMIL
 
  wymagania zabezpieczeń.:--ADAM
 
