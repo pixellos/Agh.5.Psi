@@ -3615,7 +3615,6 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 
 
 ### 2.7.2 Wymagania organizacyjne
-
 Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, jak i w firmie - wytwórcy
 
 #### 2.7.2.3 Standardów
@@ -3637,8 +3636,39 @@ Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, ja
     
 - **Testowanie jednostkowe i funkcyjne kodu**
     - **Cecha:** Testy jednostkowe i funkcyjne implementowane będą np. przy pomocy narzędzi: JUnit, Mockito    
-      
 
+### 2.7.3 Wymagania zewnętrzne
+Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego tworzenia.
+
+#### 2.7.3.1 Współpracy
+
+- **Wystawienie WebService** 
+  - **Cecha:** Aplikacja posiada poprawnie zdefiniowany web service typu `REST API` umożliwiający innym firmom interakcje z systemem w przypadku integracji, gdzie aplikacja jest dostawcą danych
+- **Aplikacja korzysta z web service'ów dostawców** 
+  - **Cecha:** Aplikacja ma możliwość korzystania z serwisów innych firm, z którymi prowadzone są integracje, gdzie aplikacja jest konsumentem danych 
+
+#### 2.7.3.2 Etyczne
+
+- **System będzie działać w interesie firmy**
+  
+    - **Cecha:** System działa w interesie firmy według ustalonych wymagań, implementacja jest wykonana według najlepszej wiedzy programistów
+- **System nie powoduje szkód** 
+    - **Cecha:** System nie zmusza użytkowników do podejmowania się nieetycznych działań w celu realizacji swoich obowiązków
+
+#### 2.7.3.5 Wymagania zabezpieczeń
+- **Odporność na ataki DoS** 
+    - **Cecha:** Aplikacja jest odporna na ataki typu `Denial of Service` 
+    - **Miara:** Raport z audytu potwierdzający daną ceche
+- **Aplikacja odporna na ataki** 
+    - **Cecha:** Aplikacja przechodzi testy bezpieczeństwa `OWASP`
+    - **Miara:** Raport z audytu testów penetracyjnych
+- **Połączenie za pomocą bezpiecznych protokołów** 
+
+    - **Cecha:** Interakcje są prowadzone za pomocą protokułu nie starszego niż `TLS1.2`
+    - **Miara:** Potwierdzenie niewspierania innych protokołów
+- **Wyciek wrażliwych danych** 
+    - **Cecha:** Aplikacja nie wspiera przetrzymywania wrażliwych danych w pamięci podręcznej przeglądarki 
+    - **Miara:** ResponseHeader {Cache-Control: no-store}
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
@@ -3717,3 +3747,4 @@ Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, ja
 - [2.4.7.1. Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów](#markdown-header-2471-rysunek-14-diagram-przypadków-użycia-obsługi-rejestru-potencjalnych-klientów)
 - [2.4.7.2. Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie](#markdown-header-2472-rysunek-15-diagram-przypadków-użycia-funkcji-informowania-o-ofercie)
 - [2.4.8.1. Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień](#markdown-header-2481-rysunek-16-diagram-przypadków-użycia-wprowadzenia-dokumentów-i-zadań-przez-pracownika-oraz-właściciela-do-systemu-oraz-wglądu-do-prognozy-zamówień)
+
