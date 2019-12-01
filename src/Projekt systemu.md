@@ -3538,6 +3538,130 @@ partition Marketingowiec #DeepSkyBlue{
 
 **Uwagi:** -
 
+### 2.6.22 Zarejestrowanie produktu
+
+**Przypadek użycia:** UC-5.1
+
+**Nazwa funkcji:** WF-5.1 - Rejestruj produkt
+
+**Opis:** Funkcja systemu służąca do rejestracji produktów
+
+**Dane wejściowe:** Załącznik B - 13.Instom_przyjecie zewnetrzne.docx
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Aktualizacja ilości produktu
+
+**Wymaga:** Istnienie magazyniera w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Zarejestruj produkt`
+
+**Warunek końcowy:** Dodany produkt
+
+**Efekty uboczne:** -
+
+**Uwagi:** -
+
+### 2.6.23 Modyfikacja produktu
+
+**Przypadek użycia:** UC-5.2
+
+**Nazwa funkcji:** WF-5.2 - Modyfikuj produkt
+
+**Opis:** Funkcja systemu służąca do modyfikacji istniejących produktów
+
+**Dane wejściowe:** Załącznik B - 12.Instom_przesuniecie_miedzymagazynowe.docx
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Aktualizacja progu cenowego towaru
+
+**Wymaga:** Istnienie produktu w systemie, Istnienie magazyniera w systemie
+
+**Warunek początkowy:** 
+     - Kliknięcie przycisku `Modyfikuj produkt`
+
+**Warunek końcowy:** Zmienione dane produktu
+
+**Efekty uboczne:** -
+
+**Uwagi:** -
+
+### 2.6.24 Wyrejestrowanie produktu
+
+**Przypadek użycia:** UC-5.3
+
+**Nazwa funkcji:** WF-5.3 - Wyrejestruj produkt
+
+**Opis:** Funkcja systemu służąca do derejestracji produktów
+
+**Dane wejściowe:** X
+
+**Dane wyjściowe:** Załącznik B - 15.Instom_wydanie zewnetrzne.docx
+
+**Przeznaczenie:** Aktualizacja ilości produktu
+
+**Wymaga:** Istnienie magazyniera w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Wyrejestruj produkt`
+
+**Warunek końcowy:** Usunięty produkt
+
+**Efekty uboczne:** -
+
+**Uwagi:** -
+
+### 2.6.25 Pobranie szczególowych danych o produkcie
+
+**Przypadek użycia:** UC-5.4
+
+**Nazwa funkcji:** WF-5.4 - Pobranie szczególowych danych o produkcie
+
+**Opis:** Funkcja systemu służąca do pobrania szczególowych danych o produkcie
+
+**Dane wejściowe:** id produktu
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Pobranie informacji
+
+**Wymaga:** Istnienie produktu w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Pobranie szczególowych danych`
+
+**Warunek końcowy:** Informacje o produkcie
+
+**Efekty uboczne:** -
+
+**Uwagi:** -
+
+### 2.6.26 Pobranie wszystkich dostepnych produktow
+
+**Przypadek użycia:** UC-5.5
+
+**Nazwa funkcji:** WF-5.5 - Pobranie wszystkich dostepnych produktow
+
+**Opis:** Funkcja systemu służąca do pobrania dostępnych produktów
+
+**Dane wejściowe:** X
+
+**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+
+**Przeznaczenie:** Pobranie informacji
+
+**Wymaga:** Istnienie produktów w systemie
+
+**Warunek początkowy:** 
+    - Kliknięcie przycisku `Pobranie wszystkich produktów`
+
+**Warunek końcowy:** Informacje o produkcie
+
+**Efekty uboczne:** -
+
+**Uwagi:** -
 
 
 <div class="page">
