@@ -1,0 +1,6 @@
+wywolanie z command line:
+
+java -jar Paradigm_script-jar-with-dependencies.jar [PATH_TO_FILES] [PATH_TO_PROJECT]
+
+example:
+java -jar Paradigm_script-jar-with-dependencies.jar D:\projekty\CFT_recon\files\psiFiles\ D:\projekty\CFT_recon\files\psiFiles\demo.vp
