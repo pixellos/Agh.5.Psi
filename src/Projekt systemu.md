@@ -2247,14 +2247,15 @@ actor Magazynier
 rectangle "System Magazynu" {
     Magazynier -- (Zarejestrowanie produktu)
 	Magazynier -- (Modyfikacja produktu)
+	Magazynier -- (Wyszykiwanie produktów)
 	Magazynier -- (Wyrejestrowanie produktu)
 	Magazynier -- (Pobranie szczegolowych danych o produkcie)
-	Magazynier -- (Pobranie wszystkich dostepnych produktow)
+	Magazynier -- (Pobranie wszystkich dostepnych produktów)
 }
 @enduml
 ```
 
-##### _Rysunek 13. Diagram przypadków użycia obsługi System Magazynu_
+##### _Rysunek 13. Diagram przypadków użycia obsługi Rejestr magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-5.1 - Zarejestrowanie produktu
 
@@ -2264,7 +2265,7 @@ rectangle "System Magazynu" {
 
 **Kontekst użycia:** Gdy dostawa zostanie odebrana, Jako magazynier chce mieć możliwość zarejestrowania produktu aby udostępnić oraz uaktualnić informacje o dostępności produktu
 
-**Zakres:** System Magazynu
+**Zakres:** Rejestr magazynu
 
 **Poziom:** Zarejestrowanie produktu
 
@@ -2276,14 +2277,14 @@ rectangle "System Magazynu" {
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla formularz dodania produktu do systemu
+1. Rejestr wyświetla formularz dodania produktu do rejestru
 2. `Magazynier` wpisuje dane produktu
-3. System weryfikuje dane produktu
+3. Rejestr weryfikuje dane produktu
 4. Produkt zostaje zapisany
 
 **Scenariusze alternatywne:**
 
-1. Produkt istnieje w systemie - jest nadpisywany
+1. Produkt istnieje w rejestrze - jest nadpisywany
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
@@ -2300,7 +2301,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość modyfikacji danych aby uaktualnić informacje o produkcie
 
-**Zakres:** System Magazynu
+**Zakres:** Rejestr magazynu
 
 **Poziom:** Modyfikacja produktu
 
@@ -2312,9 +2313,9 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla formularz modyfikacji produktu w systemie
+1. Rejestr wyświetla formularz modyfikacji produktu w rejestrze
 2. `Magazynier` wpisuje dane produktu
-3. System weryfikuje dane produktu
+3. Rejestr weryfikuje dane produktu
 4. Produkt zostaje zmodyfikowany
 
 **Scenariusze alternatywne:**
@@ -2327,7 +2328,42 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.3 - Wyrejstrowanie produktu
+**Numer i Nazwa przypadku użycia:** UC-5.3 - Wyszukiwanie produktów
+
+**Autor:** Kamil Gliński
+
+**Cel przypadku użycia:** Wyszukiwanie produktów
+
+**Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość wyszukiwania prodktów aby uzyskać informacje o danym produkcie
+
+**Zakres:** Rejestr magazynu
+
+**Poziom:** Wyszukiwanie produktów
+
+**Aktor główny:** Magazynier
+
+**Warunek początkowy:** Potrzeba wyszukania produktu
+
+**Zdarzenie inicjujące:** Potrzeba pobrania danych o produkcie
+
+**Główny scenariusz powodzenia:**
+
+1. Rejestr wyświetla kryteria wyszukania produktu w rejestrze
+2. `Magazynier` określa kryteria wyszukania
+3. Rejestr znajduje produkt
+4. Dane Produktu zostają zwrócone do użytykownika
+
+**Scenariusze alternatywne:**
+
+1. Brak danego produktu w rejestrze
+
+**Uczestnicy i interesy:**
+
+_Magazynier_ - Jest to w jego zakresie obowiązków
+
+---
+
+**Numer i Nazwa przypadku użycia:** UC-5.4 - Wyrejestrowanie produktu
 
 **Autor:** Kamil Gliński
 
@@ -2335,7 +2371,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Kontekst użycia:** Gdy towar został wysłany, Jako magazynier chce mieć możliwość wyrejestrowania produktu z magazynu aby uaktualnić informacje o dostępności produktu
 
-**Zakres:** System Magazynu
+**Zakres:** Rejestr magazynu
 
 **Poziom:** Wyrejstrowanie produktu
 
@@ -2347,12 +2383,12 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla formularz usuniecia produktu z systemu
+1. Rejestr wyświetla formularz usuniecia produktu z rejestru
 2. Produkt zostaje usuniety
 
 **Scenariusze alternatywne:**
 
-1. Brak produktu w systemie - brak dzialania
+1. Brak produktu w rejestrze - brak dzialania
 
 **Uczestnicy i interesy:**
 
@@ -2360,7 +2396,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.4 - Pobranie szczegolowych danych o produkcie
+**Numer i Nazwa przypadku użycia:** UC-5.5 - Pobranie szczegolowych danych o produkcie
 
 **Autor:** Kamil Gliński
 
@@ -2368,25 +2404,25 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość pobrania informacji na temat produktow aby otrzymac informacje o aktualnym stanie magazynu
 
-**Zakres:** System Magazynu
+**Zakres:** Rejestr magazynu
 
 **Poziom:** Pobranie szczegolowych danych o produkcie
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Produkt znajduje sie w systemie
+**Warunek początkowy:** Produkt znajduje sie w rejestrze
 
 **Zdarzenie inicjujące:** Potrzeba pobrania informacji o aktualnym stanie magazynu
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla formularz pobrania danych o produkcie z systemu
+1. Rejestr wyświetla formularz pobrania danych o produkcie z rejestru
 2. `Magazynier` wpisuje parametry szukanego produktu
 3. Produkt zostaje pobrany
 
 **Scenariusze alternatywne:**
 
-1. Brak produktu w systemie - brak dzialania
+1. Brak produktu w rejestrze - brak dzialania
 
 **Uczestnicy i interesy:**
 
@@ -2394,7 +2430,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.5 - Pobranie wszystkich dostepnych produktow
+**Numer i Nazwa przypadku użycia:** UC-5.6 - Pobranie wszystkich dostepnych produktow
 
 **Autor:** Kamil Gliński
 
@@ -2402,24 +2438,24 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość pobrania wszystkich dostepnych produktow aby otrzymac informacje o aktualnym stanie magazynu
 
-**Zakres:** System Magazynu
+**Zakres:** Rejestr magazynu
 
 **Poziom:** Pobranie szczegolowych danych o produkcie
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Produkty znajduja sie w systemie
+**Warunek początkowy:** Produkty znajduja sie w rejestrze
 
 **Zdarzenie inicjujące:** Potrzeba pobrania informacji o wszystkich produktach
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla formularz pobrania danych o produktach z systemu
+1. Rejestr wyświetla formularz pobrania danych o produktach z rejestrze
 2. Produkty zostaja pobrane
 
 **Scenariusze alternatywne:**
 
-1. Brak produktu w systemie - brak dzialania
+1. Brak produktu w rejestrze - brak dzialania
 
 **Uczestnicy i interesy:**
 
@@ -2427,7 +2463,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.6 - Tworzenie zamówienia dostaw
+**Numer i Nazwa przypadku użycia:** UC-5.7 - Tworzenie zamówienia dostaw
 
 **Autor:** Kamil Gliński
 
@@ -2435,7 +2471,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Kontekst użycia:** W razie zapotrzebowania na produkty, Jako magazynier chce mieć możliwość tworzyć zamówienia dostaw aby zapewnić wymagane dokumenty dotyczące dostaw.
 
-**Zakres:** System Magazynu
+**Zakres:** Rejestr magazynu
 
 **Poziom:** Tworzenie zamówienia dostaw
 
