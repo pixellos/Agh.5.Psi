@@ -2727,11 +2727,11 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 left to right direction
 actor Pracownik
 actor Właściciel
-rectangle "System" {
+rectangle "Zarządzanie" {
     :Pracownik: -- (Wprowadź dokumenty)
-    :Pracownik: -- (Wprowadź zadania)
+    :Pracownik: -- (Wyświetl dokumenty)
+    :Pracownik: -- (Wyświetl zadania)
 (Wyświetl prognozę zamówień) -- (Właściciel)
-(Pracownik) -- (Przydziel zadania)
      (Przydziel zadania) --(Właściciel)
 }
 @enduml
