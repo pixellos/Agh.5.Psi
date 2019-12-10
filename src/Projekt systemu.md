@@ -1544,13 +1544,12 @@ Klient - opłaca fakture
 left to right direction
 actor Klient
 actor Pracownik
-actor :Zespół techniczny:
-rectangle "System" {
+rectangle "Obsługa reklamacji" {
     (Klient) -- (Zgłoś reklamację)
     (Zgłoś reklamację) .> (Wprowadź produkt do rejestru) : <<include>>
+    (Wyświetl błąd przy wprowadzaniu do systemu) .> (Wprowadź produkt do rejestru) : <<exclude>>
     (Zgłoś reklamację) .> (Uaktualnij status reklamacji) : <<include>>
-    (Uaktualnij status reklamacji) -- (Pracownik)
-    :Zespół techniczny: - (Pracownik)
+    (Wyświetl zgłoszone reklamacje) -- (Pracownik)
 
 }
 @enduml
@@ -1601,7 +1600,7 @@ _Klient_ - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zwer
 
 **Cel przypadku użycia:** Podjęcie kolejnych kroków w obsłudze reklamacji przez klienta
 
-**Kontekst użycia:** `Pracownik` przekierowuje zgłoszoną przez `klienta` reklamację produktu `zespołowi technicznemu` do analizy zasadności reklamacji.
+**Kontekst użycia:** `Pracownik` wyświetla zgłoszoną reklamację przez `Klienta`i przekierowuje ją `zespołowi technicznemu` do analizy zasadności.
 
 **Zakres:** Reklamacja produktu przez klienta
 
@@ -1615,16 +1614,13 @@ _Klient_ - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zwer
 
 **Główny scenariusz powodzenia:**
 
-1. `Pracownik` przekierowuje zgłoszenie reklamacyjne do `Zespołu technicznego`
+1. `Pracownik` wyświetla zgłoszone reklamacje
 2. `Pracownik` aktualizuje status reklamacji
-3. `Pracownik` wprowadza reklamowany produkt do rejestru
-4. `Zespół techniczny` przejmuje zareklamowany produkt i poddaje analizie jego zasadność
 
 **Scenariusze alternatywne:**
 
-1. `Pracownik` nie może przekierować zgłoszenia reklamacyjnego
+1. `Pracownik` nie może wyświetlić zgłoszenych reklamacji
 2. `Pracownik` nie moze zaktualizować statusu reklamacji
-3. `Pracownik` nie moze wprowadzić reklamowanego produktu do rejestru
 
 **Uczestnicy i interesy:**
 
@@ -1636,77 +1632,7 @@ _Zespół techniczny_ - przejmuje dalsze czynności
 
 ---
 
-**Numer i nazwa przypadku użycia:** UC-3.3 - Przygotowanie produktów do odesłania do dostawcy
-
-**Autor:** Kacper Kwapisz
-
-**Cel przypadku użycia:** Przygotowanie produktów do odesłania do dostawcy
-
-**Kontekst użycia:** `Zespół techniczny` przygotowuje produkty do odesłania do `dostawcy`
-
-**Zakres:** Przygotowanie produktów do odesłania do dostawcy
-
-**Poziom:** Zgłoszenie reklamacji dostawcy
-
-**Aktor główny:** Zespół techniczny
-
-**Warunek początkowy:** Produkt po analizie reklamacji
-
-**Zdarzenie inicjujące:** Analiza produktu wykazała zasadność jej złożenia przezz klienta
-
-**Główny scenariusz powodzenia:**
-
-1. `Zespół techniczny` przekierowuje zgłoszenie reklamacyjne do `Zespołu technicznego`
-2. `Zespół techniczny` aktualizuje status reklamacji
-
-**Scenariusze alternatywne:**
-
-1. `Zespół techniczny` nie może przekierować zgłoszenia reklamacyjnego
-
-**Uczestnicy i interesy:**
-
-_Zespół techniczny_ - przygotowanie produktów do odesłania do dostawcy
-
-_dostawca_ - potencjalny odbiorca przesyłki reklamacji
-
----
-
-**Numer i nazwa przypadku użycia:** UC-3.4 - Realizacja wysłania produktów do dostawcy
-
-**Autor:** Kacper Kwapisz
-
-**Cel przypadku użycia:** Wysłanie produktów do dostawcy, aby otrzymać od niego wymienione, działające produkty.
-
-**Kontekst użycia:** Po przygotowaniu produktów do odesłania `zespół techniczny` odsyła produkty do `dostawcy`
-
-**Zakres:** Wysłanie produktów do dostawcy
-
-**Poziom:** Zgłoszenie reklamacji dostawcy
-
-**Aktor główny:** Zespół techniczny
-
-**Warunek początkowy:** Produkt przygotowany do odesłania do dostawcy
-
-**Zdarzenie inicjujące:** `Zespół techniczny` rozpoczyzna realizacje odesłania produktów do dostawcy
-
-**Główny scenariusz powodzenia:**
-
-1. `Zespół techniczny` wysyła produkty do `dostawcy`
-2. `Zespół techniczny` aktualizuje status reklamacji
-
-**Scenariusze alternatywne:**
-
-1. `Zespół techniczny` nie moze zaktualizować statusu reklamacji
-
-**Uczestnicy i interesy:**
-
-_Zespół techniczny_ - wysyła do dostawcy reklamowane produkty
-
-_dostawca_ - potencjalny odbiorca przesyłki reklamacji
-
----
-
-**Numer i nazwa przypadku użycia:** UC-3.5 - Wprowadzenie reklamowanych produktów do rejestru
+**Numer i nazwa przypadku użycia:** UC-3.3 - Wprowadzenie reklamowanych produktów do rejestru
 
 **Autor:** Kacper Kwapisz
 
