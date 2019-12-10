@@ -2737,7 +2737,7 @@ rectangle "System" {
 @enduml
 ```
 
-##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień_
+##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz wprowadzenia zadań właściciela do systemu oraz wglądu do prognozy zamówień_
 
 **Numer i nazwa przypadku użycia:** UC-8.1 - Wprowadzenie dokumentów do systemu
 
@@ -2755,7 +2755,7 @@ rectangle "System" {
 
 **Warunek początkowy:** `Pracownik` poprawnie zalogowany do systemu
 
-**Zdarzenie inicjujące:** `Pracownik` ma zamiar wprowadzić nowe zadanie do systemu
+**Zdarzenie inicjujące:** `Pracownik` ma zamiar wprowadzić nowy dokument do systemu
 
 **Główny scenariusz powodzenia:**
 
