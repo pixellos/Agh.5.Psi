@@ -678,37 +678,84 @@ W systemie możemy wyróżnić następujących aktorów
 W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek użytkownika.
 
 #### 2.4.1 Obsługa zamówień (OA1)
+![](./diagrams/images/oa1.jpg)
 
-```plantuml 2.4.1
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Dostawca
-actor Konsultant
-
-rectangle "Zarządzanie dostawcami" {
-    (Rejestrowanie dostawcy) .> (Modyfikowanie danych dostawcy) : include
-    Konsultant -- (Rejestrowanie dostawcy)
-    Konsultant -- (Modyfikowanie danych dostawcy)
-    (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
-    (Konsultant) -- (Aktywacja i dezaktywacja pozycji katalogu towarów)
-}
+##### _Rysunek 04. Diagram przypadków użycia obsługi zamówień_
 
 
-rectangle "Zarządzanie towarami" {
-    (Konsultant) -- (Dodawanie nowych pozycji katalogów towarów)
-    (Konsultant) -- (Ustalanie cen)
-    (Konsultant) -- (Generowanie cennika)
-    (Konsultant) -- (Rezerwacja towaru)
-    (Konsultant) -- (Zmiana lub likwidacja rezerwacji towaru)
-    (Zmiana lub likwidacja rezerwacji towaru) .> (Rezerwacja towaru):include
-}
-@enduml
-```
+**Numer i Nazwa przypadku użycia:** UC-1.1 - Wyszukaj dostawcę
 
-##### _Rysunek 04. Diagram przypadków użycia aktualizacji danych dostawcy_
+**Autor:** Mateusz Popielarz
 
-**Numer i Nazwa przypadku użycia:** UC-1.1 - Rejestrowanie dostawcy
+**Cel przypadku użycia:** Wyszukanie dostawcy w systemie
+
+**Kontekst użycia:** Konsultant chce dowiedzieć się o istniejącym dostawcy
+
+**Zakres:** System do obsługi dostawców
+
+**Poziom:** Przetwarzanie danych dostawców
+
+**Aktor główny:** Konsultant
+
+**Warunek początkowy:** Dostawca istnieje w systemie
+
+**Zdarzenie inicjujące:** Dostawca wyraził chęć dołączenia do naszego łańcucha dostaw
+
+**Główny scenariusz powodzenia:**
+
+1. `Konsultant` wpisuje wartość
+2. System filtruje rekordy
+3. Wyświetlane są pasujące rekordy
+
+**Scenariusze alternatywne:**
+
+1. `Dostawca` nie istnieje w systemie, system proponuje `UC-1.3`
+
+**Uczestnicy i interesy:**
+
+_Konsultant_ - Jest to w jego zakresu obowiązków
+_Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
+
+---
+
+**Numer i Nazwa przypadku użycia:** UC-1.2 - Zmień dane dostawcy
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Aktualizacja lub poprawienie danych dostawcy
+
+**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości zmiany istniejących dostawców. 
+
+**Zakres:** System do obsługi dostawców
+
+**Poziom:** Przetwarzanie danych dostawców
+
+**Aktor główny:** Konsultant
+
+**Warunek początkowy:** Dostawca istnieje w systemie
+
+**Zdarzenie inicjujące:** Dostawca poinformował o zmianie danych
+
+**Główny scenariusz powodzenia:**
+
+1. System szuka istniejącego dostawcy używając `UC-1.1`
+1. System wyświetla [formularz danych](./wzory/1.Dane_dostawcy.docx) dostawcy wypełniony wyszukanymi danymi
+1. `Konsultant` poprawia dane
+1. System weryfikuje dane
+1. `Dostawca` zostaje zapisany
+
+**Scenariusze alternatywne:**
+
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
+
+**Uczestnicy i interesy:**
+
+_Konsultant_ - Jest to w jego zakresu obowiązków
+_Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
+
+--- 
+
+**Numer i Nazwa przypadku użycia:** UC-1.3 - Dodaj dostawcę
 
 **Autor:** Mateusz Popielarz
 
@@ -728,14 +775,14 @@ rectangle "Zarządzanie towarami" {
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla formularz dodania dostawcy do systemu
+1. System wyświetla pusty [formularz danych](./wzory/1.Dane_dostawcy.docx) 
 2. `Konsultant` wpisuje dane
 3. System weryfikuje dane
 4. `Dostawca` zostaje zapisany
 
 **Scenariusze alternatywne:**
 
-1. `Dostawca` istnieje w systemie, system proponuje `UC-1.2`
+1. `Dostawca` istnieje w systemie (wyszukany przez `UC-1.1`), system proponuje `UC-1.2`
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
@@ -745,30 +792,66 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.2 - Modyfikowanie danych dostawcy
+
+
+**Numer i Nazwa przypadku użycia:** UC-1.4 - Wyszukaj towar
 
 **Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Aktualizacja lub poprawienie danych dsotawcy
+**Cel przypadku użycia:** Wyszukanie towaru w systemie
 
-**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
+**Kontekst użycia:** Konsultant chce dowiedzieć się o istniejącym towarze
 
-**Zakres:** Gdy dane dostawcy, jak siedziba, nazwa, adres kontaktowy lub numer, ulegną zmianie system musi być w stanie bezproblemowo poradzić sobie ze zmianą tych danych. Dokumenty wystawione przed datą zmiany NIE MOGĄ zostać zmienione. Historia zmian musi być zapisana razem z datą, powodem i osobą jej dokonującą do wglądu zarządu.
+**Zakres:** System do obsługi towarów
 
-**Poziom:** Przetwarzanie danych dostawców
+**Poziom:** Przetwarzanie towarów
 
 **Aktor główny:** Konsultant
 
-**Warunek początkowy:** Dostawca ma nieaktualne dane
+**Warunek początkowy:** Towar istnieje w systemie
 
-**Zdarzenie inicjujące:** Dostawca poinformował o zmianie danych
+**Zdarzenie inicjujące:** Konsultant chce zobaczyć wpis towaru
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla formularz dodania dostawcy do systemu wypełniony danymi
-2. `Konsultant` poprawia dane
-3. System weryfikuje dane
-4. `Dostawca` zostaje zapisany
+1. `Konsultant` wpisuje wartość
+2. System filtruje rekordy
+3. Wyświetlane są pasujące rekordy
+
+**Scenariusze alternatywne:**
+
+1. `Towar` nie istnieje w systemie, system proponuje `UC-1.6`
+
+**Uczestnicy i interesy:**
+
+_Konsultant_ - Jest to w jego zakresu obowiązków
+
+---
+
+**Numer i Nazwa przypadku użycia:** UC-1.5 - Zmiana towaru
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Zmiana wpisów rejestru towarów
+
+**Kontekst użycia:** Dane towaru muszą zostać zaktualizowane
+
+**Zakres:** Prowadzenie rejestru towarów
+
+**Poziom:** Prowadzenie katalogu i cennika towarów
+
+**Aktor główny:** Konsultant
+
+**Warunek początkowy:** Towaru istnieje ma w systemie, jest wyszukany przez `UC-1.4`
+
+**Zdarzenie inicjujące:** Konsultant dowiaduje się o zmianie w towarze od dostawcy
+
+**Główny scenariusz powodzenia:**
+
+1. Rekord systemu jest podznaczony
+2. `Konsultant` wybiera opcję 'zmień'
+3. System wyświetla [wypełniony wpis towaru](./wzory/3.Wpis_towaru_w_katalogu.docx)
+4. `Towar` Zostaje zapisany
 
 **Scenariusze alternatywne:**
 
@@ -777,80 +860,48 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
-_Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.3 - Dodawanie nowych pozycji katalogów towarów
+**Numer i Nazwa przypadku użycia:** UC-1.6 - Dodanie towaru
 
 **Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Dodawanie nowych pozycji katalogów towarów
+**Cel przypadku użycia:** Dodanie wpisu rejestru towarów
 
-**Kontekst użycia:** Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są dodane do oferty. Konsultant ma mieć możliwość dodać nowy towar w ofercie - niektóre towary nie są dostępne od razu, więc musi być możliwość ustalenia dat, w których ten produkt może być dostępny.
+**Kontekst użycia:** Dane towaru muszą zostać dodane
 
-**Zakres:** Dodanie pozycji
+**Zakres:** Prowadzenie rejestru towarów
 
 **Poziom:** Prowadzenie katalogu i cennika towarów
 
 **Aktor główny:** Konsultant
 
-**Warunek początkowy:** Towaru nie ma w systemie
+**Warunek początkowy:** Towaru nie istnieje w systemie, (`UC-1.4`)
 
 **Zdarzenie inicjujące:** Konsultant dowiaduje się o nowym towarze od dostawcy
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla formularz dodania towaru do systemu
-2. `Konsultant` wpisuje dane
-3. System weryfikuje dane
-4. `Towar` zostaje zapisany
+1. Wybrana jest opcja 'Dodaj`
+1. System używając `UC-1.4` sprawdza, że nie istnieje towar
+1. Systemowy klucz produktu jest generowany, towar zaślepka jest tworzony
+3. Przechodzimy do `UC-1.5` z nowo utworzonym produktem
+4. `Towar` Zostaje dodany
 
 **Scenariusze alternatywne:**
 
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
+1. Towar zaślepka jest usuwany
 
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
 
----
-
-**Numer i Nazwa przypadku użycia:** UC-1.4 - Aktywacja i dezaktywacja pozycji katalogu towarów
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Aktywacja i dezaktywacja pozycji katalogu towarów
-
-**Kontekst użycia:** Firma systematycznie dostaje broszury handlowe od znanych dostawców. Niektóre produkty są tylko dostępne czasowo, lub są zastąpione przez nowe produkty. Konsultant ma mieć możliwość zedytować w ofercie - niektóre towary są wadliwe lub wycofane z powodu bezpieczeństwa i zastępowane przez nowsze rewizje - musi być możliwość dostepu do informacji kto kupił dany towar w jakim okresie i powiadomienie tych klientów.
-
-**Zakres:** Aktualizacja pozycji
-
-**Poziom:** Prowadzenie katalogu i cennika towarów
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Towaru wyszedł z użytku
-
-**Zdarzenie inicjujące:** Konsultant dowiaduje się o zmianie dostępności towaru
-
-**Główny scenariusz powodzenia:**
-
-1. System wyświetla wpis towaru
-2. `Konsultant` klika aktywuj/dezaktywuj
-3. `Towar` zostaje zapisany
-
-**Scenariusze alternatywne:**
-
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.5 - Ustalanie cen
+**Numer i Nazwa przypadku użycia:** UC-1.7 - Wprowadź próg cenowy
 
 **Autor:** Mateusz Popielarz
 
@@ -870,13 +921,16 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. System wyświetla wpis towaru
-2. `Konsultant` aktualizuje progi cenowe
-3. `Towar` zostaje zapisany
+1. System podąża `UC-1.5`
+1. `Konsultant` klika opcjonalną opcję `dodaj progi cenowe`
+1. Wyświetlane jest okienko modalne [wpis ceny towaru](./wzory/4.Wpis_dotyczący_ceny_towaru.docx)
+3. `Towar` zostaje zapisany z cenami
 
 **Scenariusze alternatywne:**
 
 1. Dane nie przeszły walidacji, jest wyświetlany błąd
+
+1. Okresy progów cenowych na siebie nachodzą, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
 
@@ -884,7 +938,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.6 - Generowanie cennika
+**Numer i Nazwa przypadku użycia:** UC-1.8 - Generowanie cennika
 
 **Autor:** Mateusz Popielarz
 
@@ -901,11 +955,13 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` wybiera opcję wygenerowania cennika
+1. `Konsultant` używa `UC-1.1` aby wyszukać interesujące produkty
+1. `Konsultant` wybiera opcję 'Wygeneruj cennik'
 1. Cennik zostaje wygenerowany
 
 **Scenariusze alternatywne:**
-Nie przewiduje się.
+
+1. Żaden towar nie został wybrany, wyświetlany jest błąd
 
 **Uczestnicy i interesy:**
 
@@ -913,13 +969,13 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.7 - Rezerwacja towaru
+**Numer i Nazwa przypadku użycia:** UC-1.9 - Rezerwacja towaru
 
 **Autor:** Mateusz Popielarz
 
 **Cel przypadku użycia:** Rezerwacja towaru
 
-**Kontekst użycia:** W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka produkt automatycznie zostaje `wycofany z rezerwacji`.
+**Kontekst użycia:** W sytuacji, gdy podczas rozmowy z klientem dojdzie do złożenia `przedoferty` która zainteresuje klienta powinna być możliwość `rezerwacji` towaru - polega to na albo nie sprzedawaniu tego towaru innym klientom, gdy jest bardzo niski stan magazynowy, albo na wysłaniu zapytania do dostawcy o zarezerwowanie na okres czasu, który został klientowi przedstawiony jako okienko czasowe na jego decyzję - w przypadku wygaśnięcia tego okienka rezerwacja wygasa.
 
 **Zakres:** Rezerwacja towaru
 
@@ -933,7 +989,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` wybiera towar do rezerwacji i okres
+1. `Konsultant` wybiera towar do rezerwacji i okres używając `UC-1.1`
 1. Rezerwacja towaru zostaje zapisana w systemie
 
 **Scenariusze alternatywne:**
@@ -946,40 +1002,6 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 _Klient_ - Inicjuje proces
 
----
-
-**Numer i Nazwa przypadku użycia:** UC-1.8 - Zmiana lub likwidacja rezerwacji towaru
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Zmiana lub likwidacja rezerwacji towaru
-
-**Kontekst użycia:**  
-W sytuacji gdy klient zmieni którąś z części `zlecenia zakupu` musi być możliwe anulowanie całości lub części `Zamówienia` - ta informacja musi być jak najszybicej wysłana do `Dostawcy` . W sytuacji, gdy dostawca zaczął już produkcje częsci jest to przypadek niemożliwy do automatycznego rozstrzygnięcia przez system - bezpośredni manager musi zostać poinformowany. Historia zmian musi być przechowywana.
-
-**Zakres:** Rezerwacja towaru
-
-**Poziom:** Prowadzenie katalogu i cennika towarów
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Rezerwacja istnieje
-
-**Zdarzenie inicjujące:** Konsultant chce zmienić lub zlikwidować rezerwację towaru
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` wybiera wpis rezerwacji towaru i aktualizuje wpis
-1. Rezerwacja towaru zostaje zaktualizowana
-
-**Scenariusze alternatywne:**
-Nie przewiduje się
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
-
-_Klient_ - Inicjuje proces
 
 #### 2.4.2 Obsługa zleceń zakupu (OA2)
 
