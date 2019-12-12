@@ -1552,22 +1552,7 @@ Księgowość - odnotowuje płatność w systemie, informacja o płatności poch
 Klient - opłaca fakture
 
 #### 2.1.2.3 Obsługa reklamacji
-
-```plantuml 2.1.2.3
-@startuml
-left to right direction
-actor Klient
-actor Pracownik
-rectangle "Obsługa reklamacji" {
-    (Klient) -- (Zgłoś reklamację)
-    (Zgłoś reklamację) .> (Wprowadź produkt do rejestru) : <<include>>
-    (Wyświetl błąd przy wprowadzaniu do systemu) .> (Wprowadź produkt do rejestru) : <<exclude>>
-    (Zgłoś reklamację) .> (Uaktualnij status reklamacji) : <<include>>
-    (Wyświetl zgłoszone reklamacje) -- (Pracownik)
-
-}
-@enduml
-```
+![](./diagrams/images/Obsluga_reklamacji.jpg)
 
 ##### _Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
 
@@ -2753,21 +2738,7 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 
 #### 2.1.2.8 Zarzadzanie
-
-```plantuml X.X.X
-@startuml
-left to right direction
-actor Pracownik
-actor Właściciel
-rectangle "Zarządzanie" {
-    :Pracownik: -- (Wprowadź dokumenty)
-    :Pracownik: -- (Wyświetl dokumenty)
-    :Pracownik: -- (Wyświetl zadania)
-(Wyświetl prognozę zamówień) -- (Właściciel)
-     (Przydziel zadania) --(Właściciel)
-}
-@enduml
-```
+![](./diagrams/images/Zarzadzanie.jpg)
 
 ##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz wprowadzenia zadań właściciela do systemu oraz wglądu do prognozy zamówień_
 
