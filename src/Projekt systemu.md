@@ -109,6 +109,7 @@ Spis Treści
         - [4.15. Instomwydanie zewnetrzne.docx](#markdown-header-415-instomwydanie-zewnetrznedocx)
         - [4.16. Raportzakcjimarketingowych.doc](#markdown-header-416-raportzakcjimarketingowychdoc)
         - [4.17. Zamówienieklienta.doc](#markdown-header-417-zamówienieklientadoc)
+        - [4.18. Instomformularzdanychpotencjalnegoklienta.docx](#markdown-header-418-instomformularzdanychpotencjalnegoklientadocx)
 - [5. Załącznik C:](#markdown-header-5-załącznik-c)
 - [6. Załącznik D:](#markdown-header-6-załącznik-d)
 - [7. Załącznik E: Spis rysunków](#markdown-header-7-załącznik-e-spis-rysunków)
@@ -3632,6 +3633,7 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 - **Zużycie pamięci**
   - **Cecha:** System nie powinien zużywać ilości pamięci przekraczającej typowy sprzęt biurowy (4 GB)
   - **Miary:** Zużycie pamięci będzie monitorowane (GB)
+
 - **Zużycie rdzeni procesora**
   - **Cecha:** System nie powinien zużywać więcej rdzeni procesora, niż w typowym sprzęcie biurowym (4)
   - **Miary:** Zużycie rdzeni procesora będzie monitorowane (GB)
@@ -3820,6 +3822,7 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 ### 15.Instom_wydanie zewnetrzne.docx
 ### 16.Raport_z_akcji_marketingowych.doc
 ### 17.Zamówienie_klienta.doc
+### 18.Instom_formularz_danych_potencjalnego_klienta.docx
 
 <div class="page">
 
@@ -3883,10 +3886,26 @@ Dokumenty:
 - 16.Raport_z_akcji_marketingowych.doc - Adam
 - 17.Zamówienie_klienta.doc - Adam
 
-ActivityDiagram:
+Wymagania niefunkcjonalne
 
-OA6 - Adam
+1. Wymagania produktowe:
+   1. użyteczności - Mateusz
+   1. sprawnościowe
+      1. efektywności - Mateusz
+      1. pamięci - Mateusz
+   1. niezawodności - Kacper
+   1. przenośności - Kacper
 
-OA1, OA7 - Mateusz
+1. Wymagania organizacyjne
+   1. dostawy - Kamil
+   1. implementacyjne - Kamil
+   1. standardów - Kacper
 
+1. Wymagania zewnętrzne: Wymagania zewnętrzne:
+   1. współpracy - Adam
+   1. etyczne - Adam
+   1. prawne - Kamil
+
+1. ochrony prywatności -Kamil
+1. wymagania zabezpieczeń - Adam
 
