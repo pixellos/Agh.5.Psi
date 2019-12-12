@@ -44,11 +44,11 @@ Spis Treści
         - [1.5.2. Cele przedsięwzięcia projektowego](#markdown-header-152-cele-przedsięwzięcia-projektowego)
 - [2. Opis Wymagań Systemu](#markdown-header-2-opis-wymagań-systemu)
     - [2.1. Funkcje systemu ze strony widzenia użytkownika](#markdown-header-21-funkcje-systemu-ze-strony-widzenia-użytkownika)
-        - [2.1.1. Aktorzy w systemie](#markdown-header-211-aktorzy-w-systemie)
-    - [2.2. Dane przechowywane w systemie](#markdown-header-22-dane-przechowywane-w-systemie)
-        - [2.2.1. Opis Magazynu](#markdown-header-221-opis-magazynu)
+    - [2.2. Rejestry w systemie](#markdown-header-22-rejestry-w-systemie)
     - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#markdown-header-23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu-wzory)
     - [2.4. Wyniki analizy wymagań funkcjonalnych](#markdown-header-24-wyniki-analizy-wymagań-funkcjonalnych)
+        - [2.4.1. Obsługa zamówień (OA1)](#markdown-header-241-obsługa-zamówień-oa1)
+        - [2.4.2. Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)](#markdown-header-242-rejestr-potencjalnych-klientów-i-stanu-kontaktu-z-nimi-oa7)
     - [2.5. Modelowanie zachowań w czasie](#markdown-header-25-modelowanie-zachowań-w-czasie)
         - [2.5.1. Analiza danych na potrzeby marketingowe (OA6)](#markdown-header-251-analiza-danych-na-potrzeby-marketingowe-oa6)
     - [2.6. Wymagania funkcjonalne dla dodatkowych części systemu](#markdown-header-26-wymagania-funkcjonalne-dla-dodatkowych-części-systemu)
@@ -240,11 +240,9 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ### 1.3.1 Obszary aktywności (OA)
 
-![2. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/Obsluga_aktywnosci.png)
+![2. ](./diagrams/images/Obsluga_aktywnosci.png)
 
 ##### _Rysunek 02. Przegląd obszarów aktywności_
-
-#### 1.3.1.1 Obsługa zamówień (OA1)
 
 Obszar aktywności obsługi zamówień zawiera w sobie
 
@@ -562,7 +560,6 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 
 ## 2.1 Funkcje systemu ze strony widzenia użytkownika
 
-### Aktorzy w systemie
 
 ```plantuml test
 @startuml
@@ -591,10 +588,9 @@ W systemie możemy wyróżnić następujących aktorów
 
 <div class="page">
 
-## 2.2 Dane przechowywane w systemie
+## 2.2 Rejestry w systemie
 
 1. Reprezentant Klienta - jest to osoba fizyczna podejmująca z nami kontakt, należy do Organizacji klienta
-
    1. Imię
    1. Nazwisko
    1. Email kontaktowy
@@ -639,9 +635,7 @@ W systemie możemy wyróżnić następujących aktorów
    1. Data zatrudnienia
    1. Data rozwiązania umowy
 
-### 2.2.4 Opis Magazynu
-
-1. Miejce w magazynie
+1. Magazyn
    1. Sektor
    1. Numer Miejsca
    1. Obecnie przechowywany produkt
@@ -652,24 +646,23 @@ W systemie możemy wyróżnić następujących aktorów
 
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
 
-
-#### 1.Dane_dostawcy.docx
-#### 2.Dane_fabryki.docx
-#### 3.Wpis_towaru_w_katalogu.docx
-#### 4.Wpis_dotyczący_ceny_towaru.docx
-#### 5.Dokument_ofertowy.doc
-#### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
-#### 7.Formularz_oferty_udzielonej_dla_klienta.doc
-#### 8.Formularz_prosby_o_dostepnosc_towaru.docx
-#### 9.Formularz_reklamacji_do_dostawcy.docx
-#### 10.Formularz_reklamacji_od_klienta.docx
-#### 11.Instom_formularz_danych_klienta.docx
-#### 12.Instom_przesuniecie_miedzymagazynowe.docx
-#### 13.Instom_przyjecie zewnetrzne.docx
-#### 14.Instom_rozchod_wewnetrzny.docx
-#### 15.Instom_wydanie zewnetrzne.docx
-#### 16.Raport_z_akcji_marketingowych.doc
-#### 17.Zamówienie_klienta.doc
+##### 1.Dane_dostawcy.docx
+##### 2.Dane_fabryki.docx
+##### 3.Wpis_towaru_w_katalogu.docx
+##### 4.Wpis_dotyczący_ceny_towaru.docx
+##### 5.Dokument_ofertowy.doc
+##### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
+##### 7.Formularz_oferty_udzielonej_dla_klienta.doc
+##### 8.Formularz_prosby_o_dostepnosc_towaru.docx
+##### 9.Formularz_reklamacji_do_dostawcy.docx
+##### 10.Formularz_reklamacji_od_klienta.docx
+##### 11.Instom_formularz_danych_klienta.docx
+##### 12.Instom_przesuniecie_miedzymagazynowe.docx
+##### 13.Instom_przyjecie zewnetrzne.docx
+##### 14.Instom_rozchod_wewnetrzny.docx
+##### 15.Instom_wydanie zewnetrzne.docx
+##### 16.Raport_z_akcji_marketingowych.doc
+##### 17.Zamówienie_klienta.doc
 
 <div class="page">
 
@@ -677,11 +670,10 @@ W systemie możemy wyróżnić następujących aktorów
 
 W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek użytkownika.
 
-#### 2.4.1 Obsługa zamówień (OA1)
-![](./diagrams/images/oa1.jpg)
+### 2.4.1 Obsługa zamówień (OA1)
+ ![](./diagrams/images/oa1.jpg)
 
 ##### _Rysunek 04. Diagram przypadków użycia obsługi zamówień_
-
 
 **Numer i Nazwa przypadku użycia:** UC-1.1 - Wyszukaj dostawcę
 
@@ -920,7 +912,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. System podąża `UC-1.5`
+1. System stosuje `UC-1.5`
 1. `Konsultant` klika opcjonalną opcję `dodaj progi cenowe`
 1. Wyświetlane jest okienko modalne [wpis ceny towaru](./wzory/4.Wpis_dotyczący_ceny_towaru.docx)
 3. `Towar` zostaje zapisany z cenami
@@ -954,7 +946,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` używa `UC-1.1` aby wyszukać interesujące produkty
+1. `Konsultant` stosuje `UC-1.1` aby wyszukać interesujące produkty
 1. `Konsultant` wybiera opcję 'Wygeneruj cennik'
 1. Cennik zostaje wygenerowany
 
@@ -1271,22 +1263,7 @@ Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własnoś
 Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmuje oferte i procesują ją dalej.
 
 #### 2.1.2.3 Obsługa reklamacji
-
-```plantuml 2.1.2.3
-@startuml
-left to right direction
-actor Klient
-actor Pracownik
-rectangle "Obsługa reklamacji" {
-    (Klient) -- (Zgłoś reklamację)
-    (Zgłoś reklamację) .> (Wprowadź produkt do rejestru) : <<include>>
-    (Wyświetl błąd przy wprowadzaniu do systemu) .> (Wprowadź produkt do rejestru) : <<exclude>>
-    (Zgłoś reklamację) .> (Uaktualnij status reklamacji) : <<include>>
-    (Wyświetl zgłoszone reklamacje) -- (Pracownik)
-
-}
-@enduml
-```
+![](./diagrams/images/Obsluga_reklamacji.jpg)
 
 ##### _Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
 
@@ -2240,142 +2217,156 @@ Marketingowiec - dostaje raport zawierający analizy
 
 ---
 
-#### 2.1.2.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi
+### 2.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)
 
-```plantuml 2.2.7.1
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor :Potencjalny klient:
-actor Konsultant
-
-rectangle "Prowadzenie bazy potencjalnych klientów" {
-    (Wyświetlenie daty ostatniego kontaktu z klientem) -- :Potencjalny klient:
-    (Wysylanie notyfikacji o ofercie pocztą elektroniczną email) -- :Potencjalny klient:
-    (Udzielanie informacji o ofercie telefonicznie) -- :Potencjalny klient:
-    (Konsultant) -- (Wyświetlenie daty ostatniego kontaktu z klientem)
-    (Konsultant) -- (Wysylanie notyfikacji o ofercie pocztą elektroniczną email)
-    (Konsultant) -- (Udzielanie informacji o ofercie telefonicznie)
-    (Konsultant) -- (Zmiana informacji o kliencie)
-    (Konsultant) -- (Dodawanie informacji i danych o klientach)
-    (Konsultant) -- (Usuwanie informacji i danych o klientach)
-
-}
-
-@enduml
-```
-
+ ![](./diagrams/images/oa7.jpg)
 ##### _Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów_
 
-**Numer i nazwa przypadku uzycia:** UC.07-01 - Dodawanie informacji i danych o klientach
+
+**Numer i Nazwa przypadku użycia:** UC-7.1 - Wyszukaj `potencjalnego klienta`
 
 **Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Dodawanie informacji i danych o klientach
+**Cel przypadku użycia:** Znalezienie danego potencjalnego klienta w systemie
 
-**Kontekst użycia:** Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.
+**Kontekst użycia:** Konsultant chce dowiedzieć się o istniejącym potencjalnym kliencie
 
-**Zakres:** Prowadzenie bazy potencjalnych klientów
+**Zakres:** Obsługa potencjalnych klientów
 
-**Poziom:** Prowadzenie bazy potencjalnych klientów
+**Poziom:** Przetwarzanie danych potencjalnych klientów
 
-**Warunek początkowy:** Klient nie istnieje w systemie
+**Aktor główny:** Konsultant
+
+**Warunek początkowy:** Dostawca istnieje w systemie
 
 **Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` otwiera formularz dodania `klienta`
-1. `Konsultant` wypełnia dane klienta
-1. `Konsultant` zapisuje formularz
+1. `Konsultant` wpisuje wartość do filtrowania
+2. System filtruje rekordy
 
 **Scenariusze alternatywne:**
 
-1. Wystąpił błąd - `Klient` ma dane pokrywające się z innym
-
-**Aktor główny:** Konsultant
+1. `Potencjalny klient` nie istnieje w systemie, system proponuje `UC-7.3`
 
 **Uczestnicy i interesy:**
 
-_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
+_Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC.07-02 - Zmiana informacji o kliencie
+**Numer i Nazwa przypadku użycia:** UC-7.2 - Zmień dane `potencjalnego klienta`
 
 **Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Zmiana informacji o kliencie
+**Cel przypadku użycia:** Aktualizacja lub poprawienie danych dostawcy
 
-**Kontekst użycia:** Gdy `klient` wróci do naszej firmy z aktualizacją danych o sobie i ze zgodą na `RODO` mamy mieć możliwość zaktualizwania istniejącego statusu.
+**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości zmiany istniejących dostawców. 
 
-**Zakres:** Prowadzenie bazy potencjalnych klientów
+**Zakres:** Obsługa potencjalnych klientów
 
-**Poziom:** Prowadzenie bazy potencjalnych klientów
+**Poziom:** Prowadzenie rekordów potencjalnych klientów
 
 **Aktor główny:** Konsultant
 
-**Warunek początkowy:** Klient istnieje w systemie
+**Warunek początkowy:** `Potencjalny klient` istnieje w systemie
 
-**Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta
+**Zdarzenie inicjujące:** Zmień wpis w rejestrze `Potencjalnego klienta`
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` otwiera formularz dodania `klienta`
-1. `Konsultant` wypełnia dane klienta
-1. `Konsultant` zapisuje formularz
+1. System szuka istniejącego dostawcy używając `UC-7.1`
+1. System wyświetla [formularz danych](./wzory/18.Instom_formularz_danych_potencjalnego_klienta.docx) uzupełniony danymi 
+1. `Konsultant` uzupełnia dane
+1. System weryfikuje dane
+1. `Potencjalny klient` zostaje zapisany
 
 **Scenariusze alternatywne:**
 
-1. Wystąpił błąd - `Klient` ma dane pokrywające się z innym
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
 
-_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
+_Konsultant_ - Jest to w jego zakresu obowiązków
+_Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
----
+--- 
 
-**Numer i nazwa przypadku uzycia:** 1.7.1.3 - Usuwanie informacji i danych wrażliwych o klientach
+**Numer i Nazwa przypadku użycia:** UC-7.3 - Dodaj `Potencjalnego klienta` do rejestru
 
 **Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Usuwanie informacji i danych o klientach
+**Cel przypadku użycia:** Dodanie `Potencjalnego klienta` do systemu
 
-**Kontekst użycia:** Zgodnie z obowiązującymi przepisami nie możemy przetwarzać danych wrażliwych w przypadku usunięcia zgody na przetwarzanie daynch. W tym przypadku zostawiamy tylko email kontaktowy, reszta danych powinna zostać zanonimizownana.
+**Kontekst użycia:** ​Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.
 
-**Zakres:** Prowadzenie bazy potencjalnych klientów
+**Zakres:** Obsługa potencjalnych klientów
 
-**Poziom:** Prowadzenie bazy potencjalnych klientów
+**Poziom:** Prowadzenie rekordów potencjalnych klientów
 
 **Aktor główny:** Konsultant
 
-**Warunek początkowy:** Klient istnieje w systemie
+**Warunek początkowy:** `Potencjalny klient` nie jest zarejestrowany
 
-**Zdarzenie inicjujące:** Konsultant chce usunąc dane wrażliwe z systemu
+**Zdarzenie inicjujące:** `Potencjalny klient` skontaktował się z nami, albo znaleźliśmy interesującego 
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` otwiera formularz `klienta`
-1. `Konsultant` wybiera opcję usunięcia danych wrażliwych
-1. System usuwa dane
+1. System wyświetla pusty [formularz danych](./wzory/18.Instom_formularz_danych_potencjalnego_klienta) 
+2. `Konsultant` wpisuje dane
+3. System weryfikuje dane
+4. `Potencjalny klient` zostaje zapisany
+
+**Scenariusze alternatywne:**
+
+1. `Potencjalny klient` istnieje w systemie (wyszukany przez `UC-7.1`), system proponuje `UC-7.2`
+1. Dane nie przeszły walidacji, jest wyświetlany błąd
 
 **Uczestnicy i interesy:**
 
-_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
+_Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-##### _Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie_
-
-**Numer i nazwa przypadku uzycia:** 1.7.2.1 - Wyświetlenie daty ostatniego kontaktu z klientem
+**Numer i Nazwa przypadku użycia:** UC-7.4 - Zanonimizuj dane `Potencjalnego klienta` w przypadku odmowy kontaktu (RODO)
 
 **Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Wyświetlenie daty ostatniego kontaktu z klientem
+**Cel przypadku użycia:** Kompatybilność z RODO
 
-**Kontekst użycia:** Informacja o dacie ostatniego kontaktu powinna być bardzo dobrze widoczna
+**Kontekst użycia:** `Potencjalny klient` 
 
-**Zakres:** Informowanie o ofercie
+**Zakres:** Obsługa potencjalnych klientów
+
+**Poziom:** Prowadzenie rekordów potencjalnych klientów
+
+**Aktor główny:** Konsultant
+
+**Warunek początkowy:** Towar istnieje w systemie
+
+**Zdarzenie inicjujące:** Konsultant chce zobaczyć wpis towaru
+
+**Główny scenariusz powodzenia:**
+
+1. `Konsultant` przechodzi na `UC-7.2` i wybiera opcję RODO
+2. System anonimizuje powiązane wpisy w rejestrach
+
+**Uczestnicy i interesy:**
+
+_Konsultant_ - Może zostać pociągnięty pod odpowiedzialność karną w przypadku niedopełnienia obowiązków
+
+---
+
+**Numer i nazwa przypadku uzycia:** UC-7.5 - Wyświetlenie histori kontaktu z `Potencjalnym klientem`
+
+**Autor:** Mateusz Popielarz
+
+**Cel przypadku użycia:** Wyświetlenie histori kontaktu z `Potencjalnym klientem`
+
+**Kontekst użycia:** Rozeznanie w 
+
+**Zakres:** Obsługa potencjalnych klientów
 
 **Poziom:** Informowanie o ofercie
 
@@ -2383,17 +2374,17 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 **Warunek początkowy:** Klient istnieje w systemie i posiada historię kontaktu
 
-**Zdarzenie inicjujące:** `Konsultant` chce wiedzieć, czy powinien odezwać się do `klienta` z ofertą
+**Zdarzenie inicjujące:** `Konsultant` chce wiedzieć, czy powinien odezwać się do `potencjalnego klienta` z ofertą
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` otwiera wpis `klienta`
-1. `Konsultant` wybiera opcję daty ostatniego kontaktu
-1. System wyświetla datę
+1. `Konsultant` otwiera wpis `Potencjalnego klienta`
+1. `Konsultant` wybiera historii kontaktu
+1. System wyświetla historię kontaktu
 
 **Scenariusze alternatywne:**
 
-1. Wystąpił błąd - zostaje wyświetlony komunikat błędu i prosi o sprawdzenie integralności danych (UC.07-02)
+1. Wystąpił błąd - zostaje wyświetlony komunikat błędu i prosi o sprawdzenie integralności danych `UC-7.2`
 
 **Uczestnicy i interesy:**
 
@@ -2401,21 +2392,23 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.7.2.2 - Wysylanie notyfikacji o ofercie pocztą elektroniczną email
+**Numer i nazwa przypadku uzycia:** UC-7.6 - Wysylanie notyfikacji o ofercie pocztą elektroniczną email
 
 **Autor:** Mateusz Popielarz
 
 **Cel przypadku użycia:** Wysylanie notyfikacji o ofercie pocztą elektroniczną email
 
-**Kontekst użycia:** Gdy konsultant zauważy, że dawno nikt nie kontaktował się z klientem ma możliwość wysłania mu oferty spersonalizowanej przez system na podstawie jego poprzednich zamówień. Zdarzenie to powinno być odnotowane w systemie z kopią oferty, która została wysłana.
+**Kontekst użycia:** Gdy `klient` o pasującym profilu złoży `zlecenie zakupu` system proponuje wysłanie `oferty` do `potencjalnego klienta`
 
-**Zakres:** Informowanie o ofercie
+**Zakres:** Obsługa potencjalnych klientów
 
 **Poziom:** Informowanie o ofercie
 
 **Aktor główny:** Konsultant
 
-**Warunek początkowy:** Klient istnieje w systemie
+**Warunek początkowy:** 
+1. Klient istnieje w systemie
+1. Pasujący `potencjalny klient` kupił
 
 **Zdarzenie inicjujące:** `Konsultant` chce poinformować klienta o ofercie
 
@@ -2435,22 +2428,10 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 ---
 
-#### 2.1.2.8 Zarzadzanie
 
-```plantuml X.X.X
-@startuml
-left to right direction
-actor Pracownik
-actor Właściciel
-rectangle "Zarządzanie" {
-    :Pracownik: -- (Wprowadź dokumenty)
-    :Pracownik: -- (Wyświetl dokumenty)
-    :Pracownik: -- (Wyświetl zadania)
-(Wyświetl prognozę zamówień) -- (Właściciel)
-     (Przydziel zadania) --(Właściciel)
-}
-@enduml
-```
+
+#### 2.1.2.8 Zarzadzanie
+![](./diagrams/images/Zarzadzanie.jpg)
 
 ##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz wprowadzenia zadań właściciela do systemu oraz wglądu do prognozy zamówień_
 
@@ -3010,6 +2991,7 @@ stop
 
 **Uwagi:** -
 
+
 ### 2.6.16 Realizacja wysłania produktów do dostawcy
 
 **Przypadek użycia:** UC-3.4
@@ -3568,6 +3550,7 @@ Dokumenty:
 ActivityDiagram:
 
 OA6 - Adam
-OA1 - Mateusz
+
+OA1, OA7 - Mateusz
 
 
