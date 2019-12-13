@@ -1801,23 +1801,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
-
-```plantuml 2.1.2.5
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "System Magazynu" {
-    Magazynier -- (Zarejestrowanie produktu)
-	Magazynier -- (Modyfikacja produktu)
-	Magazynier -- (Wyszykiwanie produktów)
-	Magazynier -- (Wyrejestrowanie produktu)
-	Magazynier -- (Pobranie szczegolowych danych o produkcie)
-	Magazynier -- (Pobranie wszystkich dostepnych produktów)
-}
-@enduml
-```
-
+![](./diagrams/images/RejestrMagazynuOA5.jpg)
 ##### _Rysunek 13. Diagram przypadków użycia obsługi Rejestr magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-5.1 - Zarejestrowanie produktu
