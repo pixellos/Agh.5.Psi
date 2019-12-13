@@ -2515,10 +2515,12 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 ---
 
 ## 2.5 Modelowanie zachowań w czasie
+### 2.5.1 Obsługa zamówień
+![Diagram Aktywności obsługi zamówień](./diagrams/images/ad1.jpg)
+
 
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 
- ![](./diagrams/images/ad1.jpg)
 
 
 ```plantuml X.X.X
