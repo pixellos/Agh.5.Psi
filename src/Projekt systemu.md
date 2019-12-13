@@ -2521,6 +2521,8 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 
+### 2.5.7 Obsługa  potencjalnych klientów
+![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/ad7.jpg)
 
 
 ```plantuml X.X.X
