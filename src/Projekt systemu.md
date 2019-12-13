@@ -2519,6 +2519,10 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 ![Diagram Aktywności obsługi zamówień](./diagrams/images/ad1.jpg)
 
 
+### 2.5.3 Obsługa reklamacji
+![Diagram Aktywności obsługi reklamacji](./diagrams/images/OA3_activity_diagram.jpg)
+
+
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 
 
@@ -2572,6 +2576,10 @@ stop
 ```
 
 ##### _Rysunek 17. Diagram aktywności analizy danych na potrzeby marketingowe_
+
+
+### 2.5.8 Zarządzanie
+![Diagram Aktywności zarządzania](./diagrams/images/OA8_activity_diagram.jpg)
 
 ---
 
