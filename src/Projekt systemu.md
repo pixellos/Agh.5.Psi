@@ -2522,8 +2522,11 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 ### 2.5.3 Obsługa reklamacji
 ![Diagram Aktywności obsługi reklamacji](./diagrams/images/OA3_activity_diagram.jpg)
 
-
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
+![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA6.jpg)
+
+
+
 
 ### 2.5.7 Obsługa  potencjalnych klientów
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/ad7.jpg)
