@@ -2518,43 +2518,21 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 ### 2.5.1 Obsługa zamówień
 ![Diagram Aktywności obsługi zamówień](./diagrams/images/ad1.jpg)
 
-
+### 2.5.2 Obsługa zleceń zakupu (OA2)
+![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA6.jpg)
+##### _Rysunek X. Diagram aktywności 
 ### 2.5.3 Obsługa reklamacji
+
 ![Diagram Aktywności obsługi reklamacji](./diagrams/images/OA3_activity_diagram.jpg)
 
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA6.jpg)
-
-
-
+##### _Rysunek X. Diagram aktywności analizy danych na potrzeby marketingowe_
 
 ### 2.5.7 Obsługa  potencjalnych klientów
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/ad7.jpg)
 
 
-```plantuml X.X.X
-@startuml
-partition "System analizujący dane" {
-"Obserwuje aktywność" --> ===Sync===
---> "Analizuje dane"
---> "System generuje raport"
-if "Generowanie powiodło się" then
--->[true] "Przedstawia wygenerowany raport"
-else
-  --> [false] "System wyświetla błąd"
-}
-partition Konsultant #GreenYellow{
-(*) --> "Wykonuje akcje w systemie"
---> ===Sync===
-
-}
-partition Marketingowiec #DeepSkyBlue{
-"Wysyła zapytanie o raport" --> "System generuje raport"
-"Przedstawia wygenerowany raport" --> "Odbiera raport"
-
-}
-@enduml
-```
 
 ```plantuml X.X.X
 @startuml
