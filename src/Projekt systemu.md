@@ -2519,8 +2519,8 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 ![Diagram Aktywności obsługi zamówień](./diagrams/images/ad1.jpg)
 
 ### 2.5.2 Obsługa zleceń zakupu (OA2)
-![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA6.jpg)
-##### _Rysunek X. Diagram aktywności 
+![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA2.1.jpg)
+##### _Rysunek X. Diagram aktywności zarządzania rejestrami klientów
 ### 2.5.3 Obsługa reklamacji
 
 ![Diagram Aktywności obsługi reklamacji](./diagrams/images/OA3_activity_diagram.jpg)
