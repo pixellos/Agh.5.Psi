@@ -2527,251 +2527,11 @@ stop
 
 ## 2.6 Wymagania funkcjonalne dla dodatkowych części systemu
 
-### 2.6.1 Zarejestrowanie faktu dodania dostawcy do systemu
-
-**Przypadek użycia:** UC-1.1
-
-**Nazwa funkcji:** WF-1.1 - Dodaj dostawcę
-
-**Opis:** Dodaje dostawce
-
-**Dane wejściowe:** Załącznik B - 1.Dane_dostawcy
-
-**Dane wyjściowe:** Id w systemie (Jeżeli brak)
-
-**Przeznaczenie:** Dostawca jest utrwalany w rejestrze systemu
-
-**Wymaga:** Nie istniejącego dostawcy w systemie
-
-**Warunek początkowy:** - Kliknięcie przycisku `Dodaj dostawcę` - Wprowadzenie skrótu Ctrl+A (Add), Ctrl+D (Dostawca)
-
-**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru dostawców nie ulega zmianie
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.2 Zmienienie rejestru dostawcy
-
-**Przypadek użycia:** UC-1.2
-
-**Nazwa funkcji:** WF-1.2 - Zmień dostawcę
-
-**Opis:** Funkcja systemu służąca do zmienienia danych dostawcy.
-
-**Dane wejściowe:** Załącznik B - 1.Dane_dostawcy, wybór dostawcy do zmiany poprzez wybranie wpisu w systemie
-
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
-
-**Przeznaczenie:** Dostawca jest utrwalany w rejestrze systemu
-
-**Wymaga:** Istniejącego dostawcy w systemie
-
-**Warunek początkowy:** - Kliknięcie danego `dostawcy` dwukrotnie - Kliknięcie danego `dostawcy` jednokrotnie i skrótu Ctrl+E
-
-**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru dostawców nie ulega zmianie
-
-**Efekty uboczne:** Aktualizacja niewysłanych faktur
-
-**Uwagi:** -
-
-### 2.6.3 Dodanie towaru
-
-**Przypadek użycia:** UC-1.3
-
-**Nazwa funkcji:** WF-1.3 - Dodaj towar
-
-**Opis:** Funkcja systemu służąca do dodania towaru do rejestru towarów
-
-**Dane wejściowe:** Załącznik B - 3.Wpis_towaru_w_katalogu
-
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
-
-**Przeznaczenie:** Towar jest utrwalany w rejestrze systemu
-
-**Wymaga:** Nie istnienie danego towaru w systemie
-
-**Warunek początkowy:** - Kliknięcie przycisku `Dodaj towar` - Wprowadzenie skrótu Ctrl+A (Add), Ctrl+T (Towar)
-
-**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
-
-**Efekty uboczne:** Aktualizacja niewysłanych faktur
-
-**Uwagi:** -
-
-### 2.6.4 Zmiana towaru
-
-**Przypadek użycia:** UC-1.3
-
-**Nazwa funkcji:** WF-1.4 - Zmień towar
-
-**Opis:** Funkcja systemu służąca do zmieniania danych towaru
-
-**Dane wejściowe:** Załącznik B - 3.Wpis_towaru_w_katalogu
-
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
-
-**Przeznaczenie:** Towar jest utrwalany w rejestrze systemu
-
-**Wymaga:** Obecności danego towaru w systemie
-
-**Warunek początkowy:** - Kliknięcie danego `towaru` dwukrotnie - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+E
-
-**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
-
-**Efekty uboczne:** Aktualizacja niewysłanych faktur
-
-**Uwagi:** -
-
-### 2.6.5 Dezaktywacja towaru
-
-**Przypadek użycia:** UC-1.4
-
-**Nazwa funkcji:** WF-1.5 - Aktualizuje status dostępności towaru
-
-**Opis:** Funkcja systemu służąca do zmieniania statusu dostępności towaru
-
-**Dane wejściowe:** Załącznik B - 4.Wpis_dotyczący_ceny_towaru i wypełnienie pól `Cena` na `-`
-
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
-
-**Przeznaczenie:** Zmiana aktualizacji statusu dostępności towaru
-
-**Wymaga:** Nie istnienie danego towaru w systemie
-
-**Warunek początkowy:** - Kliknięcie danego `towaru` dwukrotnie - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+E
-
-**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
-
-**Efekty uboczne:** Aktualizacja niewysłanych faktur
-
-**Uwagi:** -
-
-### 2.6.6 Ustalenie progu cenowego towaru
-
-**Przypadek użycia:** UC-1.5
-
-**Nazwa funkcji:** WF-1.6 - Aktualizuje próg cenowy towaru
-
-**Opis:** Funkcja systemu służąca do zmieniania statusu dostępności towaru
-
-**Dane wejściowe:** Załącznik B - 4.Wpis_dotyczący_ceny_towaru i wypełnienie pól `Cena` kwotą
-
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
-
-**Przeznaczenie:** Aktualizacja progu cenowego towaru
-
-**Wymaga:** Istnienie danego towaru w systemie
-
-**Warunek początkowy:** - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `próg cenowy` - Kliknięcie danego `towaru` jednokrotnie i skrótu Ctrl+Shift+C
-
-**Warunek końcowy:** Stan rejestru z wyjątkiem rejestru towarów nie ulega zmianie
-
-**Efekty uboczne:** Aktualizacja niewysłanych faktur
-
-**Uwagi:** -
-
-### 2.6.7 Wygeneruj cennik
-
-**Przypadek użycia:** UC-1.5
-
-**Nazwa funkcji:** WF-1.7 - Wygeneruj cennik
-
-**Opis:** Funkcja systemu służąca do wygenerowania cennika w celu zaprezentowania klientowi
-
-**Dane wejściowe:** Okres obejmujący zapytanie ofertowe, Klient
-
-**Dane wyjściowe:** Cennik
-
-**Przeznaczenie:** Wyprowadzenie z systemu aktualnego cennika
-
-**Wymaga:** - Istnienie dostawcy w systemie
-
-**Warunek początkowy:** - Kliknięcie danego `dostawcy` jednokrotnie i wybranie przycisku `cennik` - Kliknięcie danego `dostawcy` i wciśnięcie kombinacji Ctrl+Shift+C
-
-**Warunek końcowy:** Poprawny cennik zostaje wygenerowany
-
-**Efekty uboczne:** Aktualizacja wpisu `dostawcy` o wygenerowany cennik
-
-**Uwagi:** Cennik jest w formie cyfrowej, ale może zostać wydrukowany, lub przesłany faxem
-
-### 2.6.8 Wygeneruj cennik
-
-**Przypadek użycia:** UC-1.7
-
-**Nazwa funkcji:** WF-1.8 - Zarezerwuj towar
-
-**Opis:** Funkcja systemu służąca do wprowadzenia informacji o rezerwacji towaru
-
-**Dane wejściowe:** Okres rezerwacji, Identyikator towaru, Identyfikator Klienta
-
-**Dane wyjściowe:** Informacja o powodzenia operacji
-
-**Przeznaczenie:** Rezerwacja towaru dla danego klienta
-
-**Wymaga:** - Istnienie dostawcy w systemie
-
-**Warunek początkowy:** - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `klienta` - Kliknięcie danego `klienta` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `towaru`
-
-**Warunek końcowy:** Towar zostanie zarejestrowany, `Dostawca` zostanie poinformowany
-
-**Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
-
-**Uwagi:**
-
-### 2.6.9 Zarezerwuj towar
-
-**Przypadek użycia:** UC-1.7
-
-**Nazwa funkcji:** WF-1.9 - Zarezerwuj towar
-
-**Opis:** Funkcja systemu służąca do wprowadzenia informacji o rezerwacji towaru
-
-**Dane wejściowe:** Okres rezerwacji, Identyikator towaru, Identyfikator Klienta
-
-**Dane wyjściowe:** Informacja o powodzenia operacji
-
-**Przeznaczenie:** Rezerwacja towaru dla danego klienta
-
-**Wymaga:** - Istnienie dostawcy w systemie
-
-**Warunek początkowy:** - Kliknięcie danego `towaru` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `klienta` - Kliknięcie danego `klienta` jednokrotnie i wybranie przycisku `rezerwuj`, następnie wybranie z wyswietlonej listy `towaru`
-
-**Warunek końcowy:** Towar zostanie zarejestrowany, `Dostawca` zostanie poinformowany
-
-**Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
-
-**Uwagi:**
-
-### 2.6.10 Usuń rezerwację towaru
-
-**Przypadek użycia:** UC-1.7
-
-**Nazwa funkcji:** WF-1.10 - Usuń rezerwację towaru
-
-**Opis:** Funkcja systemu służąca do usuwania rezerwacji towaru
-
-**Dane wejściowe:** Identyfikator rezewacji, Powód
-
-**Dane wyjściowe:** Informacja o powodzenia operacji
-
-**Przeznaczenie:** Zmiana rezerwacji towaru dla danego klienta
-
-**Wymaga:** - Istnienie rezerwacji towaru
-
-**Warunek początkowy:** - Kliknięcie danej `rezerwacji towaru` i wciśnięcie delete, - Kliknięcie danej `rezerwacji towaru` i wciśnięcie przycisku `usuń`,
-
-**Warunek końcowy:** Rezerwacja zostanie usunięta, `dostawca` zostanie poinformowany
-
-**Efekty uboczne:** Aktualizacja wpisu `dostawcy` o `rezerwacji`
-
-**Uwagi:**
-
-### 2.6.11 Poinformuj SMS
+### 2.6.1 Poinformuj SMS
 
 **Przypadek użycia:** Wszystkie
 
-**Nazwa funkcji:** WF-1.11 - Poinformuj o zmianie w systemie przez SMS
+**Nazwa funkcji:** WF-1 - Poinformuj o zmianie w systemie przez SMS
 
 **Opis:** Funkcja systemu służąca do notyfikowaniach o ważnych zmianiach
 
@@ -2791,156 +2551,12 @@ stop
 
 **Uwagi:**
 
-### 2.6.12 Zgłoszenie reklamacji przez klienta
 
-**Przypadek użycia:** UC-3.1
+### 2.6.2 Wprowadzenie dokumentów do systemu
 
-**Nazwa funkcji:** WF-3.1 - Zgłoś reklamację
+**Przypadek użycia:** Wszystkie
 
-**Opis:** Klient zgłasza reklamację
-
-**Dane wejściowe:** Załącznik B - 10.Formularz_reklamacji_od_klienta
-
-**Dane wyjściowe:** Załącznik B - 6.Dokument_potwierdzajacy_realizacje_reklamacji
-
-**Przeznaczenie:** Reklamacja od klienta pojawia się w systemie
-
-**Wymaga:** Rejestr `Klienta` istnieje w systemie
-
-**Warunek początkowy:** - Kliknięcie przycisku `Zgłoś reklamacje`
-
-**Warunek końcowy:** `Klient` dostaje komunikat potwierdzający zgłoszenie reklamacji
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.13 Obsługa zgłoszenia reklamacji klienta przez pracownika
-
-**Przypadek użycia:** UC-3.2
-
-**Nazwa funkcji:** WF-3.2 - Rozpocznij procesowanie reklamacji
-
-**Opis:** System z pomocą `pracownika` przzekierowuje reklamację do `zespołu technicznego`
-
-**Dane wejściowe:** Obecna pozycja zgłoszonej reklamacji przez `klienta`
-
-**Dane wyjściowe:** Potwierdzenie przekierowania reklamacji do `zespołu technicznego`
-
-**Przeznaczenie:** Prezkirowanie reklamacji do `zespołu technicznego`
-
-**Wymaga:** Pozycja reklamacji istnieje w systemie
-
-**Warunek początkowy:** - Kliknięcie przycisku `Prekieruj reklamacje`
-
-**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający przekierowanie reklamacji do `zespołu technicznego`
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.14 Przygotowanie produktów do odesłania do dostawcy
-
-**Przypadek użycia:** UC-3.3
-
-**Nazwa funkcji:** WF-3.3 - Zaktualizuj status reklamacji po analizie przez `zespół techniczny`
-
-**Opis:** `Zespół techniczny` aktualizuje status reklamacji po ukończonej analizie
-
-**Dane wejściowe:** Obecna pozycja zgłoszonej reklamacji przekierowanej przez `pracownika`
-
-**Dane wyjściowe:** Aktualizacja statusu reklamacji po ukończonej analizie
-
-**Przeznaczenie:** Umożliwienie analizy `zespołowi technicznemu` oraz aktualizacja statusu reklamacji
-
-**Wymaga:** Pozycja reklamacji istnieje w systemie
-
-**Warunek początkowy:** - Kliknięcie przycisku `Przyjmij do analizy`
-
-**Warunek końcowy:** - Kliknięcie przycisku `Analiza zakończona` - Kliknięcie przycisku `Zaktualizuj status reklamacji`
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.15 Realizacja wysłania produktów do dostawcy
-
-**Przypadek użycia:** UC-3.4
-
-**Nazwa funkcji:** WF-3.4 - Zgłoś reklamcję do `dostawcy`
-
-**Opis:** `Zespół techniczny` zgłasza reklamację do dostawcy oraz aktualizuje status reklamacji
-
-**Dane wejściowe:** Załącznik B - 9.Formularz_reklamacji_do_dostawcy
-
-**Dane wyjściowe:** Załącznik B - 6.Dokument_potwierdzajacy_realizacje_reklamacji
-
-**Przeznaczenie:** Reklamacja do dostawcy, zaktualizzowany status reklamacji w systemie
-
-**Wymaga:** Pozycja reklamacji przeanalizowana przez `zespół techniczny`
-
-**Warunek początkowy:** - Kliknięcie przycisku `Zgłoś reklamacje do dostawcy`
-
-**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający zgłoszenie reklamacji do dostawcy
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-
-### 2.6.16 Realizacja wysłania produktów do dostawcy
-
-**Przypadek użycia:** UC-3.4
-
-**Nazwa funkcji:** WF-3.4 - Zgłoś reklamcję do `dostawcy`
-
-**Opis:** `Zespół techniczny` zgłasza reklamację do dostawcy oraz aktualizuje status reklamacji
-
-**Dane wejściowe:** Załącznik B - 9.Formularz_reklamacji_do_dostawcy
-
-**Dane wyjściowe:** Załącznik B - 6.Dokument_potwierdzajacy_realizacje_reklamacji
-
-**Przeznaczenie:** Reklamacja do dostawcy, zaktualizzowany status reklamacji w systemie
-
-**Wymaga:** Pozycja reklamacji przeanalizowana przez `zespół techniczny`
-
-**Warunek początkowy:** - Kliknięcie przycisku `Zgłoś reklamacje do dostawcy`
-
-**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający zgłoszenie reklamacji do dostawcy
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.17 Wprowadzenie reklamowanych produktów do rejestru
-
-**Przypadek użycia:** UC-3.5
-
-**Nazwa funkcji:** WF-3.5 - Wprowadź produkt do systemu
-
-**Opis:** `Pracownik` wprowadza reklamowany produkt do rejestru
-
-**Dane wejściowe:** Reklamacja zgłoszona do dostawcy
-
-**Dane wyjściowe:** Informacja o powodzeniu operacji
-
-**Przeznaczenie:** Wprowadzenie reklamowanych produktów do rejestru
-
-**Wymaga:** Status reklamacji: "wysłana do dostawy"
-
-**Warunek początkowy:** - Kliknięcie przycisku `Wprowadź reklamowany produkt`
-
-**Warunek końcowy:** `Pracownik` dostaje komunikat potwierdzający pomyślne załadowanie wprowadzenie produktu do rejestru
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.18 Wprowadzenie dokumentów do systemu
-
-**Przypadek użycia:** UC-8.1
-
-**Nazwa funkcji:** WF-8.1 - Wprowadź dokument do systemu aby go udostepnić
+**Nazwa funkcji:**  WF-2 Wprowadź dokument do systemu aby go udostepnić
 
 **Opis:** `Pracownik` wprowadza dokiment do systemu. Jest on widoczny dla innych pracowników
 
@@ -2960,59 +2576,11 @@ stop
 
 **Uwagi:** -
 
-### 2.6.19 Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
+### 2.6.3 Przydział pracowników do określonych zadań
 
-**Przypadek użycia:** UC-8.2
+**Przypadek użycia:** -
 
-**Nazwa funkcji:** WF-8.2 - Odczytaj prognozy czasowe
-
-**Opis:** `Właściciel` otwiera raport prognozy zapotrzebowania czasowego na produkty
-
-**Dane wejściowe:** Wybór raportu zapotrzebowania
-
-**Dane wyjściowe:** Raport z prognozą zapotrzebowania czasowego na produkty
-
-**Przeznaczenie:** Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
-
-**Wymaga:** `Właściciel` zalogowany do systemu
-
-**Warunek początkowy:** - Kliknięcie przycisku `Wygeneruj prognozy`
-
-**Warunek końcowy:** `Właściciel` otrzymuje prognozy zapotrzebowania czasowego na produkty
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.20 Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
-
-**Przypadek użycia:** UC-8.3
-
-**Nazwa funkcji:** WF-8.3 - Odczytaj prognozy czasowe
-
-**Opis:** `Właściciel` otwiera raport prognozy zapotrzebowania ilościowego na produkty
-
-**Dane wejściowe:** Wybór raportu zapotrzebowania
-
-**Dane wyjściowe:** Raport z prognozą zapotrzebowania ilościowego na produkty
-
-**Przeznaczenie:** Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
-
-**Wymaga:** `Właściciel` zalogowany do systemu
-
-**Warunek początkowy:** - Kliknięcie przycisku `Wygeneruj prognozy`
-
-**Warunek końcowy:** `Właściciel` otrzymuje prognozy zapotrzebowania ilościowego na produkty
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.21 Przydział pracowników do określonych zadań
-
-**Przypadek użycia:** UC-8.4
-
-**Nazwa funkcji:** WF-8.4 - Przydziel zadania
+**Nazwa funkcji:** WF-3 Przydziel zadania
 
 **Opis:** `Właściciel` przydziela zadania pracownikom
 
@@ -3030,127 +2598,54 @@ stop
 
 **Efekty uboczne:** -
 
-**Uwagi:** -
+**Uwagi:** Problemy z tym procesem będzie rozwiązywać dział IT
 
-### 2.6.22 Zarejestrowanie produktu
 
-**Przypadek użycia:** UC-5.1
+### 2.6.4 Logowanie
 
-**Nazwa funkcji:** WF-5.1 - Rejestruj produkt
+**Przypadek użycia:** Wszystkie
 
-**Opis:** Funkcja systemu służąca do rejestracji produktów
+**Nazwa funkcji:** WF-4 - Dostęp do systemu jest ograniczony - logowanie przez Smart Card
 
-**Dane wejściowe:** Załącznik B - 13.Instom_przyjecie zewnetrzne.docx
+**Opis:** Funkcja systemu służąca do autoryzacji operacji przez pracowników i zabezpieczenia niepowołanego dostępu
 
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+**Dane wejściowe:** Dane karty smart
 
-**Przeznaczenie:** Aktualizacja ilości produktu
+**Dane wyjściowe:** Dostęp do systemu
 
-**Wymaga:** Istnienie magazyniera w systemie
+**Przeznaczenie:** Dostęp do systemu dla jego poszczególnych użytkowników
 
-**Warunek początkowy:** - Kliknięcie przycisku `Zarejestruj produkt`
+**Wymaga:** - Interakcji z systemem
 
-**Warunek końcowy:** Dodany produkt
+**Warunek początkowy:** - Pracownik wsuwa kartę do czytnika
 
-**Efekty uboczne:** -
+**Warunek końcowy:** Pracownik jest zalogowany
 
-**Uwagi:** -
+**Efekty uboczne:** Log zostaje zapisany
 
-### 2.6.23 Modyfikacja produktu
 
-**Przypadek użycia:** UC-5.2
+### 2.6.5 Wylogowywanie
 
-**Nazwa funkcji:** WF-5.2 - Modyfikuj produkt
+**Przypadek użycia:** Wszystkie
 
-**Opis:** Funkcja systemu służąca do modyfikacji istniejących produktów
+**Nazwa funkcji:** WF-5 - Zakończenie sesji użytkownika
 
-**Dane wejściowe:** Załącznik B - 12.Instom_przesuniecie_miedzymagazynowe.docx
+**Opis:** Funkcja systemu służąca do zakończenia sesji autoryzacji operacji przez pracowników i zabezpieczenia niepowołanego dostępu
 
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
+**Dane wejściowe:** Wyciągnięcie karty smart
 
-**Przeznaczenie:** Aktualizacja progu cenowego towaru
+**Dane wyjściowe:** Ekran 'zaloguj się'
 
-**Wymaga:** Istnienie produktu w systemie, Istnienie magazyniera w systemie
+**Przeznaczenie:** Ograniczenie Dostępu do systemu dla jego poszczególnych użytkowników
 
-**Warunek początkowy:** - Kliknięcie przycisku `Modyfikuj produkt`
+**Wymaga:** - Interakcji z systemem
 
-**Warunek końcowy:** Zmienione dane produktu
+**Warunek początkowy:** - Pracownik wysuwa kartę z czytnika
 
-**Efekty uboczne:** -
+**Warunek końcowy:** Sesja jest skończona
 
-**Uwagi:** -
+**Efekty uboczne:** Log zostaje zapisany
 
-### 2.6.24 Wyrejestrowanie produktu
-
-**Przypadek użycia:** UC-5.3
-
-**Nazwa funkcji:** WF-5.3 - Wyrejestruj produkt
-
-**Opis:** Funkcja systemu służąca do derejestracji produktów
-
-**Dane wejściowe:** X
-
-**Dane wyjściowe:** Załącznik B - 15.Instom_wydanie zewnetrzne.docx
-
-**Przeznaczenie:** Aktualizacja ilości produktu
-
-**Wymaga:** Istnienie magazyniera w systemie
-
-**Warunek początkowy:** - Kliknięcie przycisku `Wyrejestruj produkt`
-
-**Warunek końcowy:** Usunięty produkt
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.25 Pobranie szczególowych danych o produkcie
-
-**Przypadek użycia:** UC-5.4
-
-**Nazwa funkcji:** WF-5.4 - Pobranie szczególowych danych o produkcie
-
-**Opis:** Funkcja systemu służąca do pobrania szczególowych danych o produkcie
-
-**Dane wejściowe:** id produktu
-
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
-
-**Przeznaczenie:** Pobranie informacji
-
-**Wymaga:** Istnienie produktu w systemie
-
-**Warunek początkowy:** - Kliknięcie przycisku `Pobranie szczególowych danych`
-
-**Warunek końcowy:** Informacje o produkcie
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
-
-### 2.6.26 Pobranie wszystkich dostepnych produktow
-
-**Przypadek użycia:** UC-5.5
-
-**Nazwa funkcji:** WF-5.5 - Pobranie wszystkich dostepnych produktow
-
-**Opis:** Funkcja systemu służąca do pobrania dostępnych produktów
-
-**Dane wejściowe:** X
-
-**Dane wyjściowe:** Informacja o powodzeniu/niepowodzeniu
-
-**Przeznaczenie:** Pobranie informacji
-
-**Wymaga:** Istnienie produktów w systemie
-
-**Warunek początkowy:** - Kliknięcie przycisku `Pobranie wszystkich produktów`
-
-**Warunek końcowy:** Informacje o produkcie
-
-**Efekty uboczne:** -
-
-**Uwagi:** -
 
 <div class="page">
 
