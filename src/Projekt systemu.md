@@ -1323,34 +1323,7 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 
 #### 2.1.2.4 Obsługa magazynu
 
-```plantuml 2.1.2.4
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-actor Dostawca
-rectangle "Obsługa magazynu" {
-    Magazynier -- (Weryfikacja dokumentacji)
-    Magazynier -- (Rozładunek)
-    Magazynier -- (Przyjęcie towaru)
-    Magazynier -- (Kontrola stanu przesyłki)
-    Magazynier -- (Przygotowanie towaru do składowania)
-	Magazynier -- (Sprawdzenie stanu)
-    Magazynier -- (Kontrola wartości towaru)
-	Magazynier -- (Grupowanie towaru)
-    Magazynier -- (Przypisywanie numeru seryjnego)
-    Magazynier -- (Przypisywanie numeru partii)
-    Magazynier -- (Przypisywanie kodów EAN)
-	Magazynier -- (Powiazanie towaru z dostawcą i nabywcą)
-	Magazynier -- (Tworzenie prognoz popytu)
-	Magazynier -- (Wystawienie dokumentów)
-	Magazynier -- (Tworzenie zamówienia dostaw)
-
-Dostawca -- Magazynier
-}
-@enduml
-```
-
+![](./diagrams/images/obsluga_magazynu_OA4.jpg)
 ##### _Rysunek 12. Diagram przypadków użycia obsługi Obsługa magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-4.1 - Weryfikacja dokumentacji
@@ -1828,23 +1801,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
-
-```plantuml 2.1.2.5
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-rectangle "System Magazynu" {
-    Magazynier -- (Zarejestrowanie produktu)
-	Magazynier -- (Modyfikacja produktu)
-	Magazynier -- (Wyszykiwanie produktów)
-	Magazynier -- (Wyrejestrowanie produktu)
-	Magazynier -- (Pobranie szczegolowych danych o produkcie)
-	Magazynier -- (Pobranie wszystkich dostepnych produktów)
-}
-@enduml
-```
-
+![](./diagrams/images/RejestrMagazynuOA5.jpg)
 ##### _Rysunek 13. Diagram przypadków użycia obsługi Rejestr magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-5.1 - Zarejestrowanie produktu
