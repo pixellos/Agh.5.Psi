@@ -1006,13 +1006,13 @@ _Klient_ - Inicjuje proces
 
 **Kontekst użycia:** `Konsultant` musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty oraz modyfikacji jego danych.
 
-**Zakres:** Rejstracja klietna
+**Zakres:** Przetwarzanie danych klientów
 
 **Poziom:** Przetwarzanie danych klientów
 
-**Warunek początkowy:** `Klient` nie istnieje w systemie
+**Warunek początkowy:** Brak
 
-**Zdarzenie inicjujące:** Nowy `klient` zgłasza się z zapytaniem ofertowym
+**Zdarzenie inicjujące:** Następuje potrzeba wykonania operacji CRUD na rejestrze klienta
 
 **Główny scenariusz powodzenia:**
 
@@ -1022,8 +1022,7 @@ _Klient_ - Inicjuje proces
 
 **Scenariusze alternatywne:**
 
-1. W punkcie (3) scenariusza głównego, system wyświetla informacje o błędzie i niemożliwości dodania klienta
-2. `Konsultant` zgłasza błąd
+1. Brak
 
 **Aktor główny:** Konsultant
 
@@ -1087,7 +1086,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 **Główny scenariusz powodzenia:**
 
 1. `Konsultant` uzupełnia podstawowe informacje dotyczące oferty na stronie nowej oferty między innymi wybiera `klienta`, dla którego tworzona jest oferta
-2. Wszystkie informację zostały wybrany poprawnie, `konsultant` klika na przycisk 'Utwórz nową oferte'
+2. Wszystkie informację zostały wybrane poprawnie, `konsultant` klika na przycisk 'Utwórz nową oferte'
 3. System powiadamia `konsultanta` o poprawnym utworzeniu oferty
 
 **Scenariusze alternatywne:**
@@ -2144,7 +2143,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ##### Rysunek 12. Statyki powiązane z katalogiem produktowym\_
 
-**Numer i nazwa przypadku uzycia:** 1.6.1 - Generowanie raportu
+**Numer i nazwa przypadku uzycia:** UC-6.1 - Generowanie raportu
 
 **Autor:** Adam Samsonowicz
 
@@ -2179,7 +2178,7 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.6.2 - Pobieranie raportu
+**Numer i nazwa przypadku uzycia:** UC-6.2 - Pobieranie raportu
 
 **Autor:** Adam Samsonowicz
 
@@ -2291,7 +2290,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 _Konsultant_ - Jest to w jego zakresu obowiązków
 _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
---- 
+---
 
 **Numer i Nazwa przypadku użycia:** UC-7.3 - Dodaj `Potencjalnego klienta` do rejestru
 
