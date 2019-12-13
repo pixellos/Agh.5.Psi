@@ -1323,34 +1323,7 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 
 #### 2.1.2.4 Obsługa magazynu
 
-```plantuml 2.1.2.4
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Magazynier
-actor Dostawca
-rectangle "Obsługa magazynu" {
-    Magazynier -- (Weryfikacja dokumentacji)
-    Magazynier -- (Rozładunek)
-    Magazynier -- (Przyjęcie towaru)
-    Magazynier -- (Kontrola stanu przesyłki)
-    Magazynier -- (Przygotowanie towaru do składowania)
-	Magazynier -- (Sprawdzenie stanu)
-    Magazynier -- (Kontrola wartości towaru)
-	Magazynier -- (Grupowanie towaru)
-    Magazynier -- (Przypisywanie numeru seryjnego)
-    Magazynier -- (Przypisywanie numeru partii)
-    Magazynier -- (Przypisywanie kodów EAN)
-	Magazynier -- (Powiazanie towaru z dostawcą i nabywcą)
-	Magazynier -- (Tworzenie prognoz popytu)
-	Magazynier -- (Wystawienie dokumentów)
-	Magazynier -- (Tworzenie zamówienia dostaw)
-
-Dostawca -- Magazynier
-}
-@enduml
-```
-
+![](./diagrams/images/obsluga_magazynu_OA4.jpg)
 ##### _Rysunek 12. Diagram przypadków użycia obsługi Obsługa magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-4.1 - Weryfikacja dokumentacji
