@@ -2143,11 +2143,11 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ##### Rysunek 12. Statyki powiązane z katalogiem produktowym\_
 
-**Numer i nazwa przypadku uzycia:** UC-6.1 - Generowanie raportu
+**Numer i nazwa przypadku uzycia:** UC-6.1 - Analiza danych
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Lepsze pozycjonowanie produktów
+**Cel przypadku użycia:** 
 
 **Kontekst użycia:** Przy każdym użyciu wyszukiwarki produktów, kliknięcia są zapisywane na potrzeby analiz danych. `System analizujący dane` na podstawie decyzji `konsultanta` jest w stanie zaproponować najczęściej wybierane produkty.
 
