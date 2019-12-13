@@ -303,7 +303,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 
     2. Realizacja reklamacji do dostawcy
-
+    
         Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od niego wymienione, działające produkty.
 
 4. Prowadzenie rejestru reklamacji
@@ -323,9 +323,9 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    1. Przyjęcie towaru
 
       Jako `magazynier` chce mieć możliwość `przyjęcia towaru` magazynu aby `przekazać go do dalszego procesowania - rozładunku`.
-	  
+	
    1. Kontrola stanu fizycznego przesyłki
-	  
+	
       Jako `magazynier` chce mieć możliwość `kontroli stanu przesyłki` magazynu aby `przekazać ją do dalszego procesowania - wysyłki`.
 
    1. Przygotowanie towaru do składowania
@@ -339,11 +339,11 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    1. Kontrola wartości towaru
 
       Jako `magazynier` chce mieć możliwość `kontroli wartości towaru` aby `zapewnić jakość produktów zgodnych z warunkami umowy`
-	  
+	
    1. Grupowanie towaru
 
       Jako `magazynier` chce mieć możliwość `grupowania towaru` aby `zminimalizować czas wyszukiwania`
-	  
+	
    1. Przypisywanie numeru seryjnego
 
       Jako `magazynier` chce mieć możliwość `przypisywania unikalnego numeru seryjnego produktom` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
@@ -363,18 +363,18 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    1. Tworzenie prognoz popytu
 
       Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
-	  
+	
    1. Wystawienie dokumentów (PZ WZ MM PW RW)
 	
       Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty w prcedurze`.
-	  
+	
 	  
 #### 1.3.1.5 Rejestr magazynu (OA5)
 
    1. Zarejestrowanie produktu
 
       Jako `magazynier` chce mieć możliwość `zarejestrowania produktu` aby `udostępnić oraz uaktualnić informacje o dostępności produktu`.
-	  
+	
    1. Modyfikacja produktu
 	
       Jako `magazynier` chce mieć możliwość `modyfikacji danych` aby `uaktualnić informacje o produkcie`.
@@ -382,19 +382,19 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    1. Wyszukiwanie produktów
 
       Jako `magazynier` chce mieć możliwość `wyszukiwania produktów` aby `pobrać produkt o określonych atrybutach`.
-	  
+	
    1. Pobranie szczegolowych danych o produkcie
 	
       Jako `magazynier` chce mieć możliwość `pobrania informacji na temat produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
-		
+	
    1. Pobranie wszystkich dostepnych produktow
 	
       Jako `magazynier` chce mieć możliwość `pobrania wszystkich dostepnych produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
-		
+	
    1. Wyrejstrowanie produktu z magazynu
 
       Jako `magazynier` chce mieć możliwość wyrejestrowania produktu z magazynu aby `uaktualnić informacje o dostępności produktu`.
-	  
+	
    1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji wystawienie dokumentów magazynowych
 
       Jako `magazynier` chce mieć możliwość `tworzyć zamówienia dostaw` aby `zapewnić wymagane dokumenty dotyczące dostaw`.
@@ -682,7 +682,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 _Konsultant_ - Jest to w jego zakresu obowiązków
 _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
---- 
+---
 
 **Numer i Nazwa przypadku użycia:** UC-1.3 - Dodaj dostawcę
 
@@ -827,7 +827,6 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
 
-
 ---
 
 **Numer i Nazwa przypadku użycia:** UC-1.7 - Wprowadź próg cenowy
@@ -934,101 +933,33 @@ _Klient_ - Inicjuje proces
 
 #### 2.4.2 Obsługa zleceń zakupu (OA2)
 
-```plantuml 2.1.2.2
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Konsultant
-actor Klient
-rectangle "Rejestrowanie klienta" {
-  (Korygowanie danych klienta) ..  (Dodanie klienta do systemu)
-  (Rejestrowanie klienta) .> (Korygowanie danych klienta) : include
-  Konsultant -- (Rejestrowanie klienta)
-  Konsultant -- (Korygowanie danych klienta)
-  Klienta -- (Korygowanie danych klienta)
-}
-@enduml
-```
+![](./diagrams/images/OA2.jpg)
 
-##### Rysunek 05. Rejestrowanie klienta
-
-```plantuml 2.1.2.2
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Konsultant
-actor Klient
-actor :Zatwierdzający oferte:
-rectangle "Proces ofertowy" {
-  :Zatwierdzający oferte: -- (Zatwierdza oferte)
-  Klient -- (Wysyła zapytanie ofertowe)
-  Konsultant -- (Otrzymuje zapytanie ofertowe)
-  Konsultant -- (Tworzy oferte w systmie)
-  Konsultant -- (Dodaje produkty do oferty)
-  Konsultant -- (Generuje dokument ofertowy)
-  Klient -- (Otrzymuje dokument ofertowy)
-  (Tworzy oferte w systmie) .. (Dodaje produkty do oferty)
-  (Tworzy oferte w systmie) .. (Zatwierdza oferte)
-  (Generuje dokument ofertowy) .. (Otrzymuje dokument ofertowy)
-  (Wysyła zapytanie ofertowe) ..  (Otrzymuje zapytanie ofertowe)
-
-}
-@enduml
-```
-
-##### Rysunek 06. Proces ofertowy
-
-```plantuml 2.1.2.2
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Konsultant
-actor Klient
-actor Księgowość
-rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
-  (Przedstawia oferte) .. (Otrzymuje oferte)
-  (Podejmuje decyzje odnośnie otrzymanej oferty) .. (Procesuje decyzje klienta)
-  (Generuje i przesyła fakture do klienta) .. (Płaci za fakture)
-  (Płaci za fakture) .. (Odnotowuje płatność)
-  Konsultant -- (Przedstawia oferte)
-  Konsultant -- (Procesuje decyzje klienta w systemie)
-  Klient -- (Otrzymuje oferte)
-  Klient -- (Podejmuje decyzje odnośnie otrzymanej oferty)
-  Klient -- (Płaci za fakture)
-  Księgowość -- (Generuje i przesyła fakture do klienta)
-  Księgowość -- (Odnotowuje płatność)
-}
-@enduml
-```
-
-##### Rysunek 07. Potwierdzenie zamówienia i wystawienie faktury
-
-**Numer i nazwa przypadku uzycia:** 1.2.1.1 - Rejestrowanie klienta
+**Numer i nazwa przypadku uzycia:** UC-2.1 - Zarządzanie rejestrami klienta
 
 **Autor:** Adam Samsonowicz
 
 **Cel przypadku użycia:** Dodanie nowego klienta do systemu
 
-**Kontekst użycia:** `Konsultant` musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty.
+**Kontekst użycia:** `Konsultant` musi mieć możliwość wprowadzenia klienta do systemu w celu procesowania oferty oraz modyfikacji jego danych.
 
-**Zakres:** Rejstracja klietna
+**Zakres:** Przetwarzanie danych klientów
 
 **Poziom:** Przetwarzanie danych klientów
 
-**Warunek początkowy:** `Klient` nie istnieje w systemie
+**Warunek początkowy:** Brak
 
-**Zdarzenie inicjujące:** Nowy `klient` zgłasza się z zapytaniem ofertowym
+**Zdarzenie inicjujące:** Następuje potrzeba wykonania operacji CRUD na rejestrze klienta
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` naciska przycisk 'Dodaj nowego klienta' znajdujący się w sekcji wyboru klienta na głównej stronie oferty.
-2. `Konsultant` wypełnia informacje dotyczące klienta i naciska przycisk 'Zatwierdź'
-3. System wyświetla informację potwierdzającą dodanie klienta
+1. `Konsultant` wyszukuje klienta w systemie
+2. `Konsultant` w zależność od zainistałej potrzeby dodaje, usuwa, edytuje, lub odczytuje rejestr klienta
+3. System wyświetla informację potwierdzającą operacje
 
 **Scenariusze alternatywne:**
 
-1. W punkcie (3) scenariusza głównego, system wyświetla informacje o błędzie i niemożliwości dodania klienta
-2. `Konsultant` zgłasza błąd
+1. Brak
 
 **Aktor główny:** Konsultant
 
@@ -1036,55 +967,9 @@ rectangle "Potwierdzenie zamówienia i wystawienie faktury" {
 
 Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
-Klient - Dane klienta muszą istnieć w systemie, żeby można było dalej procesować oferte
-
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.1.2 - Korygowanie danych klienta
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Korekta danych klienta w systemie
-
-**Kontekst użycia:** `Konsultant` otrzymuje informację o zmianie danych klienta i wprowadza te zmiany do systemu
-
-**Zakres:** Edycja danych klienta
-
-**Poziom:** Przetwarzanie danych klientów
-
-**Warunek początkowy:** Rejestr `Klienta` istnieje w systemie
-
-**Zdarzenie inicjujące:** `Konsultant` dowiedział się o zmianie danych klienta
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` przechodzi do strony 'Klienci' poprzez naciśnięcie przycisku 'Klienci' znajdującego się na głównej stronie systemu
-2. Strona 'Klienci' jest wyświetlona, `Konsultant` wyszukuje `klienta` w wyszukiwarce klientów wpisując w pole identyfikator `klienta`
-3. `Klient` został znaleziony w systemie, `Konsultant` klika na rekord `klienta` co przenosi go do widoku informacji szczegółowych `klienta`
-4. `Konsultant` klika przycisk 'edytuj', informacje są otwarte do edycji
-5. `Konsultant` wypełnia informacje aktualnymi danymi i naciska przycisk 'zapisz'
-6. System wyświetla informacje o poprawnym zapisie danych
-
-**Scenariusze alternatywne:**
-
-1. Punkt (6) scenariusza głównego, system wyświetla informacje o błędzie
-
-2. `Konsultant` zgłasza błąd
-
-1) Punkt (3) scenariusza głównego, system nie znajduje `klienta` pomimo poprawnie wprowadzonego identyfikatora, oraz pewności, że dane `klient` został wcześniej wprowadzany do systemu
-2) `Konsultant` zgłasza błąd
-
-**Aktor główny: ** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - Potrzebuje aktualnych danych klienta w celu procesowania oferty
-
-Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego procesowania oferty.
-
----
-
-**Numer i nazwa przypadku uzycia:** 1.2.2.0 - Przyjęcie zapytania ofertowego od klienta
+**Numer i nazwa przypadku uzycia:** UC-2.2 - Przyjęcie zapytania ofertowego od klienta
 
 **Autor:** Adam Samsonowicz
 
@@ -1102,7 +987,7 @@ Klient - Aktualne dane klienta muszą istnieć w systemie w celu poprawnego proc
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` po otrzymaniu zapytania ofertowego loguje się do systemu, jeżeli nie był wcześniej zalogowany i rozpoczyna proces ofertowy klikając przycisk 'Nowa oferta' znajdujący się na głównej stronie systemu.
+1. `Konsultant` po otrzymaniu zapytania ofertowego rozpoczyna proces ofertowy klikając przycisk 'Nowa oferta' znajdujący się na głównej stronie systemu.
 2. Formularz nowej oferty został wyświetlony
 
 **Scenariusze alternatywne:** Brak
@@ -1117,7 +1002,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.1 - Utworzenie oferty w systemie
+**Numer i nazwa przypadku uzycia:** UC-2.3 - Utworzenie oferty w systemie
 
 **Autor:** Adam Samsonowicz
 
@@ -1136,13 +1021,12 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 **Główny scenariusz powodzenia:**
 
 1. `Konsultant` uzupełnia podstawowe informacje dotyczące oferty na stronie nowej oferty między innymi wybiera `klienta`, dla którego tworzona jest oferta
-2. Wszystkie informację zostały wybrany poprawnie, `konsultant` klika na przycisk 'Utwórz nową oferte'
+2. Wszystkie informację zostały wybrane poprawnie, `konsultant` klika na przycisk 'Utwórz nową oferte'
 3. System powiadamia `konsultanta` o poprawnym utworzeniu oferty
 
 **Scenariusze alternatywne:**
 
-1. Punkt (3) głównego scenariusza, system informuje o zainistniałym błędzie
-2. `Konsultant` zgłasza błąd
+1. Brak
 
 **Aktor główny:** Konsultant
 
@@ -1152,36 +1036,30 @@ Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później 
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.1 - Dodanie produktów do oferty - Znalezienie w systemie oraz dodanie produktów do oferty
+**Numer i nazwa przypadku uzycia:** UC-2.4 - Dodanie produktów do oferty
 
 **Autor:** Adam Samsonowicz
 
 **Cel przypadku użycia:** Wyszukanie produktów i dodanie ich do oferty
 
-**Kontekst użycia:** `Konsultant` ma możliwość wyszukania produktów w katalogach dostawców oraz dodania ich do oferty. Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. Każdy produkt dodany do oferty podlega edycji w celu zmiany jego ceny dla klienta w zależności od kontekstu sprzedaży i polityk rabatowych.
+**Kontekst użycia:** `Konsultant` ma możliwość dodania produktów do oferty, którą tworzy dla klienta.
 
 **Zakres: **Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Oferta została poprawnie utworzona w systemie
+**Warunek początkowy:** Oferta została poprawnie utworzona w systemie, `konsultantowi` udało się wyszukać produkt
 
 **Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` klika na przycisk 'Dodaj produkty' znajdującym się na stronie produktowej wewnątrz oferty
-2. System wyświetla możliwych dostawców do wyboru
-3. `Konsultant` wybiera dostawce, którego katalog produktowy spełnia oczekiwania `klienta`
-4. System wyświetla katalog produktowy danego dostawcy, wraz z możliwością wyszukiwania oraz filtrowania po zdefiniowanych wcześniej atrybutach technicznych
-5. `Konsultant` wybiera odpowiednie produkty i klika na przycisk 'Dodaj do oferty'
-6. `Konsultant` zostaje przeniesiony spowrotem na stronę produktowom
-7. Produkty wybrane przez `konsultanta` znajdują się na stronie
+1. `Konsultant` po wyszukaniu produktu dodaje go do oferty
+2. Produkt został poprawnie dodany do oferty
 
 **Scenariusze alternatywne:**
 
-1. Punkt (6) scenariusza głównego, system wyświetla błąd o braku możliwości dodania produktów
-2. W zależności od rodzaju komunikatu, `konsultant` zgłasza błąd, lub w przypadku komunikatu powiązanego z dostawcą, `konsultant` komunikuje się bezpośrednio z dostawcą
+1. Brak
 
 **Aktor główny:** Konsultant
 
@@ -1191,97 +1069,43 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu
+**Numer i nazwa przypadku uzycia:** UC-2.5 - Wyszukiwanie produktów w systemie
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Klient oczekuje podania daty dostawy produktu, klient wymaga szybkiej dostawy
+**Cel przypadku użycia:** `Konsultant` potrzebuje wyszukać produkt. Następnie dodaje go do oferty lub sprawdza dane techniczne
 
-**Kontekst użycia:** `Klient` oczekuje szybkiej dostawy w celu realizacji swoich zobowiązań. `Konsultant` jest zobowiązany do podania terminu na kiedy dane produktu są w stanie być dostarczone.
+**Kontekst użycia:** `Konsultant` ma możliwość wyszukania produktów w katalogach dostawców. Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. 
 
 **Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Produkty zostały dodane do oferty
+**Warunek początkowy:** Brak
 
 **Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
-1.
+1. `Konsultant` wchodzi na stronę wyszukiwarki produktów i wpisuje informacje w filtrach, które go interesują
+2. `Konsultant` wyszukuje produkt
+3. Produkt został znaleziony
 
 **Scenariusze alternatywne:**
 
-1. brak
+1. `Konsultant` wchodzi na stronę wyszukiwarki produktów i wpisuje informacje w filtrach, które go interesują
+2. `Konsultant` wyszukuje produkt
+3. Produkt nie został znaleziony
 
 **Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
 
-Konsultant - sprawdzenie dostepności produktu na magazynie i u dostawcy
+Konsultant - wyszukanie produktów
 
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.2.2.1 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie aktualnego stanu magazynu
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Sprawdzenie możliwości szybkiej wysyłki dla klienta
-
-**Kontekst użycia:** `Konsultant` ma dostęp do magazynu. `Konsultant` sprawdza dostępność produktów na magazynie poprzez graficzny interfejs w wyszukiwarce.
-
-**Zakres:** Proces ofertowy
-
-**Poziom:** Proces ofertowy
-
-**Warunek początkowy:**
-
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
-
-**Główny scenariusz powodzenia:**
-
-**Scenariusze alternatywne:**
-
-1. Scenariuszem alternatywnym jest poniższy przypadek użycia
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - sprawdza w systemie dostępność produktów na magazynie
-
----
-
-**Numer i nazwa przypadku uzycia:** 1.2.3.2 - Dodanie produktów do oferty - Sprawdzenie dostępności produktu - Sprawdzenie najszybszego możliwego czasu dostawy
-
-**Autor: ** Adam Samsonowicz
-
-**Cel przypadku użycia:** Sprawdzenie najszybszej możliwej dostawy
-
-**Kontekst użycia:** `Konsultant` ma możliwość sprawdzenia w wyszukiwarce produktów terminy ich dostawy. Jest to scenariusz alternatywny do scenariusza 1.2.3.2.2.1, czyli sytuacja gdy nie ma produktów na magazynie i `klient` akceptuje późniejszy termin dostawy.
-
-**Zakres:** Proces ofertowy
-
-**Poziom:** Proces ofertowy
-
-**Warunek początkowy:**
-
-**Zdarzenie inicjujące:**
-
-**Główny scenariusz powodzenia:**
-
-**Scenariusze alternatywne:**
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - sprawdza w systemie dostępność produktów u dostawcy
-
----
-
-**Numer i nazwa przypadku uzycia:** 1.2.3.3 - Wygenerowanie dokumentu ofertowego
+**Numer i nazwa przypadku uzycia:** UC-2.6 - Wygenerowanie dokumentu ofertowego
 
 **Autor:** Adam Samsonowicz
 
@@ -1293,13 +1117,19 @@ Konsultant - sprawdza w systemie dostępność produktów u dostawcy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:**
+**Warunek początkowy:** Oferta jest zatwierdzona lub nie wymaga zatwierdzenia
 
-**Zdarzenie inicjujące:**
+**Zdarzenie inicjujące:** Oferta jest gotowa, żeby przedstawić ją klientowi
 
-**Główny scenariusz powodzenia:**
+**Główny scenariusz powodzenia:** 
+
+1. `Konsultant` po poprawnym utworzeniu oferty przechodzi na stronę generowania oferty
+2. `Konsultant` konfiguruje layout oferty na dokumencie
+3. `Konsultant` generuje oferte
 
 **Scenariusze alternatywne:**
+
+1. Brak
 
 **Aktor główny:** Konsultant
 
@@ -1307,29 +1137,70 @@ Konsultant - sprawdza w systemie dostępność produktów u dostawcy
 
 Konsultant - generuje dokument ofertowy na podstawie danych uzupełnionych na ofercie
 
-Klient - otrzymuje dokument ofertowy w celu podjęcia decyzji o zakupie.
-
 ---
 
-**Numer i nazwa przypadku uzycia:** 1.2.3.4 - Zatwierdzenie oferty przez przełożonego
+**Numer i nazwa przypadku uzycia:** UC-2.7 - Wysłanie oferty do zatwierdzenia
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert
+**Cel przypadku użycia:** Dalsze procesowania oferty w przypadku gdy wartość oferty wykracza poza kryteria samodzielnego składania ofert
 
-**Kontekst użycia:** Oferta, którą zajmował się `konsultant` przekroczyła wartość pozwalającą na samodzielność danego `konsultanta` i wymagane jest potwierdzenie od przełożonego. Przełożonym jest `konsultant` z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany `Zatwierdzającym oferte`. `Konsultant` wysyła poprzez system prośbę o akceptację na dalsze procesowanie i przedstawienie oferty klientowi. `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty.
+**Kontekst użycia:** Oferta, którą zajmował się `konsultant` przekroczyła wartość pozwalającą na samodzielność danego `konsultanta` i wymagane jest potwierdzenie od przełożonego. Przełożonym jest `konsultant` z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany `Zatwierdzającym oferte`.  `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty.
 
 **Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:**
+**Warunek początkowy:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert
 
-**Zdarzenie inicjujące:**
+**Zdarzenie inicjujące:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert, `Konsultant` potrzebuje procesować oferte dalej
 
 **Główny scenariusz powodzenia:**
 
+1. `Konsultant` przechodzi na stronę generowania oferty
+2. `Konsultant` wybiera opcje 'Wyślij oferte do zatwierdzenia' 
+3. Oferta została wysłana do zatwierdzenia
+
 **Scenariusze alternatywne:**
+
+1. Brak
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własności nad ofertą
+
+---
+
+**Numer i nazwa przypadku uzycia:** UC-2.8 - Zatwierdzenie oferty przez przełożonego
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert, `zatwierdzający oferte` podejmuje decyzje w kontekście dalszego procesowania oferty 
+
+**Kontekst użycia:** `Konsultant` wysyła poprzez system prośbę o akceptację na dalsze procesowanie. `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty.
+
+**Zakres:** Proces ofertowy
+
+**Poziom:** Proces ofertowy
+
+**Warunek początkowy:** Prośba o zatwierdzenie zostałą wysłana
+
+**Zdarzenie inicjujące:** UC-2.7 - Wysłanie oferty do zatwierdzenia
+
+**Główny scenariusz powodzenia:** 
+
+1. `Zatwierdzający oferte` dostaje prośbę o zatwierdzenie oferty
+2. `Zatwierdzający oferte` akceptuje prośbę
+
+**Scenariusze alternatywne:**
+
+1. Zatwierdzający oferte` dostaje prośbę o zatwierdzenie oferty
+2. `Zatwierdzający oferte` odrzuca prośbę
+
+1. Zatwierdzający oferte` dostaje prośbę o zatwierdzenie oferty
+2. `Zatwierdzający oferte` przejmuje oferte i procesuje ją samodzielnie
 
 **Aktor główny:** Konsultant
 
@@ -1339,172 +1210,8 @@ Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własnoś
 
 Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmuje oferte i procesują ją dalej.
 
----
-
-**Numer i nazwa przypadku uzycia:** 1.2.4.1 - Kontakt z klientem w celu potwierdzenia oferty - Przedstawienie oferty klientowi
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Oferta została zatwierdzona, dokument ofertowy jest wygenerowany. Oferta jest gotowa do przedstawienia klientowi.
-
-**Kontekst użycia:** `Konsultant` ma możliwość wysłania dokumentu ofertowego do klienta z poziomu systemu, lub wydrukowanie tego dokumentu i przedstawienie go klientowi.
-
-**Zakres:** Proces ofertowy
-
-**Poziom:** Proces ofertowy
-
-**Warunek początkowy:** Dokument ofertowy jest wygenerowany
-
-**Zdarzenie inicjujące:** Wygenerowanie dokumentu ofertowego
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` pobiera dokument ofertowy i dodaje go jako załącznik do e-mail'a informującego o ofercie
-2. `Konsultant` wysyła e-mail wraz z załączoną ofertą
-
-**Scenariusze alternatywne:**
-
-1. `Konsultant` pobiera dokument ofertowy i drukuje go w celu ręcznego przedstawienia klientowi
-2. `Konsultant` spotyka się z `klientem` i przedstawia mu oferte na papierze
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - przedstawia oferte klientowi
-
-Klient - otrzymuje oferte od konsultanta
-
----
-
-**Numer i nazwa przypadku uzycia:** 1.2.4.2 - Kontakt z klientem w celu potwierdzenia oferty - Potwierdzenie oferty przez klienta
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Klient podjął decyzję w kontekście danej oferty
-
-**Kontekst użycia:** `Klient` podjął decyzję dotyczącą przedstawionej mu oferty. `Klient` przekazuję decyzję `konsultantowi`, który procesuję tą decyzję w systemie. W przypadku akceptacji danej oferty `konsultant` składa zamówienie u dostawcy na dane produkty, lub składa zamówienie na dane produkty w magazynie. Wszystko to odbywa się podczas jedną funkcje systemu, składania zamówienia.
-
-**Zakres:** Proces ofertowy
-
-**Poziom:** Proces ofertowy
-
-**Warunek początkowy:** `Klient` otrzymał oferte
-
-**Zdarzenie inicjujące:** Minął czas na podjęcie decyzji przez `klienta` od momentu przedstawienia oferty `klientowi`
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` kontaktuje się z klientem w celu potwierdzenia oferty
-2. `Klient` informuje `konsultanta` o akceptacji oferty
-3. `Konsultant` będąc wcześniej zalogowanym w systemie wyszukuje oferte i otwiera jej strone
-4. `Konsultant` przechodzi na strone 'Finalizacja oferty' i klika przycisk 'Złóż zamówienie'
-5. System wysyła zapytania o zamówienie produktów do dostawcy oraz magazynu w celach realizacji zamówienia
-
-**Scenariusze alternatywne:**
-
-1. Konsultant` kontaktuje się z klientem w celu potwierdzenia oferty
-2. `Klient` informuje `konsultanta` o odmowie przyjęcia oferty
-3. `Konsultant` będąc wcześniej zalogowanym w systemie wyszukuje oferte i otwiera jej strone
-4. `Konsultant` przechodzi na strone 'Finalizacja oferty' i klika przycisk 'Oferta anulowana przez klienta'
-5. System zamyka oferte, oferta przechodzi w stan zamknięty
-
-**Aktor główny:** Klient
-
-**Uczestnicy i interesy:**
-
-Klient - Przekazuje decyzje
-
-Konsultant - procesują otrzymaną decyzje w systemie
-
----
-
-**Numer i nazwa przypadku uzycia:** 1.2.4.5 - Wystawienie faktury
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Dla zamówionej oferty wymagane jest przygotowanie faktury
-
-**Kontekst użycia:** `Księgowość` dostaje informację w systemie o złożonym zamówieniu przez klienta. `Księgowość` generuje fakturę w systemie na podstawie złożonego zamówienia i przesyła ją klientowi oczekując na zapłatę.
-
-**Zakres:** Proces fakturowania
-
-**Poziom:** Proces fakturowania
-
-**Warunek początkowy:** Oferta została zaakceptowana przez klienta
-
-**Zdarzenie inicjujące:** `Konsultant` złożył zamówienie w systemie, `Księgowość` została poinformowana o ofercie
-
-**Główny scenariusz powodzenia:**
-
-1. `Księgowość` dostaje informację o produktach zawartych w ofercie
-2. `Księgowość` wystawia fakture
-
-**Scenariusze alternatywne:**
-
-1. Brak
-
-**Aktor główny:** Księgowość
-
-**Uczestnicy i interesy:**
-
-Księgowość - generuje fakture w systemie
-
-Klient - otrzymuje fakture
-
----
-
-**Numer i nazwa przypadku uzycia:** 1.2.4.6 - Zatwierdzenie faktury - Klient zapłacił za fakture
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Oznaczenie danej faktury jako opłacona
-
-**Kontekst użycia:** `Klient` opłacił fakturę. `Księgowość` korzystając z zewnętrznych informacji bankowo finansowych odnotowuje daną fakturę jako opłaconą w systemie.
-
-**Zakres:** Proces fakturowania
-
-**Poziom:** Proces fakturowania
-
-**Warunek początkowy:** `Klient` zapłacił za wystawioną wcześniej fakture
-
-**Zdarzenie inicjujące:** `Księgowość` odnotowuje płatność za fakture na koncie firmowym
-
-**Główny scenariusz powodzenia:**
-
-1. `Księgowość` loguje się do systemu
-2. `Księgowość` księgowość wyszukuje oferte powiązaną z fakturą i na stronie 'Finalizacja oferty' klika przycisk 'Oferta opłacona'
-3. System zamyka oferte, oferta przechodzi w stan 'Opłaconej'
-
-**Scenariusze alternatywne:**
-
-1. Brak
-
-**Aktor główny:** Księgowość
-
-**Uczestnicy i interesy:**
-
-Księgowość - odnotowuje płatność w systemie, informacja o płatności pochodz spoza systemu
-
-Klient - opłaca fakture
-
 #### 2.1.2.3 Obsługa reklamacji
-
-```plantuml 2.1.2.3
-@startuml
-left to right direction
-actor Klient
-actor Pracownik
-rectangle "Obsługa reklamacji" {
-    (Klient) -- (Zgłoś reklamację)
-    (Zgłoś reklamację) .> (Wprowadź produkt do rejestru) : <<include>>
-    (Wyświetl błąd przy wprowadzaniu do systemu) .> (Wprowadź produkt do rejestru) : <<exclude>>
-    (Zgłoś reklamację) .> (Uaktualnij status reklamacji) : <<include>>
-    (Wyświetl zgłoszone reklamacje) -- (Pracownik)
-
-}
-@enduml
-```
+![](./diagrams/images/Obsluga_reklamacji.jpg)
 
 ##### _Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
 
@@ -2381,68 +2088,15 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 #### 2.4.6 Analiza danych na potrzeby marketingowe (OA6)
 
-```plantuml test
-@startuml
-left to right direction
-skinparam packageStyle rectangle
-actor Konsultant
-actor :System analizujący dane:
-actor Marketingowiec
-rectangle "Statystyki na potrzeby marketingowe" {
-  (Wykonywanie operacji na katalogu produktów) ..  (Analiza danych)
-  Konsultant -- (Wykonywanie operacji na katalogu produktów)
-  :System analizujący dane: -- (Analiza danych)
-  (Generuje raport) ..  (Otrzymuje raport)
-  Marketingowiec -- (Otrzymuje raport)
-  :System analizujący dane: -- (Generuje raport)
-  Konsultant -- (Tworzenie ofert)
-  (Tworzenie ofert) .. (Analiza danych)
-}
-@enduml
-```
+![](./diagrams/images/OA6.jpg)
 
 ##### Rysunek 12. Statyki powiązane z katalogiem produktowym\_
 
-**Numer i nazwa przypadku uzycia:** 1.6.1 - Statystyki powiązane z katalogiem produktowym
+**Numer i nazwa przypadku uzycia:** UC-6.1 - Analiza danych
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Lepsze pozycjonowanie produktów
-
-**Kontekst użycia:** Przy każdym użyciu wyszukiwarki produktów, kliknięcia są zapisywane na potrzeby analiz danych. `System analizujący dane` na podstawie decyzji `konsultanta` jest w stanie zaproponować najczęściej wybierane produkty.
-
-**Zakres:** Wyszukiwanie i konfiguracja produktów
-
-**Poziom:** Analiza danych
-
-**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne. Oferta jest stworzona, podstawowe informacje są wypełnione.
-
-**Zdarzenie inicjujące:** Manualne zainicjowanie analizy lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` wchodzi na katalog produktowy klikając przycisk 'Katalog produktów' znajdujący się na stronie wcześniej stworzonej oferty w systemie
-2. `Konsultant` jest w stanie potwierdzić organoleptycznie, że proponowane produkty przez `system` odpowiadają produktom często zamawianym
-
-**Scenariusze alternatywne:**
-
-1. `Konsultant` po wejściu na katalog nie rozpoznaje propowanym produktów, lub rozpoznaje je jako rzadko zamawiane.
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - realizacja codziennych obowiązków
-
-System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
-
----
-
-**Numer i nazwa przypadku uzycia:** 1.6.2 - Wystawienie danych na strategiczne potrzeby marketingowe
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Wsparcie podejmowania decyzji marketingowych za pomoca dedykowanych analiz danych
+**Cel przypadku użycia:** Analiza danych na potrzeby raportów 
 
 **Kontekst użycia:** Wszystkie stworzone oferty oraz ich historia zawierają informacje, które można wykorzystać do podjęcia strategicznych decyzji. Analizy umieszczone są na raporcie. Raport może być generowany manualnie. Raport może być generowany automatycznie po wcześniejszej konfiguracji i ustawienia ram czasowych.
 
@@ -2450,9 +2104,42 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 **Poziom:** Analiza danych
 
-**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne, `Marketingowiec` jest zalogowany do aplikacji
+**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne. 
 
-**Zdarzenie inicjujące:** Manualne zainicjowanie analizy lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
+**Zdarzenie inicjujące:** Manualne zainicjowanie raportu lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
+
+**Główny scenariusz powodzenia:**
+
+1. `System analizujący dane` ma dostęp do rejestrów, które podlegają analizie
+2. `System analizujący dane` wykonuje obliczenia na rejestrach w celu uzyskania raportu
+
+**Scenariusze alternatywne:**
+
+1. Brak
+
+**Aktor główny:** System analizujący dane
+
+**Uczestnicy i interesy:**
+
+System analizujący dane - analizowanie rejestrów zapisywanych w bazie danych.
+
+---
+
+**Numer i nazwa przypadku uzycia:** UC-6.2 - Generowanie raportu
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia:** Wsparcie podejmowania decyzji marketingowych za pomoca dedykowanych analiz danych znajdujących się na raporcie
+
+**Kontekst użycia:** Podjęcie decyzji 
+
+**Zakres:** Analiza danych
+
+**Poziom:** Analiza danych
+
+**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne.
+
+**Zdarzenie inicjujące:** Decyzja do podjęcia wymaga raportu z analizami
 
 **Główny scenariusz powodzenia:**
 
@@ -2463,14 +2150,11 @@ System analizujący dane - śledzenie ruchu `konsultanta` na cele analiz
 
 **Scenariusze alternatywne:**
 
-1. Po wykonaniu kroku (3) przez `Marketingowca` system wyświetla błąd sugerujący niepowodzenie
-2. `Marketingowiec` zgłasza błąd
+1. Brak
 
 **Aktor główny:** System analizujący dane
 
 **Uczestnicy i interesy: **
-
-System analizujący dane - na podstawie wszystkich dostarczonych danych dotyczących ofert, system generuje dedykowane analizy w celach lepszej przejrzystości w podejmowaniu decyzji.
 
 Marketingowiec - dostaje raport zawierający analizy
 
@@ -2550,7 +2234,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 _Konsultant_ - Jest to w jego zakresu obowiązków
 _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
---- 
+---
 
 **Numer i Nazwa przypadku użycia:** UC-7.3 - Dodaj `Potencjalnego klienta` do rejestru
 
@@ -2690,21 +2374,7 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 
 #### 2.1.2.8 Zarzadzanie
-
-```plantuml X.X.X
-@startuml
-left to right direction
-actor Pracownik
-actor Właściciel
-rectangle "Zarządzanie" {
-    :Pracownik: -- (Wprowadź dokumenty)
-    :Pracownik: -- (Wyświetl dokumenty)
-    :Pracownik: -- (Wyświetl zadania)
-(Wyświetl prognozę zamówień) -- (Właściciel)
-     (Przydziel zadania) --(Właściciel)
-}
-@enduml
-```
+![](./diagrams/images/Zarzadzanie.jpg)
 
 ##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz wprowadzenia zadań właściciela do systemu oraz wglądu do prognozy zamówień_
 
