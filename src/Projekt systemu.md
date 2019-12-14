@@ -2940,6 +2940,9 @@ Dokumenty:
 - 16.Raport_z_akcji_marketingowych.doc - Adam
 - 17.Zamówienie_klienta.doc - Adam
 
+Wymagania Funkcjonalne
+1. Poprawki  - Mateusz
+
 Wymagania niefunkcjonalne
 
 1. Wymagania produktowe:
@@ -2962,4 +2965,3 @@ Wymagania niefunkcjonalne
 
 1. ochrony prywatności -Kamil
 1. wymagania zabezpieczeń - Adam
-
