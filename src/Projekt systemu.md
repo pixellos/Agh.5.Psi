@@ -1323,7 +1323,7 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 
 #### 2.1.2.4 Obsługa magazynu
 
-![](./diagrams/images/obsluga_magazynu_OA4.jpg)
+![](./diagrams/images/OA4_magazyn.jpg)
 ##### _Rysunek 12. Diagram przypadków użycia obsługi Obsługa magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-4.1 - Weryfikacja dokumentacji
@@ -1801,8 +1801,6 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
-![](./diagrams/images/RejestrMagazynuOA5.jpg)
-##### _Rysunek 13. Diagram przypadków użycia obsługi Rejestr magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-5.1 - Zarejestrowanie produktu
 
