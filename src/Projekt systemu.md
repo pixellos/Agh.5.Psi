@@ -20,22 +20,53 @@ Spis Treści
 
 ---
 
-<!-- TOC insertanchor:false withlinks:true anchormode:github.com updateonsave:true orderedlist:true depthfrom:1 depthto:2 -->
+<!-- TOC insertanchor:false withlinks:true anchormode:github.com updateonsave:true orderedlist:true depthfrom:1 depthto:3 -->
 
 - [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
     - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu)
+        - [1.1.1. Nazwa firmy](#111-nazwa-firmy)
+        - [1.1.2. Typ firmy](#112-typ-firmy)
+        - [1.1.3. Cel produktu](#113-cel-produktu)
+        - [1.1.4. Opis dziedziny działalności](#114-opis-dziedziny-działalności)
+        - [1.1.5. Cele firmy](#115-cele-firmy)
+        - [1.1.6. Schemat struktury organizacyjnej](#116-schemat-struktury-organizacyjnej)
     - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#12-obszar-modelowania-om--wstępny-opisowy-model-stanu-istniejącego)
+        - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)
+        - [1.2.2. Definicja celu systemu](#122-definicja-celu-systemu)
+        - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania)
     - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
+        - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
     - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
+        - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
+        - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
     - [1.5. Cele do osiągnięcia](#15-cele-do-osiągnięcia)
+        - [1.5.1. Cele produktu](#151-cele-produktu)
+        - [1.5.2. Cele przedsięwzięcia projektowego](#152-cele-przedsięwzięcia-projektowego)
 - [2. Opis Wymagań Systemu](#2-opis-wymagań-systemu)
     - [2.1. Funkcje systemu ze strony widzenia użytkownika](#21-funkcje-systemu-ze-strony-widzenia-użytkownika)
     - [2.2. Rejestry w systemie](#22-rejestry-w-systemie)
     - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory)
     - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych)
+        - [2.4.1. Obsługa Dostawców (OA1)](#241-obsługa-dostawców-oa1)
+        - [2.4.2. Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)](#242-rejestr-potencjalnych-klientów-i-stanu-kontaktu-z-nimi-oa7)
+        - [2.4.3. Zarzadzanie](#243-zarzadzanie)
     - [2.5. Modelowanie zachowań w czasie](#25-modelowanie-zachowań-w-czasie)
+        - [2.5.1. Obsługa zamówień](#251-obsługa-zamówień)
+        - [2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2)
+        - [2.5.3. Obsługa reklamacji](#253-obsługa-reklamacji)
+        - [2.5.4. Analiza danych na potrzeby marketingowe (OA6)](#254-analiza-danych-na-potrzeby-marketingowe-oa6)
+        - [2.5.5. Obsługa  potencjalnych klientów (OA7)](#255-obsługa--potencjalnych-klientów-oa7)
+        - [2.5.6. Zarządzanie](#256-zarządzanie)
     - [2.6. Wymagania funkcjonalne dla dodatkowych części systemu](#26-wymagania-funkcjonalne-dla-dodatkowych-części-systemu)
+        - [2.6.1. Poinformuj SMS](#261-poinformuj-sms)
+        - [2.6.2. Wprowadzenie dokumentów do systemu](#262-wprowadzenie-dokumentów-do-systemu)
+        - [2.6.3. Przydział pracowników do określonych zadań](#263-przydział-pracowników-do-określonych-zadań)
+        - [2.6.4. Logowanie](#264-logowanie)
+        - [2.6.5. Wylogowywanie](#265-wylogowywanie)
     - [2.7. Wymagania niefunkcjonalne](#27-wymagania-niefunkcjonalne)
+        - [2.7.1. Wymagania Produktowe](#271-wymagania-produktowe)
+        - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne)
+        - [2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)
 - [3. Załącznik A: Słownik pojęć dziedzinowych:](#3-załącznik-a-słownik-pojęć-dziedzinowych)
     - [3.1. A](#31-a)
     - [3.2. F](#32-f)
@@ -46,6 +77,24 @@ Spis Treści
     - [3.7. S](#37-s)
     - [3.8. Z](#38-z)
 - [4. Załącznik B: Wzory dokumentów](#4-załącznik-b-wzory-dokumentów)
+        - [4.1. Danedostawcy.docx](#41-danedostawcydocx)
+        - [4.2. Danefabryki.docx](#42-danefabrykidocx)
+        - [4.3. Wpistowaruwkatalogu.docx](#43-wpistowaruwkatalogudocx)
+        - [4.4. Wpisdotyczącycenytowaru.docx](#44-wpisdotyczącycenytowarudocx)
+        - [4.5. Dokumentofertowy.doc](#45-dokumentofertowydoc)
+        - [4.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#46-dokumentpotwierdzajacyrealizacjereklamacjidocx)
+        - [4.7. Formularzofertyudzielonejdlaklienta.doc](#47-formularzofertyudzielonejdlaklientadoc)
+        - [4.8. Formularzprosbyodostepnosctowaru.docx](#48-formularzprosbyodostepnosctowarudocx)
+        - [4.9. Formularzreklamacjidodostawcy.docx](#49-formularzreklamacjidodostawcydocx)
+        - [4.10. Formularzreklamacjiodklienta.docx](#410-formularzreklamacjiodklientadocx)
+        - [4.11. Instomformularzdanychklienta.docx](#411-instomformularzdanychklientadocx)
+        - [4.12. Instomprzesunieciemiedzymagazynowe.docx](#412-instomprzesunieciemiedzymagazynowedocx)
+        - [4.13. Instomprzyjecie zewnetrzne.docx](#413-instomprzyjecie-zewnetrznedocx)
+        - [4.14. Instomrozchodwewnetrzny.docx](#414-instomrozchodwewnetrznydocx)
+        - [4.15. Instomwydanie zewnetrzne.docx](#415-instomwydanie-zewnetrznedocx)
+        - [4.16. Raportzakcjimarketingowych.doc](#416-raportzakcjimarketingowychdoc)
+        - [4.17. Zamówienieklienta.doc](#417-zamówienieklientadoc)
+        - [4.18. Instomformularzdanychpotencjalnegoklienta.docx](#418-instomformularzdanychpotencjalnegoklientadocx)
 - [5. Załącznik C:](#5-załącznik-c)
 - [6. Załącznik D:](#6-załącznik-d)
 - [7. Załącznik E: Spis rysunków](#7-załącznik-e-spis-rysunków)
@@ -220,6 +269,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    1. Zmiana lub likwidacja rezerwacji towaru
 
       Jako `Konsultant` gdy `Zlecenia Zakupu` przestanie obejmować dany towar mogę zlikwidować całkowicie `rezerwację towaru` u danego dostawcy .
+<div class="page">
 
 #### 1.3.1.2 Obsługa zleceń zakupu (OA2)
 
@@ -282,6 +332,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    `Konsultant` powinien mieć możliwość przesłania potwierdzonej oferty do działu księgowości w celu wystawienia faktury dla `klienta`.
 
 6. Zatwierdzenie faktury - Klient zapłacił za faktury
+<div class="page">
 
 #### 1.3.1.3 Obsługa reklamacji (OA3)
 
@@ -309,6 +360,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 4. Prowadzenie rejestru reklamacji
 
    Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
+<div class="page">
 
 #### 1.3.1.4 Obsługa magazynu (OA4)
 
@@ -368,6 +420,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 	
       Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty w prcedurze`.
 	
+<div class="page">
 	  
 #### 1.3.1.5 Rejestr magazynu (OA5)
 
@@ -399,6 +452,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
       Jako `magazynier` chce mieć możliwość `tworzyć zamówienia dostaw` aby `zapewnić wymagane dokumenty dotyczące dostaw`.
       
+<div class="page">
       
 #### 1.3.1.6 Analizy danych na potrzeby marketingowe (OA6)
 
@@ -409,6 +463,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 2. Wystawienie danych na strategiczne potrzeby marketingowe
 
    Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
+<div class="page">
 
 #### 1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)
 
@@ -1212,6 +1267,8 @@ _Zespół techniczny_ - przejmuje dalsze czynności
 
 _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do rejestru
 
+<div class="page">
+
 #### 2.1.2.4 Obsługa magazynu
 
 ![](./diagrams/images/OA4_magazyn.jpg)
@@ -1930,7 +1987,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
----
+<div class="page">
 
 #### 2.4.6 Analiza danych na potrzeby marketingowe (OA6)
 
@@ -2004,7 +2061,7 @@ System analizujący dane - analizowanie rejestrów zapisywanych w bazie danych.
 
 Marketingowiec - dostaje raport zawierający analizy
 
----
+<div class="page">
 
 ### 2.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)
 
@@ -2132,8 +2189,7 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 <div class="page">
 
-
-#### 2.1.2.8 Zarzadzanie
+### 2.1.2.8 Zarzadzanie
 ![](./diagrams/images/Zarzadzanie.jpg)
 
 ##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz wprowadzenia zadań właściciela do systemu oraz wglądu do prognozy zamówień_
@@ -2272,24 +2328,34 @@ _Właściciel_ - przydziela pracowników do określonych zadań
 
 _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
----
+<div class="page">
 
 ## 2.5 Modelowanie zachowań w czasie
 ### 2.5.1 Obsługa zamówień
 ![Diagram Aktywności obsługi zamówień](./diagrams/images/ad1.jpg)
 
+<div class="page">
+
 ### 2.5.2 Obsługa zleceń zakupu (OA2)
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA2.1.jpg)
 ##### _Rysunek X. Diagram aktywności zarządzania rejestrami klientów
+
+<div class="page">
+
 ### 2.5.3 Obsługa reklamacji
 
 ![Diagram Aktywności obsługi reklamacji](./diagrams/images/OA3_activity_diagram.jpg)
 
+<div class="page">
+
+
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA6.jpg)
-##### _Rysunek X. Diagram aktywności analizy danych na potrzeby marketingowe_
+##### _Rysunek X. Diagram aktywności analizy danych na potrzeby 
 
-### 2.5.7 Obsługa  potencjalnych klientów
+<div class="page">
+
+### 2.5.7 Obsługa  potencjalnych klientów (OA7)
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/ad7.jpg)
 
 
@@ -2324,7 +2390,6 @@ stop
 ### 2.5.8 Zarządzanie
 ![Diagram Aktywności zarządzania](./diagrams/images/OA8_activity_diagram.jpg)
 
----
 
 <div class="page">
 
