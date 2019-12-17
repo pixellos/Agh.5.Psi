@@ -647,13 +647,13 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.2 - Zmień dane dostawcy
+**Numer i Nazwa przypadku użycia:** UC-1.2 - Zarządzanie rejestrem dostawców
 
 **Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Aktualizacja lub poprawienie danych dostawcy
+**Cel przypadku użycia:** Aktualizacja danych dostawcy
 
-**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości zmiany istniejących dostawców. 
+**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości zmiany istniejących dostawców lub dodania nowych. 
 
 **Zakres:** System do obsługi dostawców
 
@@ -667,8 +667,8 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 **Główny scenariusz powodzenia:**
 
-1. System szuka istniejącego dostawcy używając `UC-1.1`
-1. System wyświetla [formularz danych](./wzory/1.Dane_dostawcy.docx) dostawcy wypełniony wyszukanymi danymi
+1. System wyświetla [formularz danych](./wzory/1.Dane_dostawcy.docx)
+1. System próbuje wypełnić go danymi znalezionymi przez `UC-1.1`, gdy nie może Id jest generowane
 1. `Konsultant` poprawia dane
 1. System weryfikuje dane
 1. `Dostawca` zostaje zapisany
@@ -684,46 +684,8 @@ _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zakla
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.3 - Dodaj dostawcę
 
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Dodanie dostawcy do systemu
-
-**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości wprowadzenia istniejących dostawców do systemu. Innym przypadkiem jest sytuacja, gdy firma pozyska nowego dostawcę - w tym wypadku także będziemy musieli go wpisać do systemu.
-
-**Zakres:** System do obsługi dostawców
-
-**Poziom:** Przetwarzanie danych dostawców
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Dostawca nie jest zarejestrowany
-
-**Zdarzenie inicjujące:** Dostawca wyraził chęć dołączenia do naszego łańcucha dostaw
-
-**Główny scenariusz powodzenia:**
-
-1. System wyświetla pusty [formularz danych](./wzory/1.Dane_dostawcy.docx) 
-2. `Konsultant` wpisuje dane
-3. System weryfikuje dane
-4. `Dostawca` zostaje zapisany
-
-**Scenariusze alternatywne:**
-
-1. `Dostawca` istnieje w systemie (wyszukany przez `UC-1.1`), system proponuje `UC-1.2`
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
-_Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
-
----
-
-
-
-**Numer i Nazwa przypadku użycia:** UC-1.4 - Wyszukaj towar
+**Numer i Nazwa przypadku użycia:** UC-1.3 - Wyszukaj towar
 
 **Autor:** Mateusz Popielarz
 
@@ -749,7 +711,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 **Scenariusze alternatywne:**
 
-1. `Towar` nie istnieje w systemie, system proponuje `UC-1.6`
+1. `Towar` nie istnieje w systemie, system proponuje dodanie towaru używając `UC-1.4`
 
 **Uczestnicy i interesy:**
 
@@ -757,11 +719,11 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.5 - Zmiana towaru
+**Numer i Nazwa przypadku użycia:** UC-1.4 - Zarządzanie rejestrem towarów
 
 **Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Zmiana wpisów rejestru towarów
+**Cel przypadku użycia:** Dodawanie, modyfikacja i markowanie jako usunięty towarów
 
 **Kontekst użycia:** Dane towaru muszą zostać zaktualizowane
 
@@ -771,15 +733,16 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Aktor główny:** Konsultant
 
-**Warunek początkowy:** Towaru istnieje ma w systemie, jest wyszukany przez `UC-1.4`
+**Warunek początkowy:** -
 
-**Zdarzenie inicjujące:** Konsultant dowiaduje się o zmianie w towarze od dostawcy
+**Zdarzenie inicjujące:** Konsultant dowiaduje się o zmianie w danych towaru od dostawcy
 
 **Główny scenariusz powodzenia:**
 
-1. Rekord systemu jest podznaczony
-2. `Konsultant` wybiera opcję 'zmień'
-3. System wyświetla [wypełniony wpis towaru](./wzory/3.Wpis_towaru_w_katalogu.docx)
+1. System próbuje wypełnić go danymi znalezionymi przez `UC-1.3`, gdy nie może Id jest generowane
+1. System wyswietla [wypełniony wpis towaru](./wzory/3.Wpis_towaru_w_katalogu.docx)
+1. `Konsultant` poprawia dane
+1. System weryfikuje dane
 4. `Towar` Zostaje zapisany
 
 **Scenariusze alternatywne:**
@@ -792,81 +755,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-1.6 - Dodanie towaru
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Dodanie wpisu rejestru towarów
-
-**Kontekst użycia:** Dane towaru muszą zostać dodane
-
-**Zakres:** Prowadzenie rejestru towarów
-
-**Poziom:** Prowadzenie katalogu i cennika towarów
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Towaru nie istnieje w systemie, (`UC-1.4`)
-
-**Zdarzenie inicjujące:** Konsultant dowiaduje się o nowym towarze od dostawcy
-
-**Główny scenariusz powodzenia:**
-
-1. Wybrana jest opcja 'Dodaj`
-1. System używając `UC-1.4` sprawdza, że nie istnieje towar
-1. Systemowy klucz produktu jest generowany, towar zaślepka jest tworzony
-3. Przechodzimy do `UC-1.5` z nowo utworzonym produktem
-4. `Towar` Zostaje dodany
-
-**Scenariusze alternatywne:**
-
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
-1. Towar zaślepka jest usuwany
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-1.7 - Wprowadź próg cenowy
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Ustalanie cen
-
-**Kontekst użycia:** W systemie każdy `towar` musi mieć możliwość definiowania `ceny` - cena powinna być możliwa do ustawienia wobec zakupionego progu ilościowego a także grupy klientów w której klient się znajduje. Ceny muszą mieć możliwość dodania przedziału czasowego w których są aktualne.
-
-**Zakres:** Ustalenie pozycji
-
-**Poziom:** Prowadzenie katalogu i cennika towarów
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Ceny są nieaktualne
-
-**Zdarzenie inicjujące:** Konsultant chce zaktualizować ceny
-
-**Główny scenariusz powodzenia:**
-
-1. System stosuje `UC-1.5`
-1. `Konsultant` klika opcjonalną opcję `dodaj progi cenowe`
-1. Wyświetlane jest okienko modalne [wpis ceny towaru](./wzory/4.Wpis_dotyczący_ceny_towaru.docx)
-3. `Towar` zostaje zapisany z cenami
-
-**Scenariusze alternatywne:**
-
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
-
-1. Okresy progów cenowych na siebie nachodzą, jest wyświetlany błąd
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-1.8 - Generowanie cennika
+**Numer i Nazwa przypadku użycia:** UC-1.5 - Generowanie cennika
 
 **Autor:** Mateusz Popielarz
 
@@ -917,7 +806,9 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` wybiera towar do rezerwacji i okres używając `UC-1.1`
+1. `Konsultant` próbuje modyfikować towar używając `UC-1.4`
+1. `Konsultant` wybiera opcję `zarezerwuj` - pokazuje sie modal z wyborem okresu rezerwacji 
+1. `Konsultant` wpisuje dane i zatwierdza
 1. Rezerwacja towaru zostaje zapisana w systemie
 
 **Scenariusze alternatywne:**
@@ -2146,7 +2037,10 @@ Marketingowiec - dostaje raport zawierający analizy
 
 **Scenariusze alternatywne:**
 
-1. `Potencjalny klient` nie istnieje w systemie, system proponuje `UC-7.3`
+1. Pokaż historię kontaktu - `Konsultant` chce się dowiedzieć, jaki jest stan kontaktu z klientem, jaki był ostani feedback od niego
+   1. `Konsultant` otwiera wpis `Potencjalnego klienta`
+   1. `Konsultant` wybiera historii kontaktu
+   1. System wyświetla historię kontaktu
 
 **Uczestnicy i interesy:**
 
@@ -2154,7 +2048,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-7.2 - Zmień dane `potencjalnego klienta`
+**Numer i Nazwa przypadku użycia:** UC-7.2 - Zarządzanie rejestrem `potencjalnego klienta`
 
 **Autor:** Mateusz Popielarz
 
@@ -2182,115 +2076,25 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 
 **Scenariusze alternatywne:**
 
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
-
+1. Anonimizacja danych - klient wyraził żądanie usunięcia danych wrażliwych z naszych rejestrów
+   1. System szuka istniejące dostawcy używając `UC-7.1`
+   1. `Konsultant` przechodzi na `UC-7.2` i wybiera opcję RODO
+   1. System anonimizuje dane wrażliwe (jest to potencjalny klient, więc jeszcze nie ma żadnych faktur - nie musimy się nimi przejmować0)
+   1. System anonimizuje powiązane wpisy w rejestrze potencjalnego klienta 
+   1. System zapisuje zmiany
+   
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
 _Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
 
----
 
-**Numer i Nazwa przypadku użycia:** UC-7.3 - Dodaj `Potencjalnego klienta` do rejestru
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Dodanie `Potencjalnego klienta` do systemu
-
-**Kontekst użycia:** ​Gdy do naszej firmy zgłosi się nowy klient i jeszcze nie potwierdzi zgody na rodo do rejestru wpisujemy tylko niezbędne dane jak Numer Identyfikacyjny i numer telefonu.
-
-**Zakres:** Obsługa potencjalnych klientów
-
-**Poziom:** Prowadzenie rekordów potencjalnych klientów
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** `Potencjalny klient` nie jest zarejestrowany
-
-**Zdarzenie inicjujące:** `Potencjalny klient` skontaktował się z nami, albo znaleźliśmy interesującego 
-
-**Główny scenariusz powodzenia:**
-
-1. System wyświetla pusty [formularz danych](./wzory/18.Instom_formularz_danych_potencjalnego_klienta) 
-2. `Konsultant` wpisuje dane
-3. System weryfikuje dane
-4. `Potencjalny klient` zostaje zapisany
-
-**Scenariusze alternatywne:**
-
-1. `Potencjalny klient` istnieje w systemie (wyszukany przez `UC-7.1`), system proponuje `UC-7.2`
-1. Dane nie przeszły walidacji, jest wyświetlany błąd
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-7.4 - Zanonimizuj dane `Potencjalnego klienta` w przypadku odmowy kontaktu (RODO)
 
-**Autor:** Mateusz Popielarz
 
-**Cel przypadku użycia:** Kompatybilność z RODO
-
-**Kontekst użycia:** `Potencjalny klient` 
-
-**Zakres:** Obsługa potencjalnych klientów
-
-**Poziom:** Prowadzenie rekordów potencjalnych klientów
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Towar istnieje w systemie
-
-**Zdarzenie inicjujące:** Konsultant chce zobaczyć wpis towaru
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` przechodzi na `UC-7.2` i wybiera opcję RODO
-2. System anonimizuje powiązane wpisy w rejestrach
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Może zostać pociągnięty pod odpowiedzialność karną w przypadku niedopełnienia obowiązków
-
----
-
-**Numer i nazwa przypadku uzycia:** UC-7.5 - Wyświetlenie histori kontaktu z `Potencjalnym klientem`
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Wyświetlenie histori kontaktu z `Potencjalnym klientem`
-
-**Kontekst użycia:** Rozeznanie w 
-
-**Zakres:** Obsługa potencjalnych klientów
-
-**Poziom:** Informowanie o ofercie
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Klient istnieje w systemie i posiada historię kontaktu
-
-**Zdarzenie inicjujące:** `Konsultant` chce wiedzieć, czy powinien odezwać się do `potencjalnego klienta` z ofertą
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` otwiera wpis `Potencjalnego klienta`
-1. `Konsultant` wybiera historii kontaktu
-1. System wyświetla historię kontaktu
-
-**Scenariusze alternatywne:**
-
-1. Wystąpił błąd - zostaje wyświetlony komunikat błędu i prosi o sprawdzenie integralności danych `UC-7.2`
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
-
----
-
-**Numer i nazwa przypadku uzycia:** UC-7.6 - Wysylanie notyfikacji o ofercie pocztą elektroniczną email
+**Numer i nazwa przypadku uzycia:** UC-7.3 - Wysylanie notyfikacji o ofercie pocztą elektroniczną email
 
 **Autor:** Mateusz Popielarz
 
@@ -2312,9 +2116,11 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` otwiera wpis `klienta`
+1. `Konsultant` odczytuje dane wpisu klienta używając `OA-7.2`
+1. System korzystając z systemu Obsługi zleceń zakupu generuje ofertę
 1. `Konsultant` wybiera opcję wysłania wiadomości
-1. System wysyła wiadomość
+1. System wysyła wiadomość do `Potencjalnego Klienta`
+1. System używając `OA-7.2` odnotowuje fakt wysłania wiadomości
 
 **Scenariusze alternatywne:**
 
@@ -2324,8 +2130,7 @@ _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
 _Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
 
----
-
+<div class="page">
 
 
 #### 2.1.2.8 Zarzadzanie
