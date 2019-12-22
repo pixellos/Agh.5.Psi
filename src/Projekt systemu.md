@@ -1,5 +1,5 @@
 Zespół: 
-- _Mateusz Popielarz_
+- _Mateusz Popielarz_ - Leader zespołu
 - Adam Samsonowicz
 - Kamil Gliński
 - Kacper Kwapisz
@@ -9,7 +9,7 @@ Zespół:
 
 ![logo](https://industryweek.pl/katalog-wystawcow/photos/177/file/107/instom-logo+slogan_png8_500px.png?size=)
 
-Żródło danych: Firma rodzinna
+Źródło danych: Firma rodzinna
 
 
 AGH WIET - Praca PSI, semestr 6, 2019 - 2020.
@@ -17,8 +17,6 @@ AGH WIET - Praca PSI, semestr 6, 2019 - 2020.
 <div class="page">
 
 Spis Treści
-
----
 
 <!-- TOC insertanchor:false withlinks:true anchormode:github.com updateonsave:true orderedlist:true depthfrom:1 depthto:3 -->
 
@@ -67,46 +65,46 @@ Spis Treści
         - [2.7.1. Wymagania Produktowe](#271-wymagania-produktowe)
         - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne)
         - [2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)
-- [3. Załącznik A: Słownik pojęć dziedzinowych:](#3-załącznik-a-słownik-pojęć-dziedzinowych)
-    - [3.1. A](#31-a)
-    - [3.2. F](#32-f)
-    - [3.3. I](#33-i)
-    - [3.4. K](#34-k)
-    - [3.5. P](#35-p)
-    - [3.6. R](#36-r)
-    - [3.7. S](#37-s)
-    - [3.8. Z](#38-z)
-- [4. Załącznik B: Wzory dokumentów](#4-załącznik-b-wzory-dokumentów)
-        - [4.1. Danedostawcy.docx](#41-danedostawcydocx)
-        - [4.2. Danefabryki.docx](#42-danefabrykidocx)
-        - [4.3. Wpistowaruwkatalogu.docx](#43-wpistowaruwkatalogudocx)
-        - [4.4. Wpisdotyczącycenytowaru.docx](#44-wpisdotyczącycenytowarudocx)
-        - [4.5. Dokumentofertowy.doc](#45-dokumentofertowydoc)
-        - [4.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#46-dokumentpotwierdzajacyrealizacjereklamacjidocx)
-        - [4.7. Formularzofertyudzielonejdlaklienta.doc](#47-formularzofertyudzielonejdlaklientadoc)
-        - [4.8. Formularzprosbyodostepnosctowaru.docx](#48-formularzprosbyodostepnosctowarudocx)
-        - [4.9. Formularzreklamacjidodostawcy.docx](#49-formularzreklamacjidodostawcydocx)
-        - [4.10. Formularzreklamacjiodklienta.docx](#410-formularzreklamacjiodklientadocx)
-        - [4.11. Instomformularzdanychklienta.docx](#411-instomformularzdanychklientadocx)
-        - [4.12. Instomprzesunieciemiedzymagazynowe.docx](#412-instomprzesunieciemiedzymagazynowedocx)
-        - [4.13. Instomprzyjecie zewnetrzne.docx](#413-instomprzyjecie-zewnetrznedocx)
-        - [4.14. Instomrozchodwewnetrzny.docx](#414-instomrozchodwewnetrznydocx)
-        - [4.15. Instomwydanie zewnetrzne.docx](#415-instomwydanie-zewnetrznedocx)
-        - [4.16. Raportzakcjimarketingowych.doc](#416-raportzakcjimarketingowychdoc)
-        - [4.17. Zamówienieklienta.doc](#417-zamówienieklientadoc)
-        - [4.18. Instomformularzdanychpotencjalnegoklienta.docx](#418-instomformularzdanychpotencjalnegoklientadocx)
-- [5. Załącznik C:](#5-załącznik-c)
-- [6. Załącznik D:](#6-załącznik-d)
-- [7. Załącznik E: Spis rysunków](#7-załącznik-e-spis-rysunków)
-- [8. Załącznik F: Podział zadań](#8-załącznik-f-podział-zadań)
+- [3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)](#3-analiza-funkcjonalna-systemu-przy-pomocy-przepływów-danych--i-proces-dekompozycji)
+    - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk)
+- [4. Załącznik A: Słownik pojęć dziedzinowych:](#4-załącznik-a-słownik-pojęć-dziedzinowych)
+    - [4.1. A](#41-a)
+    - [4.2. F](#42-f)
+    - [4.3. I](#43-i)
+    - [4.4. K](#44-k)
+    - [4.5. P](#45-p)
+    - [4.6. R](#46-r)
+    - [4.7. S](#47-s)
+    - [4.8. Z](#48-z)
+- [5. Załącznik B: Wzory dokumentów](#5-załącznik-b-wzory-dokumentów)
+        - [5.1. Danedostawcy.docx](#51-danedostawcydocx)
+        - [5.2. Danefabryki.docx](#52-danefabrykidocx)
+        - [5.3. Wpistowaruwkatalogu.docx](#53-wpistowaruwkatalogudocx)
+        - [5.4. Wpisdotyczącycenytowaru.docx](#54-wpisdotyczącycenytowarudocx)
+        - [5.5. Dokumentofertowy.doc](#55-dokumentofertowydoc)
+        - [5.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#56-dokumentpotwierdzajacyrealizacjereklamacjidocx)
+        - [5.7. Formularzofertyudzielonejdlaklienta.doc](#57-formularzofertyudzielonejdlaklientadoc)
+        - [5.8. Formularzprosbyodostepnosctowaru.docx](#58-formularzprosbyodostepnosctowarudocx)
+        - [5.9. Formularzreklamacjidodostawcy.docx](#59-formularzreklamacjidodostawcydocx)
+        - [5.10. Formularzreklamacjiodklienta.docx](#510-formularzreklamacjiodklientadocx)
+        - [5.11. Instomformularzdanychklienta.docx](#511-instomformularzdanychklientadocx)
+        - [5.12. Instomprzesunieciemiedzymagazynowe.docx](#512-instomprzesunieciemiedzymagazynowedocx)
+        - [5.13. Instomprzyjecie zewnetrzne.docx](#513-instomprzyjecie-zewnetrznedocx)
+        - [5.14. Instomrozchodwewnetrzny.docx](#514-instomrozchodwewnetrznydocx)
+        - [5.15. Instomwydanie zewnetrzne.docx](#515-instomwydanie-zewnetrznedocx)
+        - [5.16. Raportzakcjimarketingowych.doc](#516-raportzakcjimarketingowychdoc)
+        - [5.17. Zamówienieklienta.doc](#517-zamówienieklientadoc)
+        - [5.18. Instomformularzdanychpotencjalnegoklienta.docx](#518-instomformularzdanychpotencjalnegoklientadocx)
+- [6. Załącznik C:](#6-załącznik-c)
+- [7. Załącznik D:](#7-załącznik-d)
+- [8. Załącznik E: Spis rysunków](#8-załącznik-e-spis-rysunków)
+- [9. Załącznik F: Podział zadań](#9-załącznik-f-podział-zadań)
 
 <!-- /TOC -->
 
 <div class="page">
 
 # 1. Sformułowanie zadania projektowego
-
-<div class="page">
 
 ## 1.1 Przedmiot modelowania – opis dziedziny problemu
 
@@ -436,11 +434,11 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
       Jako `magazynier` chce mieć możliwość `wyszukiwania produktów` aby `pobrać produkt o określonych atrybutach`.
 	
-   1. Pobranie szczegolowych danych o produkcie
+   1. Pobranie szczegółowych danych o produkcie
 	
       Jako `magazynier` chce mieć możliwość `pobrania informacji na temat produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
 	
-   1. Pobranie wszystkich dostepnych produktow
+   1. Pobranie wszystkich dostępnych produktow
 	
       Jako `magazynier` chce mieć możliwość `pobrania wszystkich dostepnych produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
 	
@@ -548,10 +546,7 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 
 # 2. Opis Wymagań Systemu
 
-<div class="page">
-
 ## 2.1 Funkcje systemu ze strony widzenia użytkownika
-
 
 ```plantuml test
 @startuml
@@ -2348,7 +2343,6 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 <div class="page">
 
-
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA6.jpg)
 ##### _Rysunek X. Diagram aktywności analizy danych na potrzeby 
@@ -2357,39 +2351,12 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 ### 2.5.7 Obsługa  potencjalnych klientów (OA7)
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/ad7.jpg)
+##### _Rysunek X. Diagram aktywności podsystemu do obsługi potencjalnych klientów
 
-
-
-```plantuml X.X.X
-@startuml
-Title Zapytanie ofertowe\n\n
-
-
-|Klient|
-start
-:Wyspecyfikowanie potrzeb;
-:Skontaktowanie się z firmą;
-|Konsultant|
-if(Czy istnieje) then
-->Nie;   
-:Dodanie klienta;
-else
-->Tak;
-:Otwarcie wpisu klienta; 
-endif
-:Wygenerowanie cennika;
-|Klient|
-:Przeczytanie cennika;
-stop
-@enduml
-```
-
-##### _Rysunek 17. Diagram aktywności analizy danych na potrzeby marketingowe_
-
+<div class="page">
 
 ### 2.5.8 Zarządzanie
 ![Diagram Aktywności zarządzania](./diagrams/images/OA8_activity_diagram.jpg)
-
 
 <div class="page">
 
@@ -2419,6 +2386,7 @@ stop
 
 **Uwagi:**
 
+<div class="page">
 
 ### 2.6.2 Wprowadzenie dokumentów do systemu
 
@@ -2443,6 +2411,8 @@ stop
 **Efekty uboczne:** -
 
 **Uwagi:** -
+<div class="page">
+
 
 ### 2.6.3 Przydział pracowników do określonych zadań
 
@@ -2468,6 +2438,7 @@ stop
 
 **Uwagi:** Problemy z tym procesem będzie rozwiązywać dział IT
 
+<div class="page">
 
 ### 2.6.4 Logowanie
 
@@ -2491,6 +2462,7 @@ stop
 
 **Efekty uboczne:** Log zostaje zapisany
 
+<div class="page">
 
 ### 2.6.5 Wylogowywanie
 
@@ -2521,7 +2493,7 @@ stop
 
 Wymagania niefunkcjonalne dotyczą systemu jako całości - określimy w tym punkcie cechy, które muszą być spełnione w naszym systemie, aby zagwarantować jego jakość.
 
-<div class="page">
+
 
 ### 2.7.1 Wymagania Produktowe
 
@@ -2588,6 +2560,8 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
   - **Cecha:** System docelowo będzie napisany na jedną platformę
   - **Miary:** Liczba platform docelowych
 
+<div class="page">
+
 ### 2.7.2 Wymagania organizacyjne
 
 Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, jak i w firmie - wytwórcy
@@ -2633,6 +2607,8 @@ Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, ja
   - **Cecha:** Build system produktu będzie realizowany np. za pomocą narzędzia Gradle
 - **Testowanie jednostkowe i funkcyjne kodu**
   - **Cecha:** Testy jednostkowe i funkcyjne implementowane będą np. przy pomocy narzędzi: JUnit, Mockito
+
+<div class="page">
 
 ### 2.7.3 Wymagania zewnętrzne
 
@@ -2685,9 +2661,38 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
   - **Cecha:** Aplikacja nie wspiera przetrzymywania wrażliwych danych w pamięci podręcznej przeglądarki
   - **Miara:** ResponseHeader {Cache-Control: no-store}
 
-# Załącznik A: Słownik pojęć dziedzinowych:
 
 <div class="page">
+
+# 3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)
+
+- Cel systemu:
+   Usprawnienie pracy w zakresie zarządzania `zleceniami zakupu`, `zamówieniami`, stanem magazynowym, kontaktem z `klientami` i `potencjalnymi klientami`, tworzeniem raportów dla zarządu i prowadzeniem historii kontaktu z klientami
+
+- Zdarzenia (Lista zdarzeń):
+   - Utworzenie zamówienia u dostawcy i otrzymanie informacji o dostawie
+   - Poinformowanie klienta o dostępnych towarach odpowiadających mu i doprecyzowanie informacji lub przyjęcie oferty
+   - Wysyłanie materiałów promocyjnych do `Potencjalnych klientów`
+   - Wystawianie `Raportów` dla Zarządu firmy
+   - Sprawdzenie aktualnego stanu towaru w magazynie i razie potrzeby aktualizacja do stanu obecnego
+   - Wysyłanie dokumentów do księgowości zewnętrznej
+   - Wprowadzanie dokumentów do systemu przez konsultanta
+
+- Uwagi
+   - Wysyłane dokumenty - różne
+   - Wprowadzane dokumenty przez konsultanta - różne
+   
+<div class="page">
+
+## 3.1. Diagram kontekstowy (DK)
+![Diagram kontekstowy](./diagrams/images/DiagramKontekstowy.jpg)
+##### Rysunek XX. Diagram kontekstowy
+
+
+
+<div class="page">
+
+# Załącznik A: Słownik pojęć dziedzinowych:
 
 ## A
 
@@ -2775,6 +2780,8 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 - [2.4.7.1. Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów](#markdown-header-2471-rysunek-14-diagram-przypadków-użycia-obsługi-rejestru-potencjalnych-klientów)
 - [2.4.7.2. Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie](#markdown-header-2472-rysunek-15-diagram-przypadków-użycia-funkcji-informowania-o-ofercie)
 - [2.4.8.1. Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień](#markdown-header-2481-rysunek-16-diagram-przypadków-użycia-wprowadzenia-dokumentów-i-zadań-przez-pracownika-oraz-właściciela-do-systemu-oraz-wglądu-do-prognozy-zamówień)
+
+<div class="page">
 
 # Załącznik F: Podział zadań
 
