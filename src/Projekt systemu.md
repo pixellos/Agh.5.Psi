@@ -419,7 +419,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
       Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty w prcedurze`.
 	
 <div class="page">
-	  
+
 #### 1.3.1.5 Rejestr magazynu (OA5)
 
    1. Zarejestrowanie produktu
@@ -451,7 +451,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
       Jako `magazynier` chce mieć możliwość `tworzyć zamówienia dostaw` aby `zapewnić wymagane dokumenty dotyczące dostaw`.
       
 <div class="page">
-      
+
 #### 1.3.1.6 Analizy danych na potrzeby marketingowe (OA6)
 
 1. Statystyki powiązane z katalogiem produktowym
@@ -910,26 +910,29 @@ Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.2 - Przyjęcie zapytania ofertowego od klienta
+**Numer i nazwa przypadku uzycia:** UC-2.2 - Tworzenie oferty
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Poinformowanie `konsultanta` o potrzebie obsługi danego zapytania ofertowego
+**Cel przypadku użycia:** Stworzenie oferty w systemie w celu przedstawienia jej klientowi
 
-**Kontekst użycia:** `Klient` wysyła zapytanie ofertowe drogą mailową z opisanym problemem. `Konsultant` po otrzymaniu informacji o potrzebie `klienta` zaczyna proces ofertowy.
+**Kontekst użycia:** `Konsultant` musi mieć możliwość tworzenia oferty i dokumentu ofertowego w celu przedstawienia propozycji `klientowi` 
 
 **Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** `Klient` i `konsultant` nawiązali wcześniej komunikacje drogą słowną lub elektroniczną.
+**Warunek początkowy:** `Klient` i `konsultant` zawarli porozumienia o potrzebie przygotowania oferty
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
+**Zdarzenie inicjujące:** `Klient` wyraża chęć zakupu `konsultantowi` 
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` po otrzymaniu zapytania ofertowego rozpoczyna proces ofertowy klikając przycisk 'Nowa oferta' znajdujący się na głównej stronie systemu.
-2. Formularz nowej oferty został wyświetlony
+1. `Konsultant` otwiera pustą oferte
+2. `Konsultant` dodaje klienta do oferty
+3. `Konsultant` uzupełnia podstawowe informację o ofercie
+4. `Konsultant` dodaje produkty do oferty
+5. `Konsultant` wysyła oferte do zatwierdzenia
 
 **Scenariusze alternatywne:** Brak
 
@@ -943,47 +946,53 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.3 - Utworzenie oferty w systemie
+**Numer i nazwa przypadku uzycia:** UC-2.3 - Zatwierdzanie oferty
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Wypełnienie podstawowych informacji dotyczących klienta oraz kontekstu przygotowywanej oferty. Przed wybraniem produktów `konsultant` ma możliwość i obowiązek uzupełnienia informacji na temat oferty takich jak przewidywany zysk, priorytet oferty dla klienta, termin ważności oferty.
+**Cel przypadku użycia:** Zatwierdzanie lub anulowanie ofert
 
-**Kontekst użycia:** `Konsultant` ma możliwość stworzenia oferty i wyboru klienta dla, którego ta oferta będzie dalej procesowana. `Konsultant` ma równiez możliwość uzupełnienia podstawowych informacji, które będą później widoczne na ofercie oraz będą mogły być użyte do analiz i raportów.
+**Kontekst użycia:** `Konsultant` stworzył oferte, żeby dalej procesować potrzebuje zgody `potwierdzającego oferte` 
 
 **Zakres:** Proces ofertowy
 
 **Poziom:** Proces ofertowy
 
-**Warunek początkowy:** Formularz nowej oferty jest wyświetlony
+**Warunek początkowy:** Oferta jest stworzona i wymaga zatwierdzenia
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
+**Zdarzenie inicjujące:** `Konsultant` wysyła prośbe o zatwierdzenie oferty do `zatwierdzającego oferte`
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` uzupełnia podstawowe informacje dotyczące oferty na stronie nowej oferty między innymi wybiera `klienta`, dla którego tworzona jest oferta
-2. Wszystkie informację zostały wybrane poprawnie, `konsultant` klika na przycisk 'Utwórz nową oferte'
-3. System powiadamia `konsultanta` o poprawnym utworzeniu oferty
+1. `Zatwierdzający oferte` otrzymuje prośbe o zatwierdzenie oferty
+2. `Zatwierdzający oferte` sprawdza ceny sprzedażowe produktów i marże
+3. `Zatwierdzający oferte` zatwierdza oferte
+4. `Konsultant` może wygenerować dokument
 
 **Scenariusze alternatywne:**
 
-1. Brak
+1. `Zatwierdzający oferte` otrzymuje prośbe o zatwierdzenie oferty
+2. `Zatwierdzający oferte` rozpatruje warunki i dane oferty do zatwierdzenia
+3. `Zatwierdzający oferte` anuluje oferte z informacjami jakie zmiany muszą być dokonane, żeby oferta mogła być zatwierdzona
+4. `Konsultant` zmienia ceny sprzedażowe produktów i marże na akceptowalne
 
 **Aktor główny:** Konsultant
 
 **Uczestnicy i interesy:**
 
-Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później wykorzystywane do raportów.
+Konsultant - Dostaje zatwierdzoną oferte, lub zmienia oferte na możliwą do zatwierdzenia
+
+Zatwierdzający oferte - rozpatruje oferte w kontekście zatwierdzenia
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.4 - Dodanie produktów do oferty
+**Numer i nazwa przypadku uzycia:** UC-2.4 - Dodawanie produktów
 
 **Autor:** Adam Samsonowicz
 
 **Cel przypadku użycia:** Wyszukanie produktów i dodanie ich do oferty
 
-**Kontekst użycia:** `Konsultant` ma możliwość dodania produktów do oferty, którą tworzy dla klienta.
+**Kontekst użycia:** `Konsultant` ma możliwość dodania produktów do oferty.
 
 **Zakres: **Proces ofertowy
 
@@ -991,7 +1000,7 @@ Konsultant - Uzupełnia informacje na temat oferty. Informacje te są później 
 
 **Warunek początkowy:** Oferta została poprawnie utworzona w systemie, `konsultantowi` udało się wyszukać produkt
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
+**Zdarzenie inicjujące:** Potrzeba dodania produktu przez `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
@@ -1010,7 +1019,7 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.5 - Wyszukiwanie produktów w systemie
+**Numer i nazwa przypadku uzycia:** UC-2.5 - Wyszukiwanie produktów
 
 **Autor:** Adam Samsonowicz
 
@@ -1024,7 +1033,7 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 **Warunek początkowy:** Brak
 
-**Zdarzenie inicjujące:** `Klient` wysyła zapytanie ofertowe do `konsultanta`
+**Zdarzenie inicjujące:** Potrzeba wyszukania produktu przez `konsultanta`
 
 **Główny scenariusz powodzenia:**
 
@@ -1043,113 +1052,6 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 **Uczestnicy i interesy:**
 
 Konsultant - wyszukanie produktów
-
----
-
-**Numer i nazwa przypadku uzycia:** UC-2.6 - Wygenerowanie dokumentu ofertowego
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Wygenerowanie oferty, która będzie przedstawiona klientowi
-
-**Kontekst użycia:** `Konsultant` przygotował oferte dla `klienta` i potrzebuje reprezentatywnego dokumentu, który będzie można przesłać do `klienta` elektronicznie lub wydrukować i przedstawić podczas spotkania.
-
-**Zakres:** Proces ofertowy
-
-**Poziom:** Proces ofertowy
-
-**Warunek początkowy:** Oferta jest zatwierdzona lub nie wymaga zatwierdzenia
-
-**Zdarzenie inicjujące:** Oferta jest gotowa, żeby przedstawić ją klientowi
-
-**Główny scenariusz powodzenia:** 
-
-1. `Konsultant` po poprawnym utworzeniu oferty przechodzi na stronę generowania oferty
-2. `Konsultant` konfiguruje layout oferty na dokumencie
-3. `Konsultant` generuje oferte
-
-**Scenariusze alternatywne:**
-
-1. Brak
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - generuje dokument ofertowy na podstawie danych uzupełnionych na ofercie
-
----
-
-**Numer i nazwa przypadku uzycia:** UC-2.7 - Wysłanie oferty do zatwierdzenia
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Dalsze procesowania oferty w przypadku gdy wartość oferty wykracza poza kryteria samodzielnego składania ofert
-
-**Kontekst użycia:** Oferta, którą zajmował się `konsultant` przekroczyła wartość pozwalającą na samodzielność danego `konsultanta` i wymagane jest potwierdzenie od przełożonego. Przełożonym jest `konsultant` z wyższym stażem lub pracownik na szczeblu kierowniczym nazywany `Zatwierdzającym oferte`.  `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty.
-
-**Zakres:** Proces ofertowy
-
-**Poziom:** Proces ofertowy
-
-**Warunek początkowy:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert
-
-**Zdarzenie inicjujące:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert, `Konsultant` potrzebuje procesować oferte dalej
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` przechodzi na stronę generowania oferty
-2. `Konsultant` wybiera opcje 'Wyślij oferte do zatwierdzenia' 
-3. Oferta została wysłana do zatwierdzenia
-
-**Scenariusze alternatywne:**
-
-1. Brak
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własności nad ofertą
-
----
-
-**Numer i nazwa przypadku uzycia:** UC-2.8 - Zatwierdzenie oferty przez przełożonego
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Wartość oferty wykracza poza kryteria samodzielnego składania ofert, `zatwierdzający oferte` podejmuje decyzje w kontekście dalszego procesowania oferty 
-
-**Kontekst użycia:** `Konsultant` wysyła poprzez system prośbę o akceptację na dalsze procesowanie. `Zatwierdzający oferte` ma możliwość akceptacji lub odrzucenia danej prośby, lub przejęcia procesowania oferty.
-
-**Zakres:** Proces ofertowy
-
-**Poziom:** Proces ofertowy
-
-**Warunek początkowy:** Prośba o zatwierdzenie zostałą wysłana
-
-**Zdarzenie inicjujące:** UC-2.7 - Wysłanie oferty do zatwierdzenia
-
-**Główny scenariusz powodzenia:** 
-
-1. `Zatwierdzający oferte` dostaje prośbę o zatwierdzenie oferty
-2. `Zatwierdzający oferte` akceptuje prośbę
-
-**Scenariusze alternatywne:**
-
-1. Zatwierdzający oferte` dostaje prośbę o zatwierdzenie oferty
-2. `Zatwierdzający oferte` odrzuca prośbę
-
-1. Zatwierdzający oferte` dostaje prośbę o zatwierdzenie oferty
-2. `Zatwierdzający oferte` przejmuje oferte i procesuje ją samodzielnie
-
-**Aktor główny:** Konsultant
-
-**Uczestnicy i interesy:**
-
-Konsultant - wysyła prośbe o akceptację procesowania lub przejęcie własności nad ofertą
-
-Zatwierdzający oferte - akceptuje, odrzuca prośbę o zatwierdzenie lub przejmuje oferte i procesują ją dalej.
 
 #### 2.1.2.3 Obsługa reklamacji
 ![](./diagrams/images/Obsluga_reklamacji.jpg)
@@ -1990,71 +1892,46 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ##### Rysunek 12. Statyki powiązane z katalogiem produktowym\_
 
-**Numer i nazwa przypadku uzycia:** UC-6.1 - Analiza danych
+**Numer i nazwa przypadku uzycia:** UC-6.1 - Generowanie raportu
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Analiza danych na potrzeby raportów 
+**Cel przypadku użycia:** Generowanie raportu na potrzeby marketingowe 
 
-**Kontekst użycia:** Wszystkie stworzone oferty oraz ich historia zawierają informacje, które można wykorzystać do podjęcia strategicznych decyzji. Analizy umieszczone są na raporcie. Raport może być generowany manualnie. Raport może być generowany automatycznie po wcześniejszej konfiguracji i ustawienia ram czasowych.
+**Kontekst użycia:** Podejmowanie decyzji przez marketingowców wymaga czasem dedykowanych analiz, raport zawiera takie analizy i dane.
 
 **Zakres:** Analiza danych
 
 **Poziom:** Analiza danych
 
-**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne. 
+**Warunek początkowy:** Potrzeba użycia raportu
 
-**Zdarzenie inicjujące:** Manualne zainicjowanie raportu lub automatyczna analiza inicjowana zgodnie z zaplanowanym wcześniej harmonogramem
+**Zdarzenie inicjujące:** Inicjacja przez `marketingowca` 
 
 **Główny scenariusz powodzenia:**
 
-1. `System analizujący dane` ma dostęp do rejestrów, które podlegają analizie
-2. `System analizujący dane` wykonuje obliczenia na rejestrach w celu uzyskania raportu
+1. `Marketingowiec` inicjuje generowanie raportu
+2. `System analizujący dane` sprawdza czy raport na dany okres jest utworzony
+3. `System analizujący dane` analizuje rejestry jako, że raport nie został wcześniej utworzony
+4. `System analizujący dane` generuje raport
+5. `System analizujący dane` wysyła raport do `marketingowca`
+6. `Marketingowiec` odbiera raport
 
 **Scenariusze alternatywne:**
 
-1. Brak
+1. `Marketingowiec` inicjuje generowanie raportu
+2. `System analizujący dane` sprawdza czy raport na dany okres jest utworzony
+3. `System analizujący dane` generuje wcześniej utworzony raport 
+4. `System analizujący dane` wysyła raport do `marketingowca`
+5. `Marketingowiec` odbiera raport
 
 **Aktor główny:** System analizujący dane
 
 **Uczestnicy i interesy:**
 
-System analizujący dane - analizowanie rejestrów zapisywanych w bazie danych.
+System analizujący dane - analizowanie rejestrów zapisywanych w bazie danych i wystawienie ich do raportu
 
----
-
-**Numer i nazwa przypadku uzycia:** UC-6.2 - Generowanie raportu
-
-**Autor:** Adam Samsonowicz
-
-**Cel przypadku użycia:** Wsparcie podejmowania decyzji marketingowych za pomoca dedykowanych analiz danych znajdujących się na raporcie
-
-**Kontekst użycia:** Podjęcie decyzji 
-
-**Zakres:** Analiza danych
-
-**Poziom:** Analiza danych
-
-**Warunek początkowy:** System działa ponad 1 miesiąc, dzieki czemu analizy są miarodajne.
-
-**Zdarzenie inicjujące:** Decyzja do podjęcia wymaga raportu z analizami
-
-**Główny scenariusz powodzenia:**
-
-1. `Marketingowiec` klika przycisk 'Analizy marketingowe' znajdującym się na głównej stronie aplikacji
-2. `Marketingowiec` znajduje się na stronie 'Analizy marktetingowe'
-3. `Marketingowiec` wybiera format raportu(.pdf, .xls) a następnie klika przycisk 'Wygeneruj raport'
-4. Raport jest wygenerowany w poprawnym formacie
-
-**Scenariusze alternatywne:**
-
-1. Brak
-
-**Aktor główny:** System analizujący dane
-
-**Uczestnicy i interesy: **
-
-Marketingowiec - dostaje raport zawierający analizy
+Marketingowiec - inicjowanie stworzenia raportu
 
 <div class="page">
 
@@ -2135,6 +2012,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
    1. System anonimizuje powiązane wpisy w rejestrze potencjalnego klienta 
    1. System zapisuje zmiany
    
+
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
@@ -2332,8 +2210,21 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 <div class="page">
 
 ### 2.5.2 Obsługa zleceń zakupu (OA2)
-![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA2.1.jpg)
+![Diagram aktywności zarządzania rejestrami klientów](./diagrams/images/AD-OA2.1.jpg)
 ##### _Rysunek X. Diagram aktywności zarządzania rejestrami klientów
+
+![Diagram aktywności tworzenia oferty](./diagrams/images/AD-OA2.2.jpg)
+##### _Rysunek X. Diagram aktywności tworzenia oferty
+
+![Diagram aktywności zatwierdzania oferty](./diagrams/images/AD-OA2.3.jpg)
+##### _Rysunek X. Diagram aktywności zatwierdzania oferty
+
+![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.4.jpg)
+##### _Rysunek X. Diagram aktywności wyszukiwania i dodania prodktu
+
+
+
+
 
 <div class="page">
 
