@@ -2234,6 +2234,12 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 <div class="page">
 
+### 2.5.4 Obsluga rejestru magazynu (OA4)
+![Diagram Aktywności obsługi rejestru magazynu](./diagrams/images/AD_OA4.jpg)
+##### _Rysunek X. Diagram aktywności obslugi rejestru magazynu 
+
+<div class="page">
+
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 ![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA6.jpg)
 ##### _Rysunek X. Diagram aktywności analizy danych na potrzeby 
