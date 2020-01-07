@@ -1166,10 +1166,10 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 
 <div class="page">
 
-#### 2.1.2.4 Obsługa magazynu
+#### 2.1.2.4 Obsługa Rejestr Magazynu
 
-![](./diagrams/images/OA4_magazyn.jpg)
-##### _Rysunek 12. Diagram przypadków użycia obsługi Obsługa magazynu_
+![](./diagrams/images/OA4_Zarzadzanie_rejestrem_magazynu.jpg)
+##### _Rysunek 12. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-4.1 - Weryfikacja dokumentacji
 
