@@ -2576,10 +2576,11 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 <div class="page">
 
 ## 3.1. Diagram kontekstowy (DK)
-![Diagram kontekstowy](./diagrams/images/DiagramKontekstowy.jpg)
+![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
 ##### Rysunek XX. Diagram kontekstowy
 
-
+![Diagram kontekstowy](./diagrams/images/DF/podsystemy.jpg)
+##### Rysunek XX. Diagram Podsystemu
 
 <div class="page">
 
