@@ -46,14 +46,18 @@ Spis Treści
     - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory)
     - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych)
         - [2.4.1. Obsługa Dostawców (OA1)](#241-obsługa-dostawców-oa1)
-        - [2.4.2. Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)](#242-rejestr-potencjalnych-klientów-i-stanu-kontaktu-z-nimi-oa7)
-        - [2.4.3. Zarzadzanie](#243-zarzadzanie)
+        - [2.4.2. Obsługa zleceń zakupu (OA2)](#242-obsługa-zleceń-zakupu-oa2)
+        - [2.4.3. Obsługa reklamacji (OA3)](#243-obsługa-reklamacji-oa3)
+        - [2.4.4. Obsługa Rejestr Magazynu (OA4)](#244-obsługa-rejestr-magazynu-oa4)
+        - [2.4.5. Obsługa rejestru magazynu (OA5)](#245-obsługa-rejestru-magazynu-oa5)
+        - [2.4.6. Analiza danych na potrzeby marketingowe (OA6)](#246-analiza-danych-na-potrzeby-marketingowe-oa6)
+        - [2.4.7. Zarzadzanie (OA8)](#247-zarzadzanie-oa8)
     - [2.5. Modelowanie zachowań w czasie](#25-modelowanie-zachowań-w-czasie)
-        - [2.5.1. Obsługa zamówień](#251-obsługa-zamówień)
+        - [2.5.1. Obsługa zamówień (OA1)](#251-obsługa-zamówień-oa1)
         - [2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2)
-        - [2.5.3. Obsługa reklamacji](#253-obsługa-reklamacji)
-        - [2.5.4. Analiza danych na potrzeby marketingowe (OA6)](#254-analiza-danych-na-potrzeby-marketingowe-oa6)
-        - [2.5.5. Obsługa  potencjalnych klientów (OA7)](#255-obsługa--potencjalnych-klientów-oa7)
+        - [2.5.3. Obsługa reklamacji (OA3)](#253-obsługa-reklamacji-oa3)
+        - [2.5.4. Obsługa rejestru magazynu (OA4)](#254-obsługa-rejestru-magazynu-oa4)
+        - [2.5.5. Analiza danych na potrzeby marketingowe (OA6)](#255-analiza-danych-na-potrzeby-marketingowe-oa6)
         - [2.5.6. Zarządzanie](#256-zarządzanie)
     - [2.6. Wymagania funkcjonalne dla dodatkowych części systemu](#26-wymagania-funkcjonalne-dla-dodatkowych-części-systemu)
         - [2.6.1. Poinformuj SMS](#261-poinformuj-sms)
@@ -162,7 +166,7 @@ W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki op
 
 ![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/companyStructure.png)
 
-##### _Rysunek 01. Diagram struktura zarządu_
+##### _Rysunek X. Diagram struktura zarządu_
 
 W obecnym okresie jest około 60 pracowników.
 W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
@@ -226,7 +230,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ![2. ](./diagrams/images/Obsluga_aktywnosci.png)
 
-##### _Rysunek 02. Przegląd obszarów aktywności_
+##### _Rysunek X. Przegląd obszarów aktywności_
 
 Obszar aktywności obsługi zamówień zawiera w sobie
 
@@ -463,30 +467,6 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
 <div class="page">
 
-#### 1.3.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)
-
-1. Prowadzenie bazy potencjalnych klientów
-
-   1. Dodawanie informacji i danych o klientach
-      Jako `Konsultant` gdy chce wprowadzić nowego `klienta` do systemu mogę wpisać jego podstawowe dane do formularza.
-
-   1. Zmiana informacji o kliencie
-      Jako `Konsultant`, gdy dostanę informacje o klienta o zmianie w jego danych mam możliwość zmienić istniejaćy wpis w rejestrze.
-
-   1. Usuwanie informacji i danych o klientach
-      Jako `Konsultant` gdy klient wycoda zgodę na rodo muszę mieć możliwość zanonymizowania danych
-
-1. Informowanie o ofercie
-
-   1. Wyświetlenie daty ostatniego kontaktu z klientem
-      Jako `Konsultatnt` mam możliwość sprawdzenia, kiedy ostatni raz prezentowałem mu daną ofertę.
-
-   1. Wysylanie notyfikacji o ofercie pocztą elektroniczną email
-      Jako `Konsultant` mam możliwość wysłania wygenerowanej oferty na adres e-mail
-
-   1. Udzielanie informacji o ofercie telefonicznie
-      Jako `Konsultant` mam możliwość za pomocą systemu ustanowić połączenie telefoniczne z klientem - system pokazuje wygenerowaną, spersonalizowaną ofertę którą `konsultant` może zaprezentować. W systemie powinna być załączona kopia oferty, rozmowy i potwierdzenie zgody klienta na nagrywanie.
-
 #### 1.3.1.8 Zarządzanie (OA8)
 
 1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
@@ -562,7 +542,7 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 @enduml
 ```
 
-##### _Rysunek 03. Aktorzy w systemie_
+##### _Rysunek X. Aktorzy w systemie_
 
 W systemie możemy wyróżnić następujących aktorów
 
@@ -588,7 +568,6 @@ W systemie możemy wyróżnić następujących aktorów
    1. Numer referencyjny
 
 1. Organizacja klienta - jest to działalność gospodarcza
-
    1. Nazwa firmy
    1. NIP
    1. Wystawione faktury przez naszą firmę
@@ -597,8 +576,7 @@ W systemie możemy wyróżnić następujących aktorów
    1. Reprezentanci
    1. Lokale
 
-1) Dostawca - jest to firma od której zamawiamy
-
+1. Dostawca - jest to firma od której zamawiamy
    1. Nazwa firmy
    1. NIP
    1. Wystawione faktury na naszą firmę
@@ -607,7 +585,6 @@ W systemie możemy wyróżnić następujących aktorów
    1. Łączna kwota zamówień
 
 1. Oferta
-
    1. Zaproponowane produkty
    1. Data wystawienia
    1. Klient
@@ -660,7 +637,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 ### 2.4.1 Obsługa Dostawców (OA1)
  ![](./diagrams/images/oa1.jpg)
 
-##### _Rysunek 04. Diagram przypadków użycia obsługi zamówień_
+##### _Rysunek X. Diagram przypadków użycia obsługi zamówień_
 
 **Numer i Nazwa przypadku użycia:** UC-1.1 - Wyszukaj dostawcę
 
@@ -872,7 +849,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 _Klient_ - Inicjuje proces
 
 
-#### 2.4.2 Obsługa zleceń zakupu (OA2)
+### 2.4.2 Obsługa zleceń zakupu (OA2)
 
 ![](./diagrams/images/OA2.jpg)
 
@@ -1053,10 +1030,10 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 Konsultant - wyszukanie produktów
 
-#### 2.1.2.3 Obsługa reklamacji
+### 2.1.3 Obsługa reklamacji (OA3)
 ![](./diagrams/images/Obsluga_reklamacji.jpg)
 
-##### _Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
+##### _Rysunek X. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
 
 **Numer i nazwa przypadku użycia:** UC-3.1 - Zgłoszenie reklamacji przez klienta
 
@@ -1166,10 +1143,10 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 
 <div class="page">
 
-#### 2.1.2.4 Obsługa Rejestr Magazynu
+### 2.1.4 Obsługa Rejestr Magazynu (OA4)
 
 ![](./diagrams/images/OA4_Zarzadzanie_rejestrem_magazynu.jpg)
-##### _Rysunek 12. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu_
+##### _Rysunek X. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu_
 
 **Numer i Nazwa przypadku użycia:** UC-4.1 - Weryfikacja dokumentacji
 
@@ -1391,7 +1368,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Kontrola wartości towaru
 
-**Kontekst użycia:** Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartosci towaru aby wysyłany towar byl zawsze zgodny z umową
+**Kontekst użycia:** Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartości towaru aby wysyłany towar byl zawsze zgodny z umową
 
 **Zakres:** Obsługa magazynu
 
@@ -1490,7 +1467,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Przypisywanie numeru partii
 
-**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania numeru partii aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
+**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania numeru partii aby umożliwić rozróżnienie produktu oraz ułatwić wyszukiwanie
 
 **Zakres:** Obsługa magazynu
 
@@ -1644,6 +1621,8 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 **Uczestnicy i interesy:**
 
 _Magazynier_ - Jest to w jego zakresie obowiązków
+
+### 2.1.5 Obsługa rejestru magazynu (OA5)
 
 ---
 
@@ -1886,11 +1865,11 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 <div class="page">
 
-#### 2.4.6 Analiza danych na potrzeby marketingowe (OA6)
+### 2.1.6 Analiza danych na potrzeby marketingowe (OA6)
 
 ![](./diagrams/images/OA6.jpg)
 
-##### Rysunek 12. Statyki powiązane z katalogiem produktowym\_
+##### Rysunek X. Statyki powiązane z katalogiem produktowym\_
 
 **Numer i nazwa przypadku uzycia:** UC-6.1 - Generowanie raportu
 
@@ -1935,137 +1914,10 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 <div class="page">
 
-### 2.1.7 Rejestr potencjalnych klientów i stanu kontaktu z nimi (OA7)
-
- ![](./diagrams/images/oa7.jpg)
-##### _Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów_
-
-
-**Numer i Nazwa przypadku użycia:** UC-7.1 - Wyszukaj `potencjalnego klienta`
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Znalezienie danego potencjalnego klienta w systemie
-
-**Kontekst użycia:** Konsultant chce dowiedzieć się o istniejącym potencjalnym kliencie
-
-**Zakres:** Obsługa potencjalnych klientów
-
-**Poziom:** Przetwarzanie danych potencjalnych klientów
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** Dostawca istnieje w systemie
-
-**Zdarzenie inicjujące:** Konsultant chce dodać pozyskanego klienta
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` wpisuje wartość do filtrowania
-2. System filtruje rekordy
-
-**Scenariusze alternatywne:**
-
-1. Pokaż historię kontaktu - `Konsultant` chce się dowiedzieć, jaki jest stan kontaktu z klientem, jaki był ostani feedback od niego
-   1. `Konsultant` otwiera wpis `Potencjalnego klienta`
-   1. `Konsultant` wybiera historii kontaktu
-   1. System wyświetla historię kontaktu
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-7.2 - Zarządzanie rejestrem `potencjalnego klienta`
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Aktualizacja lub poprawienie danych dostawcy
-
-**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości zmiany istniejących dostawców. 
-
-**Zakres:** Obsługa potencjalnych klientów
-
-**Poziom:** Prowadzenie rekordów potencjalnych klientów
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** `Potencjalny klient` istnieje w systemie
-
-**Zdarzenie inicjujące:** Zmień wpis w rejestrze `Potencjalnego klienta`
-
-**Główny scenariusz powodzenia:**
-
-1. System szuka istniejącego dostawcy używając `UC-7.1`
-1. System wyświetla [formularz danych](./wzory/18.Instom_formularz_danych_potencjalnego_klienta.docx) uzupełniony danymi 
-1. `Konsultant` uzupełnia dane
-1. System weryfikuje dane
-1. `Potencjalny klient` zostaje zapisany
-
-**Scenariusze alternatywne:**
-
-1. Anonimizacja danych - klient wyraził żądanie usunięcia danych wrażliwych z naszych rejestrów
-   1. System szuka istniejące dostawcy używając `UC-7.1`
-   1. `Konsultant` przechodzi na `UC-7.2` i wybiera opcję RODO
-   1. System anonimizuje dane wrażliwe (jest to potencjalny klient, więc jeszcze nie ma żadnych faktur - nie musimy się nimi przejmować0)
-   1. System anonimizuje powiązane wpisy w rejestrze potencjalnego klienta 
-   1. System zapisuje zmiany
-   
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Jest to w jego zakresu obowiązków
-_Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
-
-
-
----
-
-
-
-**Numer i nazwa przypadku uzycia:** UC-7.3 - Wysylanie notyfikacji o ofercie pocztą elektroniczną email
-
-**Autor:** Mateusz Popielarz
-
-**Cel przypadku użycia:** Wysylanie notyfikacji o ofercie pocztą elektroniczną email
-
-**Kontekst użycia:** Gdy `klient` o pasującym profilu złoży `zlecenie zakupu` system proponuje wysłanie `oferty` do `potencjalnego klienta`
-
-**Zakres:** Obsługa potencjalnych klientów
-
-**Poziom:** Informowanie o ofercie
-
-**Aktor główny:** Konsultant
-
-**Warunek początkowy:** 
-1. Klient istnieje w systemie
-1. Pasujący `potencjalny klient` kupił
-
-**Zdarzenie inicjujące:** `Konsultant` chce poinformować klienta o ofercie
-
-**Główny scenariusz powodzenia:**
-
-1. `Konsultant` odczytuje dane wpisu klienta używając `OA-7.2`
-1. System korzystając z systemu Obsługi zleceń zakupu generuje ofertę
-1. `Konsultant` wybiera opcję wysłania wiadomości
-1. System wysyła wiadomość do `Potencjalnego Klienta`
-1. System używając `OA-7.2` odnotowuje fakt wysłania wiadomości
-
-**Scenariusze alternatywne:**
-
-1. Wystąpił błąd - `klient` nie ma adresu e-mail - `konsultant` zostaje przekierowany do (UC.07-02)
-
-**Uczestnicy i interesy:**
-
-_Konsultant_ - Utrzymywanie informacji w systemie jest jego obowiązkiem
-
-<div class="page">
-
-### 2.1.2.8 Zarzadzanie
+### 2.1.8 Zarzadzanie (OA8)
 ![](./diagrams/images/Zarzadzanie.jpg)
 
-##### _Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz wprowadzenia zadań właściciela do systemu oraz wglądu do prognozy zamówień_
+##### _Rysunek X. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz wprowadzenia zadań właściciela do systemu oraz wglądu do prognozy zamówień_
 
 **Numer i nazwa przypadku użycia:** UC-8.1 - Wprowadzenie dokumentów do systemu
 
@@ -2204,7 +2056,8 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 <div class="page">
 
 ## 2.5 Modelowanie zachowań w czasie
-### 2.5.1 Obsługa zamówień
+
+### 2.5.1 Obsługa zamówień (OA1)
 ![Diagram Aktywności obsługi zamówień](./diagrams/images/ad1.jpg)
 
 <div class="page">
@@ -2224,31 +2077,23 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 
 
 
-
-
 <div class="page">
 
-### 2.5.3 Obsługa reklamacji
+### 2.5.3 Obsługa reklamacji (OA3)
 
 ![Diagram Aktywności obsługi reklamacji](./diagrams/images/OA3_activity_diagram.jpg)
 
 <div class="page">
 
-### 2.5.4 Obsluga rejestru magazynu (OA4)
+### 2.5.4 Obsługa rejestru magazynu (OA4)
 ![Diagram Aktywności obsługi rejestru magazynu](./diagrams/images/AD_OA4.jpg)
-##### _Rysunek X. Diagram aktywności obslugi rejestru magazynu 
+##### _Rysunek X. Diagram aktywności obsługi rejestru magazynu 
 
 <div class="page">
 
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
-![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/AD-OA6.jpg)
-##### _Rysunek X. Diagram aktywności analizy danych na potrzeby 
-
-<div class="page">
-
-### 2.5.7 Obsługa  potencjalnych klientów (OA7)
-![Diagram Aktywności obsługi potencjalnych klientów](./diagrams/images/ad7.jpg)
-##### _Rysunek X. Diagram aktywności podsystemu do obsługi potencjalnych klientów
+![Diagram Aktywności analizy danych](./diagrams/images/AD-OA6.jpg)
+##### _Rysunek X. Diagram aktywności analizy danych 
 
 <div class="page">
 
@@ -2564,12 +2409,12 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 # 3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)
 
 - Cel systemu:
-   Usprawnienie pracy w zakresie zarządzania `zleceniami zakupu`, `zamówieniami`, stanem magazynowym, kontaktem z `klientami` i `potencjalnymi klientami`, tworzeniem raportów dla zarządu i prowadzeniem historii kontaktu z klientami
+   Usprawnienie pracy w zakresie zarządzania `zleceniami zakupu`, `zamówieniami`, stanem magazynowym, kontaktem z `klientami`, tworzeniem raportów dla zarządu i prowadzeniem historii kontaktu z klientami
 
 - Zdarzenia (Lista zdarzeń):
    - Utworzenie zamówienia u dostawcy i otrzymanie informacji o dostawie
    - Poinformowanie klienta o dostępnych towarach odpowiadających mu i doprecyzowanie informacji lub przyjęcie oferty
-   - Wysyłanie materiałów promocyjnych do `Potencjalnych klientów`
+   - Wysyłanie materiałów promocyjnych do `klientów`
    - Wystawianie `Raportów` dla Zarządu firmy
    - Sprawdzenie aktualnego stanu towaru w magazynie i razie potrzeby aktualizacja do stanu obecnego
    - Wysyłanie dokumentów do księgowości zewnętrznej
@@ -2583,10 +2428,10 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 ## 3.1. Diagram kontekstowy (DK)
 ![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
-##### Rysunek XX. Diagram kontekstowy
+##### Rysunek X. Diagram kontekstowy
 
 ![Diagram kontekstowy](./diagrams/images/DF/podsystemy.jpg)
-##### Rysunek XX. Diagram Podsystemu
+##### Rysunek X. Diagram Podsystemu
 
 <div class="page">
 
@@ -2675,7 +2520,7 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 - [2.4.5.2. Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie](#markdown-header-2452-rysunek-21-diagram-przypadków-użycia-obsługi-kategoryzowanie)
 - [2.4.5.3. Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu](#markdown-header-2453-rysunek-22-diagram-przypadków-użycia-obsługi-prognozowanie-popytu)
 - [2.4.6.1. Rysunek 12. Statyki powiązane z katalogiem produktowym](#markdown-header-2461-rysunek-12-statyki-powiązane-z-katalogiem-produktowym)
-- [2.4.7.1. Rysunek 14. Diagram przypadków użycia obsługi Rejestru potencjalnych klientów](#markdown-header-2471-rysunek-14-diagram-przypadków-użycia-obsługi-rejestru-potencjalnych-klientów)
+
 - [2.4.7.2. Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie](#markdown-header-2472-rysunek-15-diagram-przypadków-użycia-funkcji-informowania-o-ofercie)
 - [2.4.8.1. Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień](#markdown-header-2481-rysunek-16-diagram-przypadków-użycia-wprowadzenia-dokumentów-i-zadań-przez-pracownika-oraz-właściciela-do-systemu-oraz-wglądu-do-prognozy-zamówień)
 
