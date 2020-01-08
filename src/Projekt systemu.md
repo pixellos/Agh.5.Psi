@@ -464,24 +464,6 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
 <div class="page">
 
-#### 1.3.1.8 Zarządzanie (OA8)
-
-1. Organizacja (obieg dokumentacji, system informacji, obszary zadaniowe)
-
-   Jako `właściciel` chciałbym mieć możliwość łatwego obiegu dokumentacji między działami.
-
-1. Szacowanie czasowego i ilościowego zapotrzebowania na produkty dla 1 dostawy
-
-   Jako `właściciel` chciałbym znać zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od `dostawcy`.
-
-   Jako `właściciel` chciałbym znać zapotrzebowanie ilościowe na produkty do zamówienia od `dostawcy`.
-
-1. Przydział pracowników do określonych zadań
-
-   Jako `właściciel` chciałbym mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania
-
-<div class="page">
-
 ## 1.4 Zwięzła nazwa problemu
 
 ### 1.4.1 Nazwa problemu
@@ -1657,147 +1639,6 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 <div class="page">
 
-### 2.1.8 Zarzadzanie (OA8)
-![](./diagrams/images/Zarzadzanie.jpg)
-
-##### _Rysunek X. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz wprowadzenia zadań właściciela do systemu oraz wglądu do prognozy zamówień_
-
-**Numer i nazwa przypadku użycia:** UC-8.1 - Wprowadzenie dokumentów do systemu
-
-**Autor:** Kacper Kwapisz
-
-**Cel przypadku użycia:** Wprowadzenie dokumentów do dostępnej dla pracowników platformy w celu ułatwienia obiegu dokumentacji i zadań między działami.
-
-**Kontekst użycia:** `Pracownik` wprowadza dokumenty lub zadania do systemu, aby poprzez system były widoczne dla innych pracowników.
-
-**Zakres:** Platforma dla pracowników
-
-**Poziom:** Organizacja w firmie
-
-**Aktor główny:** Pracownik
-
-**Warunek początkowy:** `Pracownik` poprawnie zalogowany do systemu
-
-**Zdarzenie inicjujące:** `Pracownik` ma zamiar wprowadzić nowy dokument do systemu
-
-**Główny scenariusz powodzenia:**
-
-1. `Pracownik` wprowadza dokument do systemu
-2. System wyświetla informacje o poprawnym zapisie danych
-
-**Scenariusze alternatywne:**
-
-1. System wyświelta informacje o błędzie podczas próby zapisu
-
-**Uczestnicy i interesy:**
-
-_Pracownik_ - wprowadza dokumenty, zadania, ogłoszenia do systemu
-
----
-
-**Numer i nazwa przypadku użycia:** UC-8.2 - Możliwość odczytu prognoz zapotrzebowania czasowego na produkty
-
-**Autor:** Kacper Kwapisz
-
-**Cel przypadku użycia:** `Właściciel` zna zapotrzebowanie czasowe (prognozę zamówień) na produkty do zamówienia od `dostawcy`. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.
-
-**Kontekst użycia:** Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem czasowym
-
-**Zakres:** Platforma dla pracowników
-
-**Poziom:** Organizacja w firmie
-
-**Aktor główny:** Właściciel
-
-**Warunek początkowy:** `Właściciel` poprawnie zalogowany do systemu
-
-**Zdarzenie inicjujące:** `Właściciel` ma zamiar odczytać prognozy zapotrzebowania czasowego na produkty
-
-**Główny scenariusz powodzenia:**
-
-1. `Właściciel` otwiera raport z prognozą zapotrzebowania czasowego na produkty
-
-**Scenariusze alternatywne:**
-
-1. Nieudana próba otworzenia raportu
-
-**Uczestnicy i interesy:**
-
-_Właściciel_ - odczytuje i ma możliwość analizy prognoz czasowych zamówień
-
-_Dostawca_ - od niego firma zamawia produkty
-
----
-
-**Numer i nazwa przypadku użycia:** UC-8.3 -Możliwość odczytu prognoz zapotrzebowania ilościowego na produkty
-
-**Autor:** Kacper Kwapisz
-
-**Cel przypadku użycia:** Właściciel zna zapotrzebowanie ilościowe na produkty do zamówienia od dostawcy. Dzięki temu może lepiej zaplanować budżet oraz miejsce w magazynie.
-
-**Kontekst użycia:** Właściciel za pośrednictwem systemu ma dostęp do prognozy zamówień pod kątem ilościowym
-
-**Zakres:**
-
-**Poziom:** Organizacja w firmie
-
-**Aktor główny:** Właściciel
-
-**Warunek początkowy:** `Właściciel` poprawnie zalogowany do systemu
-
-**Zdarzenie inicjujące:** `Właściciel` ma zamiar odczytać prognozy zapotrzebowania ilościowego na produkty
-
-**Główny scenariusz powodzenia:**
-
-1. `Właściciel` otwiera raport z prognozą zapotrzebowania ilościowego na produkty
-
-**Scenariusze alternatywne:**
-
-1. Nieudana próba otworzenia raportu
-
-**Uczestnicy i interesy:**
-
-_Właściciel_ - odczytuje i ma możliwość analizy prognoz ilościowych zamówień
-
----
-
-**Numer i nazwa przypadku użycia:** UC-8.4 - Przydział pracowników do określonych zadań
-
-**Autor:** Kacper Kwapisz
-
-**Cel przypadku użycia:** Właściciel chciałby mieć możliwość przydzielania pracowników do określonych zadań za pomocą systemu zarządzania
-
-**Kontekst użycia:** Właściciel wprowadza do systemu zadania dla konkretnych pracowników. Pracownicy za pośrednictwem platformy widzą przydzielone im zadania.
-
-**Zakres:** Przydział pracowników do określonych zadań
-
-**Poziom:** Organizacja w firmie
-
-**Aktor główny:** Właściciel
-
-**Warunek początkowy:** `Właściciel` i `Pracownik` poprawnie zalogowany do systemu
-
-**Zdarzenie inicjujące:** `Właściciel` wprowadza nowe zadanie dla pracowników
-
-**Główny scenariusz powodzenia:**
-
-1. `Właściciel` wprowadza nowe zadanie dla konkretnego pracownika
-2. `Właściciel` zatwierdza wprowadzone zadania i klika przycisk "udostępnij"
-3. Dany `Pracownik` widzi nowe zadanie zlecone mu przez `Właściciela`
-
-**Scenariusze alternatywne:**
-
-1. Nieudana próba zapisu i udostępnienia zadania
-2. Nowo wprowadzone zadanie nie widoczne dla konkretnego pracownika
-
-**Uczestnicy i interesy:**
-
-_Właściciel_ - przydziela pracowników do określonych zadań
-
-_Pracownik_ - widzi przydzielone mu zadanie przez właściciela
-
-<div class="page">
-
 ## 2.5 Modelowanie zachowań w czasie
 
 ### 2.5.1 Obsługa zamówień (OA1)
@@ -1837,11 +1678,6 @@ _Pracownik_ - widzi przydzielone mu zadanie przez właściciela
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 ![Diagram Aktywności analizy danych](./diagrams/images/AD-OA6.jpg)
 ##### _Rysunek X. Diagram aktywności analizy danych 
-
-<div class="page">
-
-### 2.5.8 Zarządzanie
-![Diagram Aktywności zarządzania](./diagrams/images/OA8_activity_diagram.jpg)
 
 <div class="page">
 
