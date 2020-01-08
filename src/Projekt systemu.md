@@ -603,6 +603,15 @@ W systemie możemy wyróżnić następujących aktorów
    1. Historycznie przechowywane produkty
    1. Rezerwacja pod produkt wielkogabarytowy
 
+1. Produkt
+   1. ID
+   1. Nazwa
+   1. Typ
+   1. Data dostawy
+   
+
+
+
 <div class="page">
 
 ## 2.3 Dokumenty wprowadzane i wyprowadzane z systemu – wzory
