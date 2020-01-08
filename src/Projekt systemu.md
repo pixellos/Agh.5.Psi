@@ -1,4 +1,4 @@
-Zespół: 
+Zespół:
 - _Mateusz Popielarz_ - Leader zespołu
 - Adam Samsonowicz
 - Kamil Gliński
@@ -51,14 +51,12 @@ Spis Treści
         - [2.4.4. Obsługa Rejestr Magazynu (OA4)](#244-obsługa-rejestr-magazynu-oa4)
         - [2.4.5. Obsługa rejestru magazynu (OA5)](#245-obsługa-rejestru-magazynu-oa5)
         - [2.4.6. Analiza danych na potrzeby marketingowe (OA6)](#246-analiza-danych-na-potrzeby-marketingowe-oa6)
-        - [2.4.7. Zarzadzanie (OA8)](#247-zarzadzanie-oa8)
     - [2.5. Modelowanie zachowań w czasie](#25-modelowanie-zachowań-w-czasie)
         - [2.5.1. Obsługa zamówień (OA1)](#251-obsługa-zamówień-oa1)
         - [2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2)
         - [2.5.3. Obsługa reklamacji (OA3)](#253-obsługa-reklamacji-oa3)
         - [2.5.4. Obsługa rejestru magazynu (OA4)](#254-obsługa-rejestru-magazynu-oa4)
         - [2.5.5. Analiza danych na potrzeby marketingowe (OA6)](#255-analiza-danych-na-potrzeby-marketingowe-oa6)
-        - [2.5.6. Zarządzanie](#256-zarządzanie)
     - [2.6. Wymagania funkcjonalne dla dodatkowych części systemu](#26-wymagania-funkcjonalne-dla-dodatkowych-części-systemu)
         - [2.6.1. Poinformuj SMS](#261-poinformuj-sms)
         - [2.6.2. Wprowadzenie dokumentów do systemu](#262-wprowadzenie-dokumentów-do-systemu)
@@ -356,7 +354,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 
     2. Realizacja reklamacji do dostawcy
-    
+
         Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od niego wymienione, działające produkty.
 
 4. Prowadzenie rejestru reklamacji
@@ -377,9 +375,9 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    1. Przyjęcie towaru
 
       Jako `magazynier` chce mieć możliwość `przyjęcia towaru` magazynu aby `przekazać go do dalszego procesowania - rozładunku`.
-	
+
    1. Kontrola stanu fizycznego przesyłki
-	
+
       Jako `magazynier` chce mieć możliwość `kontroli stanu przesyłki` magazynu aby `przekazać ją do dalszego procesowania - wysyłki`.
 
    1. Przygotowanie towaru do składowania
@@ -393,11 +391,11 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    1. Kontrola wartości towaru
 
       Jako `magazynier` chce mieć możliwość `kontroli wartości towaru` aby `zapewnić jakość produktów zgodnych z warunkami umowy`
-	
+
    1. Grupowanie towaru
 
       Jako `magazynier` chce mieć możliwość `grupowania towaru` aby `zminimalizować czas wyszukiwania`
-	
+
    1. Przypisywanie numeru seryjnego
 
       Jako `magazynier` chce mieć możliwość `przypisywania unikalnego numeru seryjnego produktom` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
@@ -417,40 +415,40 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    1. Tworzenie prognoz popytu
 
       Jako `magazynier` chce mieć możliwość `tworzenia prognoz popytu` aby `utrzymać kluczowe produkty na stanie`
-	
+
    1. Wystawienie dokumentów (PZ WZ MM PW RW)
-	
+
       Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty w prcedurze`.
-	
+
 
    1. Zarejestrowanie produktu
 
       Jako `magazynier` chce mieć możliwość `zarejestrowania produktu` aby `udostępnić oraz uaktualnić informacje o dostępności produktu`.
-	
+
    1. Modyfikacja produktu
-	
+
       Jako `magazynier` chce mieć możliwość `modyfikacji danych` aby `uaktualnić informacje o produkcie`.
 
    1. Wyszukiwanie produktów
 
       Jako `magazynier` chce mieć możliwość `wyszukiwania produktów` aby `pobrać produkt o określonych atrybutach`.
-	
+
    1. Pobranie szczegółowych danych o produkcie
-	
+
       Jako `magazynier` chce mieć możliwość `pobrania informacji na temat produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
-	
+
    1. Pobranie wszystkich dostępnych produktow
-	
+
       Jako `magazynier` chce mieć możliwość `pobrania wszystkich dostepnych produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
-	
+
    1. Wyrejstrowanie produktu z magazynu
 
       Jako `magazynier` chce mieć możliwość wyrejestrowania produktu z magazynu aby `uaktualnić informacje o dostępności produktu`.
-	
+
    1. Tworzenie zamówienia dostaw na podstawie zarejestrowanych rezerwacji wystawienie dokumentów magazynowych
 
       Jako `magazynier` chce mieć możliwość `tworzyć zamówienia dostaw` aby `zapewnić wymagane dokumenty dotyczące dostaw`.
-      
+
 <div class="page">
 
 #### 1.3.1.6 Analizy danych na potrzeby marketingowe (OA6)
@@ -590,7 +588,7 @@ W systemie możemy wyróżnić następujących aktorów
    1. Nazwa
    1. Typ
    1. Data dostawy
-   
+
 
 
 
@@ -668,7 +666,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 
 **Cel przypadku użycia:** Aktualizacja danych dostawcy
 
-**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości zmiany istniejących dostawców lub dodania nowych. 
+**Kontekst użycia:** ​Gdy system będzie wprowadzany będziemy potrzebować możliwości zmiany istniejących dostawców lub dodania nowych.
 
 **Zakres:** System do obsługi dostawców
 
@@ -822,7 +820,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 **Główny scenariusz powodzenia:**
 
 1. `Konsultant` próbuje modyfikować towar używając `UC-1.4`
-1. `Konsultant` wybiera opcję `zarezerwuj` - pokazuje sie modal z wyborem okresu rezerwacji 
+1. `Konsultant` wybiera opcję `zarezerwuj` - pokazuje sie modal z wyborem okresu rezerwacji
 1. `Konsultant` wpisuje dane i zatwierdza
 1. Rezerwacja towaru zostaje zapisana w systemie
 
@@ -881,7 +879,7 @@ Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
 **Cel przypadku użycia:** Stworzenie oferty w systemie w celu przedstawienia jej klientowi
 
-**Kontekst użycia:** `Konsultant` musi mieć możliwość tworzenia oferty i dokumentu ofertowego w celu przedstawienia propozycji `klientowi` 
+**Kontekst użycia:** `Konsultant` musi mieć możliwość tworzenia oferty i dokumentu ofertowego w celu przedstawienia propozycji `klientowi`
 
 **Zakres:** Proces ofertowy
 
@@ -889,7 +887,7 @@ Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
 **Warunek początkowy:** `Klient` i `konsultant` zawarli porozumienia o potrzebie przygotowania oferty
 
-**Zdarzenie inicjujące:** `Klient` wyraża chęć zakupu `konsultantowi` 
+**Zdarzenie inicjujące:** `Klient` wyraża chęć zakupu `konsultantowi`
 
 **Główny scenariusz powodzenia:**
 
@@ -917,7 +915,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Cel przypadku użycia:** Zatwierdzanie lub anulowanie ofert
 
-**Kontekst użycia:** `Konsultant` stworzył oferte, żeby dalej procesować potrzebuje zgody `potwierdzającego oferte` 
+**Kontekst użycia:** `Konsultant` stworzył oferte, żeby dalej procesować potrzebuje zgody `potwierdzającego oferte`
 
 **Zakres:** Proces ofertowy
 
@@ -990,7 +988,7 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 **Cel przypadku użycia:** `Konsultant` potrzebuje wyszukać produkt. Następnie dodaje go do oferty lub sprawdza dane techniczne
 
-**Kontekst użycia:** `Konsultant` ma możliwość wyszukania produktów w katalogach dostawców. Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn. 
+**Kontekst użycia:** `Konsultant` ma możliwość wyszukania produktów w katalogach dostawców. Wyszukiwanie produktów odbywa się poprzez dedykowaną wyszukiwarkę obsługującą katalogi dostawców oraz magazyn.
 
 **Zakres:** Proces ofertowy
 
@@ -1600,7 +1598,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Autor:** Adam Samsonowicz
 
-**Cel przypadku użycia:** Generowanie raportu na potrzeby marketingowe 
+**Cel przypadku użycia:** Generowanie raportu na potrzeby marketingowe
 
 **Kontekst użycia:** Podejmowanie decyzji przez marketingowców wymaga czasem dedykowanych analiz, raport zawiera takie analizy i dane.
 
@@ -1610,7 +1608,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Warunek początkowy:** Potrzeba użycia raportu
 
-**Zdarzenie inicjujące:** Inicjacja przez `marketingowca` 
+**Zdarzenie inicjujące:** Inicjacja przez `marketingowca`
 
 **Główny scenariusz powodzenia:**
 
@@ -1625,7 +1623,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 1. `Marketingowiec` inicjuje generowanie raportu
 2. `System analizujący dane` sprawdza czy raport na dany okres jest utworzony
-3. `System analizujący dane` generuje wcześniej utworzony raport 
+3. `System analizujący dane` generuje wcześniej utworzony raport
 4. `System analizujący dane` wysyła raport do `marketingowca`
 5. `Marketingowiec` odbiera raport
 
@@ -1671,13 +1669,13 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 ### 2.5.4 Obsługa rejestru magazynu (OA4)
 ![Diagram Aktywności obsługi rejestru magazynu](./diagrams/images/AD_OA4.jpg)
-##### _Rysunek X. Diagram aktywności obsługi rejestru magazynu 
+##### _Rysunek X. Diagram aktywności obsługi rejestru magazynu
 
 <div class="page">
 
 ### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
 ![Diagram Aktywności analizy danych](./diagrams/images/AD-OA6.jpg)
-##### _Rysunek X. Diagram aktywności analizy danych 
+##### _Rysunek X. Diagram aktywności analizy danych
 
 <div class="page">
 
@@ -2002,7 +2000,7 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 - Uwagi
    - Wysyłane dokumenty - różne
    - Wprowadzane dokumenty przez konsultanta - różne
-   
+
 <div class="page">
 
 ## 3.1. Diagram kontekstowy (DK)
