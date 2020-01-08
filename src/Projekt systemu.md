@@ -422,9 +422,6 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 	
       Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty w prcedurze`.
 	
-<div class="page">
-
-#### 1.3.1.5 Rejestr magazynu (OA5)
 
    1. Zarejestrowanie produktu
 
@@ -1148,44 +1145,9 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 ![](./diagrams/images/OA4_Zarzadzanie_rejestrem_magazynu.jpg)
 ##### _Rysunek X. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu_
 
-**Numer i Nazwa przypadku użycia:** UC-4.1 - Weryfikacja dokumentacji
 
-**Autor:** Kamil Gliński
 
-**Cel przypadku użycia:** Weryfikacja dokumentacji
-
-**Kontekst użycia:** Gdy towar bedzie gotowy do rozładunku/załadunku Jako magazynier chce mieć możliwość weryfikacji dokumentacji aby procesować towar zgodnie z procedurami i przepisami
-
-**Zakres:** Obsługa magazynu
-
-**Poziom:** Weryfikacja dokumentacji
-
-**Aktor główny:** Magazynier
-
-**Warunek początkowy:** Dokumentacja nie jest zweryfikowana
-
-**Zdarzenie inicjujące:** Dostawca przekazuje towar do magazynu
-
-**Główny scenariusz powodzenia:**
-
-1. `Magazynier` odbiera dokumentacje
-2. `Magazynier` werfikuje dokumentacje
-3. `Magazynier` procesuje towar zgodnie z procedurami zawartymi w dokumentacji
-
-**Scenariusze alternatywne:**
-
-1. Bledna dokumentacja
-2. Odmowa przyjecia towaru przez 'Magazyniera'
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
-_Dostawca_ - Inicjuje proces
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-4.2 - Rozładunek
+**Numer i Nazwa przypadku użycia:** UC-4.1 - Rozładunek
 
 **Autor:** Kamil Gliński
 
@@ -1221,7 +1183,7 @@ _Dostawca_ - Inicjuje proces
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-4.3 - Przyjęcie towaru
+**Numer i Nazwa przypadku użycia:** UC-4.2 - Przyjęcie towaru
 
 **Autor:** Kamil Gliński
 
@@ -1260,109 +1222,8 @@ _Dostawca_ - Inicjuje proces
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-4.4 - Kontrola stanu przesyłki
 
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Kontrola stanu przesyłki
-
-**Kontekst użycia:** Gdy przesyłka bedzie gotowa, Jako magazynier chce mieć możliwość kontroli stanu przesyłki aby przekazać ją do dalszego procesowania - wysyłki
-
-**Zakres:** Obsługa magazynu
-
-**Poziom:** Kontrola przesyłki
-
-**Aktor główny:** Magazynier
-
-**Warunek początkowy:** Produkt gotowy do wysylki
-
-**Zdarzenie inicjujące:** Zamowienie produktu (przez klienta)
-
-**Główny scenariusz powodzenia:**
-
-1. `Magazynier` poddaje przesylke kontroli
-2. Przesylka przechodzi walidacje
-3. `Magazynier` przystepuje do nastepnego etapu - wysylki
-
-**Scenariusze alternatywne:**
-
-1. Przesylka nie przechodzi walidacji ze wzgledu na ilosc lub jakosc produktu
-2. `Magazynier` produkt zostaje wymieniony na walidny, zgodny z zamowieniem
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-4.5 - Przygotowanie towaru do składowania
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Przygotowanie towaru do składowania
-
-**Kontekst użycia:** Gdy produkt bedzie gotowy, Jako magazynier chce mieć możliwość przygotowania towaru do składowania aby umożliwić szybką wysyłkę w przypadku zamówienia.
-
-**Zakres:** Obsługa magazynu
-
-**Poziom:** Przygotowanie towaru
-
-**Aktor główny:** Magazynier
-
-**Warunek początkowy:** Towar nie jest przygotowany do skladowania
-
-**Zdarzenie inicjujące:** Produkt gotowy
-
-**Główny scenariusz powodzenia:**
-
-1. Produkt gotowy
-2. `Magazynier` skladuje produkt
-
-**Scenariusze alternatywne:**
-
-1. Produkt nie jest gotowy do skladowania
-1. `Magazynier` nie jest wstanie skladowac produktu (brak infrastruktury przeladunkowej)
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-4.5 - Sprawdzenie stanu
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Sprawdzenie stanu
-
-**Kontekst użycia:** Gdy towar jest składowany na magazynie, Jako magazynier chce mieć możliwość sprawdzenia stanu magazynu aby okreslić ilość dostępnych produktów.
-
-**Zakres:** Obsługa magazynu
-
-**Poziom:** Sprawdzenie stanu
-
-**Aktor główny:** Magazynier
-
-**Warunek początkowy:** Nieokreslony stan magazynu
-
-**Zdarzenie inicjujące:** Potrzeba dokladnego okreslenia ilosci produktow
-
-**Główny scenariusz powodzenia:**
-
-1. `Magazynier` sprawdza stan magazynu
-2. `Magazynier` wprowadza dane odnosnie magazynu do systemu
-
-**Scenariusze alternatywne:**
-
-1. Brak produktow na magazynie
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-4.6 - Kontrola wartości towaru
+**Numer i Nazwa przypadku użycia:** UC-4.3 - Kontrola wartości towaru
 
 **Autor:** Kamil Gliński
 
@@ -1396,40 +1257,8 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-4.7 - Grupowanie towaru
 
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Grupowanie towaru
-
-**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość grupowania towaru aby zminimalizować czas wyszukiwania
-
-**Zakres:** Obsługa magazynu
-
-**Poziom:** Grupowanie towaru
-
-**Aktor główny:** Magazynier
-
-**Warunek początkowy:** Towar nie jest pogrupowany
-
-**Zdarzenie inicjujące:** Rozladunek
-
-**Główny scenariusz powodzenia:**
-
-1. `Magazynier` dokonuje grupowania rozladowanego towar
-
-**Scenariusze alternatywne:**
-
-1. Brak kryteriow grupowania
-1. Brak towaru w magazynie
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-4.8 - Przypisywanie numeru seryjnego
+**Numer i Nazwa przypadku użycia:** UC-4.4 - Przypisywanie numeru seryjnego
 
 **Autor:** Kamil Gliński
 
@@ -1461,72 +1290,8 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-4.9 - Przypisywanie numeru partii
 
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Przypisywanie numeru partii
-
-**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania numeru partii aby umożliwić rozróżnienie produktu oraz ułatwić wyszukiwanie
-
-**Zakres:** Obsługa magazynu
-
-**Poziom:** Przypisywanie numeru partii
-
-**Aktor główny:** Magazynier
-
-**Warunek początkowy:** Potrzeba unikalnego rozroznienia produktu
-
-**Zdarzenie inicjujące:** Rozladunek towaru na magazynie
-
-**Główny scenariusz powodzenia:**
-
-1. `Magazynier` nadaje unikalny numer produktu
-
-**Scenariusze alternatywne:**
-
-1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-4.10 - Przypisywanie kodów EAN
-
-**Autor:** Kamil Gliński
-
-**Cel przypadku użycia:** Przypisywanie kodów EAN
-
-**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania kodów EAN aby umożliwić wysyłkę produktu po całej Europie
-
-**Zakres:** Obsługa magazynu
-
-**Poziom:** Przypisywanie kodów EAN
-
-**Aktor główny:** Magazynier
-
-**Warunek początkowy:** Potrzeba wyslania produktu do innego kraju w Europie
-
-**Zdarzenie inicjujące:** Zamowienie produktu za granice (Europa)
-
-**Główny scenariusz powodzenia:**
-
-1. `Magazynier` nadaje kod EAN
-2. `Magazynier` procesuje towar do nastepnego etapu - wysylki
-
-**Scenariusze alternatywne:**
-
-1. Brak potrzeby wyslki produktu za granice (Europa)
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-4.11 - Powiazanie towaru z dostawcą i nabywcą
+**Numer i Nazwa przypadku użycia:** UC-4.5 - Powiazanie towaru z dostawcą i nabywcą
 
 **Autor:** Kamil Gliński
 
@@ -1558,40 +1323,9 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-4.12 - Tworzenie prognoz popytu
 
-Autor: Kamil Gliński
 
-**Cel przypadku użycia:** Tworzenie prognoz popytu
-
-**Kontekst użycia:** W sytuacji gdy chcemy osiągnąć optymalny czas prac na magazynie potrzebujemy stworzyc prognozy popytu, Jako magazynier chce mieć możliwość tworzenia prognoz popytu aby utrzymać kluczowe produkty na stanie
-
-**Zakres:** Prognozowanie popytu
-
-**Poziom:** Tworzenie prognoz popytu
-
-**Aktor główny:** Magazynier
-
-**Warunek początkowy:** Zapotrzebowanie na produkty nie jest okreslone
-
-**Zdarzenie inicjujące:** Duza ilosc zamowien w danym okresie czasu
-
-**Główny scenariusz powodzenia:**
-
-1. `Magazynier` tworzy analize, na podstawie analizy okresla zapotrzebowanie na produkty
-2. `Magazynier` dzieli sie zapotrzebowaniem z innymi pracownikami uzywajac systemu
-
-**Scenariusze alternatywne: **
-
-1. brak zapotrzebowania na produkty - `Magazynier` nie jest w stanie stworzyc analizy zapotrzebowania
-
-**Uczestnicy i interesy:**
-
-_Magazynier_ - Jest to w jego zakresie obowiązków
-
----
-
-**Numer i Nazwa przypadku użycia:** UC-4.13 - Wystawienie dokumentów (PZ WZ MM PW RW)
+**Numer i Nazwa przypadku użycia:** UC-4.6 - Wystawienie dokumentów (PZ WZ MM PW RW)
 
 **Autor:** Kamil Gliński
 
