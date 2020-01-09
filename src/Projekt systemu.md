@@ -1382,8 +1382,6 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 _Magazynier_ - Jest to w jego zakresie obowiązków
 
-### 2.1.5 Obsługa rejestru magazynu (OA5)
-
 ---
 
 **Numer i Nazwa przypadku użycia:** UC-5.1 - Zarejestrowanie produktu
