@@ -1,0 +1,22 @@
+Mateusz -   3.3. Analiza top-down (diagramy przepływów na kolejnych dalszych poziomach dekompozycji; co najmniej rozwinięcie każdego podsystemu)
+
+
+
+
+
+
+3.4. Specyfikacje: opis procesów najbardziej szczegółowego poziomu (specyfikacja procesów przy pomocy formularza opisu wymagania funkcjonalnego z pseudokodem).
+
+4. Słownik danych dla modelowania - utworzyć (to NIE jest Słownik Pojęć Biz. czy Dziedzinowych !) jako uzupełnienie punktu 3. (w wersji uproszczonej, tj. opis elementów z DFD, poza procesami, opisanymi w 3.4) 
+ [* opcjonalnie !  -  wg standardu CASE – notacja Yourdona]
+
+Opis uproszczony (np.  tabela) obejmuje: nazwy strumieni i magazynów danych, dokumentów przepływających w tych strumieniach z ref. do punktu 2.3 i Załącznika B ; nazwy najważniejszych danych w dokumentach
+
+
+Kamil - 
+Mockupy 
+
+Kacper - 6. Zachowanie systemu w czasie  (prosty model stanów całego systemu –  podstawa do projektu ogólnej struktury intefejsu)
+Diagramy maszyny stanowej – SMD z uwzględnieniem podziału na role przydzielone w systemie oraz założenia z punktu 2.
+
+Adam - Diagramy + opis
