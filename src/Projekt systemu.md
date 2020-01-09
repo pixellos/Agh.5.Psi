@@ -355,7 +355,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 
     2. Realizacja reklamacji do dostawcy
-
+    
         Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od niego wymienione, działające produkty.
 
 4. Prowadzenie rejestru reklamacji
@@ -858,7 +858,7 @@ _Klient_ - Inicjuje proces
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` wyszukuje klienta w systemie
+1. `Konsultant` wyszukuje klienta w systemie `UC-2.2`
 2. `Konsultant` w zależność od zainistałej potrzeby dodaje, usuwa, edytuje, lub odczytuje rejestr klienta
 3. System wyświetla informację potwierdzającą operacje
 
@@ -874,7 +874,43 @@ Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.2 - Tworzenie oferty
+**Numer i nazwa przypadku uzycia:** UC-2.2 - Wyszukiwanie klienta
+
+**Autor:** Adam Samsonowicz
+
+**Cel przypadku użycia:** Wyszukiwanie klienta w celu wykonania operacji na rejestrze
+
+**Kontekst użycia:** `Konsultant` musi mieć możliwość wyszukania klienta
+
+**Zakres:** Przetwarzanie danych klientów
+
+**Poziom:** Przetwarzanie danych klientów
+
+**Warunek początkowy:** Brak
+
+**Zdarzenie inicjujące:** Następuje potrzeba wyszukania klienta
+
+**Główny scenariusz powodzenia:**
+
+1. `Konsultant` wpisuje wartości po, których nastąpli filtrowanie klientów
+2. System filtruje rejestry klientów
+3. System wyświetla klienta
+
+**Scenariusze alternatywne:**
+
+1. `Konsultant` wpisuje wartości po, których nastąpli filtrowanie klientów
+2. System filtruje rejestry klientów
+3. System wyświetla komunikat o braku możliwości znalezienia rejestrów z podanymi filtrami
+
+**Aktor główny:** Konsultant
+
+**Uczestnicy i interesy:**
+
+Konsultant - Potrzebuje wyszukać klienta w systemie
+
+---
+
+**Numer i nazwa przypadku uzycia:** UC-2.3 - Tworzenie oferty
 
 **Autor:** Adam Samsonowicz
 
@@ -910,7 +946,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.3 - Zatwierdzanie oferty
+**Numer i nazwa przypadku uzycia:** UC-2.4 - Zatwierdzanie oferty
 
 **Autor:** Adam Samsonowicz
 
@@ -950,7 +986,7 @@ Zatwierdzający oferte - rozpatruje oferte w kontekście zatwierdzenia
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.4 - Dodawanie produktów
+**Numer i nazwa przypadku uzycia:** UC-2.5 - Dodawanie produktów
 
 **Autor:** Adam Samsonowicz
 
@@ -983,7 +1019,7 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.5 - Wyszukiwanie produktów
+**Numer i nazwa przypadku uzycia:** UC-2.6 - Wyszukiwanie produktów
 
 **Autor:** Adam Samsonowicz
 
@@ -1649,13 +1685,13 @@ Marketingowiec - inicjowanie stworzenia raportu
 ![Diagram aktywności zarządzania rejestrami klientów](./diagrams/images/AD-OA2.1.jpg)
 ##### _Rysunek X. Diagram aktywności zarządzania rejestrami klientów
 
-![Diagram aktywności tworzenia oferty](./diagrams/images/AD-OA2.2.jpg)
+![Diagram aktywności tworzenia oferty](./diagrams/images/AD-OA2.3.jpg)
 ##### _Rysunek X. Diagram aktywności tworzenia oferty
 
-![Diagram aktywności zatwierdzania oferty](./diagrams/images/AD-OA2.3.jpg)
+![Diagram aktywności zatwierdzania oferty](./diagrams/images/AD-OA2.4.jpg)
 ##### _Rysunek X. Diagram aktywności zatwierdzania oferty
 
-![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.4.jpg)
+![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.5.jpg)
 ##### _Rysunek X. Diagram aktywności wyszukiwania i dodania prodktu
 
 
