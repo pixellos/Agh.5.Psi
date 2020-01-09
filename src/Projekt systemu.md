@@ -34,6 +34,7 @@ Spis Treści
         - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania)
     - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
         - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
+        - [1.3.2. Obsługa magazynu (OA4)](#132-obsługa-magazynu-oa4)
     - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
         - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
         - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
@@ -362,7 +363,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
 <div class="page">
 
-#### 1.3.1.4 Obsługa magazynu (OA4)
+### 1.3.1.4 Obsługa magazynu (OA4)
 
    1. Weryfikacja dokumentacji
 
@@ -651,12 +652,12 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 
 **Scenariusze alternatywne:**
 
-1. `Dostawca` nie istnieje w systemie, system proponuje `UC-1.3`
+1. `Dostawca` nie istnieje w systemie, system proponuje `UC-1.2`
 
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
-_Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
+_Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówienia, będzie powiadomiony o zdarzeniu zmiany danych w celu ich weryfikacji
 
 ---
 
@@ -1380,8 +1381,6 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 **Uczestnicy i interesy:**
 
 _Magazynier_ - Jest to w jego zakresie obowiązków
-
-### 2.1.5 Obsługa rejestru magazynu (OA5)
 
 ---
 

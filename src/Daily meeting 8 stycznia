@@ -1,0 +1,32 @@
+Do Piątku wieczora
+3.4. Specyfikacje: opis procesów najbardziej szczegółowego poziomu (specyfikacja procesów przy pomocy formularza opisu wymagania funkcjonalnego z pseudokodem).
+4. Słownik danych dla modelowania - utworzyć (to NIE jest Słownik Pojęć Biz. czy Dziedzinowych !) jako uzupełnienie punktu 3. (w wersji uproszczonej, tj. opis elementów z DFD, poza procesami, opisanymi w 3.4) 
+ [* opcjonalnie !  -  wg standardu CASE – notacja Yourdona]
+
+Mateusz Przykład powyższych
+
+Do soboty wierczora
+
+Reszta podzieli się pozostalymi
+
+----------------
+
+! Do Soboty wieczorem 22:00 Deadline
+
+
+
+Do wziecia 
+8. pkt dlaczego usunelisdy i poprawialismy itp
+
+--------
+9. Architektura systemu (schemat poglądowy)
+9.1. Architektura całego systemu
+9.2. Architektura podsystemów
+9.3. Wewnętrzna architektura (modułowa) poszczególnych podsystemów
+(UML: Component Diagrams, Deployment Diagrams)
+
+10. Podsumowanie
+
+10.1. Założenia implementacyjne (zakres, model procesu wytwórczego, kolejność prac, dobór narzędzi, propozycja konfiguracji sprzętowej, itd...)
+10.2. Weryfikacja całości projektu systemu
+10.3. Uwagi i wnioski końcowe (w tym propozycje: zmian i ulepszeń, kierunki dalszych prac)
