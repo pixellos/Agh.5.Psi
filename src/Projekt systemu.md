@@ -50,8 +50,7 @@ Spis Treści
         - [2.4.2. Obsługa zleceń zakupu (OA2)](#242-obsługa-zleceń-zakupu-oa2)
         - [2.4.3. Obsługa reklamacji (OA3)](#243-obsługa-reklamacji-oa3)
         - [2.4.4. Obsługa Rejestr Magazynu (OA4)](#244-obsługa-rejestr-magazynu-oa4)
-        - [2.4.5. Obsługa rejestru magazynu (OA5)](#245-obsługa-rejestru-magazynu-oa5)
-        - [2.4.6. Analiza danych na potrzeby marketingowe (OA6)](#246-analiza-danych-na-potrzeby-marketingowe-oa6)
+        - [2.4.5. Analiza danych na potrzeby marketingowe (OA6)](#245-analiza-danych-na-potrzeby-marketingowe-oa6)
     - [2.5. Modelowanie zachowań w czasie](#25-modelowanie-zachowań-w-czasie)
         - [2.5.1. Obsługa zamówień (OA1)](#251-obsługa-zamówień-oa1)
         - [2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2)
@@ -70,6 +69,14 @@ Spis Treści
         - [2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)
 - [3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)](#3-analiza-funkcjonalna-systemu-przy-pomocy-przepływów-danych--i-proces-dekompozycji)
     - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk)
+    - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy)
+    - [3.3. Analiza top-down](#33-analiza-top-down)
+        - [3.3.1. Rozszerzony diagram kontekstowy z rejestrami danych](#331-rozszerzony-diagram-kontekstowy-z-rejestrami-danych)
+        - [3.3.2. Analiza dla Podsystemu 1.](#332-analiza-dla-podsystemu-1)
+        - [3.3.3. Analiza dla Podsystemu 2.](#333-analiza-dla-podsystemu-2)
+        - [3.3.4. Analiza dla Podsystemu 3.](#334-analiza-dla-podsystemu-3)
+        - [3.3.5. Analiza dla Podsystemu 4.](#335-analiza-dla-podsystemu-4)
+        - [3.3.6. Analiza dla Podsystemu 5.](#336-analiza-dla-podsystemu-5)
 - [4. Załącznik A: Słownik pojęć dziedzinowych:](#4-załącznik-a-słownik-pojęć-dziedzinowych)
     - [4.1. A](#41-a)
     - [4.2. F](#42-f)
@@ -2041,9 +2048,83 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 ## 3.1. Diagram kontekstowy (DK)
 ![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
 ##### Rysunek X. Diagram kontekstowy
+<div class="page">
+
+## 3.2 Rozwinięty diagram kontekstowy
 
 ![Diagram kontekstowy](./diagrams/images/DF/podsystemy.jpg)
-##### Rysunek X. Diagram Podsystemu
+##### Rysunek X. Diagram Podsystemów
+
+
+<div class="page">
+
+
+## 3.3 Analiza top-down
+
+### 3.3.1 Rozszerzony diagram kontekstowy z rejestrami danych 
+![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy-rejestry.jpg)
+<div class="page">
+
+### 3.3.2 Analiza dla Podsystemu 1.
+
+![Diagram kontekstowy](./diagrams/images/DF/ps1.jpg)
+
+***
+Nazwa funkcji: 1.1.1 Przetwórz dostawcę
+
+Opis: Funkcja służąca do przetworzenia otrzymanych danych dostawcy
+
+Dane wejściowe: Wpis Dostawcy 
+
+Źródło danych wejściowych: `Klient` (Przez `konsultanta`)
+
+Dane wyjściowe: Uporządkowane dane dostawcy
+
+Przeznaczenie: Służy do aktualizacji danych dostawcy
+
+Czego wymaga: Kontaktu z dostawcą
+
+Warunek początkowy: Dane dostawcy się zmieniły i dostawca nas o tym powiadomił
+
+Warunek końcowy: Dane dostawcy zostały zaktualizowane w rejestrze
+
+Pseudokod:
+```
+Posiadając dane klienta
+Sprawdź, czy firma o numerze NIP istnieje w rejestrze
+Jeżeli tak, nałóż zmiany
+Jeżeli nie, wygeneruj id i stwórz wpis
+Zapisz wpis w rejestrze
+
+```
+
+Efekty uboczne: Dokumenty sprzedażowe, które nie zostały zatwierdzone będą wyświetlane z nowymi danymi
+
+Uwagi: (Uzasadnienie)
+***
+
+<div class="page">
+
+### 3.3.2 Analiza dla Podsystemu 2.
+
+![Diagram kontekstowy](./diagrams/images/DF/ps2.jpg)
+<div class="page">
+
+### 3.3.2 Analiza dla Podsystemu 3.
+
+![Diagram kontekstowy](./diagrams/images/DF/ps3.jpg)
+<div class="page">
+
+### 3.3.2 Analiza dla Podsystemu 4.
+
+![Diagram kontekstowy](./diagrams/images/DF/ps4.jpg)
+<div class="page">
+
+### 3.3.2 Analiza dla Podsystemu 5.
+
+![Diagram kontekstowy](./diagrams/images/DF/ps5.jpg)
+
+
 
 <div class="page">
 
@@ -2140,15 +2221,17 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 # Załącznik F: Podział zadań
 
-OA:
+Skład dokumentu - Mateusz
+
 1 - Mateusz
+
 2 - Adam
+
 3 - Kacper
+
 4 - Kamil
-5 - Kamil
-6 - Adam
-7 - Mateusz
-8 - Kacper
+
+5 - 
 
 Dokumenty:
 
@@ -2195,3 +2278,12 @@ Wymagania niefunkcjonalne
 
 1. ochrony prywatności -Kamil
 1. wymagania zabezpieczeń - Adam
+
+Diagram Kontekstowy - Mateusz
+Diagram kontekstowy z podsystemami - Mateusz 
+
+Analiza top down:
+Podsystem 1, Podsystem 5 - Mateusz
+
+Diagram ERD - Adam
+
