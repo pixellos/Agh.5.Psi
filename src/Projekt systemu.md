@@ -2089,6 +2089,74 @@ Efekty uboczne: Dokumenty sprzedażowe, które nie zostały zatwierdzone będą 
 Uwagi: (Uzasadnienie)
 ***
 
+***
+Nazwa funkcji: 1.1.2 Przetwórz zmiany w ofercie
+
+Opis: Funkcja służąca do przetworzenia zmian w ofercie
+
+Dane wejściowe: Formularz zmiany w ofercie
+
+Źródło danych wejściowych:  `konsultant'
+
+Dane wyjściowe: Uporządkowane dane oferty
+
+Przeznaczenie: Służy do aktualizacji danych oferty
+
+Czego wymaga: Kontaktu z konsultantem
+
+Warunek początkowy: Dane oferty uległy zmianie
+
+Warunek końcowy: Dane oferty zostały zaktualizowane w rejestrze
+
+Pseudokod:
+```
+Posiadając dane oferty
+Sprawdź, czy oferta istnieje w rejestrze
+Jeżeli tak, wprowadź zmiany
+Jeżeli nie, wygeneruj id i stwórz oferte
+Zapisz oferte w rejestrze
+
+```
+
+Efekty uboczne: Nadpisanie starej oferty z nowymi danymi
+
+Uwagi: (Uzasadnienie)
+***
+
+***
+Nazwa funkcji: 1.1.3 Przetwórz dostepne towary i brakujący stan
+
+Opis: Funkcja służąca do przetworzenia dostępnych towarów i braków
+
+Dane wejściowe: Rejestr magazynu
+
+Źródło danych wejściowych: `magazyn'
+
+Dane wyjściowe: Uporządkowane dane towarów
+
+Przeznaczenie: Służy do aktualizacji danych dostępnych towarów
+
+Czego wymaga: Kontaktu z magazynierem
+
+Warunek początkowy: Dane towarów uległy zmianie
+
+Warunek końcowy: Dane towarów zostały zaktualizowane w rejestrze
+
+Pseudokod:
+```
+Posiadając dane towarów
+Sprawdź, czy nastąpiła zmiana w magazynie
+Jeżeli tak, wprowadź zmiany
+Jeżeli nie, wstrzymaj sie
+Zapisz dane towarów w rejestrze
+
+```
+
+Efekty uboczne: Nadpisanie danych towarów
+
+Uwagi: (Uzasadnienie)
+***
+
 <div class="page">
 
 ### 3.3.2 Analiza dla Podsystemu 2.
