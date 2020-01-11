@@ -2124,6 +2124,37 @@ Uwagi: (Uzasadnienie)
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps5.jpg)
 
+<div class="page">
+
+### 6. Interfejsy uzytkownika (Ekrany)
+
+![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
+##### _Rysunek X. Interfejs uzytkownika Obsluga_Dostawcow_
+
+
+
+![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
+##### _Rysunek X. Interfejs uzytkownika Obsluga_zlecen_zakupu__
+
+
+
+![](./diagrams/images/OA_3_Obsługa_reklamacji.jpg)
+##### _Rysunek X. Interfejs uzytkownika Obsługa_reklamacji__
+
+
+
+![](./diagrams/images/OA_4_Rejestr_Obsluga_Magazynu.jpg)
+##### _Rysunek X. Interfejs uzytkownika Obsluga_Magazynu
+
+
+
+![](./diagrams/images/OA_6_Analiza_danych.jpg)
+##### _Rysunek X. Interfejs uzytkownika Analiza_danych_
+
+
+
+
+
 
 
 <div class="page">
