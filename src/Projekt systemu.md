@@ -2473,7 +2473,7 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
 
 <div class="page">
 
-### 	6. Interfejsy uzytkownika (Ekrany)
+## 	7. Interfejsy uzytkownika (Ekrany)
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
 ##### _Rysunek X. Interfejs uzytkownika Obsluga_Dostawcow_
