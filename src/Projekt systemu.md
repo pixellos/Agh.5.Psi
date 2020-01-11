@@ -542,25 +542,12 @@ W systemie możemy wyróżnić następujących aktorów
 
 ## 2.2 Rejestry w systemie
 
-1. Reprezentant Klienta - jest to osoba fizyczna podejmująca z nami kontakt, należy do Organizacji klienta
-   1. Imię
-   1. Nazwisko
-   1. Email kontaktowy
-   1. Telefon kontaktowy
-   1. Adres kontaktowy
-   1. `Organizacja Klienta`
-   1. Zgoda na przetwarzanie danych osobowych w formie cyfrowej
-   1. Numer referencyjny
-
-1. Organizacja klienta - jest to działalność gospodarcza
+1. Klient - jest to firma, której sprzedajemy
    1. Nazwa firmy
    1. NIP
-   1. Wystawione faktury przez naszą firmę
-   1. Wystawione faktury do opłacenia przez nasza firmę
-   1. Kraj pochodzenia
-   1. Reprezentanci
-   1. Lokale
-
+   1. Kraj
+   1. Adres
+   1. Branża
 1. Dostawca - jest to firma od której zamawiamy
    1. Nazwa firmy
    1. NIP
@@ -568,36 +555,35 @@ W systemie możemy wyróżnić następujących aktorów
    1. Wystawione faktury na firmę dostawcy
    1. Kraj pochodzenia
    1. Łączna kwota zamówień
-
 1. Oferta
-   1. Zaproponowane produkty
+   1. Produkty
    1. Data wystawienia
    1. Klient
-
 1. Pracownik
    1. Imię
    1. Nazwisko
    1. Email kontaktowy
    1. Telefon kontaktowy
    1. Adres kontaktowy
-   1. Pensja
-   1. Data zatrudnienia
-   1. Data rozwiązania umowy
-
 1. Magazyn
    1. Sektor
    1. Numer Miejsca
    1. Obecnie przechowywany produkt
    1. Historycznie przechowywane produkty
-   1. Rezerwacja pod produkt wielkogabarytowy
-
+   1. Wymiary
 1. Produkt
-   1. ID
+   1. Kod
    1. Nazwa
-   1. Typ
-   1. Data dostawy
-
-
+   1. Cena katalogowa
+   1. Cena sprzedaży
+   1. Cena kupna
+   1. Opis
+   1. Dostawca
+1. Zamówienie
+   1. Produkt
+   2. Data
+   3. Adres
+   4. Klient
 
 
 <div class="page">
@@ -2126,7 +2112,88 @@ Uwagi: (Uzasadnienie)
 
 <div class="page">
 
-### 6. Interfejsy uzytkownika (Ekrany)
+# 5.  Analiza struktur danych przechowywanych w systemie
+Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
+
+![](./diagrams/images/ERD.jpg)
+##### _Rysunek X. Diagram ERD
+
+
+- Lista tabel
+
+  - Quotation
+  - QuotationProduct
+  - QuotationOrder
+  - QuotationOrderProduct
+  - QuotationStatus
+  - QuotationOwner
+  - QuotationApproval
+  - QuotationPriority
+  - OwnerRole
+  - User
+  - ApprovalStatus
+  - QuotationCustomer
+  - Industry
+  - Customer
+  - CustomerOrderAddress
+  - ProductStatus
+  - DeliveryTimeUnit
+  - MeanOfTransport
+  - Currency
+  - Country
+  - Factory
+  - Supplier
+  - SupplierOrder
+  - SupplierOrderProduct
+  - SupplierComplaintProduct
+  - CustomerComplaintProduct
+  - ProductShipment
+  - Warehouse
+  - ProductAcceptance
+  - Inventory
+  - WarehouseProduct
+  - WarehouseProductStatus
+
+- Uzasadnienie obecności obiektów
+
+  
+
+- Relacje między rejestrami i strukturami danych
+
+  - Klient
+    - Customer
+    - Industry
+  - Dostawca
+    - Supplier
+    - Factory
+  - Oferta
+    - Quotation
+    - QuotationProduct
+    - QuotationCustomer
+  - Pracownik
+    - User
+  - Magazyn
+    - Warehouse
+    - WarehouseProduct
+    - Inventory
+    - WarehouseProductStatus
+  - Produkt
+    - QuotationProduct
+    - WarehouseProduct
+    - Supplier
+  - Zamówienie
+    - QuotationOrder
+    - QuotationOrderProduct
+    - CustomerOrderAddress
+    - QuotationCustomer
+
+
+
+
+
+<div class="page">
+
+### 	6. Interfejsy uzytkownika (Ekrany)
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
 ##### _Rysunek X. Interfejs uzytkownika Obsluga_Dostawcow_
