@@ -78,6 +78,7 @@ Spis Treści
         - [3.3.5. Analiza dla Podsystemu 4.](#335-analiza-dla-podsystemu-4)
         - [3.3.6. Analiza dla Podsystemu 5.](#336-analiza-dla-podsystemu-5)
 - [5. Analiza struktur danych](#5--Analiza-struktur-danych-przechowywanych-w-systemie)
+- [6. Diagram maszyny stanowej](#6--Diagram-maszyny-stanowej)
 - [11. Załącznik A: Słownik pojęć dziedzinowych:](#4-załącznik-a-słownik-pojęć-dziedzinowych)
     - [4.1. A](#41-a)
     - [4.2. F](#42-f)
@@ -2472,6 +2473,15 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
       
 
 <div class="page">
+    
+# 6. Diagram maszyny stanowej
+Celem punktu jest przedstawienie zachowań systemu w czasie.
+
+
+![](./diagrams/images/Diagram_maszyny_stanow.jpg)
+##### _Rysunek X. Diagram SMD
+
+<div class="page">
 
 ## 	7. Interfejsy uzytkownika (Ekrany)
 
@@ -2505,6 +2515,7 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
 
 
 <div class="page">
+     
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
