@@ -585,6 +585,12 @@ W systemie możemy wyróżnić następujących aktorów
    2. Data
    3. Adres
    4. Klient
+1. Reklamacja od klienta
+   1. Zamówiony produkt
+   2. Opis usterki
+1. Reklamacja do dostawcy
+   1. Produkt z reklamacji od klienta
+   2. Opis usterki
 
 
 <div class="page">
@@ -2286,40 +2292,72 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
 ##### _Rysunek X. Diagram ERD
 
 
-- Lista tabel
+- Lista tabel i uzasadnienie obecności
 
   - Quotation
+    - Główne informacje o ofercie, główna encja oferty
   - QuotationProduct
+    - Produkt dodany do oferty, zawiera ceny i informacje o produkcie
   - QuotationOrder
+    - Zamówienie powiązane z ofertą
   - QuotationOrderProduct
+    - Produkt powiązany z danym zamówieniem
   - QuotationStatus
+    - Status w, którym znajduje się oferta
   - QuotationOwner
+    - Uzytkownik zajmujący się daną ofertą
   - QuotationApproval
+    - Zatwierdzanie oferty
   - QuotationPriority
+    - Dane statystyczna pozwalające priorytetyzować oferty
   - OwnerRole
+    - Rola użytkownika zajmującego się daną ofertą
   - User
+    - Pracownik z dostępem do systemu
   - ApprovalStatus
+    - Status, w którym znajduje się zatwierdzanie oferty
   - QuotationCustomer
+    - Klient zkorelowany z daną oferta
   - Industry
+    - Branża klienta
   - Customer
+    - Rejestr klienta
   - CustomerOrderAddress
+    - Adres pod jaki ma być dostarczone zamówienie
   - ProductStatus
+    - Status w jakim znajduje się produkt
   - DeliveryTimeUnit
+    - Jednostka czasu, w której podany jest czas dostawy
   - MeanOfTransport
+    - Rodzaj transportu wymagany do przewozu produktu
   - Currency
+    - Waluta powiązana z cenami katalogowymi, sprzedaży oraz kupna
   - Country
+    - Słownik krajów
   - Factory
+    - Informacje o fabryce naszego dostawcy
   - Supplier
+    - Rejestr dostawcy
   - SupplierOrder
+    - Zamówienie do dostawcy
   - SupplierOrderProduct
+    - Produkt w zamówieniu do dostawcy
   - SupplierComplaintProduct
+    - Rejestr reklamacji do dostawcy
   - CustomerComplaintProduct
+    - Rejestr reklamacji od klienta
   - ProductShipment
+    - Wyrejestrowanie produktu z magazynu
   - Warehouse
+    - Dane magazynu
   - ProductAcceptance
+    - Rejestracja produktu na magazynie
   - Inventory
+    - Informacje o strukturze magazynu wraz z identyfikatorem miejsca
   - WarehouseProduct
+    - Produkt znajdujący się na magazynie powiązany z identyfikatorem miejsca
   - WarehouseProductStatus
+    - Status produktu znajdującego się na magazynie
 
 - Uzasadnienie obecności obiektów
 
@@ -2330,33 +2368,46 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
   - Klient
     - Customer
     - Industry
+    
   - Dostawca
     - Supplier
     - Factory
+    
   - Oferta
     - Quotation
     - QuotationProduct
     - QuotationCustomer
+    
   - Pracownik
+    
     - User
+    
   - Magazyn
     - Warehouse
     - WarehouseProduct
     - Inventory
     - WarehouseProductStatus
+    
   - Produkt
     - QuotationProduct
     - WarehouseProduct
     - Supplier
+    
   - Zamówienie
     - QuotationOrder
     - QuotationOrderProduct
     - CustomerOrderAddress
     - QuotationCustomer
-
-
-
-
+    
+  - Reklamacja od klienta
+  
+    - CustomerComplaintProduct
+  
+  - Reklamacja do dostawcy
+  
+    - SupplierComplaintProduct
+  
+      
 
 <div class="page">
 
