@@ -2176,6 +2176,103 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 2.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps2.jpg)
+
+***
+Nazwa funkcji: 1.2.1 Przetwórz zlecenie zakupu
+
+Opis: Funkcja służąca do przetworzenia zlecenia zakupu
+
+Dane wejściowe: Formularz zlecenia zakupu
+
+Źródło danych wejściowych:  `konsultant'
+
+Dane wyjściowe: Uporządkowane dane zakupu
+
+Przeznaczenie: Służy do tworzenia zlecenia zakupu
+
+Czego wymaga: Kontaktu z konsultantem
+
+Warunek początkowy: Potrzeba kupna produktu
+
+Warunek końcowy: Sfinalizowana tranzakcja kupna produktu
+
+Pseudokod:
+```
+Posiadając dane zlecenia zakupu
+Sprawdź, czy dane zostały wprowadzone prawidłowo
+Jeżeli tak, wprowadź dane
+Jeżeli nie, wstrzymaj się
+Zleć zakup
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
+***
+Nazwa funkcji: 1.2.2 Przygotuj ofertę
+
+Opis: Funkcja służąca do Tworzenia oferty
+
+Dane wejściowe: Formularz oferty
+
+Źródło danych wejściowych: `Konsultant`
+
+Dane wyjściowe: Uporządkowane dane oferty
+
+Przeznaczenie: Służy do utworzenia danych oferty
+
+Czego wymaga: Kontaktu z konsultantem
+
+Warunek początkowy: Potrzeba stworzenia oferty
+
+Warunek końcowy: Utworzona oferta
+
+Pseudokod:
+```
+Posiadając dane oferty
+Sprawdź, czy dane zostały wprowadzone prawidłowo
+Jeżeli tak, wprowadź dane
+Jeżeli nie, wstrzymaj się
+Zapisz oferte w rejestrze
+
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
+***
+Nazwa funkcji: 1.2.2 Potwierdź ofertę
+
+Opis: Funkcja służąca do zatwierdzania oferty
+
+Dane wejściowe: Formularz oferty
+
+Źródło danych wejściowych: `Konsultant`
+
+Dane wyjściowe: Uporządkowane dane oferty
+
+Przeznaczenie: Służy do zatwierdzania danych oferty
+
+Czego wymaga: Kontaktu z konsultantem
+
+Warunek początkowy: Utworzona oferta
+
+Warunek końcowy: Zatwierdzona oferta
+
+Pseudokod:
+```
+Potwierdz oferte
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
 <div class="page">
 
 ### 3.3.2 Analiza dla Podsystemu 3.
