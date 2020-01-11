@@ -77,7 +77,8 @@ Spis Treści
         - [3.3.4. Analiza dla Podsystemu 3.](#334-analiza-dla-podsystemu-3)
         - [3.3.5. Analiza dla Podsystemu 4.](#335-analiza-dla-podsystemu-4)
         - [3.3.6. Analiza dla Podsystemu 5.](#336-analiza-dla-podsystemu-5)
-- [4. Załącznik A: Słownik pojęć dziedzinowych:](#4-załącznik-a-słownik-pojęć-dziedzinowych)
+- [5. Analiza struktur danych](#5-Analiza-struktur-danych-przechowywanych-w-systemie)
+- [11. Załącznik A: Słownik pojęć dziedzinowych:](#4-załącznik-a-słownik-pojęć-dziedzinowych)
     - [4.1. A](#41-a)
     - [4.2. F](#42-f)
     - [4.3. I](#43-i)
@@ -86,7 +87,7 @@ Spis Treści
     - [4.6. R](#46-r)
     - [4.7. S](#47-s)
     - [4.8. Z](#48-z)
-- [5. Załącznik B: Wzory dokumentów](#5-załącznik-b-wzory-dokumentów)
+- [12. Załącznik B: Wzory dokumentów](#5-załącznik-b-wzory-dokumentów)
         - [5.1. Danedostawcy.docx](#51-danedostawcydocx)
         - [5.2. Danefabryki.docx](#52-danefabrykidocx)
         - [5.3. Wpistowaruwkatalogu.docx](#53-wpistowaruwkatalogudocx)
@@ -105,10 +106,10 @@ Spis Treści
         - [5.16. Raportzakcjimarketingowych.doc](#516-raportzakcjimarketingowychdoc)
         - [5.17. Zamówienieklienta.doc](#517-zamówienieklientadoc)
         - [5.18. Instomformularzdanychpotencjalnegoklienta.docx](#518-instomformularzdanychpotencjalnegoklientadocx)
-- [6. Załącznik C:](#6-załącznik-c)
-- [7. Załącznik D:](#7-załącznik-d)
-- [8. Załącznik E: Spis rysunków](#8-załącznik-e-spis-rysunków)
-- [9. Załącznik F: Podział zadań](#9-załącznik-f-podział-zadań)
+- [13. Załącznik C:](#6-załącznik-c)
+- [14. Załącznik D:](#7-załącznik-d)
+- [15. Załącznik E: Spis rysunków](#8-załącznik-e-spis-rysunków)
+- [16. Załącznik F: Podział zadań](#9-załącznik-f-podział-zadań)
 
 <!-- /TOC -->
 
@@ -2279,6 +2280,7 @@ Uwagi: (Uzasadnienie)
 
 # 5.  Analiza struktur danych przechowywanych w systemie
 Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
+
 
 ![](./diagrams/images/ERD.jpg)
 ##### _Rysunek X. Diagram ERD
