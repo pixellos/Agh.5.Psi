@@ -2090,7 +2090,6 @@ Efekty uboczne: Dokumenty sprzedażowe, które nie zostały zatwierdzone będą 
 Uwagi: (Uzasadnienie)
 ***
 
-***
 Nazwa funkcji: 1.1.2 Przetwórz zmiany w ofercie
 
 Opis: Funkcja służąca do przetworzenia zmian w ofercie
@@ -2124,7 +2123,6 @@ Efekty uboczne: Nadpisanie starej oferty z nowymi danymi
 Uwagi: (Uzasadnienie)
 ***
 
-***
 Nazwa funkcji: 1.1.3 Przetwórz dostepne towary i brakujący stan
 
 Opis: Funkcja służąca do przetworzenia dostępnych towarów i braków
@@ -2197,7 +2195,6 @@ Efekty uboczne: -
 Uwagi: (Uzasadnienie)
 ***
 
-***
 Nazwa funkcji: 1.2.2 Przygotuj ofertę
 
 Opis: Funkcja służąca do Tworzenia oferty
@@ -2231,8 +2228,7 @@ Efekty uboczne: -
 Uwagi: (Uzasadnienie)
 ***
 
-***
-Nazwa funkcji: 1.2.2 Potwierdź ofertę
+Nazwa funkcji: 1.2.3 Potwierdź ofertę
 
 Opis: Funkcja służąca do zatwierdzania oferty
 
@@ -2265,6 +2261,72 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 3.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps3.jpg)
+
+***
+Nazwa funkcji: 1.3.1 Przyjęcie reklamacji
+
+Opis: Funkcja służąca do przyjmowania reklamacji
+
+Dane wejściowe: Formularz reklamacji
+
+Źródło danych wejściowych: `Konsultant`
+
+Dane wyjściowe: Uporządkowane dane reklamacji
+
+Przeznaczenie: Służy do przyjmowania reklamacji
+
+Czego wymaga: Kontaktu z konsultantem
+
+Warunek początkowy: Potrzeba zgłoszenia reklamacji
+
+Warunek końcowy: Utworzona reklamacja
+
+Pseudokod:
+```
+Posiadając dane reklamacji
+Sprawdź, czy dane zostały wprowadzone prawidłowo
+Jeżeli tak, wprowadź dane
+Jeżeli nie, wstrzymaj się
+Zapisz reklamacje w rejestrze
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
+Nazwa funkcji: 1.3.2 Realizacja reklamacji
+
+Opis: Funkcja służąca do realizacji reklamacji
+
+Dane wejściowe: Utworzona reklamacja
+
+Źródło danych wejściowych: `Konsultant`
+
+Dane wyjściowe: Zmiana statusu reklamacji
+
+Przeznaczenie: Służy do realizacji reklamacji
+
+Czego wymaga: Kontaktu z konsultantem
+
+Warunek początkowy: Potrzeba zgłoszenia reklamacji
+
+Warunek końcowy: Utworzona reklamacja
+
+Pseudokod:
+```
+Wykonaj akcje realizacji
+Sprawdź, czy akcja realizacji została wykonana prawidłowo
+Jeżeli tak, wprowadź dane
+Jeżeli nie, powtórz akcję realizacji
+Zmien status
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
 <div class="page">
 
 ### 3.3.2 Analiza dla Podsystemu 4.
