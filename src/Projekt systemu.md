@@ -2339,6 +2339,73 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 4.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps4.jpg)
+
+
+Nazwa funkcji: 1.4.1 Przyjecie na magazyn partii towaru
+
+Opis: Funkcja służąca do przyjmowania na magazyn partii towaru
+
+Dane wejściowe: Formularz rejestracji produktu
+
+Źródło danych wejściowych: `Magazynier`
+
+Dane wyjściowe: Uporządkowane dane reklamacji
+
+Przeznaczenie: Służy do przyjmowania oraz rejestracji partii towaru
+
+Czego wymaga: Kontaktu z Magazynierem
+
+Warunek początkowy: Dostawa towaru
+
+Warunek końcowy: Zarejestrowany produkt
+
+Pseudokod:
+```
+Posiadając dane towaru
+Sprawdź, czy dane zostały wprowadzone prawidłowo
+Jeżeli tak, wprowadź dane
+Jeżeli nie, wstrzymaj się
+Zapisz towar w rejestrze
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
+Nazwa funkcji: 1.4.2 Wydanie partii towaru z magazynu
+
+Opis: Funkcja służąca do wydawania z magazynu partii towaru
+
+Dane wejściowe: Produkty w magazynie
+
+Źródło danych wejściowych: `Magazynier`
+
+Dane wyjściowe: Komunikat o powodzeniu się akcji
+
+Przeznaczenie: Służy do wydawania partii towaru z magazynu
+
+Czego wymaga: Kontaktu z Magazynierem
+
+Warunek początkowy: Potrzeba wydania partii towaru
+
+Warunek końcowy: Wydanie oraz wyrejestrowanie towaru z magazynu
+
+Pseudokod:
+```
+Posiadając dane towaru
+Sprawdź, czy towar istnieje w magazynie
+Jeżeli tak, wprowadź dane
+Jeżeli nie, wstrzymaj się
+Wydaj oraz wyrejestruj towar z magazynu
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
+
 <div class="page">
 
 ### 3.3.2 Analiza dla Podsystemu 5.
