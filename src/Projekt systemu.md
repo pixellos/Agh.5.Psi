@@ -77,6 +77,7 @@ Spis Treści
         - [3.3.4. Analiza dla Podsystemu 3.](#334-analiza-dla-podsystemu-3)
         - [3.3.5. Analiza dla Podsystemu 4.](#335-analiza-dla-podsystemu-4)
         - [3.3.6. Analiza dla Podsystemu 5.](#336-analiza-dla-podsystemu-5)
+- [4. Słownik danych](#4--Słownik-danych)
 - [5. Analiza struktur danych](#5--Analiza-struktur-danych-przechowywanych-w-systemie)
 - [6. Diagram maszyny stanowej](#6--Diagram-maszyny-stanowej)
 - [11. Załącznik A: Słownik pojęć dziedzinowych:](#4-załącznik-a-słownik-pojęć-dziedzinowych)
@@ -2470,6 +2471,32 @@ Efekty uboczne: -
 
 Uwagi: (Uzasadnienie)
 ***
+
+
+<div class="page">
+
+# 4. Słownik danych
+Celem punktu jest przedstawienie uproszczonego słownika danych.
+
+
+| element słownika                 | definicja                                                                           | nazwy powiązanych dokumentów                                                                                                                                                                                                                                |
+|----------------------------------|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| konsultant                       | Załącznik A                                                                         | Dokument_ofertowy Formularz_oferty_udzielonej_dla_klienta Instom_formularz_danych_klienta Instom_formularz_danych_potencjalnego_klienta                                                                                                                     |
+| biuro rachunkowe                 | Załącznik A                                                                         | Dane_dostawcy                                                                                                                                                                                                                                               |
+| magazynier                       | Załącznik A                                                                         | Instom_przesuniecie_miedzymagazynowe Instom_przyjecie zewnetrzne                                                                                                                                                                                            |
+| zarząd firmy                     | Załącznik A                                                                         | Instom_rozchod_wewnetrzny Raport_z_akcji_marketingowych                                                                                                                                                                                                     |
+| klient                           | Załącznik A                                                                         | Dokument_potwierdzajacy_realizacje_reklamacji Formularz_oferty_udzielonej_dla_klienta Formularz_prosby_o_dostepnosc_towaru Formularz_reklamacji_od_klienta Instom_formularz_danych_klienta Zamówienie_klienta Instom_formularz_danych_potencjalnego_klienta |
+| aktualizacja stanów magazynowych | uaktualnienie informacji o przechowywanych  produktach w magazynie                  | Wpis_towaru_w_katalogu Wpis_dotyczący_ceny_towaru                                                                                                                                                                                                           |
+| dane ilościowe                   | informacja o nowych produktach do przechowania w magazynie                          | Wpis_towaru_w_katalogu                                                                                                                                                                                                                                      |
+| raport                           | dokument informujący o ilości sprzedanych produktów, prognozach sprzedaży           | Instom_rozchod_wewnetrzny Raport_z_akcji_marketingowych                                                                                                                                                                                                     |
+| zlecenie zakupu                  | Dokument upoważniający do zakupu określonego materiału , w podanej ilości i czasie. | Wpis_dotyczący_ceny_towaru Zamówienie_klienta                                                                                                                                                                                                               |
+| towar                            | produkt oferowany przez firmę                                                       | Dane_fabryki Wpis_towaru_w_katalogu                                                                                                                                                                                                                         |
+| zamówienie                       | proces kupna przez klienta                                                          | Wpis_dotyczący_ceny_towaru Zamówienie_klienta                                                                                                                                                                                                               |
+| dostawca                         | firma, od której nabywane są produkty dla Instom                                    | Dane_dostawcy Formularz_reklamacji_do_dostawcy                                                                                                                                                                                                              |
+| magazyn                          | miejsce przechowania produktów                                                      | Wpis_dotyczący_ceny_towaru Instom_przesuniecie_miedzymagazynowe                                                                                                                                                                                             |
+| oferta                           | przygotowana dla klienta propozycja sprzedażowa                                     | Formularz_oferty_udzielonej_dla_klienta Dokument_ofertowy Wpis_dotyczący_ceny_towaru                                                                                                                                                                        |
+| reklamacja                       | żądanie klienta w związku z jego niezadowoleniem z produktu                         | Dokument_potwierdzajacy_realizacje_reklamacji Formularz_reklamacji_od_klienta                                                                                                                                                                               |
+
 
 
 <div class="page">
