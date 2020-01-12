@@ -173,7 +173,7 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 
 W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki opis)
 
-![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/master/diagrams/images/companyStructure.png)
+![1. ](https://raw.githubusercontent.com/pixellos/Agh.5.Psi/Agh.5.Psi/diagrams/images/companyStructure.png)
 
 ##### _Rysunek X. Diagram struktura zarządu_
 
