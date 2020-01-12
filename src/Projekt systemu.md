@@ -2412,6 +2412,66 @@ Uwagi: (Uzasadnienie)
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps5.jpg)
 
+Nazwa funkcji: 1.6.1 Przetwórz dokumenty finansowe
+
+Opis: Funkcja służąca do przetworzenia dokumentów finansowych
+
+Dane wejściowe: Dokumenty(reklamacje, zlecenia zakupów, zamówienia)
+
+Źródło danych wejściowych:  `konsultant'
+
+Dane wyjściowe: Informacje z dokumentów
+
+Przeznaczenie: Służy do przetwarzania danych na podstawie dokumentów
+
+Czego wymaga: Zapoznania się z dokumentami
+
+Warunek początkowy: Potrzeba pobrania informacji o reklamacjach lub zlecniach zakupu lub zamowieniach
+
+Warunek końcowy: Informacje
+
+Pseudokod:
+```
+Posiadając dokumenty
+Pobierz informacje
+
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
+Nazwa funkcji: 1.6.2 Generowanie przekrojowego raportu dla zarzadu
+
+Opis: Funkcja służąca do generowania raportów
+
+Dane wejściowe: reklamacje, zlecenia zakupów, zamówienia
+
+Źródło danych wejściowych:  `konsultant'
+
+Dane wyjściowe: Raporty
+
+Przeznaczenie: Służy do generowania raportów
+
+Czego wymaga: Dane z reklamacje, zlecenia zakupów, zamówienia
+
+Warunek początkowy: Potrzeba wygenerowania raportów
+
+Warunek końcowy: Raporty
+
+Pseudokod:
+```
+Posiadając dane
+Wygeneruj raport
+```
+
+Efekty uboczne: -
+
+Uwagi: (Uzasadnienie)
+***
+
+
 <div class="page">
 
 # 5.  Analiza struktur danych przechowywanych w systemie
