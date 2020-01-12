@@ -584,11 +584,14 @@ W systemie możemy wyróżnić następujących aktorów
    1. Cena kupna
    1. Opis
    1. Dostawca
-1. Zamówienie
+1. Zamówienie klienta
    1. Produkt
    2. Data
    3. Adres
    4. Klient
+1. Zamówienie do dostawcy
+   1. Produkt
+   2. Dostawca
 1. Reklamacja od klienta
    1. Zamówiony produkt
    2. Opis usterki
@@ -2504,6 +2507,8 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 # 5.  Analiza struktur danych przechowywanych w systemie
 Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
 
+Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na stworzenie poniższego diagramu ERD, który spełnia przeanalizowane wymagania.
+
 
 ![](./diagrams/images/ERD.jpg)
 ##### _Rysunek X. Diagram ERD
@@ -2576,58 +2581,92 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
   - WarehouseProductStatus
     - Status produktu znajdującego się na magazynie
 
-- Uzasadnienie obecności obiektów
-
-  
-
-- Relacje między rejestrami i strukturami danych
+- Relacje między rejestrami i strukturami danych (Tabele główne)
 
   - Klient
     - Customer
-    - Industry
-    
   - Dostawca
     - Supplier
-    - Factory
-    
   - Oferta
     - Quotation
-    - QuotationProduct
-    - QuotationCustomer
-    
   - Pracownik
     
     - User
-    
   - Magazyn
     - Warehouse
-    - WarehouseProduct
-    - Inventory
-    - WarehouseProductStatus
-    
   - Produkt
     - QuotationProduct
-    - WarehouseProduct
-    - Supplier
-    
-  - Zamówienie
+  - Zamówienie klienta
     - QuotationOrder
-    - QuotationOrderProduct
-    - CustomerOrderAddress
-    - QuotationCustomer
-    
+  - Zamówienie do dostawcy
+    - SupplierOrder
   - Reklamacja od klienta
   
     - CustomerComplaintProduct
-  
   - Reklamacja do dostawcy
   
     - SupplierComplaintProduct
   
-      
+- Tabele pomocnicze (Funkcjonalności - wspierane Use case'y)
+
+  - UC-2.4 Zatwierdzanie oferty
+    - QuotationApproval
+
+  - UC-5.1 Rejestrowanie produktu
+    - ProductAcceptance
+  - UC-5.4 Wyrejestrowanie produktu
+    - ProductShipment
+
+- Tabele pomocnicze (Uzupełnienie struktur danych)
+
+  Tabele pomocnicze oznaczone są pustą kropką, tabele przez nie wspierane oznaczone są zamalowanym kwadratem.
+
+  - Industry
+    - Customer
+    - QuotationCustomer
+  - ApprovalStatus
+    - QuotationApproval
+  - QuotationOwner
+    - Quotation
+  - OwnerRole
+    - QuotationOwner
+  - QuotationPriority
+    - Quotation
+  - QuotationStatus
+    - Quotation
+  - ProductStatus
+    - QuotationProduct
+  - DeliveryTimeUnit
+    - QuotationProduct
+  - MeanOfTransport
+    - QuotationProduct
+  - WarehouseProduct
+    - Warehouse
+  - WarehouseProductStatus
+    - WarehouseProduct
+  - Country
+    - Factory
+    - CustomerOrderAddress
+    - Warehouse
+  - Factory
+    - Supplier
+  - Inventory
+    - Warehouse
+  - QuotationCustomer
+    - Quotation
+  - Currency
+    - QuotationProduct
+  - CustomerOrderAddress
+    - QuotationOrder
+  - QuotationOrderProduct
+    - QuotationOrder
+  - SupplierOrderProduct
+    - SupplierOrder
+
+
 
 <div class="page">
-    
+
 # 6. Diagram maszyny stanowej
 Celem punktu jest przedstawienie zachowań systemu w czasie.
 
@@ -2679,7 +2718,7 @@ Po szczegółowej analizie
 
 
 <div class="page">
-     
+​     
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
