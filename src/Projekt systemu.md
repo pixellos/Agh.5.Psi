@@ -2639,6 +2639,9 @@ Celem punktu jest przedstawienie zachowań systemu w czasie.
 
 # 7. Interfejsy uzytkownika (Ekrany)
 
+![](./diagrams/images/Drzewo_Interfejsow.jpg)
+##### _Rysunek X. Drzewo_Interfejsow_
+
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
 ##### _Rysunek X. Interfejs uzytkownika Obsluga_Dostawcow_
 <div class="page">
