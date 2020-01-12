@@ -1,0 +1,117 @@
+3. Analiza funkcjonalna systemu (przy pomocy przepływów danych i proces
+dekompozycji)
+
+3.1. Diagram kontekstowy (DK);
+Note:  
+- OK
+
+3.2 Rozwinięty DK (podsystemy wynikające z obszarów aktywności i rejestry
+danych, ich wzajemne powiązania)
+
+Note:
+- Poprawic numeracje
+
+3.3. Analiza top-down (diagramy przepływów na kolejnych dalszych poziomach
+dekompozycji; co najmniej rozwinięcie każdego podsystemu)
+
+UWAGA: Wszystkie strumienie danych mają nazwy na DFD i muszą zostać
+szczegółowo opisane w punkcie 4.
+Note:
+- poprawic numeracje
+- dodac nazwy strumieni danych na diagramie kontekstowych tez!
+- na diagramie  kontekstowym opisac grube strumienie, gdzie jest duzo wspolnych przeplywow
+- uzupelnic nazwy rejestrow (we wszystkch)
+klient -> dostawca
+- uzupewnc wszedzie szczegoly (rejestr -> nazwa)
+
+3.4. Specyfikacje: opis procesów najbardziej szczegółowego poziomu
+(specyfikacja procesów przy pomocy formularza opisu wymagania
+funkcjonalnego z pseudokodem).
+
+4. Słownik danych jako uzupełnienie punktu 3. (w wersji uproszczonej, tj. opis
+elementów z DFD, poza procesami, opisanymi w 3.4)
+ [* opcjonalnie ! - wg standardu CASE – notacja Yourdona]
+Opis uproszczony (np. tabela) obejmuje: nazwy strumieni i magazynów danych,
+dokumentów przepływających w tych strumieniach z ref. do punktu 2.3 i
+Załącznika B ; nazwy najważniejszych danych w dokumentach
+
+Note:
+roboczy slownik danych
+- dodac jeszcze jedna kolumne z numerem diagramu DFD (glownie dla ostatniego poziomu)
+- podzielic na 3 tabele (tak, jak w DFD):
+obiekty zewnetrze 
+magazyny danych (data stores)
+strumienie (objasnienie zwiazane z referencja do dokumentow)
+
+
+5. Analiza struktur danych przechowywanych w systemie (BD !)
+Uzasadnienie obecności obiektów i związków pomiędzy nimi, związanie z
+propozycją „rejestrów” (punkt 2.2) i magazynami danych z DFD (opisowo i/lub
+tablica krzyżowa). Diagramy ERD z uzasadnieniem i opisem. Specyfikacja tabel.
+
+Note: 
+- zaczac punkt od uzasadnienia skad sie taki schemat wzial
+nazwac tablami pomocniczymi 
+table pomocnicze powiazac z tabeleami gownymi
+drugie tabele pomicnicze to tabele 
+
+
+tabele glowne: mapowanie rejestrow na tabele
+pomocnicze yzupelniajace rejestru (od klineta)
+pomocnicze realizwuja funkcji
+tabele laczenikowe
+
+6. Zachowanie systemu w czasie (prosty model stanów całego systemu
+– podstawa do projektu ogólnej struktury intefejsu) 
+Diagramy maszyny stanowej – SMD z uwzględnieniem podziału na role
+przydzielone w systemie oraz założenia z punktu 2.
+
+Note:
+- glowny diagram
+- opcjonalnie oddzielnie diagramy dla bardziej skompilikowanych podsystemow
+
+7. Projekt szczegółowy interfejsu użytkownika (projekt ekranów)
+Widoki najważniejszych funkcji utworzone z wykorzystaniem [wskazanych]
+narzędzi do projektowania interfejsów.
+
+Note:
+- Powolac sie na diagram stanow
+- albo zrobic niezaleznie drzewko (strona logowania, itp. )
+- Ktore ekrany wchodza do ktorych podsystemow (powolac sie na drzewo)
+(drzewo jest lepsze do testowania GUI)
+
+
+8. Weryfikacja wytworzonych artefaktów i koncepcji systemu - Mateusz
+Sprawdzanie spójności i niesprzeczności modeli tworzonych z różnych punktów
+widzenia - prezentujących różne aspekty modelowanego systemu oraz
+specyfikacji). Porównanie modeli i specyfikacji. Lista wykrytych rozbieżności i
+ich opis. Wnioski, skutki – korekta: wykaz wprowadzonych zmian i krótki opis.
+
+9. Architektura systemu (schemat poglądowy)
+9.1. Architektura całego systemu  - Kamil
+9.2. Architektura podsystemów  - Kamil
+9.3. Wewnętrzna architektura (modułowa) poszczególnych podsystemów
+(UML: Component Diagrams, Deployment Diagrams)   - Kacper
+
+10. Podsumowanie  - Adam
+10.1. Założenia implementacyjne (zakres, model procesu wytwórczego,
+kolejność prac, dobór narzędzi, propozycja konfiguracji sprzętowej, itd...)
+10.2. Weryfikacja całości projektu systemu
+
+Note:
+- dopisac, ze robilismy weryfikacje i zmnejszylismy liczbe OA 
+
+10.3. Uwagi i wnioski końcowe (w tym propozycje: zmian i ulepszeń, kierunki
+dalszych prac) 
+Źródła
+(publikacje, dokumenty i wykorzystane narzędzia programistyczne w
+kolejności alfabetycznej)
+Spis rysunków i tabel
+Załączniki:
+A. Słownik pojęć dziedzinowych
+B. Wzory dokumentów (ponumerowane)
+C. Raport z podziału pracy w zespole i realizacji ( z odniesieniem do punktów
+dokumentacji oraz podsumowująca ocena procentowa wkładu indywidualnego)
+D. Recenzja dokumentacji projektowej wskazanego Zespołu
+E. Na Moodle: kompletna dokumentacja w .pdf ; źródłowa wersja dokumentacji
+i rysunków, prezentacja w .ppt, recenzja, ew. inne materiały źródłowe)
