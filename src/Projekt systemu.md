@@ -77,41 +77,43 @@ Spis Treści
         - [3.3.4. Analiza dla Podsystemu 3.](#334-analiza-dla-podsystemu-3)
         - [3.3.5. Analiza dla Podsystemu 4.](#335-analiza-dla-podsystemu-4)
         - [3.3.6. Analiza dla Podsystemu 5.](#336-analiza-dla-podsystemu-5)
-- [4. Słownik danych](#4--Słownik-danych)
-- [5. Analiza struktur danych](#5--Analiza-struktur-danych-przechowywanych-w-systemie)
-- [6. Diagram maszyny stanowej](#6--Diagram-maszyny-stanowej)
-- [11. Załącznik A: Słownik pojęć dziedzinowych:](#4-załącznik-a-słownik-pojęć-dziedzinowych)
-    - [4.1. A](#41-a)
-    - [4.2. F](#42-f)
-    - [4.3. I](#43-i)
-    - [4.4. K](#44-k)
-    - [4.5. P](#45-p)
-    - [4.6. R](#46-r)
-    - [4.7. S](#47-s)
-    - [4.8. Z](#48-z)
-- [12. Załącznik B: Wzory dokumentów](#5-załącznik-b-wzory-dokumentów)
-        - [5.1. Danedostawcy.docx](#51-danedostawcydocx)
-        - [5.2. Danefabryki.docx](#52-danefabrykidocx)
-        - [5.3. Wpistowaruwkatalogu.docx](#53-wpistowaruwkatalogudocx)
-        - [5.4. Wpisdotyczącycenytowaru.docx](#54-wpisdotyczącycenytowarudocx)
-        - [5.5. Dokumentofertowy.doc](#55-dokumentofertowydoc)
-        - [5.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#56-dokumentpotwierdzajacyrealizacjereklamacjidocx)
-        - [5.7. Formularzofertyudzielonejdlaklienta.doc](#57-formularzofertyudzielonejdlaklientadoc)
-        - [5.8. Formularzprosbyodostepnosctowaru.docx](#58-formularzprosbyodostepnosctowarudocx)
-        - [5.9. Formularzreklamacjidodostawcy.docx](#59-formularzreklamacjidodostawcydocx)
-        - [5.10. Formularzreklamacjiodklienta.docx](#510-formularzreklamacjiodklientadocx)
-        - [5.11. Instomformularzdanychklienta.docx](#511-instomformularzdanychklientadocx)
-        - [5.12. Instomprzesunieciemiedzymagazynowe.docx](#512-instomprzesunieciemiedzymagazynowedocx)
-        - [5.13. Instomprzyjecie zewnetrzne.docx](#513-instomprzyjecie-zewnetrznedocx)
-        - [5.14. Instomrozchodwewnetrzny.docx](#514-instomrozchodwewnetrznydocx)
-        - [5.15. Instomwydanie zewnetrzne.docx](#515-instomwydanie-zewnetrznedocx)
-        - [5.16. Raportzakcjimarketingowych.doc](#516-raportzakcjimarketingowychdoc)
-        - [5.17. Zamówienieklienta.doc](#517-zamówienieklientadoc)
-        - [5.18. Instomformularzdanychpotencjalnegoklienta.docx](#518-instomformularzdanychpotencjalnegoklientadocx)
-- [13. Załącznik C:](#6-załącznik-c)
-- [14. Załącznik D:](#7-załącznik-d)
-- [15. Załącznik E: Spis rysunków](#8-załącznik-e-spis-rysunków)
-- [16. Załącznik F: Podział zadań](#9-załącznik-f-podział-zadań)
+- [4. Słownik danych](#4-słownik-danych)
+- [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
+- [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
+- [7. Interfejsy uzytkownika (Ekrany)](#7-interfejsy-uzytkownika-ekrany)
+- [8. Weryfikacja wytworzonych artefaktów i koncepcji systemu](#8-weryfikacja-wytworzonych-artefaktów-i-koncepcji-systemu)
+- [9. Załącznik A: Słownik pojęć dziedzinowych:](#9-załącznik-a-słownik-pojęć-dziedzinowych)
+    - [9.1. A](#91-a)
+    - [9.2. F](#92-f)
+    - [9.3. I](#93-i)
+    - [9.4. K](#94-k)
+    - [9.5. P](#95-p)
+    - [9.6. R](#96-r)
+    - [9.7. S](#97-s)
+    - [9.8. Z](#98-z)
+- [10. Załącznik B: Wzory dokumentów](#10-załącznik-b-wzory-dokumentów)
+        - [10.1. Danedostawcy.docx](#101-danedostawcydocx)
+        - [10.2. Danefabryki.docx](#102-danefabrykidocx)
+        - [10.3. Wpistowaruwkatalogu.docx](#103-wpistowaruwkatalogudocx)
+        - [10.4. Wpisdotyczącycenytowaru.docx](#104-wpisdotyczącycenytowarudocx)
+        - [10.5. Dokumentofertowy.doc](#105-dokumentofertowydoc)
+        - [10.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#106-dokumentpotwierdzajacyrealizacjereklamacjidocx)
+        - [10.7. Formularzofertyudzielonejdlaklienta.doc](#107-formularzofertyudzielonejdlaklientadoc)
+        - [10.8. Formularzprosbyodostepnosctowaru.docx](#108-formularzprosbyodostepnosctowarudocx)
+        - [10.9. Formularzreklamacjidodostawcy.docx](#109-formularzreklamacjidodostawcydocx)
+        - [10.10. Formularzreklamacjiodklienta.docx](#1010-formularzreklamacjiodklientadocx)
+        - [10.11. Instomformularzdanychklienta.docx](#1011-instomformularzdanychklientadocx)
+        - [10.12. Instomprzesunieciemiedzymagazynowe.docx](#1012-instomprzesunieciemiedzymagazynowedocx)
+        - [10.13. Instomprzyjecie zewnetrzne.docx](#1013-instomprzyjecie-zewnetrznedocx)
+        - [10.14. Instomrozchodwewnetrzny.docx](#1014-instomrozchodwewnetrznydocx)
+        - [10.15. Instomwydanie zewnetrzne.docx](#1015-instomwydanie-zewnetrznedocx)
+        - [10.16. Raportzakcjimarketingowych.doc](#1016-raportzakcjimarketingowychdoc)
+        - [10.17. Zamówienieklienta.doc](#1017-zamówienieklientadoc)
+        - [10.18. Instomformularzdanychpotencjalnegoklienta.docx](#1018-instomformularzdanychpotencjalnegoklientadocx)
+- [11. Załącznik C:](#11-załącznik-c)
+- [12. Załącznik D:](#12-załącznik-d)
+- [13. Załącznik E: Spis rysunków](#13-załącznik-e-spis-rysunków)
+- [14. Załącznik F: Podział zadań](#14-załącznik-f-podział-zadań)
 
 <!-- /TOC -->
 
@@ -2046,8 +2048,7 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 <div class="page">
 
 ## 3.2 Rozwinięty diagram kontekstowy
-
-![Diagram kontekstowy](./diagrams/images/DF/podsystemy.jpg)
+![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy.jpg)
 ##### Rysunek X. Diagram Podsystemów
 
 
@@ -2057,7 +2058,6 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 ## 3.3 Analiza top-down
 
 ### 3.3.1 Rozszerzony diagram kontekstowy z rejestrami danych 
-![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy-rejestry.jpg)
 <div class="page">
 
 ### 3.3.2 Analiza dla Podsystemu 1.
@@ -2637,31 +2637,38 @@ Celem punktu jest przedstawienie zachowań systemu w czasie.
 
 <div class="page">
 
-## 	7. Interfejsy uzytkownika (Ekrany)
+# 7. Interfejsy uzytkownika (Ekrany)
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
 ##### _Rysunek X. Interfejs uzytkownika Obsluga_Dostawcow_
+<div class="page">
 
 
 
 ![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
 ##### _Rysunek X. Interfejs uzytkownika Obsluga_zlecen_zakupu__
 
+<div class="page">
 
 
 ![](./diagrams/images/OA_3_Obsługa_reklamacji.jpg)
 ##### _Rysunek X. Interfejs uzytkownika Obsługa_reklamacji__
 
 
+<div class="page">
 
 ![](./diagrams/images/OA_4_Rejestr_Obsluga_Magazynu.jpg)
 ##### _Rysunek X. Interfejs uzytkownika Obsluga_Magazynu
 
 
+<div class="page">
 
 ![](./diagrams/images/OA_6_Analiza_danych.jpg)
 ##### _Rysunek X. Interfejs uzytkownika Analiza_danych_
 
+# 8. Weryfikacja wytworzonych artefaktów i koncepcji systemu
+
+Po szczegółowej analizie 
 
 
 
@@ -2765,16 +2772,11 @@ Celem punktu jest przedstawienie zachowań systemu w czasie.
 # Załącznik F: Podział zadań
 
 Skład dokumentu - Mateusz
-
 1 - Mateusz
-
 2 - Adam
-
 3 - Kacper
-
 4 - Kamil
-
-5 - 
+5 - Wspólny 
 
 Dokumenty:
 
@@ -2822,11 +2824,17 @@ Wymagania niefunkcjonalne
 1. ochrony prywatności -Kamil
 1. wymagania zabezpieczeń - Adam
 
+
+Punkt 3. 
 Diagram Kontekstowy - Mateusz
 Diagram kontekstowy z podsystemami - Mateusz 
 
-Analiza top down:
+Analiza Top-Down:
 Podsystem 1, Podsystem 5 - Mateusz
 
-Diagram ERD - Adam
+
+4. Slownik pojec dziedzinowych
+
+5. Diagram ERD - Adam
+
 
