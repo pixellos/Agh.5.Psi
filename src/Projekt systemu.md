@@ -82,38 +82,44 @@ Spis Treści
 - [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
 - [7. Interfejsy uzytkownika (Ekrany)](#7-interfejsy-uzytkownika-ekrany)
 - [8. Weryfikacja wytworzonych artefaktów i koncepcji systemu](#8-weryfikacja-wytworzonych-artefaktów-i-koncepcji-systemu)
-- [9. Załącznik A: Słownik pojęć dziedzinowych:](#9-załącznik-a-słownik-pojęć-dziedzinowych)
-    - [9.1. A](#91-a)
-    - [9.2. F](#92-f)
-    - [9.3. I](#93-i)
-    - [9.4. K](#94-k)
-    - [9.5. P](#95-p)
-    - [9.6. R](#96-r)
-    - [9.7. S](#97-s)
-    - [9.8. Z](#98-z)
-- [10. Załącznik B: Wzory dokumentów](#10-załącznik-b-wzory-dokumentów)
-        - [10.1. Danedostawcy.docx](#101-danedostawcydocx)
-        - [10.2. Danefabryki.docx](#102-danefabrykidocx)
-        - [10.3. Wpistowaruwkatalogu.docx](#103-wpistowaruwkatalogudocx)
-        - [10.4. Wpisdotyczącycenytowaru.docx](#104-wpisdotyczącycenytowarudocx)
-        - [10.5. Dokumentofertowy.doc](#105-dokumentofertowydoc)
-        - [10.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#106-dokumentpotwierdzajacyrealizacjereklamacjidocx)
-        - [10.7. Formularzofertyudzielonejdlaklienta.doc](#107-formularzofertyudzielonejdlaklientadoc)
-        - [10.8. Formularzprosbyodostepnosctowaru.docx](#108-formularzprosbyodostepnosctowarudocx)
-        - [10.9. Formularzreklamacjidodostawcy.docx](#109-formularzreklamacjidodostawcydocx)
-        - [10.10. Formularzreklamacjiodklienta.docx](#1010-formularzreklamacjiodklientadocx)
-        - [10.11. Instomformularzdanychklienta.docx](#1011-instomformularzdanychklientadocx)
-        - [10.12. Instomprzesunieciemiedzymagazynowe.docx](#1012-instomprzesunieciemiedzymagazynowedocx)
-        - [10.13. Instomprzyjecie zewnetrzne.docx](#1013-instomprzyjecie-zewnetrznedocx)
-        - [10.14. Instomrozchodwewnetrzny.docx](#1014-instomrozchodwewnetrznydocx)
-        - [10.15. Instomwydanie zewnetrzne.docx](#1015-instomwydanie-zewnetrznedocx)
-        - [10.16. Raportzakcjimarketingowych.doc](#1016-raportzakcjimarketingowychdoc)
-        - [10.17. Zamówienieklienta.doc](#1017-zamówienieklientadoc)
-        - [10.18. Instomformularzdanychpotencjalnegoklienta.docx](#1018-instomformularzdanychpotencjalnegoklientadocx)
-- [11. Załącznik C:](#11-załącznik-c)
-- [12. Załącznik D:](#12-załącznik-d)
-- [13. Załącznik E: Spis rysunków](#13-załącznik-e-spis-rysunków)
-- [14. Załącznik F: Podział zadań](#14-załącznik-f-podział-zadań)
+    - [8.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#81-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu)
+    - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa)
+    - [8.3. Niezgodność 3. Niekonsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-niekonsystencja-strumieni-danych-na-diagramach-dfd)
+- [9. Architektura Systemu](#9-architektura-systemu)
+        - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
+        - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
+- [10. Załącznik A: Słownik pojęć dziedzinowych:](#10-załącznik-a-słownik-pojęć-dziedzinowych)
+    - [10.1. A](#101-a)
+    - [10.2. F](#102-f)
+    - [10.3. I](#103-i)
+    - [10.4. K](#104-k)
+    - [10.5. P](#105-p)
+    - [10.6. R](#106-r)
+    - [10.7. S](#107-s)
+    - [10.8. Z](#108-z)
+- [11. Załącznik B: Wzory dokumentów](#11-załącznik-b-wzory-dokumentów)
+        - [11.1. Danedostawcy.docx](#111-danedostawcydocx)
+        - [11.2. Danefabryki.docx](#112-danefabrykidocx)
+        - [11.3. Wpistowaruwkatalogu.docx](#113-wpistowaruwkatalogudocx)
+        - [11.4. Wpisdotyczącycenytowaru.docx](#114-wpisdotyczącycenytowarudocx)
+        - [11.5. Dokumentofertowy.doc](#115-dokumentofertowydoc)
+        - [11.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#116-dokumentpotwierdzajacyrealizacjereklamacjidocx)
+        - [11.7. Formularzofertyudzielonejdlaklienta.doc](#117-formularzofertyudzielonejdlaklientadoc)
+        - [11.8. Formularzprosbyodostepnosctowaru.docx](#118-formularzprosbyodostepnosctowarudocx)
+        - [11.9. Formularzreklamacjidodostawcy.docx](#119-formularzreklamacjidodostawcydocx)
+        - [11.10. Formularzreklamacjiodklienta.docx](#1110-formularzreklamacjiodklientadocx)
+        - [11.11. Instomformularzdanychklienta.docx](#1111-instomformularzdanychklientadocx)
+        - [11.12. Instomprzesunieciemiedzymagazynowe.docx](#1112-instomprzesunieciemiedzymagazynowedocx)
+        - [11.13. Instomprzyjecie zewnetrzne.docx](#1113-instomprzyjecie-zewnetrznedocx)
+        - [11.14. Instomrozchodwewnetrzny.docx](#1114-instomrozchodwewnetrznydocx)
+        - [11.15. Instomwydanie zewnetrzne.docx](#1115-instomwydanie-zewnetrznedocx)
+        - [11.16. Raportzakcjimarketingowych.doc](#1116-raportzakcjimarketingowychdoc)
+        - [11.17. Zamówienieklienta.doc](#1117-zamówienieklientadoc)
+        - [11.18. Instomformularzdanychpotencjalnegoklienta.docx](#1118-instomformularzdanychpotencjalnegoklientadocx)
+- [12. Załącznik C:](#12-załącznik-c)
+- [13. Załącznik D:](#13-załącznik-d)
+- [14. Załącznik E: Spis rysunków](#14-załącznik-e-spis-rysunków)
+- [15. Załącznik F: Podział zadań](#15-załącznik-f-podział-zadań)
 
 <!-- /TOC -->
 
@@ -987,7 +993,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Uczestnicy i interesy:**
 
-Konsultant - Dostaje zatwierdzoną oferte, lub zmienia oferte na możliwą do zatwierdzenia
+Konsultant - Dostaje zatwierdzoną ofertę, lub zmienia ofertę na możliwą do zatwierdzenia
 
 Zatwierdzający oferte - rozpatruje oferte w kontekście zatwierdzenia
 
@@ -1878,7 +1884,7 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
   - **Cecha:** Użytkownik nie musi czekać długo na odpowiedź systemu
   - **Miary:**
     - Czas po każdej interakcji użytkownika będzie mierzony w sekundach `s`
-    - Czas oczekiwania na system podczas pojedyńczego procesu będzie mierzony w sekundach `s`
+    - Czas oczekiwania na system podczas pojedynczego procesu będzie mierzony w sekundach `s`
 
 - **Responsywność systemu**
 
@@ -1995,7 +2001,7 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 - **Przestrzeganie prawa**
   - **Cecha:** System podczas swojego działania nie łamie przepisów prawa
-  - **Miary:** Brak postępowania karnego
+  - **Miary:** Brak -postępowania karnego
 - **Ochrona danych**
 
   - **Cecha:** System chroni dane użytkowników
@@ -2710,7 +2716,36 @@ Celem punktu jest przedstawienie zachowań systemu w czasie.
 
 # 8. Weryfikacja wytworzonych artefaktów i koncepcji systemu
 
-Po szczegółowej analizie 
+W trakcie projektowania, po zebraniu większej ilości informacji, dało się zauważyć, że 
+
+<div class="page">
+
+## 8.1 Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu
+Po szczegółowej analizie diagramów DFD doszliśmy do wniosku, że nasze obszary aktywności są za bardzo szczegółowe. 
+
+Pierwszą zmianą jaką wykonaliśmy, było połączenie dawnych OA 4 i OA5 - (Obsługa magazynu i obsługa rejestru magazynu) - pełniły one jedną rolę (głównie wspomaganie pracowników magazynu), ale była ona rozbita na dwa obszary aktywnośći.
+Zmieniliśmy:
+- Diagram obszarów aktywności
+- Połączyliśmy opis OA 4 i OA 5 w jeden
+- Połączyliśmy Use Case z OA 4 i OA 5 
+- Diagramy DFD Odpowiadające OA 4 i OA 5 zostały zamienione w jeden
+
+<div class="page">
+
+## 8.2 Niezgodność 2. Obsługa rejestrów w poszczególnych OA
+Po analizie wszystkich OA zauważyliśmy, że w poszczególnych OA poszczególne Use Case powiązanie z obsługą rejestrów nie są spójne - w celu ujednolicenia ich wszystkie zostały zmienione na "Zarządzanie rejestrem", "Wyszukanie w rejestrze", "Wyświetlenie rekordu"
+- Poprawiono opis OA
+- Poprawiono Diagramy UseCase i ich opis
+
+<div class="page">
+
+## 8.3 Niezgodność 3. Niekonsystencja strumieni danych na diagramach DFD 
+
+Po przeanalizowaniu ilości strumieni danych wchodzących i wychodzących do diagramu kontekstowego i diagramów podsystemów zauważyliśmy, że nie balansują się one.
+Zgodnie z zasadami tworzenia diagramów ilość strumieni między poszczególnymi poziomami powinna się równoważyć (co najwyżej niektóre strumienie danych na wyższych poziomach mogą być konglomeratem)
+W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprowadziliśmy zmiany w diagramach w sekcji analizy Top-Down
+
+
 
 # 9. Architektura Systemu
 
@@ -2720,7 +2755,7 @@ Po szczegółowej analizie
 
 ### 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
-##### _Rysunek X. Architektura podsystemow__
+##### _Rysunek X. Architektura podsystemów__
 
 
 
