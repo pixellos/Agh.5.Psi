@@ -2712,8 +2712,15 @@ Celem punktu jest przedstawienie zachowań systemu w czasie.
 
 Po szczegółowej analizie 
 
+# 9. Architektura Systemu
 
+### 9.1 Architektura całego Systemu
+![](./diagrams/images/Architektura_system.jpg)
+##### _Rysunek X. Architektura systemu__
 
+### 9.2 Architektura Podsystemów
+![](./diagrams/images/Architektura_podsystemow.jpg)
+##### _Rysunek X. Architektura podsystemow__
 
 
 
