@@ -1391,7 +1391,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.1 - Zarejestrowanie produktu
+**Numer i Nazwa przypadku użycia:** UC-4.7 - Zarejestrowanie produktu
 
 **Autor:** Kamil Gliński
 
@@ -1427,7 +1427,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.2 - Modyfikacja produktu
+**Numer i Nazwa przypadku użycia:** UC-4.8 - Modyfikacja produktu
 
 **Autor:** Kamil Gliński
 
@@ -1462,7 +1462,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.3 - Wyszukiwanie produktów
+**Numer i Nazwa przypadku użycia:** UC-4.9 - Wyszukiwanie produktów
 
 **Autor:** Kamil Gliński
 
@@ -1497,7 +1497,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.4 - Wyrejestrowanie produktu
+**Numer i Nazwa przypadku użycia:** UC-4.10 - Wyrejestrowanie produktu
 
 **Autor:** Kamil Gliński
 
@@ -1530,7 +1530,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.5 - Pobranie szczegolowych danych o produkcie
+**Numer i Nazwa przypadku użycia:** UC-4.11 - Pobranie szczegolowych danych o produkcie
 
 **Autor:** Kamil Gliński
 
@@ -1564,7 +1564,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.6 - Pobranie wszystkich dostepnych produktow
+**Numer i Nazwa przypadku użycia:** UC-4.12 - Pobranie wszystkich dostepnych produktow
 
 **Autor:** Kamil Gliński
 
@@ -1597,7 +1597,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-5.7 - Tworzenie zamówienia dostaw
+**Numer i Nazwa przypadku użycia:** UC-4.13 - Tworzenie zamówienia dostaw
 
 **Autor:** Kamil Gliński
 
