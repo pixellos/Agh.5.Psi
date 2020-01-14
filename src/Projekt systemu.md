@@ -2753,11 +2753,11 @@ W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprow
 
 # 9. Architektura Systemu
 
-### 9.1 Architektura całego Systemu
+## 9.1 Architektura całego Systemu
 ![](./diagrams/images/Architektura_system.jpg)
 ##### _Rysunek X. Architektura systemu__
 
-### 9.2 Architektura Podsystemów
+## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
 ##### _Rysunek X. Architektura podsystemów__
 
