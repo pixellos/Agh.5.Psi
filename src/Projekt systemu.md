@@ -86,8 +86,8 @@ Spis Treści
     - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa)
     - [8.3. Niezgodność 3. Niekonsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-niekonsystencja-strumieni-danych-na-diagramach-dfd)
 - [9. Architektura Systemu](#9-architektura-systemu)
-        - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
-            - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
+    - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
+    - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
 - [10. Podsumowanie](#10-podsumowanie)
     - [10.1. Założenia implementacyjne](#101-założenie-implementacyjne)
     - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
@@ -2753,11 +2753,11 @@ W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprow
 
 # 9. Architektura Systemu
 
-### 9.1 Architektura całego Systemu
+## 9.1 Architektura całego Systemu
 ![](./diagrams/images/Architektura_system.jpg)
 ##### _Rysunek X. Architektura systemu__
 
-### 9.2 Architektura Podsystemów
+## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
 ##### _Rysunek X. Architektura podsystemów__
 
