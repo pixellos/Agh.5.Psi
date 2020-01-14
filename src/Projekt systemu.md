@@ -2729,6 +2729,7 @@ Po szczegółowej analizie diagramów DFD doszliśmy do wniosku, że nasze obsza
 
 Pierwszą zmianą jaką wykonaliśmy, było połączenie dawnych OA 4 i OA5 - (Obsługa magazynu i obsługa rejestru magazynu) - pełniły one jedną rolę (głównie wspomaganie pracowników magazynu), ale była ona rozbita na dwa obszary aktywnośći.
 Zmieniliśmy:
+
 - Diagram obszarów aktywności
 - Połączyliśmy opis OA 4 i OA 5 w jeden
 - Połączyliśmy Use Case z OA 4 i OA 5 
@@ -2749,6 +2750,12 @@ Po przeanalizowaniu ilości strumieni danych wchodzących i wychodzących do dia
 Zgodnie z zasadami tworzenia diagramów ilość strumieni między poszczególnymi poziomami powinna się równoważyć (co najwyżej niektóre strumienie danych na wyższych poziomach mogą być konglomeratem)
 W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprowadziliśmy zmiany w diagramach w sekcji analizy Top-Down
 
+<div class="page">
+
+## 8.4 Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu
+
+Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych rejestrów, żeby zrealizować proponowane funkcje systemu.  
+
 
 
 # 9. Architektura Systemu
@@ -2766,7 +2773,17 @@ W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprow
 # 10. Podsumowanie
 ## 10.1 Założenie implementacyjne
 
+Po szczegółowej analizie wymagań projektu doszliśmy do wniosku, że odpowiednim modelem wytwórczym będzie model przyrostowy. Model przyrostowy pozwoli nam na częste kontakty z klientem w celu weryfikacji poszczególnych funkcji systemu, oraz prioretyzowania funkcji systemu, które mają zostać zrealizowane podczas potencjalnych opóźnień bez opóźniania całości projektu. 
 
+Proponujemy rozpoczęcie prac od tworzenia logiki biznesowej. Logika biznesowa w kodzie powinna być zrobiona uwzględniając interfejsy graniczne między komponentami systemu, co pozwoli na późniejsze podjęcie ostatecznej decyzji co do szczegółów projektu takich jak baza danych oraz zapewni niezależne rozwijanie poszczególnych niezależnych od siebie funkcji. Zapewni nam to możliwość przedstawienia klientowi różnych konfiguracji sprzętowych podczas testów. 
+
+Propozycja narzędzi:
+
+Warstwa serwisów: C#
+
+Baza danych: SQLServer
+
+Interfejsy użytkownika: React.js
 
 ## 10.2 Weryfikacja całości projektu systemu
 
