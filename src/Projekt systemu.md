@@ -90,7 +90,7 @@ Spis Treści
             - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
 - [10. Podsumowanie](#10-podsumowanie)
     - [10.1. Założenia implementacyjne](#101-założenie-implementacyjne)
-    - [10.2. Weryfikacja całości projektu i systemu](#102-weryfikacja-całości-projektu-i-systemu)
+    - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
     - [10.3. Uwagi i wnioski końcowe](#103-uwagi-i-wnioski-końcowe)
 - [11. Załącznik A: Słownik pojęć dziedzinowych:](#10-załącznik-a-słownik-pojęć-dziedzinowych)
     - [11.1. A](#111-a)
