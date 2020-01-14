@@ -2946,12 +2946,20 @@ Podsystem 1, Podsystem 5 - Mateusz
 
 5. Diagram ERD - Adam
 
-** KAMIL **
+(KAMIL)
+
 1.3.1.4 Obsługa magazynu (OA4)
+
 2.1.4 Obsługa Rejestr Magazynu (OA4)
+
 2.5.4 Obsługa rejestru magazynu (OA4)
+
 3.3 Analiza top-down - opisy
+
 7. Interfejsy uzytkownika (Ekrany)
+
 9.1 Architektura calego Systemu
+
 9.2 Architektura podsystemow
-** KAMIL **
+
+/(KAMIL)
