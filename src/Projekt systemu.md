@@ -1640,7 +1640,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 <div class="page">
 
-### 2.1.5 Analiza danych na potrzeby marketingowe (OA5)
+### 2.4.5 Analiza danych na potrzeby marketingowe (OA5)
 
 ![](./diagrams/images/OA6.jpg)
 
