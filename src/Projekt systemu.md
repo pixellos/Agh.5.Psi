@@ -1640,7 +1640,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 <div class="page">
 
-### 2.1.6 Analiza danych na potrzeby marketingowe (OA6)
+### 2.1.6 Analiza danych na potrzeby marketingowe (OA5)
 
 ![](./diagrams/images/OA6.jpg)
 
@@ -1725,7 +1725,7 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 <div class="page">
 
-### 2.5.6 Analiza danych na potrzeby marketingowe (OA6)
+### 2.5.6 Analiza danych na potrzeby marketingowe (OA5)
 ![Diagram Aktywności analizy danych](./diagrams/images/AD-OA6.jpg)
 ##### _Rysunek X. Diagram aktywności analizy danych
 
@@ -2765,8 +2765,16 @@ W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprow
 
 # 10. Podsumowanie
 ## 10.1 Założenie implementacyjne
+
+
+
 ## 10.2 Weryfikacja całości projektu systemu
+
+
+
 ## 10.3 Uwagi i wnioski końcowe
+
+
 
 
 <div class="page">
