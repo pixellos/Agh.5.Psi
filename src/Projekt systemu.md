@@ -34,7 +34,6 @@ Spis Treści
         - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania)
     - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
         - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
-        - [1.3.2. Obsługa magazynu (OA4)](#132-obsługa-magazynu-oa4)
     - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
         - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
         - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
@@ -80,19 +79,19 @@ Spis Treści
 - [4. Słownik danych](#4-słownik-danych)
 - [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
 - [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
-- [7. Interfejsy uzytkownika (Ekrany)](#7-interfejsy-uzytkownika-ekrany)
+- [7. Interfejsy użytkownika (Ekrany)](#7-interfejsy-użytkownika-ekrany)
 - [8. Weryfikacja wytworzonych artefaktów i koncepcji systemu](#8-weryfikacja-wytworzonych-artefaktów-i-koncepcji-systemu)
     - [8.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#81-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu)
     - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa)
-    - [8.3. Niezgodność 3. Niekonsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-niekonsystencja-strumieni-danych-na-diagramach-dfd)
+    - [8.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd)
 - [9. Architektura Systemu](#9-architektura-systemu)
     - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
     - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
 - [10. Podsumowanie](#10-podsumowanie)
-    - [10.1. Założenia implementacyjne](#101-założenie-implementacyjne)
+    - [10.1. Założenie implementacyjne](#101-założenie-implementacyjne)
     - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
     - [10.3. Uwagi i wnioski końcowe](#103-uwagi-i-wnioski-końcowe)
-- [11. Załącznik A: Słownik pojęć dziedzinowych:](#10-załącznik-a-słownik-pojęć-dziedzinowych)
+- [11. Załącznik A: Słownik pojęć dziedzinowych:](#11-załącznik-a-słownik-pojęć-dziedzinowych)
     - [11.1. A](#111-a)
     - [11.2. F](#112-f)
     - [11.3. I](#113-i)
@@ -103,23 +102,23 @@ Spis Treści
     - [11.8. Z](#118-z)
 - [12. Załącznik B: Wzory dokumentów](#12-załącznik-b-wzory-dokumentów)
         - [12.1. Danedostawcy.docx](#121-danedostawcydocx)
-            - [12.2. Danefabryki.docx](#122-danefabrykidocx)
-            - [12.3. Wpistowaruwkatalogu.docx](#123-wpistowaruwkatalogudocx)
-            - [12.4. Wpisdotyczącycenytowaru.docx](#124-wpisdotyczącycenytowarudocx)
-            - [12.5. Dokumentofertowy.doc](#125-dokumentofertowydoc)
-            - [12.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#126-dokumentpotwierdzajacyrealizacjereklamacjidocx)
-            - [12.7. Formularzofertyudzielonejdlaklienta.doc](#127-formularzofertyudzielonejdlaklientadoc)
-            - [12.8. Formularzprosbyodostepnosctowaru.docx](#218-formularzprosbyodostepnosctowarudocx)
-            - [12.9. Formularzreklamacjidodostawcy.docx](#129-formularzreklamacjidodostawcydocx)
-            - [12.10. Formularzreklamacjiodklienta.docx](#1210-formularzreklamacjiodklientadocx)
-            - [12.11. Instomformularzdanychklienta.docx](#1211-instomformularzdanychklientadocx)
-            - [12.12. Instomprzesunieciemiedzymagazynowe.docx](#1212-instomprzesunieciemiedzymagazynowedocx)
-            - [12.13. Instomprzyjecie zewnetrzne.docx](#1213-instomprzyjecie-zewnetrznedocx)
-            - [12.14. Instomrozchodwewnetrzny.docx](#1214-instomrozchodwewnetrznydocx)
-            - [12.15. Instomwydanie zewnetrzne.docx](#1215-instomwydanie-zewnetrznedocx)
-            - [12.16. Raportzakcjimarketingowych.doc](#1216-raportzakcjimarketingowychdoc)
-            - [12.17. Zamówienieklienta.doc](#1217-zamówienieklientadoc)
-            - [12.18. Instomformularzdanychpotencjalnegoklienta.docx](#1218-instomformularzdanychpotencjalnegoklientadocx)
+        - [12.2. Danefabryki.docx](#122-danefabrykidocx)
+        - [12.3. Wpistowaruwkatalogu.docx](#123-wpistowaruwkatalogudocx)
+        - [12.4. Wpisdotyczącycenytowaru.docx](#124-wpisdotyczącycenytowarudocx)
+        - [12.5. Dokumentofertowy.doc](#125-dokumentofertowydoc)
+        - [12.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#126-dokumentpotwierdzajacyrealizacjereklamacjidocx)
+        - [12.7. Formularzofertyudzielonejdlaklienta.doc](#127-formularzofertyudzielonejdlaklientadoc)
+        - [12.8. Formularzprosbyodostepnosctowaru.docx](#128-formularzprosbyodostepnosctowarudocx)
+        - [12.9. Formularzreklamacjidodostawcy.docx](#129-formularzreklamacjidodostawcydocx)
+        - [12.10. Formularzreklamacjiodklienta.docx](#1210-formularzreklamacjiodklientadocx)
+        - [12.11. Instomformularzdanychklienta.docx](#1211-instomformularzdanychklientadocx)
+        - [12.12. Instomprzesunieciemiedzymagazynowe.docx](#1212-instomprzesunieciemiedzymagazynowedocx)
+        - [12.13. Instomprzyjecie zewnetrzne.docx](#1213-instomprzyjecie-zewnetrznedocx)
+        - [12.14. Instomrozchodwewnetrzny.docx](#1214-instomrozchodwewnetrznydocx)
+        - [12.15. Instomwydanie zewnetrzne.docx](#1215-instomwydanie-zewnetrznedocx)
+        - [12.16. Raportzakcjimarketingowych.doc](#1216-raportzakcjimarketingowychdoc)
+        - [12.17. Zamówienieklienta.doc](#1217-zamówienieklientadoc)
+        - [12.18. Instomformularzdanychpotencjalnegoklienta.docx](#1218-instomformularzdanychpotencjalnegoklientadocx)
 - [13. Załącznik C:](#13-załącznik-c)
 - [14. Załącznik D:](#14-załącznik-d)
 - [15. Załącznik E: Spis rysunków](#15-załącznik-e-spis-rysunków)
@@ -140,20 +139,22 @@ Instom
 ### 1.1.2 Typ firmy
 
 Firma handlowa - `FH`, firma jest spółką z ograniczoną odpowiedzialnością
+<div class="page">
 
-### 1.1.2 Cel produktu
+### 1.1.3 Cel produktu
 
 System służy do wspomagania zarządzania `FH`.
 
-Firma jako działający na rynku pretendent do lidera w sprzedaży urządzeń z automatyki przemysłowej na codzień ma przed sobą wiele wyzwań. Jednym z nich jest świadczenie usług najwyższej jakości. W tym celu kadra specjalistów z zakresu marketingu, sprzedaży i obsługi magazynowej codziennie dokłada wszelkich starań, by utrzymać wysoki poziom zadowolenia klientów, co przekłada się na wysoką liczbę zrealizowanych zamówień przy zmniejszającym się czasie ich realizacji.
+Firma jako działający na rynku pretendent do lidera w sprzedaży urządzeń z automatyki przemysłowej na co dzień ma przed sobą wiele wyzwań. Jednym z nich jest świadczenie usług najwyższej jakości. W tym celu kadra specjalistów z zakresu marketingu, sprzedaży i obsługi magazynowej codziennie dokłada wszelkich starań, by utrzymać wysoki poziom zadowolenia klientów, co przekłada się na wysoką liczbę zrealizowanych zamówień przy zmniejszającym się czasie ich realizacji.
 Dla zmniejszenia czasu dostawy najpopularniejszych towarów są one magazynowane na miejscu i dostarczane z lokalnego miejsca przechowywania.
 
 Jako że nie każdy klient ma odpowiednio przeszkoloną kadrę do montażu sprzętu, firma pośredniczy w implementacji rozwiązania u klienta komunikując się z integratorami.
 Jednym z problemów z którym firma musi się zmierzyć jest rosnąca ilość zamówień, co sprawia, że kontrola nad procesami oraz zleceniami i zamówieniami jest coraz trudniejsza.
 
 Wysoko wykwalifikowana kadra do spraw sprzedaży służy klientowi wiedzą przy wyborze sprzętu.
+<div class="page">
 
-### 1.1.3 Opis dziedziny działalności
+### 1.1.4 Opis dziedziny działalności
 
 Klientami są: przemysł, hurtowanie, integratorzy.
 Klienci w większości są inżynierami.
@@ -169,8 +170,9 @@ Firma współpracuje z dostawcami, którymi są międzynarodowe fabryki.
 Dostawcy zajmują się wysyłką.
 
 Jeżeli produkt jest wysłany do dostawcy na podstawie reklamacji, i jest to bezpodstawne wg. dostawcy to koszty ponosi firma nie dostawcy. Z tego powodu ważne są procedury decydujące o oględziny produktów wysyłanych do reklamacji przez wewnętrzny zespół.
+<div class="page">
 
-### 1.1.4 Cele firmy
+### 1.1.5 Cele firmy
 
 Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczekiwaniami. Firma chce kontynuować ekspansję na Polskim rynku, a w tym celu jest potrzeba:
 
@@ -180,8 +182,9 @@ Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczek
 - Zwiększenie liczby opinii odebranych od klientów i bardziej przekrojowej ich analizie
 - Optymalizacji procesów w firmie
 - Optymalizacji ilości i typu magazynowanych produktów
+<div class="page">
 
-### 1.1.5 Schemat struktury organizacyjnej
+### 1.1.6 Schemat struktury organizacyjnej
 
 W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki opis)
 
@@ -190,12 +193,12 @@ W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki op
 ##### _Rysunek X. Diagram struktura zarządu_
 
 W obecnym okresie jest około 60 pracowników.
-W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
+W sprzedaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
 
 - Zarząd: Pracownicy tego poziomu zajmują się koordynowaniem działania firmy na najwyższym poziomie, planują długofalową strategię ekspansji, zatwierdzają budżet, wyznaczają cele na kolejne kwartały
 - Marketing : Pracownicy działu marketingu zajmują się przygotowaniem materiałów reklamowych, zakupem reklam oraz wyszukiwaniem potencjalnie zainteresowanych firm
 - Dział R&D : Pracownicy działu marketingu zajmują się tworzeniem nowych rozwiązań z zakresu automatyki- nie będziemy w tym systemie zajmować się obsługą tego działu.
-- Dzial handlowy: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
+- Dział handlowy: Pracownicy handlowi zajmują się finalizowaniem zamówień, tworzeniem zleceń zakupu, reagowaniem na niski stan magazynowy i uzupełnianiem braków.
 - Księgowość: Pracownicy księgowości zajmują się finansami - przetwarzane są tam faktury, część tego działu jest działem kadrowym
 
 <div class="page">
@@ -205,11 +208,13 @@ W sprzedzaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomias
 ### 1.2.1 Wywiad z zarządem w celu ustalenia przeznaczenia systemu
 
 Został przeprowadzony wywiad z zarządem. Transkrypcje odpowiedzi umieścimy w _Załączniku Transkrypcja_.
+<div class="page">
 
 ### 1.2.2 Definicja celu systemu
 
 Celem systemu PSSK jest kompleksowe wspomaganie procesu zamówienia od złożenia go przez klienta, przez pomoc i kontrolowanie procesu zlecenia zakupu komponentów po obsługę gwarancyjną.
 Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływających przez firmę niezbędnych do sprawnego działania organizacji.
+<div class="page">
 
 ### 1.2.3 Składniki organizacyjne dla Obszaru Modelowania
 
@@ -252,6 +257,9 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 ![2. ](./diagrams/images/Obsluga_aktywnosci.png)
 
 ##### _Rysunek X. Przegląd obszarów aktywności_
+
+#### 1.3.1.1 Obsługa zamówień (OA1)
+
 
 Obszar aktywności obsługi zamówień zawiera w sobie
 
@@ -385,7 +393,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    Jako `właściciel` chciałbym mieć rejestr reklamowanych produktów, aby móc analizować awaryjność produktów.
 <div class="page">
 
-### 1.3.1.4 Obsługa magazynu (OA4)
+#### 1.3.1.4 Obsługa magazynu (OA4)
 
    1. Weryfikacja dokumentacji
 
@@ -460,11 +468,11 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
       Jako `magazynier` chce mieć możliwość `pobrania informacji na temat produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
 
-   1. Pobranie wszystkich dostępnych produktow
+   1. Pobranie wszystkich dostępnych produktów
 
       Jako `magazynier` chce mieć możliwość `pobrania wszystkich dostepnych produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
 
-   1. Wyrejstrowanie produktu z magazynu
+   1. Wyrejestrowanie produktu z magazynu
 
       Jako `magazynier` chce mieć możliwość wyrejestrowania produktu z magazynu aby `uaktualnić informacje o dostępności produktu`.
 
@@ -481,8 +489,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    Katalog produktowy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktowym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.
 
 2. Wystawienie danych na strategiczne potrzeby marketingowe
-
-   Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
+  Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
 <div class="page">
 
 ## 1.4 Zwięzła nazwa problemu
@@ -514,11 +521,11 @@ Produkt ma na celu wsparcie firmy poprzez:
 
 Przedsięwzięcie docelowo miałoby na celu
 
-- Zmniejszenie średniego czasu obsługi pojedyńczego klienta o więcej niż 10%
+- Zmniejszenie średniego czasu obsługi pojedynczego klienta o więcej niż 10%
 - Ograniczyć czas brak stanów magazynowych najpopularniejszych produktów o 15%
 - Ograniczyć reklamacje odrzucone przez dostawców o 5%
 - Zmniejszyć czas realizacji następnego zamówienia o tych samych parametrach jak jedno z poprzednich o 40%
-- Ograniczyć czas spędzany na wypełnianiu dokumentów przez wprowadzanie ustandaryzowanych elektroniczych formularzy o 20%
+- Ograniczyć czas spędzany na wypełnianiu dokumentów przez wprowadzanie ustandaryzowanych elektronicznych formularzy o 20%
 
 Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania wymagań oraz przeprowadzenia ich analizy biznesowej.
 
@@ -711,7 +718,7 @@ _Dostawca_ - Chce być w naszym systemie, żeby móc dostawać od nas zamówieni
 **Uczestnicy i interesy:**
 
 _Konsultant_ - Jest to w jego zakresu obowiązków
-_Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmianiy danych w celu ich weryfikacji
+_Dostawca_ - Jego dane muszą być aktualne, żeby system mógł poprawnie zaklasyfikować paczki, będzie powiadomiony o zdarzeniu zmiany danych w celu ich weryfikacji
 
 ---
 
@@ -1584,7 +1591,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Zakres:** Rejestr magazynu
 
-**Poziom:** Pobranie szczegolowych danych o produkcie
+**Poziom:** Pobranie szczegółowych danych o produkcie
 
 **Aktor główny:** Magazynier
 
@@ -1707,7 +1714,7 @@ Marketingowiec - inicjowanie stworzenia raportu
 ##### _Rysunek X. Diagram aktywności zatwierdzania oferty
 
 ![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.5.jpg)
-##### _Rysunek X. Diagram aktywności wyszukiwania i dodania prodktu
+##### _Rysunek X. Diagram aktywności wyszukiwania i dodania produktu
 
 
 
@@ -1739,7 +1746,7 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 **Nazwa funkcji:** WF-1 - Poinformuj o zmianie w systemie przez SMS
 
-**Opis:** Funkcja systemu służąca do notyfikowaniach o ważnych zmianiach
+**Opis:** Funkcja systemu służąca do notyfikowaniach o ważnych zmianach
 
 **Dane wejściowe:** Automatycznie w systemie - Numery telefonów zainteresowanych wiadomość
 
@@ -1917,7 +1924,7 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
   - **Cecha:** System działa bezawaryjnie przez co najmniej jeden miesiąc
   - **Miary:** Średni czas między błędnymi wykonaniami
 - **Dostępność systemu**
-  - **Cecha:** System powinien być dostępny i gotowy do użycia przzez określoną ilość czasu
+  - **Cecha:** System powinien być dostępny i gotowy do użycia przez określoną ilość czasu
   - **Miary:** Procent czasu
 
 #### 2.7.1.4 Przenośności
@@ -1925,9 +1932,9 @@ Wymagania produktu w odniesieniu do jego sposobu działania.
 - **Przenośność kodu**
 
   - **Cecha:** System nie będzie posiadał kodu nieprzenośnego na różne platformy
-  - **Miary:** Procent kodu zaleznego od platformy docelowej
+  - **Miary:** Procent kodu zależnego od platformy docelowej
 
-- **Liczzba docelowych platform**
+- **Liczba docelowych platform**
   - **Cecha:** System docelowo będzie napisany na jedną platformę
   - **Miary:** Liczba platform docelowych
 
@@ -1942,21 +1949,21 @@ Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, ja
 - **Dostarczenie systemu**
 
   - **Cecha:** System jest dostarczany poprzez zainstalowanie na zdalnej maszynie wirtualnej
-  - **Miary:** Użytkowanie systemu jest realizowane przez strone www
+  - **Miary:** Użytkowanie systemu jest realizowane przez stronę www
 
 - **Dostarczenie bazy danych**
-  - **Cecha:** Baza danych jest dostarczana jako skrypt generujacy tabele
+  - **Cecha:** Baza danych jest dostarczana jako skrypt generujący tabele
   - **Miary:** Tabele oraz dane
 
 #### 2.7.2.2 Implementacyjne
 
 - **Czytość kodu**
 
-  - **Cecha:** System jest zaimplementowany zgodnie z zasdami czystego kodu
+  - **Cecha:** System jest zaimplementowany zgodnie z zasadami czystego kodu
   - **Miary:** Oceny programistów
 
 - **Jakość kodu**
-  - **Cecha:** System jest zaimplementowany zgodnie z zasadami SOLID - **Cecha:** System jest zaimplementowany zgodnie z zasadami programowania obiektowaego
+  - **Cecha:** System jest zaimplementowany zgodnie z zasadami SOLID - **Cecha:** System jest zaimplementowany zgodnie z zasadami programowania obiektowego
   - **Miary:** Oceny programistów
 - **Optymalizacja**
   - **Cecha:** System jest zaimplementowany aby zapewnić jak najszybsze działanie
@@ -1969,7 +1976,7 @@ Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, ja
   - **Cecha:** Projekt będzie realizowany w oparciu o metodykę zwinną Scrum
 
 - **Koncepcja programowania**
-  - **Cecha:** System będzie implementowany w oparciu o podejsci obiektowe (OOP)
+  - **Cecha:** System będzie implementowany w oparciu o podejścia obiektowe (OOP)
 - **Języki programowania**
   - **Cecha:** System będzie implementowany z wykorzystaniem języków obiektowych takich jak: Java, C#.
 - **Statyczna analiza kodu**
@@ -2019,13 +2026,13 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 - **Odporność na ataki DoS**
   - **Cecha:** Aplikacja jest odporna na ataki typu `Denial of Service`
-  - **Miara:** Raport z audytu potwierdzający daną ceche
+  - **Miara:** Raport z audytu potwierdzający daną cechę
 - **Aplikacja odporna na ataki**
   - **Cecha:** Aplikacja przechodzi testy bezpieczeństwa `OWASP`
   - **Miara:** Raport z audytu testów penetracyjnych
 - **Połączenie za pomocą bezpiecznych protokołów**
 
-  - **Cecha:** Interakcje są prowadzone za pomocą protokułu nie starszego niż `TLS1.2`
+  - **Cecha:** Interakcje są prowadzone za pomocą protokołu nie starszego niż `TLS1.2`
   - **Miara:** Potwierdzenie niewspierania innych protokołów
 
 - **Wyciek wrażliwych danych**
@@ -2144,7 +2151,7 @@ Efekty uboczne: Nadpisanie starej oferty z nowymi danymi
 Uwagi: (Uzasadnienie)
 ***
 
-Nazwa funkcji: 1.1.3 Przetwórz dostepne towary i brakujący stan
+Nazwa funkcji: 1.1.3 Przetwórz dostępne towary i brakujący stan
 
 Opis: Funkcja służąca do przetworzenia dostępnych towarów i braków
 
@@ -2200,7 +2207,7 @@ Czego wymaga: Kontaktu z konsultantem
 
 Warunek początkowy: Potrzeba kupna produktu
 
-Warunek końcowy: Sfinalizowana tranzakcja kupna produktu
+Warunek końcowy: Sfinalizowana transakcja kupna produktu
 
 Pseudokod:
 ```
@@ -2440,7 +2447,7 @@ Przeznaczenie: Służy do przetwarzania danych na podstawie dokumentów
 
 Czego wymaga: Zapoznania się z dokumentami
 
-Warunek początkowy: Potrzeba pobrania informacji o reklamacjach lub zlecniach zakupu lub zamowieniach
+Warunek początkowy: Potrzeba pobrania informacji o reklamacjach lub zlecaniach zakupu lub zamówieniach
 
 Warunek końcowy: Informacje
 
@@ -2456,7 +2463,7 @@ Efekty uboczne: -
 Uwagi: (Uzasadnienie)
 ***
 
-Nazwa funkcji: 1.6.2 Generowanie przekrojowego raportu dla zarzadu
+Nazwa funkcji: 1.6.2 Generowanie przekrojowego raportu dla zarządu
 
 Opis: Funkcja służąca do generowania raportów
 
@@ -2678,7 +2685,7 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
 <div class="page">
 
 # 6. Diagram maszyny stanowej
-Celem punktu jest przedstawienie zachowań systemu w czasie.
+Celem punktu jest przedstawienie zachowani systemu w czasie.
 
 
 ![](./diagrams/images/Diagram_maszyny_stanow.jpg)
@@ -2686,37 +2693,37 @@ Celem punktu jest przedstawienie zachowań systemu w czasie.
 
 <div class="page">
 
-# 7. Interfejsy uzytkownika (Ekrany)
+# 7. Interfejsy użytkownika (Ekrany)
 
 ![](./diagrams/images/Drzewo_Interfejsow.jpg)
 ##### _Rysunek X. Drzewo_Interfejsow_
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
-##### _Rysunek X. Interfejs uzytkownika Obsluga_Dostawcow_
+##### _Rysunek X. Interfejs użytkownika Obsluga_Dostawcow_
 <div class="page">
 
 
 
 ![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
-##### _Rysunek X. Interfejs uzytkownika Obsluga_zlecen_zakupu__
+##### _Rysunek X. Interfejs użytkownika Obsluga_zlecen_zakupu__
 
 <div class="page">
 
 
 ![](./diagrams/images/OA_3_Obsługa_reklamacji.jpg)
-##### _Rysunek X. Interfejs uzytkownika Obsługa_reklamacji__
+##### _Rysunek X. Interfejs użytkownika Obsługa_reklamacji__
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_4_Rejestr_Obsluga_Magazynu.jpg)
-##### _Rysunek X. Interfejs uzytkownika Obsluga_Magazynu
+##### _Rysunek X. Interfejs użytkownika Obsluga_Magazynu
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_6_Analiza_danych.jpg)
-##### _Rysunek X. Interfejs uzytkownika Analiza_danych_
+##### _Rysunek X. Interfejs użytkownika Analiza_danych_
 
 # 8. Weryfikacja wytworzonych artefaktów i koncepcji systemu
 
@@ -2727,7 +2734,7 @@ W trakcie projektowania, po zebraniu większej ilości informacji, dało się za
 ## 8.1 Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu
 Po szczegółowej analizie diagramów DFD doszliśmy do wniosku, że nasze obszary aktywności są za bardzo szczegółowe. 
 
-Pierwszą zmianą jaką wykonaliśmy, było połączenie dawnych OA 4 i OA5 - (Obsługa magazynu i obsługa rejestru magazynu) - pełniły one jedną rolę (głównie wspomaganie pracowników magazynu), ale była ona rozbita na dwa obszary aktywnośći.
+Pierwszą zmianą jaką wykonaliśmy, było połączenie dawnych OA 4 i OA5 - (Obsługa magazynu i obsługa rejestru magazynu) - pełniły one jedną rolę (głównie wspomaganie pracowników magazynu), ale była ona rozbita na dwa obszary aktywności.
 Zmieniliśmy:
 
 - Diagram obszarów aktywności
@@ -2744,7 +2751,7 @@ Po analizie wszystkich OA zauważyliśmy, że w poszczególnych OA poszczególne
 
 <div class="page">
 
-## 8.3 Niezgodność 3. Niekonsystencja strumieni danych na diagramach DFD 
+## 8.3 Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD 
 
 Po przeanalizowaniu ilości strumieni danych wchodzących i wychodzących do diagramu kontekstowego i diagramów podsystemów zauważyliśmy, że nie balansują się one.
 Zgodnie z zasadami tworzenia diagramów ilość strumieni między poszczególnymi poziomami powinna się równoważyć (co najwyżej niektóre strumienie danych na wyższych poziomach mogą być konglomeratem)
@@ -2809,11 +2816,11 @@ Interfejsy użytkownika: React.js
 
 ## I
 
-- Integrator - Zewnętrzna firma zajmująca się monatżem u klienta
+- Integrator - Zewnętrzna firma zajmująca się montażem u klienta
 
 ## K
 
-- Konsultatnt - Pracownik firmy pracujący w `dziale Handlowym`, jego rolą jest kontakt z `Klientem` oraz z `Dostawcą` w celu zrealizowania `Zlecenia Zakupu`
+- Konsultant - Pracownik firmy pracujący w `dziale Handlowym`, jego rolą jest kontakt z `Klientem` oraz z `Dostawcą` w celu zrealizowania `Zlecenia Zakupu`
 
 ## P
 
@@ -2831,7 +2838,7 @@ Interfejsy użytkownika: React.js
 
 - Zamówienie - Nasza firma zamawia produkt od dystrybutora i musi opłacić fakturę.
 - Zlecenie zakupu - Klient zgadza się na wystawienie mu faktury i zobowiązuje zapłacić, za co otrzyma towar.
-- Zatwierdzający oferte - Konsultant wyższego stopnia, zatwierdza oferty prezentowane klientowi
+- Zatwierdzający ofertę - Konsultant wyższego stopnia, zatwierdza oferty prezentowane klientowi
 
 <div class="page">
 
@@ -2952,8 +2959,24 @@ Analiza Top-Down:
 Podsystem 1, Podsystem 5 - Mateusz
 
 
-4. Slownik pojec dziedzinowych
+4. Słownik pojęć dziedzinowych
 
 5. Diagram ERD - Adam
 
+(KAMIL)
 
+1.3.1.4 Obsługa magazynu (OA4)
+
+2.1.4 Obsługa Rejestr Magazynu (OA4)
+
+2.5.4 Obsługa rejestru magazynu (OA4)
+
+3.3 Analiza top-down - opisy
+
+7. Interfejsy uzytkownika (Ekrany)
+
+9.1 Architektura calego Systemu
+
+9.2 Architektura podsystemow
+
+/(KAMIL)
