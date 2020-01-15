@@ -84,6 +84,7 @@ Spis Treści
     - [8.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#81-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu)
     - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa)
     - [8.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd)
+    - [8.4 Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
 - [9. Architektura Systemu](#9-architektura-systemu)
     - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
     - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
@@ -489,7 +490,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
    Katalog produktowy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktowym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.
 
 2. Wystawienie danych na strategiczne potrzeby marketingowe
-  Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
+    Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
 <div class="page">
 
 ## 1.4 Zwięzła nazwa problemu
@@ -2761,9 +2762,11 @@ W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprow
 
 ## 8.4 Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu
 
-Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych rejestrów, żeby zrealizować proponowane funkcje systemu.  
+Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych rejestrów, żeby zrealizować proponowane funkcje systemu.
 
+- Rejestr `zamówienie` został rozdzielony na `zamówienie klienta` oraz `zamówienie do dostawcy` 
 
+- Zostały dodane również dwa dodatkowe rejestry  `reklamacja od klienta` i `reklamacja do dostawcy`
 
 # 9. Architektura Systemu
 
@@ -2798,7 +2801,9 @@ Interfejsy użytkownika: React.js
 
 ## 10.3 Uwagi i wnioski końcowe
 
+Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach muzgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności. 
 
+Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowaliśmy propozycje kierunku dalszych prac. Dalsze prace nad systemem mogłyby się odbywać w zakresie usprawnienia zarządzania magazynem oraz zarządzania zamówieniami do dostawców co pozwoli na dużą redukcje kosztów związanych z przechowywaniem niesprzedanych produktów. Prognozy popytu oraz utrzymywanie odpowiedniej ilości produktów na stanie są kluczem do odpowiedniego prosperowania firmy dlatego też wybraliśmy te obszary.
 
 
 <div class="page">
@@ -2960,7 +2965,6 @@ Podsystem 1, Podsystem 5 - Mateusz
 
 
 4. Słownik pojęć dziedzinowych
-
 5. Diagram ERD - Adam
 
 (KAMIL)
@@ -2980,3 +2984,31 @@ Podsystem 1, Podsystem 5 - Mateusz
 9.2 Architektura podsystemow
 
 /(KAMIL)
+
+
+
+ADAM:
+[1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu) (Wywiad i raport z wywiadu)
+
+[2.2. Rejestry w systemie](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#22-rejestry-w-systemie)
+
+[2.4.2. Obsługa zleceń zakupu (OA2)](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#242-obsługa-zleceń-zakupu-oa2)
+
+[2.4.5. Analiza danych na potrzeby marketingowe (OA5)](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#245-analiza-danych-na-potrzeby-marketingowe-oa5)
+
+[2.5.2. Obsługa zleceń zakupu (OA2)](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#252-obsługa-zleceń-zakupu-oa2)
+
+[2.5.5. Analiza danych na potrzeby marketingowe (OA5)](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#255-analiza-danych-na-potrzeby-marketingowe-oa5)
+
+[2.7.3. Wymagania zewnętrzne](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#273-wymagania-zewnętrzne) (Wymagania zewnętrzne: współpracy, etyczne. Wymagania bezpieczeństwa)
+
+[5. Analiza struktur danych przechowywanych w systemie](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#5-analiza-struktur-danych-przechowywanych-w-systemie)
+
+[10. Podsumowanie](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#10-podsumowanie)
+
+8.4 Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu
+
+
+
+
+
