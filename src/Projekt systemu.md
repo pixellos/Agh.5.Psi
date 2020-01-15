@@ -88,7 +88,7 @@ Spis Treści
     - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
     - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
 - [10. Podsumowanie](#10-podsumowanie)
-    - [10.1. Założenie implementacyjne](#101-założenie-implementacyjne)
+    - [10.1. Założenia implementacyjne](#101-założenia-implementacyjne)
     - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
     - [10.3. Uwagi i wnioski końcowe](#103-uwagi-i-wnioski-końcowe)
 - [11. Załącznik A: Słownik pojęć dziedzinowych:](#11-załącznik-a-słownik-pojęć-dziedzinowych)
@@ -778,7 +778,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 **Główny scenariusz powodzenia:**
 
 1. System próbuje wypełnić go danymi znalezionymi przez `UC-1.3`, gdy nie może Id jest generowane
-1. System wyswietla [wypełniony wpis towaru](./wzory/3.Wpis_towaru_w_katalogu.docx)
+1. System wyświetla [wypełniony wpis towaru](./wzory/3.Wpis_towaru_w_katalogu.docx)
 1. `Konsultant` poprawia dane
 1. System weryfikuje dane
 4. `Towar` Zostaje zapisany
@@ -864,7 +864,7 @@ _Klient_ - Inicjuje proces
 
 ![](./diagrams/images/OA2.jpg)
 
-**Numer i nazwa przypadku uzycia:** UC-2.1 - Zarządzanie rejestrami klienta
+**Numer i nazwa przypadku użycia:** UC-2.1 - Zarządzanie rejestrami klienta
 
 **Autor:** Adam Samsonowicz
 
@@ -883,7 +883,7 @@ _Klient_ - Inicjuje proces
 **Główny scenariusz powodzenia:**
 
 1. `Konsultant` wyszukuje klienta w systemie `UC-2.2`
-2. `Konsultant` w zależność od zainistałej potrzeby dodaje, usuwa, edytuje, lub odczytuje rejestr klienta
+2. `Konsultant` w zależność od zaistniałej potrzeby dodaje, usuwa, edytuje, lub odczytuje rejestr klienta
 3. System wyświetla informację potwierdzającą operacje
 
 **Scenariusze alternatywne:**
@@ -898,7 +898,7 @@ Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.2 - Wyszukiwanie klienta
+**Numer i nazwa przypadku użycia:** UC-2.2 - Wyszukiwanie klienta
 
 **Autor:** Adam Samsonowicz
 
@@ -916,13 +916,13 @@ Konsultant - Potrzebuje danych klienta w celu procesowania oferty
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` wpisuje wartości po, których nastąpli filtrowanie klientów
+1. `Konsultant` wpisuje wartości po, których nastąpi filtrowanie klientów
 2. System filtruje rejestry klientów
 3. System wyświetla klienta
 
 **Scenariusze alternatywne:**
 
-1. `Konsultant` wpisuje wartości po, których nastąpli filtrowanie klientów
+1. `Konsultant` wpisuje wartości po, których nastąpi filtrowanie klientów
 2. System filtruje rejestry klientów
 3. System wyświetla komunikat o braku możliwości znalezienia rejestrów z podanymi filtrami
 
@@ -952,11 +952,11 @@ Konsultant - Potrzebuje wyszukać klienta w systemie
 
 **Główny scenariusz powodzenia:**
 
-1. `Konsultant` otwiera pustą oferte
+1. `Konsultant` otwiera pustą ofertę
 2. `Konsultant` dodaje klienta do oferty
 3. `Konsultant` uzupełnia podstawowe informację o ofercie
 4. `Konsultant` dodaje produkty do oferty
-5. `Konsultant` wysyła oferte do zatwierdzenia
+5. `Konsultant` wysyła ofertę do zatwierdzenia
 
 **Scenariusze alternatywne:** Brak
 
@@ -970,13 +970,13 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.4 - Zatwierdzanie oferty
+**Numer i nazwa przypadku użycia:** UC-2.4 - Zatwierdzanie oferty
 
 **Autor:** Adam Samsonowicz
 
 **Cel przypadku użycia:** Zatwierdzanie lub anulowanie ofert
 
-**Kontekst użycia:** `Konsultant` stworzył oferte, żeby dalej procesować potrzebuje zgody `potwierdzającego oferte`
+**Kontekst użycia:** `Konsultant` stworzył ofertę, żeby dalej procesować potrzebuje zgody `potwierdzającego oferte`
 
 **Zakres:** Proces ofertowy
 
@@ -984,13 +984,13 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Warunek początkowy:** Oferta jest stworzona i wymaga zatwierdzenia
 
-**Zdarzenie inicjujące:** `Konsultant` wysyła prośbe o zatwierdzenie oferty do `zatwierdzającego oferte`
+**Zdarzenie inicjujące:** `Konsultant` wysyła prośbę o zatwierdzenie oferty do `zatwierdzającego oferte`
 
 **Główny scenariusz powodzenia:**
 
-1. `Zatwierdzający oferte` otrzymuje prośbe o zatwierdzenie oferty
+1. `Zatwierdzający oferte` otrzymuje prośbę o zatwierdzenie oferty
 2. `Zatwierdzający oferte` sprawdza ceny sprzedażowe produktów i marże
-3. `Zatwierdzający oferte` zatwierdza oferte
+3. `Zatwierdzający oferte` zatwierdza ofertę
 4. `Konsultant` może wygenerować dokument
 
 **Scenariusze alternatywne:**
@@ -1006,11 +1006,11 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 Konsultant - Dostaje zatwierdzoną ofertę, lub zmienia ofertę na możliwą do zatwierdzenia
 
-Zatwierdzający oferte - rozpatruje oferte w kontekście zatwierdzenia
+Zatwierdzający ofertę - rozpatruje ofertę w kontekście zatwierdzenia
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.5 - Dodawanie produktów
+**Numer i nazwa przypadku użycia:** UC-2.5 - Dodawanie produktów
 
 **Autor:** Adam Samsonowicz
 
@@ -1144,8 +1144,8 @@ _Klient_ - Inicjuje proces. Jego dane muszą być dostępne w systemie, aby zwer
 
 **Scenariusze alternatywne:**
 
-1. `Pracownik` nie może wyświetlić zgłoszenych reklamacji
-2. `Pracownik` nie moze zaktualizować statusu reklamacji
+1. `Pracownik` nie może wyświetlić zgłoszonych reklamacji
+2. `Pracownik` nie może zaktualizować statusu reklamacji
 
 **Uczestnicy i interesy:**
 
@@ -1173,7 +1173,7 @@ _Zespół techniczny_ - przejmuje dalsze czynności
 
 **Warunek początkowy:** Uzupełniony formularz reklamacyjny przez `klienta`
 
-**Zdarzenie inicjujące:** `Pracownik` odczytuje formularz zzgłoszzony przez `klienta`
+**Zdarzenie inicjujące:** `Pracownik` odczytuje formularz zgłoszony przez `klienta`
 
 **Główny scenariusz powodzenia:**
 
@@ -1211,19 +1211,19 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Dostawa jest gotowa do rozladunku
+**Warunek początkowy:** Dostawa jest gotowa do rozładunku
 
 **Zdarzenie inicjujące:** `Dostawca` przekazuje towar do magazynu
 
 **Główny scenariusz powodzenia:**
 
 1. `Magazynier` odbiera towar od `Dostawcy`
-2. `Magazynier` dokonuje rozladunku towaru na magazyn
+2. `Magazynier` dokonuje rozładunku towaru na magazyn
 
 **Scenariusze alternatywne:**
 
-1. `Magazynier` odmawia rozladunku towaru w przypadku decyzji o nieprzyjeciu towaru
-2. `Dostawca` odsyla towar do nadawcy
+1. `Magazynier` odmawia rozładunku towaru w przypadku decyzji o nieprzyjęciu towaru
+2. `Dostawca` odsyła towar do nadawcy
 
 **Uczestnicy i interesy:**
 
@@ -1239,7 +1239,7 @@ _Dostawca_ - Inicjuje proces
 
 **Cel przypadku użycia:** Przyjęcie towaru
 
-**Kontekst użycia:** Gdy dostawa bedzie gotowa do odbioru, Jako magazynier chce mieć możliwość przyjęcia towaru i kontroli stanu przesyłki magazynu aby przekazać go do dalszego procesowania - rozładunku
+**Kontekst użycia:** Gdy dostawa będzie gotowa do odbioru, Jako magazynier chce mieć możliwość przyjęcia towaru i kontroli stanu przesyłki magazynu aby przekazać go do dalszego procesowania - rozładunku
 
 **Zakres:** Obsługa magazynu
 
@@ -1247,22 +1247,22 @@ _Dostawca_ - Inicjuje proces
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Towar jest gotowy do przyjecia
+**Warunek początkowy:** Towar jest gotowy do przyjęcia
 
 **Zdarzenie inicjujące:** `Dostawca` przekazuje towar do magazynu
 
 **Główny scenariusz powodzenia:**
 
 1. `Magazynier` przyjmuje towar od dostawcy
-2. `Magazynier` przystepuje do kolejnego etapu rozladunku
+2. `Magazynier` przystępuje do kolejnego etapu rozładunku
 
 **Scenariusze alternatywne:**
 
-1. `Magazynier` odmawia przyjecia w przypadku braku otrzymanej dokumentacji
-2. `Dostawca` odsyla towar do nadawcy
+1. `Magazynier` odmawia przyjęcia w przypadku braku otrzymanej dokumentacji
+2. `Dostawca` odsyła towar do nadawcy
 
-3. `Magazynier` odmawia przyjecia w przypadku wadliwego towaru
-4. `Dostawca` odsyla towar do nadawcy
+3. `Magazynier` odmawia przyjęcia w przypadku wadliwego towaru
+4. `Dostawca` odsyła towar do nadawcy
 
 **Uczestnicy i interesy:**
 
@@ -1287,19 +1287,19 @@ _Dostawca_ - Inicjuje proces
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Potrzeba skontrolowania wartosci przesylki
+**Warunek początkowy:** Potrzeba skontrolowania wartości przesyłki
 
-**Zdarzenie inicjujące:** Zamowienie produktu
+**Zdarzenie inicjujące:** Zamówienie produktu
 
 **Główny scenariusz powodzenia:**
 
-1. `Magazynier` poddaje przesylke kontroli wartosci
-2. `Magazynier` przystepuje do kolejnego etapu - wysylki
+1. `Magazynier` poddaje przesyłkę kontroli wartości
+2. `Magazynier` przystępuje do kolejnego etapu - wysyłki
 
 **Scenariusze alternatywne:**
 
-1. Wartosc przesylki niezgodna z warunkami umowy
-2. Korekta produktow zawartych w przesylce
+1. Wartość przesyłki niezgodna z warunkami umowy
+2. Korekta produktów zawartych w przesyłce
 
 **Uczestnicy i interesy:**
 
@@ -1322,9 +1322,9 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Potrzeba unikalnego rozroznienia produktu
+**Warunek początkowy:** Potrzeba unikalnego rozróżnienia produktu
 
-**Zdarzenie inicjujące:** Rozladunek towaru na magazynie
+**Zdarzenie inicjujące:** Rozładunek towaru na magazynie
 
 **Główny scenariusz powodzenia:**
 
@@ -1653,7 +1653,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ##### Rysunek X. Statyki powiązane z katalogiem produktowym\_
 
-**Numer i nazwa przypadku uzycia:** UC-6.1 - Generowanie raportu
+**Numer i nazwa przypadku użycia:** UC-6.1 - Generowanie raportu
 
 **Autor:** Adam Samsonowicz
 
@@ -1770,9 +1770,9 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 **Przypadek użycia:** Wszystkie
 
-**Nazwa funkcji:**  WF-2 Wprowadź dokument do systemu aby go udostepnić
+**Nazwa funkcji:**  WF-2 Wprowadź dokument do systemu aby go udostępnić
 
-**Opis:** `Pracownik` wprowadza dokiment do systemu. Jest on widoczny dla innych pracowników
+**Opis:** `Pracownik` wprowadza dokument do systemu. Jest on widoczny dla innych pracowników
 
 **Dane wejściowe:** Dowolny dokument lub arkusz kalkulacyjny
 
@@ -1957,7 +1957,7 @@ Wymagania produktu w odniesieniu do strategii i procedur w firmie - kliencie, ja
 
 #### 2.7.2.2 Implementacyjne
 
-- **Czytość kodu**
+- **Czystość kodu**
 
   - **Cecha:** System jest zaimplementowany zgodnie z zasadami czystego kodu
   - **Miary:** Oceny programistów
@@ -2527,8 +2527,11 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
 Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na stworzenie poniższego diagramu ERD, który spełnia przeanalizowane wymagania.
 
 
+<div class="page">
+
 ![](./diagrams/images/ERD.jpg)
 ##### _Rysunek X. Diagram ERD
+<div class="page">
 
 
 - Lista tabel i uzasadnienie obecności
@@ -2702,8 +2705,6 @@ Celem punktu jest przedstawienie zachowani systemu w czasie.
 ##### _Rysunek X. Interfejs użytkownika Obsluga_Dostawcow_
 <div class="page">
 
-
-
 ![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
 ##### _Rysunek X. Interfejs użytkownika Obsluga_zlecen_zakupu__
 
@@ -2756,6 +2757,7 @@ Po przeanalizowaniu ilości strumieni danych wchodzących i wychodzących do dia
 Zgodnie z zasadami tworzenia diagramów ilość strumieni między poszczególnymi poziomami powinna się równoważyć (co najwyżej niektóre strumienie danych na wyższych poziomach mogą być konglomeratem)
 W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprowadziliśmy zmiany w diagramach w sekcji analizy Top-Down
 
+<div class="page">
 
 
 # 9. Architektura Systemu
@@ -2764,19 +2766,25 @@ W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprow
 ![](./diagrams/images/Architektura_system.jpg)
 ##### _Rysunek X. Architektura systemu__
 
+<div class="page">
+
+
 ## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
 ##### _Rysunek X. Architektura podsystemów__
 
+<div class="page">
 
 
 # 10. Podsumowanie
-## 10.1 Założenie implementacyjne
+## 10.1 Założenia implementacyjne
 
+<div class="page">
 
 
 ## 10.2 Weryfikacja całości projektu systemu
 
+<div class="page">
 
 
 ## 10.3 Uwagi i wnioski końcowe
