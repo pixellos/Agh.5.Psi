@@ -103,23 +103,23 @@ Spis Treści
     - [11.8. Z](#118-z)
 - [12. Załącznik B: Wzory dokumentów](#12-załącznik-b-wzory-dokumentów)
         - [12.1. Danedostawcy.docx](#121-danedostawcydocx)
-        - [12.2. Danefabryki.docx](#122-danefabrykidocx)
-        - [12.3. Wpistowaruwkatalogu.docx](#123-wpistowaruwkatalogudocx)
-        - [12.4. Wpisdotyczącycenytowaru.docx](#124-wpisdotyczącycenytowarudocx)
-        - [12.5. Dokumentofertowy.doc](#125-dokumentofertowydoc)
-        - [12.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#126-dokumentpotwierdzajacyrealizacjereklamacjidocx)
-        - [12.7. Formularzofertyudzielonejdlaklienta.doc](#127-formularzofertyudzielonejdlaklientadoc)
-        - [12.8. Formularzprosbyodostepnosctowaru.docx](#128-formularzprosbyodostepnosctowarudocx)
-        - [12.9. Formularzreklamacjidodostawcy.docx](#129-formularzreklamacjidodostawcydocx)
-        - [12.10. Formularzreklamacjiodklienta.docx](#1210-formularzreklamacjiodklientadocx)
-        - [12.11. Instomformularzdanychklienta.docx](#1211-instomformularzdanychklientadocx)
-        - [12.12. Instomprzesunieciemiedzymagazynowe.docx](#1212-instomprzesunieciemiedzymagazynowedocx)
-        - [12.13. Instomprzyjecie zewnetrzne.docx](#1213-instomprzyjecie-zewnetrznedocx)
-        - [12.14. Instomrozchodwewnetrzny.docx](#1214-instomrozchodwewnetrznydocx)
-        - [12.15. Instomwydanie zewnetrzne.docx](#1215-instomwydanie-zewnetrznedocx)
-        - [12.16. Raportzakcjimarketingowych.doc](#1216-raportzakcjimarketingowychdoc)
-        - [12.17. Zamówienieklienta.doc](#1217-zamówienieklientadoc)
-        - [12.18. Instomformularzdanychpotencjalnegoklienta.docx](#1218-instomformularzdanychpotencjalnegoklientadocx)
+            - [12.2. Danefabryki.docx](#122-danefabrykidocx)
+            - [12.3. Wpistowaruwkatalogu.docx](#123-wpistowaruwkatalogudocx)
+            - [12.4. Wpisdotyczącycenytowaru.docx](#124-wpisdotyczącycenytowarudocx)
+            - [12.5. Dokumentofertowy.doc](#125-dokumentofertowydoc)
+            - [12.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#126-dokumentpotwierdzajacyrealizacjereklamacjidocx)
+            - [12.7. Formularzofertyudzielonejdlaklienta.doc](#127-formularzofertyudzielonejdlaklientadoc)
+            - [12.8. Formularzprosbyodostepnosctowaru.docx](#128-formularzprosbyodostepnosctowarudocx)
+            - [12.9. Formularzreklamacjidodostawcy.docx](#129-formularzreklamacjidodostawcydocx)
+            - [12.10. Formularzreklamacjiodklienta.docx](#1210-formularzreklamacjiodklientadocx)
+            - [12.11. Instomformularzdanychklienta.docx](#1211-instomformularzdanychklientadocx)
+            - [12.12. Instomprzesunieciemiedzymagazynowe.docx](#1212-instomprzesunieciemiedzymagazynowedocx)
+            - [12.13. Instomprzyjecie zewnetrzne.docx](#1213-instomprzyjecie-zewnetrznedocx)
+            - [12.14. Instomrozchodwewnetrzny.docx](#1214-instomrozchodwewnetrznydocx)
+            - [12.15. Instomwydanie zewnetrzne.docx](#1215-instomwydanie-zewnetrznedocx)
+            - [12.16. Raportzakcjimarketingowych.doc](#1216-raportzakcjimarketingowychdoc)
+            - [12.17. Zamówienieklienta.doc](#1217-zamówienieklientadoc)
+            - [12.18. Instomformularzdanychpotencjalnegoklienta.docx](#1218-instomformularzdanychpotencjalnegoklientadocx)
 - [13. Załącznik C:](#13-załącznik-c)
 - [14. Załącznik D:](#14-załącznik-d)
 - [15. Załącznik E: Spis rysunków](#15-załącznik-e-spis-rysunków)
@@ -215,6 +215,7 @@ Został przeprowadzony wywiad z zarządem. Transkrypcje odpowiedzi umieścimy w 
 
 Celem systemu PSSK jest kompleksowe wspomaganie procesu zamówienia od złożenia go przez klienta, przez pomoc i kontrolowanie procesu zlecenia zakupu komponentów po obsługę gwarancyjną.
 Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływających przez firmę niezbędnych do sprawnego działania organizacji.
+
 <div class="page">
 
 ### 1.2.3 Składniki organizacyjne dla Obszaru Modelowania
@@ -2805,9 +2806,23 @@ Interfejsy użytkownika: React.js
 
 ## 10.2 Weryfikacja całości projektu systemu
 
+Po przeanalizowaniu całości projektu uznaliśmy, że system zaprojektowano poprawnie. Przypadki użycia i funkcje systemu pozwalają na usprawnianie procesów biznesowych firmy. Cele firmy takie jak:
+
+- Optymalizacji procesów w firmie
+
+- Zmniejszenia średniego czasu do zamknięcia zamówienia
+
+  zdefiniowane w punkcie **1.1.5** zostaną osiągnięte.
+
+Założenia **1.2.2 Definicja celu systemu** oraz **1.1.3 Cele produktowe**, które zdefiniowaliśmy na początku tworzenia projektu zostaną osiągnięte. 
+
+Cel firmy:
+
+- Optymalizacji ilości i typu magazynowanych produktów
+
+nie został pokryty w projekcie systemu, został natomiast zaproponowany jako obszar do usprawnienia jako jeden z kierunków dalszego rozwoju systemu.
+
 <div class="page">
-
-
 ## 10.3 Uwagi i wnioski końcowe
 
 Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach muzgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności. 
@@ -2997,25 +3012,25 @@ Podsystem 1, Podsystem 5 - Mateusz
 
 
 ADAM:
-[1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu) (Wywiad i raport z wywiadu)
+[1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)(Wywiad i raport z wywiadu)
 
-[2.2. Rejestry w systemie](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#22-rejestry-w-systemie)
+[2.2. Rejestry w systemie](#22-rejestry-w-systemie)
 
-[2.4.2. Obsługa zleceń zakupu (OA2)](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#242-obsługa-zleceń-zakupu-oa2)
+[2.4.2. Obsługa zleceń zakupu (OA2)](#242-obsługa-zleceń-zakupu-oa2)
 
-[2.4.5. Analiza danych na potrzeby marketingowe (OA5)](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#245-analiza-danych-na-potrzeby-marketingowe-oa5)
+[2.4.5. Analiza danych na potrzeby marketingowe (OA5)](#245-analiza-danych-na-potrzeby-marketingowe-oa5)
 
-[2.5.2. Obsługa zleceń zakupu (OA2)](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#252-obsługa-zleceń-zakupu-oa2)
+[2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2)
 
-[2.5.5. Analiza danych na potrzeby marketingowe (OA5)](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#255-analiza-danych-na-potrzeby-marketingowe-oa5)
+[2.5.5. Analiza danych na potrzeby marketingowe (OA5)](#255-analiza-danych-na-potrzeby-marketingowe-oa5)
 
-[2.7.3. Wymagania zewnętrzne](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#273-wymagania-zewnętrzne) (Wymagania zewnętrzne: współpracy, etyczne. Wymagania bezpieczeństwa)
+[2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)(Wymagania zewnętrzne: współpracy, etyczne. Wymagania bezpieczeństwa)
 
-[5. Analiza struktur danych przechowywanych w systemie](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#5-analiza-struktur-danych-przechowywanych-w-systemie)
+[5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
 
-[10. Podsumowanie](https://github.com/pixellos/Agh.5.Psi/blob/psi-week-3/src/Projekt systemu.md#10-podsumowanie)
+[10. Podsumowanie](#10-podsumowanie)
 
-8.4 Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu
+[8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
 
 
 
