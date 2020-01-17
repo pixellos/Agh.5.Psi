@@ -881,6 +881,7 @@ _Klient_ - Inicjuje proces
 ### 2.4.2 Obsługa zleceń zakupu (OA2)
 
 ![](./diagrams/images/OA2.jpg)
+##### Rysunek X. Diagram przypadków użycia obsługi zleceń zakupu
 
 **Numer i nazwa przypadku użycia:** UC-2.1 - Zarządzanie rejestrami klienta
 
@@ -2104,7 +2105,6 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 ![Diagram kontekstowy](./diagrams/images/DF/ps1.jpg)
 ##### _Rysunek 17. Diagram kontekstowy dla PS1
 
-
 ***
 Nazwa funkcji: 1.1.1 Przetwórz dostawcę
 
@@ -2211,7 +2211,6 @@ Uwagi: (Uzasadnienie)
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps2.jpg)
 ##### _Rysunek 18. Diagram podystemu dla PS2
-
 
 ***
 Nazwa funkcji: 1.2.1 Przetwórz zlecenie zakupu
@@ -3013,7 +3012,7 @@ Treść Załącznika w osobnym archiwum o nazwie Załącznik B:
 <div class="page">
 
 # Załącznik C:
- 
+
 Raport z podziału pracy w zespole i realizacji ( z odniesieniem do punktów dokumentacji oraz podsumowująca ocena procentowa wkładu indywidualnego)
 
 Przygotowanie i skład - Mateusz
@@ -3158,3 +3157,4 @@ Archiwum na moodle
 - [9.2.1. Rysunek 25. Architektura podsystemów](#921-rysunek-25-architektura-podsystemów)
 
 <div class="page">
+
