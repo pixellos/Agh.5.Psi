@@ -18,7 +18,7 @@ AGH WIET - Praca PSI, semestr 6, 2019 - 2020.
 
 Spis Treści
 
-<!-- TOC insertanchor:false withlinks:true anchormode:github.com updateonsave:true orderedlist:true depthfrom:1 depthto:3 -->
+<!-- TOC insertanchor:false withlinks:true anchormode:github.com updateonsave:true orderedlist:true depthfrom:1 depthto:4 -->
 
 - [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
     - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu)
@@ -34,6 +34,11 @@ Spis Treści
         - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania)
     - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
         - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
+            - [1.3.1.1. Obsługa zamówień (OA1)](#1311-obsługa-zamówień-oa1)
+            - [1.3.1.2. Obsługa zleceń zakupu (OA2)](#1312-obsługa-zleceń-zakupu-oa2)
+            - [1.3.1.3. Obsługa reklamacji (OA3)](#1313-obsługa-reklamacji-oa3)
+            - [1.3.1.4. Obsługa magazynu (OA4)](#1314-obsługa-magazynu-oa4)
+            - [1.3.1.5. Analizy danych na potrzeby marketingowe (OA6)](#1315-analizy-danych-na-potrzeby-marketingowe-oa6)
     - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
         - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
         - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
@@ -64,8 +69,19 @@ Spis Treści
         - [2.6.5. Wylogowywanie](#265-wylogowywanie)
     - [2.7. Wymagania niefunkcjonalne](#27-wymagania-niefunkcjonalne)
         - [2.7.1. Wymagania Produktowe](#271-wymagania-produktowe)
+            - [2.7.1.1. Użyteczności](#2711-użyteczności)
+            - [2.7.1.2. Sprawnościowe](#2712-sprawnościowe)
+            - [2.7.1.3. Niezawodności](#2713-niezawodności)
+            - [2.7.1.4. Przenośności](#2714-przenośności)
         - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne)
+            - [2.7.2.1. Dostawy](#2721-dostawy)
+            - [2.7.2.2. Implementacyjne](#2722-implementacyjne)
+            - [2.7.2.3. Standardów](#2723-standardów)
         - [2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)
+            - [2.7.3.1. Współpracy](#2731-współpracy)
+            - [2.7.3.2. Etyczne](#2732-etyczne)
+            - [2.7.3.3. Prawne - ochrona prywatności](#2733-prawne---ochrona-prywatności)
+            - [2.7.3.4. Prawne - Wymagania zabezpieczeń](#2734-prawne---wymagania-zabezpieczeń)
 - [3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)](#3-analiza-funkcjonalna-systemu-przy-pomocy-przepływów-danych--i-proces-dekompozycji)
     - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk)
     - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy)
@@ -102,7 +118,7 @@ Spis Treści
     - [11.7. S](#117-s)
     - [11.8. Z](#118-z)
 - [12. Załącznik B: Wzory dokumentów](#12-załącznik-b-wzory-dokumentów)
-        - [12.1. Danedostawcy.docx](#121-danedostawcydocx)
+            - [12.1. Danedostawcy.docx](#121-danedostawcydocx)
             - [12.2. Danefabryki.docx](#122-danefabrykidocx)
             - [12.3. Wpistowaruwkatalogu.docx](#123-wpistowaruwkatalogudocx)
             - [12.4. Wpisdotyczącycenytowaru.docx](#124-wpisdotyczącycenytowarudocx)
@@ -121,9 +137,9 @@ Spis Treści
             - [12.17. Zamówienieklienta.doc](#1217-zamówienieklientadoc)
             - [12.18. Instomformularzdanychpotencjalnegoklienta.docx](#1218-instomformularzdanychpotencjalnegoklientadocx)
 - [13. Załącznik C:](#13-załącznik-c)
-- [14. Załącznik D:](#14-załącznik-d)
-- [15. Załącznik E: Spis rysunków](#15-załącznik-e-spis-rysunków)
-- [16. Załącznik F: Podział zadań](#16-załącznik-f-podział-zadań)
+- [14. Załącznik D. Recenzja dokumentacji projektowej wskazanego Zespołu](#14-załącznik-d-recenzja-dokumentacji-projektowej-wskazanego-zespołu)
+- [15. Załącznik E. Na Moodle: kompletna dokumentacja w .pdf ; źródłowa wersja dokumentacji i rysunków, prezentacja w .ppt, recenzja, ew. inne materiały źródłowe)](#15-załącznik-e-na-moodle-kompletna-dokumentacja-w-pdf--źródłowa-wersja-dokumentacji-i-rysunków-prezentacja-w-ppt-recenzja-ew-inne-materiały-źródłowe)
+- [16. Załącznik E: Spis rysunków](#16-załącznik-e-spis-rysunków)
 
 <!-- /TOC -->
 
@@ -191,7 +207,7 @@ W tym punkcie opiszemy strukturę organizacyjną ( Do każdego punktu krótki op
 
 ![1. ](./diagrams/images/companyStructure.png)
 
-##### _Rysunek X. Diagram struktura zarządu_
+##### _Rysunek 1. Diagram struktura zarządu_
 
 W obecnym okresie jest około 60 pracowników.
 W sprzedaży pracuje około 20, w zarządzie 5, W dziale marketingu 5, natomiast w księgowości 10, w dziale usług 20
@@ -258,7 +274,7 @@ Dodatkowym celem będzie stworzenie przejrzystej struktury dokumentów przepływ
 
 ![2. ](./diagrams/images/Obsluga_aktywnosci.png)
 
-##### _Rysunek X. Przegląd obszarów aktywności_
+##### _Rysunek 2. Przegląd obszarów aktywności_
 
 #### 1.3.1.1 Obsługa zamówień (OA1)
 
@@ -551,7 +567,7 @@ Dodatkową korzyścią z tego przedsięwzięcia byłoby przećwiczenie zbierania
 @enduml
 ```
 
-##### _Rysunek X. Aktorzy w systemie_
+##### _Rysunek 3. Aktorzy w systemie_
 
 W systemie możemy wyróżnić następujących aktorów
 
@@ -650,7 +666,7 @@ W tym punkcie określimy przypadki użycia do określonych wcześniej historyjek
 ### 2.4.1 Obsługa Dostawców (OA1)
  ![](./diagrams/images/oa1.jpg)
 
-##### _Rysunek X. Diagram przypadków użycia obsługi zamówień_
+##### _Rysunek 4. Diagram przypadków użycia obsługi zamówień_
 
 **Numer i Nazwa przypadku użycia:** UC-1.1 - Wyszukaj dostawcę
 
@@ -1082,7 +1098,7 @@ Konsultant - wyszukanie produktów
 ### 2.1.3 Obsługa reklamacji (OA3)
 ![](./diagrams/images/Obsluga_reklamacji.jpg)
 
-##### _Rysunek X. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
+##### _Rysunek 5. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
 
 **Numer i nazwa przypadku użycia:** UC-3.1 - Zgłoszenie reklamacji przez klienta
 
@@ -1195,7 +1211,7 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 ### 2.1.4 Obsługa Rejestr Magazynu (OA4)
 
 ![](./diagrams/images/OA4_Zarzadzanie_rejestrem_magazynu.jpg)
-##### _Rysunek X. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu_
+##### _Rysunek 6. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu_
 
 
 
@@ -1653,7 +1669,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ![](./diagrams/images/OA6.jpg)
 
-##### Rysunek X. Statyki powiązane z katalogiem produktowym\_
+##### _Rysunek 7. Statyki powiązane z katalogiem produktowym\_
 
 **Numer i nazwa przypadku użycia:** UC-6.1 - Generowanie raportu
 
@@ -1707,16 +1723,16 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 ### 2.5.2 Obsługa zleceń zakupu (OA2)
 ![Diagram aktywności zarządzania rejestrami klientów](./diagrams/images/AD-OA2.1.jpg)
-##### _Rysunek X. Diagram aktywności zarządzania rejestrami klientów
+##### _Rysunek 8. Diagram aktywności zarządzania rejestrami klientów
 
 ![Diagram aktywności tworzenia oferty](./diagrams/images/AD-OA2.3.jpg)
-##### _Rysunek X. Diagram aktywności tworzenia oferty
+##### _Rysunek 9. Diagram aktywności tworzenia oferty
 
 ![Diagram aktywności zatwierdzania oferty](./diagrams/images/AD-OA2.4.jpg)
-##### _Rysunek X. Diagram aktywności zatwierdzania oferty
+##### _Rysunek 10. Diagram aktywności zatwierdzania oferty
 
 ![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.5.jpg)
-##### _Rysunek X. Diagram aktywności wyszukiwania i dodania produktu
+##### _Rysunek 11. Diagram aktywności wyszukiwania i dodania produktu
 
 
 
@@ -1730,13 +1746,13 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 ### 2.5.4 Obsługa rejestru magazynu (OA4)
 ![Diagram Aktywności obsługi rejestru magazynu](./diagrams/images/AD_OA4.jpg)
-##### _Rysunek X. Diagram aktywności obsługi rejestru magazynu
+##### _Rysunek 12. Diagram aktywności obsługi rejestru magazynu
 
 <div class="page">
 
 ### 2.5.5 Analiza danych na potrzeby marketingowe (OA5)
 ![Diagram Aktywności analizy danych](./diagrams/images/AD-OA6.jpg)
-##### _Rysunek X. Diagram aktywności analizy danych
+##### _Rysunek 13. Diagram aktywności analizy danych
 
 <div class="page">
 
@@ -2066,12 +2082,12 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 ## 3.1. Diagram kontekstowy (DK)
 ![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
-##### Rysunek X. Diagram kontekstowy
+##### _Rysunek 14. Diagram kontekstowy
 <div class="page">
 
 ## 3.2 Rozwinięty diagram kontekstowy
 ![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy.jpg)
-##### Rysunek X. Diagram Podsystemów
+##### _Rysunek 15. Diagram Podsystemów
 
 
 <div class="page">
@@ -2623,7 +2639,7 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
 <div class="page">
 
 ![](./diagrams/images/ERD.jpg)
-##### _Rysunek X. Diagram ERD
+##### _Rysunek 16. Diagram ERD
 <div class="page">
 
 
@@ -2785,39 +2801,39 @@ Celem punktu jest przedstawienie zachowani systemu w czasie.
 
 
 ![](./diagrams/images/Diagram_maszyny_stanow.jpg)
-##### _Rysunek X. Diagram SMD
+##### _Rysunek 17. Diagram SMD
 
 <div class="page">
 
 # 7. Interfejsy użytkownika (Ekrany)
 
 ![](./diagrams/images/Drzewo_Interfejsow.jpg)
-##### _Rysunek X. Drzewo_Interfejsow_
+##### _Rysunek 18. Drzewo_Interfejsow_
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
-##### _Rysunek X. Interfejs użytkownika Obsluga_Dostawcow_
+##### _Rysunek 19. Interfejs użytkownika Obsluga_Dostawcow_
 <div class="page">
 
 ![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
-##### _Rysunek X. Interfejs użytkownika Obsluga_zlecen_zakupu__
+##### _Rysunek 20. Interfejs użytkownika Obsluga_zlecen_zakupu__
 
 <div class="page">
 
 
 ![](./diagrams/images/OA_3_Obsługa_reklamacji.jpg)
-##### _Rysunek X. Interfejs użytkownika Obsługa_reklamacji__
+##### _Rysunek 21. Interfejs użytkownika Obsługa_reklamacji__
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_4_Rejestr_Obsluga_Magazynu.jpg)
-##### _Rysunek X. Interfejs użytkownika Obsluga_Magazynu
+##### _Rysunek 22. Interfejs użytkownika Obsluga_Magazynu
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_6_Analiza_danych.jpg)
-##### _Rysunek X. Interfejs użytkownika Analiza_danych_
+##### _Rysunek 23. Interfejs użytkownika Analiza_danych_
 
 # 8. Weryfikacja wytworzonych artefaktów i koncepcji systemu
 
@@ -2868,14 +2884,14 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 
 ## 9.1 Architektura całego Systemu
 ![](./diagrams/images/Architektura_system.jpg)
-##### _Rysunek X. Architektura systemu__
+##### _Rysunek 24. Architektura systemu__
 
 <div class="page">
 
 
 ## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
-##### _Rysunek X. Architektura podsystemów__
+##### _Rysunek 25. Architektura podsystemów__
 
 <div class="page">
 
@@ -2964,65 +2980,34 @@ Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowali
 
 # Załącznik B: Wzory dokumentów
 
-### 1.Dane_dostawcy.docx
-### 2.Dane_fabryki.docx
-### 3.Wpis_towaru_w_katalogu.docx
-### 4.Wpis_dotyczący_ceny_towaru.docx
-### 5.Dokument_ofertowy.doc
-### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
-### 7.Formularz_oferty_udzielonej_dla_klienta.doc
-### 8.Formularz_prosby_o_dostepnosc_towaru.docx
-### 9.Formularz_reklamacji_do_dostawcy.docx
-### 10.Formularz_reklamacji_od_klienta.docx
-### 11.Instom_formularz_danych_klienta.docx
-### 12.Instom_przesuniecie_miedzymagazynowe.docx
-### 13.Instom_przyjecie zewnetrzne.docx
-### 14.Instom_rozchod_wewnetrzny.docx
-### 15.Instom_wydanie zewnetrzne.docx
-### 16.Raport_z_akcji_marketingowych.doc
-### 17.Zamówienie_klienta.doc
-### 18.Instom_formularz_danych_potencjalnego_klienta.docx
+Treść Załącznika w osobnym archiwum o nazwie Załącznik B:
+
+#### 1.Dane_dostawcy.docx
+#### 2.Dane_fabryki.docx
+#### 3.Wpis_towaru_w_katalogu.docx
+#### 4.Wpis_dotyczący_ceny_towaru.docx
+#### 5.Dokument_ofertowy.doc
+#### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
+#### 7.Formularz_oferty_udzielonej_dla_klienta.doc
+#### 8.Formularz_prosby_o_dostepnosc_towaru.docx
+#### 9.Formularz_reklamacji_do_dostawcy.docx
+#### 10.Formularz_reklamacji_od_klienta.docx
+#### 11.Instom_formularz_danych_klienta.docx
+#### 12.Instom_przesuniecie_miedzymagazynowe.docx
+#### 13.Instom_przyjecie zewnetrzne.docx
+#### 14.Instom_rozchod_wewnetrzny.docx
+#### 15.Instom_wydanie zewnetrzne.docx
+#### 16.Raport_z_akcji_marketingowych.doc
+#### 17.Zamówienie_klienta.doc
+#### 18.Instom_formularz_danych_potencjalnego_klienta.docx
 
 <div class="page">
 
 # Załącznik C:
+ 
+Raport z podziału pracy w zespole i realizacji ( z odniesieniem do punktów dokumentacji oraz podsumowująca ocena procentowa wkładu indywidualnego)
 
-<div class="page">
-
-# Załącznik D:
-
-<div class="page">
-
-# Załącznik E: Spis rysunków
-
-- [1.1.6.1. Rysunek 01. Diagram struktura zarządu](#markdown-header-1161-rysunek-01-diagram-struktura-zarządu)
-- [1.3.1.1. Rysunek 02. Przegląd obszarów aktywności](#markdown-header-1311-rysunek-02-przegląd-obszarów-aktywności)
-- [2.1.1.1. Rysunek 03. Aktorzy w systemie](#markdown-header-2111-rysunek-03-aktorzy-w-systemie)
-- [2.4.1.1. Rysunek 04. Diagram przypadków użycia aktualizacji danych dostawcy](#markdown-header-2411-rysunek-04-diagram-przypadków-użycia-aktualizacji-danych-dostawcy)
-- [2.4.2.1. Rysunek 05. Rejestrowanie klienta](#markdown-header-2421-rysunek-05-rejestrowanie-klienta)
-- [2.4.2.2. Rysunek 06. Proces ofertowy](#markdown-header-2422-rysunek-06-proces-ofertowy)
-- [2.4.2.3. Rysunek 07. Potwierdzenie zamówienia i wystawienie faktury](#markdown-header-2423-rysunek-07-potwierdzenie-zamówienia-i-wystawienie-faktury)
-- [2.4.3.1. Rysunek 11. Diagram przypadków użycia zgłoszenia reklamacji przez klienta](#markdown-header-2431-rysunek-11-diagram-przypadków-użycia-zgłoszenia-reklamacji-przez-klienta)
-- [2.4.4.1. Rysunek 18. Diagram przypadków użycia obsługi Rozładunek oraz załadunek](#markdown-header-2441-rysunek-18-diagram-przypadków-użycia-obsługi-rozładunek-oraz-załadunek)
-- [2.4.4.2. Rysunek 19. Diagram przypadków użycia obsługi Czynności monitorujące](#markdown-header-2442-rysunek-19-diagram-przypadków-użycia-obsługi-czynności-monitorujące)
-- [2.4.5.1. Rysunek 20. Diagram przypadków użycia obsługi Kontrolowanie](#markdown-header-2451-rysunek-20-diagram-przypadków-użycia-obsługi-kontrolowanie)
-- [2.4.5.2. Rysunek 21. Diagram przypadków użycia obsługi Kategoryzowanie](#markdown-header-2452-rysunek-21-diagram-przypadków-użycia-obsługi-kategoryzowanie)
-- [2.4.5.3. Rysunek 22. Diagram przypadków użycia obsługi Prognozowanie popytu](#markdown-header-2453-rysunek-22-diagram-przypadków-użycia-obsługi-prognozowanie-popytu)
-- [2.4.6.1. Rysunek 12. Statyki powiązane z katalogiem produktowym](#markdown-header-2461-rysunek-12-statyki-powiązane-z-katalogiem-produktowym)
-
-- [2.4.7.2. Rysunek 15. Diagram przypadków użycia funkcji informowania o ofercie](#markdown-header-2472-rysunek-15-diagram-przypadków-użycia-funkcji-informowania-o-ofercie)
-- [2.4.8.1. Rysunek 16. Diagram przypadków użycia wprowadzenia dokumentów i zadań przez pracownika oraz właściciela do systemu oraz wglądu do prognozy zamówień](#markdown-header-2481-rysunek-16-diagram-przypadków-użycia-wprowadzenia-dokumentów-i-zadań-przez-pracownika-oraz-właściciela-do-systemu-oraz-wglądu-do-prognozy-zamówień)
-
-<div class="page">
-
-# Załącznik F: Podział zadań
-
-Skład dokumentu - Mateusz
-1 - Mateusz
-2 - Adam
-3 - Kacper
-4 - Kamil
-5 - Wspólny 
+Przygotowanie i skład - Mateusz
 
 Dokumenty:
 
@@ -3043,9 +3028,6 @@ Dokumenty:
 - 15.Instom_wydanie zewnetrzne.docx - Kamil
 - 16.Raport_z_akcji_marketingowych.doc - Adam
 - 17.Zamówienie_klienta.doc - Adam
-
-Wymagania Funkcjonalne
-1. Poprawki  - Mateusz
 
 Wymagania niefunkcjonalne
 
@@ -3119,11 +3101,51 @@ ADAM:
 
 [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
 
-[10. Podsumowanie](#10-podsumowanie)
-
 [8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
 
+[10. Podsumowanie](#10-podsumowanie)
 
 
+<div class="page">
+
+# Załącznik D. Recenzja dokumentacji projektowej wskazanego Zespołu
+
+Archiwum na moodle
+
+<div class="page">
+
+# Załącznik E. Na Moodle: kompletna dokumentacja w .pdf ; źródłowa wersja dokumentacji i rysunków, prezentacja w .ppt, recenzja, ew. inne materiały źródłowe)
+
+Archiwum na moodle
+<div class="page">
 
 
+# Załącznik E: Spis rysunków
+
+- [1.1.6.1. Rysunek 1. Diagram struktura zarządu](#1161-rysunek-1-diagram-struktura-zarządu)
+- [1.3.1.1. Rysunek 2. Przegląd obszarów aktywności](#1311-rysunek-2-przegląd-obszarów-aktywności)
+- [2.1.1. Rysunek 3. Aktorzy w systemie](#211-rysunek-3-aktorzy-w-systemie)
+- [2.4.1.1. Rysunek 4. Diagram przypadków użycia obsługi zamówień](#2411-rysunek-4-diagram-przypadków-użycia-obsługi-zamówień)
+- [2.4.3.1. Rysunek 5. Diagram przypadków użycia zgłoszenia reklamacji przez klienta](#2431-rysunek-5-diagram-przypadków-użycia-zgłoszenia-reklamacji-przez-klienta)
+- [2.4.4.1. Rysunek 6. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu](#2441-rysunek-6-diagram-przypadków-użycia-obsługi-obsługa-rejestr-magazynu)
+- [2.4.5.1. Rysunek 7. Statyki powiązane z katalogiem produktowym\](#2451-rysunek-7-statyki-powiązane-z-katalogiem-produktowym\)
+- [2.5.2.1. Rysunek 8. Diagram aktywności zarządzania rejestrami klientów](#2521-rysunek-8-diagram-aktywności-zarządzania-rejestrami-klientów)
+- [2.5.2.2. Rysunek 9. Diagram aktywności tworzenia oferty](#2522-rysunek-9-diagram-aktywności-tworzenia-oferty)
+- [2.5.2.3. Rysunek 10. Diagram aktywności zatwierdzania oferty](#2523-rysunek-10-diagram-aktywności-zatwierdzania-oferty)
+- [2.5.2.4. Rysunek 11. Diagram aktywności wyszukiwania i dodania produktu](#2524-rysunek-11-diagram-aktywności-wyszukiwania-i-dodania-produktu)
+- [2.5.4.1. Rysunek 12. Diagram aktywności obsługi rejestru magazynu](#2541-rysunek-12-diagram-aktywności-obsługi-rejestru-magazynu)
+- [2.5.5.1. Rysunek 13. Diagram aktywności analizy danych](#2551-rysunek-13-diagram-aktywności-analizy-danych)
+- [3.1.1. Rysunek 14. Diagram kontekstowy](#311-rysunek-14-diagram-kontekstowy)
+- [3.2.1. Rysunek 15. Diagram Podsystemów](#321-rysunek-15-diagram-podsystemów)
+- [5.1. Rysunek 16. Diagram ERD](#51-rysunek-16-diagram-erd)
+- [6.1. Rysunek 17. Diagram SMD](#61-rysunek-17-diagram-smd)
+- [7.1. Rysunek 18. DrzewoInterfejsow](#71-rysunek-18-drzewointerfejsow)
+- [7.2. Rysunek 19. Interfejs użytkownika ObslugaDostawcow](#72-rysunek-19-interfejs-użytkownika-obslugadostawcow)
+- [7.3. Rysunek 20. Interfejs użytkownika Obslugazlecenzakupu](#73-rysunek-20-interfejs-użytkownika-obslugazlecenzakupu)
+- [7.4. Rysunek 21. Interfejs użytkownika Obsługareklamacji](#74-rysunek-21-interfejs-użytkownika-obsługareklamacji)
+- [7.5. Rysunek 22. Interfejs użytkownika ObslugaMagazynu](#75-rysunek-22-interfejs-użytkownika-obslugamagazynu)
+- [7.6. Rysunek 23. Interfejs użytkownika Analizadanych](#76-rysunek-23-interfejs-użytkownika-analizadanych)
+- [9.1.1. Rysunek 24. Architektura systemu](#911-rysunek-24-architektura-systemu)
+- [9.2.1. Rysunek 25. Architektura podsystemów](#921-rysunek-25-architektura-podsystemów)
+
+<div class="page">
