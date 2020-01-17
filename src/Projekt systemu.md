@@ -1718,21 +1718,22 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 ### 2.5.1 Obsługa zamówień (OA1)
 ![Diagram Aktywności obsługi zamówień](./diagrams/images/ad1.jpg)
+##### _Rysunek 8. Diagram aktywności obsługi zamówień
 
 <div class="page">
 
 ### 2.5.2 Obsługa zleceń zakupu (OA2)
 ![Diagram aktywności zarządzania rejestrami klientów](./diagrams/images/AD-OA2.1.jpg)
-##### _Rysunek 8. Diagram aktywności zarządzania rejestrami klientów
+##### _Rysunek 9. Diagram aktywności zarządzania rejestrami klientów
 
 ![Diagram aktywności tworzenia oferty](./diagrams/images/AD-OA2.3.jpg)
-##### _Rysunek 9. Diagram aktywności tworzenia oferty
+##### _Rysunek 10. Diagram aktywności tworzenia oferty
 
 ![Diagram aktywności zatwierdzania oferty](./diagrams/images/AD-OA2.4.jpg)
-##### _Rysunek 10. Diagram aktywności zatwierdzania oferty
+##### _Rysunek 11. Diagram aktywności zatwierdzania oferty
 
 ![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.5.jpg)
-##### _Rysunek 11. Diagram aktywności wyszukiwania i dodania produktu
+##### _Rysunek 12. Diagram aktywności wyszukiwania i dodania produktu
 
 
 
@@ -1746,13 +1747,13 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 ### 2.5.4 Obsługa rejestru magazynu (OA4)
 ![Diagram Aktywności obsługi rejestru magazynu](./diagrams/images/AD_OA4.jpg)
-##### _Rysunek 12. Diagram aktywności obsługi rejestru magazynu
+##### _Rysunek 13. Diagram aktywności obsługi rejestru magazynu
 
 <div class="page">
 
 ### 2.5.5 Analiza danych na potrzeby marketingowe (OA5)
 ![Diagram Aktywności analizy danych](./diagrams/images/AD-OA6.jpg)
-##### _Rysunek 13. Diagram aktywności analizy danych
+##### _Rysunek 14. Diagram aktywności analizy danych
 
 <div class="page">
 
@@ -2082,12 +2083,12 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 ## 3.1. Diagram kontekstowy (DK)
 ![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
-##### _Rysunek 14. Diagram kontekstowy
+##### _Rysunek 15. Diagram kontekstowy
 <div class="page">
 
 ## 3.2 Rozwinięty diagram kontekstowy
 ![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy.jpg)
-##### _Rysunek 15. Diagram Podsystemów
+##### _Rysunek 16. Diagram Podsystemów
 
 
 <div class="page">
@@ -2101,6 +2102,8 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 ### 3.3.2 Analiza dla Podsystemu 1.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps1.jpg)
+##### _Rysunek 17. Diagram kontekstowy dla PS1
+
 
 ***
 Nazwa funkcji: 1.1.1 Przetwórz dostawcę
@@ -2207,6 +2210,8 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 2.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps2.jpg)
+##### _Rysunek 18. Diagram podystemu dla PS2
+
 
 ***
 Nazwa funkcji: 1.2.1 Przetwórz zlecenie zakupu
@@ -2307,6 +2312,7 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 3.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps3.jpg)
+##### _Rysunek 19. Diagram podystemu dla PS3
 
 ***
 Nazwa funkcji: 1.3.1 Przyjęcie reklamacji
@@ -2378,6 +2384,7 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 4.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps4.jpg)
+##### _Rysunek 20. Diagram podystemu dla PS4
 
 
 Nazwa funkcji: 1.4.1 Przyjecie na magazyn partii towaru
@@ -2450,6 +2457,8 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 5.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps5.jpg)
+##### _Rysunek 21. Diagram podystemu dla PS5
+
 
 Nazwa funkcji: 1.6.1 Przetwórz dokumenty finansowe
 
@@ -2639,7 +2648,7 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
 <div class="page">
 
 ![](./diagrams/images/ERD.jpg)
-##### _Rysunek 16. Diagram ERD
+##### _Rysunek 22. Diagram ERD
 <div class="page">
 
 
@@ -2801,39 +2810,39 @@ Celem punktu jest przedstawienie zachowani systemu w czasie.
 
 
 ![](./diagrams/images/Diagram_maszyny_stanow.jpg)
-##### _Rysunek 17. Diagram SMD
+##### _Rysunek 23. Diagram SMD
 
 <div class="page">
 
 # 7. Interfejsy użytkownika (Ekrany)
 
 ![](./diagrams/images/Drzewo_Interfejsow.jpg)
-##### _Rysunek 18. Drzewo_Interfejsow_
+##### _Rysunek 24. Drzewo_Interfejsow_
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
-##### _Rysunek 19. Interfejs użytkownika Obsluga_Dostawcow_
+##### _Rysunek 25. Interfejs użytkownika Obsluga_Dostawcow_
 <div class="page">
 
 ![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
-##### _Rysunek 20. Interfejs użytkownika Obsluga_zlecen_zakupu__
+##### _Rysunek 26. Interfejs użytkownika Obsluga_zlecen_zakupu__
 
 <div class="page">
 
 
 ![](./diagrams/images/OA_3_Obsługa_reklamacji.jpg)
-##### _Rysunek 21. Interfejs użytkownika Obsługa_reklamacji__
+##### _Rysunek 27. Interfejs użytkownika Obsługa_reklamacji__
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_4_Rejestr_Obsluga_Magazynu.jpg)
-##### _Rysunek 22. Interfejs użytkownika Obsluga_Magazynu
+##### _Rysunek 28. Interfejs użytkownika Obsluga_Magazynu
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_6_Analiza_danych.jpg)
-##### _Rysunek 23. Interfejs użytkownika Analiza_danych_
+##### _Rysunek 29. Interfejs użytkownika Analiza_danych_
 
 # 8. Weryfikacja wytworzonych artefaktów i koncepcji systemu
 
@@ -2884,14 +2893,14 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 
 ## 9.1 Architektura całego Systemu
 ![](./diagrams/images/Architektura_system.jpg)
-##### _Rysunek 24. Architektura systemu__
+##### _Rysunek 30. Architektura systemu__
 
 <div class="page">
 
 
 ## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
-##### _Rysunek 25. Architektura podsystemów__
+##### _Rysunek 31. Architektura podsystemów__
 
 <div class="page">
 
