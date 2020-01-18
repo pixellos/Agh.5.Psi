@@ -1190,7 +1190,7 @@ _Zespół techniczny_ - przejmuje dalsze czynności
 
 **Scenariusze alternatywne:**
 
-1. System wyświelta informacje o błędzie podczas próby zapisu do rejestru
+1. System wyświetla informacje o błędzie podczas próby zapisu do rejestru
 
 **Uczestnicy i interesy:**
 
@@ -2648,11 +2648,11 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
   - QuotationStatus
     - Status w, którym znajduje się oferta
   - QuotationOwner
-    - Uzytkownik zajmujący się daną ofertą
+    - Użytkownik zajmujący się daną ofertą
   - QuotationApproval
     - Zatwierdzanie oferty
   - QuotationPriority
-    - Dane statystyczna pozwalające priorytetyzować oferty
+    - Dane statystyczna pozwalające priorytetowa oferty
   - OwnerRole
     - Rola użytkownika zajmującego się daną ofertą
   - User
@@ -2660,7 +2660,7 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
   - ApprovalStatus
     - Status, w którym znajduje się zatwierdzanie oferty
   - QuotationCustomer
-    - Klient zkorelowany z daną oferta
+    - Klient skorelowany z daną oferta
   - Industry
     - Branża klienta
   - Customer
@@ -3005,29 +3005,6 @@ Kacper Kwapisz: 25%
 Kamil Gliński: 25%
 
 Przygotowanie i skład - Mateusz
-
-
-Wymagania niefunkcjonalne
-1. Wymagania produktowe:
-   1. użyteczności - Mateusz
-   1. sprawnościowe
-      1. efektywności - Mateusz
-      1. pamięci - Mateusz
-   1. niezawodności - Kacper
-   1. przenośności - Kacper
-
-1. Wymagania organizacyjne
-   1. dostawy - Kamil
-   1. implementacyjne - Kamil
-   1. standardów - Kacper
-
-1. Wymagania zewnętrzne: Wymagania zewnętrzne:
-   1. współpracy - Adam
-   1. etyczne - Adam
-   1. prawne - Kamil
-
-1. ochrony prywatności -Kamil
-1. wymagania zabezpieczeń - Adam
 
 
 - [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
