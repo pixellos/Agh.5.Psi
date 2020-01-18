@@ -93,6 +93,9 @@ Spis Treści
         - [3.3.4. Analiza dla Podsystemu 4.](#334-analiza-dla-podsystemu-4)
         - [3.3.5. Analiza dla Podsystemu 5.](#335-analiza-dla-podsystemu-5)
 - [4. Słownik danych](#4-słownik-danych)
+    - [4.1. Obiekty zewnętrzne](#41-obiekty-zewnętrzne)
+    - [4.2. Magazyny danych](#42-magazyny-danych)
+    - [4.3. Strumienie danych](#43-strumienie-danych)
 - [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
 - [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
 - [7. Interfejsy użytkownika (Ekrany)](#7-interfejsy-użytkownika-ekrany)
@@ -2508,7 +2511,7 @@ Uwagi: (Uzasadnienie)
 Celem punktu jest przedstawienie uproszczonego słownika danych.
 
 
-**Obiekty zewnętrzne**
+## 4.1 Obiekty zewnętrzne
 
 
 | Element słownika | Definicja   | Nazwy powiązanych dokumentów                                                                                                            | Numer diagramu DFD                                                  |
@@ -2516,12 +2519,12 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | konsultanci      | Załącznik A | Dokument_ofertowy Formularz_oferty_udzielonej_dla_klienta Instom_formularz_danych_klienta Instom_formularz_danych_potencjalnego_klienta | 3.1 3.2 3.3.2 (podsystem 1) 3.3.2 (podsystem 2) 3.3.2 (podsystem 3) |
 | biuro rachunkowe | Załącznik A | Dane_dostawcy                                                                                                                           | 3.1 3.2 3.3.2 (podsystem 5)                                         |
 | zarząd firmy     | Załącznik A | Instom_rozchod_wewnetrzny Raport_z_akcjii_marketingowych                                                                                | 3.1 3.2 3.3.2 (podsystem 5)                                         |
-| magazynierzy     | Załącznik A | Instom_przesunięcie_miedzymagazynowe Instom_przyjecie zewnetrzne                                                                        | 3.1 3.2 3.3.2 (podsystem 4)                                         |
+| magazynierzy     | Załącznik A | Instom_przesunięcie_miedzymagazynowe Instom_przyjecie zewnętrzne                                                                        | 3.1 3.2 3.3.2 (podsystem 4)                                         |
 
 
 <div class="page">
 
-**Magazyny danych**
+## 4.2 Magazyny danych
 
 
 | Element słownika | Definicja                                                                           | Nazwy powiązanych dokumentów                                                         | Numer diagramu DFD                                                                  |
@@ -2537,7 +2540,7 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 
 <div class="page">
 
-**Strumienie danych**
+## 4.3 Strumienie danych
 
 
 | Element słownika                                     | Definicja                                                                       | Nazwy powiązanych dokumentów                  | Numer diagramu DFD  |
@@ -2579,17 +2582,17 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | Towary w systemie                                    | Wprowadzenie aktualizacji towarów w systemie                                    | -                                             | 3.3.2 (podsystem 1) |
 | Dostawcy posiadający towar                           | Dostawcy, od których nastąpi zamówienie                                         | -                                             | 3.3.2 (podsystem 1) |
 | Dane dostawcy                                        | Szczegółowe informacje o dostawcy                                               | -                                             | 3.3.2 (podsystem 1) |
-| Zaktualizowane towary                                | Zedytowane informacje o towarach                                                | -                                             | 3.3.2 (podsystem 1) |
+| Zaktualizowane towary                                | Wyedytowane informacje o towarach                                                | -                                             | 3.3.2 (podsystem 1) |
 | Informacje o dostawcy                                | Dane dostawcy                                                                   | -                                             | 3.3.2 (podsystem 1) |
 | Informacje o zmianach w jego ofercie                 | Aktualizacja oferty                                                             | -                                             | 3.3.2 (podsystem 1) |
 | Zamówienie z brakującymi towarami                    | Zamówienie brakujących towarów                                                  | -                                             | 3.3.2 (podsystem 2) |
 | Dane zlecenia zakupu                                 | Data wykonania zlecenia zakupu                                                  | -                                             | 3.3.2 (podsystem 2) |
-| Oferta                                               | Dokument sprzezdażowy przygotowany dla klienta                                  | Formularz_oferty_udzielonej_dla_klienta       | 3.3.2 (podsystem 2) |
+| Oferta                                               | Dokument sprzedażowy przygotowany dla klienta                                  | Formularz_oferty_udzielonej_dla_klienta       | 3.3.2 (podsystem 2) |
 | Zatwierdzenie oferty                                 | Potwierdzenie oferty                                                            | -                                             | 3.3.2 (podsystem 2) |
 | Oczekiwania klienta                                  | Informacje o preferencjach klienta                                              | -                                             | 3.3.2 (podsystem 2) |
 | Zaproponowana oferta                                 | Przygotowana oferta sprzedażowa                                                 | -                                             | 3.3.2 (podsystem 2) |
 | Obecne oferty                                        | Aktualne oferty zakupu                                                          | -                                             | 3.3.2 (podsystem 2) |
-| Zatwiedzona oferta                                   | -                                                                               | -                                             | 3.3.2 (podsystem 2) |
+| Zatwierdzona oferta                                   | -                                                                               | -                                             | 3.3.2 (podsystem 2) |
 | Dostępne towary od ręki                              | Towary obecne na magazynie, gotowe do sprzedaży                                 | -                                             | 3.3.2 (podsystem 2) |
 | Dostępne towary                                      | Towary dostępne w katalogu                                                      | -                                             | 3.3.2 (podsystem 2) |
 | Aktualny stan magazynowy                             | Ilość produktów w magazynie                                                     | -                                             | 3.3.2 (podsystem 2) |
@@ -2598,7 +2601,7 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | Dodanie zlecenia zakupu                              | Dodanie zlecenia zakupu do systemu                                              | -                                             | 3.3.2 (podsystem 2) |
 | Potwierdzenie dla klienta                            | Potwierdzenie o realizacji reklamacji                                           | -                                             | 3.3.2 (podsystem 3) |
 | Informacje o postępie procesu reklamacji             | -                                                                               | -                                             | 3.3.2 (podsystem 3) |
-| Zaktulizowane dane                                   | Zmiana statusu reklamacji                                                       | -                                             | 3.3.2 (podsystem 3) |
+| Zaktualizowane dane                                   | Zmiana statusu reklamacji                                                       | -                                             | 3.3.2 (podsystem 3) |
 | Dane reklamacji                                      | Informacje o reklamacji                                                         | -                                             | 3.3.2 (podsystem 3) |
 | Złożone zamówienia                                   | Dokonane zamówienia                                                             | -                                             | 3.3.2 (podsystem 3) |
 | Powiązanie zamówienia z reklamacją                   | -                                                                               | -                                             | 3.3.2 (podsystem 3) |
@@ -2920,7 +2923,7 @@ nie został pokryty w projekcie systemu, został natomiast zaproponowany jako ob
 <div class="page">
 ## 10.3 Uwagi i wnioski końcowe
 
-Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach muzgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności.
+Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach mózgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności.
 
 Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowaliśmy propozycje kierunku dalszych prac. Dalsze prace nad systemem mogłyby się odbywać w zakresie usprawnienia zarządzania magazynem oraz zarządzania zamówieniami do dostawców co pozwoli na dużą redukcje kosztów związanych z przechowywaniem niesprzedanych produktów. Prognozy popytu oraz utrzymywanie odpowiedniej ilości produktów na stanie są kluczem do odpowiedniego prosperowania firmy dlatego też wybraliśmy te obszary.
 
