@@ -118,24 +118,6 @@ Spis Treści
     - [11.7. S](#117-s)
     - [11.8. Z](#118-z)
 - [12. Załącznik B: Wzory dokumentów](#12-załącznik-b-wzory-dokumentów)
-            - [12.1. Danedostawcy.docx](#121-danedostawcydocx)
-            - [12.2. Danefabryki.docx](#122-danefabrykidocx)
-            - [12.3. Wpistowaruwkatalogu.docx](#123-wpistowaruwkatalogudocx)
-            - [12.4. Wpisdotyczącycenytowaru.docx](#124-wpisdotyczącycenytowarudocx)
-            - [12.5. Dokumentofertowy.doc](#125-dokumentofertowydoc)
-            - [12.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#126-dokumentpotwierdzajacyrealizacjereklamacjidocx)
-            - [12.7. Formularzofertyudzielonejdlaklienta.doc](#127-formularzofertyudzielonejdlaklientadoc)
-            - [12.8. Formularzprosbyodostepnosctowaru.docx](#128-formularzprosbyodostepnosctowarudocx)
-            - [12.9. Formularzreklamacjidodostawcy.docx](#129-formularzreklamacjidodostawcydocx)
-            - [12.10. Formularzreklamacjiodklienta.docx](#1210-formularzreklamacjiodklientadocx)
-            - [12.11. Instomformularzdanychklienta.docx](#1211-instomformularzdanychklientadocx)
-            - [12.12. Instomprzesunieciemiedzymagazynowe.docx](#1212-instomprzesunieciemiedzymagazynowedocx)
-            - [12.13. Instomprzyjecie zewnetrzne.docx](#1213-instomprzyjecie-zewnetrznedocx)
-            - [12.14. Instomrozchodwewnetrzny.docx](#1214-instomrozchodwewnetrznydocx)
-            - [12.15. Instomwydanie zewnetrzne.docx](#1215-instomwydanie-zewnetrznedocx)
-            - [12.16. Raportzakcjimarketingowych.doc](#1216-raportzakcjimarketingowychdoc)
-            - [12.17. Zamówienieklienta.doc](#1217-zamówienieklientadoc)
-            - [12.18. Instomformularzdanychpotencjalnegoklienta.docx](#1218-instomformularzdanychpotencjalnegoklientadocx)
 - [13. Załącznik C:](#13-załącznik-c)
 - [14. Załącznik D. Recenzja dokumentacji projektowej wskazanego Zespołu](#14-załącznik-d-recenzja-dokumentacji-projektowej-wskazanego-zespołu)
 - [15. Załącznik E. Na Moodle: kompletna dokumentacja w .pdf ; źródłowa wersja dokumentacji i rysunków, prezentacja w .ppt, recenzja, ew. inne materiały źródłowe)](#15-załącznik-e-na-moodle-kompletna-dokumentacja-w-pdf--źródłowa-wersja-dokumentacji-i-rysunków-prezentacja-w-ppt-recenzja-ew-inne-materiały-źródłowe)
@@ -2988,24 +2970,24 @@ Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowali
 
 Treść Załącznika w osobnym archiwum o nazwie Załącznik B:
 
-#### 1.Dane_dostawcy.docx
-#### 2.Dane_fabryki.docx
-#### 3.Wpis_towaru_w_katalogu.docx
-#### 4.Wpis_dotyczący_ceny_towaru.docx
-#### 5.Dokument_ofertowy.doc
-#### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
-#### 7.Formularz_oferty_udzielonej_dla_klienta.doc
-#### 8.Formularz_prosby_o_dostepnosc_towaru.docx
-#### 9.Formularz_reklamacji_do_dostawcy.docx
-#### 10.Formularz_reklamacji_od_klienta.docx
-#### 11.Instom_formularz_danych_klienta.docx
-#### 12.Instom_przesuniecie_miedzymagazynowe.docx
-#### 13.Instom_przyjecie zewnetrzne.docx
-#### 14.Instom_rozchod_wewnetrzny.docx
-#### 15.Instom_wydanie zewnetrzne.docx
-#### 16.Raport_z_akcji_marketingowych.doc
-#### 17.Zamówienie_klienta.doc
-#### 18.Instom_formularz_danych_potencjalnego_klienta.docx
+##### 1.Dane_dostawcy.docx
+##### 2.Dane_fabryki.docx
+##### 3.Wpis_towaru_w_katalogu.docx
+##### 4.Wpis_dotyczący_ceny_towaru.docx
+##### 5.Dokument_ofertowy.doc
+##### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
+##### 7.Formularz_oferty_udzielonej_dla_klienta.doc
+##### 8.Formularz_prosby_o_dostepnosc_towaru.docx
+##### 9.Formularz_reklamacji_do_dostawcy.docx
+##### 10.Formularz_reklamacji_od_klienta.docx
+##### 11.Instom_formularz_danych_klienta.docx
+##### 12.Instom_przesuniecie_miedzymagazynowe.docx
+##### 13.Instom_przyjecie zewnetrzne.docx
+##### 14.Instom_rozchod_wewnetrzny.docx
+##### 15.Instom_wydanie zewnetrzne.docx
+##### 16.Raport_z_akcji_marketingowych.doc
+##### 17.Zamówienie_klienta.doc
+##### 18.Instom_formularz_danych_potencjalnego_klienta.docx
 
 <div class="page">
 
@@ -3013,30 +2995,16 @@ Treść Załącznika w osobnym archiwum o nazwie Załącznik B:
 
 Raport z podziału pracy w zespole i realizacji ( z odniesieniem do punktów dokumentacji oraz podsumowująca ocena procentowa wkładu indywidualnego)
 
+Procentowo:
+Mateusz Popielarz: 25%
+Adam Samsonowicz: 25%
+Kacper Kwapisz: 25%
+Kamil Gliński: 25%
+
 Przygotowanie i skład - Mateusz
 
-Dokumenty:
-
-- 1.Dane_dostawcy.docx - Mateusz
-- 2.Dane_fabryki.docx - Mateusz
-- 3.Wpis_towaru_w_katalogu.docx - Mateusz
-- 4.Wpis_dotyczący_ceny_towaru.docx - Mateusz
-- 5.Dokument_ofertowy.doc - Adam
-- 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx - Kacper
-- 7.Formularz_oferty_udzielonej_dla_klienta.doc - Adam
-- 8.Formularz_prosby_o_dostepnosc_towaru.docx - Kacper
-- 9.Formularz_reklamacji_do_dostawcy.docx - Kacper
-- 10.Formularz_reklamacji_od_klienta.docx - Kacper
-- 11.Instom_formularz_danych_klienta.docx - Kamil
-- 12.Instom_przesuniecie_miedzymagazynowe.docx - Kamil
-- 13.Instom_przyjecie zewnetrzne.docx - Kamil
-- 14.Instom_rozchod_wewnetrzny.docx - Kamil
-- 15.Instom_wydanie zewnetrzne.docx - Kamil
-- 16.Raport_z_akcji_marketingowych.doc - Adam
-- 17.Zamówienie_klienta.doc - Adam
 
 Wymagania niefunkcjonalne
-
 1. Wymagania produktowe:
    1. użyteczności - Mateusz
    1. sprawnościowe
@@ -3059,58 +3027,110 @@ Wymagania niefunkcjonalne
 1. wymagania zabezpieczeń - Adam
 
 
-Punkt 3. 
-Diagram Kontekstowy - Mateusz
-Diagram kontekstowy z podsystemami - Mateusz 
+- [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
+    - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu) - Praca wspólna
+        
+    - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#12-obszar-modelowania-om--wstępny-opisowy-model-stanu-istniejącego)
+        - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu) - Adam Samsonowicz
+        - [1.2.2. Definicja celu systemu](#122-definicja-celu-systemu) - Mateusz Popielarz
+        - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania) - Matuesz
+    - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
+        - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
+            - [1.3.1.1. Obsługa zamówień (OA1)](#1311-obsługa-zamówień-oa1) - Mateusz 
+            - [1.3.1.2. Obsługa zleceń zakupu (OA2)](#1312-obsługa-zleceń-zakupu-oa2) - Adam
+            - [1.3.1.3. Obsługa reklamacji (OA3)](#1313-obsługa-reklamacji-oa3) - Kacper
+            - [1.3.1.4. Obsługa magazynu (OA4)](#1314-obsługa-magazynu-oa4) - Kamil
+            - [1.3.1.5. Analizy danych na potrzeby marketingowe (OA5)](#1315-analizy-danych-na-potrzeby-marketingowe-oa5) - Wspólne 
+    - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu) - Wspólne
+        - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
+        - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
+    - [1.5. Cele do osiągnięcia](#15-cele-do-osiągnięcia) - Wszyscy
+        - [1.5.1. Cele produktu](#151-cele-produktu)
+        - [1.5.2. Cele przedsięwzięcia projektowego](#152-cele-przedsięwzięcia-projektowego)
+- [2. Opis Wymagań Systemu](#2-opis-wymagań-systemu)
+    - [2.1. Funkcje systemu ze strony widzenia użytkownika](#21-funkcje-systemu-ze-strony-widzenia-użytkownika) - Mateusz
+    - [2.2. Rejestry w systemie](#22-rejestry-w-systemie) - Wspólne
+    - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory) - Wspólne
+    - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych) 
+        - [2.4.1. Obsługa Dostawców (OA1)](#241-obsługa-dostawców-oa1) - Mateusz 
+        - [2.4.2. Obsługa zleceń zakupu (OA2)](#242-obsługa-zleceń-zakupu-oa2) - Adam
+        - [2.4.3. Obsługa reklamacji (OA3)](#243-obsługa-reklamacji-oa3) - Kacper
+        - [2.4.4. Obsługa Rejestr Magazynu (OA4)](#244-obsługa-rejestr-magazynu-oa4) - Kamil
+        - [2.4.5. Analiza danych na potrzeby marketingowe (OA5)](#245-analiza-danych-na-potrzeby-marketingowe-oa5) - Wspólne
+    - [2.5. Modelowanie zachowań w czasie](#25-modelowanie-zachowań-w-czasie)
+        - [2.5.1. Obsługa zamówień (OA1)](#251-obsługa-zamówień-oa1) - Mateusz
+        - [2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2) - Adam
+        - [2.5.3. Obsługa reklamacji (OA3)](#253-obsługa-reklamacji-oa3) Kacper
+        - [2.5.4. Obsługa rejestru magazynu (OA4)](#254-obsługa-rejestru-magazynu-oa4) - Kamil
+        - [2.5.5. Analiza danych na potrzeby marketingowe (OA5)](#255-analiza-danych-na-potrzeby-marketingowe-oa5)
+    - [2.6. Wymagania funkcjonalne dla dodatkowych części systemu](#26-wymagania-funkcjonalne-dla-dodatkowych-części-systemu)
+        - [2.6.1. Poinformuj SMS](#261-poinformuj-sms)
+        - [2.6.2. Wprowadzenie dokumentów do systemu](#262-wprowadzenie-dokumentów-do-systemu)
+        - [2.6.3. Przydział pracowników do określonych zadań](#263-przydział-pracowników-do-określonych-zadań)
+        - [2.6.4. Logowanie](#264-logowanie)
+        - [2.6.5. Wylogowywanie](#265-wylogowywanie)
+    - [2.7. Wymagania niefunkcjonalne](#27-wymagania-niefunkcjonalne)
+        - [2.7.1. Wymagania Produktowe](#271-wymagania-produktowe)
+            - [2.7.1.1. Użyteczności](#2711-użyteczności)
+            - [2.7.1.2. Sprawnościowe](#2712-sprawnościowe)
+            - [2.7.1.3. Niezawodności](#2713-niezawodności)
+            - [2.7.1.4. Przenośności](#2714-przenośności)
+        - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne)
+            - [2.7.2.1. Dostawy](#2721-dostawy)
+            - [2.7.2.2. Implementacyjne](#2722-implementacyjne)
+            - [2.7.2.3. Standardów](#2723-standardów)
+        - [2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)
+            - [2.7.3.1. Współpracy](#2731-współpracy)
+            - [2.7.3.2. Etyczne](#2732-etyczne)
+            - [2.7.3.3. Prawne - ochrona prywatności](#2733-prawne---ochrona-prywatności)
+            - [2.7.3.4. Prawne - Wymagania zabezpieczeń](#2734-prawne---wymagania-zabezpieczeń)
+- [3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)](#3-analiza-funkcjonalna-systemu-przy-pomocy-przepływów-danych--i-proces-dekompozycji)
+    - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk)
+    - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy)
+    - [3.3. Analiza top-down](#33-analiza-top-down)
+        - [3.3.1. Analiza dla Podsystemu 1.](#331-analiza-dla-podsystemu-1)
+        - [3.3.2. Analiza dla Podsystemu 2.](#332-analiza-dla-podsystemu-2)
+        - [3.3.3. Analiza dla Podsystemu 3.](#333-analiza-dla-podsystemu-3)
+        - [3.3.4. Analiza dla Podsystemu 4.](#334-analiza-dla-podsystemu-4)
+        - [3.3.5. Analiza dla Podsystemu 5.](#335-analiza-dla-podsystemu-5)
+- [4. Słownik danych](#4-słownik-danych)
+- [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
+- [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
+- [7. Interfejsy użytkownika (Ekrany)](#7-interfejsy-użytkownika-ekrany)
+- [8. Weryfikacja wytworzonych artefaktów i koncepcji systemu](#8-weryfikacja-wytworzonych-artefaktów-i-koncepcji-systemu)
+    - [8.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#81-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu)
+    - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa)
+    - [8.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd)
+    - [8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
+- [9. Architektura Systemu](#9-architektura-systemu)
+    - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
+    - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
+- [10. Podsumowanie](#10-podsumowanie)
+    - [10.1. Założenia implementacyjne](#101-założenia-implementacyjne)
+    - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
+    - [10.3. Uwagi i wnioski końcowe](#103-uwagi-i-wnioski-końcowe)
 
-Analiza Top-Down:
-Podsystem 1, Podsystem 5 - Mateusz
-
-
-4. Słownik pojęć dziedzinowych
-5. Diagram ERD - Adam
-
-(KAMIL)
-
-1.3.1.4 Obsługa magazynu (OA4)
-
-2.1.4 Obsługa Rejestr Magazynu (OA4)
-
-2.5.4 Obsługa rejestru magazynu (OA4)
-
-3.3 Analiza top-down - opisy
-
-7. Interfejsy uzytkownika (Ekrany)
-
-9.1 Architektura calego Systemu
-
-9.2 Architektura podsystemow
-
-/(KAMIL)
 
 
 
-ADAM:
-[1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)(Wywiad i raport z wywiadu)
-
-[2.2. Rejestry w systemie](#22-rejestry-w-systemie)
-
-[2.4.2. Obsługa zleceń zakupu (OA2)](#242-obsługa-zleceń-zakupu-oa2)
-
-[2.4.5. Analiza danych na potrzeby marketingowe (OA5)](#245-analiza-danych-na-potrzeby-marketingowe-oa5)
-
-[2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2)
-
-[2.5.5. Analiza danych na potrzeby marketingowe (OA5)](#255-analiza-danych-na-potrzeby-marketingowe-oa5)
-
-[2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)(Wymagania zewnętrzne: współpracy, etyczne. Wymagania bezpieczeństwa)
-
-[5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
-
-[8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
-
-[10. Podsumowanie](#10-podsumowanie)
-
+Dokumenty:
+- 1.Dane_dostawcy.docx - Mateusz
+- 2.Dane_fabryki.docx - Mateusz
+- 3.Wpis_towaru_w_katalogu.docx - Mateusz
+- 4.Wpis_dotyczący_ceny_towaru.docx - Mateusz
+- 5.Dokument_ofertowy.doc - Adam
+- 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx - Kacper
+- 7.Formularz_oferty_udzielonej_dla_klienta.doc - Adam
+- 8.Formularz_prosby_o_dostepnosc_towaru.docx - Kacper
+- 9.Formularz_reklamacji_do_dostawcy.docx - Kacper
+- 10.Formularz_reklamacji_od_klienta.docx - Kacper
+- 11.Instom_formularz_danych_klienta.docx - Kamil
+- 12.Instom_przesuniecie_miedzymagazynowe.docx - Kamil
+- 13.Instom_przyjecie zewnetrzne.docx - Kamil
+- 14.Instom_rozchod_wewnetrzny.docx - Kamil
+- 15.Instom_wydanie zewnetrzne.docx - Kamil
+- 16.Raport_z_akcji_marketingowych.doc - Adam
+- 17.Zamówienie_klienta.doc - Adam
 
 <div class="page">
 
