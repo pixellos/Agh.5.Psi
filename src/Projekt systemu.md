@@ -386,7 +386,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 
     2. Realizacja reklamacji do dostawcy
-    
+
         Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od niego wymienione, działające produkty.
 
 4. Prowadzenie rejestru reklamacji
@@ -471,7 +471,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
    1. Pobranie wszystkich dostępnych produktów
 
-      Jako `magazynier` chce mieć możliwość `pobrania wszystkich dostepnych produktów` aby `otrzymać informacje o aktualnym stanie magazynu`.
+      Jako `magazynier` chce mieć możliwość `pobrania wszystkich dostępnych produktów` aby `otrzymać informacje o aktualnym stanie magazynu`.
 
    1. Wyrejestrowanie produktu z magazynu
 
@@ -485,9 +485,9 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 #### 1.3.1.6 Analizy danych na potrzeby marketingowe (OA5)
 
-1. Statystyki powiązane z katalogiem produktówym
+1. Statystyki powiązane z katalogiem produktowym
 
-   Katalog produktówy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktówym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.
+   Katalog produktowy jest udostępniony na stronie głównej firmy, strona znajduje się w sieci www. Opisywany w dokumencie system powinien mieć możliwość wglądu do statystyk związanych z ruchem w katalogu produktowym w celu udoskonalenia przedstawianych przez system statystyk marketingowych.
 
 2. Wystawienie danych na strategiczne potrzeby marketingowe
     Dział marketingu podejmuje decyzje bazujące na danych sprzedażowych. System takie dane powinien generować oraz dostarczać do pracowników powiązanych z planowaniem strategicznym czynności marketingowych.
@@ -937,7 +937,7 @@ Konsultant - Potrzebuje wyszukać klienta w systemie
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.3 - Tworzenie oferty
+**Numer i nazwa przypadku użycia:** UC-2.3 - Tworzenie oferty
 
 **Autor:** Adam Samsonowicz
 
@@ -979,7 +979,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Cel przypadku użycia:** Zatwierdzanie lub anulowanie ofert
 
-**Kontekst użycia:** `Konsultant` stworzył ofertę, żeby dalej procesować potrzebuje zgody `potwierdzającego oferte`
+**Kontekst użycia:** `Konsultant` stworzył ofertę, żeby dalej procesować potrzebuje zgody `potwierdzającego ofertę`
 
 **Zakres:** Proces ofertowy
 
@@ -987,20 +987,20 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Warunek początkowy:** Oferta jest stworzona i wymaga zatwierdzenia
 
-**Zdarzenie inicjujące:** `Konsultant` wysyła prośbę o zatwierdzenie oferty do `zatwierdzającego oferte`
+**Zdarzenie inicjujące:** `Konsultant` wysyła prośbę o zatwierdzenie oferty do `zatwierdzającego ofertę`
 
 **Główny scenariusz powodzenia:**
 
-1. `Zatwierdzający oferte` otrzymuje prośbę o zatwierdzenie oferty
-2. `Zatwierdzający oferte` sprawdza ceny sprzedażowe produktów i marże
-3. `Zatwierdzający oferte` zatwierdza ofertę
+1. `Zatwierdzający ofertę` otrzymuje prośbę o zatwierdzenie oferty
+2. `Zatwierdzający ofertę` sprawdza ceny sprzedażowe produktów i marże
+3. `Zatwierdzający ofertę` zatwierdza ofertę
 4. `Konsultant` może wygenerować dokument
 
 **Scenariusze alternatywne:**
 
-1. `Zatwierdzający oferte` otrzymuje prośbe o zatwierdzenie oferty
-2. `Zatwierdzający oferte` rozpatruje warunki i dane oferty do zatwierdzenia
-3. `Zatwierdzający oferte` anuluje oferte z informacjami jakie zmiany muszą być dokonane, żeby oferta mogła być zatwierdzona
+1. `Zatwierdzający ofertę` otrzymuje prośbę o zatwierdzenie oferty
+2. `Zatwierdzający ofertę` rozpatruje warunki i dane oferty do zatwierdzenia
+3. `Zatwierdzający ofertę` anuluje ofertę z informacjami jakie zmiany muszą być dokonane, żeby oferta mogła być zatwierdzona
 4. `Konsultant` zmienia ceny sprzedażowe produktów i marże na akceptowalne
 
 **Aktor główny:** Konsultant
@@ -1046,7 +1046,7 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.6 - Wyszukiwanie produktów
+**Numer i nazwa przypadku użycia:** UC-2.6 - Wyszukiwanie produktów
 
 **Autor:** Adam Samsonowicz
 
@@ -1337,7 +1337,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Scenariusze alternatywne:**
 
-1. Mala iloś produktów na magazynie - brak potrzeby unikalnego rozróżnienia
+1. Mała ilość produktów na magazynie - brak potrzeby unikalnego rozróżnienia
 
 **Uczestnicy i interesy:**
 
@@ -1360,7 +1360,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Towar nie jest powi z dostawcą oraz nabywcą
+**Warunek początkowy:** Towar nie jest powiązany z dostawcą oraz nabywcą
 **Zdarzenie inicjujące:** Zamówienie produktów
 
 **Główny scenariusz powodzenia:**
@@ -1490,7 +1490,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Wyszukiwanie produktów
 
-**Kontekst użycia:** Gdy dane zostały wprowadzone, Jako magazynier chce mieć możliwość wyszukiwania prodktów aby uzyskać informacje o danym produkcie
+**Kontekst użycia:** Gdy dane zostały wprowadzone, Jako magazynier chce mieć możliwość wyszukiwania produktów aby uzyskać informacje o danym produkcie
 
 **Zakres:** Rejestr magazynu
 
@@ -1507,7 +1507,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. Rejestr wyświetla kryteria wyszukania produktu w rejestrze
 2. `Magazynier` określa kryteria wyszukania
 3. Rejestr znajduje produkt
-4. Dane Produktu zostają zwrócone do użytykownika
+4. Dane Produktu zostają zwrócone do użytkownika
 
 **Scenariusze alternatywne:**
 
@@ -1586,13 +1586,13 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-4.12 - Pobranie wszystkich dostepnych produktów
+**Numer i Nazwa przypadku użycia:** UC-4.12 - Pobranie wszystkich dostępnych produktów
 
 **Autor:** Kamil Gliński
 
 **Cel przypadku użycia:** Pobranie szczegółowych danych o produkcie
 
-**Kontekst użycia:** Gdy dane zostały wprowadzone, Jako magazynier chce mieć możliwość pobrania wszystkich dostepnych produktów aby otrzymać informacje o aktualnym stanie magazynu
+**Kontekst użycia:** Gdy dane zostały wprowadzone, Jako magazynier chce mieć możliwość pobrania wszystkich dostępnych produktów aby otrzymać informacje o aktualnym stanie magazynu
 
 **Zakres:** Rejestr magazynu
 
@@ -1600,14 +1600,14 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Produkty znajduja się w rejestrze
+**Warunek początkowy:** Produkty znajdują się w rejestrze
 
 **Zdarzenie inicjujące:** Potrzeba pobrania informacji o wszystkich produktach
 
 **Główny scenariusz powodzenia:**
 
 1. Rejestr wyświetla formularz pobrania danych o produktach z rejestrze
-2. Produkty zostaja pobrane
+2. Produkty zostają pobrane
 
 **Scenariusze alternatywne:**
 
@@ -1639,8 +1639,8 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. `Magazynier` tworzy zamowienia dostaw
-2. `Magazynier` zapewnia dokumenty dotyczace dostaw
+1. `Magazynier` tworzy zamówienia dostaw
+2. `Magazynier` zapewnia dokumenty dotyczące dostaw
 
 **Scenariusze alternatywne:**
 
@@ -1656,7 +1656,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ![](./diagrams/images/OA6.jpg)
 
-##### _Rysunek 8. Statyki powiązane z katalogiem produktówym_
+##### _Rysunek 8. Statyki powiązane z katalogiem produktowym_
 
 **Numer i nazwa przypadku użycia:** UC-6.1 - Generowanie raportu
 
@@ -1719,7 +1719,7 @@ Marketingowiec - inicjowanie stworzenia raportu
 ![Diagram aktywności zatwierdzania oferty](./diagrams/images/AD-OA2.4.jpg)
 ##### _Rysunek 12. Diagram aktywności zatwierdzania oferty_
 
-![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.5.jpg)
+![Diagram aktywności wyszukiwania i dodania produktu](./diagrams/images/AD-OA2.5.jpg)
 ##### _Rysunek 13. Diagram aktywności wyszukiwania i dodania produktu_
 
 
@@ -1753,7 +1753,7 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 **Nazwa funkcji:** WF-1 - Poinformuj o zmianie w systemie przez SMS
 
-**Opis:** Funkcja systemu służąca do notyfikowaniach o ważnych zmianach
+**Opis:** Funkcja systemu służąca do notyfikowania o ważnych zmianach
 
 **Dane wejściowe:** Automatycznie w systemie - Numery telefonów zainteresowanych wiadomość
 
@@ -2093,7 +2093,7 @@ Nazwa funkcji: 1.1.1 Przetwórz dostawcę
 
 Opis: Funkcja służąca do przetworzenia otrzymanych danych dostawcy
 
-Dane wejściowe: Wpis Dostawcy 
+Dane wejściowe: Wpis Dostawcy
 
 Źródło danych wejściowych: `Klient` (Przez `konsultanta`)
 
@@ -2145,8 +2145,8 @@ Pseudokod:
 Posiadając dane oferty
 Sprawdź, czy oferta istnieje w rejestrze
 Jeżeli tak, wprowadź zmiany
-Jeżeli nie, wygeneruj id i stwórz oferte
-Zapisz oferte w rejestrze
+Jeżeli nie, wygeneruj id i stwórz ofertę
+Zapisz ofertę w rejestrze
 
 ```
 
@@ -2252,7 +2252,7 @@ Posiadając dane oferty
 Sprawdź, czy dane zostały wprowadzone prawidłowo
 Jeżeli tak, wprowadź dane
 Jeżeli nie, wstrzymaj się
-Zapisz oferte w rejestrze
+Zapisz ofertę w rejestrze
 
 ```
 
@@ -2281,7 +2281,7 @@ Warunek końcowy: Zatwierdzona oferta
 
 Pseudokod:
 ```
-Potwierdz oferte
+Potwierdz ofertę
 ```
 
 Efekty uboczne: -
@@ -2708,7 +2708,7 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
   - Oferta
     - Quotation
   - Pracownik
-    
+
     - User
   - Magazyn
     - Warehouse
@@ -2719,12 +2719,12 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
   - Zamówienie do dostawcy
     - SupplierOrder
   - Reklamacja od klienta
-  
+
     - CustomerComplaintProduct
   - Reklamacja do dostawcy
-  
+
     - SupplierComplaintProduct
-  
+
 - Tabele pomocnicze (Funkcjonalności - wspierane Use case'y)
 
   - UC-2.4 Zatwierdzanie oferty
@@ -2832,14 +2832,14 @@ W trakcie projektowania, po zebraniu większej ilości informacji, dało się za
 
 
 ## 8.1 Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu
-Po szczegółowej analizie diagramów DFD doszliśmy do wniosku, że nasze obszary aktywności są za bardzo szczegółowe. 
+Po szczegółowej analizie diagramów DFD doszliśmy do wniosku, że nasze obszary aktywności są za bardzo szczegółowe.
 
 Pierwszą zmianą jaką wykonaliśmy, było połączenie dawnych OA 4 i OA5 - (Obsługa magazynu i obsługa rejestru magazynu) - pełniły one jedną rolę (głównie wspomaganie pracowników magazynu), ale była ona rozbita na dwa obszary aktywności.
 Zmieniliśmy:
 
 - Diagram obszarów aktywności
 - Połączyliśmy opis OA 4 i OA 5 w jeden
-- Połączyliśmy Use Case z OA 4 i OA 5 
+- Połączyliśmy Use Case z OA 4 i OA 5
 - Diagramy DFD Odpowiadające OA 4 i OA 5 zostały zamienione w jeden
 
 
@@ -2853,7 +2853,7 @@ Po analizie wszystkich OA zauważyliśmy, że w poszczególnych OA poszczególne
 
 <div class="page">
 
-## 8.3 Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD 
+## 8.3 Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD
 
 Po przeanalizowaniu ilości strumieni danych wchodzących i wychodzących do diagramu kontekstowego i diagramów podsystemów zauważyliśmy, że nie balansują się one.
 Zgodnie z zasadami tworzenia diagramów ilość strumieni między poszczególnymi poziomami powinna się równoważyć (co najwyżej niektóre strumienie danych na wyższych poziomach mogą być konglomeratem)
@@ -2865,7 +2865,7 @@ W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprow
 
 Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych rejestrów, żeby zrealizować proponowane funkcje systemu.
 
-- Rejestr `zamówienie` został rozdzielony na `zamówienie klienta` oraz `zamówienie do dostawcy` 
+- Rejestr `zamówienie` został rozdzielony na `zamówienie klienta` oraz `zamówienie do dostawcy`
 
 - Zostały dodane również dwa dodatkowe rejestry  `reklamacja od klienta` i `reklamacja do dostawcy`
 
@@ -2887,9 +2887,9 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 # 10. Podsumowanie
 ## 10.1 Założenia implementacyjne
 
-Po szczegółowej analizie wymagań projektu doszliśmy do wniosku, że odpowiednim modelem wytwórczym będzie model przyrostowy. Model przyrostowy pozwoli nam na częste kontakty z klientem w celu weryfikacji poszczególnych funkcji systemu, oraz pirorytetyzowania funkcji systemu, które mają zostać zrealizowane podczas potencjalnych opóźnień bez opóźniania całości projektu. 
+Po szczegółowej analizie wymagań projektu doszliśmy do wniosku, że odpowiednim modelem wytwórczym będzie model przyrostowy. Model przyrostowy pozwoli nam na częste kontakty z klientem w celu weryfikacji poszczególnych funkcji systemu, oraz pirorytetyzowania funkcji systemu, które mają zostać zrealizowane podczas potencjalnych opóźnień bez opóźniania całości projektu.
 
-Proponujemy rozpoczęcie prac od tworzenia logiki biznesowej. Logika biznesowa w kodzie powinna być zrobiona uwzględniając interfejsy graniczne między komponentami systemu, co pozwoli na późniejsze podjęcie ostatecznej decyzji co do szczegółów projektu takich jak baza danych oraz zapewni niezależne rozwijanie poszczególnych niezależnych od siebie funkcji. Zapewni nam to możliwość przedstawienia klientowi różnych konfiguracji sprzętowych podczas testów. 
+Proponujemy rozpoczęcie prac od tworzenia logiki biznesowej. Logika biznesowa w kodzie powinna być zrobiona uwzględniając interfejsy graniczne między komponentami systemu, co pozwoli na późniejsze podjęcie ostatecznej decyzji co do szczegółów projektu takich jak baza danych oraz zapewni niezależne rozwijanie poszczególnych niezależnych od siebie funkcji. Zapewni nam to możliwość przedstawienia klientowi różnych konfiguracji sprzętowych podczas testów.
 
 Propozycja narzędzi:
 
@@ -2909,7 +2909,7 @@ Po przeanalizowaniu całości projektu uznaliśmy, że system zaprojektowano pop
 
   zdefiniowane w punkcie **1.1.5** zostaną osiągnięte.
 
-Założenia **1.2.2 Definicja celu systemu** oraz **1.1.3 Cele produktowe**, które zdefiniowaliśmy na początku tworzenia projektu zostaną osiągnięte. 
+Założenia **1.2.2 Definicja celu systemu** oraz **1.1.3 Cele produktowe**, które zdefiniowaliśmy na początku tworzenia projektu zostaną osiągnięte.
 
 Cel firmy:
 
@@ -2920,7 +2920,7 @@ nie został pokryty w projekcie systemu, został natomiast zaproponowany jako ob
 <div class="page">
 ## 10.3 Uwagi i wnioski końcowe
 
-Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach muzgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności. 
+Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach muzgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności.
 
 Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowaliśmy propozycje kierunku dalszych prac. Dalsze prace nad systemem mogłyby się odbywać w zakresie usprawnienia zarządzania magazynem oraz zarządzania zamówieniami do dostawców co pozwoli na dużą redukcje kosztów związanych z przechowywaniem niesprzedanych produktów. Prognozy popytu oraz utrzymywanie odpowiedniej ilości produktów na stanie są kluczem do odpowiedniego prosperowania firmy dlatego też wybraliśmy te obszary.
 
@@ -3029,18 +3029,18 @@ Wymagania niefunkcjonalne
 
 - [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
     - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu) - Praca wspólna
-        
+
     - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#12-obszar-modelowania-om--wstępny-opisowy-model-stanu-istniejącego)
         - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu) - Adam Samsonowicz
         - [1.2.2. Definicja celu systemu](#122-definicja-celu-systemu) - Mateusz Popielarz
         - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania) - Matuesz
     - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
         - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
-            - [1.3.1.1. Obsługa zamówień (OA1)](#1311-obsługa-zamówień-oa1) - Mateusz 
+            - [1.3.1.1. Obsługa zamówień (OA1)](#1311-obsługa-zamówień-oa1) - Mateusz
             - [1.3.1.2. Obsługa zleceń zakupu (OA2)](#1312-obsługa-zleceń-zakupu-oa2) - Adam
             - [1.3.1.3. Obsługa reklamacji (OA3)](#1313-obsługa-reklamacji-oa3) - Kacper
             - [1.3.1.4. Obsługa magazynu (OA4)](#1314-obsługa-magazynu-oa4) - Kamil
-            - [1.3.1.5. Analizy danych na potrzeby marketingowe (OA5)](#1315-analizy-danych-na-potrzeby-marketingowe-oa5) - Wspólne 
+            - [1.3.1.5. Analizy danych na potrzeby marketingowe (OA5)](#1315-analizy-danych-na-potrzeby-marketingowe-oa5) - Wspólne
     - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu) - Wspólne
         - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
         - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
@@ -3051,8 +3051,8 @@ Wymagania niefunkcjonalne
     - [2.1. Funkcje systemu ze strony widzenia użytkownika](#21-funkcje-systemu-ze-strony-widzenia-użytkownika) - Mateusz
     - [2.2. Rejestry w systemie](#22-rejestry-w-systemie) - Wspólne
     - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory) - Wspólne
-    - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych) 
-        - [2.4.1. Obsługa Dostawców (OA1)](#241-obsługa-dostawców-oa1) - Mateusz 
+    - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych)
+        - [2.4.1. Obsługa Dostawców (OA1)](#241-obsługa-dostawców-oa1) - Mateusz
         - [2.4.2. Obsługa zleceń zakupu (OA2)](#242-obsługa-zleceń-zakupu-oa2) - Adam
         - [2.4.3. Obsługa reklamacji (OA3)](#243-obsługa-reklamacji-oa3) - Kacper
         - [2.4.4. Obsługa Rejestr Magazynu (OA4)](#244-obsługa-rejestr-magazynu-oa4) - Kamil
@@ -3183,4 +3183,3 @@ Archiwum na moodle
 - [Rysunek 33. Architektura podsystemów](#rysunek-33-architektura-podsystemów)
 
 <div class="page">
-
