@@ -1407,8 +1407,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. `Magazynier` wystawia niezbędne dokumenty
 
 **Scenariusze alternatywne: **
-
-0.  -
+- Brak
 
 **Uczestnicy i interesy:**
 
@@ -2917,7 +2916,13 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 ![](./diagrams/images/podsystem-oa5.jpg)
 ##### _Rysunek 38. Komponent przedstawia zalezności między komponentem obsługi dostawców a interfejsami_
 
-<div class="page">       
+<div class="page">
+   
+### 9.3.6 Diagram komponentu Repozytorium Danych
+![](./diagrams/images/podsystem-repo.jpg)
+##### _Rysunek 39. Rysunek przedstawia generyczny komponent, który enkapsuluje operacje na bazie danych_
+
+<div class="page"> 
 
 
 # 10. Podsumowanie
