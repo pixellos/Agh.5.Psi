@@ -2122,7 +2122,7 @@ Zapisz wpis w rejestrze
 
 Efekty uboczne: Dokumenty sprzedażowe, które nie zostały zatwierdzone będą wyświetlane z nowymi danymi
 
-Uwagi: (Uzasadnienie)
+Uwagi: Dane dostawcy często się zmieniają
 ***
 
 Nazwa funkcji: 1.1.2 Przetwórz zmiany w ofercie
@@ -2155,7 +2155,7 @@ Zapisz ofertę w rejestrze
 
 Efekty uboczne: Nadpisanie starej oferty z nowymi danymi
 
-Uwagi: (Uzasadnienie)
+Uwagi: Zmiany w ofercie następują często
 ***
 
 Nazwa funkcji: 1.1.3 Przetwórz dostępne towary i brakujący stan
@@ -2188,7 +2188,7 @@ Zapisz dane towarów w rejestrze
 
 Efekty uboczne: Nadpisanie danych towarów
 
-Uwagi: (Uzasadnienie)
+Uwagi: Czasami następuje potrzeba zaktualizowania towarów w celu aktualizacji stanu systemu do naszego przetwarzania
 ***
 
 <div class="page">
@@ -2228,7 +2228,7 @@ Zleć zakup
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: Przetworzenie zlecenia zakupu jest niezbędne do jego późniejszego utworzenia
 ***
 
 Nazwa funkcji: 1.2.2 Przygotuj ofertę
@@ -2261,7 +2261,7 @@ Zapisz ofertę w rejestrze
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: Przygotowanie oferty jest niezwykle ważne do późniejszej sprzedaży
 ***
 
 Nazwa funkcji: 1.2.3 Potwierdź ofertę
@@ -2289,7 +2289,7 @@ Potwierdz ofertę
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: Zatwierdza stworzoną wczezśniej ofertę
 ***
 
 <div class="page">
@@ -2329,7 +2329,7 @@ Zapisz reklamacje w rejestrze
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: Firma jest zobowiązana do pośredniczenia w reklamacji przez prawo UE
 ***
 
 Nazwa funkcji: 1.3.2 Realizacja reklamacji
@@ -2361,7 +2361,7 @@ Zmien status
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: Proces pośredniczenia w realizacji reklamacji
 ***
 
 <div class="page">
@@ -2401,7 +2401,7 @@ Zapisz towar w rejestrze
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: brak
 ***
 
 Nazwa funkcji: 1.4.2 Wydanie partii towaru z magazynu
@@ -2433,7 +2433,7 @@ Wydaj oraz wyrejestruj towar z magazynu
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: brak
 ***
 
 
@@ -2472,7 +2472,7 @@ Pobierz informacje
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: Korzystamy z zewnętrznego systemu do danych finansowych, dlatego musimy przygotować zgodny format do tego systemu
 ***
 
 Nazwa funkcji: 1.6.2 Generowanie przekrojowego raportu dla zarządu
@@ -2501,7 +2501,7 @@ Wygeneruj raport
 
 Efekty uboczne: -
 
-Uwagi: (Uzasadnienie)
+Uwagi: brak
 ***
 
 
