@@ -18,6 +18,7 @@ AGH WIET - Praca PSI, semestr 6, 2019 - 2020.
 
 Spis Treści
 
+
 <!-- TOC insertanchor:false withlinks:true anchormode:github.com updateonsave:true orderedlist:true depthfrom:1 depthto:4 -->
 
 - [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
@@ -141,6 +142,7 @@ Spis Treści
 - [16. Załącznik E: Spis rysunków](#16-załącznik-e-spis-rysunków)
 
 <!-- /TOC -->
+
 
 <div class="page">
 
@@ -1751,13 +1753,13 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 ### 2.5.4 Obsługa rejestru magazynu (OA4)
 ![Diagram Aktywności obsługi rejestru magazynu](./diagrams/images/AD_OA4.jpg)
-##### _Rysunek 14. Diagram aktywności obsługi rejestru magazynu_
+##### _Rysunek 15. Diagram aktywności obsługi rejestru magazynu_
 
 <div class="page">
 
 ### 2.5.5 Analiza danych na potrzeby marketingowe (OA5)
 ![Diagram Aktywności analizy danych](./diagrams/images/AD-OA6.jpg)
-##### _Rysunek 15. Diagram aktywności analizy danych_
+##### _Rysunek 16. Diagram aktywności analizy danych_
 
 <div class="page">
 
@@ -2087,12 +2089,12 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 ## 3.1. Diagram kontekstowy (DK)
 ![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
-##### _Rysunek 16. Diagram kontekstowy_
+##### _Rysunek 17. Diagram kontekstowy_
 <div class="page">
 
 ## 3.2 Rozwinięty diagram kontekstowy
 ![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy.jpg)
-##### _Rysunek 17. Diagram Podsystemów_
+##### _Rysunek 18. Diagram Podsystemów_
 
 
 <div class="page">
@@ -2102,7 +2104,7 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 ### 3.3.1 Analiza dla Podsystemu 1.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps1.jpg)
-##### _Rysunek 18. Diagram kontekstowy dla PS1_
+##### _Rysunek 19. Diagram kontekstowy dla PS1_
 
 ***
 Nazwa funkcji: 1.1.1 Przetwórz dostawcę
@@ -2209,7 +2211,7 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 2.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps2.jpg)
-##### _Rysunek 19. Diagram podystemu dla PS2_
+##### _Rysunek 20. Diagram podsystemu dla PS2_
 
 ***
 Nazwa funkcji: 1.2.1 Przetwórz zlecenie zakupu
@@ -2310,7 +2312,7 @@ Uwagi: (Uzasadnienie)
 ### 3.3.3 Analiza dla Podsystemu 3.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps3.jpg)
-##### _Rysunek 20. Diagram podystemu dla PS3_
+##### _Rysunek 21. Diagram podsystemu dla PS3_
 
 ***
 Nazwa funkcji: 1.3.1 Przyjęcie reklamacji
@@ -2382,7 +2384,7 @@ Uwagi: (Uzasadnienie)
 ### 3.3.4 Analiza dla Podsystemu 4.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps4.jpg)
-##### _Rysunek 21. Diagram podystemu dla PS4_
+##### _Rysunek 22. Diagram podsystemu dla PS4_
 
 
 Nazwa funkcji: 1.4.1 Przyjecie na magazyn partii towaru
@@ -2455,7 +2457,7 @@ Uwagi: (Uzasadnienie)
 ### 3.3.5 Analiza dla Podsystemu 5.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps5.jpg)
-##### _Rysunek 22. Diagram podystemu dla PS5_
+##### _Rysunek 23. Diagram podsystemu dla PS5_
 
 
 Nazwa funkcji: 1.6.1 Przetwórz dokumenty finansowe
@@ -2644,7 +2646,7 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
 Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na stworzenie poniższego diagramu ERD, który spełnia przeanalizowane wymagania.
 
 ![](./diagrams/images/ERD.jpg)
-##### _Rysunek 23. Diagram ERD_
+##### _Rysunek 24. Diagram ERD_
 <div class="page">
 
 
@@ -2806,38 +2808,38 @@ Celem punktu jest przedstawienie zachowani systemu w czasie.
 
 
 ![](./diagrams/images/Diagram_maszyny_stanow.jpg)
-##### _Rysunek 24. Diagram SMD_
+##### _Rysunek 25. Diagram SMD_
 
 <div class="page">
 
 # 7. Interfejsy użytkownika (Ekrany)
 
 ![](./diagrams/images/Drzewo_Interfejsow.jpg)
-##### _Rysunek 25. Drzewo_Interfejsow_
+##### _Rysunek 26. Drzewo interfejsów użytkownika_
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
-##### _Rysunek 26. Interfejs użytkownika Obsluga_Dostawcow_
+##### _Rysunek 27. Interfejs użytkownika Obsługi dostawców_
 <div class="page">
 
 ![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
-##### _Rysunek 27. Interfejs użytkownika Obsluga_zlecen_zakupu_
+##### _Rysunek 28. Interfejs użytkownika Obsługi zlecenia zakupu_
 
 <div class="page">
 
 ![](./diagrams/images/OA_3_Obsługa_reklamacji.jpg)
-##### _Rysunek 28. Interfejs użytkownika Obsługa_reklamacji_
+##### _Rysunek 29. Interfejs użytkownika Obsługi reklamacji_
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_4_Rejestr_Obsluga_Magazynu.jpg)
-##### _Rysunek 29. Interfejs użytkownika Obsluga_Magazynu_
+##### _Rysunek 30. Interfejs użytkownika Obsługi magazynu_
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_6_Analiza_danych.jpg)
-##### _Rysunek 30. Interfejs użytkownika Analiza_danych_
+##### _Rysunek 31. Interfejs użytkownika Analizy danych_
 
 <div class="page">
 
@@ -2891,14 +2893,11 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 
 ## 9.1 Architektura całego Systemu
 ![](./diagrams/images/Architektura_system.jpg)
-##### _Rysunek 31. Architektura systemu_
-
-<div class="page">
-
+##### _Rysunek 32. Architektura systemu_
 
 ## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
-##### _Rysunek 32. Architektura podsystemów_
+##### _Rysunek 33. Architektura podsystemów_
 
 <div class="page">
 
@@ -3129,31 +3128,40 @@ Archiwum na moodle
 
 # Załącznik E: Spis rysunków
 
-- [1.1.6.1. Rysunek 1. Diagram struktura zarządu](#1161-rysunek-1-diagram-struktura-zarządu)
-- [1.3.1.1. Rysunek 2. Przegląd obszarów aktywności](#1311-rysunek-2-przegląd-obszarów-aktywności)
-- [2.1.1. Rysunek 3. Aktorzy w systemie](#211-rysunek-3-aktorzy-w-systemie)
-- [2.4.1.1. Rysunek 4. Diagram przypadków użycia obsługi zamówień](#2411-rysunek-4-diagram-przypadków-użycia-obsługi-zamówień)
-- [2.4.3.1. Rysunek 5. Diagram przypadków użycia zgłoszenia reklamacji przez klienta](#2431-rysunek-5-diagram-przypadków-użycia-zgłoszenia-reklamacji-przez-klienta)
-- [2.4.4.1. Rysunek 6. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu](#2441-rysunek-6-diagram-przypadków-użycia-obsługi-obsługa-rejestr-magazynu)
-- [2.4.5.1. Rysunek 7. Statyki powiązane z katalogiem produktowym\](#2451-rysunek-7-statyki-powiązane-z-katalogiem-produktowym\)
-- [2.5.2.1. Rysunek 8. Diagram aktywności zarządzania rejestrami klientów](#2521-rysunek-8-diagram-aktywności-zarządzania-rejestrami-klientów)
-- [2.5.2.2. Rysunek 9. Diagram aktywności tworzenia oferty](#2522-rysunek-9-diagram-aktywności-tworzenia-oferty)
-- [2.5.2.3. Rysunek 10. Diagram aktywności zatwierdzania oferty](#2523-rysunek-10-diagram-aktywności-zatwierdzania-oferty)
-- [2.5.2.4. Rysunek 11. Diagram aktywności wyszukiwania i dodania produktu](#2524-rysunek-11-diagram-aktywności-wyszukiwania-i-dodania-produktu)
-- [2.5.4.1. Rysunek 12. Diagram aktywności obsługi rejestru magazynu](#2541-rysunek-12-diagram-aktywności-obsługi-rejestru-magazynu)
-- [2.5.5.1. Rysunek 13. Diagram aktywności analizy danych](#2551-rysunek-13-diagram-aktywności-analizy-danych)
-- [3.1.1. Rysunek 14. Diagram kontekstowy](#311-rysunek-14-diagram-kontekstowy)
-- [3.2.1. Rysunek 15. Diagram Podsystemów](#321-rysunek-15-diagram-podsystemów)
-- [5.1. Rysunek 16. Diagram ERD](#51-rysunek-16-diagram-erd)
-- [6.1. Rysunek 17. Diagram SMD](#61-rysunek-17-diagram-smd)
-- [7.1. Rysunek 18. DrzewoInterfejsow](#71-rysunek-18-drzewointerfejsow)
-- [7.2. Rysunek 19. Interfejs użytkownika ObslugaDostawcow](#72-rysunek-19-interfejs-użytkownika-obslugadostawcow)
-- [7.3. Rysunek 20. Interfejs użytkownika Obslugazlecenzakupu](#73-rysunek-20-interfejs-użytkownika-obslugazlecenzakupu)
-- [7.4. Rysunek 21. Interfejs użytkownika Obsługareklamacji](#74-rysunek-21-interfejs-użytkownika-obsługareklamacji)
-- [7.5. Rysunek 22. Interfejs użytkownika ObslugaMagazynu](#75-rysunek-22-interfejs-użytkownika-obslugamagazynu)
-- [7.6. Rysunek 23. Interfejs użytkownika Analizadanych](#76-rysunek-23-interfejs-użytkownika-analizadanych)
-- [9.1.1. Rysunek 24. Architektura systemu](#911-rysunek-24-architektura-systemu)
-- [9.2.1. Rysunek 25. Architektura podsystemów](#921-rysunek-25-architektura-podsystemów)
+- [Rysunek 1. Diagram struktura zarządu](#rysunek-1-diagram-struktura-zarządu)
+- [Rysunek 2. Przegląd obszarów aktywności](#rysunek-2-przegląd-obszarów-aktywności)
+- [Rysunek 3. Aktorzy w systemie](#rysunek-3-aktorzy-w-systemie)
+- [Rysunek 4. Diagram przypadków użycia obsługi zamówień](#rysunek-4-diagram-przypadków-użycia-obsługi-zamówień)
+- [Rysunek 5. Diagram przypadków użycia obsługi zleceń zakupu](#rysunek-5-diagram-przypadków-użycia-obsługi-zleceń-zakupu)
+- [Rysunek 6. Diagram przypadków użycia zgłoszenia reklamacji przez klienta](#rysunek-6-diagram-przypadków-użycia-zgłoszenia-reklamacji-przez-klienta)
+- [Rysunek 7. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu](#rysunek-7-diagram-przypadków-użycia-obsługi-obsługa-rejestr-magazynu)
+- [Rysunek 8. Statyki powiązane z katalogiem produktowym](#rysunek-8-statyki-powiązane-z-katalogiem-produktowym)
+- [Rysunek 9. Diagram aktywności obsługi zamówień](#rysunek-9-diagram-aktywności-obsługi-zamówień)
+- [Rysunek 10. Diagram aktywności zarządzania rejestrami klientów](#rysunek-10-diagram-aktywności-zarządzania-rejestrami-klientów)
+- [Rysunek 11. Diagram aktywności tworzenia oferty](#rysunek-11-diagram-aktywności-tworzenia-oferty)
+- [Rysunek 12. Diagram aktywności zatwierdzania oferty](#rysunek-12-diagram-aktywności-zatwierdzania-oferty)
+- [Rysunek 13. Diagram aktywności wyszukiwania i dodania produktu](#rysunek-13-diagram-aktywności-wyszukiwania-i-dodania-produktu)
+- [Rysunek 14. Diagram aktywności obsługi reklamacji](#rysunek-14-diagram-aktywności-obsługi-reklamacji)
+- [Rysunek 15. Diagram aktywności obsługi rejestru magazynu](#rysunek-15-diagram-aktywności-obsługi-rejestru-magazynu)
+- [Rysunek 16. Diagram aktywności analizy danych](#rysunek-16-diagram-aktywności-analizy-danych)
+- [Rysunek 17. Diagram kontekstowy](#rysunek-17-diagram-kontekstowy)
+- [Rysunek 18. Diagram Podsystemów](#rysunek-18-diagram-podsystemów)
+- [Rysunek 19. Diagram kontekstowy dla PS1](#rysunek-19-diagram-kontekstowy-dla-ps1)
+- [Rysunek 20. Diagram podsystemu dla PS2](#rysunek-20-diagram-podsystemu-dla-ps2)
+- [Rysunek 21. Diagram podsystemu dla PS3](#rysunek-21-diagram-podsystemu-dla-ps3)
+- [Rysunek 22. Diagram podsystemu dla PS4](#rysunek-22-diagram-podsystemu-dla-ps4)
+- [Rysunek 23. Diagram podsystemu dla PS5](#rysunek-23-diagram-podsystemu-dla-ps5)
+- [Rysunek 24. Diagram ERD](#rysunek-24-diagram-erd)
+- [Rysunek 25. Diagram SMD](#rysunek-25-diagram-smd)
+- [Rysunek 26. Drzewo interfejsów użytkownika](#rysunek-26-drzewo-interfejsów-użytkownika)
+- [Rysunek 27. Interfejs użytkownika Obsługi dostawców](#rysunek-27-interfejs-użytkownika-obsługi-dostawców)
+- [Rysunek 28. Interfejs użytkownika Obsługi zlecenia zakupu](#rysunek-28-interfejs-użytkownika-obsługi-zlecenia-zakupu)
+- [Rysunek 29. Interfejs użytkownika Obsługi reklamacji](#rysunek-29-interfejs-użytkownika-obsługi-reklamacji)
+- [Rysunek 30. Interfejs użytkownika Obsługi magazynu](#rysunek-30-interfejs-użytkownika-obsługi-magazynu)
+- [Rysunek 31. Interfejs użytkownika Analizy danych](#rysunek-31-interfejs-użytkownika-analizy-danych)
+- [Rysunek 32. Architektura systemu](#rysunek-32-architektura-systemu)
+- [Rysunek 33. Architektura podsystemów](#rysunek-33-architektura-podsystemów)
+
 
 <div class="page">
 
