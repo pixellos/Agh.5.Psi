@@ -2962,6 +2962,8 @@ Cel firmy:
 nie został pokryty w projekcie systemu, został natomiast zaproponowany jako obszar do usprawnienia jako jeden z kierunków dalszego rozwoju systemu.
 
 <div class="page">
+    
+    
 ## 10.3 Uwagi i wnioski końcowe
 
 Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach mózgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności.
