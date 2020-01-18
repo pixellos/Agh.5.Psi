@@ -3102,9 +3102,9 @@ Wymagania niefunkcjonalne
     - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa) - Wspólnie
     - [8.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd) - Mateusz
     - [8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu) - Adam
-- [9. Architektura Systemu](#9-architektura-systemu) - Kamil
-    - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
-    - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
+- [9. Architektura Systemu](#9-architektura-systemu)
+    - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu) - Kamil
+    - [9.2. Architektura Podsystemów](#92-architektura-podsystemów) - Kamil
 - [10. Podsumowanie](#10-podsumowanie) - Wspólnie
     - [10.1. Założenia implementacyjne](#101-założenia-implementacyjne)
     - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
