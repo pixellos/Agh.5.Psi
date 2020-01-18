@@ -69,7 +69,7 @@ Spis Treści
         - [2.6.4. Logowanie](#264-logowanie)
         - [2.6.5. Wylogowywanie](#265-wylogowywanie)
     - [2.7. Wymagania niefunkcjonalne](#27-wymagania-niefunkcjonalne)
-        - [2.7.1. Wymagania Produktowe](#271-wymagania-produktowe)
+        - [2.7.1. Wymagania produktowe](#271-wymagania-produktowe)
             - [2.7.1.1. Użyteczności](#2711-użyteczności)
             - [2.7.1.2. Sprawnościowe](#2712-sprawnościowe)
             - [2.7.1.3. Niezawodności](#2713-niezawodności)
@@ -93,6 +93,9 @@ Spis Treści
         - [3.3.4. Analiza dla Podsystemu 4.](#334-analiza-dla-podsystemu-4)
         - [3.3.5. Analiza dla Podsystemu 5.](#335-analiza-dla-podsystemu-5)
 - [4. Słownik danych](#4-słownik-danych)
+    - [4.1. Obiekty zewnętrzne](#41-obiekty-zewnętrzne)
+    - [4.2. Magazyny danych](#42-magazyny-danych)
+    - [4.3. Strumienie danych](#43-strumienie-danych)
 - [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
 - [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
 - [7. Interfejsy użytkownika (Ekrany)](#7-interfejsy-użytkownika-ekrany)
@@ -118,24 +121,6 @@ Spis Treści
     - [11.7. S](#117-s)
     - [11.8. Z](#118-z)
 - [12. Załącznik B: Wzory dokumentów](#12-załącznik-b-wzory-dokumentów)
-            - [12.1. Danedostawcy.docx](#121-danedostawcydocx)
-            - [12.2. Danefabryki.docx](#122-danefabrykidocx)
-            - [12.3. Wpistowaruwkatalogu.docx](#123-wpistowaruwkatalogudocx)
-            - [12.4. Wpisdotyczącycenytowaru.docx](#124-wpisdotyczącycenytowarudocx)
-            - [12.5. Dokumentofertowy.doc](#125-dokumentofertowydoc)
-            - [12.6. Dokumentpotwierdzajacyrealizacjereklamacji.docx](#126-dokumentpotwierdzajacyrealizacjereklamacjidocx)
-            - [12.7. Formularzofertyudzielonejdlaklienta.doc](#127-formularzofertyudzielonejdlaklientadoc)
-            - [12.8. Formularzprosbyodostepnosctowaru.docx](#128-formularzprosbyodostepnosctowarudocx)
-            - [12.9. Formularzreklamacjidodostawcy.docx](#129-formularzreklamacjidodostawcydocx)
-            - [12.10. Formularzreklamacjiodklienta.docx](#1210-formularzreklamacjiodklientadocx)
-            - [12.11. Instomformularzdanychklienta.docx](#1211-instomformularzdanychklientadocx)
-            - [12.12. Instomprzesunieciemiedzymagazynowe.docx](#1212-instomprzesunieciemiedzymagazynowedocx)
-            - [12.13. Instomprzyjecie zewnetrzne.docx](#1213-instomprzyjecie-zewnetrznedocx)
-            - [12.14. Instomrozchodwewnetrzny.docx](#1214-instomrozchodwewnetrznydocx)
-            - [12.15. Instomwydanie zewnetrzne.docx](#1215-instomwydanie-zewnetrznedocx)
-            - [12.16. Raportzakcjimarketingowych.doc](#1216-raportzakcjimarketingowychdoc)
-            - [12.17. Zamówienieklienta.doc](#1217-zamówienieklientadoc)
-            - [12.18. Instomformularzdanychpotencjalnegoklienta.docx](#1218-instomformularzdanychpotencjalnegoklientadocx)
 - [13. Załącznik C:](#13-załącznik-c)
 - [14. Załącznik D. Recenzja dokumentacji projektowej wskazanego Zespołu](#14-załącznik-d-recenzja-dokumentacji-projektowej-wskazanego-zespołu)
 - [15. Załącznik E. Na Moodle: kompletna dokumentacja w .pdf ; źródłowa wersja dokumentacji i rysunków, prezentacja w .ppt, recenzja, ew. inne materiały źródłowe)](#15-załącznik-e-na-moodle-kompletna-dokumentacja-w-pdf--źródłowa-wersja-dokumentacji-i-rysunków-prezentacja-w-ppt-recenzja-ew-inne-materiały-źródłowe)
@@ -404,7 +389,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 
     2. Realizacja reklamacji do dostawcy
-    
+
         Jako `właściciel` chciałbym móc wysłać przygotowane, reklamowane produkty do `dostawcy`, aby otrzymać od niego wymienione, działające produkty.
 
 4. Prowadzenie rejestru reklamacji
@@ -448,11 +433,11 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
    1. Przypisywanie numeru seryjnego
 
-      Jako `magazynier` chce mieć możliwość `przypisywania unikalnego numeru seryjnego produktom` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
+      Jako `magazynier` chce mieć możliwość `przypisywania unikalnego numeru seryjnego produktom` aby `umożliwić rozróżnienie produktu oraz ułatwić wyszukiwanie`
 
    1. Przypisywanie numeru partii
 
-      Jako `magazynier` chce mieć możliwość `przypisywania numeru partii` aby `umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie`
+      Jako `magazynier` chce mieć możliwość `przypisywania numeru partii` aby `umożliwić rozróżnienie produktu oraz ułatwić wyszukiwanie`
 
    1. Przypisywania kodów EAN
 
@@ -489,7 +474,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
    1. Pobranie wszystkich dostępnych produktów
 
-      Jako `magazynier` chce mieć możliwość `pobrania wszystkich dostepnych produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
+      Jako `magazynier` chce mieć możliwość `pobrania wszystkich dostępnych produktów` aby `otrzymać informacje o aktualnym stanie magazynu`.
 
    1. Wyrejestrowanie produktu z magazynu
 
@@ -651,7 +636,7 @@ W systemie możemy wyróżnić następujących aktorów
 ##### 9.Formularz_reklamacji_do_dostawcy.docx
 ##### 10.Formularz_reklamacji_od_klienta.docx
 ##### 11.Instom_formularz_danych_klienta.docx
-##### 12.Instom_przesuniecie_miedzymagazynowe.docx
+##### 12.Instom_przesunięcie_miedzymagazynowe.docx
 ##### 13.Instom_przyjecie zewnetrzne.docx
 ##### 14.Instom_rozchod_wewnetrzny.docx
 ##### 15.Instom_wydanie zewnetrzne.docx
@@ -864,7 +849,7 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 **Główny scenariusz powodzenia:**
 
 1. `Konsultant` próbuje modyfikować towar używając `UC-1.4`
-1. `Konsultant` wybiera opcję `zarezerwuj` - pokazuje sie modal z wyborem okresu rezerwacji
+1. `Konsultant` wybiera opcję `zarezerwuj` - pokazuje się model z wyborem okresu rezerwacji
 1. `Konsultant` wpisuje dane i zatwierdza
 1. Rezerwacja towaru zostaje zapisana w systemie
 
@@ -955,7 +940,7 @@ Konsultant - Potrzebuje wyszukać klienta w systemie
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.3 - Tworzenie oferty
+**Numer i nazwa przypadku użycia:** UC-2.3 - Tworzenie oferty
 
 **Autor:** Adam Samsonowicz
 
@@ -997,7 +982,7 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Cel przypadku użycia:** Zatwierdzanie lub anulowanie ofert
 
-**Kontekst użycia:** `Konsultant` stworzył ofertę, żeby dalej procesować potrzebuje zgody `potwierdzającego oferte`
+**Kontekst użycia:** `Konsultant` stworzył ofertę, żeby dalej procesować potrzebuje zgody `potwierdzającego ofertę`
 
 **Zakres:** Proces ofertowy
 
@@ -1005,20 +990,20 @@ Klient - W celu realizacji swoich interesów potrzebuje rozwiązania lub produkt
 
 **Warunek początkowy:** Oferta jest stworzona i wymaga zatwierdzenia
 
-**Zdarzenie inicjujące:** `Konsultant` wysyła prośbę o zatwierdzenie oferty do `zatwierdzającego oferte`
+**Zdarzenie inicjujące:** `Konsultant` wysyła prośbę o zatwierdzenie oferty do `zatwierdzającego ofertę`
 
 **Główny scenariusz powodzenia:**
 
-1. `Zatwierdzający oferte` otrzymuje prośbę o zatwierdzenie oferty
-2. `Zatwierdzający oferte` sprawdza ceny sprzedażowe produktów i marże
-3. `Zatwierdzający oferte` zatwierdza ofertę
+1. `Zatwierdzający ofertę` otrzymuje prośbę o zatwierdzenie oferty
+2. `Zatwierdzający ofertę` sprawdza ceny sprzedażowe produktów i marże
+3. `Zatwierdzający ofertę` zatwierdza ofertę
 4. `Konsultant` może wygenerować dokument
 
 **Scenariusze alternatywne:**
 
-1. `Zatwierdzający oferte` otrzymuje prośbe o zatwierdzenie oferty
-2. `Zatwierdzający oferte` rozpatruje warunki i dane oferty do zatwierdzenia
-3. `Zatwierdzający oferte` anuluje oferte z informacjami jakie zmiany muszą być dokonane, żeby oferta mogła być zatwierdzona
+1. `Zatwierdzający ofertę` otrzymuje prośbę o zatwierdzenie oferty
+2. `Zatwierdzający ofertę` rozpatruje warunki i dane oferty do zatwierdzenia
+3. `Zatwierdzający ofertę` anuluje ofertę z informacjami jakie zmiany muszą być dokonane, żeby oferta mogła być zatwierdzona
 4. `Konsultant` zmienia ceny sprzedażowe produktów i marże na akceptowalne
 
 **Aktor główny:** Konsultant
@@ -1064,7 +1049,7 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 ---
 
-**Numer i nazwa przypadku uzycia:** UC-2.6 - Wyszukiwanie produktów
+**Numer i nazwa przypadku użycia:** UC-2.6 - Wyszukiwanie produktów
 
 **Autor:** Adam Samsonowicz
 
@@ -1205,7 +1190,7 @@ _Zespół techniczny_ - przejmuje dalsze czynności
 
 **Scenariusze alternatywne:**
 
-1. System wyświelta informacje o błędzie podczas próby zapisu do rejestru
+1. System wyświetla informacje o błędzie podczas próby zapisu do rejestru
 
 **Uczestnicy i interesy:**
 
@@ -1302,7 +1287,7 @@ _Dostawca_ - Inicjuje proces
 
 **Cel przypadku użycia:** Kontrola wartości towaru
 
-**Kontekst użycia:** Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartości towaru aby wysyłany towar byl zawsze zgodny z umową
+**Kontekst użycia:** Przed procesem wysłania przesyłki, Jako magazynier chce mieć możliwość kontrolowania wartości towaru aby wysyłany towar był zawsze zgodny z umową
 
 **Zakres:** Obsługa magazynu
 
@@ -1337,7 +1322,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Przypisywanie numeru seryjnego
 
-**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania unikalnego numeru seryjnego produktom aby umożliwić rozróznienie produktu oraz ułatwić wyszukiwanie
+**Kontekst użycia:** Po rozładunku dostaw, Jako magazynier chce mieć możliwość przypisywania unikalnego numeru seryjnego produktom aby umożliwić rozróżnienie produktu oraz ułatwić wyszukiwanie
 
 **Zakres:** Obsługa magazynu
 
@@ -1355,7 +1340,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Scenariusze alternatywne:**
 
-1. Mala ilosc produktow na magazynie - brak potrzeby unikalnego rozroznienia
+1. Mała ilość produktów na magazynie - brak potrzeby unikalnego rozróżnienia
 
 **Uczestnicy i interesy:**
 
@@ -1378,7 +1363,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Towar nie jest powiazany z dostawcą oraz nabywcą
+**Warunek początkowy:** Towar nie jest powiązany z dostawcą oraz nabywcą
 **Zdarzenie inicjujące:** Zamówienie produktów
 
 **Główny scenariusz powodzenia:**
@@ -1404,7 +1389,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Wystawienie dokumentów (PZ WZ MM PW RW)
 
-**Kontekst użycia:** Przy każdej czynności wymagającej udokumentowania, Jako magazynier chce mieć możliwość wystawiania dokumentów aby zapenić wymagane dokumenty w procedurze.
+**Kontekst użycia:** Przy każdej czynności wymagającej udokumentowania, Jako magazynier chce mieć możliwość wystawiania dokumentów aby zapewnić wymagane dokumenty w procedurze.
 
 **Zakres:** Obsługa Magazynu
 
@@ -1412,14 +1397,14 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Dokumenty nie zostaly wystawione
+**Warunek początkowy:** Dokumenty nie zostały wystawione
 
-**Zdarzenie inicjujące:** Dowolne przesuniecie towaru wewnatrz lub na zewnatrz magazynu
+**Zdarzenie inicjujące:** Dowolne przesunięcie towaru wewnątrz lub na zewnątrz magazynu
 
 **Główny scenariusz powodzenia:**
 
-1. `Magazynier` dokonuje przesuniecia towaru
-2. `Magazynier` wystawia niezbedne dokumenty
+1. `Magazynier` dokonuje przesunięcia towaru
+2. `Magazynier` wystawia niezbędne dokumenty
 
 **Scenariusze alternatywne: **
 
@@ -1473,7 +1458,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Modyfikacja produktu
 
-**Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość modyfikacji danych aby uaktualnić informacje o produkcie
+**Kontekst użycia:** Gdy dane zostały wprowadzone, Jako magazynier chce mieć możliwość modyfikacji danych aby uaktualnić informacje o produkcie
 
 **Zakres:** Rejestr magazynu
 
@@ -1483,7 +1468,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Warunek początkowy:** Potrzeba modyfikacji danych produktu
 
-**Zdarzenie inicjujące:** Zmiana atrybutow produktu na magazynie
+**Zdarzenie inicjujące:** Zmiana atrybutów produktu na magazynie
 
 **Główny scenariusz powodzenia:**
 
@@ -1508,7 +1493,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Cel przypadku użycia:** Wyszukiwanie produktów
 
-**Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość wyszukiwania prodktów aby uzyskać informacje o danym produkcie
+**Kontekst użycia:** Gdy dane zostały wprowadzone, Jako magazynier chce mieć możliwość wyszukiwania produktów aby uzyskać informacje o danym produkcie
 
 **Zakres:** Rejestr magazynu
 
@@ -1525,7 +1510,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 1. Rejestr wyświetla kryteria wyszukania produktu w rejestrze
 2. `Magazynier` określa kryteria wyszukania
 3. Rejestr znajduje produkt
-4. Dane Produktu zostają zwrócone do użytykownika
+4. Dane Produktu zostają zwrócone do użytkownika
 
 **Scenariusze alternatywne:**
 
@@ -1553,16 +1538,16 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Warunek początkowy:** Produkt jest zarejestrowany
 
-**Zdarzenie inicjujące:** Produkt zostal wyslany
+**Zdarzenie inicjujące:** Produkt został wysłany
 
 **Główny scenariusz powodzenia:**
 
-1. Rejestr wyświetla formularz usuniecia produktu z rejestru
-2. Produkt zostaje usuniety
+1. Rejestr wyświetla formularz usunięcia produktu z rejestru
+2. Produkt zostaje usunięty
 
 **Scenariusze alternatywne:**
 
-1. Brak produktu w rejestrze - brak dzialania
+1. Brak produktu w rejestrze - brak działania
 
 **Uczestnicy i interesy:**
 
@@ -1570,21 +1555,21 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-4.11 - Pobranie szczegolowych danych o produkcie
+**Numer i Nazwa przypadku użycia:** UC-4.11 - Pobranie szczegółowych danych o produkcie
 
 **Autor:** Kamil Gliński
 
-**Cel przypadku użycia:** Pobranie szczegolowych danych o produkcie
+**Cel przypadku użycia:** Pobranie szczegółowych danych o produkcie
 
-**Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość pobrania informacji na temat produktow aby otrzymac informacje o aktualnym stanie magazynu
+**Kontekst użycia:** Gdy dane zostały wprowadzone, Jako magazynier chce mieć możliwość pobrania informacji na temat produktów aby otrzymać informacje o aktualnym stanie magazynu
 
 **Zakres:** Rejestr magazynu
 
-**Poziom:** Pobranie szczegolowych danych o produkcie
+**Poziom:** Pobranie szczegółowych danych o produkcie
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Produkt znajduje sie w rejestrze
+**Warunek początkowy:** Produkt znajduje się w rejestrze
 
 **Zdarzenie inicjujące:** Potrzeba pobrania informacji o aktualnym stanie magazynu
 
@@ -1596,7 +1581,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Scenariusze alternatywne:**
 
-1. Brak produktu w rejestrze - brak dzialania
+1. Brak produktu w rejestrze - brak działania
 
 **Uczestnicy i interesy:**
 
@@ -1604,13 +1589,13 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ---
 
-**Numer i Nazwa przypadku użycia:** UC-4.12 - Pobranie wszystkich dostepnych produktow
+**Numer i Nazwa przypadku użycia:** UC-4.12 - Pobranie wszystkich dostępnych produktów
 
 **Autor:** Kamil Gliński
 
-**Cel przypadku użycia:** Pobranie szczegolowych danych o produkcie
+**Cel przypadku użycia:** Pobranie szczegółowych danych o produkcie
 
-**Kontekst użycia:** Gdy dane zostaly wprowadzone, Jako magazynier chce mieć możliwość pobrania wszystkich dostepnych produktow aby otrzymac informacje o aktualnym stanie magazynu
+**Kontekst użycia:** Gdy dane zostały wprowadzone, Jako magazynier chce mieć możliwość pobrania wszystkich dostępnych produktów aby otrzymać informacje o aktualnym stanie magazynu
 
 **Zakres:** Rejestr magazynu
 
@@ -1618,18 +1603,18 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Aktor główny:** Magazynier
 
-**Warunek początkowy:** Produkty znajduja sie w rejestrze
+**Warunek początkowy:** Produkty znajdują się w rejestrze
 
 **Zdarzenie inicjujące:** Potrzeba pobrania informacji o wszystkich produktach
 
 **Główny scenariusz powodzenia:**
 
 1. Rejestr wyświetla formularz pobrania danych o produktach z rejestrze
-2. Produkty zostaja pobrane
+2. Produkty zostają pobrane
 
 **Scenariusze alternatywne:**
 
-1. Brak produktu w rejestrze - brak dzialania
+1. Brak produktu w rejestrze - brak działania
 
 **Uczestnicy i interesy:**
 
@@ -1657,8 +1642,8 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 **Główny scenariusz powodzenia:**
 
-1. `Magazynier` tworzy zamowienia dostaw
-2. `Magazynier` zapewnia dokumenty dotyczace dostaw
+1. `Magazynier` tworzy zamówienia dostaw
+2. `Magazynier` zapewnia dokumenty dotyczące dostaw
 
 **Scenariusze alternatywne:**
 
@@ -1737,7 +1722,7 @@ Marketingowiec - inicjowanie stworzenia raportu
 ![Diagram aktywności zatwierdzania oferty](./diagrams/images/AD-OA2.4.jpg)
 ##### _Rysunek 12. Diagram aktywności zatwierdzania oferty_
 
-![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.5.jpg)
+![Diagram aktywności wyszukiwania i dodania produktu](./diagrams/images/AD-OA2.5.jpg)
 ##### _Rysunek 13. Diagram aktywności wyszukiwania i dodania produktu_
 
 
@@ -1771,7 +1756,7 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 **Nazwa funkcji:** WF-1 - Poinformuj o zmianie w systemie przez SMS
 
-**Opis:** Funkcja systemu służąca do notyfikowaniach o ważnych zmianach
+**Opis:** Funkcja systemu służąca do notyfikowania o ważnych zmianach
 
 **Dane wejściowe:** Automatycznie w systemie - Numery telefonów zainteresowanych wiadomość
 
@@ -1898,7 +1883,7 @@ Wymagania niefunkcjonalne dotyczą systemu jako całości - określimy w tym pun
 
 
 
-### 2.7.1 Wymagania Produktowe
+### 2.7.1 Wymagania produktowe
 
 Wymagania produktu w odniesieniu do jego sposobu działania.
 
@@ -2111,7 +2096,7 @@ Nazwa funkcji: 1.1.1 Przetwórz dostawcę
 
 Opis: Funkcja służąca do przetworzenia otrzymanych danych dostawcy
 
-Dane wejściowe: Wpis Dostawcy 
+Dane wejściowe: Wpis Dostawcy
 
 Źródło danych wejściowych: `Klient` (Przez `konsultanta`)
 
@@ -2163,8 +2148,8 @@ Pseudokod:
 Posiadając dane oferty
 Sprawdź, czy oferta istnieje w rejestrze
 Jeżeli tak, wprowadź zmiany
-Jeżeli nie, wygeneruj id i stwórz oferte
-Zapisz oferte w rejestrze
+Jeżeli nie, wygeneruj id i stwórz ofertę
+Zapisz ofertę w rejestrze
 
 ```
 
@@ -2196,7 +2181,7 @@ Pseudokod:
 Posiadając dane towarów
 Sprawdź, czy nastąpiła zmiana w magazynie
 Jeżeli tak, wprowadź zmiany
-Jeżeli nie, wstrzymaj sie
+Jeżeli nie, wstrzymaj się
 Zapisz dane towarów w rejestrze
 
 ```
@@ -2270,7 +2255,7 @@ Posiadając dane oferty
 Sprawdź, czy dane zostały wprowadzone prawidłowo
 Jeżeli tak, wprowadź dane
 Jeżeli nie, wstrzymaj się
-Zapisz oferte w rejestrze
+Zapisz ofertę w rejestrze
 
 ```
 
@@ -2299,7 +2284,7 @@ Warunek końcowy: Zatwierdzona oferta
 
 Pseudokod:
 ```
-Potwierdz oferte
+Potwierdz ofertę
 ```
 
 Efekty uboczne: -
@@ -2526,7 +2511,7 @@ Uwagi: (Uzasadnienie)
 Celem punktu jest przedstawienie uproszczonego słownika danych.
 
 
-**Obiekty zewnętrzne**
+## 4.1 Obiekty zewnętrzne
 
 
 | Element słownika | Definicja   | Nazwy powiązanych dokumentów                                                                                                            | Numer diagramu DFD                                                  |
@@ -2534,18 +2519,18 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | konsultanci      | Załącznik A | Dokument_ofertowy Formularz_oferty_udzielonej_dla_klienta Instom_formularz_danych_klienta Instom_formularz_danych_potencjalnego_klienta | 3.1 3.2 3.3.2 (podsystem 1) 3.3.2 (podsystem 2) 3.3.2 (podsystem 3) |
 | biuro rachunkowe | Załącznik A | Dane_dostawcy                                                                                                                           | 3.1 3.2 3.3.2 (podsystem 5)                                         |
 | zarząd firmy     | Załącznik A | Instom_rozchod_wewnetrzny Raport_z_akcjii_marketingowych                                                                                | 3.1 3.2 3.3.2 (podsystem 5)                                         |
-| magazynierzy     | Załącznik A | Instom_przesuniecie_miedzymagazynowe Instom_przyjecie zewnetrzne                                                                        | 3.1 3.2 3.3.2 (podsystem 4)                                         |
+| magazynierzy     | Załącznik A | Instom_przesunięcie_miedzymagazynowe Instom_przyjecie zewnętrzne                                                                        | 3.1 3.2 3.3.2 (podsystem 4)                                         |
 
 
 <div class="page">
 
-**Magazyny danych**
+## 4.2 Magazyny danych
 
 
 | Element słownika | Definicja                                                                           | Nazwy powiązanych dokumentów                                                         | Numer diagramu DFD                                                                  |
 |------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
 | Zlecenia zakupu  | Dokument upoważniający do zakupu określonego materiału , w podanej ilości i czasie. | Wpis_dotyczący_ceny_towaru Zamówienie_klienta                                        | 3.2 3.3.2 (podsystem 2) 3.3.2 (podsystem 5)                                         |
-| Magazyn          | Miejsce przechowania produktów                                                      | Wpis_dotyczący_ceny_towaru Instom_przesuniecie_miedzymagazynowe                      | 3.2 3.3.2 (podsystem 1) 3.3.2 (podsystem 2) 3.3.2 (podsystem 4)                     |
+| Magazyn          | Miejsce przechowania produktów                                                      | Wpis_dotyczący_ceny_towaru Instom_przesunięcie_miedzymagazynowe                      | 3.2 3.3.2 (podsystem 1) 3.3.2 (podsystem 2) 3.3.2 (podsystem 4)                     |
 | Towary           | Produkty oferowane przez firmę                                                      | Dane_fabryki Wpis_towaru_w_katalogu                                                  | 3.2 3.3.2 (podsystem 1) 3.3.2 (podsystem 2) 3.3.2 (podsystem 5)                     |
 | Dostawcy         | Firmy, od której nabywane są produkty dla Instom                                    | Dane_dostawcy Formularz_reklamacji_do_dostawcy                                       | 3.2 3.3.2 (podsystem 1) 3.3.2 (podsystem 5)                                         |
 | Zamówienia       | Proces kupna przez klienta                                                          | Wpis_dotyczący_ceny_towaru Zamówienie_klienta                                        | 3.2 3.3.2 (podsystem 1) 3.3.2 (podsystem 2) 3.3.2 (podsystem 3) 3.3.2 (podsystem 5) |
@@ -2555,7 +2540,7 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 
 <div class="page">
 
-**Strumienie danych**
+## 4.3 Strumienie danych
 
 
 | Element słownika                                     | Definicja                                                                       | Nazwy powiązanych dokumentów                  | Numer diagramu DFD  |
@@ -2564,8 +2549,8 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | Dane klientów i dostawców                            | Szczegółowe informacje np. imię, nazwisko, itp.                                 | Dane_dostawcy Instom_formularz_danych_klienta | 3.1                 |
 | Dane finansowe                                       | Informacje potrzebne dla biura rachunkowego                                     | Instom_rozchod_wewnetrzny                     | 3.1                 |
 | Raporty                                              | Dokumenty informujące np. o ilości sprzedaży                                    | Raport_z_akcji_marketingowych                 | 3.1                 |
-| Zapisane dane ilościowe                              | Informacje o ilości danych produktów w magazynie                                | Instom_przesuniecie_miedzymagazynowe          | 3.1                 |
-| Aktualizacja stanów magazynowych                     | Zaktualizowanie informacji o ilości przechowywanych produktów w magazynie       | Instom_przesuniecie_miedzymagazynowe          | 3.1                 |
+| Zapisane dane ilościowe                              | Informacje o ilości danych produktów w magazynie                                | Instom_przesunięcie_miedzymagazynowe          | 3.1                 |
+| Aktualizacja stanów magazynowych                     | Zaktualizowanie informacji o ilości przechowywanych produktów w magazynie       | Instom_przesunięcie_miedzymagazynowe          | 3.1                 |
 | Dane zleceń zakupu                                   | Dane niezbędne do sprzedaży produktu                                            | Dokument_ofertowy                             | 3.2                 |
 | Aktualizacja danych                                  | Aktualizacja informacji o produktach                                            | Wpis_towaru_w_katalogu                        | 3.2                 |
 | Stan zleceń zakupu                                   | Informacja o bieżących zleceniach zakupu                                        | -                                             | 3.2                 |
@@ -2579,7 +2564,7 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | Zamówienia                                           | Proces kupna przez klienta                                                      | Zamówienie_klienta                            | 3.2                 |
 | Ilość zamówień od dostawcy                           | Liczba zamówień produktów od dostawcy towarów                                   | Zamówienie_klienta                            | 3.2                 |
 | Stan magazynu                                        | Ilość produktów przechowywanych w magazynie                                     | -                                             | 3.2                 |
-| Aktualizacja stanu                                   | Aktualizacja ilości produktów przechowywanych w magazynie                       | Instom_przesuniecie_miedzymagazynowe          | 3.2                 |
+| Aktualizacja stanu                                   | Aktualizacja ilości produktów przechowywanych w magazynie                       | Instom_przesunięcie_miedzymagazynowe          | 3.2                 |
 | Ilość zamówionych towarów                            | Liczba zamówionych towarów przez klienta                                        | -                                             | 3.2                 |
 | Dane towarów za okres                                | Informacja o towarach z pewnego okresu czasu                                    | Wpis_towaru_w_katalogu                        | 3.2                 |
 | Aktualizacja zamówień                                | Aktualizacja informacji o zamówieniach                                          | -                                             | 3.2                 |
@@ -2597,17 +2582,17 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | Towary w systemie                                    | Wprowadzenie aktualizacji towarów w systemie                                    | -                                             | 3.3.2 (podsystem 1) |
 | Dostawcy posiadający towar                           | Dostawcy, od których nastąpi zamówienie                                         | -                                             | 3.3.2 (podsystem 1) |
 | Dane dostawcy                                        | Szczegółowe informacje o dostawcy                                               | -                                             | 3.3.2 (podsystem 1) |
-| Zaktualizowane towary                                | Zedytowane informacje o towarach                                                | -                                             | 3.3.2 (podsystem 1) |
+| Zaktualizowane towary                                | Wyedytowane informacje o towarach                                                | -                                             | 3.3.2 (podsystem 1) |
 | Informacje o dostawcy                                | Dane dostawcy                                                                   | -                                             | 3.3.2 (podsystem 1) |
 | Informacje o zmianach w jego ofercie                 | Aktualizacja oferty                                                             | -                                             | 3.3.2 (podsystem 1) |
 | Zamówienie z brakującymi towarami                    | Zamówienie brakujących towarów                                                  | -                                             | 3.3.2 (podsystem 2) |
 | Dane zlecenia zakupu                                 | Data wykonania zlecenia zakupu                                                  | -                                             | 3.3.2 (podsystem 2) |
-| Oferta                                               | Dokument sprzezdażowy przygotowany dla klienta                                  | Formularz_oferty_udzielonej_dla_klienta       | 3.3.2 (podsystem 2) |
+| Oferta                                               | Dokument sprzedażowy przygotowany dla klienta                                  | Formularz_oferty_udzielonej_dla_klienta       | 3.3.2 (podsystem 2) |
 | Zatwierdzenie oferty                                 | Potwierdzenie oferty                                                            | -                                             | 3.3.2 (podsystem 2) |
 | Oczekiwania klienta                                  | Informacje o preferencjach klienta                                              | -                                             | 3.3.2 (podsystem 2) |
 | Zaproponowana oferta                                 | Przygotowana oferta sprzedażowa                                                 | -                                             | 3.3.2 (podsystem 2) |
 | Obecne oferty                                        | Aktualne oferty zakupu                                                          | -                                             | 3.3.2 (podsystem 2) |
-| Zatwiedzona oferta                                   | -                                                                               | -                                             | 3.3.2 (podsystem 2) |
+| Zatwierdzona oferta                                   | -                                                                               | -                                             | 3.3.2 (podsystem 2) |
 | Dostępne towary od ręki                              | Towary obecne na magazynie, gotowe do sprzedaży                                 | -                                             | 3.3.2 (podsystem 2) |
 | Dostępne towary                                      | Towary dostępne w katalogu                                                      | -                                             | 3.3.2 (podsystem 2) |
 | Aktualny stan magazynowy                             | Ilość produktów w magazynie                                                     | -                                             | 3.3.2 (podsystem 2) |
@@ -2616,7 +2601,7 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | Dodanie zlecenia zakupu                              | Dodanie zlecenia zakupu do systemu                                              | -                                             | 3.3.2 (podsystem 2) |
 | Potwierdzenie dla klienta                            | Potwierdzenie o realizacji reklamacji                                           | -                                             | 3.3.2 (podsystem 3) |
 | Informacje o postępie procesu reklamacji             | -                                                                               | -                                             | 3.3.2 (podsystem 3) |
-| Zaktulizowane dane                                   | Zmiana statusu reklamacji                                                       | -                                             | 3.3.2 (podsystem 3) |
+| Zaktualizowane dane                                   | Zmiana statusu reklamacji                                                       | -                                             | 3.3.2 (podsystem 3) |
 | Dane reklamacji                                      | Informacje o reklamacji                                                         | -                                             | 3.3.2 (podsystem 3) |
 | Złożone zamówienia                                   | Dokonane zamówienia                                                             | -                                             | 3.3.2 (podsystem 3) |
 | Powiązanie zamówienia z reklamacją                   | -                                                                               | -                                             | 3.3.2 (podsystem 3) |
@@ -2663,11 +2648,11 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
   - QuotationStatus
     - Status w, którym znajduje się oferta
   - QuotationOwner
-    - Uzytkownik zajmujący się daną ofertą
+    - Użytkownik zajmujący się daną ofertą
   - QuotationApproval
     - Zatwierdzanie oferty
   - QuotationPriority
-    - Dane statystyczna pozwalające priorytetyzować oferty
+    - Dane statystyczna pozwalające priorytetowa oferty
   - OwnerRole
     - Rola użytkownika zajmującego się daną ofertą
   - User
@@ -2675,7 +2660,7 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
   - ApprovalStatus
     - Status, w którym znajduje się zatwierdzanie oferty
   - QuotationCustomer
-    - Klient zkorelowany z daną oferta
+    - Klient skorelowany z daną oferta
   - Industry
     - Branża klienta
   - Customer
@@ -2726,7 +2711,7 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
   - Oferta
     - Quotation
   - Pracownik
-    
+
     - User
   - Magazyn
     - Warehouse
@@ -2737,12 +2722,12 @@ Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na
   - Zamówienie do dostawcy
     - SupplierOrder
   - Reklamacja od klienta
-  
+
     - CustomerComplaintProduct
   - Reklamacja do dostawcy
-  
+
     - SupplierComplaintProduct
-  
+
 - Tabele pomocnicze (Funkcjonalności - wspierane Use case'y)
 
   - UC-2.4 Zatwierdzanie oferty
@@ -2850,14 +2835,14 @@ W trakcie projektowania, po zebraniu większej ilości informacji, dało się za
 
 
 ## 8.1 Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu
-Po szczegółowej analizie diagramów DFD doszliśmy do wniosku, że nasze obszary aktywności są za bardzo szczegółowe. 
+Po szczegółowej analizie diagramów DFD doszliśmy do wniosku, że nasze obszary aktywności są za bardzo szczegółowe.
 
 Pierwszą zmianą jaką wykonaliśmy, było połączenie dawnych OA 4 i OA5 - (Obsługa magazynu i obsługa rejestru magazynu) - pełniły one jedną rolę (głównie wspomaganie pracowników magazynu), ale była ona rozbita na dwa obszary aktywności.
 Zmieniliśmy:
 
 - Diagram obszarów aktywności
 - Połączyliśmy opis OA 4 i OA 5 w jeden
-- Połączyliśmy Use Case z OA 4 i OA 5 
+- Połączyliśmy Use Case z OA 4 i OA 5
 - Diagramy DFD Odpowiadające OA 4 i OA 5 zostały zamienione w jeden
 
 
@@ -2871,7 +2856,7 @@ Po analizie wszystkich OA zauważyliśmy, że w poszczególnych OA poszczególne
 
 <div class="page">
 
-## 8.3 Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD 
+## 8.3 Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD
 
 Po przeanalizowaniu ilości strumieni danych wchodzących i wychodzących do diagramu kontekstowego i diagramów podsystemów zauważyliśmy, że nie balansują się one.
 Zgodnie z zasadami tworzenia diagramów ilość strumieni między poszczególnymi poziomami powinna się równoważyć (co najwyżej niektóre strumienie danych na wyższych poziomach mogą być konglomeratem)
@@ -2883,7 +2868,7 @@ W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprow
 
 Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych rejestrów, żeby zrealizować proponowane funkcje systemu.
 
-- Rejestr `zamówienie` został rozdzielony na `zamówienie klienta` oraz `zamówienie do dostawcy` 
+- Rejestr `zamówienie` został rozdzielony na `zamówienie klienta` oraz `zamówienie do dostawcy`
 
 - Zostały dodane również dwa dodatkowe rejestry  `reklamacja od klienta` i `reklamacja do dostawcy`
 
@@ -2905,9 +2890,9 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 # 10. Podsumowanie
 ## 10.1 Założenia implementacyjne
 
-Po szczegółowej analizie wymagań projektu doszliśmy do wniosku, że odpowiednim modelem wytwórczym będzie model przyrostowy. Model przyrostowy pozwoli nam na częste kontakty z klientem w celu weryfikacji poszczególnych funkcji systemu, oraz pirorytetyzowania funkcji systemu, które mają zostać zrealizowane podczas potencjalnych opóźnień bez opóźniania całości projektu. 
+Po szczegółowej analizie wymagań projektu doszliśmy do wniosku, że odpowiednim modelem wytwórczym będzie model przyrostowy. Model przyrostowy pozwoli nam na częste kontakty z klientem w celu weryfikacji poszczególnych funkcji systemu, oraz pirorytetyzowania funkcji systemu, które mają zostać zrealizowane podczas potencjalnych opóźnień bez opóźniania całości projektu.
 
-Proponujemy rozpoczęcie prac od tworzenia logiki biznesowej. Logika biznesowa w kodzie powinna być zrobiona uwzględniając interfejsy graniczne między komponentami systemu, co pozwoli na późniejsze podjęcie ostatecznej decyzji co do szczegółów projektu takich jak baza danych oraz zapewni niezależne rozwijanie poszczególnych niezależnych od siebie funkcji. Zapewni nam to możliwość przedstawienia klientowi różnych konfiguracji sprzętowych podczas testów. 
+Proponujemy rozpoczęcie prac od tworzenia logiki biznesowej. Logika biznesowa w kodzie powinna być zrobiona uwzględniając interfejsy graniczne między komponentami systemu, co pozwoli na późniejsze podjęcie ostatecznej decyzji co do szczegółów projektu takich jak baza danych oraz zapewni niezależne rozwijanie poszczególnych niezależnych od siebie funkcji. Zapewni nam to możliwość przedstawienia klientowi różnych konfiguracji sprzętowych podczas testów.
 
 Propozycja narzędzi:
 
@@ -2927,7 +2912,7 @@ Po przeanalizowaniu całości projektu uznaliśmy, że system zaprojektowano pop
 
   zdefiniowane w punkcie **1.1.5** zostaną osiągnięte.
 
-Założenia **1.2.2 Definicja celu systemu** oraz **1.1.3 Cele produktowe**, które zdefiniowaliśmy na początku tworzenia projektu zostaną osiągnięte. 
+Założenia **1.2.2 Definicja celu systemu** oraz **1.1.3 Cele produktowe**, które zdefiniowaliśmy na początku tworzenia projektu zostaną osiągnięte.
 
 Cel firmy:
 
@@ -2938,13 +2923,40 @@ nie został pokryty w projekcie systemu, został natomiast zaproponowany jako ob
 <div class="page">
 ## 10.3 Uwagi i wnioski końcowe
 
-Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach muzgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności. 
+Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach mózgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności.
 
 Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowaliśmy propozycje kierunku dalszych prac. Dalsze prace nad systemem mogłyby się odbywać w zakresie usprawnienia zarządzania magazynem oraz zarządzania zamówieniami do dostawców co pozwoli na dużą redukcje kosztów związanych z przechowywaniem niesprzedanych produktów. Prognozy popytu oraz utrzymywanie odpowiedniej ilości produktów na stanie są kluczem do odpowiedniego prosperowania firmy dlatego też wybraliśmy te obszary.
 
 
 <div class="page">
 ​     
+    
+# Źródła:
+
+Materiały z wykładów:
+
+- Jakosc_06_01_2020-V8.ppt 
+- Opis dziedziny_OM_ZOS-przyklad.pdf 
+- Opis_dziedziny_OM_ZOS-Przyklad-V4_27-10-2019-NST.pdf
+- OpisWymagan_UseCases_UCDiagrams-upgraded.pdf
+- PSI_2-SAD_Modelowanie_przeplywow_12-2019-V44.pdf
+- TEST_CASE-VP_flowofeventstestcase.pdf
+- UML_Activity_Diagrams-11_2019.pdf
+- Wymagania_niefunkcjonalne-11_2019.pdf
+- Zalecenia- Moodle-12-10-2019.pdf
+
+
+Narzędzia:
+
+- Balsamiq - projektowanie interface'ów
+- DrawIO - szkice diagramów
+- Git - synchronizacja wyników prac
+- Google Hangout - synchronizacja pomiędzy członkami grupy
+- PlantUML - diagramy
+- Typora - edycja pomocniczych plików
+- Visual Paradigm - diagramy
+- VisualStudioCode - edycja pomocniczych plików
+
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
@@ -2988,24 +3000,24 @@ Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowali
 
 Treść Załącznika w osobnym archiwum o nazwie Załącznik B:
 
-#### 1.Dane_dostawcy.docx
-#### 2.Dane_fabryki.docx
-#### 3.Wpis_towaru_w_katalogu.docx
-#### 4.Wpis_dotyczący_ceny_towaru.docx
-#### 5.Dokument_ofertowy.doc
-#### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
-#### 7.Formularz_oferty_udzielonej_dla_klienta.doc
-#### 8.Formularz_prosby_o_dostepnosc_towaru.docx
-#### 9.Formularz_reklamacji_do_dostawcy.docx
-#### 10.Formularz_reklamacji_od_klienta.docx
-#### 11.Instom_formularz_danych_klienta.docx
-#### 12.Instom_przesuniecie_miedzymagazynowe.docx
-#### 13.Instom_przyjecie zewnetrzne.docx
-#### 14.Instom_rozchod_wewnetrzny.docx
-#### 15.Instom_wydanie zewnetrzne.docx
-#### 16.Raport_z_akcji_marketingowych.doc
-#### 17.Zamówienie_klienta.doc
-#### 18.Instom_formularz_danych_potencjalnego_klienta.docx
+##### 1.Dane_dostawcy.docx
+##### 2.Dane_fabryki.docx
+##### 3.Wpis_towaru_w_katalogu.docx
+##### 4.Wpis_dotyczący_ceny_towaru.docx
+##### 5.Dokument_ofertowy.doc
+##### 6.Dokument_potwierdzajacy_realizacje_reklamacji.docx
+##### 7.Formularz_oferty_udzielonej_dla_klienta.doc
+##### 8.Formularz_prosby_o_dostepnosc_towaru.docx
+##### 9.Formularz_reklamacji_do_dostawcy.docx
+##### 10.Formularz_reklamacji_od_klienta.docx
+##### 11.Instom_formularz_danych_klienta.docx
+##### 12.Instom_przesuniecie_miedzymagazynowe.docx
+##### 13.Instom_przyjecie zewnetrzne.docx
+##### 14.Instom_rozchod_wewnetrzny.docx
+##### 15.Instom_wydanie zewnetrzne.docx
+##### 16.Raport_z_akcji_marketingowych.doc
+##### 17.Zamówienie_klienta.doc
+##### 18.Instom_formularz_danych_potencjalnego_klienta.docx
 
 <div class="page">
 
@@ -3013,10 +3025,102 @@ Treść Załącznika w osobnym archiwum o nazwie Załącznik B:
 
 Raport z podziału pracy w zespole i realizacji ( z odniesieniem do punktów dokumentacji oraz podsumowująca ocena procentowa wkładu indywidualnego)
 
+Procentowo:
+Mateusz Popielarz: 25%
+Adam Samsonowicz: 25%
+Kacper Kwapisz: 25%
+Kamil Gliński: 25%
+
 Przygotowanie i skład - Mateusz
 
-Dokumenty:
 
+- [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
+    - [1.1. Przedmiot modelowania – opis dziedziny problemu](#11-przedmiot-modelowania--opis-dziedziny-problemu) - Praca wspólna
+
+    - [1.2. Obszar modelowania OM – wstępny opisowy model stanu istniejącego](#12-obszar-modelowania-om--wstępny-opisowy-model-stanu-istniejącego)
+        - [1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu) - Adam Samsonowicz
+        - [1.2.2. Definicja celu systemu](#122-definicja-celu-systemu) - Mateusz Popielarz
+        - [1.2.3. Składniki organizacyjne dla Obszaru Modelowania](#123-składniki-organizacyjne-dla-obszaru-modelowania) - Matuesz
+    - [1.3. Zakres odpowiedzialności systemu (ZOS)](#13-zakres-odpowiedzialności-systemu-zos)
+        - [1.3.1. Obszary aktywności (OA)](#131-obszary-aktywności-oa)
+            - [1.3.1.1. Obsługa zamówień (OA1)](#1311-obsługa-zamówień-oa1) - Mateusz
+            - [1.3.1.2. Obsługa zleceń zakupu (OA2)](#1312-obsługa-zleceń-zakupu-oa2) - Adam
+            - [1.3.1.3. Obsługa reklamacji (OA3)](#1313-obsługa-reklamacji-oa3) - Kacper
+            - [1.3.1.4. Obsługa magazynu (OA4)](#1314-obsługa-magazynu-oa4) - Kamil
+            - [1.3.1.5. Analizy danych na potrzeby marketingowe (OA5)](#1315-analizy-danych-na-potrzeby-marketingowe-oa5) - Wspólne
+    - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu) - Wspólne
+        - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
+        - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
+    - [1.5. Cele do osiągnięcia](#15-cele-do-osiągnięcia) - Wszyscy
+        - [1.5.1. Cele produktu](#151-cele-produktu)
+        - [1.5.2. Cele przedsięwzięcia projektowego](#152-cele-przedsięwzięcia-projektowego)
+- [2. Opis Wymagań Systemu](#2-opis-wymagań-systemu)
+    - [2.1. Funkcje systemu ze strony widzenia użytkownika](#21-funkcje-systemu-ze-strony-widzenia-użytkownika) - Mateusz
+    - [2.2. Rejestry w systemie](#22-rejestry-w-systemie) - Wspólne
+    - [2.3. Dokumenty wprowadzane i wyprowadzane z systemu – wzory](#23-dokumenty-wprowadzane-i-wyprowadzane-z-systemu--wzory) - Wspólne
+    - [2.4. Wyniki analizy wymagań funkcjonalnych](#24-wyniki-analizy-wymagań-funkcjonalnych)
+        - [2.4.1. Obsługa Dostawców (OA1)](#241-obsługa-dostawców-oa1) - Mateusz
+        - [2.4.2. Obsługa zleceń zakupu (OA2)](#242-obsługa-zleceń-zakupu-oa2) - Adam
+        - [2.4.3. Obsługa reklamacji (OA3)](#243-obsługa-reklamacji-oa3) - Kacper
+        - [2.4.4. Obsługa Rejestr Magazynu (OA4)](#244-obsługa-rejestr-magazynu-oa4) - Kamil
+        - [2.4.5. Analiza danych na potrzeby marketingowe (OA5)](#245-analiza-danych-na-potrzeby-marketingowe-oa5) - Wspólne
+    - [2.5. Modelowanie zachowań w czasie](#25-modelowanie-zachowań-w-czasie)
+        - [2.5.1. Obsługa zamówień (OA1)](#251-obsługa-zamówień-oa1) - Mateusz
+        - [2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2) - Adam
+        - [2.5.3. Obsługa reklamacji (OA3)](#253-obsługa-reklamacji-oa3) Kacper
+        - [2.5.4. Obsługa rejestru magazynu (OA4)](#254-obsługa-rejestru-magazynu-oa4) - Kamil
+        - [2.5.5. Analiza danych na potrzeby marketingowe (OA5)](#255-analiza-danych-na-potrzeby-marketingowe-oa5) - Wspólne
+    - [2.6. Wymagania funkcjonalne dla dodatkowych części systemu](#26-wymagania-funkcjonalne-dla-dodatkowych-części-systemu)
+        - [2.6.1. Poinformuj SMS](#261-poinformuj-sms) - Mateusz
+        - [2.6.2. Wprowadzenie dokumentów do systemu](#262-wprowadzenie-dokumentów-do-systemu) - Mateusz
+        - [2.6.3. Przydział pracowników do określonych zadań](#263-przydział-pracowników-do-określonych-zadań) - Mateusz
+        - [2.6.4. Logowanie](#264-logowanie) - Mateusz
+        - [2.6.5. Wylogowywanie](#265-wylogowywanie) - Mateusz
+    - [2.7. Wymagania niefunkcjonalne](#27-wymagania-niefunkcjonalne)
+        - [2.7.1. Wymagania Produktowe](#271-wymagania-produktowe)
+            - [2.7.1.1. Użyteczności](#2711-użyteczności) - Mateusz
+            - [2.7.1.2. Sprawnościowe](#2712-sprawnościowe) - Mateusz
+            - [2.7.1.3. Niezawodności](#2713-niezawodności) - Kacper
+            - [2.7.1.4. Przenośności](#2714-przenośności) - Kacper
+        - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne) 
+            - [2.7.2.1. Dostawy](#2721-dostawy) - Kamil
+            - [2.7.2.2. Implementacyjne](#2722-implementacyjne) - Kamil
+            - [2.7.2.3. Standardów](#2723-standardów) - Kacper
+        - [2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)
+            - [2.7.3.1. Współpracy](#2731-współpracy) - Adam
+            - [2.7.3.2. Etyczne](#2732-etyczne) - Adam
+            - [2.7.3.3. Prawne - ochrona prywatności](#2733-prawne---ochrona-prywatności) - Kamil
+            - [2.7.3.4. Prawne - Wymagania zabezpieczeń](#2734-prawne---wymagania-zabezpieczeń) - Kamil
+- [3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)](#3-analiza-funkcjonalna-systemu-przy-pomocy-przepływów-danych--i-proces-dekompozycji)
+    - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk) - Mateusz
+    - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy) - Mateusz 
+    - [3.3. Analiza top-down](#33-analiza-top-down)
+        - [3.3.1. Analiza dla Podsystemu 1.](#331-analiza-dla-podsystemu-1) - Mateusz
+        - [3.3.2. Analiza dla Podsystemu 2.](#332-analiza-dla-podsystemu-2) - Adam
+        - [3.3.3. Analiza dla Podsystemu 3.](#333-analiza-dla-podsystemu-3) - Kacper
+        - [3.3.4. Analiza dla Podsystemu 4.](#334-analiza-dla-podsystemu-4) - Kamil
+        - [3.3.5. Analiza dla Podsystemu 5.](#335-analiza-dla-podsystemu-5) - Wspólnie
+- [4. Słownik danych](#4-słownik-danych) - Głównie Kacper / Wspólnie
+- [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie) - Adam
+- [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej) - Kacper
+- [7. Interfejsy użytkownika (Ekrany)](#7-interfejsy-użytkownika-ekrany) - Wspólnie
+- [8. Weryfikacja wytworzonych artefaktów i koncepcji systemu](#8-weryfikacja-wytworzonych-artefaktów-i-koncepcji-systemu)
+    - [8.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#81-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu) - Kacper
+    - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa) - Wspólnie
+    - [8.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd) - Mateusz
+    - [8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu) - Adam
+- [9. Architektura Systemu](#9-architektura-systemu)
+    - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu) - Kamil
+    - [9.2. Architektura Podsystemów](#92-architektura-podsystemów) - Kamil
+- [10. Podsumowanie](#10-podsumowanie) - Wspólnie
+    - [10.1. Założenia implementacyjne](#101-założenia-implementacyjne)
+    - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
+    - [10.3. Uwagi i wnioski końcowe](#103-uwagi-i-wnioski-końcowe)
+
+
+
+
+Dokumenty:
 - 1.Dane_dostawcy.docx - Mateusz
 - 2.Dane_fabryki.docx - Mateusz
 - 3.Wpis_towaru_w_katalogu.docx - Mateusz
@@ -3034,83 +3138,6 @@ Dokumenty:
 - 15.Instom_wydanie zewnetrzne.docx - Kamil
 - 16.Raport_z_akcji_marketingowych.doc - Adam
 - 17.Zamówienie_klienta.doc - Adam
-
-Wymagania niefunkcjonalne
-
-1. Wymagania produktowe:
-   1. użyteczności - Mateusz
-   1. sprawnościowe
-      1. efektywności - Mateusz
-      1. pamięci - Mateusz
-   1. niezawodności - Kacper
-   1. przenośności - Kacper
-
-1. Wymagania organizacyjne
-   1. dostawy - Kamil
-   1. implementacyjne - Kamil
-   1. standardów - Kacper
-
-1. Wymagania zewnętrzne: Wymagania zewnętrzne:
-   1. współpracy - Adam
-   1. etyczne - Adam
-   1. prawne - Kamil
-
-1. ochrony prywatności -Kamil
-1. wymagania zabezpieczeń - Adam
-
-
-Punkt 3. 
-Diagram Kontekstowy - Mateusz
-Diagram kontekstowy z podsystemami - Mateusz 
-
-Analiza Top-Down:
-Podsystem 1, Podsystem 5 - Mateusz
-
-
-4. Słownik pojęć dziedzinowych
-5. Diagram ERD - Adam
-
-(KAMIL)
-
-1.3.1.4 Obsługa magazynu (OA4)
-
-2.1.4 Obsługa Rejestr Magazynu (OA4)
-
-2.5.4 Obsługa rejestru magazynu (OA4)
-
-3.3 Analiza top-down - opisy
-
-7. Interfejsy uzytkownika (Ekrany)
-
-9.1 Architektura calego Systemu
-
-9.2 Architektura podsystemow
-
-/(KAMIL)
-
-
-
-ADAM:
-[1.2.1. Wywiad z zarządem w celu ustalenia przeznaczenia systemu](#121-wywiad-z-zarządem-w-celu-ustalenia-przeznaczenia-systemu)(Wywiad i raport z wywiadu)
-
-[2.2. Rejestry w systemie](#22-rejestry-w-systemie)
-
-[2.4.2. Obsługa zleceń zakupu (OA2)](#242-obsługa-zleceń-zakupu-oa2)
-
-[2.4.5. Analiza danych na potrzeby marketingowe (OA5)](#245-analiza-danych-na-potrzeby-marketingowe-oa5)
-
-[2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2)
-
-[2.5.5. Analiza danych na potrzeby marketingowe (OA5)](#255-analiza-danych-na-potrzeby-marketingowe-oa5)
-
-[2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)(Wymagania zewnętrzne: współpracy, etyczne. Wymagania bezpieczeństwa)
-
-[5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
-
-[8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
-
-[10. Podsumowanie](#10-podsumowanie)
-
 
 <div class="page">
 
@@ -3162,6 +3189,4 @@ Archiwum na moodle
 - [Rysunek 32. Architektura systemu](#rysunek-32-architektura-systemu)
 - [Rysunek 33. Architektura podsystemów](#rysunek-33-architektura-podsystemów)
 
-
 <div class="page">
-
