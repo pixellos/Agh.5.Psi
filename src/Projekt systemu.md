@@ -2927,6 +2927,33 @@ Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowali
 
 <div class="page">
 ​     
+    
+# Źródła:
+
+Materiały z wykładów:
+
+- Jakosc_06_01_2020-V8.ppt 
+- Opis dziedziny_OM_ZOS-przyklad.pdf 
+- Opis_dziedziny_OM_ZOS-Przyklad-V4_27-10-2019-NST.pdf
+- OpisWymagan_UseCases_UCDiagrams-upgraded.pdf
+- PSI_2-SAD_Modelowanie_przeplywow_12-2019-V44.pdf
+- TEST_CASE-VP_flowofeventstestcase.pdf
+- UML_Activity_Diagrams-11_2019.pdf
+- Wymagania_niefunkcjonalne-11_2019.pdf
+- Zalecenia- Moodle-12-10-2019.pdf
+
+
+Narzędzia:
+
+- Balsamiq - projektowanie interface'ów
+- DrawIO - szkice diagramów
+- Git - synchronizacja wyników prac
+- Google Hangout - synchronizacja pomiędzy członkami grupy
+- PlantUML - diagramy
+- Typora - edycja pomocniczych plików
+- Visual Paradigm - diagramy
+- VisualStudioCode - edycja pomocniczych plików
+
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
