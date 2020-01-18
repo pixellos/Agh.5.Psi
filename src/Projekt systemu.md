@@ -2861,7 +2861,6 @@ Po przeanalizowaniu ilości strumieni danych wchodzących i wychodzących do dia
 Zgodnie z zasadami tworzenia diagramów ilość strumieni między poszczególnymi poziomami powinna się równoważyć (co najwyżej niektóre strumienie danych na wyższych poziomach mogą być konglomeratem)
 W tym celu przeanalizowaliśmy związki zapiane wcześniej w OA i UseCase, wprowadziliśmy zmiany w diagramach w sekcji analizy Top-Down
 
-<div class="page">
 
 ## 8.4 Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu
 
@@ -2878,6 +2877,8 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 ## 9.1 Architektura całego Systemu
 ![](./diagrams/images/Architektura_system.jpg)
 ##### _Rysunek 32. Architektura systemu_
+
+<div class="page">
 
 ## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
@@ -2940,6 +2941,8 @@ Baza danych: SQLServer
 
 Interfejsy użytkownika: React.js
 
+<div class="page">
+
 ## 10.2 Weryfikacja całości projektu systemu
 
 Po przeanalizowaniu całości projektu uznaliśmy, że system zaprojektowano poprawnie. Przypadki użycia i funkcje systemu pozwalają na usprawnianie procesów biznesowych firmy. Cele firmy takie jak:
@@ -2991,10 +2994,11 @@ Narzędzia:
 - Git - synchronizacja wyników prac
 - Google Hangout - synchronizacja pomiędzy członkami grupy
 - PlantUML - diagramy
-- Typora - edycja pomocniczych plików
+- Typora - edycja plików projektu
 - Visual Paradigm - diagramy
-- VisualStudioCode - edycja pomocniczych plików
+- VisualStudioCode - edycja plików projektu
 
+<div class="page">
 
 # Załącznik A: Słownik pojęć dziedzinowych:
 
@@ -3061,6 +3065,7 @@ Treść Załącznika w osobnym archiwum o nazwie Załącznik B:
 
 # Załącznik C:
 
+## Podsumowanie
 Raport z podziału pracy w zespole i realizacji ( z odniesieniem do punktów dokumentacji oraz podsumowująca ocena procentowa wkładu indywidualnego)
 
 Procentowo:
@@ -3070,6 +3075,7 @@ Kacper Kwapisz: 25%
 Kamil Gliński: 25%
 
 Przygotowanie i skład - Mateusz
+## Według spisu treści
 
 
 - [1. Sformułowanie zadania projektowego](#1-sformułowanie-zadania-projektowego)
@@ -3156,9 +3162,9 @@ Przygotowanie i skład - Mateusz
     - [10.3. Uwagi i wnioski końcowe](#103-uwagi-i-wnioski-końcowe)
 
 
+<div class="page">
 
-
-Dokumenty:
+## Dokumenty:
 - 1.Dane_dostawcy.docx - Mateusz
 - 2.Dane_fabryki.docx - Mateusz
 - 3.Wpis_towaru_w_katalogu.docx - Mateusz
