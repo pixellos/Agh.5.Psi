@@ -90,59 +90,53 @@ Spis Treści
         - [3.3.1. Analiza dla Podsystemu 1.](#331-analiza-dla-podsystemu-1)
         - [3.3.2. Analiza dla Podsystemu 2.](#332-analiza-dla-podsystemu-2)
         - [3.3.3. Analiza dla Podsystemu 3.](#333-analiza-dla-podsystemu-3)
-- [4. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)](#4-analiza-funkcjonalna-systemu-przy-pomocy-przepływów-danych--i-proces-dekompozycji)
-    - [4.1. Diagram kontekstowy (DK)](#41-diagram-kontekstowy-dk)
-    - [4.2. Rozwinięty diagram kontekstowy](#42-rozwinięty-diagram-kontekstowy)
-    - [4.3. Analiza top-down](#43-analiza-top-down)
-        - [4.3.1. Analiza dla Podsystemu 1.](#431-analiza-dla-podsystemu-1)
-        - [4.3.2. Analiza dla Podsystemu 2.](#432-analiza-dla-podsystemu-2)
-        - [4.3.3. Analiza dla Podsystemu 3.](#433-analiza-dla-podsystemu-3)
-        - [4.3.4. Analiza dla Podsystemu 4.](#434-analiza-dla-podsystemu-4)
-        - [4.3.5. Analiza dla Podsystemu 5.](#435-analiza-dla-podsystemu-5)
-- [5. Słownik danych](#5-słownik-danych)
-    - [5.1. Obiekty zewnętrzne](#51-obiekty-zewnętrzne)
-    - [5.2. Magazyny danych](#52-magazyny-danych)
-    - [5.3. Strumienie danych](#53-strumienie-danych)
-- [6. Analiza struktur danych przechowywanych w systemie](#6-analiza-struktur-danych-przechowywanych-w-systemie)
-- [7. Diagram maszyny stanowej](#7-diagram-maszyny-stanowej)
-- [8. Interfejsy użytkownika (Ekrany)](#8-interfejsy-użytkownika-ekrany)
-- [9. Weryfikacja wytworzonych artefaktów i koncepcji systemu](#9-weryfikacja-wytworzonych-artefaktów-i-koncepcji-systemu)
-    - [9.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#91-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu)
-    - [9.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#92-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa)
-    - [9.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#93-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd)
-    - [9.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#94-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
-- [10. Architektura Systemu](#10-architektura-systemu)
-    - [10.1. Architektura całego Systemu](#101-architektura-całego-systemu)
-    - [10.2. Architektura Podsystemów](#102-architektura-podsystemów)
-    - [10.3. Wewnętrzna architektura (modułowa) poszczególnych podsystemów](#103-wewnętrzna-architektura-modułowa-poszczególnych-podsystemów)
-        - [10.3.1. Diagram komponentu PS1](#1031-diagram-komponentu-ps1)
-        - [10.3.2. Diagram komponentu PS2](#1032-diagram-komponentu-ps2)
-        - [10.3.3. Diagram komponentu PS3](#1033-diagram-komponentu-ps3)
-        - [10.3.4. Diagram komponentu PS4](#1034-diagram-komponentu-ps4)
-        - [10.3.5. Diagram komponentu PS5](#1035-diagram-komponentu-ps5)
-        - [10.3.6. Diagram komponentu Repozytorium Danych](#1036-diagram-komponentu-repozytorium-danych)
-- [11. Podsumowanie](#11-podsumowanie)
-    - [11.1. Założenia implementacyjne](#111-założenia-implementacyjne)
-    - [11.2. Weryfikacja całości projektu systemu](#112-weryfikacja-całości-projektu-systemu)
-    - [11.3. Uwagi i wnioski końcowe](#113-uwagi-i-wnioski-końcowe)
-- [12. Źródła:](#12-źródła)
-- [13. Załącznik A: Słownik pojęć dziedzinowych:](#13-załącznik-a-słownik-pojęć-dziedzinowych)
-    - [13.1. A](#131-a)
-    - [13.2. F](#132-f)
-    - [13.3. I](#133-i)
-    - [13.4. K](#134-k)
-    - [13.5. P](#135-p)
-    - [13.6. R](#136-r)
-    - [13.7. S](#137-s)
-    - [13.8. Z](#138-z)
-- [14. Załącznik B: Wzory dokumentów](#14-załącznik-b-wzory-dokumentów)
-- [15. Załącznik C:](#15-załącznik-c)
-    - [15.1. Podsumowanie](#151-podsumowanie)
-    - [15.2. Według spisu treści](#152-według-spisu-treści)
-    - [15.3. Dokumenty:](#153-dokumenty)
-- [16. Załącznik D. Recenzja dokumentacji projektowej wskazanego Zespołu](#16-załącznik-d-recenzja-dokumentacji-projektowej-wskazanego-zespołu)
-- [17. Załącznik E. Na Moodle: kompletna dokumentacja w .pdf ; źródłowa wersja dokumentacji i rysunków, prezentacja w .ppt, recenzja, ew. inne materiały źródłowe)](#17-załącznik-e-na-moodle-kompletna-dokumentacja-w-pdf--źródłowa-wersja-dokumentacji-i-rysunków-prezentacja-w-ppt-recenzja-ew-inne-materiały-źródłowe)
-- [18. Załącznik F: Spis rysunków](#18-załącznik-f-spis-rysunków)
+        - [3.3.4. Analiza dla Podsystemu 4.](#334-analiza-dla-podsystemu-4)
+        - [3.3.5. Analiza dla Podsystemu 5.](#335-analiza-dla-podsystemu-5)
+- [4. Słownik danych](#4-słownik-danych)
+    - [4.1. Obiekty zewnętrzne](#41-obiekty-zewnętrzne)
+    - [4.2. Magazyny danych](#42-magazyny-danych)
+    - [4.3. Strumienie danych](#43-strumienie-danych)
+- [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
+- [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
+- [7. Interfejsy użytkownika (Ekrany)](#7-interfejsy-użytkownika-ekrany)
+- [8. Weryfikacja wytworzonych artefaktów i koncepcji systemu](#8-weryfikacja-wytworzonych-artefaktów-i-koncepcji-systemu)
+    - [8.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#81-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu)
+    - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa)
+    - [8.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd)
+    - [8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
+- [9. Architektura Systemu](#9-architektura-systemu)
+    - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
+    - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
+    - [9.3. Wewnętrzna architektura (modułowa) poszczególnych podsystemów](#93-wewnętrzna-architektura-modułowa-poszczególnych-podsystemów)
+        - [9.3.1. Diagram komponentu PS1](#931-diagram-komponentu-ps1)
+        - [9.3.2. Diagram komponentu PS2](#932-diagram-komponentu-ps2)
+        - [9.3.3. Diagram komponentu PS3](#933-diagram-komponentu-ps3)
+        - [9.3.4. Diagram komponentu PS4](#934-diagram-komponentu-ps4)
+        - [9.3.5. Diagram komponentu PS5](#935-diagram-komponentu-ps5)
+        - [9.3.6. Diagram komponentu Repozytorium Danych](#936-diagram-komponentu-repozytorium-danych)
+        - [9.3.7. Deployment diagram](#937-deployment-diagram)
+- [10. Podsumowanie](#10-podsumowanie)
+    - [10.1. Założenia implementacyjne](#101-założenia-implementacyjne)
+    - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
+    - [10.3. Uwagi i wnioski końcowe](#103-uwagi-i-wnioski-końcowe)
+- [11. Źródła:](#11-źródła)
+- [12. Załącznik A: Słownik pojęć dziedzinowych:](#12-załącznik-a-słownik-pojęć-dziedzinowych)
+    - [12.1. A](#121-a)
+    - [12.2. F](#122-f)
+    - [12.3. I](#123-i)
+    - [12.4. K](#124-k)
+    - [12.5. P](#125-p)
+    - [12.6. R](#126-r)
+    - [12.7. S](#127-s)
+    - [12.8. Z](#128-z)
+- [13. Załącznik B: Wzory dokumentów](#13-załącznik-b-wzory-dokumentów)
+- [14. Załącznik C:](#14-załącznik-c)
+    - [14.1. Podsumowanie](#141-podsumowanie)
+    - [14.2. Według spisu treści](#142-według-spisu-treści)
+    - [14.3. Dokumenty:](#143-dokumenty)
+- [15. Załącznik D. Recenzja dokumentacji projektowej wskazanego Zespołu](#15-załącznik-d-recenzja-dokumentacji-projektowej-wskazanego-zespołu)
+- [16. Załącznik E. Na Moodle: kompletna dokumentacja w .pdf ; źródłowa wersja dokumentacji i rysunków, prezentacja w .ppt, recenzja, ew. inne materiały źródłowe)](#16-załącznik-e-na-moodle-kompletna-dokumentacja-w-pdf--źródłowa-wersja-dokumentacji-i-rysunków-prezentacja-w-ppt-recenzja-ew-inne-materiały-źródłowe)
+- [17. Załącznik F: Spis rysunków](#17-załącznik-f-spis-rysunków)
 
 <!-- /TOC -->
 
@@ -2091,12 +2085,12 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 ## 3.1. Diagram kontekstowy (DK)
 ![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
-##### _Rysunek 17. Diagram kontekstowy_
+##### _Rysunek 19. Diagram kontekstowy_
 <div class="page">
 
 ## 3.2 Rozwinięty diagram kontekstowy
 ![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy.jpg)
-##### _Rysunek 18. Diagram Podsystemów_
+##### _Rysunek 20. Diagram Podsystemów_
 
 
 <div class="page">
@@ -2106,7 +2100,7 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 ### 3.3.1 Analiza dla Podsystemu 1.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps1.jpg)
-##### _Rysunek 19. Diagram kontekstowy dla PS1_
+##### _Rysunek 21. Diagram kontekstowy dla PS1_
 
 ***
 Nazwa funkcji: 1.1.1 Przetwórz dostawcę
@@ -2213,7 +2207,7 @@ Uwagi: Czasami następuje potrzeba zaktualizowania towarów w celu aktualizacji 
 ### 3.3.2 Analiza dla Podsystemu 2.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps2.jpg)
-##### _Rysunek 20. Diagram podsystemu dla PS2_
+##### _Rysunek 22. Diagram podsystemu dla PS2_
 
 ***
 Nazwa funkcji: 1.2.1 Przetwórz zlecenie zakupu
@@ -2314,312 +2308,7 @@ Uwagi: Zatwierdza stworzoną wczezśniej ofertę
 ### 3.3.3 Analiza dla Podsystemu 3.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps3.jpg)
-##### _Rysunek 21. Diagram podsystemu dla PS3_
-
-***
-Nazwa funkcji: 1.3.1 Przyjęcie reklamacji
-
-Opis: Funkcja służąca do przyjmowania reklamacji
-
-Dane wejściowe: Formularz reklamacji
-
-Źródło danych wejściowych: `Konsultant`
-
-Dane wyjściowe: Uporządkowane dane reklamacji
-
-Przeznaczenie: Służy do przyjmowania reklamacji
-
-Czego wymaga: Kontaktu z konsultantem
-
-Warunek początkowy: Potrzeba zgłoszenia reklamacji
-
-Warunek końcowy: Utworzona reklamacja
-
-Pseudokod:
-```
-Posiadając dane reklamacji
-Sprawdź, czy dane zostały wprowadzone prawidłowo
-Jeżeli tak, wprowadź dane
-Jeżeli nie, wstrzymaj się
-Zapisz reklamacje w rejestrze
-```
-
-Efekty uboczne: -
-
-Uwagi: Firma jest zobowiązana do pośredniczenia w reklamacji przez prawo UE
-***
-
-Nazwa funkcji: 1.3.2 Realizacja reklamacji
-
-Opis: Funkcja służąca do realizacji reklamacji
-
-Dane wejściowe: Utworzona reklamacja
-
-Źródło danych wejściowych: `Konsultant`
-
-Dane wyjściowe: Zmiana statusu reklamacji
-
-Przeznaczenie: Służy do realizacji reklamacji
-
-Czego wymaga: Kontaktu z konsultantem
-
-Warunek początkowy: Potrzeba zgłoszenia reklamacj
-  - **Cecha:** Interakcje są prowadzone za pomocą protokołu nie starszego niż `TLS1.2`
-  - **Miara:** Potwierdzenie niewspierania innych protokołów
-
-- **Wyciek wrażliwych danych**
-  - **Cecha:** Aplikacja nie wspiera przetrzymywania wrażliwych danych w pamięci podręcznej przeglądarki
-  - **Miara:** ResponseHeader {Cache-Control: no-store}
-
-
-<div class="page">
-
-# 3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)
-
-- Cel systemu:
-   Usprawnienie pracy w zakresie zarządzania `zleceniami zakupu`, `zamówieniami`, stanem magazynowym, kontaktem z `klientami`, tworzeniem raportów dla zarządu i prowadzeniem historii kontaktu z klientami
-
-- Zdarzenia (Lista zdarzeń):
-   - Utworzenie zamówienia u dostawcy i otrzymanie informacji o dostawie
-   - Poinformowanie klienta o dostępnych towarach odpowiadających mu i doprecyzowanie informacji lub przyjęcie oferty
-   - Wysyłanie materiałów promocyjnych do `klientów`
-   - Wystawianie `Raportów` dla Zarządu firmy
-   - Sprawdzenie aktualnego stanu towaru w magazynie i razie potrzeby aktualizacja do stanu obecnego
-   - Wysyłanie dokumentów do księgowości zewnętrznej
-   - Wprowadzanie dokumentów do systemu przez konsultanta
-
-- Uwagi
-   - Wysyłane dokumenty - różne
-   - Wprowadzane dokumenty przez konsultanta - różne
-
-<div class="page">
-
-## 3.1. Diagram kontekstowy (DK)
-![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
-##### _Rysunek 22. Diagram kontekstowy_
-<div class="page">
-
-## 3.2 Rozwinięty diagram kontekstowy
-![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy.jpg)
-##### _Rysunek 23. Diagram Podsystemów_
-
-
-<div class="page">
-
-## 3.3 Analiza top-down
-
-### 3.3.1 Analiza dla Podsystemu 1.
-
-![Diagram kontekstowy](./diagrams/images/DF/ps1.jpg)
-##### _Rysunek 24. Diagram kontekstowy dla PS1_
-
-***
-Nazwa funkcji: 1.1.1 Przetwórz dostawcę
-
-Opis: Funkcja służąca do przetworzenia otrzymanych danych dostawcy
-
-Dane wejściowe: Wpis Dostawcy
-
-Źródło danych wejściowych: `Klient` (Przez `konsultanta`)
-
-Dane wyjściowe: Uporządkowane dane dostawcy
-
-Przeznaczenie: Służy do aktualizacji danych dostawcy
-
-Czego wymaga: Kontaktu z dostawcą
-
-Warunek początkowy: Dane dostawcy się zmieniły i dostawca nas o tym powiadomił
-
-Warunek końcowy: Dane dostawcy zostały zaktualizowane w rejestrze
-
-Pseudokod:
-```
-Posiadając dane klienta
-Sprawdź, czy firma o numerze NIP istnieje w rejestrze
-Jeżeli tak, nałóż zmiany
-Jeżeli nie, wygeneruj id i stwórz wpis
-Zapisz wpis w rejestrze
-
-```
-
-Efekty uboczne: Dokumenty sprzedażowe, które nie zostały zatwierdzone będą wyświetlane z nowymi danymi
-
-Uwagi: Dane dostawcy często się zmieniają
-***
-
-Nazwa funkcji: 1.1.2 Przetwórz zmiany w ofercie
-
-Opis: Funkcja służąca do przetworzenia zmian w ofercie
-
-Dane wejściowe: Formularz zmiany w ofercie
-
-Źródło danych wejściowych:  `konsultant'
-
-Dane wyjściowe: Uporządkowane dane oferty
-
-Przeznaczenie: Służy do aktualizacji danych oferty
-
-Czego wymaga: Kontaktu z konsultantem
-
-Warunek początkowy: Dane oferty uległy zmianie
-
-Warunek końcowy: Dane oferty zostały zaktualizowane w rejestrze
-
-Pseudokod:
-```
-Posiadając dane oferty
-Sprawdź, czy oferta istnieje w rejestrze
-Jeżeli tak, wprowadź zmiany
-Jeżeli nie, wygeneruj id i stwórz ofertę
-Zapisz ofertę w rejestrze
-
-```
-
-Efekty uboczne: Nadpisanie starej oferty z nowymi danymi
-
-Uwagi: Zmiany w ofercie następują często
-***
-
-Nazwa funkcji: 1.1.3 Przetwórz dostępne towary i brakujący stan
-
-Opis: Funkcja służąca do przetworzenia dostępnych towarów i braków
-
-Dane wejściowe: Rejestr magazynu
-
-Źródło danych wejściowych: `magazyn'
-
-Dane wyjściowe: Uporządkowane dane towarów
-
-Przeznaczenie: Służy do aktualizacji danych dostępnych towarów
-
-Czego wymaga: Kontaktu z magazynierem
-
-Warunek początkowy: Dane towarów uległy zmianie
-
-Warunek końcowy: Dane towarów zostały zaktualizowane w rejestrze
-
-Pseudokod:
-```
-Posiadając dane towarów
-Sprawdź, czy nastąpiła zmiana w magazynie
-Jeżeli tak, wprowadź zmiany
-Jeżeli nie, wstrzymaj się
-Zapisz dane towarów w rejestrze
-
-```
-
-Efekty uboczne: Nadpisanie danych towarów
-
-Uwagi: Czasami następuje potrzeba zaktualizowania towarów w celu aktualizacji stanu systemu do naszego przetwarzania
-***
-
-<div class="page">
-
-### 3.3.2 Analiza dla Podsystemu 2.
-
-![Diagram kontekstowy](./diagrams/images/DF/ps2.jpg)
-##### _Rysunek 25. Diagram podsystemu dla PS2_
-
-***
-Nazwa funkcji: 1.2.1 Przetwórz zlecenie zakupu
-
-Opis: Funkcja służąca do przetworzenia zlecenia zakupu
-
-Dane wejściowe: Formularz zlecenia zakupu
-
-Źródło danych wejściowych:  `konsultant'
-
-Dane wyjściowe: Uporządkowane dane zakupu
-
-Przeznaczenie: Służy do tworzenia zlecenia zakupu
-
-Czego wymaga: Kontaktu z konsultantem
-
-Warunek początkowy: Potrzeba kupna produktu
-
-Warunek końcowy: Sfinalizowana transakcja kupna produktu
-
-Pseudokod:
-```
-Posiadając dane zlecenia zakupu
-Sprawdź, czy dane zostały wprowadzone prawidłowo
-Jeżeli tak, wprowadź dane
-Jeżeli nie, wstrzymaj się
-Zleć zakup
-```
-
-Efekty uboczne: -
-
-Uwagi: Przetworzenie zlecenia zakupu jest niezbędne do jego późniejszego utworzenia
-***
-
-Nazwa funkcji: 1.2.2 Przygotuj ofertę
-
-Opis: Funkcja służąca do Tworzenia oferty
-
-Dane wejściowe: Formularz oferty
-
-Źródło danych wejściowych: `Konsultant`
-
-Dane wyjściowe: Uporządkowane dane oferty
-
-Przeznaczenie: Służy do utworzenia danych oferty
-
-Czego wymaga: Kontaktu z konsultantem
-
-Warunek początkowy: Potrzeba stworzenia oferty
-
-Warunek końcowy: Utworzona oferta
-
-Pseudokod:
-```
-Posiadając dane oferty
-Sprawdź, czy dane zostały wprowadzone prawidłowo
-Jeżeli tak, wprowadź dane
-Jeżeli nie, wstrzymaj się
-Zapisz ofertę w rejestrze
-
-```
-
-Efekty uboczne: -
-
-Uwagi: Przygotowanie oferty jest niezwykle ważne do późniejszej sprzedaży
-***
-
-Nazwa funkcji: 1.2.3 Potwierdź ofertę
-
-Opis: Funkcja służąca do zatwierdzania oferty
-
-Dane wejściowe: Formularz oferty
-
-Źródło danych wejściowych: `Konsultant`
-
-Dane wyjściowe: Uporządkowane dane oferty
-
-Przeznaczenie: Służy do zatwierdzania danych oferty
-
-Czego wymaga: Kontaktu z konsultantem
-
-Warunek początkowy: Utworzona oferta
-
-Warunek końcowy: Zatwierdzona oferta
-
-Pseudokod:
-```
-Potwierdz ofertę
-```
-
-Efekty uboczne: -
-
-Uwagi: Zatwierdza stworzoną wczezśniej ofertę
-***
-
-<div class="page">
-
-### 3.3.3 Analiza dla Podsystemu 3.
-
-![Diagram kontekstowy](./diagrams/images/DF/ps3.jpg)
-##### _Rysunek 26. Diagram podsystemu dla PS3_
+##### _Rysunek 23. Diagram podsystemu dla PS3_
 
 ***
 Nazwa funkcji: 1.3.1 Przyjęcie reklamacji
@@ -2691,7 +2380,7 @@ Uwagi: Proces pośredniczenia w realizacji reklamacji
 ### 3.3.4 Analiza dla Podsystemu 4.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps4.jpg)
-##### _Rysunek 27. Diagram podsystemu dla PS4_
+##### _Rysunek 24. Diagram podsystemu dla PS4_
 
 
 Nazwa funkcji: 1.4.1 Przyjecie na magazyn partii towaru
@@ -2764,7 +2453,7 @@ Uwagi: brak
 ### 3.3.5 Analiza dla Podsystemu 5.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps5.jpg)
-##### _Rysunek 28. Diagram podsystemu dla PS5_
+##### _Rysunek 25. Diagram podsystemu dla PS5_
 
 
 Nazwa funkcji: 1.6.1 Przetwórz dokumenty finansowe
@@ -2953,7 +2642,7 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
 Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na stworzenie poniższego diagramu ERD, który spełnia przeanalizowane wymagania.
 
 ![](./diagrams/images/ERD.jpg)
-##### _Rysunek 29. Diagram ERD_
+##### _Rysunek 26. Diagram ERD_
 <div class="page">
 
 
@@ -3115,38 +2804,38 @@ Celem punktu jest przedstawienie zachowani systemu w czasie.
 
 
 ![](./diagrams/images/Diagram_maszyny_stanow.jpg)
-##### _Rysunek 30. Diagram SMD_
+##### _Rysunek 27. Diagram SMD_
 
 <div class="page">
 
 # 7. Interfejsy użytkownika (Ekrany)
 
 ![](./diagrams/images/Drzewo_Interfejsow.jpg)
-##### _Rysunek 31. Drzewo interfejsów użytkownika_
+##### _Rysunek 28. Drzewo interfejsów użytkownika_
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
-##### _Rysunek 32. Interfejs użytkownika Obsługi dostawców_
+##### _Rysunek 29. Interfejs użytkownika Obsługi dostawców_
 <div class="page">
 
 ![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
-##### _Rysunek 33. Interfejs użytkownika Obsługi zlecenia zakupu_
+##### _Rysunek 30. Interfejs użytkownika Obsługi zlecenia zakupu_
 
 <div class="page">
 
 ![](./diagrams/images/OA_3_Obsługa_reklamacji.jpg)
-##### _Rysunek 34. Interfejs użytkownika Obsługi reklamacji_
+##### _Rysunek 31. Interfejs użytkownika Obsługi reklamacji_
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_4_Rejestr_Obsluga_Magazynu.jpg)
-##### _Rysunek 35. Interfejs użytkownika Obsługi magazynu_
+##### _Rysunek 32. Interfejs użytkownika Obsługi magazynu_
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_6_Analiza_danych.jpg)
-##### _Rysunek 36. Interfejs użytkownika Analizy danych_
+##### _Rysunek 33. Interfejs użytkownika Analizy danych_
 
 <div class="page">
 
@@ -3199,13 +2888,13 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 
 ## 9.1 Architektura całego Systemu
 ![](./diagrams/images/Architektura_system.jpg)
-##### _Rysunek 37. Architektura systemu_
+##### _Rysunek 34. Architektura systemu_
 
 <div class="page">
 
 ## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
-##### _Rysunek 38. Architektura podsystemów_
+##### _Rysunek 35. Architektura podsystemów_
 
 <div class="page">
 
@@ -3213,45 +2902,45 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 
 ### 9.3.1 Diagram komponentu PS1
 ![](./diagrams/images/podsystem-oa1.jpg)
-##### _Rysunek 39. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
+##### _Rysunek 36. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 
 <div class="page">
 
 ### 9.3.2 Diagram komponentu PS2
 ![](./diagrams/images/podsystem-oa2.jpg)
-##### _Rysunek 40. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
+##### _Rysunek 37. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 <div class="page">
 
 ### 9.3.3 Diagram komponentu PS3
 ![](./diagrams/images/podsystem-oa3.jpg)
-##### _Rysunek 41. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
+##### _Rysunek 38. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 <div class="page">
 
 ### 9.3.4 Diagram komponentu PS4
 ![](./diagrams/images/podsystem-oa4.jpg)
-##### _Rysunek 42. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
+##### _Rysunek 39. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 <div class="page">  
 
 ### 9.3.5 Diagram komponentu PS5
 ![](./diagrams/images/podsystem-oa5.jpg)
-##### _Rysunek 43. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
+##### _Rysunek 40. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 <div class="page">
 
 ### 9.3.6 Diagram komponentu Repozytorium Danych
 ![](./diagrams/images/podsystem-repo.jpg)
-##### _Rysunek 44. Rysunek przedstawia generyczny komponent, który enkapsuluje operacje na bazie danych_
+##### _Rysunek 41. Rysunek przedstawia generyczny komponent, który enkapsuluje operacje na bazie danych_
 
 <div class="page">
 
 
 ### 9.3.7 Deployment diagram
 ![](./diagrams/images/deployment_diagram.jpg)
-##### _Rysunek 45. Rysunek przedstawia deployment diagram dla systemu_
+##### _Rysunek 42. Rysunek przedstawia deployment diagram dla systemu_
 
 <div class="page">
 
@@ -3547,33 +3236,29 @@ Archiwum na moodle
 - [Rysunek 14. Diagram aktywności obsługi reklamacji](#rysunek-14-diagram-aktywności-obsługi-reklamacji)
 - [Rysunek 15. Diagram aktywności obsługi rejestru magazynu](#rysunek-15-diagram-aktywności-obsługi-rejestru-magazynu)
 - [Rysunek 16. Diagram aktywności analizy danych](#rysunek-16-diagram-aktywności-analizy-danych)
-- [Rysunek 17. Diagram kontekstowy](#rysunek-17-diagram-kontekstowy)
-- [Rysunek 18. Diagram Podsystemów](#rysunek-18-diagram-podsystemów)
-- [Rysunek 19. Diagram kontekstowy dla PS1](#rysunek-19-diagram-kontekstowy-dla-ps1)
-- [Rysunek 20. Diagram podsystemu dla PS2](#rysunek-20-diagram-podsystemu-dla-ps2)
-- [Rysunek 21. Diagram podsystemu dla PS3](#rysunek-21-diagram-podsystemu-dla-ps3)
-- [Rysunek 22. Diagram kontekstowy](#rysunek-22-diagram-kontekstowy)
-- [Rysunek 23. Diagram Podsystemów](#rysunek-23-diagram-podsystemów)
-- [Rysunek 24. Diagram kontekstowy dla PS1](#rysunek-24-diagram-kontekstowy-dla-ps1)
-- [Rysunek 25. Diagram podsystemu dla PS2](#rysunek-25-diagram-podsystemu-dla-ps2)
-- [Rysunek 26. Diagram podsystemu dla PS3](#rysunek-26-diagram-podsystemu-dla-ps3)
-- [Rysunek 27. Diagram podsystemu dla PS4](#rysunek-27-diagram-podsystemu-dla-ps4)
-- [Rysunek 28. Diagram podsystemu dla PS5](#rysunek-28-diagram-podsystemu-dla-ps5)
-- [Rysunek 29. Diagram ERD](#rysunek-29-diagram-erd)
-- [Rysunek 30. Diagram SMD](#rysunek-30-diagram-smd)
-- [Rysunek 31. Drzewo interfejsów użytkownika](#rysunek-31-drzewo-interfejsów-użytkownika)
-- [Rysunek 32. Interfejs użytkownika Obsługi dostawców](#rysunek-32-interfejs-użytkownika-obsługi-dostawców)
-- [Rysunek 33. Interfejs użytkownika Obsługi zlecenia zakupu](#rysunek-33-interfejs-użytkownika-obsługi-zlecenia-zakupu)
-- [Rysunek 34. Interfejs użytkownika Obsługi reklamacji](#rysunek-34-interfejs-użytkownika-obsługi-reklamacji)
-- [Rysunek 35. Interfejs użytkownika Obsługi magazynu](#rysunek-35-interfejs-użytkownika-obsługi-magazynu)
-- [Rysunek 36. Interfejs użytkownika Analizy danych](#rysunek-36-interfejs-użytkownika-analizy-danych)
-- [Rysunek 37. Architektura systemu](#rysunek-37-architektura-systemu)
-- [Rysunek 38. Architektura podsystemów](#rysunek-38-architektura-podsystemów)
+- [Rysunek 19. Diagram kontekstowy](#rysunek-19-diagram-kontekstowy)
+- [Rysunek 20. Diagram Podsystemów](#rysunek-20-diagram-podsystemów)
+- [Rysunek 21. Diagram kontekstowy dla PS1](#rysunek-21-diagram-kontekstowy-dla-ps1)
+- [Rysunek 22. Diagram podsystemu dla PS2](#rysunek-22-diagram-podsystemu-dla-ps2)
+- [Rysunek 23. Diagram podsystemu dla PS3](#rysunek-23-diagram-podsystemu-dla-ps3)
+- [Rysunek 24. Diagram podsystemu dla PS4](#rysunek-24-diagram-podsystemu-dla-ps4)
+- [Rysunek 25. Diagram podsystemu dla PS5](#rysunek-25-diagram-podsystemu-dla-ps5)
+- [Rysunek 26. Diagram ERD](#rysunek-26-diagram-erd)
+- [Rysunek 27. Diagram SMD](#rysunek-27-diagram-smd)
+- [Rysunek 28. Drzewo interfejsów użytkownika](#rysunek-28-drzewo-interfejsów-użytkownika)
+- [Rysunek 29. Interfejs użytkownika Obsługi dostawców](#rysunek-29-interfejs-użytkownika-obsługi-dostawców)
+- [Rysunek 30. Interfejs użytkownika Obsługi zlecenia zakupu](#rysunek-30-interfejs-użytkownika-obsługi-zlecenia-zakupu)
+- [Rysunek 31. Interfejs użytkownika Obsługi reklamacji](#rysunek-31-interfejs-użytkownika-obsługi-reklamacji)
+- [Rysunek 32. Interfejs użytkownika Obsługi magazynu](#rysunek-32-interfejs-użytkownika-obsługi-magazynu)
+- [Rysunek 33. Interfejs użytkownika Analizy danych](#rysunek-33-interfejs-użytkownika-analizy-danych)
+- [Rysunek 34. Architektura systemu](#rysunek-34-architektura-systemu)
+- [Rysunek 35. Architektura podsystemów](#rysunek-35-architektura-podsystemów)
+- [Rysunek 36. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami](#rysunek-36-komponent-przedstawia-zależności-między-komponentem-obsługi-dostawców-a-interfejsami)
+- [Rysunek 37. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami](#rysunek-37-komponent-przedstawia-zależności-między-komponentem-obsługi-dostawców-a-interfejsami)
+- [Rysunek 38. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami](#rysunek-38-komponent-przedstawia-zależności-między-komponentem-obsługi-dostawców-a-interfejsami)
 - [Rysunek 39. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami](#rysunek-39-komponent-przedstawia-zależności-między-komponentem-obsługi-dostawców-a-interfejsami)
 - [Rysunek 40. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami](#rysunek-40-komponent-przedstawia-zależności-między-komponentem-obsługi-dostawców-a-interfejsami)
-- [Rysunek 41. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami](#rysunek-41-komponent-przedstawia-zależności-między-komponentem-obsługi-dostawców-a-interfejsami)
-- [Rysunek 42. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami](#rysunek-42-komponent-przedstawia-zależności-między-komponentem-obsługi-dostawców-a-interfejsami)
-- [Rysunek 43. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami](#rysunek-43-komponent-przedstawia-zależności-między-komponentem-obsługi-dostawców-a-interfejsami)
-- [Rysunek 44. Rysunek przedstawia generyczny komponent, który enkapsuluje operacje na bazie danych](#rysunek-44-rysunek-przedstawia-generyczny-komponent-który-enkapsuluje-operacje-na-bazie-danych)
+- [Rysunek 41. Rysunek przedstawia generyczny komponent, który enkapsuluje operacje na bazie danych](#rysunek-41-rysunek-przedstawia-generyczny-komponent-który-enkapsuluje-operacje-na-bazie-danych)
+- [Rysunek 42. Rysunek przedstawia deployment diagram dla systemu](#rysunek-42-rysunek-przedstawia-deployment-diagram-dla-systemu)
 
 <div class="page">
