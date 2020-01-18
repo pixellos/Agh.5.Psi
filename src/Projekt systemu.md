@@ -191,7 +191,7 @@ Jeżeli produkt jest wysłany do dostawcy na podstawie reklamacji, i jest to bez
 
 ### 1.1.5 Cele firmy
 
-Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczekiwaniami. Firma chce kontynuować ekspansję na Polskim rynku, a w tym celu jest potrzeba:
+Celem firmy jest doskonalenie usług, zgodnie z potrzebami klientów i ich oczekiwaniami. Firma chce kontynuować ekspansję na polskim rynku, a w tym celu jest potrzeba:
 
 - Pozyskania nowych klientów
 
@@ -467,7 +467,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
    1. Wystawienie dokumentów (PZ WZ MM PW RW)
 
-      Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapenić wymagane dokumenty w prcedurze`.
+      Jako `magazynier` chce mieć możliwość `wystawiania dokumentów` aby `zapewnić wymagane dokumenty w procedurze`.
 
 
    1. Zarejestrowanie produktu
@@ -484,7 +484,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
    1. Pobranie szczegółowych danych o produkcie
 
-      Jako `magazynier` chce mieć możliwość `pobrania informacji na temat produktow` aby `otrzymac informacje o aktualnym stanie magazynu`.
+      Jako `magazynier` chce mieć możliwość `pobrania informacji na temat produktów` aby `otrzymać informacje o aktualnym stanie magazynu`.
 
    1. Pobranie wszystkich dostępnych produktów
 
@@ -1222,7 +1222,7 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 
 **Cel przypadku użycia:** Rozładunek
 
-**Kontekst użycia:** Gdy dostawa bedzie gotowa do rozładunku Jako magazynier chce mieć możliwość rozładunku przesyłki aby zapełnić magazyn produktami.
+**Kontekst użycia:** Gdy dostawa będzie gotowa do rozładunku jako magazynier chce mieć możliwość rozładunku przesyłki, aby zapełnić magazyn produktami.
 
 **Zakres:** Obsługa magazynu
 
