@@ -3208,7 +3208,7 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 ##### _Rysunek 38. Architektura podsystemów_
 
 <div class="page">
-    
+
 ## 9.3 Wewnętrzna architektura (modułowa) poszczególnych podsystemów
 
 ### 9.3.1 Diagram komponentu PS1
@@ -3217,36 +3217,43 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 
 
 <div class="page">
-    
+
 ### 9.3.2 Diagram komponentu PS2
 ![](./diagrams/images/podsystem-oa2.jpg)
 ##### _Rysunek 40. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 <div class="page">
-    
+
 ### 9.3.3 Diagram komponentu PS3
 ![](./diagrams/images/podsystem-oa3.jpg)
 ##### _Rysunek 41. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 <div class="page">
-    
+
 ### 9.3.4 Diagram komponentu PS4
 ![](./diagrams/images/podsystem-oa4.jpg)
 ##### _Rysunek 42. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 <div class="page">  
-    
+
 ### 9.3.5 Diagram komponentu PS5
 ![](./diagrams/images/podsystem-oa5.jpg)
 ##### _Rysunek 43. Komponent przedstawia zależności między komponentem obsługi dostawców a interfejsami_
 
 <div class="page">
-   
+
 ### 9.3.6 Diagram komponentu Repozytorium Danych
 ![](./diagrams/images/podsystem-repo.jpg)
 ##### _Rysunek 44. Rysunek przedstawia generyczny komponent, który enkapsuluje operacje na bazie danych_
 
-<div class="page"> 
+<div class="page">
+
+
+### 9.3.7 Deployment diagram
+![](./diagrams/images/deployment_diagram.jpg)
+##### _Rysunek 45. Rysunek przedstawia deployment diagram dla systemu_
+
+<div class="page">
 
 
 # 10. Podsumowanie
@@ -3285,8 +3292,8 @@ Cel firmy:
 nie został pokryty w projekcie systemu, został natomiast zaproponowany jako obszar do usprawnienia jako jeden z kierunków dalszego rozwoju systemu.
 
 <div class="page">
-    
-    
+
+
 ## 10.3 Uwagi i wnioski końcowe
 
 Tworzenie projektu przebiegło sprawnie, ale nie da się ukryć, że pewne elementy i funkcje systemu, które na pierwszy rzut oka wydawały się proste, nie do końca takie były. Po licznych spotkaniach i burzach mózgów projekt posuwał się do przodu i tworzenie wymagań było coraz bardziej zbliżone to rzeczywistego procesu klienta. Niektóre nieścisłości zostały wychwycone dopiero w późniejszej fazie projektu (Szczegółowy opis w punkcie 8) co pozwoliło nam zrozumieć jak ważna jest poprawne zrozumienie potrzeb klienta oraz identyfikacja obszarów aktywności.
@@ -3296,13 +3303,13 @@ Po skończeniu projektu spojrzeliśmy na całość z innej strony i przygotowali
 
 <div class="page">
 ​     
-    
+
 # Źródła:
 
 Materiały z wykładów:
 
-- Jakosc_06_01_2020-V8.ppt 
-- Opis dziedziny_OM_ZOS-przyklad.pdf 
+- Jakosc_06_01_2020-V8.ppt
+- Opis dziedziny_OM_ZOS-przyklad.pdf
 - Opis_dziedziny_OM_ZOS-Przyklad-V4_27-10-2019-NST.pdf
 - OpisWymagan_UseCases_UCDiagrams-upgraded.pdf
 - PSI_2-SAD_Modelowanie_przeplywow_12-2019-V44.pdf
@@ -3451,7 +3458,7 @@ Przygotowanie i skład - Mateusz
             - [2.7.1.2. Sprawnościowe](#2712-sprawnościowe) - Mateusz
             - [2.7.1.3. Niezawodności](#2713-niezawodności) - Kacper
             - [2.7.1.4. Przenośności](#2714-przenośności) - Kacper
-        - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne) 
+        - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne)
             - [2.7.2.1. Dostawy](#2721-dostawy) - Kamil
             - [2.7.2.2. Implementacyjne](#2722-implementacyjne) - Kamil
             - [2.7.2.3. Standardów](#2723-standardów) - Kacper
@@ -3462,7 +3469,7 @@ Przygotowanie i skład - Mateusz
             - [2.7.3.4. Prawne - Wymagania zabezpieczeń](#2734-prawne---wymagania-zabezpieczeń) - Kamil
 - [3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)](#3-analiza-funkcjonalna-systemu-przy-pomocy-przepływów-danych--i-proces-dekompozycji)
     - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk) - Mateusz
-    - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy) - Mateusz 
+    - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy) - Mateusz
     - [3.3. Analiza top-down](#33-analiza-top-down)
         - [3.3.1. Analiza dla Podsystemu 1.](#331-analiza-dla-podsystemu-1) - Mateusz
         - [3.3.2. Analiza dla Podsystemu 2.](#332-analiza-dla-podsystemu-2) - Adam
