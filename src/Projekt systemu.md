@@ -38,7 +38,7 @@ Spis Treści
             - [1.3.1.2. Obsługa zleceń zakupu (OA2)](#1312-obsługa-zleceń-zakupu-oa2)
             - [1.3.1.3. Obsługa reklamacji (OA3)](#1313-obsługa-reklamacji-oa3)
             - [1.3.1.4. Obsługa magazynu (OA4)](#1314-obsługa-magazynu-oa4)
-            - [1.3.1.5. Analizy danych na potrzeby marketingowe (OA6)](#1315-analizy-danych-na-potrzeby-marketingowe-oa6)
+            - [1.3.1.5. Analizy danych na potrzeby marketingowe (OA5)](#1315-analizy-danych-na-potrzeby-marketingowe-oa5)
     - [1.4. Zwięzła nazwa problemu](#14-zwięzła-nazwa-problemu)
         - [1.4.1. Nazwa problemu](#141-nazwa-problemu)
         - [1.4.2. Nazwa kodowa projektu](#142-nazwa-kodowa-projektu)
@@ -86,12 +86,11 @@ Spis Treści
     - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk)
     - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy)
     - [3.3. Analiza top-down](#33-analiza-top-down)
-        - [3.3.1. Rozszerzony diagram kontekstowy z rejestrami danych](#331-rozszerzony-diagram-kontekstowy-z-rejestrami-danych)
-        - [3.3.2. Analiza dla Podsystemu 1.](#332-analiza-dla-podsystemu-1)
-        - [3.3.3. Analiza dla Podsystemu 2.](#333-analiza-dla-podsystemu-2)
-        - [3.3.4. Analiza dla Podsystemu 3.](#334-analiza-dla-podsystemu-3)
-        - [3.3.5. Analiza dla Podsystemu 4.](#335-analiza-dla-podsystemu-4)
-        - [3.3.6. Analiza dla Podsystemu 5.](#336-analiza-dla-podsystemu-5)
+        - [3.3.1. Analiza dla Podsystemu 1.](#331-analiza-dla-podsystemu-1)
+        - [3.3.2. Analiza dla Podsystemu 2.](#332-analiza-dla-podsystemu-2)
+        - [3.3.3. Analiza dla Podsystemu 3.](#333-analiza-dla-podsystemu-3)
+        - [3.3.4. Analiza dla Podsystemu 4.](#334-analiza-dla-podsystemu-4)
+        - [3.3.5. Analiza dla Podsystemu 5.](#335-analiza-dla-podsystemu-5)
 - [4. Słownik danych](#4-słownik-danych)
 - [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
 - [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
@@ -500,7 +499,7 @@ Obszar aktywności obsługi zamówień zawiera w sobie
 
 <div class="page">
 
-#### 1.3.1.6 Analizy danych na potrzeby marketingowe (OA6)
+#### 1.3.1.6 Analizy danych na potrzeby marketingowe (OA5)
 
 1. Statystyki powiązane z katalogiem produktowym
 
@@ -876,12 +875,13 @@ _Konsultant_ - Jest to w jego zakresu obowiązków
 _Konsultant_ - Jest to w jego zakresu obowiązków
 
 _Klient_ - Inicjuje proces
+<div class="page">
 
 
 ### 2.4.2 Obsługa zleceń zakupu (OA2)
 
 ![](./diagrams/images/OA2.jpg)
-##### Rysunek X. Diagram przypadków użycia obsługi zleceń zakupu
+##### _Rysunek 5. Diagram przypadków użycia obsługi zleceń zakupu_
 
 **Numer i nazwa przypadku użycia:** UC-2.1 - Zarządzanie rejestrami klienta
 
@@ -1096,10 +1096,12 @@ Konsultant - Wyszukuje produkty i dodaje je do oferty
 
 Konsultant - wyszukanie produktów
 
+<div class="page">
+
 ### 2.1.3 Obsługa reklamacji (OA3)
 ![](./diagrams/images/Obsluga_reklamacji.jpg)
 
-##### _Rysunek 5. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
+##### _Rysunek 6. Diagram przypadków użycia zgłoszenia reklamacji przez klienta_
 
 **Numer i nazwa przypadku użycia:** UC-3.1 - Zgłoszenie reklamacji przez klienta
 
@@ -1212,7 +1214,7 @@ _Pracownik_ - wprowadza zareklamowane produkty wraz z przyczyną reklamacji do r
 ### 2.1.4 Obsługa Rejestr Magazynu (OA4)
 
 ![](./diagrams/images/OA4_Zarzadzanie_rejestrem_magazynu.jpg)
-##### _Rysunek 6. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu_
+##### _Rysunek 7. Diagram przypadków użycia obsługi Obsługa Rejestr Magazynu_
 
 
 
@@ -1670,7 +1672,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 
 ![](./diagrams/images/OA6.jpg)
 
-##### _Rysunek 7. Statyki powiązane z katalogiem produktowym\_
+##### _Rysunek 8. Statyki powiązane z katalogiem produktowym_
 
 **Numer i nazwa przypadku użycia:** UC-6.1 - Generowanie raportu
 
@@ -1719,22 +1721,22 @@ Marketingowiec - inicjowanie stworzenia raportu
 
 ### 2.5.1 Obsługa zamówień (OA1)
 ![Diagram Aktywności obsługi zamówień](./diagrams/images/ad1.jpg)
-##### _Rysunek 8. Diagram aktywności obsługi zamówień
+##### _Rysunek 9. Diagram aktywności obsługi zamówień_
 
 <div class="page">
 
 ### 2.5.2 Obsługa zleceń zakupu (OA2)
 ![Diagram aktywności zarządzania rejestrami klientów](./diagrams/images/AD-OA2.1.jpg)
-##### _Rysunek 9. Diagram aktywności zarządzania rejestrami klientów
+##### _Rysunek 10. Diagram aktywności zarządzania rejestrami klientów_
 
 ![Diagram aktywności tworzenia oferty](./diagrams/images/AD-OA2.3.jpg)
-##### _Rysunek 10. Diagram aktywności tworzenia oferty
+##### _Rysunek 11. Diagram aktywności tworzenia oferty_
 
 ![Diagram aktywności zatwierdzania oferty](./diagrams/images/AD-OA2.4.jpg)
-##### _Rysunek 11. Diagram aktywności zatwierdzania oferty
+##### _Rysunek 12. Diagram aktywności zatwierdzania oferty_
 
 ![Diagram aktywności wyszukiwania i dodania prodktu](./diagrams/images/AD-OA2.5.jpg)
-##### _Rysunek 12. Diagram aktywności wyszukiwania i dodania produktu
+##### _Rysunek 13. Diagram aktywności wyszukiwania i dodania produktu_
 
 
 
@@ -1743,18 +1745,19 @@ Marketingowiec - inicjowanie stworzenia raportu
 ### 2.5.3 Obsługa reklamacji (OA3)
 
 ![Diagram Aktywności obsługi reklamacji](./diagrams/images/OA3_activity_diagram.jpg)
+##### _Rysunek 14. Diagram aktywności obsługi reklamacji_
 
 <div class="page">
 
 ### 2.5.4 Obsługa rejestru magazynu (OA4)
 ![Diagram Aktywności obsługi rejestru magazynu](./diagrams/images/AD_OA4.jpg)
-##### _Rysunek 13. Diagram aktywności obsługi rejestru magazynu
+##### _Rysunek 14. Diagram aktywności obsługi rejestru magazynu_
 
 <div class="page">
 
 ### 2.5.5 Analiza danych na potrzeby marketingowe (OA5)
 ![Diagram Aktywności analizy danych](./diagrams/images/AD-OA6.jpg)
-##### _Rysunek 14. Diagram aktywności analizy danych
+##### _Rysunek 15. Diagram aktywności analizy danych_
 
 <div class="page">
 
@@ -2084,26 +2087,22 @@ Wymagania wynikające z czynników zewnętrznych dla systemu i procesu jego twor
 
 ## 3.1. Diagram kontekstowy (DK)
 ![Diagram kontekstowy](./diagrams/images/DF/ContextDiagra.jpg)
-##### _Rysunek 15. Diagram kontekstowy
+##### _Rysunek 16. Diagram kontekstowy_
 <div class="page">
 
 ## 3.2 Rozwinięty diagram kontekstowy
 ![Diagram kontekstowy](./diagrams/images/DF/dk-podsystemy.jpg)
-##### _Rysunek 16. Diagram Podsystemów
+##### _Rysunek 17. Diagram Podsystemów_
 
 
 <div class="page">
-
 
 ## 3.3 Analiza top-down
 
-### 3.3.1 Rozszerzony diagram kontekstowy z rejestrami danych 
-<div class="page">
-
-### 3.3.2 Analiza dla Podsystemu 1.
+### 3.3.1 Analiza dla Podsystemu 1.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps1.jpg)
-##### _Rysunek 17. Diagram kontekstowy dla PS1
+##### _Rysunek 18. Diagram kontekstowy dla PS1_
 
 ***
 Nazwa funkcji: 1.1.1 Przetwórz dostawcę
@@ -2210,7 +2209,7 @@ Uwagi: (Uzasadnienie)
 ### 3.3.2 Analiza dla Podsystemu 2.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps2.jpg)
-##### _Rysunek 18. Diagram podystemu dla PS2
+##### _Rysunek 19. Diagram podystemu dla PS2_
 
 ***
 Nazwa funkcji: 1.2.1 Przetwórz zlecenie zakupu
@@ -2308,10 +2307,10 @@ Uwagi: (Uzasadnienie)
 
 <div class="page">
 
-### 3.3.2 Analiza dla Podsystemu 3.
+### 3.3.3 Analiza dla Podsystemu 3.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps3.jpg)
-##### _Rysunek 19. Diagram podystemu dla PS3
+##### _Rysunek 20. Diagram podystemu dla PS3_
 
 ***
 Nazwa funkcji: 1.3.1 Przyjęcie reklamacji
@@ -2380,10 +2379,10 @@ Uwagi: (Uzasadnienie)
 
 <div class="page">
 
-### 3.3.2 Analiza dla Podsystemu 4.
+### 3.3.4 Analiza dla Podsystemu 4.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps4.jpg)
-##### _Rysunek 20. Diagram podystemu dla PS4
+##### _Rysunek 21. Diagram podystemu dla PS4_
 
 
 Nazwa funkcji: 1.4.1 Przyjecie na magazyn partii towaru
@@ -2453,10 +2452,10 @@ Uwagi: (Uzasadnienie)
 
 <div class="page">
 
-### 3.3.2 Analiza dla Podsystemu 5.
+### 3.3.5 Analiza dla Podsystemu 5.
 
 ![Diagram kontekstowy](./diagrams/images/DF/ps5.jpg)
-##### _Rysunek 21. Diagram podystemu dla PS5
+##### _Rysunek 22. Diagram podystemu dla PS5_
 
 
 Nazwa funkcji: 1.6.1 Przetwórz dokumenty finansowe
@@ -2536,6 +2535,7 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | magazynierzy     | Załącznik A | Instom_przesuniecie_miedzymagazynowe Instom_przyjecie zewnetrzne                                                                        | 3.1 3.2 3.3.2 (podsystem 4)                                         |
 
 
+<div class="page">
 
 **Magazyny danych**
 
@@ -2551,6 +2551,7 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | Oferta           | Przygotowana dla klienta propozycja sprzedażowa                                     | Formularz_oferty_udzielonej_dla_klienta Dokument_ofertowy Wpis_dotyczący_ceny_towaru | 3.3.2 (podsystem 2)                                                                 |
 
 
+<div class="page">
 
 **Strumienie danych**
 
@@ -2635,7 +2636,6 @@ Celem punktu jest przedstawienie uproszczonego słownika danych.
 | Zmiany w dostępnych towarach w okresie               | Zmiany dostarczanych produktów                                                  | -                                             | 3.3.2 (podsystem 5) |
 
 
-
 <div class="page">
 
 # 5.  Analiza struktur danych przechowywanych w systemie
@@ -2643,11 +2643,8 @@ Celem punktu jest przedstawienie struktur danych znajdujących się w systemie.
 
 Analiza wymagań funkcjonalności  oraz spis rejestrów systemu pozwolił nam na stworzenie poniższego diagramu ERD, który spełnia przeanalizowane wymagania.
 
-
-<div class="page">
-
 ![](./diagrams/images/ERD.jpg)
-##### _Rysunek 22. Diagram ERD
+##### _Rysunek 23. Diagram ERD_
 <div class="page">
 
 
@@ -2809,45 +2806,46 @@ Celem punktu jest przedstawienie zachowani systemu w czasie.
 
 
 ![](./diagrams/images/Diagram_maszyny_stanow.jpg)
-##### _Rysunek 23. Diagram SMD
+##### _Rysunek 24. Diagram SMD_
 
 <div class="page">
 
 # 7. Interfejsy użytkownika (Ekrany)
 
 ![](./diagrams/images/Drzewo_Interfejsow.jpg)
-##### _Rysunek 24. Drzewo_Interfejsow_
+##### _Rysunek 25. Drzewo_Interfejsow_
 
 ![](./diagrams/images/OA_1_Obsluga_Dostawcow.jpg)
-##### _Rysunek 25. Interfejs użytkownika Obsluga_Dostawcow_
+##### _Rysunek 26. Interfejs użytkownika Obsluga_Dostawcow_
 <div class="page">
 
 ![](./diagrams/images/OA_2_Obsluga_zlecen_zakupu.jpg)
-##### _Rysunek 26. Interfejs użytkownika Obsluga_zlecen_zakupu__
+##### _Rysunek 27. Interfejs użytkownika Obsluga_zlecen_zakupu_
 
 <div class="page">
 
-
 ![](./diagrams/images/OA_3_Obsługa_reklamacji.jpg)
-##### _Rysunek 27. Interfejs użytkownika Obsługa_reklamacji__
+##### _Rysunek 28. Interfejs użytkownika Obsługa_reklamacji_
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_4_Rejestr_Obsluga_Magazynu.jpg)
-##### _Rysunek 28. Interfejs użytkownika Obsluga_Magazynu
+##### _Rysunek 29. Interfejs użytkownika Obsluga_Magazynu_
 
 
 <div class="page">
 
 ![](./diagrams/images/OA_6_Analiza_danych.jpg)
-##### _Rysunek 29. Interfejs użytkownika Analiza_danych_
+##### _Rysunek 30. Interfejs użytkownika Analiza_danych_
+
+<div class="page">
 
 # 8. Weryfikacja wytworzonych artefaktów i koncepcji systemu
 
-W trakcie projektowania, po zebraniu większej ilości informacji, dało się zauważyć, że 
+W trakcie projektowania, po zebraniu większej ilości informacji, dało się zauważyć, że projekt zawierał kilka niespójności. W trakcie prac zauważone niespójności wyeliminowaliśmy i najbardziej znaczące z nich wypisaliśmy poniżej:
 
-<div class="page">
+
 
 ## 8.1 Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu
 Po szczegółowej analizie diagramów DFD doszliśmy do wniosku, że nasze obszary aktywności są za bardzo szczegółowe. 
@@ -2860,7 +2858,9 @@ Zmieniliśmy:
 - Połączyliśmy Use Case z OA 4 i OA 5 
 - Diagramy DFD Odpowiadające OA 4 i OA 5 zostały zamienione w jeden
 
-<div class="page">
+
+****
+
 
 ## 8.2 Niezgodność 2. Obsługa rejestrów w poszczególnych OA
 Po analizie wszystkich OA zauważyliśmy, że w poszczególnych OA poszczególne Use Case powiązanie z obsługą rejestrów nie są spójne - w celu ujednolicenia ich wszystkie zostały zmienione na "Zarządzanie rejestrem", "Wyszukanie w rejestrze", "Wyświetlenie rekordu"
@@ -2887,19 +2887,18 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 
 <div class="page">
 
-
 # 9. Architektura Systemu
 
 ## 9.1 Architektura całego Systemu
 ![](./diagrams/images/Architektura_system.jpg)
-##### _Rysunek 30. Architektura systemu__
+##### _Rysunek 31. Architektura systemu_
 
 <div class="page">
 
 
 ## 9.2 Architektura Podsystemów
 ![](./diagrams/images/Architektura_podsystemow.jpg)
-##### _Rysunek 31. Architektura podsystemów__
+##### _Rysunek 32. Architektura podsystemów_
 
 <div class="page">
 

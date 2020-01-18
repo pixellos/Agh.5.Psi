@@ -4,7 +4,7 @@ $newVersion = $content | ForEach {
  if($_ -like "##### _Rysunek *") {
 	$data = $_.Substring($_.LastIndexOf(".") + 1, $_.Length - $_.LastIndexOf(".") - 1)
  
-	"##### _Rysunek " + ($counter += 1) + "." + $data
+	"##### _Rysunek " + ($counter += 1) + "." + $data.Trim('_')+ "_";
 
  } else { $_}
 }
