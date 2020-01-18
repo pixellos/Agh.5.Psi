@@ -1407,8 +1407,7 @@ _Magazynier_ - Jest to w jego zakresie obowiązków
 2. `Magazynier` wystawia niezbędne dokumenty
 
 **Scenariusze alternatywne: **
-
-0.  -
+- Brak
 
 **Uczestnicy i interesy:**
 
@@ -2885,6 +2884,45 @@ Podczas analizy diagramu ERD doszliśmy do wniosku, że brakuje poszczególnych 
 ##### _Rysunek 33. Architektura podsystemów_
 
 <div class="page">
+    
+## 9.3 Wewnętrzna architektura (modułowa) poszczególnych podsystemów
+
+### 9.3.1 Diagram komponentu PS1
+![](./diagrams/images/podsystem-oa1.jpg)
+##### _Rysunek 34. Komponent przedstawia zalezności między komponentem obsługi dostawców a interfejsami_
+
+
+<div class="page">
+    
+### 9.3.2 Diagram komponentu PS2
+![](./diagrams/images/podsystem-oa2.jpg)
+##### _Rysunek 35. Komponent przedstawia zalezności między komponentem obsługi dostawców a interfejsami_
+
+<div class="page">
+    
+### 9.3.3 Diagram komponentu PS3
+![](./diagrams/images/podsystem-oa3.jpg)
+##### _Rysunek 36. Komponent przedstawia zalezności między komponentem obsługi dostawców a interfejsami_
+
+<div class="page">
+    
+### 9.3.4 Diagram komponentu PS4
+![](./diagrams/images/podsystem-oa4.jpg)
+##### _Rysunek 37. Komponent przedstawia zalezności między komponentem obsługi dostawców a interfejsami_
+
+<div class="page">  
+    
+### 9.3.5 Diagram komponentu PS5
+![](./diagrams/images/podsystem-oa5.jpg)
+##### _Rysunek 38. Komponent przedstawia zalezności między komponentem obsługi dostawców a interfejsami_
+
+<div class="page">
+   
+### 9.3.6 Diagram komponentu Repozytorium Danych
+![](./diagrams/images/podsystem-repo.jpg)
+##### _Rysunek 39. Rysunek przedstawia generyczny komponent, który enkapsuluje operacje na bazie danych_
+
+<div class="page"> 
 
 
 # 10. Podsumowanie
