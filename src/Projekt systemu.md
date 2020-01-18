@@ -3062,50 +3062,50 @@ Wymagania niefunkcjonalne
         - [2.5.2. Obsługa zleceń zakupu (OA2)](#252-obsługa-zleceń-zakupu-oa2) - Adam
         - [2.5.3. Obsługa reklamacji (OA3)](#253-obsługa-reklamacji-oa3) Kacper
         - [2.5.4. Obsługa rejestru magazynu (OA4)](#254-obsługa-rejestru-magazynu-oa4) - Kamil
-        - [2.5.5. Analiza danych na potrzeby marketingowe (OA5)](#255-analiza-danych-na-potrzeby-marketingowe-oa5)
+        - [2.5.5. Analiza danych na potrzeby marketingowe (OA5)](#255-analiza-danych-na-potrzeby-marketingowe-oa5) - Wspólne
     - [2.6. Wymagania funkcjonalne dla dodatkowych części systemu](#26-wymagania-funkcjonalne-dla-dodatkowych-części-systemu)
-        - [2.6.1. Poinformuj SMS](#261-poinformuj-sms)
-        - [2.6.2. Wprowadzenie dokumentów do systemu](#262-wprowadzenie-dokumentów-do-systemu)
-        - [2.6.3. Przydział pracowników do określonych zadań](#263-przydział-pracowników-do-określonych-zadań)
-        - [2.6.4. Logowanie](#264-logowanie)
-        - [2.6.5. Wylogowywanie](#265-wylogowywanie)
+        - [2.6.1. Poinformuj SMS](#261-poinformuj-sms) - Mateusz
+        - [2.6.2. Wprowadzenie dokumentów do systemu](#262-wprowadzenie-dokumentów-do-systemu) - Mateusz
+        - [2.6.3. Przydział pracowników do określonych zadań](#263-przydział-pracowników-do-określonych-zadań) - Mateusz
+        - [2.6.4. Logowanie](#264-logowanie) - Mateusz
+        - [2.6.5. Wylogowywanie](#265-wylogowywanie) - Mateusz
     - [2.7. Wymagania niefunkcjonalne](#27-wymagania-niefunkcjonalne)
         - [2.7.1. Wymagania Produktowe](#271-wymagania-produktowe)
-            - [2.7.1.1. Użyteczności](#2711-użyteczności)
-            - [2.7.1.2. Sprawnościowe](#2712-sprawnościowe)
-            - [2.7.1.3. Niezawodności](#2713-niezawodności)
-            - [2.7.1.4. Przenośności](#2714-przenośności)
-        - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne)
-            - [2.7.2.1. Dostawy](#2721-dostawy)
-            - [2.7.2.2. Implementacyjne](#2722-implementacyjne)
-            - [2.7.2.3. Standardów](#2723-standardów)
+            - [2.7.1.1. Użyteczności](#2711-użyteczności) - Mateusz
+            - [2.7.1.2. Sprawnościowe](#2712-sprawnościowe) - Mateusz
+            - [2.7.1.3. Niezawodności](#2713-niezawodności) - Kacper
+            - [2.7.1.4. Przenośności](#2714-przenośności) - Kacper
+        - [2.7.2. Wymagania organizacyjne](#272-wymagania-organizacyjne) 
+            - [2.7.2.1. Dostawy](#2721-dostawy) - Kamil
+            - [2.7.2.2. Implementacyjne](#2722-implementacyjne) - Kamil
+            - [2.7.2.3. Standardów](#2723-standardów) - Kacper
         - [2.7.3. Wymagania zewnętrzne](#273-wymagania-zewnętrzne)
-            - [2.7.3.1. Współpracy](#2731-współpracy)
-            - [2.7.3.2. Etyczne](#2732-etyczne)
-            - [2.7.3.3. Prawne - ochrona prywatności](#2733-prawne---ochrona-prywatności)
-            - [2.7.3.4. Prawne - Wymagania zabezpieczeń](#2734-prawne---wymagania-zabezpieczeń)
+            - [2.7.3.1. Współpracy](#2731-współpracy) - Adam
+            - [2.7.3.2. Etyczne](#2732-etyczne) - Adam
+            - [2.7.3.3. Prawne - ochrona prywatności](#2733-prawne---ochrona-prywatności) - Kamil
+            - [2.7.3.4. Prawne - Wymagania zabezpieczeń](#2734-prawne---wymagania-zabezpieczeń) - Kamil
 - [3. Analiza funkcjonalna systemu (przy pomocy przepływów danych  i proces dekompozycji)](#3-analiza-funkcjonalna-systemu-przy-pomocy-przepływów-danych--i-proces-dekompozycji)
-    - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk)
-    - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy)
+    - [3.1. Diagram kontekstowy (DK)](#31-diagram-kontekstowy-dk) - Mateusz
+    - [3.2. Rozwinięty diagram kontekstowy](#32-rozwinięty-diagram-kontekstowy) - Mateusz 
     - [3.3. Analiza top-down](#33-analiza-top-down)
-        - [3.3.1. Analiza dla Podsystemu 1.](#331-analiza-dla-podsystemu-1)
-        - [3.3.2. Analiza dla Podsystemu 2.](#332-analiza-dla-podsystemu-2)
-        - [3.3.3. Analiza dla Podsystemu 3.](#333-analiza-dla-podsystemu-3)
-        - [3.3.4. Analiza dla Podsystemu 4.](#334-analiza-dla-podsystemu-4)
-        - [3.3.5. Analiza dla Podsystemu 5.](#335-analiza-dla-podsystemu-5)
-- [4. Słownik danych](#4-słownik-danych)
-- [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie)
-- [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej)
-- [7. Interfejsy użytkownika (Ekrany)](#7-interfejsy-użytkownika-ekrany)
+        - [3.3.1. Analiza dla Podsystemu 1.](#331-analiza-dla-podsystemu-1) - Mateusz
+        - [3.3.2. Analiza dla Podsystemu 2.](#332-analiza-dla-podsystemu-2) - Adam
+        - [3.3.3. Analiza dla Podsystemu 3.](#333-analiza-dla-podsystemu-3) - Kacper
+        - [3.3.4. Analiza dla Podsystemu 4.](#334-analiza-dla-podsystemu-4) - Kamil
+        - [3.3.5. Analiza dla Podsystemu 5.](#335-analiza-dla-podsystemu-5) - Wspólnie
+- [4. Słownik danych](#4-słownik-danych) - Głównie Kacper / Wspólnie
+- [5. Analiza struktur danych przechowywanych w systemie](#5-analiza-struktur-danych-przechowywanych-w-systemie) - Adam
+- [6. Diagram maszyny stanowej](#6-diagram-maszyny-stanowej) - Kacper
+- [7. Interfejsy użytkownika (Ekrany)](#7-interfejsy-użytkownika-ekrany) - Wspólnie
 - [8. Weryfikacja wytworzonych artefaktów i koncepcji systemu](#8-weryfikacja-wytworzonych-artefaktów-i-koncepcji-systemu)
-    - [8.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#81-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu)
-    - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa)
-    - [8.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd)
-    - [8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu)
-- [9. Architektura Systemu](#9-architektura-systemu)
+    - [8.1. Niezgodność 1. Obsługa magazynu i obsługa rejestru magazynu](#81-niezgodność-1-obsługa-magazynu-i-obsługa-rejestru-magazynu) - Kacper
+    - [8.2. Niezgodność 2. Obsługa rejestrów w poszczególnych OA](#82-niezgodność-2-obsługa-rejestrów-w-poszczególnych-oa) - Wspólnie
+    - [8.3. Niezgodność 3. Nie konsystencja strumieni danych na diagramach DFD](#83-niezgodność-3-nie-konsystencja-strumieni-danych-na-diagramach-dfd) - Mateusz
+    - [8.4. Niezgodność 4. Braki w rejestrach w stosunku do proponowanych funkcji systemu](#84-niezgodność-4-braki-w-rejestrach-w-stosunku-do-proponowanych-funkcji-systemu) - Adam
+- [9. Architektura Systemu](#9-architektura-systemu) - Kamil
     - [9.1. Architektura całego Systemu](#91-architektura-całego-systemu)
     - [9.2. Architektura Podsystemów](#92-architektura-podsystemów)
-- [10. Podsumowanie](#10-podsumowanie)
+- [10. Podsumowanie](#10-podsumowanie) - Wspólnie
     - [10.1. Założenia implementacyjne](#101-założenia-implementacyjne)
     - [10.2. Weryfikacja całości projektu systemu](#102-weryfikacja-całości-projektu-systemu)
     - [10.3. Uwagi i wnioski końcowe](#103-uwagi-i-wnioski-końcowe)
